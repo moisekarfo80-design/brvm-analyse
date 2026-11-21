@@ -109,6 +109,9 @@ def lire_historique():
 
 
 def controler(df, derniers):
+    """Ecarte seulement les vraies anomalies. Sur brvm.org, la colonne 'variation' n'est pas
+    toujours calculee par rapport au 'cours veille' (constate le 21/11/2026) : un simple
+    desaccord entre les deux n'est donc pas une raison d'ecarter le cours."""
     a_confirmer = []
     for _, l in df.iterrows():
         pb = []
@@ -116,10 +119,8 @@ def controler(df, derniers):
             pb.append("cours absent")
         if l["variation"] is not None and abs(l["variation"]) > LIMITE_VARIATION + TOLERANCE:
             pb.append(f"variation {l['variation']} % hors limite")
-        if l["cours_veille"] and l["cloture"] and l["variation"] is not None:
-            recalc = (l["cloture"] / l["cours_veille"] - 1) * 100
-            if abs(recalc - l["variation"]) > TOLERANCE:
-                pb.append("variation incoherente")
+        if l["cours_veille"] and l["cloture"] and abs(l["cloture"] / l["cours_veille"] - 1) * 100 > LIMITE_VARIATION + TOLERANCE:
+            pb.append("ecart avec le cours veille hors limite")
         if pb:
             a_confirmer.append({"symbole": l["symbole"], "motif": ", ".join(pb)})
     alertes = []
