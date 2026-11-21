@@ -33,7 +33,7 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "total actif = total passif"
    ],
    "problemes": [],
    "ratios": {
@@ -82,10 +82,8 @@
     "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 28 1 126 739 480 -352 217 043",
     "total_passif": "DZ TOTAL GENERAL 31 735 934 378 34 241 097 739"
    },
-   "statut": "valide",
-   "controles_ok": [
-    "resultat net identique a deux endroits"
-   ],
+   "statut": "a confirmer",
+   "controles_ok": [],
    "problemes": [],
    "ratios": {
     "roe": -0.0254,
@@ -146,8 +144,7 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "total actif = total passif"
    ],
    "problemes": [],
    "ratios": {
@@ -165,41 +162,41 @@
   },
   "ABJC": {
    "banque": false,
-   "pages_ocr": 1,
-   "manquants": [
-    "capitaux propres",
-    "chiffre d'affaires"
-   ],
+   "pages_ocr": 0,
+   "manquants": [],
    "chiffres": {
+    "ca": {
+     "n": 13298,
+     "n1": 12467
+    },
     "rn": {
-     "n": 1059566,
-     "n1": 4660158855
+     "n": 1331,
+     "n1": 1515
     },
-    "dettes_fin": {
-     "n": 441545502,
-     "n1": 7430073265
-    },
-    "total_passif": {
-     "n": 4831733205,
-     "n1": 12500000
+    "cp": {
+     "n": 5512,
+     "n1": 4182
     }
    },
    "lignes_lues": {
-    "rn": "CJ Résultat net de l'exercice (bénéfice + ou perte -} 1350 660 521 1519221 935 ||XC VALEUR AJOUTEE (XB + RA + RB)#(somme TE à AJ) | | 4o1059",
-    "dettes_fin": "[ DF_TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES | 441 545502 || 7430073265 || TL Roprisos do provisions ot dépréclations fnancièros +",
-    "total_passif": "[ DP_ TOTAL PASSIF CIRCULANT | 3626035045 || 4831733205 |] ro valeurs comptables des cessions dimmobiïsations - {12 500 000) (13 000 000) É "
+    "ca": "Chiffre d'affaires 17 13 298 12 467",
+    "rn": "Résultat net de l'ensemble 12 1 331 1 515",
+    "cp": "Total capitaux propres 5 512 4 182"
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
-    "croissance_resultat": -0.9998
+    "roe": 0.2415,
+    "marge": 0.1001,
+    "croissance_activite": 0.0667,
+    "croissance_resultat": -0.1215
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/fr/servair-abidjan-ci-etats-financiers-syscohada-exercice-2025",
-   "titre": "SERVAIR ABIDJAN CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "url": "https://www.brvm.org/fr/servair-abidjan-ci-etats-financiers-ifrs-exercice-2025",
+   "titre": "SERVAIR ABIDJAN CI : Etats financiers IFRS - Exercice 2025",
    "lu_le": "2026-11-21"
   },
   "BICC": {
@@ -245,8 +242,10 @@
     "total_actif": "TOTAL DE L'ACTIF 1 015 578 1 126 270 TOTAL DU PASSIF 1 015 578 1 126 270",
     "total_passif": "TOTAL DE L'ACTIF 1 015 578 1 126 270 TOTAL DU PASSIF 1 015 578 1 126 270"
    },
-   "statut": "a confirmer",
-   "controles_ok": [],
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif"
+   ],
    "problemes": [],
    "ratios": {
     "roe": 0.2628,
@@ -301,7 +300,7 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -357,7 +356,7 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -416,7 +415,7 @@
    "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -467,7 +466,8 @@
    "statut": "a confirmer",
    "controles_ok": [],
    "problemes": [
-    "resultat net superieur au chiffre d'affaires / PNB"
+    "resultat net superieur au chiffre d'affaires / PNB",
+    "activite qui varie de plus de 80 % : a verifier"
    ],
    "ratios": {
     "roe": 0.1975,
@@ -596,7 +596,8 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "total actif = total passif",
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -670,7 +671,8 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "total actif = total passif",
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -723,7 +725,8 @@
    ],
    "problemes": [
     "resultat net incoherent avec les capitaux propres",
-    "resultat net superieur au chiffre d'affaires / PNB"
+    "resultat net superieur au chiffre d'affaires / PNB",
+    "resultat net qui varie enormement : a verifier"
    ],
    "ratios": {
     "roe": 25364.0756,
@@ -771,11 +774,15 @@
     "total_actif": "TOTAL ACTIF 3 9 148 981 6 1 061 747 TOTAL PASSIF 3 9 148 981 6 1 061 747",
     "total_passif": "TOTAL ACTIF 3 9 148 981 6 1 061 747 TOTAL PASSIF 3 9 148 981 6 1 061 747"
    },
-   "statut": "valide",
+   "statut": "a confirmer",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "total actif = total passif",
+    "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [],
+   "problemes": [
+    "resultat net qui varie enormement : a verifier",
+    "capitaux propres non publie ou non lu"
+   ],
    "ratios": {
     "marge": 0.0021,
     "croissance_activite": 0.0461,
@@ -886,7 +893,7 @@
    "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -926,11 +933,11 @@
     "rn": "Ecarts de conversion Actif 49,431,591 209,249,250 Résultat net de l'exercice 18,426,899,479 1 8,149,967,087",
     "ebe": "Excédent Brut d'Exploitation 46,171,248,459 4 3,543,421,067"
    },
-   "statut": "valide",
-   "controles_ok": [
-    "resultat net identique a deux endroits"
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "capitaux propres non publie ou non lu"
    ],
-   "problemes": [],
    "ratios": {
     "marge": 0.079,
     "croissance_activite": 0.0597,
@@ -1003,11 +1010,13 @@
     "cout_risque": "Coût du risque -6 971 -69 056",
     "total_actif": "TOTAL DE L'ACTIF 4 014 192 3 961 395"
    },
-   "statut": "valide",
+   "statut": "a confirmer",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [],
+   "problemes": [
+    "resultat net qui varie enormement : a verifier"
+   ],
    "ratios": {
     "roe": -0.1157,
     "marge": -0.0431,
@@ -1059,7 +1068,7 @@
    "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -1132,7 +1141,9 @@
     "total_passif": "TOTAL ACTIF 7 9 555 7 4 195 TOTAL PASSIF 7 9 555 74 195"
    },
    "statut": "a confirmer",
-   "controles_ok": [],
+   "controles_ok": [
+    "total actif = total passif"
+   ],
    "problemes": [
     "resultat net introuvable"
    ],
@@ -1175,12 +1186,16 @@
     "total_actif": "Total actif 156 426 278 133 450 356",
     "total_passif": "Total passif 156 426 278 133 450 356 Gain / perte - Actuarielle sur engagement de retraite 52 753 -45 496"
    },
-   "statut": "valide",
+   "statut": "a confirmer",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [],
+   "problemes": [
+    "activite qui varie de plus de 80 % : a verifier",
+    "resultat net qui varie enormement : a verifier",
+    "capitaux propres non publie ou non lu"
+   ],
    "ratios": {
     "marge": -0.0987,
     "croissance_activite": 10.1604,
@@ -1216,64 +1231,32 @@
   },
   "SDSC": {
    "banque": false,
-   "pages_ocr": 0,
-   "manquants": [],
+   "pages_ocr": 1,
+   "manquants": [
+    "resultat net",
+    "capitaux propres"
+   ],
    "chiffres": {
     "ca": {
-     "n": 10074573973,
-     "n1": 9282599196
-    },
-    "rn": {
-     "n": 179293282,
-     "n1": 376956818
-    },
-    "cp": {
-     "n": 2526541669,
-     "n1": 3272424840
-    },
-    "dettes_fin": {
-     "n": 4164342386,
-     "n1": 550914998
-    },
-    "ebe": {
-     "n": 1441984871,
-     "n1": 1473699844
-    },
-    "total_actif": {
-     "n": 14611080094,
-     "n1": 14023255232
-    },
-    "total_passif": {
-     "n": 14611080094,
-     "n1": 14023255232
+     "n": 92004,
+     "n1": 268365
     }
    },
    "lignes_lues": {
-    "ca": "XB CHIFFRE D'AFFAIRES (A + B + C + D) 10 074 573 973 9 282 599 196",
-    "rn": "XI RESULTAT NET (XG+XH+RQ+RS) 179 293 282 376 956 818",
-    "cp": "CP TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 0 2 526 541 669 3 272 424 840",
-    "dettes_fin": "DD TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES 0 4 164 342 386 550 914 998",
-    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 1 441 984 871 1 473 699 844",
-    "total_actif": "BZ TOTAL GENERAL 0 25 414 101 911 10 803 021 818 14 611 080 094 14 023 255 232",
-    "total_passif": "DZ TOTAL GENERAL 0 14 611 080 094 14 023 255 232"
+    "ca": "Total Chiffre d’affaires 92 004 268 365"
    },
-   "statut": "valide",
-   "controles_ok": [
-    "total actif = total passif",
-    "resultat net identique a deux endroits"
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu"
    ],
-   "problemes": [],
    "ratios": {
-    "roe": 0.071,
-    "marge": 0.0178,
-    "croissance_activite": 0.0853,
-    "croissance_resultat": -0.5244,
-    "dette_cp": 1.6482,
-    "marge_ebe": 0.1431
+    "croissance_activite": -0.6572
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/fr/erium-ci-etats-financiers-exercice-2025",
-   "titre": "ERIUM CI : Etats financiers - Exercice 2025",
+   "url": "https://www.brvm.org/fr/africa-glogal-logistics-ci-attestation-des-commissaires-aux-comptes-etats-financiers-exercice-2025",
+   "titre": "AFRICA GLOGAL LOGISTICS CI : Attestation des Commissaires Aux Comptes - Etats financiers - Exercice 2025",
    "lu_le": "2026-11-21"
   },
   "SHEC": {
@@ -1311,11 +1294,15 @@
     "total_actif": "TOTAL ACTIF 193 561 278 972 207 064 380 555 TOTAL PASSIF 193 561 278 972 207 064 380 555",
     "total_passif": "TOTAL ACTIF 193 561 278 972 207 064 380 555 TOTAL PASSIF 193 561 278 972 207 064 380 555"
    },
-   "statut": "valide",
+   "statut": "a confirmer",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "total actif = total passif",
+    "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [],
+   "problemes": [
+    "activite qui varie de plus de 80 % : a verifier",
+    "capitaux propres non publie ou non lu"
+   ],
    "ratios": {
     "marge": 0.01,
     "croissance_activite": 139.6619,
@@ -1388,7 +1375,7 @@
    "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -1448,7 +1435,7 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -1497,7 +1484,7 @@
    "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -1540,7 +1527,7 @@
    "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
-    "resultat net identique a deux endroits"
+    "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [],
    "ratios": {
@@ -1581,15 +1568,15 @@
     }
    },
    "lignes_lues": {
-    "ca": "Chiffre d'affaires 588 709 621 042",
-    "rn": "Immobilisations corporelles 61 130 60 406 Résultat net de l'exercice 9 087 9 374",
-    "ebe": "Excédent brut d'exploitation 22 347 20 029 12%",
+    "ca": "Chiffre d'affaires 588 709 621 042 Trésorerie au 1erJanvier -8 204 -11 030",
+    "rn": "Immobilisations corporelles 61 130 60 406 Résultat net de l'exercice 9 087 9 374 Variation de la trésorerie nette de la période -13 722 2 82",
+    "ebe": "Excédent brut d'exploitation 22 347 20 029 12% Variation du BF lié aux activités opérationnelle -8 910 8 662",
     "total_actif": "Total Actif 188 472 191 526 Total Passif 188 472 191 526",
     "total_passif": "Total Actif 188 472 191 526 Total Passif 188 472 191 526"
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique a deux endroits"
+    "total actif = total passif"
    ],
    "problemes": [],
    "ratios": {
@@ -1599,8 +1586,8 @@
     "marge_ebe": 0.038
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/fr/totalenergies-marketing-ci-etats-financiers-syscohada-exercice-2025",
-   "titre": "TOTALENERGIES MARKETING CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "url": "https://www.brvm.org/fr/totalenergies-marketing-ci-etats-financiers-approuves-exercice-2025",
+   "titre": "TOTALENERGIES MARKETING CI  : Etats financiers approuvés - Exercice 2025",
    "lu_le": "2026-11-21"
   },
   "TTLS": {
@@ -1634,5 +1621,5 @@
    "lu_le": "2026-11-21"
   }
  },
- "maj": "2026-11-21T19:07Z"
+ "maj": "2026-11-21T19:17Z"
 }
