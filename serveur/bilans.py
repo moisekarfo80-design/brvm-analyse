@@ -50,6 +50,34 @@ def texte_pdf(chemin, pages_max=40, garder=None):
     return pages, ocr
 
 
+def texte_pdftotext(chemin, pages_max=40):
+    try:
+        r = subprocess.run(["pdftotext", "-layout", "-l", str(pages_max), str(chemin), "-"], capture_output=True, text=True, timeout=180)
+        return [p for p in r.stdout.split("\f")]
+    except Exception:
+        return []
+
+
+COMMUNIQUE = re.compile(
+    r"(chiffre d.affaires|r[ée]sultat net|produit net bancaire|b[ée]n[ée]fice net)[^0-9\n]{0,40}?(-?\d[\d ]*(?:,\d+)?)\s*(milliards?|millions?)"
+    r"[^%\n]{0,90}?(hausse|progression|augmentation|croissance|baisse|recul|repli|diminution)\s+(?:de\s+)?(\d+(?:,\d+)?)\s?%", re.I)
+
+
+def lire_communique(pages):
+    """Communiques ecrits en phrases : « Resultat net : 4,663 milliards FCFA, en progression de 31 % »."""
+    out = {}
+    for m in COMMUNIQUE.finditer(" ".join(pages).replace("\n", " ")):
+        cle = {"c": "ca", "r": "rn", "p": "pnb", "b": "rn"}[m.group(1)[0].lower()]
+        if cle in out:
+            continue
+        n = float(m.group(2).replace(" ", "").replace(",", ".")) * (1e9 if m.group(3).lower().startswith("milliard") else 1e6)
+        g = float(m.group(5).replace(",", ".")) / 100 * (-1 if m.group(4).lower() in ("baisse", "recul", "repli", "diminution") else 1)
+        if g <= -1:
+            continue
+        out[cle] = {"n": round(n), "n1": round(n / (1 + g)), "ligne": m.group(0)[:140], "pos": [-1, m.start()]}
+    return out
+
+
 def ocr_page(chemin, numero):
     with tempfile.TemporaryDirectory() as d:
         base = Path(d) / "p"
@@ -71,13 +99,30 @@ def trouve_assez(texte):
 NB_BRUT = re.compile(r"[-(]?\d[\d .,  ']*\d[)]?|[-(]?\d[)]?")
 
 
+def normaliser(segment):
+    """Uniformise les ecritures : 18,426,899,479 -> 18 426 899 479 ; 1 197,1 (milliards) -> montant x1000 isole ;
+    retire les pourcentages (colonnes de variation) et les numeros de notes du type 4.1"""
+    s = segment.replace("\u202f", " ").replace("\u00a0", " ").replace("’", "'")
+    s = re.sub(r"\(?-?\s?\d+(?:[.,]\d+)?\s?,?%\)?", " | ", s)                    # 10,4% (40,7,%) 17%
+    s = re.sub(r"(?<![\d,])(\d{1,3})((?:,\d{3})+)(?![\d,])", lambda m: m.group(1) + m.group(2).replace(",", " "), s)
+    s = re.sub(r"(?<![\d.])\d{1,2}\.\d{1,2}(?![\d.])", " ", s)                       # notes 4.1, 4.10
+
+    def dec(m):
+        entier = m.group(1).replace(" ", "")
+        frac = (m.group(2) + "00")[:3]
+        signe = "-" if m.group(0).lstrip().startswith(("-", "(")) else ""
+        return f" | {signe}{int(entier + frac)} | "
+    s = re.sub(r"[-(]?\s?(\d{1,3}(?: \d{3})*),(\d{1,2})(?!\d)\)?", dec, s)           # 1 197,1 -> | 1197100 |
+    return s
+
+
 def nombres(segment):
     """Nombres d'un morceau de ligne. Les montants sont ecrits par groupes de 3 chiffres separes par
     des espaces ; deux montants voisins ne sont separes que par un espace. On essaie tous les decoupages
     possibles et on garde le plus vraisemblable : 2 montants (N et N-1) ou 4 (brut, amort., N, N-1),
     de tailles comparables, jamais plus de 100 000 milliards. Un signe -, une parenthese ou un
     separateur de cellule (| ] [) impose le debut d'un nouveau montant."""
-    seg = segment.replace("\u202f", " ").replace("\u00a0", " ")
+    seg = normaliser(segment)
     jetons = []  # (chiffres, debut_force, negatif)
     for m in re.finditer(r"([-(|\]\[]?)\s?(\d+)", seg):
         avant = seg[max(0, m.start() - 3):m.start()]
@@ -144,7 +189,10 @@ def valeurs_apres(ligne, debut):
     m = re.search(r"[A-Za-zÀ-ÿ]{3,}", reste)
     seg = reste[: m.start()] if m and re.search(r"\d", reste[: m.start()]) else reste
     seg = re.sub(r"\([A-Z0-9 +\-àé]+\)", " ", seg)  # retire les references du type (XG+XH+RQ+RS)
-    return [v for v in nombres(seg) if abs(v) >= 1000 or v == 0]
+    vals = [v for v in nombres(seg) if abs(v) >= 1000 or v == 0]
+    if len(vals) == 3 and abs(vals[0] - vals[1] - vals[2]) <= 0.002 * max(map(abs, vals)):
+        vals = vals[:2]  # N, N-1, variation
+    return vals
 
 
 def extraire(pages):
@@ -254,19 +302,44 @@ MOTS_DIAG = re.compile(r"r[ée]sultat|b[ée]n[ée]fice|capitaux propres|chiffre 
                        r"charges g[ée]n|co[ûu]t du risque|^\s*(XB|XI|CP|BZ|DZ|DD|XD)\b", re.I)
 
 
+def evaluer(pages):
+    banque, ch, rn_lus = extraire(pages)
+    ch = {k: v for k, v in ch.items() if v.get("n1") is not None}
+    statut, ok, pb, manquants = controler(banque, ch, rn_lus)
+    score = (2 if statut == "valide" else 0) + len(ok) + 0.2 * len(ch) - 0.5 * len(pb)
+    return score, banque, ch, statut, ok, pb, manquants
+
+
 def lire_pdf(chemin, diag=False):
     pages, ocr = texte_pdf(chemin)
+    essais = [("pdfplumber/ocr", pages)]
+    pt = texte_pdftotext(chemin)
+    if sum(c.isdigit() for c in "".join(pt)) > 200:
+        essais.append(("pdftotext", pt))
+    resultats = [(evaluer(p), nom, p) for nom, p in essais]
+    (score, banque, ch, statut, ok, pb, manquants), outil, pages = max(resultats, key=lambda x: x[0][0])
+    communique = False
+    if statut != "valide":  # dernier recours : communique ecrit en phrases
+        cm = lire_communique(pages)
+        if "rn" in cm and ("ca" in cm or "pnb" in cm):
+            rn, base = cm["rn"], cm.get("pnb") or cm.get("ca")
+            if 0 < abs(rn["n"]) < base["n"]:
+                ch, statut, communique = {**cm}, "valide", True
+                ok, pb, manquants = ["chiffres repris du communique officiel (croissance seulement)"], [], ["capitaux propres"]
+                banque = "pnb" in cm
     if diag:
         lignes = [l.strip()[:150] for p in pages for l in p.splitlines() if MOTS_DIAG.search(l)]
         print("    --- lignes vues (%d pages, %d en OCR) ---" % (len(pages), ocr))
         for l in lignes[:45]:
             print("    | " + l)
-    banque, ch, rn_lus = extraire(pages)
-    ch = {k: v for k, v in ch.items() if v.get("n1") is not None}  # ligne incomplete = non lue
-    statut, ok, pb, manquants = controler(banque, ch, rn_lus)
-    return {"banque": banque, "pages_ocr": ocr, "manquants": manquants, "chiffres": {k: {"n": v["n"], "n1": v["n1"]} for k, v in ch.items()},
+    if diag:
+        print(f"    outil retenu : {outil}{' + communique' if communique else ''}")
+    rat = ratios(banque, ch)
+    if communique:  # sans bilan detaille : seulement la croissance
+        rat = {k: v for k, v in rat.items() if k.startswith("croissance")}
+    return {"banque": banque, "pages_ocr": ocr, "manquants": manquants, "outil": outil, "communique": communique, "chiffres": {k: {"n": v["n"], "n1": v["n1"]} for k, v in ch.items()},
             "lignes_lues": {k: v["ligne"] for k, v in ch.items()}, "statut": statut, "controles_ok": ok,
-            "problemes": pb, "ratios": ratios(banque, ch)}
+            "problemes": pb, "ratios": rat}
 
 
 # --------------------------------------------------------------------------- site BRVM
@@ -333,6 +406,8 @@ def preference(pub):
     score += 1 if "syscohada" in n else 0
     score -= 2 if "ifrs" in n and "syscohada" not in n else 0
     score -= 3 if "communiqu" in n and "etats" not in n else 0
+    score -= 4 if "rapport annuel" in n or "rapport_annuel" in n or "rapport d" in n else 0
+    score -= 4 if "attestation" in n else 0
     return score
 
 
