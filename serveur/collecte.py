@@ -156,13 +156,11 @@ def main():
     if "--test" in sys.argv:
         return tester()
     aujourd_hui = dt.datetime.now(dt.timezone.utc).date()
+    # le week-end, la page montre la derniere seance (vendredi) : on l'enregistre a cette date
+    while aujourd_hui.weekday() >= 5:
+        aujourd_hui -= dt.timedelta(days=1)
     statut = {"date": aujourd_hui.isoformat(), "heure": dt.datetime.now(dt.timezone.utc).strftime("%H:%M"),
               "ok": False, "nb_actions": 0, "a_confirmer": [], "alertes": [], "erreurs": [], "source": None}
-    if aujourd_hui.weekday() >= 5 and "--forcer" not in sys.argv:
-        statut.update(ok=True, alertes=["week-end : pas de seance"])
-        STATUT.write_text(json.dumps(statut, ensure_ascii=False, indent=1))
-        print("Week-end, rien a collecter.")
-        return
     url, html, erreurs = telecharger()
     statut["erreurs"] = erreurs[-3:]
     if html is None:
