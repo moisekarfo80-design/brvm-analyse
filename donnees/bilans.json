@@ -1,0 +1,168 @@
+{
+ "societes": {
+  "STBC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {
+    "rn": {
+     "n": 36463616375,
+     "n1": 44173762491
+    },
+    "ebe": {
+     "n": 46192167656,
+     "n1": 57252968172
+    },
+    "total_actif": {
+     "n": 75047177792,
+     "n1": 94925572191
+    },
+    "total_passif": {
+     "n": 75047177792,
+     "n1": 94925572191
+    }
+   },
+   "lignes_lues": {
+    "rn": "Autre actif circulant Résultat net de l'exercice 36 463 616 375 44 173 762 491",
+    "ebe": "Excédent Brut d'Exploitation 46 192 167 656 57 252 968 172",
+    "total_actif": "Total Actif 75 047 177 792 94 925 572 191Total Passif 75 047 177 792 94 925 572 191",
+    "total_passif": "Total Actif 75 047 177 792 94 925 572 191Total Passif 75 047 177 792 94 925 572 191"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "croissance_resultat": -0.1745
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/sites/default/files/20260625_-_etats_financiers_-_exercice_2025_-_sitab_ci_annule_et_remplace_le_precedent.pdf",
+   "titre": "SITAB : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "UNXC": {
+   "banque": false,
+   "pages_ocr": 1,
+   "manquants": [],
+   "chiffres": {
+    "ca": {
+     "n": 29031727207,
+     "n1": 27333349555
+    },
+    "rn": {
+     "n": -624111469,
+     "n1": -2188937902
+    },
+    "cp": {
+     "n": 24619180792,
+     "n1": 15591475518
+    },
+    "dettes_fin": {
+     "n": 1023606969,
+     "n1": 946536663
+    },
+    "ebe": {
+     "n": 1126739480,
+     "n1": -352217043
+    },
+    "total_passif": {
+     "n": 31735934378,
+     "n1": 34241097739
+    }
+   },
+   "lignes_lues": {
+    "ca": "XB CHIFFRE D'AFFAIRES (A + B + C + D) 29 031 727 207 27 333 349 555",
+    "rn": "XI RESULTAT NET (XG+XH+RQ+RS) -624 111 469 -2 188 937 902",
+    "cp": "CP TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 24 619 180 792 15 591 475 518",
+    "dettes_fin": "DD TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES 1 023 606 969 946 536 663",
+    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 28 1 126 739 480 -352 217 043",
+    "total_passif": "DZ TOTAL GENERAL 31 735 934 378 34 241 097 739"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": -0.0254,
+    "marge": -0.0215,
+    "croissance_activite": 0.0621,
+    "croissance_resultat": 0.15,
+    "perte_precedente": 1,
+    "dette_cp": 0.0416,
+    "marge_ebe": 0.0388
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/sites/default/files/20260713_-_etats_financiers_-_exercice_2025_-_uniwax_ci.pdf",
+   "titre": "UNIWAX : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "ONTBF": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "ca": {
+     "n": 146176657128,
+     "n1": 141841255383
+    },
+    "rn": {
+     "n": 15886921152,
+     "n1": 21471148928
+    },
+    "cp": {
+     "n": 57541603762,
+     "n1": 62561325597
+    },
+    "dettes_fin": {
+     "n": 69691712889,
+     "n1": 67226213127
+    },
+    "ebe": {
+     "n": 56730677804,
+     "n1": 64219933668
+    },
+    "total_actif": {
+     "n": 324902379845,
+     "n1": 301493038967
+    },
+    "total_passif": {
+     "n": 324902379845,
+     "n1": 301493038967
+    }
+   },
+   "lignes_lues": {
+    "ca": "XB CHIFFRE D'AFFAIRES (A + B + C + D) 146 176 657 128 141 841 255 383",
+    "rn": "XI RESULTAT NET (XG+XH+RQ+RS) 15 886 921 152 21 471 148 928",
+    "cp": "CP 57 541 603 762 62 561 325 597",
+    "dettes_fin": "DD 69 691 712 889 67 226 213 127",
+    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 56 730 677 804 64 219 933 668",
+    "total_actif": "BZ TOTAL GENERAL 969 534 045 321 644 631 665 476 324 902 379 845 301 493 038 967",
+    "total_passif": "DZ TOTAL GENERAL 324 902 379 845 301 493 038 967"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.2761,
+    "marge": 0.1087,
+    "croissance_activite": 0.0306,
+    "croissance_resultat": -0.2601,
+    "dette_cp": 1.2112,
+    "marge_ebe": 0.3881
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/sites/default/files/20260611_-_etats_financiers_approuves_-_exercice_2025_-_onatel_bf.pdf",
+   "titre": "ONATEL : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  }
+ },
+ "maj": "2026-11-21T18:58Z"
+}

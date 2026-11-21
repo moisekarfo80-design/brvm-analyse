@@ -1,0 +1,53 @@
+# Lecture des etats financiers annuels publies sur brvm.org.
+# Chaque lundi matin, et a la main (onglet Actions > Lecture des bilans > Run workflow).
+name: Lecture des bilans
+
+on:
+  schedule:
+    - cron: "23 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      exercice:
+        description: "Exercice a lire (ex. 2025)"
+        default: "2025"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mise-a-jour
+  cancel-in-progress: false
+
+jobs:
+  bilans:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les outils (lecture PDF et reconnaissance de caracteres)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra poppler-utils
+          pip install -r requirements.txt
+
+      - name: Lire les bilans
+        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }}
+
+      - name: Recalculer les notes
+        run: python serveur/analyse.py
+
+      - name: Enregistrer
+        run: |
+          git config user.name "brvm-analyse (automatique)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add donnees docs/data
+          if git diff --cached --quiet; then echo "Rien de nouveau."; else
+            git commit -m "Bilans lus le $(date -u +%d/%m/%Y)"
+            git pull --rebase -q && git push
+          fi

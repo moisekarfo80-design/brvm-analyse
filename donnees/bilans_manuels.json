@@ -1,0 +1,45 @@
+{
+ "explication": "Chiffres saisis a la main quand le PDF officiel est un scan illisible automatiquement. Source : etats financiers annuels publies sur brvm.org, verifies lors du test n°1.",
+ "societes": {
+  "CBIBF": {
+   "banque": true,
+   "exercice": 2025,
+   "source": "https://www.brvm.org (Etats financiers - Exercice 2025 - Coris Bank International BF, publie le 07/07/2026)",
+   "chiffres": {
+    "rn": {
+     "n": 65495000000.0,
+     "n1": 47937000000.0
+    },
+    "cp": {
+     "n": 330548000000.0,
+     "n1": null
+    }
+   },
+   "ratios": {
+    "roe": 0.1981,
+    "croissance_resultat": 0.3663,
+    "coef_exploitation": 0.364
+   }
+  },
+  "BOABF": {
+   "banque": true,
+   "exercice": 2025,
+   "source": "https://www.brvm.org (BOA BF - Etats financiers - Exercice 2025)",
+   "chiffres": {
+    "rn": {
+     "n": 19252000000.0,
+     "n1": 22419000000.0
+    },
+    "cp": {
+     "n": 126516000000.0,
+     "n1": null
+    }
+   },
+   "ratios": {
+    "roe": 0.1522,
+    "croissance_resultat": -0.1413,
+    "coef_exploitation": 0.443
+   }
+  }
+ }
+}

@@ -58,5 +58,5 @@ jobs:
             echo "Rien de nouveau."
           else
             git commit -m "Mise a jour du $(date -u +%d/%m/%Y)"
-            git push
+            git pull --rebase -q && git push
           fi

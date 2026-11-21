@@ -23,12 +23,12 @@ D = RACINE / "donnees"
 SORTIE = RACINE / "docs" / "data" / "resultats.json"
 
 HORIZONS = {
-    "lt": {"nom": "Long terme", "duree": "3 ans et plus", "div": 20, "valo": 25, "tend": 0,
-           "manque": {"Solidité de l'entreprise": 30, "Croissance des résultats": 20, "Actualité": 5}},
-    "mt": {"nom": "Moyen terme", "duree": "6 à 18 mois", "div": 20, "valo": 30, "tend": 0,
-           "manque": {"Solidité de l'entreprise": 20, "Croissance des résultats": 20, "Actualité": 10}},
-    "ct": {"nom": "Court terme", "duree": "moins de 6 mois", "div": 20, "valo": 15, "tend": 20,
-           "manque": {"Solidité de l'entreprise": 10, "Croissance des résultats": 15, "Actualité": 20}},
+    "lt": {"nom": "Long terme", "duree": "3 ans et plus", "div": 20, "valo": 25, "tend": 0, "qual": 30, "croi": 20,
+           "manque": {"Actualité": 5}},
+    "mt": {"nom": "Moyen terme", "duree": "6 à 18 mois", "div": 20, "valo": 30, "tend": 0, "qual": 20, "croi": 20,
+           "manque": {"Actualité": 10}},
+    "ct": {"nom": "Court terme", "duree": "moins de 6 mois", "div": 20, "valo": 15, "tend": 20, "qual": 10, "croi": 15,
+           "manque": {"Actualité": 20}},
 }
 LIMITES = [(80, 5), (65, 4), (50, 3), (35, 2)]
 
@@ -58,6 +58,11 @@ def charger():
     ops = json.loads((D / "operations_capital.json").read_text()) if (D / "operations_capital.json").exists() else {}
     statut = json.loads((D / "statut_collecte.json").read_text()) if (D / "statut_collecte.json").exists() else None
     etat = json.loads((D / "etat.json").read_text()) if (D / "etat.json").exists() else {}
+    bilans = json.loads((D / "bilans.json").read_text()).get("societes", {}) if (D / "bilans.json").exists() else {}
+    if (D / "bilans_manuels.json").exists():  # chiffres saisis a la main quand le PDF est illisible
+        for sym, b in json.loads((D / "bilans_manuels.json").read_text()).get("societes", {}).items():
+            if sym not in bilans or bilans[sym].get("statut") != "valide":
+                bilans[sym] = dict(b, statut="valide", manuel=True)
     hist = {}
     with open(D / "historique.csv", newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f, delimiter=";"):
@@ -70,7 +75,7 @@ def charger():
             hist.setdefault(s, []).append((r["date"], c, v))
     for s in hist:
         hist[s].sort()
-    return ref, ops, statut, etat, hist
+    return ref, ops, statut, etat, hist, bilans
 
 
 def prix_a(serie, jour):
@@ -80,7 +85,7 @@ def prix_a(serie, jour):
 
 
 def main():
-    ref, ops, statut, etat, hist = charger()
+    ref, ops, statut, etat, hist, bilans = charger()
     actions = ref["actions"]
     date_donnees = max(p[0] for s in hist for p in hist[s])
     jour = dt.date.fromisoformat(date_donnees)
@@ -177,6 +182,49 @@ def main():
         if s in tend and tend[s] > 0.8:
             fiche["raisons"].append(("attention", f"A déjà beaucoup monté (+{fr(tend[s]*100, 0)} % en un an) : plus risqué"))
 
+        # solidite et croissance (bilans annuels lus et controles)
+        s_qual = s_croi = None
+        b = bilans.get(s)
+        if b and b.get("statut") == "valide":
+            r_ = b.get("ratios", {})
+            comp = []
+            if b.get("banque"):
+                if "roe" in r_: comp.append(lin(r_["roe"], 0.05, 0.22))
+                if "coef_exploitation" in r_: comp.append(lin(-r_["coef_exploitation"], -0.75, -0.40))
+                if "cout_risque_pnb" in r_: comp.append(lin(-r_["cout_risque_pnb"], -0.35, 0.0))
+            else:
+                if "roe" in r_: comp.append(lin(r_["roe"], 0.0, 0.25))
+                if "marge" in r_: comp.append(lin(r_["marge"], 0.0, 0.15))
+                if "dette_cp" in r_: comp.append(lin(-r_["dette_cp"], -1.5, 0.0))
+            if len(comp) >= 2:
+                s_qual = st.mean(comp)
+            comp = []
+            if "croissance_resultat" in r_: comp.append(lin(r_["croissance_resultat"], -0.25, 0.25))
+            if "croissance_activite" in r_: comp.append(lin(r_["croissance_activite"], -0.10, 0.15))
+            if comp:
+                s_croi = st.mean(comp)
+            ex = b.get("exercice", "")
+            if "roe" in r_:
+                t = "plus" if r_["roe"] >= 0.15 else "moins" if r_["roe"] < 0.05 else "neutre"
+                fiche["raisons"].append((t, f"Rentabilité des fonds propres : {fr(r_['roe']*100, 0)} % (exercice {ex})"))
+            if b.get("banque") and "coef_exploitation" in r_:
+                t = "plus" if r_["coef_exploitation"] <= 0.5 else "moins" if r_["coef_exploitation"] > 0.65 else "neutre"
+                fiche["raisons"].append((t, f"Coûts de fonctionnement : {fr(r_['coef_exploitation']*100, 0)} % du produit net bancaire"))
+            if not b.get("banque") and "dette_cp" in r_ and r_["dette_cp"] > 1:
+                fiche["raisons"].append(("attention", f"Endettement élevé : dettes = {fr(r_['dette_cp'], 1)} fois les fonds propres"))
+            rn_n = ((b.get("chiffres") or {}).get("rn") or {}).get("n")
+            if rn_n is not None and rn_n < 0:
+                fiche["raisons"].append(("moins", f"Entreprise en perte en {ex}" + (" (perte réduite par rapport à l'année d'avant)" if r_.get("croissance_resultat", 0) > 0 else "")))
+            elif r_.get("perte_precedente"):
+                fiche["raisons"].append(("plus", f"Retour au bénéfice en {ex}"))
+            elif "croissance_resultat" in r_:
+                g = r_["croissance_resultat"]
+                fiche["raisons"].append(("plus" if g > 0.05 else "moins" if g < -0.05 else "neutre",
+                                         f"Résultat net {'en hausse' if g > 0 else 'en baisse'} : {'+' if g > 0 else ''}{fr(g*100, 0)} % sur un an"))
+            fiche["bilan"] = {"exercice": ex, "source": b.get("url") or b.get("source"), "manuel": bool(b.get("manuel"))}
+        elif b:
+            fiche["drapeaux"].append("Bilan à confirmer : non utilisé")
+
         # liquidite (a partir de l'historique collecte chaque soir)
         vols = [p for p in serie if p[2] is not None][-60:]
         if len(vols) >= 20:
@@ -189,10 +237,15 @@ def main():
 
         fiche["notes"], fiche["fiabilite"] = {}, {}
         for h, w in HORIZONS.items():
-            poids = w["div"] + w["valo"] + (w["tend"] if s_tend is not None else 0)
-            total = w["div"] * s_div + w["valo"] * s_valo + (w["tend"] * s_tend if s_tend is not None else 0)
+            parts = [(w["div"], s_div), (w["valo"], s_valo), (w["tend"], s_tend), (w["qual"], s_qual), (w["croi"], s_croi)]
+            parts = [(p, v) for p, v in parts if v is not None and p]
+            poids = sum(p for p, _ in parts)
+            total = sum(p * v for p, v in parts)
             fiche["notes"][h] = None if fiche.get("anomalie") else round(total / poids, 1)
-            fiche["fiabilite"][h] = min(59, poids)
+            manque = 100 - poids
+            # plafond 59 tant qu'une famille de plus de 10 points manque
+            gros_manque = (s_qual is None and w["qual"] > 10) or (s_croi is None and w["croi"] > 10) or w["manque"].get("Actualité", 0) > 10
+            fiche["fiabilite"][h] = min(59, poids) if gros_manque else poids
         res.append(fiche)
 
     # ---- etoiles anti-clignotement + fleches sur 1 mois
@@ -255,7 +308,9 @@ def main():
         portefeuilles[h] = top
 
     # ---- fiabilite globale et messages
-    fiab = 59
+    fiabs = [f["fiabilite"]["lt"] for f in res if f.get("fiabilite")]
+    fiab = round(st.mean(fiabs)) if fiabs else 59
+    nb_bilans = sum(1 for f in res if f.get("bilan"))
     if statut is None:
         messages.append({"type": "info", "titre": "Première mise à jour", "texte": "Les cours viennent du bulletin officiel du " + dt.date.fromisoformat(ref["date"]).strftime("%d/%m/%Y") + ". La collecte automatique commencera ce soir."})
     elif not statut.get("ok"):
@@ -284,7 +339,11 @@ def main():
     anomalies = [f["nom"] for f in res if f.get("anomalie")]
     if anomalies:
         messages.append({"type": "alerte", "titre": "Variation anormale", "texte": "Note suspendue (fractionnement d'actions possible) : " + ", ".join(anomalies) + "."})
-    messages.append({"type": "info", "titre": "Notes provisoires", "texte": "Les notes mesurent pour l'instant le dividende, le prix et la tendance. La solidité, la croissance et l'actualité seront ajoutées avec la lecture des bilans. En attendant, la fiabilité reste plafonnée."})
+    sans = [f["nom"] for f in res if f.get("notes") and not f.get("bilan")]
+    messages.append({"type": "info", "titre": f"Bilans lus : {nb_bilans} sociétés sur {len([f for f in res if f.get('notes')])}",
+                     "texte": ("Pour ces sociétés, les notes tiennent compte de la solidité et de la croissance. " if nb_bilans else "")
+                     + (f"Pas encore de bilan validé pour : {', '.join(sans[:12])}{' …' if len(sans) > 12 else ''}. Leur fiabilité reste plafonnée à 59 %. " if sans else "")
+                     + "L'actualité n'est pas encore suivie."})
 
     sortie = {
         "version": 1,
@@ -295,7 +354,8 @@ def main():
         "meteo": {"code": meteo[0], "part_actions": meteo[1]},
         "fiabilite": max(0, fiab),
         "horizons": {h: {"nom": w["nom"], "duree": w["duree"], "manque": w["manque"],
-                         "mesure": w["div"] + w["valo"] + w["tend"]} for h, w in HORIZONS.items()},
+                         "mesure": w["div"] + w["valo"] + w["tend"] + w["qual"] + w["croi"],
+                         "bilans": w["qual"] + w["croi"]} for h, w in HORIZONS.items()},
         "classements": classements,
         "portefeuilles": portefeuilles,
         "actions": res,

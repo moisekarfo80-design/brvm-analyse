@@ -80,7 +80,9 @@ def main():
                        f"diversification respectee ({h})")
     ok &= verifier(abs(r["marche"]["per"] - per_avant * 1.02) < 0.2, f"PER du marche suit les cours ({r['marche']['per']})")
     ok &= verifier(all(1 <= e <= 5 for a in r["actions"] for e in a.get("etoiles", {}).values()), "etoiles entre 1 et 5")
-    ok &= verifier(all(a["fiabilite"][h] <= 59 for a in r["actions"] if a.get("fiabilite") for h in a["fiabilite"]), "fiabilite plafonnee a 59")
+    ok &= verifier(all(a["fiabilite"][h] <= 59 for a in r["actions"] if a.get("fiabilite") and not a.get("bilan") for h in a["fiabilite"]),
+                   "sans bilan : fiabilite plafonnee a 59")
+    ok &= verifier(all(a["fiabilite"]["ct"] <= 59 for a in r["actions"] if a.get("fiabilite")), "court terme plafonne (actualite non suivie)")
 
     print("2. Le lendemain, meme page (jour ferie)")
     import datetime as dt
@@ -106,6 +108,22 @@ def main():
     collecte.main()
     st = json.loads(collecte.STATUT.read_text())
     ok &= verifier(any("non comprise" in a for a in st["alertes"]), "changement de page signale")
+
+    print("4b. Lecture des montants dans les bilans")
+    import bilans
+    cas = {"146 176 657 128 141 841 255 383": [146176657128, 141841255383],
+           "969 534 045 321 644 631 665 476 324 902 379 845 301 493 038 967": [969534045321, 644631665476, 324902379845, 301493038967],
+           "28 1 126 739 480 -352 217 043": [28, 1126739480, -352217043],
+           "1148 674 652683] 1 143 639 873 930": [1148674652683, 1143639873930],
+           "34 241 097 739": [34241097739], "(1 234 567) 2 345 678": [-1234567, 2345678]}
+    ok &= verifier(all(bilans.nombres(k) == v for k, v in cas.items()), f"{len(cas)} lignes difficiles bien decoupees")
+    ch = {"rn": {"n": 10, "n1": 8}, "cp": {"n": 100, "n1": 90}, "total_actif": {"n": 500, "n1": 400, "ligne": "a"},
+          "total_passif": {"n": 501, "n1": 400, "ligne": "b"}, "ca": {"n": 200, "n1": 180}}
+    st_, okc, pb, _ = bilans.controler(False, ch, [])
+    ok &= verifier(st_ == "valide", "bilan coherent valide")
+    ch["total_passif"]["n"] = 900
+    st_, okc, pb, _ = bilans.controler(False, ch, [])
+    ok &= verifier(st_ == "a confirmer", "actif different du passif : a confirmer")
 
     print("5. Anti-clignotement des etoiles")
     e = {"lt": {"X": {"e": 3, "cand": 3, "n": 0}}}
