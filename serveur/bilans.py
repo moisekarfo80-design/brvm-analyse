@@ -164,20 +164,21 @@ def extraire(pages):
                 if not vals and not re.search(r"[A-Za-zÀ-ÿ]{4,}", suivante):  # chiffres seuls sur la ligne suivante
                     vals = [v for v in nombres(suivante) if abs(v) >= 1000 or v == 0][:2]
                 if len(vals) >= 2:
-                    out[cle] = {"n": vals[-2], "n1": vals[-1], "ligne": l.strip()[:140]}
+                    out[cle] = {"n": vals[-2], "n1": vals[-1], "ligne": l.strip()[:140], "pos": [i, m.start()]}
                     break
                 if len(vals) == 1 and cle not in out:
-                    out[cle] = {"n": vals[0], "n1": None, "ligne": l.strip()[:140]}
+                    out[cle] = {"n": vals[0], "n1": None, "ligne": l.strip()[:140], "pos": [i, m.start()]}
             if cle in out and out[cle]["n1"] is not None:
                 break
     # resultat net : deux lectures possibles (bilan et compte de resultat)
-    rn_lus = []
+    rn_lus, vues = [], set()
     for motif in champs["rn"]:
-        for l in lignes:
+        for i, l in enumerate(lignes):
             m = re.search(motif, l, re.I)
-            if m:
+            if m and i not in vues:  # chaque ligne une seule fois : une ligne ne se confirme pas elle-meme
                 v = valeurs_apres(l, m.end())
                 if len(v) >= 2:
+                    vues.add(i)
                     rn_lus.append((v[-2], v[-1]))
     return banque, out, rn_lus
 
@@ -186,14 +187,13 @@ def controler(banque, ch, rn_lus):
     ok, pb = [], []
     ch = {k: v for k, v in ch.items() if v.get("n1") is not None}  # une ligne incomplete ne sert pas aux controles
     ta, tp = ch.get("total_actif"), ch.get("total_passif")
-    if ta and tp and ta.get("ligne") != tp.get("ligne"):
+    if ta and tp and ta.get("pos") != tp.get("pos"):  # deux endroits differents (deux colonnes d'une meme ligne : accepte)
         if abs(ta["n"] - tp["n"]) <= 0.005 * max(abs(ta["n"]), 1):
             ok.append("total actif = total passif")
         else:
             pb.append("total actif different du total passif")
-    if len({x for x in rn_lus}) >= 1 and len(rn_lus) >= 2:
-        if rn_lus[0] == rn_lus[1] or any(a == b for a, b in zip(rn_lus, rn_lus[1:])):
-            ok.append("resultat net identique a deux endroits")
+    if len(rn_lus) >= 2 and any(rn_lus[i] == rn_lus[j] for i in range(len(rn_lus)) for j in range(i + 1, len(rn_lus))):
+        ok.append("resultat net identique sur deux lignes differentes")
     rn, cp = ch.get("rn"), ch.get("cp")
     base = ch.get("pnb") if banque else ch.get("ca")
     manquants = [nom for nom, v in (("resultat net", rn), ("capitaux propres", cp),
@@ -206,6 +206,15 @@ def controler(banque, ch, rn_lus):
         pb.append("resultat net superieur au chiffre d'affaires / PNB")
     if cp and ta and ta["n"] and cp["n"] > ta["n"]:
         pb.append("capitaux propres superieurs au total du bilan")
+    # variations extremes : plus probablement une erreur de lecture qu'une realite
+    base1 = (ch.get("pnb") if banque else ch.get("ca")) or {}
+    if base and base1.get("n1") and base1["n1"] > 0 and abs(base["n"] / base1["n1"] - 1) > 0.8:
+        pb.append("activite qui varie de plus de 80 % : a verifier")
+    if rn and rn.get("n1") and rn["n1"] > 0 and (rn["n"] / rn["n1"] - 1 > 4 or rn["n"] / rn["n1"] - 1 < -0.95):
+        pb.append("resultat net qui varie enormement : a verifier")
+    ebe = ch.get("ebe")
+    if ebe and base and base["n"] > 0 and abs(ebe["n"]) > base["n"]:
+        pb.append("excedent brut superieur au chiffre d'affaires")
     statut = "valide" if ok and not pb else "a confirmer"
     return statut, ok, pb + [f"{m} non publie ou non lu" for m in manquants if m != "resultat net"] if statut != "valide" else pb, manquants
 
@@ -263,7 +272,7 @@ ALIAS = {  # mots du titre de la publication -> symbole
     "BOA BN": "BOAB", "BOA BENIN": "BOAB", "BOA CI": "BOAC", "BOA ML": "BOAM", "BOA MALI": "BOAM", "BOA NG": "BOAN",
     "BOA NIGER": "BOAN", "BOA SN": "BOAS", "BOA SENEGAL": "BOAS", "CORIS": "CBIBF", "ECOBANK CI": "ECOC", "ECOBANK COTE": "ECOC",
     "ETI": "ETIT", "ECOBANK TRANSNATIONAL": "ETIT", "SGB": "SGBC", "SOCIETE GENERALE": "SGBC", "SIB": "SIBC",
-    "NSIA": "NSBC", "BICI": "BICC", "BIIC": "BICB", "ORAGROUP": "ORGT", "SAFCA": "SAFC", "BBG": "BBGC", "ERIUM": "SDSC",
+    "NSIA": "NSBC", "BICI": "BICC", "BIIC": "BICB", "ORAGROUP": "ORGT", "SAFCA": "SAFC", "BBG": "BBGC", "AFRICA GLOBAL LOGISTICS": "SDSC", "AFRICA GLOGAL LOGISTICS": "SDSC",
 }
 
 
@@ -335,7 +344,8 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1].lower().endswith(".pdf"):
         print(json.dumps(lire_pdf(sys.argv[1]), ensure_ascii=False, indent=1))
         return
-    exercice = int(sys.argv[1]) if len(sys.argv) > 1 else dt.date.today().year - 1
+    nums = [a for a in sys.argv[1:] if a.isdigit()]
+    exercice = int(nums[0]) if nums else dt.date.today().year - 1
     actuel = json.loads(SORTIE.read_text()) if SORTIE.exists() else {"societes": {}}
     pubs = lister_publications(exercice)
     print(f"{len(pubs)} publications « Exercice {exercice} » trouvees")
@@ -348,7 +358,7 @@ def main():
     for sym, lst in sorted(par_sym.items()):
         lst.sort(key=preference, reverse=True)
         deja = actuel["societes"].get(sym)
-        if deja and deja.get("exercice") == exercice and deja.get("url") == lst[0]["url"] and deja.get("statut") == "valide":
+        if "--tout" not in sys.argv and deja and deja.get("exercice") == exercice and deja.get("url") == lst[0]["url"] and deja.get("statut") == "valide":
             continue
         res = None
         for p in lst[:3]:

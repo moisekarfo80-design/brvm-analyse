@@ -117,8 +117,8 @@ def main():
            "1148 674 652683] 1 143 639 873 930": [1148674652683, 1143639873930],
            "34 241 097 739": [34241097739], "(1 234 567) 2 345 678": [-1234567, 2345678]}
     ok &= verifier(all(bilans.nombres(k) == v for k, v in cas.items()), f"{len(cas)} lignes difficiles bien decoupees")
-    ch = {"rn": {"n": 10, "n1": 8}, "cp": {"n": 100, "n1": 90}, "total_actif": {"n": 500, "n1": 400, "ligne": "a"},
-          "total_passif": {"n": 501, "n1": 400, "ligne": "b"}, "ca": {"n": 200, "n1": 180}}
+    ch = {"rn": {"n": 10, "n1": 8}, "cp": {"n": 100, "n1": 90}, "total_actif": {"n": 500, "n1": 400, "pos": [1, 0]},
+          "total_passif": {"n": 501, "n1": 400, "pos": [9, 0]}, "ca": {"n": 200, "n1": 180}}
     st_, okc, pb, _ = bilans.controler(False, ch, [])
     ok &= verifier(st_ == "valide", "bilan coherent valide")
     ch["total_passif"]["n"] = 900

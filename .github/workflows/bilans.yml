@@ -10,6 +10,10 @@ on:
       exercice:
         description: "Exercice a lire (ex. 2025)"
         default: "2025"
+      tout:
+        description: "Tout relire, meme les bilans deja valides"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,7 +41,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lire les bilans
-        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }}
+        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }} ${{ inputs.tout && '--tout' || '' }}
 
       - name: Recalculer les notes
         run: python serveur/analyse.py
