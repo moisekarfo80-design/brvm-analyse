@@ -40,8 +40,8 @@
     "croissance_resultat": -0.1745
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/sites/default/files/20260625_-_etats_financiers_-_exercice_2025_-_sitab_ci_annule_et_remplace_le_precedent.pdf",
-   "titre": "SITAB : Etats financiers - Exercice 2025",
+   "url": "https://www.brvm.org/fr/sitab-ci-annule-et-remplace-le-precedent-etats-financiers-exercice-2025",
+   "titre": "SITAB CI (Annule et remplace le précédent) : Etats financiers - Exercice 2025",
    "lu_le": "2026-11-21"
   },
   "UNXC": {
@@ -97,8 +97,8 @@
     "marge_ebe": 0.0388
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/sites/default/files/20260713_-_etats_financiers_-_exercice_2025_-_uniwax_ci.pdf",
-   "titre": "UNIWAX : Etats financiers - Exercice 2025",
+   "url": "https://www.brvm.org/fr/uniwax-ci-etats-financiers-exercice-2025",
+   "titre": "UNIWAX CI : Etats financiers - Exercice 2025",
    "lu_le": "2026-11-21"
   },
   "ONTBF": {
@@ -159,10 +159,1480 @@
     "marge_ebe": 0.3881
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/sites/default/files/20260611_-_etats_financiers_approuves_-_exercice_2025_-_onatel_bf.pdf",
-   "titre": "ONATEL : Etats financiers - Exercice 2025",
+   "url": "https://www.brvm.org/fr/onatel-bf-etats-financiers-approuves-exercice-2025",
+   "titre": "ONATEL BF : Etats financiers approuvés - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "ABJC": {
+   "banque": false,
+   "pages_ocr": 1,
+   "manquants": [
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {
+    "rn": {
+     "n": 1059566,
+     "n1": 4660158855
+    },
+    "dettes_fin": {
+     "n": 441545502,
+     "n1": 7430073265
+    },
+    "total_passif": {
+     "n": 4831733205,
+     "n1": 12500000
+    }
+   },
+   "lignes_lues": {
+    "rn": "CJ Résultat net de l'exercice (bénéfice + ou perte -} 1350 660 521 1519221 935 ||XC VALEUR AJOUTEE (XB + RA + RB)#(somme TE à AJ) | | 4o1059",
+    "dettes_fin": "[ DF_TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES | 441 545502 || 7430073265 || TL Roprisos do provisions ot dépréclations fnancièros +",
+    "total_passif": "[ DP_ TOTAL PASSIF CIRCULANT | 3626035045 || 4831733205 |] ro valeurs comptables des cessions dimmobiïsations - {12 500 000) (13 000 000) É "
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "croissance_resultat": -0.9998
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/servair-abidjan-ci-etats-financiers-syscohada-exercice-2025",
+   "titre": "SERVAIR ABIDJAN CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BICC": {
+   "banque": true,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 68063,
+     "n1": 79563
+    },
+    "rn": {
+     "n": 26226,
+     "n1": 36520
+    },
+    "cp": {
+     "n": 99783,
+     "n1": 120570
+    },
+    "charges_gen": {
+     "n": 34714,
+     "n1": 34248
+    },
+    "cout_risque": {
+     "n": 1309,
+     "n1": 1498
+    },
+    "total_actif": {
+     "n": 1015578,
+     "n1": 1126270
+    },
+    "total_passif": {
+     "n": 1015578,
+     "n1": 1126270
+    }
+   },
+   "lignes_lues": {
+    "pnb": "PRODUIT NET BANCAIRE 68 063 79 563",
+    "rn": "RESULTAT NET 26 226 36 520",
+    "cp": "COMPTES DE REGULARISATION 13 038 2 124 CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 99 783 120 570",
+    "charges_gen": "CHARGES GENERALES D'EXPLOITATION 34 714 34 248",
+    "cout_risque": "COUT DU RISQUE 1 309 1 498",
+    "total_actif": "TOTAL DE L'ACTIF 1 015 578 1 126 270 TOTAL DU PASSIF 1 015 578 1 126 270",
+    "total_passif": "TOTAL DE L'ACTIF 1 015 578 1 126 270 TOTAL DU PASSIF 1 015 578 1 126 270"
+   },
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.2628,
+    "marge": 0.3853,
+    "croissance_activite": -0.1445,
+    "croissance_resultat": -0.2819,
+    "coef_exploitation": 0.51,
+    "cout_risque_pnb": 0.0192
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/bici-ci-etats-financiers-exercice-2025",
+   "titre": "BICI CI  : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BNBC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "ca": {
+     "n": 2454158321,
+     "n1": 5312422329
+    },
+    "rn": {
+     "n": 2318122,
+     "n1": 7313440
+    },
+    "cp": {
+     "n": 7769953951,
+     "n1": 7747635829
+    },
+    "dettes_fin": {
+     "n": 42437472,
+     "n1": 1632307975
+    },
+    "ebe": {
+     "n": 2009282436,
+     "n1": 2166419027
+    },
+    "total_passif": {
+     "n": 4288081045,
+     "n1": 47539176
+    }
+   },
+   "lignes_lues": {
+    "ca": "CHIFFRE D'AFFAIRES 4 2 454 158 321 4 5 312 422 329 (en francs CFA)",
+    "rn": "Résultat net de l'exercice (bénéfice + ou perte -) 2 2 318 122 7 313 440 Flux de trésorerie provenant des activités d'investissements ( 453 ",
+    "cp": "TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 1 7 769 953 951 1 7 747 635 829 + Augmentations de capital par apports nouveaux - -",
+    "dettes_fin": "TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES 9 42 437 472 1 632 307 975 - Dividendes versés - -",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION 2 009 282 436 2 166 419 027 Report à nouveau antérieur : 13 293 130 538",
+    "total_passif": "TOTAL PASSIF CIRCULANT 1 1 887 953 177 1 4 288 081 045 Flux de trésorerie provenant des activités de financement ( 761 929 162) 2 47 539 176"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.0003,
+    "marge": 0.0009,
+    "croissance_activite": -0.538,
+    "croissance_resultat": -0.683,
+    "dette_cp": 0.0055,
+    "marge_ebe": 0.8187
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/bernabe-ci-etats-financiers-exercice-2025",
+   "titre": "BERNABE CI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BOAB": {
+   "banque": true,
+   "pages_ocr": 4,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 46526723396,
+     "n1": 51273938002
+    },
+    "rn": {
+     "n": 19647175711,
+     "n1": 20107229743
+    },
+    "cp": {
+     "n": 117396355692,
+     "n1": 117506988771
+    },
+    "charges_gen": {
+     "n": -22369685063,
+     "n1": -22704331053
+    },
+    "cout_risque": {
+     "n": -124264109,
+     "n1": 685664328
+    },
+    "total_actif": {
+     "n": 940187227041,
+     "n1": 964662725647
+    }
+   },
+   "lignes_lues": {
+    "pnb": "RCR_0100/10. PRODUIT NET BANCAIRE 46 526 723 396| 51 273 938 002",
+    "rn": "RBP_0160)9.7 RESULTAT DE L'EXERCICE (+/-) 19 647 175 711 20 107 229 743",
+    "cp": "RBP_0090|9. CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 117 396 355 692] 117 506 988 771",
+    "charges_gen": "RCR_0120|12. CHARGES GENERALES D'EXPLOITATION -22 369 685 063] -22 704 331 053",
+    "cout_risque": "RCR_0150/15. COÛT DU RISQUE -124 264 109| -4 685 664 328",
+    "total_actif": "RBA_0150/15. TOTAL DE L'ACTIF 940 187 227 041] 964 662 725 647"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.1674,
+    "marge": 0.4223,
+    "croissance_activite": -0.0926,
+    "croissance_resultat": -0.0229,
+    "coef_exploitation": 0.4808,
+    "cout_risque_pnb": 0.0027
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/boa-bn-etats-financiers-exercice-2025",
+   "titre": "BOA BN : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BOABF": {
+   "banque": true,
+   "pages_ocr": 4,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "pnb": {
+     "n": 57489834311,
+     "n1": 57819599384
+    },
+    "rn": {
+     "n": 22419223685,
+     "n1": 19252015161
+    },
+    "charges_gen": {
+     "n": -25686355185,
+     "n1": -25417867609
+    },
+    "cout_risque": {
+     "n": -4302883480,
+     "n1": -8355052420
+    },
+    "total_actif": {
+     "n": 1079053439829,
+     "n1": 1148674652683
+    },
+    "total_passif": {
+     "n": 1079053439830,
+     "n1": 1148674652683
+    }
+   },
+   "lignes_lues": {
+    "pnb": "10 PRODUIT NET BANCAIRE 57 489 834 311 57 819 599 384",
+    "rn": "16 [RESULTAT DE L'EXERCICE (+/-) 22419223 685| 19 252015 161",
+    "charges_gen": "12 CHARGES GENERALES D'EXPLOITATION -25 686 355 185 -25 417 867 609",
+    "cout_risque": "15 COUT DU RISQUE E À ET A ea -4 302 883 480 -8 355 052 420",
+    "total_actif": "|__| TOTALDEL'ACTIF 1079 053 439 829] 1 148 674 652 683",
+    "total_passif": "[| ToTALDU PASSIF 1 079 053 439 830] 1 148 674 652 683"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.39,
+    "croissance_activite": -0.0057,
+    "croissance_resultat": 0.1645,
+    "coef_exploitation": 0.4468,
+    "cout_risque_pnb": 0.0748
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/boa-bf-etats-financiers-exercice-2025",
+   "titre": "BOA BF - Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BOAM": {
+   "banque": true,
+   "pages_ocr": 8,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 37996,
+     "n1": 330474
+    },
+    "rn": {
+     "n": 9123471904,
+     "n1": 11081189907
+    },
+    "cp": {
+     "n": 46195155867,
+     "n1": 49820422180
+    },
+    "charges_gen": {
+     "n": 19137414613,
+     "n1": 19677566853
+    },
+    "total_passif": {
+     "n": 541491190619,
+     "n1": 553455473338
+    }
+   },
+   "lignes_lues": {
+    "pnb": "10 PRODUIT NET BANCAIRE 37 996 330 474",
+    "rn": "16 RESULTAT DE L'EXERCICE 9123 471 904 11 081 189 907",
+    "cp": "] CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 46 195 155 867 49 820 422 180",
+    "charges_gen": "12. [CHARGES GENERALES D'EXPLOITATION 19137 414613 19677 566853",
+    "total_passif": "D [TOTAL DU PASSIF | 541491190619] 553455 473 338"
+   },
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net superieur au chiffre d'affaires / PNB"
+   ],
+   "ratios": {
+    "roe": 0.1975,
+    "marge": 240116.6413,
+    "croissance_activite": -0.885,
+    "croissance_resultat": -0.1767,
+    "coef_exploitation": 503669.1918
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/boa-ml-etats-financiers-exercice-2025",
+   "titre": "BOA ML : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BOAN": {
+   "banque": false,
+   "pages_ocr": 8,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/boa-ng-rapport-des-commissaires-aux-comptes-sur-les-etats-financiers-annuels-exercice-2025",
+   "titre": "BOA NG : Rapport des Commissaires Aux Comptes sur les Etats Financiers annuels - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "BOAS": {
+   "banque": true,
+   "pages_ocr": 4,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 49666,
+     "n1": 51926
+    },
+    "rn": {
+     "n": 19984,
+     "n1": 21905
+    },
+    "cp": {
+     "n": 88621,
+     "n1": 96526
+    },
+    "charges_gen": {
+     "n": -19688,
+     "n1": -20167
+    },
+    "total_actif": {
+     "n": 783173,
+     "n1": 836158
+    },
+    "total_passif": {
+     "n": 783173,
+     "n1": 836158
+    }
+   },
+   "lignes_lues": {
+    "pnb": "10 PRODUIT NET BANCAIRE 49 666 51 926",
+    "rn": "20 RESULTAT NET 19 984 21 905",
+    "cp": "9 Capitaux propres et ressources assimilées 88 621 96 526",
+    "charges_gen": "12 [Charges générales d'exploitation - 19688 |- 20 167",
+    "total_actif": "TOTAL DE L'ACTIF 783173 836 158",
+    "total_passif": "TOTAL DU PASSIF 783 173 836158"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.2255,
+    "marge": 0.4024,
+    "croissance_activite": -0.0435,
+    "croissance_resultat": -0.0877,
+    "coef_exploitation": 0.3964
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/boa-sn-etats-financiers-exercice-2025",
+   "titre": "BOA SN : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "CABC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 21263067001,
+     "n1": 19125318524
+    },
+    "rn": {
+     "n": 1704451144,
+     "n1": 1224827540
+    },
+    "ebe": {
+     "n": 2173591470,
+     "n1": 1965087854
+    },
+    "total_actif": {
+     "n": 21455050944,
+     "n1": 19656293617
+    },
+    "total_passif": {
+     "n": 21455050944,
+     "n1": 19656293617
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'Affaires total 21 263 067 001 19 125 318 524",
+    "rn": "Avances et acomptes verses sur immobilisations 46 243 549 0 Résultat net de l'exercice; perte entre ( ) 1 704 451 144 1 224 827 540",
+    "ebe": "Excédent Brut d'Exploitation 2 173 591 470 1 965 087 854",
+    "total_actif": "TOTAL ACTIF 21 455 050 944 19 656 293 617 TOTAL PASSIF 21 455 050 944 19 656 293 617",
+    "total_passif": "TOTAL ACTIF 21 455 050 944 19 656 293 617 TOTAL PASSIF 21 455 050 944 19 656 293 617"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0802,
+    "croissance_activite": 0.1118,
+    "croissance_resultat": 0.3916,
+    "marge_ebe": 0.1022
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/sicable-ci-etats-financiers-syscohada-exercice-2025",
+   "titre": "SICABLE CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "CBIBF": {
+   "banque": false,
+   "pages_ocr": 40,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/coris-bank-international-bf-etats-financiers-exercice-2025",
+   "titre": "CORIS BANK INTERNATIONAL BF : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "CIEC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 302320,
+     "n1": 263294
+    },
+    "rn": {
+     "n": 13121,
+     "n1": 10555
+    },
+    "ebe": {
+     "n": 37161,
+     "n1": 30174
+    },
+    "total_actif": {
+     "n": 2018446,
+     "n1": 2019136
+    },
+    "total_passif": {
+     "n": 2018446,
+     "n1": 2019136
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'affaires (A+B+C+D)=XB 302 320 263 294 Flux de trésorerie provenant des activités opérationnelles (B+C) 43 912 41 129",
+    "rn": "Résultat net de l'exercice 13 121 10 555 Variation des prêts et avances consentis (160) 1",
+    "ebe": "Excédent brut d'exploitation 37 161 30 174 Flux de trésorerie provenant des capitaux étrangers F -5 295 -4 481",
+    "total_actif": "Total actif 2 018 446 2 019 136 Total passif 2 018 446 2 019 136",
+    "total_passif": "Total actif 2 018 446 2 019 136 Total passif 2 018 446 2 019 136"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0434,
+    "croissance_activite": 0.1482,
+    "croissance_resultat": 0.2431,
+    "marge_ebe": 0.1229
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/etats-financiers-syscohada-et-ifrs-exercice-2025-cie-ci",
+   "titre": "Etats financiers SYSCOHADA et IFRS - Exercice 2025 - CIE CI",
+   "lu_le": "2026-11-21"
+  },
+  "ETIT": {
+   "banque": true,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 2086073,
+     "n1": 1266559
+    },
+    "rn": {
+     "n": 45523493630,
+     "n1": 99708
+    },
+    "cp": {
+     "n": 1794802,
+     "n1": 1133230
+    },
+    "total_actif": {
+     "n": 7955172,
+     "n1": 17650776
+    },
+    "total_passif": {
+     "n": 7955172,
+     "n1": 17650776
+    }
+   },
+   "lignes_lues": {
+    "pnb": "Produit net bancaire 2 ,448,994 1 ,424,261 2 ,086,073 1 ,266,559 17% 12%",
+    "rn": "Résultat net consolidé 5 94,122 3 45,523 493,630 2 99,708",
+    "cp": "Total capitaux propres 2,863,523 1 ,597,846 1 ,794,802 1 ,133,230",
+    "total_actif": "Total Actif 34,487,211 1 9,243,865 2 7,955,172 17,650,776",
+    "total_passif": "Total Passif 34,487,211 1 9,243,865 2 7,955,172 17,650,776"
+   },
+   "statut": "a confirmer",
+   "controles_ok": [
+    "total actif = total passif"
+   ],
+   "problemes": [
+    "resultat net incoherent avec les capitaux propres",
+    "resultat net superieur au chiffre d'affaires / PNB"
+   ],
+   "ratios": {
+    "roe": 25364.0756,
+    "marge": 21822.5794,
+    "croissance_activite": 0.647,
+    "croissance_resultat": 456567.1152
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/eti-tg-etats-financiers-ifrs-exercice-2025",
+   "titre": "ETI TG : Etats financiers IFRS - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "FTSC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 32108628,
+     "n1": 30694517
+    },
+    "rn": {
+     "n": 65981,
+     "n1": 8595
+    },
+    "ebe": {
+     "n": 1501461,
+     "n1": 73316
+    },
+    "total_actif": {
+     "n": 9148981,
+     "n1": 1061747
+    },
+    "total_passif": {
+     "n": 9148981,
+     "n1": 1061747
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'affaires 32 108 628 30 694 517 1 414 111 5%",
+    "rn": "Immobilisations financières 1 714 596 1 437 244 Résultat net de l'exercice 4 65 981 1 8 595 275",
+    "ebe": "Excedent brut D'exploitation 1 501 461 4 73 316",
+    "total_actif": "TOTAL ACTIF 3 9 148 981 6 1 061 747 TOTAL PASSIF 3 9 148 981 6 1 061 747",
+    "total_passif": "TOTAL ACTIF 3 9 148 981 6 1 061 747 TOTAL PASSIF 3 9 148 981 6 1 061 747"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0021,
+    "croissance_activite": 0.0461,
+    "croissance_resultat": 6.6767,
+    "marge_ebe": 0.0468
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/filtisac-ci-etats-financiers-exercice-2025",
+   "titre": "FILTISAC CI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "LNBB": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/lnb-bn-etats-financiers-exercice-2025",
+   "titre": "LNB BN : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "NEIC": {
+   "banque": false,
+   "pages_ocr": 1,
+   "manquants": [
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {
+    "rn": {
+     "n": 2036626234,
+     "n1": 759371358
+    },
+    "ebe": {
+     "n": 4256280528,
+     "n1": 598801474
+    }
+   },
+   "lignes_lues": {
+    "rn": "RESULTAT NET (XG+XH+RO+RS) | | | 2 036 626 234] 759 371 358]",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION (XC + RK) | | > | 4 256 280 528 598 801 474"
+   },
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {
+    "croissance_resultat": 1.682
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/nei-ceda-ci-etats-financiers-syscohada-exercice-2025",
+   "titre": "NEI CEDA CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "NSBC": {
+   "banque": true,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 97819,
+     "n1": 112928
+    },
+    "rn": {
+     "n": 38112,
+     "n1": 40712
+    },
+    "cp": {
+     "n": 211371,
+     "n1": 233303
+    },
+    "charges_gen": {
+     "n": -49945,
+     "n1": -53554
+    },
+    "total_actif": {
+     "n": 2510429,
+     "n1": 3073062
+    },
+    "total_passif": {
+     "n": 2510429,
+     "n1": 3073062
+    }
+   },
+   "lignes_lues": {
+    "pnb": "Produit Net Bancaire 97 819 112 928",
+    "rn": "Résultat de l'exercice(+/-) 38 112 40 712",
+    "cp": "Comptes de régularisation 8 949 11 987 Capitaux propres et ressources assimilées 211 371 233 303",
+    "charges_gen": "Charges générales d'exploitation - 49 945 - 53 554",
+    "total_actif": "TOTAL DE L'ACTIF 2 510 429 3 073 062 Report à nouveau(+/-) 83 128 96 743",
+    "total_passif": "HORS BILAN TOTAL PASSIF 2 510 429 3 073 062"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.1803,
+    "marge": 0.3896,
+    "croissance_activite": -0.1338,
+    "croissance_resultat": -0.0639,
+    "coef_exploitation": 0.5106
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/nsia-banque-ci-etats-financiers-et-communique-exercice-2025",
+   "titre": "NSIA BANQUE CI : Etats financiers et Communiqué - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "NTLC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 233261162741,
+     "n1": 220113267165
+    },
+    "rn": {
+     "n": 18426899479,
+     "n1": 8149967087
+    },
+    "ebe": {
+     "n": 46171248459,
+     "n1": 3543421067
+    }
+   },
+   "lignes_lues": {
+    "ca": "Sous total Chiffre d'affaires 233,261,162,741 220,113,267,165 Autres achats et - 28,938,539,464 - 2 9,049,885,199",
+    "rn": "Ecarts de conversion Actif 49,431,591 209,249,250 Résultat net de l'exercice 18,426,899,479 1 8,149,967,087",
+    "ebe": "Excédent Brut d'Exploitation 46,171,248,459 4 3,543,421,067"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.079,
+    "croissance_activite": 0.0597,
+    "croissance_resultat": 1.261,
+    "marge_ebe": 0.1979
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/nestle-ci-etats-financiers-exercice-2025",
+   "titre": "NESTLE CI - Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "ORAC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/orange-ci-etats-financiers-approuves-exercice-2025",
+   "titre": "ORANGE CI : Etats financiers approuvés - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "ORGT": {
+   "banque": true,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "pnb": {
+     "n": 186609,
+     "n1": 195436
+    },
+    "rn": {
+     "n": -8036,
+     "n1": 175931
+    },
+    "cp": {
+     "n": 69479,
+     "n1": 54806
+    },
+    "charges_gen": {
+     "n": -61869,
+     "n1": -81920
+    },
+    "cout_risque": {
+     "n": -6971,
+     "n1": -69056
+    },
+    "total_actif": {
+     "n": 4014192,
+     "n1": 3961395
+    }
+   },
+   "lignes_lues": {
+    "pnb": "Produit net Bancaire 186 609 195 436",
+    "rn": "Résultat de l’exercice -8 036 175 931",
+    "cp": "Sous-Total Capitaux Propres part du groupe 69 479 54 806",
+    "charges_gen": "Autres charges générales d'exploitation -61 869 -81 920",
+    "cout_risque": "Coût du risque -6 971 -69 056",
+    "total_actif": "TOTAL DE L'ACTIF 4 014 192 3 961 395"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": -0.1157,
+    "marge": -0.0431,
+    "croissance_activite": -0.0452,
+    "croissance_resultat": -1.0457,
+    "coef_exploitation": 0.3315,
+    "cout_risque_pnb": 0.0374
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/oragroup-tg-etats-financiers-exercice-2025",
+   "titre": "ORAGROUP TG : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "PALC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 197629996,
+     "n1": 172182502
+    },
+    "rn": {
+     "n": 15508655,
+     "n1": 15861643
+    },
+    "ebe": {
+     "n": 33027296,
+     "n1": 37115862
+    },
+    "total_actif": {
+     "n": 199116293,
+     "n1": 202603319
+    },
+    "total_passif": {
+     "n": 199116293,
+     "n1": 202603319
+    }
+   },
+   "lignes_lues": {
+    "ca": "Actifs circulants HAO 0 0 CHIFFRE D'AFFAIRES 197 629 996 172 182 502",
+    "rn": "- Dividendes versés -7 930 821 -9 675 923 Résultat net de l'exercice 15 508 655 15 861 643",
+    "ebe": "Passif circulant 41 633 570 41 473 506 EXCEDENT BRUT D'EXPLOITATION 33 027 296 37 115 862",
+    "total_actif": "TOTAL ACTIF 199 116 293 202 603 319 Achats de matières premières et fournitures liées -85 706 070 -55 737 873",
+    "total_passif": "TOTAL PASSIF 199 116 293 202 603 319 Dotations aux amortissements, aux provisions et dépré. -19 109 395 -18 179 127"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0785,
+    "croissance_activite": 0.1478,
+    "croissance_resultat": -0.0223,
+    "marge_ebe": 0.1671
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/palm-ci-etats-financiers-exercice-2025",
+   "titre": "PALM CI - Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "PRSC": {
+   "banque": false,
+   "pages_ocr": 4,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/tractafric-motors-ci-etats-financiers-exercice-2025",
+   "titre": "TRACTAFRIC MOTORS CI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SAFC": {
+   "banque": true,
+   "pages_ocr": 0,
+   "manquants": [
+    "resultat net"
+   ],
+   "chiffres": {
+    "pnb": {
+     "n": 5735,
+     "n1": 3980
+    },
+    "cp": {
+     "n": 5916,
+     "n1": 5215
+    },
+    "charges_gen": {
+     "n": -4103,
+     "n1": -3525
+    },
+    "total_actif": {
+     "n": 9555,
+     "n1": 4195
+    },
+    "total_passif": {
+     "n": 9555,
+     "n1": 74195
+    }
+   },
+   "lignes_lues": {
+    "pnb": "10 PRODUIT NET BANCAIRE 5 735 3 980",
+    "cp": "9 COMPTES DE REGULARISATION 4 410 3 818 9 CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 5 916 5 215",
+    "charges_gen": "12 CHARGES GENERALES D'EXPLOITATION - 4 103 - 3 525",
+    "total_actif": "TOTAL ACTIF 7 9 555 7 4 195 TOTAL PASSIF 7 9 555 74 195",
+    "total_passif": "TOTAL ACTIF 7 9 555 7 4 195 TOTAL PASSIF 7 9 555 74 195"
+   },
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable"
+   ],
+   "ratios": {
+    "croissance_activite": 0.441,
+    "coef_exploitation": 0.7154
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/safca-ci-etats-financiers-exercice-2025-annule-et-remplace-le-precedent",
+   "titre": "SAFCA CI : Etats financiers - Exercice 2025 - (Annule et remplace le précédent)",
+   "lu_le": "2026-11-21"
+  },
+  "SCRC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 80568589,
+     "n1": 7219127
+    },
+    "rn": {
+     "n": -7953932,
+     "n1": 2473760
+    },
+    "total_actif": {
+     "n": 156426278,
+     "n1": 133450356
+    },
+    "total_passif": {
+     "n": 156426278,
+     "n1": 133450356
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'affaires 80 568 589 8 7 219 127",
+    "rn": "Résultat net - 7 953 932 2 473 760",
+    "total_actif": "Total actif 156 426 278 133 450 356",
+    "total_passif": "Total passif 156 426 278 133 450 356 Gain / perte - Actuarielle sur engagement de retraite 52 753 -45 496"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": -0.0987,
+    "croissance_activite": 10.1604,
+    "croissance_resultat": -4.2153
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/sucrivoire-ci-etats-financiers-exercice-2025-annule-et-remplace-le-precedent",
+   "titre": "SUCRIVOIRE CI : Etats financiers - Exercice 2025 - (Annule et remplace le précédent)",
+   "lu_le": "2026-11-21"
+  },
+  "SDCC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/sodeci-etats-financiers-exercice-2025",
+   "titre": "SODECI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SDSC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [],
+   "chiffres": {
+    "ca": {
+     "n": 10074573973,
+     "n1": 9282599196
+    },
+    "rn": {
+     "n": 179293282,
+     "n1": 376956818
+    },
+    "cp": {
+     "n": 2526541669,
+     "n1": 3272424840
+    },
+    "dettes_fin": {
+     "n": 4164342386,
+     "n1": 550914998
+    },
+    "ebe": {
+     "n": 1441984871,
+     "n1": 1473699844
+    },
+    "total_actif": {
+     "n": 14611080094,
+     "n1": 14023255232
+    },
+    "total_passif": {
+     "n": 14611080094,
+     "n1": 14023255232
+    }
+   },
+   "lignes_lues": {
+    "ca": "XB CHIFFRE D'AFFAIRES (A + B + C + D) 10 074 573 973 9 282 599 196",
+    "rn": "XI RESULTAT NET (XG+XH+RQ+RS) 179 293 282 376 956 818",
+    "cp": "CP TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 0 2 526 541 669 3 272 424 840",
+    "dettes_fin": "DD TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES 0 4 164 342 386 550 914 998",
+    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 1 441 984 871 1 473 699 844",
+    "total_actif": "BZ TOTAL GENERAL 0 25 414 101 911 10 803 021 818 14 611 080 094 14 023 255 232",
+    "total_passif": "DZ TOTAL GENERAL 0 14 611 080 094 14 023 255 232"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "roe": 0.071,
+    "marge": 0.0178,
+    "croissance_activite": 0.0853,
+    "croissance_resultat": -0.5244,
+    "dette_cp": 1.6482,
+    "marge_ebe": 0.1431
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/erium-ci-etats-financiers-exercice-2025",
+   "titre": "ERIUM CI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SHEC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 600707830161,
+     "n1": 4270581013
+    },
+    "rn": {
+     "n": 6028125958,
+     "n1": 5353993378
+    },
+    "ebe": {
+     "n": 17165524243,
+     "n1": 14483800832
+    },
+    "total_actif": {
+     "n": 193561278972,
+     "n1": 207064380555
+    },
+    "total_passif": {
+     "n": 193561278972,
+     "n1": 207064380555
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'Affaires 604 978 411 174 600 707 830 161 4 270 581 013 1%",
+    "rn": "Réserve légale Résultat net de l'exercice 6 028 125 958 5 353 993 378",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION 17 165 524 243 14 483 800 832",
+    "total_actif": "TOTAL ACTIF 193 561 278 972 207 064 380 555 TOTAL PASSIF 193 561 278 972 207 064 380 555",
+    "total_passif": "TOTAL ACTIF 193 561 278 972 207 064 380 555 TOTAL PASSIF 193 561 278 972 207 064 380 555"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.01,
+    "croissance_activite": 139.6619,
+    "croissance_resultat": 0.1259,
+    "marge_ebe": 0.0286
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/vivo-energy-etats-financiers-exercice-2025",
+   "titre": "VIVO ENERGY : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SLBC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/solibra-ci-etats-financiers-exercice-2025",
+   "titre": "SOLIBRA CI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SMBC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 206740,
+     "n1": 229061
+    },
+    "rn": {
+     "n": 13075,
+     "n1": 8698
+    },
+    "ebe": {
+     "n": 18480,
+     "n1": 13030
+    },
+    "total_actif": {
+     "n": 180003,
+     "n1": 163113
+    },
+    "total_passif": {
+     "n": 180003,
+     "n1": 163113
+    }
+   },
+   "lignes_lues": {
+    "ca": "CHIFFRE D'AFFAIRES 206 740 229 061",
+    "rn": "Résultat net de l'exercice 13 075 8 698",
+    "ebe": "TOTAL ACTIF 180 003 163 113 EXCEDENT BRUT D'EXPLOITATION 18 480 13 030",
+    "total_actif": "TOTAL ACTIF 180 003 163 113 EXCEDENT BRUT D'EXPLOITATION 18 480 13 030",
+    "total_passif": "TOTAL PASSIF 180 003 163 113"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0632,
+    "croissance_activite": -0.0974,
+    "croissance_resultat": 0.5032,
+    "marge_ebe": 0.0894
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/smb-ci-etats-financiers-et-projet-daffectation-du-resultat-exercice-2025",
+   "titre": "SMB CI : Etats financiers et projet d'affectation du résultat - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SNTS": {
+   "banque": false,
+   "pages_ocr": 3,
+   "manquants": [
+    "resultat net",
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {},
+   "lignes_lues": {},
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "resultat net introuvable",
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {},
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/sonatel-sn-etats-financiers-et-attestation-des-commissaires-aux-comptes-exercice-2025",
+   "titre": "SONATEL SN : Etats financiers et attestation des Commissaires Aux Comptes – Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SOGC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {
+    "rn": {
+     "n": 12492623,
+     "n1": 13110790
+    },
+    "ebe": {
+     "n": 23541209,
+     "n1": 24974609
+    }
+   },
+   "lignes_lues": {
+    "rn": "Autres réserves disponibles Résultat net de l'exercice 12 492 623 13 110 790",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION 23 541 209 24 974 609"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "croissance_resultat": -0.0471
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/sogb-ci-etats-financiers-syscohada-exercice-2025",
+   "titre": "SOGB CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "SPHC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 340830548704,
+     "n1": 279437727425
+    },
+    "rn": {
+     "n": 24972070150,
+     "n1": 18790217905
+    },
+    "ebe": {
+     "n": 49671937893,
+     "n1": 40098245829
+    },
+    "total_actif": {
+     "n": 225842735644,
+     "n1": 222208164550
+    },
+    "total_passif": {
+     "n": 225842735644,
+     "n1": 222208164550
+    }
+   },
+   "lignes_lues": {
+    "ca": "Actifs circulants HAO CHIFFRE D'AFFAIRES 340 830 548 704 279 437 727 425",
+    "rn": "- Dividendes versés -9 405 345 840 -1 840 176 360 Résultat net de l'exercice 24 972 070 150 18 790 217 905",
+    "ebe": "Passif circulant 36 225 398 864 32 917 169 803 EXCEDENT BRUT D'EXPLOITATION 49 671 937 893 40 098 245 829",
+    "total_actif": "TOTAL ACTIF 225 842 735 644 222 208 164 550 Achats de matières premières et fournitures liées -185 052 282 570 -166 266 403 509",
+    "total_passif": "TOTAL PASSIF 225 842 735 644 222 208 164 550 Dotations aux amortissements, aux provisions et dépréciations -12 209 443 538 -11 200 976 582"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0733,
+    "croissance_activite": 0.2197,
+    "croissance_resultat": 0.329,
+    "marge_ebe": 0.1457
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/saph-ci-etats-financiers-syscohada-exercice-2025",
+   "titre": "SAPH CI - Etats financiers SYSCOHADA - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "STAC": {
+   "banque": false,
+   "pages_ocr": 2,
+   "manquants": [
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {
+    "rn": {
+     "n": -96558,
+     "n1": -348195
+    },
+    "total_actif": {
+     "n": 5446509,
+     "n1": 7378386
+    },
+    "total_passif": {
+     "n": 5446509,
+     "n1": 7378386
+    }
+   },
+   "lignes_lues": {
+    "rn": "Résultat Net de l'Exercice (a) -96 558 -348 195",
+    "total_actif": "Total Actif 5 446 509 7378 386",
+    "total_passif": "Total Passif 5 446 509 7 378 386"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif",
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "croissance_resultat": 0.15,
+    "perte_precedente": 1
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/setao-ci-etats-financiers-exercice-2025",
+   "titre": "SETAO CI : Etats financiers - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "TTLC": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres"
+   ],
+   "chiffres": {
+    "ca": {
+     "n": 588709,
+     "n1": 621042
+    },
+    "rn": {
+     "n": 9087,
+     "n1": 9374
+    },
+    "ebe": {
+     "n": 22347,
+     "n1": 20029
+    },
+    "total_actif": {
+     "n": 188472,
+     "n1": 191526
+    },
+    "total_passif": {
+     "n": 188472,
+     "n1": 191526
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'affaires 588 709 621 042",
+    "rn": "Immobilisations corporelles 61 130 60 406 Résultat net de l'exercice 9 087 9 374",
+    "ebe": "Excédent brut d'exploitation 22 347 20 029 12%",
+    "total_actif": "Total Actif 188 472 191 526 Total Passif 188 472 191 526",
+    "total_passif": "Total Actif 188 472 191 526 Total Passif 188 472 191 526"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique a deux endroits"
+   ],
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0154,
+    "croissance_activite": -0.0521,
+    "croissance_resultat": -0.0306,
+    "marge_ebe": 0.038
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/totalenergies-marketing-ci-etats-financiers-syscohada-exercice-2025",
+   "titre": "TOTALENERGIES MARKETING CI : Etats financiers SYSCOHADA - Exercice 2025",
+   "lu_le": "2026-11-21"
+  },
+  "TTLS": {
+   "banque": false,
+   "pages_ocr": 0,
+   "manquants": [
+    "capitaux propres",
+    "chiffre d'affaires"
+   ],
+   "chiffres": {
+    "rn": {
+     "n": 6146527,
+     "n1": 7090811
+    }
+   },
+   "lignes_lues": {
+    "rn": "RESULTAT NET 6 146 527 7 090 811"
+   },
+   "statut": "a confirmer",
+   "controles_ok": [],
+   "problemes": [
+    "capitaux propres non publie ou non lu",
+    "chiffre d'affaires non publie ou non lu"
+   ],
+   "ratios": {
+    "croissance_resultat": -0.1332
+   },
+   "exercice": 2025,
+   "url": "https://www.brvm.org/fr/totalenergies-marketing-sn-etats-financiers-syscohada-exercice-2025",
+   "titre": "TOTALENERGIES MARKETING SN : Etats financiers SYSCOHADA - Exercice 2025",
    "lu_le": "2026-11-21"
   }
  },
- "maj": "2026-11-21T18:58Z"
+ "maj": "2026-11-21T19:07Z"
 }
