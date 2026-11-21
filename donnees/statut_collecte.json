@@ -1,12 +1,10 @@
 {
- "date": "2026-11-21",
- "heure": "18:31",
+ "date": "2026-11-20",
+ "heure": "18:46",
  "ok": true,
- "nb_actions": 0,
+ "nb_actions": 48,
  "a_confirmer": [],
- "alertes": [
-  "week-end : pas de seance"
- ],
+ "alertes": [],
  "erreurs": [],
- "source": null
+ "source": "https://www.brvm.org/fr/cours-actions/0"
 }
