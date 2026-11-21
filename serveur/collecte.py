@@ -87,6 +87,9 @@ def extraire(html):
                 corr[cle] = c
                 prises.add(c)
                 break
+    if "--test" in sys.argv:
+        print("Colonnes de la page :", list(brut.columns))
+        print("Correspondance :", {k: str(v) for k, v in corr.items()})
     if "symbole" not in corr or "cloture" not in corr:
         raise ValueError(f"colonnes indispensables introuvables : {list(brut.columns)}")
     df = pd.DataFrame({"symbole": brut[corr["symbole"]].astype(str).str.strip().str.upper()})
