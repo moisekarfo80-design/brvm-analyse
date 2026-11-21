@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1747C9">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BRVM Analyse">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icone-192.png">
+<link rel="apple-touch-icon" href="icone-192.png">
+<title>BRVM Analyse</title>
+<style>
+:root{--bleu:#1747C9;--bleu2:#E6EDFC;--encre:#0E1B3D;--gris:#55607A;--fond:#F2F5FB;--ligne:#DCE3F0;--or:#C98A0B;--rouge:#C0362C;--vert:#138A4B;--orange:#9A5B00;--orange2:#FFF3DC}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html,body{margin:0;background:var(--fond);color:var(--encre);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+button,input,select{font:inherit;color:inherit}
+.app{max-width:520px;margin:0 auto;min-height:100vh;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;z-index:5;background:var(--bleu);color:#fff;padding:calc(12px + env(safe-area-inset-top)) 18px 14px;display:flex;align-items:center;gap:12px}
+header h1{font-size:18px;margin:0;flex:1;letter-spacing:-.2px}
+header small{display:block;font-weight:400;opacity:.85;font-size:12px}
+.cloche{position:relative;width:44px;height:44px;border:0;border-radius:14px;background:rgba(255,255,255,.16);color:#fff;font-size:20px;cursor:pointer}
+.pastille{position:absolute;top:6px;right:6px;min-width:18px;height:18px;border-radius:9px;background:#FFB020;color:var(--encre);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 4px}
+main{padding:16px}
+.carte{background:#fff;border:1px solid var(--ligne);border-radius:18px;padding:16px;margin-bottom:14px;animation:entree .35s ease-out both}
+@keyframes entree{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+h2{font-size:17px;margin:0 0 10px}
+h3{font-size:15px;margin:0 0 6px}
+.gris{color:var(--gris);font-size:13px}
+.ligne{display:flex;align-items:center;gap:10px}
+.entre{justify-content:space-between}
+.meteo{background:linear-gradient(135deg,#1747C9,#3E6BE6);color:#fff;border:0}
+.meteo .gros{font-size:44px;line-height:1}
+.meteo .gris{color:rgba(255,255,255,.85)}
+.barres{display:flex;gap:4px}
+.barres i{width:22px;height:8px;border-radius:4px;background:var(--ligne)}
+.barres i.on{background:var(--bleu)}
+.seg{display:flex;gap:4px;padding:4px;border-radius:14px;background:var(--bleu2);margin-bottom:12px}
+.seg button{flex:1;min-height:44px;border:0;border-radius:11px;background:transparent;font-weight:600;color:var(--bleu);cursor:pointer;font-size:14px}
+.seg button.on{background:#fff;box-shadow:0 1px 4px rgba(14,27,61,.12)}
+.action{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px solid var(--ligne);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left}
+.action:last-child{border-bottom:0}
+.rang{width:28px;height:28px;border-radius:9px;background:var(--bleu2);color:var(--bleu);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.action .nom{font-weight:600}
+.action .info{flex:1;min-width:0}
+.action .info .gris{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.etoiles{color:var(--or);letter-spacing:1px;font-size:14px;white-space:nowrap}
+.etoiles .vide{color:#D6DCE8}
+.note{font-weight:700;font-size:15px;text-align:right;min-width:52px}
+.fleche{font-size:12px;font-weight:600}
+.haut{color:var(--vert)}.bas{color:var(--rouge)}
+.puce{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:8px;background:var(--orange2);color:var(--orange)}
+.bouton{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;border:0;border-radius:14px;background:var(--bleu);color:#fff;font-weight:700;cursor:pointer;font-size:15px;text-decoration:none}
+.bouton.second{background:#fff;color:var(--bleu);border:1px solid var(--ligne)}
+.champ{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.champ label{font-size:13px;font-weight:600}
+.champ{min-width:0}
+.champ input,.champ select{width:100%;min-width:0;min-height:48px;border:1px solid var(--ligne);border-radius:12px;padding:0 12px;background:#fff;font-size:16px}
+.raison{display:flex;gap:10px;padding:8px 0;align-items:flex-start}
+.raison b{width:24px;height:24px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px}
+.r-plus b{background:#E3F5EA;color:var(--vert)}.r-moins b{background:#FBE6E4;color:var(--rouge)}.r-attention b{background:var(--orange2);color:var(--orange)}.r-neutre b{background:var(--bleu2);color:var(--bleu)}
+.grille3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.case{background:var(--fond);border-radius:14px;padding:10px;text-align:center}
+.case .val{font-weight:700;font-size:18px}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:6;background:#fff;border-top:1px solid var(--ligne);padding-bottom:env(safe-area-inset-bottom)}
+nav div{max-width:520px;margin:0 auto;display:flex}
+nav button{flex:1;min-height:62px;border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11px;font-weight:600;color:var(--gris);cursor:pointer}
+nav button span{font-size:21px;line-height:1}
+nav button.on{color:var(--bleu)}
+.feuille{position:fixed;inset:0;z-index:20;background:rgba(14,27,61,.45);display:flex;align-items:flex-end;justify-content:center;animation:fondu .2s both}
+.feuille>div{background:var(--fond);width:100%;max-width:520px;max-height:92vh;overflow:auto;border-radius:24px 24px 0 0;padding:18px 16px calc(24px + env(safe-area-inset-bottom));animation:monte .3s cubic-bezier(.2,.8,.2,1) both}
+@keyframes fondu{from{opacity:0}}@keyframes monte{from{transform:translateY(40px);opacity:0}}
+.fermer{width:44px;height:44px;border:0;border-radius:14px;background:#fff;font-size:20px;cursor:pointer}
+.msg{display:flex;gap:12px;align-items:flex-start}
+.msg .ic{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.m-alerte .ic{background:var(--orange2)}.m-info .ic{background:var(--bleu2)}.m-faire .ic{background:var(--bleu);color:#fff}
+.vide-etat{text-align:center;padding:24px 8px;color:var(--gris)}
+.celeb{position:fixed;inset:0;z-index:30;background:#1A1235;display:flex;flex-direction:column;justify-content:flex-end}
+.celeb video,.celeb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.celeb .c-carte{position:relative;margin:16px;padding:18px;border-radius:22px;background:#fff;animation:monte .5s cubic-bezier(.2,.8,.2,1) 1.7s both}
+.celeb img{display:none}
+.hors{background:var(--orange2);color:var(--orange);font-size:13px;font-weight:600;padding:8px 16px;text-align:center}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.celeb video{display:none}.celeb img{display:block}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>BRVM Analyse<small id="sousTitre">Chargement…</small></h1>
+    <button class="cloche" id="cloche" aria-label="Messages">🔔<span class="pastille" id="pastille" hidden></span></button>
+  </header>
+  <div class="hors" id="hors" hidden>Hors connexion : derniers résultats enregistrés</div>
+  <main id="ecran"></main>
+</div>
+<nav><div id="nav"></div></nav>
+<div id="couche"></div>
+
+<script>
+"use strict";
+const FRAIS_DEFAUT = { courtage: 1.0, tva: 18, brvm: 0.3, conservation: 0.5, tenue: 8000, sgi: "SA2IF" };
+const ONGLETS = [["accueil", "🏠", "Accueil"], ["classement", "🏆", "Classement"], ["investir", "💸", "Investir"], ["portefeuille", "💼", "Portefeuille"]];
+const METEO = {
+  soleil: ["☀️", "Bourse bon marché", "Bon moment pour investir : tu peux placer toute la somme prévue."],
+  nuageux: ["🌥️", "Bourse dans la normale", "Investis 80 % de ta somme et garde 20 % en réserve."],
+  pluie: ["🌧️", "Bourse chère", "Investis doucement : moitié en actions, moitié en réserve."]
+};
+const H = { lt: "Long terme", mt: "Moyen terme", ct: "Court terme" };
+let D = null, ecran = "accueil", horizon = "lt", recherche = "";
+
+// ---------- stockage local (le portefeuille ne quitte jamais le telephone)
+const lire = (k, d) => { try { const v = localStorage.getItem("brvm." + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } };
+const ecrire = (k, v) => { try { localStorage.setItem("brvm." + k, JSON.stringify(v)); } catch (e) {} };
+
+// ---------- outils
+const fcfa = (x) => x == null ? "—" : Math.round(x).toLocaleString("fr-FR").replace(/ | /g, " ") + " FCFA";
+const nb = (x, d = 1) => x == null ? "—" : x.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const dateFr = (iso) => iso ? new Date(iso.slice(0, 10) + "T12:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }) : "—";
+const action = (s) => D.actions.find((a) => a.s === s);
+const etoiles = (n) => n ? `<span class="etoiles" aria-label="${n} étoiles sur 5">${"★".repeat(n)}<span class="vide">${"★".repeat(5 - n)}</span></span>` : `<span class="gris">non noté</span>`;
+const fleche = (v) => v == null ? "" : `<span class="fleche ${v > 0.4 ? "haut" : v < -0.4 ? "bas" : "gris"}">${v > 0.4 ? "▲" : v < -0.4 ? "▼" : "="} ${v > 0 ? "+" : ""}${nb(v, 0)} en 1 mois</span>`;
+const barres = (f) => { const n = f >= 80 ? 4 : f >= 60 ? 3 : f >= 35 ? 2 : 1; return `<span class="barres" aria-label="fiabilité ${n} sur 4">${[1, 2, 3, 4].map((i) => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`; };
+const fraisOrdre = (m) => { const f = lire("frais", FRAIS_DEFAUT); return m * (f.courtage * (1 + f.tva / 100) + f.brvm) / 100; };
+
+// ---------- chargement des donnees (reseau d'abord, sinon derniere copie)
+async function charger() {
+  try {
+    const r = await fetch("data/resultats.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    D = await r.json();
+    ecrire("cache", D);
+    document.getElementById("hors").hidden = true;
+  } catch (e) {
+    D = lire("cache", null);
+    document.getElementById("hors").hidden = !D;
+  }
+  if (!D) { document.getElementById("ecran").innerHTML = `<div class="carte vide-etat">Impossible de charger les données. Vérifie ta connexion puis rouvre l'application.</div>`; return; }
+  const vus = lire("vus", []);
+  const nouveaux = D.messages.filter((m) => !vus.includes(m.titre + m.texte)).length;
+  const p = document.getElementById("pastille"); p.hidden = !nouveaux; p.textContent = nouveaux;
+  document.getElementById("sousTitre").textContent = "Cours du " + dateFr(D.date_cours);
+  if (!lire("fiabVue", "") || lire("fiabVue", "") !== D.maj) { ecrire("fiabVue", D.maj); toastFiabilite(); }
+  rendre();
+}
+
+function toastFiabilite() {
+  const alerte = D.messages.find((m) => m.type === "alerte");
+  const t = document.createElement("div");
+  t.className = "carte";
+  t.style.cssText = "position:fixed;left:12px;right:12px;top:calc(70px + env(safe-area-inset-top));z-index:15;max-width:496px;margin:0 auto;box-shadow:0 10px 30px rgba(14,27,61,.2)";
+  t.innerHTML = `<div class="ligne entre"><b>Mise à jour : fiabilité ${D.fiabilite} %</b>${barres(D.fiabilite)}</div><div class="gris">${esc(alerte ? alerte.texte : "Données du " + dateFr(D.date_cours) + ". Notes encore provisoires (bilans pas encore lus).")}</div>`;
+  document.body.appendChild(t);
+  t.onclick = () => t.remove();
+  setTimeout(() => t.remove(), 6000);
+}
+
+// ---------- ecrans
+function rendre() {
+  document.getElementById("nav").innerHTML = ONGLETS.map(([id, ic, nom]) => `<button class="${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}"><span>${ic}</span>${nom}</button>`).join("");
+  const e = document.getElementById("ecran");
+  e.innerHTML = ({ accueil, classement, investir, portefeuille })[ecran]();
+  window.scrollTo(0, 0);
+}
+
+function ligneAction(a, i, h) {
+  const n = a.notes ? a.notes[h] : null;
+  return `<button class="action" data-fiche="${a.s}">
+    <span class="rang">${i}</span>
+    <span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${fcfa(a.cours)} · ${esc(a.secteur)}</div>${(a.drapeaux || []).length ? `<span class="puce">⚠ ${esc(a.drapeaux[0])}</span>` : ""}</span>
+    <span style="text-align:right">${etoiles(a.etoiles && a.etoiles[h])}<div class="note">${n == null ? "—" : nb(n, 0)}<span class="gris">/100</span></div>${fleche(a.fleches && a.fleches[h])}</span>
+  </button>`;
+}
+
+function accueil() {
+  const m = METEO[D.meteo.code];
+  const top = D.portefeuilles.lt.slice(0, 3).map(action);
+  const alerte = D.messages.find((x) => x.type !== "info");
+  return `
+  <div class="carte meteo">
+    <div class="ligne"><span class="gros">${m[0]}</span><div><h2 style="margin:0">${m[1]}</h2><div class="gris">PER moyen ${nb(D.marche.per)} · rendement ${nb(D.marche.rendement)} %</div></div></div>
+    <p style="margin:12px 0 0">${m[2]}</p>
+  </div>
+  <div class="carte">
+    <div class="ligne entre"><h3 style="margin:0">Fiabilité de l'analyse</h3>${barres(D.fiabilite)}</div>
+    <div class="gris" style="margin-top:6px">${D.fiabilite} % · mise à jour le ${dateFr(D.maj)}. Les notes sont provisoires tant que les bilans ne sont pas lus.</div>
+    ${alerte ? `<div class="puce" style="margin-top:10px">⚠ ${esc(alerte.titre)}</div>` : ""}
+  </div>
+  <div class="carte">
+    <div class="ligne entre"><h2 style="margin:0">Top long terme</h2><button class="bouton second" style="width:auto;min-height:40px;padding:0 12px" data-aller="classement">Tout voir</button></div>
+    ${top.map((a, i) => ligneAction(a, i + 1, "lt")).join("")}
+  </div>
+  <div class="carte">
+    <h3>Le savais-tu ?</h3>
+    <p style="margin:0" class="gris">Le <b>PER</b> dit combien d'années de bénéfices tu paies en achetant une action. Plus il est bas, moins l'action est chère. Le <b>rendement</b> est ce que le dividende te rapporte chaque année, en pourcentage du prix.</p>
+  </div>`;
+}
+
+function classement() {
+  const hz = D.horizons[horizon];
+  const q = recherche.trim().toLowerCase();
+  const liste = D.classements[horizon].map(action).filter((a) => !q || a.nom.toLowerCase().includes(q) || a.s.toLowerCase().includes(q));
+  const exclues = D.actions.filter((a) => !D.classements[horizon].includes(a.s));
+  return `
+  <div class="seg" role="tablist">${Object.keys(H).map((h) => `<button role="tab" class="${h === horizon ? "on" : ""}" data-horizon="${h}">${H[h]}</button>`).join("")}</div>
+  <div class="carte">
+    <div class="gris">${esc(hz.duree)} · critères mesurés : ${hz.mesure} points sur 100. Pas encore mesurés : ${Object.entries(hz.manque).map(([k, v]) => esc(k) + " (" + v + ")").join(", ")}.</div>
+    ${horizon === "ct" ? `<div class="puce" style="margin-top:8px">⚠ Le court terme suit la hausse récente : c'est le plus risqué.</div>` : ""}
+  </div>
+  <div class="champ"><input id="cherche" type="search" placeholder="Chercher une action (ex. Sonatel)" value="${esc(recherche)}" aria-label="Chercher une action"></div>
+  <div class="carte" style="padding:4px 12px">${liste.map((a) => ligneAction(a, D.classements[horizon].indexOf(a.s) + 1, horizon)).join("") || `<div class="vide-etat">Aucune action trouvée.</div>`}</div>
+  ${exclues.length && !q ? `<div class="gris" style="padding:0 4px 8px">Non classées : ${exclues.map((a) => esc(a.nom) + " (" + esc((a.drapeaux || ["données manquantes"])[0]) + ")").join(", ")}.</div>` : ""}`;
+}
+
+function fiche(s) {
+  const a = action(s);
+  const mes = lire("portefeuille", []).find((p) => p.s === s);
+  ouvrir(`
+    <div class="ligne entre" style="margin-bottom:12px"><div><h2 style="margin:0">${esc(a.nom)}</h2><div class="gris">${esc(a.s)} · ${esc(a.secteur)} · ${esc(a.pays)}</div></div><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
+    <div class="carte"><div class="ligne entre"><span style="font-size:26px;font-weight:700">${fcfa(a.cours)}</span>${a.var_jour != null ? `<span class="fleche ${a.var_jour >= 0 ? "haut" : "bas"}">${a.var_jour >= 0 ? "▲ +" : "▼ "}${nb(a.var_jour, 2)} % aujourd'hui</span>` : ""}</div>
+      <div class="grille3" style="margin-top:12px"><div class="case"><div class="gris">Rendement</div><div class="val">${a.rendement != null ? nb(a.rendement) + " %" : "—"}</div></div><div class="case"><div class="gris">PER</div><div class="val">${a.per != null ? nb(a.per) : "—"}</div></div><div class="case"><div class="gris">Sur 1 an</div><div class="val">${a.tendance != null ? (a.tendance > 0 ? "+" : "") + nb(a.tendance, 0) + " %" : "—"}</div></div></div>
+    </div>
+    ${a.notes ? `<div class="carte"><h3>Notes par horizon</h3>${Object.keys(H).map((h) => `<div class="ligne entre" style="padding:8px 0;border-bottom:1px solid var(--ligne)"><span><b>${H[h]}</b><div class="gris">${fleche(a.fleches && a.fleches[h]) || "pas encore d'historique"}</div></span><span style="text-align:right">${etoiles(a.etoiles && a.etoiles[h])}<div class="note">${a.notes[h] == null ? "—" : nb(a.notes[h], 0) + "/100"}</div></span></div>`).join("")}<div class="gris" style="margin-top:8px">Fiabilité ${a.fiabilite.lt} % : notes provisoires.</div></div>` : ""}
+    <div class="carte"><h3>Pourquoi cette note ?</h3>${(a.raisons || []).map(([t, txt]) => `<div class="raison r-${t}"><b>${{ plus: "+", moins: "−", attention: "!", neutre: "•" }[t]}</b><span>${esc(txt)}</span></div>`).join("")}${(a.drapeaux || []).map((d) => `<div class="raison r-attention"><b>!</b><span>${esc(d)}</span></div>`).join("")}</div>
+    ${a.dividende ? `<div class="carte"><h3>Dernier dividende</h3><div>${fcfa(a.dividende)} par action, versé le ${dateFr(a.date_dividende)}</div></div>` : ""}
+    <button class="bouton" data-ajouter="${a.s}">${mes ? "Modifier dans mon portefeuille" : "Ajouter à mon portefeuille"}</button>
+    <p class="gris" style="text-align:center">Aide à la décision, pas un conseil d'investissement.</p>`);
+}
+
+function investir() {
+  const montant = lire("mensuel", 20000);
+  const part = D.meteo.part_actions;
+  const enActions = montant * part;
+  const frais = lire("frais", FRAIS_DEFAUT);
+  const choix = D.portefeuilles.lt.map(action).filter((a) => a.cours && a.cours <= enActions);
+  const p = choix[0];
+  let propo = `<div class="vide-etat">Aucune des actions conseillées ne coûte moins de ${fcfa(enActions)}. Garde cet argent et achète le mois prochain avec deux mois d'argent.</div>`;
+  if (p) {
+    const qte = Math.floor(enActions / (p.cours * (1 + (frais.courtage * (1 + frais.tva / 100) + frais.brvm) / 100)));
+    const cout = qte * p.cours, fr = fraisOrdre(cout), pct = fr / cout * 100;
+    propo = `<div class="ligne entre"><span><b>${qte} × ${esc(p.nom)}</b><div class="gris">${fcfa(p.cours)} l'action · ${etoiles(p.etoiles.lt)}</div></span></div>
+      <div class="gris" style="margin-top:8px">Coût ${fcfa(cout)} + frais d'environ ${fcfa(fr)} (${nb(pct)} %).</div>
+      ${pct > 2 ? `<div class="puce" style="margin-top:8px">⚠ Frais supérieurs à 2 % : mieux vaut attendre et acheter avec deux mois d'argent.</div>` : ""}
+      ${choix.length > 1 ? `<div class="gris" style="margin-top:8px">Autres choix dans ton budget : ${choix.slice(1, 4).map((a) => esc(a.nom) + " (" + fcfa(a.cours) + ")").join(", ")}.</div>` : ""}`;
+  }
+  const serie = lire("mois", []);
+  return `
+  <div class="carte">
+    <h2>Mon investissement du mois</h2>
+    <div class="champ"><label for="mensuel">Somme mise de côté chaque mois</label><input id="mensuel" type="number" inputmode="numeric" min="0" step="1000" value="${montant}"></div>
+    <div class="ligne entre"><span>${METEO[D.meteo.code][0]} En actions (${Math.round(part * 100)} %)</span><b>${fcfa(enActions)}</b></div>
+    <div class="ligne entre" style="margin-top:4px"><span>🛟 En réserve</span><b>${fcfa(montant - enActions)}</b></div>
+  </div>
+  <div class="carte"><h3>Ce que je te propose ce mois-ci</h3>${propo}</div>
+  <div class="carte">
+    <h3>Portefeuille type long terme</h3>
+    <div class="gris" style="margin-bottom:6px">10 actions, 3 au plus par groupe, 5 banques au plus. Construis-le petit à petit, une ou deux actions par mois.</div>
+    ${D.portefeuilles.lt.map((s, i) => ligneAction(action(s), i + 1, "lt")).join("")}
+  </div>
+  <button class="bouton" data-mois>J'ai investi ce mois-ci ✓</button>
+  <p class="gris" style="text-align:center">${serie.length ? `Déjà ${serie.length} mois enregistré${serie.length > 1 ? "s" : ""}.` : "Touche le bouton après ton achat pour suivre ta régularité."}</p>`;
+}
+
+function portefeuille() {
+  const pf = lire("portefeuille", []);
+  const frais = lire("frais", FRAIS_DEFAUT);
+  let valeur = 0, achat = 0;
+  const lignes = pf.map((p) => {
+    const a = action(p.s) || { nom: p.s, cours: null };
+    const v = (a.cours || p.prix) * p.qte; valeur += v; achat += p.prix * p.qte;
+    const g = v - p.prix * p.qte;
+    const e = a.etoiles ? a.etoiles.lt : null;
+    return `<button class="action" data-fiche="${p.s}"><span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${p.qte} × ${fcfa(a.cours)} · acheté ${fcfa(p.prix)}</div>${e && e <= 2 ? `<span class="puce">⚠ Note long terme faible (${e}★) : à revoir au bilan annuel</span>` : ""}</span><span style="text-align:right"><b>${fcfa(v)}</b><div class="fleche ${g >= 0 ? "haut" : "bas"}">${g >= 0 ? "+" : ""}${fcfa(g)}</div></span></button>`;
+  }).join("");
+  const fixes = frais.tenue * (1 + frais.tva / 100) + valeur * frais.conservation * (1 + frais.tva / 100) / 100;
+  return `
+  <div class="carte">
+    <h2>Mon portefeuille</h2>
+    <div class="ligne entre"><span class="gris">Valeur actuelle</span><b style="font-size:22px">${fcfa(valeur)}</b></div>
+    <div class="ligne entre"><span class="gris">Gain ou perte</span><b class="${valeur - achat >= 0 ? "haut" : "bas"}">${valeur - achat >= 0 ? "+" : ""}${fcfa(valeur - achat)}</b></div>
+    ${pf.length ? `<div class="gris" style="margin-top:8px">Frais fixes ${esc(frais.sgi)} estimés : ${fcfa(fixes)} par an (${valeur ? nb(fixes / valeur * 100) : "—"} % du portefeuille)${valeur && fixes / valeur > 0.03 ? ". C'est beaucoup au début : cette part baisse vite quand le portefeuille grandit" : ""}.</div>` : ""}
+  </div>
+  <div class="carte" style="padding:4px 12px">${lignes || `<div class="vide-etat">Aucune action pour l'instant. Ouvre une action dans le classement et touche « Ajouter à mon portefeuille ».</div>`}</div>
+  <button class="bouton second" data-dividende style="margin-bottom:12px">💰 J'ai reçu un dividende</button>
+  <div class="carte">
+    <h3>Frais de ma SGI</h3>
+    <div class="gris" style="margin-bottom:10px">Par défaut : grille officielle SA2IF (maximums). Remplace par tes vrais chiffres si besoin.</div>
+    <div class="grille3">
+      <div class="champ"><label for="f-courtage">Courtage %</label><input id="f-courtage" data-frais="courtage" type="number" step="0.05" value="${frais.courtage}"></div>
+      <div class="champ"><label for="f-tva">TVA %</label><input id="f-tva" data-frais="tva" type="number" step="1" value="${frais.tva}"></div>
+      <div class="champ"><label for="f-tenue">Tenue /an</label><input id="f-tenue" data-frais="tenue" type="number" step="500" value="${frais.tenue}"></div>
+    </div>
+    <div class="gris">Le portefeuille est enregistré uniquement sur ce téléphone.</div>
+  </div>`;
+}
+
+// ---------- fenetres
+function ouvrir(html) {
+  const c = document.getElementById("couche");
+  c.innerHTML = `<div class="feuille" data-fond><div role="dialog" aria-modal="true">${html}</div></div>`;
+}
+function fermer() { document.getElementById("couche").innerHTML = ""; }
+
+function formulaireAjout(s) {
+  const pf = lire("portefeuille", []);
+  const p = pf.find((x) => x.s === s);
+  const a = action(s);
+  ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">${esc(a.nom)}</h2><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
+    <div class="champ"><label for="qte">Nombre d'actions</label><input id="qte" type="number" inputmode="numeric" min="0" value="${p ? p.qte : 1}"></div>
+    <div class="champ"><label for="prix">Prix d'achat moyen (FCFA)</label><input id="prix" type="number" inputmode="numeric" min="0" value="${p ? p.prix : a.cours}"></div>
+    <button class="bouton" data-enregistrer="${s}">Enregistrer</button>
+    ${p ? `<button class="bouton second" style="margin-top:10px" data-retirer="${s}">Retirer du portefeuille</button>` : ""}`);
+}
+
+function celebration(type, montant) {
+  const div = type === "dividende";
+  const serie = lire("mois", []);
+  document.getElementById("couche").innerHTML = `<div class="celeb" data-celeb>
+    <video src="celebration.mp4" autoplay muted playsinline></video><img src="celebration_fin.jpg" alt="">
+    <div class="c-carte">
+      <div class="ligne"><span style="font-size:30px">${div ? "💰" : "🔥"}</span><div><h2 style="margin:0">${div ? "Tu as reçu un dividende !" : "Investissement du mois fait !"}</h2><div class="gris">${div ? "De l'argent gagné sans rien vendre" : serie.length + " mois enregistré" + (serie.length > 1 ? "s" : "")}</div></div></div>
+      <div style="font-size:34px;font-weight:800;color:var(--vert);margin:10px 0">+${fcfa(montant)}</div>
+      <div class="gris" style="margin-bottom:12px">${div ? "Ajoute-le à ton investissement du mois prochain." : "La régularité compte plus que le bon moment pour acheter."}</div>
+      <button class="bouton" data-fermer>Continuer</button>
+    </div></div>`;
+}
+
+// ---------- interactions
+document.addEventListener("click", (ev) => {
+  const t = ev.target.closest("button,[data-fond]");
+  if (!t) return;
+  if (t.dataset.fond !== undefined && ev.target === t) return fermer();
+  if (t.dataset.onglet) { ecran = t.dataset.onglet; recherche = ""; return rendre(); }
+  if (t.dataset.aller) { ecran = t.dataset.aller; return rendre(); }
+  if (t.dataset.horizon) { horizon = t.dataset.horizon; return rendre(); }
+  if (t.dataset.fiche) return fiche(t.dataset.fiche);
+  if (t.dataset.fermer !== undefined) return fermer();
+  if (t.dataset.ajouter) return formulaireAjout(t.dataset.ajouter);
+  if (t.dataset.enregistrer) {
+    const s = t.dataset.enregistrer, qte = +document.getElementById("qte").value, prix = +document.getElementById("prix").value;
+    const pf = lire("portefeuille", []).filter((p) => p.s !== s);
+    if (qte > 0 && prix > 0) pf.push({ s, qte, prix });
+    ecrire("portefeuille", pf); fermer(); ecran = "portefeuille"; return rendre();
+  }
+  if (t.dataset.retirer) { ecrire("portefeuille", lire("portefeuille", []).filter((p) => p.s !== t.dataset.retirer)); fermer(); return rendre(); }
+  if (t.dataset.mois !== undefined) {
+    const mois = new Date().toISOString().slice(0, 7), serie = lire("mois", []);
+    if (!serie.includes(mois)) serie.push(mois);
+    ecrire("mois", serie);
+    celebration("mois", lire("mensuel", 20000)); return rendre();
+  }
+  if (t.dataset.dividende !== undefined) {
+    ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">Dividende reçu</h2><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
+      <div class="champ"><label for="mdiv">Montant reçu (FCFA)</label><input id="mdiv" type="number" inputmode="numeric" min="0" value=""></div>
+      <button class="bouton" data-diviok>Valider</button>`);
+    return;
+  }
+  if (t.dataset.diviok !== undefined) { const m = +document.getElementById("mdiv").value; if (m > 0) celebration("dividende", m); return; }
+  if (t.id === "cloche") {
+    const vus = D.messages.map((m) => m.titre + m.texte); ecrire("vus", vus);
+    document.getElementById("pastille").hidden = true;
+    ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">Messages</h2><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
+      ${D.messages.map((m) => `<div class="carte msg m-${m.type}"><span class="ic">${{ alerte: "⚠️", info: "ℹ️", faire: "✋" }[m.type]}</span><div><b>${esc(m.titre)}</b><div class="gris">${esc(m.texte)}</div></div></div>`).join("")}
+      <div class="gris">Sources : ${D.sources.map(esc).join(" · ")}</div>`);
+  }
+});
+document.addEventListener("input", (ev) => {
+  const t = ev.target;
+  if (t.id === "cherche") { recherche = t.value; const pos = t.selectionStart; rendre(); const n = document.getElementById("cherche"); n.focus(); n.setSelectionRange(pos, pos); }
+  if (t.id === "mensuel") { ecrire("mensuel", Math.max(0, +t.value || 0)); }
+  if (t.dataset.frais) { const f = lire("frais", FRAIS_DEFAUT); f[t.dataset.frais] = +t.value || 0; ecrire("frais", f); }
+});
+document.addEventListener("change", (ev) => { if (ev.target.id === "mensuel" || ev.target.dataset.frais) rendre(); });
+document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") fermer(); });
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+charger();
+</script>
+</body>
+</html>

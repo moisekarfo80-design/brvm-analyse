@@ -1,0 +1,17 @@
+{
+  "name": "BRVM Analyse",
+  "short_name": "BRVM",
+  "description": "Analyse simple des actions de la BRVM : météo de la bourse, classements, portefeuille.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2F5FB",
+  "theme_color": "#1747C9",
+  "icons": [
+    {"src": "icone-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icone-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

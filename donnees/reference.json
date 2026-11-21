@@ -1,0 +1,489 @@
+{
+ "source": "Bulletin Officiel de la Cote BRVM du 12/11/2026",
+ "date": "2026-11-12",
+ "per_marche": 16.8,
+ "rendement_marche": 6.74,
+ "composite": 518.96,
+ "actions": {
+  "SCRC": {
+   "nom": "Sucrivoire",
+   "secteur": "Agriculture",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 40.5,
+   "date_dividende": "2021-08-20",
+   "bpa": null,
+   "suspendue": false
+  },
+  "SICC": {
+   "nom": "Sicor",
+   "secteur": "Agriculture",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 1919.0,
+   "date_dividende": "2000-09-25",
+   "bpa": null,
+   "suspendue": true
+  },
+  "SLBC": {
+   "nom": "Solibra",
+   "secteur": "Boissons et alimentation",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 1871.76,
+   "date_dividende": "2026-07-30",
+   "bpa": 2781.4119,
+   "suspendue": false
+  },
+  "SOGC": {
+   "nom": "SOGB",
+   "secteur": "Agriculture",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 501.6,
+   "date_dividende": "2026-08-06",
+   "bpa": 578.5033,
+   "suspendue": false
+  },
+  "STBC": {
+   "nom": "SITAB",
+   "secteur": "Tabac",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 1707.2,
+   "date_dividende": "2026-08-13",
+   "bpa": 2031.5488,
+   "suspendue": false
+  },
+  "UNLC": {
+   "nom": "Unilever CI",
+   "secteur": "Consommation",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 1233.0,
+   "date_dividende": "2012-07-09",
+   "bpa": 69.7278,
+   "suspendue": false
+  },
+  "ABJC": {
+   "nom": "Servair Abidjan",
+   "secteur": "Services",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 201.52,
+   "date_dividende": "2026-09-30",
+   "bpa": 121.9919,
+   "suspendue": false
+  },
+  "BNBC": {
+   "nom": "Bernabé",
+   "secteur": "Distribution",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 150.0,
+   "date_dividende": "2023-07-24",
+   "bpa": 3.3693,
+   "suspendue": false
+  },
+  "CFAC": {
+   "nom": "CFAO Motors",
+   "secteur": "Distribution",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 55.44,
+   "date_dividende": "2026-08-14",
+   "bpa": 46.4088,
+   "suspendue": false
+  },
+  "LNBB": {
+   "nom": "Loterie nat. Bénin",
+   "secteur": "Banques et finance",
+   "pays": "Bénin",
+   "groupe": null,
+   "dividende": 164.17,
+   "date_dividende": "2026-08-03",
+   "bpa": 231.0628,
+   "suspendue": false
+  },
+  "NEIC": {
+   "nom": "NEI-CEDA",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 140.4,
+   "date_dividende": "2026-09-10",
+   "bpa": 159.5488,
+   "suspendue": false
+  },
+  "PRSC": {
+   "nom": "Tractafric Motors",
+   "secteur": "Distribution",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 183.92,
+   "date_dividende": "2026-10-23",
+   "bpa": 231.25,
+   "suspendue": false
+  },
+  "UNXC": {
+   "nom": "Uniwax",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 60.75,
+   "date_dividende": "2022-07-29",
+   "bpa": null,
+   "suspendue": false
+  },
+  "SHEC": {
+   "nom": "Vivo Energy CI",
+   "secteur": "Distribution de carburant",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 85.07,
+   "date_dividende": "2026-09-25",
+   "bpa": 95.6645,
+   "suspendue": false
+  },
+  "BBGC": {
+   "nom": "BBG",
+   "secteur": "Distribution",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": null,
+   "date_dividende": null,
+   "bpa": 543.9331,
+   "suspendue": false
+  },
+  "BICB": {
+   "nom": "BIIC Bénin",
+   "secteur": "Banques et finance",
+   "pays": "Bénin",
+   "groupe": null,
+   "dividende": 254.6,
+   "date_dividende": "2026-07-31",
+   "bpa": 627.4665,
+   "suspendue": false
+  },
+  "BICC": {
+   "nom": "BICI CI",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 1157.2,
+   "date_dividende": "2026-07-06",
+   "bpa": 2191.085,
+   "suspendue": false
+  },
+  "BOAB": {
+   "nom": "BOA Bénin",
+   "secteur": "Banques et finance",
+   "pays": "Bénin",
+   "groupe": "BOA",
+   "dividende": 585.0,
+   "date_dividende": "2026-05-26",
+   "bpa": 495.8246,
+   "suspendue": false
+  },
+  "BOABF": {
+   "nom": "BOA Burkina",
+   "secteur": "Banques et finance",
+   "pays": "Burkina Faso",
+   "groupe": "BOA",
+   "dividende": 397.0,
+   "date_dividende": "2026-04-23",
+   "bpa": 437.6368,
+   "suspendue": false
+  },
+  "BOAC": {
+   "nom": "BOA CI",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": "BOA",
+   "dividende": 597.53,
+   "date_dividende": "2026-05-06",
+   "bpa": 888.8065,
+   "suspendue": false
+  },
+  "BOAM": {
+   "nom": "BOA Mali",
+   "secteur": "Banques et finance",
+   "pays": "Mali",
+   "groupe": "BOA",
+   "dividende": 305.04,
+   "date_dividende": "2026-06-03",
+   "bpa": 403.7509,
+   "suspendue": false
+  },
+  "BOAN": {
+   "nom": "BOA Niger",
+   "secteur": "Banques et finance",
+   "pays": "Niger",
+   "groupe": "BOA",
+   "dividende": 209.25,
+   "date_dividende": "2025-06-03",
+   "bpa": 19.6765,
+   "suspendue": false
+  },
+  "BOAS": {
+   "nom": "BOA Sénégal",
+   "secteur": "Banques et finance",
+   "pays": "Sénégal",
+   "groupe": "BOA",
+   "dividende": 450.0,
+   "date_dividende": "2026-06-01",
+   "bpa": 608.3086,
+   "suspendue": false
+  },
+  "CBIBF": {
+   "nom": "Coris Bank",
+   "secteur": "Banques et finance",
+   "pays": "Burkina Faso",
+   "groupe": null,
+   "dividende": 900.0,
+   "date_dividende": "2026-06-19",
+   "bpa": 2047.3448,
+   "suspendue": false
+  },
+  "ETIT": {
+   "nom": "Ecobank Transnational",
+   "secteur": "Banques et finance",
+   "pays": "Togo",
+   "groupe": "Ecobank",
+   "dividende": 0.92,
+   "date_dividende": "2026-06-30",
+   "bpa": 19.0939,
+   "suspendue": false
+  },
+  "NTLC": {
+   "nom": "Nestlé CI",
+   "secteur": "Boissons et alimentation",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 369.6,
+   "date_dividende": "2026-09-07",
+   "bpa": 835.1334,
+   "suspendue": false
+  },
+  "PALC": {
+   "nom": "Palm CI",
+   "secteur": "Agriculture",
+   "pays": "Côte d'Ivoire",
+   "groupe": "SIFCA",
+   "dividende": 441.04,
+   "date_dividende": "2026-06-29",
+   "bpa": 1003.2808,
+   "suspendue": false
+  },
+  "SPHC": {
+   "nom": "SAPH",
+   "secteur": "Agriculture",
+   "pays": "Côte d'Ivoire",
+   "groupe": "SIFCA",
+   "dividende": 430.32,
+   "date_dividende": "2026-08-28",
+   "bpa": 976.801,
+   "suspendue": false
+  },
+  "SMBC": {
+   "nom": "SMB",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 704.0,
+   "date_dividende": "2026-09-18",
+   "bpa": 1677.5396,
+   "suspendue": false
+  },
+  "TTLC": {
+   "nom": "TotalEnergies CI",
+   "secteur": "Distribution de carburant",
+   "pays": "Côte d'Ivoire",
+   "groupe": "Total",
+   "dividende": 139.77,
+   "date_dividende": "2026-08-31",
+   "bpa": 144.3563,
+   "suspendue": false
+  },
+  "TTLS": {
+   "nom": "TotalEnergies SN",
+   "secteur": "Distribution de carburant",
+   "pays": "Sénégal",
+   "groupe": "Total",
+   "dividende": 176.65,
+   "date_dividende": "2026-07-17",
+   "bpa": 208.099,
+   "suspendue": false
+  },
+  "ECOC": {
+   "nom": "Ecobank CI",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": "Ecobank",
+   "dividende": 781.44,
+   "date_dividende": "2026-05-26",
+   "bpa": 1153.3629,
+   "suspendue": false
+  },
+  "SGBC": {
+   "nom": "Société Générale CI",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 2298.75,
+   "date_dividende": "2026-08-24",
+   "bpa": 3257.1189,
+   "suspendue": false
+  },
+  "SIBC": {
+   "nom": "Société Ivoirienne de Banque",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 374.0,
+   "date_dividende": "2026-07-31",
+   "bpa": 555.9065,
+   "suspendue": false
+  },
+  "ONTBF": {
+   "nom": "Onatel BF",
+   "secteur": "Télécoms",
+   "pays": "Burkina Faso",
+   "groupe": null,
+   "dividende": 145.32,
+   "date_dividende": "2026-06-15",
+   "bpa": 213.5493,
+   "suspendue": false
+  },
+  "ORAC": {
+   "nom": "Orange CI",
+   "secteur": "Télécoms",
+   "pays": "Côte d'Ivoire",
+   "groupe": "Sonatel",
+   "dividende": 704.0,
+   "date_dividende": "2026-06-08",
+   "bpa": 1113.5857,
+   "suspendue": false
+  },
+  "SNTS": {
+   "nom": "Sonatel",
+   "secteur": "Télécoms",
+   "pays": "Sénégal",
+   "groupe": "Sonatel",
+   "dividende": 174.0,
+   "date_dividende": "2026-05-26",
+   "bpa": 413.7081,
+   "suspendue": false
+  },
+  "NSBC": {
+   "nom": "NSIA Banque",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 675.98,
+   "date_dividende": "2026-08-04",
+   "bpa": 1645.8133,
+   "suspendue": false
+  },
+  "ORGT": {
+   "nom": "Oragroup",
+   "secteur": "Banques et finance",
+   "pays": "Togo",
+   "groupe": null,
+   "dividende": 59.52,
+   "date_dividende": "2020-07-17",
+   "bpa": 311.8149,
+   "suspendue": false
+  },
+  "SAFC": {
+   "nom": "SAFCA",
+   "secteur": "Banques et finance",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 23.04,
+   "date_dividende": "2011-07-29",
+   "bpa": 59.0545,
+   "suspendue": false
+  },
+  "CABC": {
+   "nom": "Sicable",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 152.02,
+   "date_dividende": "2026-06-01",
+   "bpa": 243.1193,
+   "suspendue": false
+  },
+  "FTSC": {
+   "nom": "Filtisac",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 1726.56,
+   "date_dividende": "2025-09-30",
+   "bpa": 33.0418,
+   "suspendue": false
+  },
+  "SDSC": {
+   "nom": "AGL CI",
+   "secteur": "Transport et logistique",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 92.0,
+   "date_dividende": "2026-10-27",
+   "bpa": 14.4204,
+   "suspendue": false
+  },
+  "SEMC": {
+   "nom": "Eviosys",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 14.0,
+   "date_dividende": "2021-12-28",
+   "bpa": null,
+   "suspendue": true
+  },
+  "SIVC": {
+   "nom": "Air Liquide CI",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 63.0,
+   "date_dividende": "2017-09-29",
+   "bpa": 20.5289,
+   "suspendue": false
+  },
+  "STAC": {
+   "nom": "Setao",
+   "secteur": "Industrie",
+   "pays": "Côte d'Ivoire",
+   "groupe": null,
+   "dividende": 66.15,
+   "date_dividende": "2022-07-18",
+   "bpa": null,
+   "suspendue": false
+  },
+  "CIEC": {
+   "nom": "CIE",
+   "secteur": "Énergie et eau",
+   "pays": "Côte d'Ivoire",
+   "groupe": "Eranove",
+   "dividende": 205.92,
+   "date_dividende": "2026-07-28",
+   "bpa": 234.4116,
+   "suspendue": false
+  },
+  "SDCC": {
+   "nom": "SODECI",
+   "secteur": "Énergie et eau",
+   "pays": "Côte d'Ivoire",
+   "groupe": "Eranove",
+   "dividende": 462.0,
+   "date_dividende": "2026-09-16",
+   "bpa": 653.4239,
+   "suspendue": false
+  }
+ }
+}
