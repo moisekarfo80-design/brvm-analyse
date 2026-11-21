@@ -8,6 +8,11 @@ on:
     - cron: "47 17 * * 1-5"   # 17 h 47, apres la cloture et la publication des cours
     - cron: "13 21 * * 1-5"   # 21 h 13, second essai si le premier a echoue
   workflow_dispatch:           # bouton "Run workflow" pour lancer a la main
+    inputs:
+      test:
+        description: "Tester seulement la lecture du site (rien n'est enregistre)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,13 +36,20 @@ jobs:
       - name: Installer les outils
         run: pip install -r requirements.txt
 
+      - name: Tester la lecture du site
+        if: ${{ inputs.test }}
+        run: python serveur/collecte.py --test
+
       - name: Collecter les cours
+        if: ${{ !inputs.test }}
         run: python serveur/collecte.py
 
       - name: Analyser
+        if: ${{ !inputs.test }}
         run: python serveur/analyse.py
 
       - name: Enregistrer les resultats
+        if: ${{ !inputs.test }}
         run: |
           git config user.name "brvm-analyse (automatique)"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -128,7 +128,29 @@ def controler(df, derniers):
     return a_confirmer, alertes
 
 
+def tester():
+    """Lit le site et affiche ce qui est compris, sans rien enregistrer."""
+    url, html, erreurs = telecharger()
+    for e in erreurs:
+        print("  essai rate :", e)
+    if html is None:
+        print("RESULTAT TEST : site injoignable depuis ce serveur")
+        return
+    print(f"Page recue de {url} ({len(html)} caracteres)")
+    try:
+        df = extraire(html)
+    except Exception as e:
+        print("RESULTAT TEST : page recue mais non comprise :", e)
+        print(html[:1500])
+        return
+    a_confirmer, alertes = controler(df, {})
+    print(df.head(12).to_string(index=False))
+    print(f"RESULTAT TEST : {len(df)} actions lues, {len(a_confirmer)} a confirmer, alertes : {alertes or 'aucune'}")
+
+
 def main():
+    if "--test" in sys.argv:
+        return tester()
     aujourd_hui = dt.datetime.now(dt.timezone.utc).date()
     statut = {"date": aujourd_hui.isoformat(), "heure": dt.datetime.now(dt.timezone.utc).strftime("%H:%M"),
               "ok": False, "nb_actions": 0, "a_confirmer": [], "alertes": [], "erreurs": [], "source": None}
