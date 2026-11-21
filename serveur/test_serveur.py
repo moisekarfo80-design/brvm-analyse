@@ -59,6 +59,8 @@ def main():
     ok = True
     sys.argv = ["collecte.py", "--forcer"]
 
+    analyse.main()
+    per_avant = json.loads(analyse.SORTIE.read_text())["marche"]["per"]
     print("1. Seance normale (+2 %, une ligne anormale)")
     page = fausse_page(1.02, anomalie="SGBC")
     requests.get = lambda *a, **k: Reponse(page)
@@ -76,7 +78,7 @@ def main():
         ok &= verifier(sum(a["secteur"] == "Banques et finance" for a in top) <= 5
                        and max([sum(a.get("groupe") == g for a in top) for g in ("BOA", "Ecobank", "SIFCA")]) <= 3,
                        f"diversification respectee ({h})")
-    ok &= verifier(abs(r["marche"]["per"] - 16.8 * 1.02) < 0.2, f"PER du marche suit les cours ({r['marche']['per']})")
+    ok &= verifier(abs(r["marche"]["per"] - per_avant * 1.02) < 0.2, f"PER du marche suit les cours ({r['marche']['per']})")
     ok &= verifier(all(1 <= e <= 5 for a in r["actions"] for e in a.get("etoiles", {}).values()), "etoiles entre 1 et 5")
     ok &= verifier(all(a["fiabilite"][h] <= 59 for a in r["actions"] if a.get("fiabilite") for h in a["fiabilite"]), "fiabilite plafonnee a 59")
 
