@@ -82,7 +82,7 @@ def main():
 
     print("2. Le lendemain, meme page (jour ferie)")
     import datetime as dt
-    hier = (dt.datetime.now(dt.timezone.utc).date() - dt.timedelta(days=1)).isoformat()
+    hier = (dt.date.fromisoformat(st["date"]) - dt.timedelta(days=1)).isoformat()
     txt = collecte.HISTORIQUE.read_text().replace(st["date"], hier)
     collecte.HISTORIQUE.write_text(txt)
     collecte.main()
