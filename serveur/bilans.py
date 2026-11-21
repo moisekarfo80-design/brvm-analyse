@@ -250,8 +250,17 @@ def ratios(banque, ch):
     return {k: round(v, 4) for k, v in r.items()}
 
 
-def lire_pdf(chemin):
+MOTS_DIAG = re.compile(r"r[ée]sultat|b[ée]n[ée]fice|capitaux propres|chiffre d.affaires|produit net|total|revenus|ventes|"
+                       r"charges g[ée]n|co[ûu]t du risque|^\s*(XB|XI|CP|BZ|DZ|DD|XD)\b", re.I)
+
+
+def lire_pdf(chemin, diag=False):
     pages, ocr = texte_pdf(chemin)
+    if diag:
+        lignes = [l.strip()[:150] for p in pages for l in p.splitlines() if MOTS_DIAG.search(l)]
+        print("    --- lignes vues (%d pages, %d en OCR) ---" % (len(pages), ocr))
+        for l in lignes[:45]:
+            print("    | " + l)
     banque, ch, rn_lus = extraire(pages)
     ch = {k: v for k, v in ch.items() if v.get("n1") is not None}  # ligne incomplete = non lue
     statut, ok, pb, manquants = controler(banque, ch, rn_lus)
@@ -284,7 +293,7 @@ def symbole_de(titre):
     return None
 
 
-def lister_publications(exercice, pages=12):
+def lister_publications(exercice, pages=30):
     import requests
     from html import unescape
     pubs = []
@@ -349,6 +358,9 @@ def main():
     actuel = json.loads(SORTIE.read_text()) if SORTIE.exists() else {"societes": {}}
     pubs = lister_publications(exercice)
     print(f"{len(pubs)} publications « Exercice {exercice} » trouvees")
+    if "--diag" in sys.argv:
+        for p in pubs:
+            print(f"  PUB {p['symbole'] or '?':<6} {p['titre'][:110]}")
     par_sym = {}
     for p in pubs:
         if p["symbole"]:
@@ -369,7 +381,7 @@ def main():
                 with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
                     f.write(contenu)
                     f.flush()
-                    r = lire_pdf(f.name)
+                    r = lire_pdf(f.name, diag="--diag" in sys.argv)
                 r.update(exercice=exercice, url=p["url"], titre=p["titre"], lu_le=dt.date.today().isoformat())
                 if res is None or (r["statut"] == "valide" and res["statut"] != "valide"):
                     res = r

@@ -14,6 +14,10 @@ on:
         description: "Tout relire, meme les bilans deja valides"
         type: boolean
         default: false
+      diag:
+        description: "Afficher les lignes lues (diagnostic)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -41,7 +45,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lire les bilans
-        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }} ${{ inputs.tout && '--tout' || '' }}
+        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }} ${{ inputs.tout && '--tout' || '' }} ${{ inputs.diag && '--diag' || '' }}
 
       - name: Recalculer les notes
         run: python serveur/analyse.py
