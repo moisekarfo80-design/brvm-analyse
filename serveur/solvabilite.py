@@ -80,6 +80,8 @@ def chercher(pages, exercice, diag=False):
                         break
             ans_l = [int(a) for a in ans_l]
             v_n, v_n1 = vals[0][1], vals[1][1] if len(vals) > 1 else None
+            if len(vals) >= 2 and re.search(r"\d\s*(bps|pb|pts|points?)\b|[+-]\s?\d+(?:[.,]\d+)?\s*(bps|pb|pts)", bloc[vals[1][0]:], re.I):
+                v_n, v_n1 = vals[1][1], vals[0][1]  # « 15,8 %  16,3 %  +51 bps » : ancienne valeur puis nouvelle
             approx = False
             m_de = re.search(r"\bde\s+(\d{1,2}(?:[.,]\d{1,2})?)\s?%\s*(?:\S+\s+){0,4}?[àa]\s+(\d{1,2}(?:[.,]\d{1,2})?)\s?%", bloc)
             if m_de:  # « passe de 13,9 % a 14,4 % »
@@ -133,28 +135,40 @@ def pages_du_pdf(chemin, ocr_max=50):
     return [B.ocr_page(chemin, i + 1) for i in range(min(n, ocr_max))], min(n, ocr_max)
 
 
-def documents(pubs, exercice):
-    """Rapports de l'exercice qui peuvent citer le ratio : rapports annuels complets d'abord."""
+PERIODES = [(r"1(er|[eè]re)? trimestre|premier trimestre", 1, "1er trimestre"),
+            (r"1(er)? semestre|premier semestre|2[eè]?(me)? trimestre|deuxi[eè]me trimestre", 2, "1er semestre"),
+            (r"3[eè]?(me)? trimestre|troisi[eè]me trimestre|9 mois|neuf mois", 3, "3e trimestre"),
+            (r"2[eè]?(me)? semestre|deuxi[eè]me semestre|4[eè]?(me)? trimestre|quatri[eè]me trimestre", 4, "fin d'année")]
+
+
+def periode(titre):
+    """(annee, rang dans l'annee, libelle) d'une publication ; None si ce n'est pas un rapport utile."""
+    n = titre.lower().replace("_", " ").replace("-", " ")
+    if re.search(r"convocation|avis de|attestation|resolution|résolution|dividende|projet|nomination|franchissement", n):
+        return None
+    ans_doc = [int(a) for a in ANNEE.findall(n)]
+    if not ans_doc:
+        return None
+    an = max(ans_doc)
+    for motif, rang, lib in PERIODES:
+        if re.search(motif, n):
+            return an, rang, lib
+    if re.search(r"rapport annuel|rapport d.activit[ée]s? annuel|etats|états|financi|exercice|r[ée]sultats annuels|rapport de gestion|communiqu", n):
+        return an, 4, "fin d'année"
+    return None
+
+
+def documents(pubs, depuis):
+    """Rapports publies depuis l'annee « depuis », du plus recent au plus ancien (les plus complets d'abord a egalite)."""
     out = []
     for p in pubs:
-        n = (p["titre"] + " " + p["url"].rsplit("/", 1)[-1]).lower().replace("_", " ").replace("-", " ")
-        ans_doc = [int(a) for a in ANNEE.findall(n)]
-        if exercice not in ans_doc and not (exercice + 1 in ans_doc and re.search(r"exercice|annuel", n) is None and False):
+        per = periode(p["titre"] + " " + p["url"].rsplit("/", 1)[-1])
+        if not per or per[0] < depuis or per[0] > dt.date.today().year:
             continue
-        if re.search(r"convocation|avis de|attestation|resolution|résolution|dividende|projet", n):
-            continue
-        periodique = re.search(r"trimestre|semestre|semestriel", n)
-        if periodique and max(ans_doc) > exercice:
-            continue
-        score = 0
-        score += 8 if re.search(r"rapport annuel|rapport de gestion|pilier 3|pilier iii|informations? prudenti", n) else 0
-        score += 5 if re.search(r"etats|états|financi|annuel|exercice", n) else 0
-        score += 2 if re.search(r"communiqu|r[ée]sultats", n) else 0
-        score += 1 if re.search(r"2[eè]me semestre|deuxi[eè]me semestre|4[eè]me trimestre", n) else 0
-        score -= 4 if periodique and not re.search(r"2[eè]me semestre|deuxi[eè]me semestre|4[eè]me trimestre", n) else 0
-        if score > -4:
-            out.append((score, p))
-    return [p for _, p in sorted(out, key=lambda x: -x[0])]
+        n = p["titre"].lower()
+        riche = 2 if re.search(r"rapport annuel|rapport de gestion|pilier|prudenti", n) else 1 if re.search(r"activit", n) else 0
+        out.append(((per[0], per[1], riche), {**p, "annee": per[0], "periode": f"{per[2]} {per[0]}"}))
+    return [p for _, p in sorted(out, key=lambda x: x[0], reverse=True)]
 
 
 def main():
@@ -168,39 +182,35 @@ def main():
         if seuls and sym not in seuls:
             continue
         deja = actuel.get(sym)
-        if deja and deja.get("exercice", 0) >= exercice and "--tout" not in sys.argv:
-            print(f"  {sym:<6} deja lu : {deja['ratio']} % ({deja['exercice']})")
+        recent = deja and (dt.date.today() - dt.date.fromisoformat(deja.get("lu_le", "2000-01-01"))).days < 28
+        if recent and "--tout" not in sys.argv:
+            print(f"  {sym:<6} deja lu : {deja['ratio']} % ({deja.get('periode', deja['exercice'])})")
             continue
         pubs = [p for u in pages.get(sym, []) for p in B.publications_societe(u)]
-        trouve = trouve_ancien = None
-        for ex in (exercice, exercice - 1):
-            for doc in documents(pubs, ex)[:7]:
-                try:
-                    contenu = B.pdf_depuis(doc["url"])
-                    if not contenu:
-                        continue
-                    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
-                        f.write(contenu)
-                        f.flush()
-                        txt, ocr = pages_du_pdf(f.name)
-                    if diag:
-                        print(f"    {sym} {ex} : {doc['titre'][:80]} ({len(txt)} pages, {ocr} en OCR)")
-                    r = chercher(txt, ex, diag)
-                except Exception as e:
-                    print(f"    {sym} : erreur {e.__class__.__name__} {str(e)[:80]}")
+        trouve = None
+        for doc in documents(pubs, exercice)[:9]:  # le chiffre le plus recent publie (rapport annuel ou trimestriel)
+            try:
+                contenu = B.pdf_depuis(doc["url"])
+                if not contenu:
                     continue
-                if r and r.get("annee", ex) < ex and not trouve_ancien:
-                    trouve_ancien = {**r, "exercice": r["annee"], "document": doc["titre"], "url": doc["url"], "lu_le": dt.date.today().isoformat()}
-                    continue
-                if r and r.get("annee", ex) == ex:
-                    trouve = {**r, "exercice": ex, "document": doc["titre"], "url": doc["url"], "lu_le": dt.date.today().isoformat()}
-                    break
-            if trouve:
+                with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+                    f.write(contenu)
+                    f.flush()
+                    txt, ocr = pages_du_pdf(f.name)
+                if diag:
+                    print(f"    {sym} : {doc['titre'][:80]} [{doc['periode']}] ({len(txt)} pages, {ocr} en OCR)")
+                r = chercher(txt, doc["annee"], diag)
+            except Exception as e:
+                print(f"    {sym} : erreur {e.__class__.__name__} {str(e)[:80]}")
+                continue
+            if r:
+                vieux = r["annee"] < doc["annee"]
+                trouve = {**r, "exercice": r["annee"], "periode": f"fin d'année {r['annee']}" if vieux else doc["periode"],
+                          "document": doc["titre"], "url": doc["url"], "lu_le": dt.date.today().isoformat()}
                 break
-        trouve = trouve or trouve_ancien
         if trouve:
             actuel[sym] = trouve
-            print(f"  {sym:<6} {trouve['ratio']} % ({trouve['exercice']}, {trouve['mentions']} mention(s)) : {trouve['phrase'][:110]}")
+            print(f"  {sym:<6} {trouve['ratio']} % ({trouve['periode']}, {trouve['mentions']} mention(s)) : {trouve['phrase'][:110]}")
         else:
             print(f"  {sym:<6} non trouve ({len(pubs)} publications)")
         SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=1))

@@ -247,7 +247,7 @@ def main():
         # solidite et croissance (bilans annuels lus et controles)
         s_qual = s_croi = None
         sv = solva.get(s)
-        if sv and int(sv.get("exercice", 0)) < jour.year - 3:
+        if sv and int(sv.get("exercice", 0)) < jour.year - 2:
             sv = None
         b = bilans.get(s)
         if b and b.get("statut") == "valide" and int(b.get("exercice") or 0) < jour.year - 3:
@@ -330,9 +330,10 @@ def main():
         if sv:
             ra = sv["ratio"]
             fiche["solvabilite"] = {"ratio": ra, "ratio_n1": sv.get("ratio_n1"), "exercice": sv["exercice"], "norme": NORME_SOLVA,
-                                    "document": sv.get("document"), "source": sv.get("url"), "phrase": sv.get("phrase")}
+                                    "document": sv.get("document"), "source": sv.get("url"), "phrase": sv.get("phrase"),
+                                    "approx": bool(sv.get("approx")), "periode": sv.get("periode") or f"fin d'année {sv['exercice']}"}
             t = "attention" if ra < NORME_SOLVA else "moins" if ra < 12.5 else "plus" if ra >= 14.7 else "neutre"
-            fiche["raisons"].append((t, f"Solvabilité {sv['exercice']} : {fr(ra, 1)} % (minimum exigé {fr(NORME_SOLVA, 1)} %, moyenne des banques de l'UMOA {fr(MOYENNE_SOLVA, 1)} %)"))
+            fiche["raisons"].append((t, f"Solvabilité ({sv.get('periode') or sv['exercice']}) : {'plus de ' if sv.get('approx') else ''}{fr(ra, 1)} % (minimum exigé {fr(NORME_SOLVA, 1)} %, moyenne des banques de l'UMOA {fr(MOYENNE_SOLVA, 1)} %)"))
             if ra < NORME_SOLVA:
                 fiche["drapeaux"].append(f"Solvabilité sous la norme ({fr(ra, 1)} %)")
         fiche["feu"] = feu_solidite(s_qual, fiche)

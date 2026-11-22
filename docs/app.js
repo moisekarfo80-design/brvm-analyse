@@ -336,7 +336,7 @@ function fiche(s) {
 function jaugeSolva(sv) {
   const max = 25, pos = (v) => Math.min(100, v / max * 100);
   const c = sv.ratio < sv.norme ? FEUX.rouge : sv.ratio < 13 ? FEUX.orange : FEUX.vert;
-  return `<div style="margin-top:12px"><div class="ligne entre"><b>Solvabilité ${esc(sv.exercice)}</b><b style="color:${c}">${nb(sv.ratio, 1)} %</b></div>
+  return `<div style="margin-top:12px"><div class="ligne entre"><b>Solvabilité</b> <span class="gris">(${esc(sv.periode || sv.exercice)})</span><b style="color:${c}">${sv.approx ? "plus de " : ""}${nb(sv.ratio, 1)} %</b></div>
     <div class="solva"><span style="width:${pos(sv.ratio)}%;background:${c}"></span><i style="left:${pos(sv.norme)}%" title="minimum"></i><i class="moy" style="left:${pos(14.7)}%"></i></div>
     <div class="ligne entre gris" style="font-size:12px"><span>| minimum exigé 11,5 %</span><span>| moyenne des banques 14,7 %</span></div>
     <div class="gris" style="margin-top:6px">Les fonds propres de la banque, comparés aux risques qu'elle prend. Plus c'est haut, mieux elle peut encaisser des crédits non remboursés.${sv.ratio_n1 ? ` L'année d'avant : ${nb(sv.ratio_n1, 1)} %.` : ""}</div>
