@@ -5,7 +5,32 @@
 const FRAIS_DEFAUT = { courtage: 1.0, tva: 18, brvm: 0.3, conservation: 0.5, tenue: 8000, sgi: "SA2IF" };
 const TAUX_RESERVE = 0.055;   // reserve placee sans risque (obligations d'Etat UEMOA, environ 5,5 %/an)
 const TAUX_OBLIG = 0.065;     // comparaison « tout en obligations d'Etat »
-const ONGLETS = [["accueil", "🏠", "Accueil"], ["classement", "🏆", "Classement"], ["investir", "💸", "Investir"], ["portefeuille", "💼", "Portefeuille"], ["apprendre", "🎓", "Apprendre"]];
+const ico = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICONES = {
+  accueil: ico('<path d="M3.5 10.5 12 4l8.5 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-4v-6h-6v6H5A1.5 1.5 0 0 1 3.5 19z"/>'),
+  classement: ico('<path d="M4 20.5v-7h5v7M9.5 20.5V5h5v15.5M15 20.5v-10h5v10M2.5 20.5h19"/>'),
+  investir: ico('<circle cx="12" cy="12" r="9"/><path d="M12 7.5v9M7.5 12h9"/>'),
+  portefeuille: ico('<path d="M4 7.5V6a2 2 0 0 1 2-2h11v3.5"/><rect x="3" y="7.5" width="18" height="13" rx="2.5"/><path d="M16 14h.01"/>'),
+  apprendre: ico('<path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v5c3 2.2 8 2.2 11 0v-5M21.5 9v5"/>'),
+  chev: ico('<path d="m9 6 6 6-6 6"/>').replace("<svg", '<svg class="chev"'),
+  loupe: ico('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'),
+  fleche: ico('<path d="M12 5v14M6 13l6 6 6-6"/>'),
+  ok: ico('<path d="m5 12.5 4.5 4.5L19 7.5"/>')
+};
+const ONGLETS = [["accueil", "Accueil"], ["classement", "Classement"], ["investir", "Investir"], ["portefeuille", "Portefeuille"], ["apprendre", "Apprendre"]];
+const TITRES = { classement: "Classement", investir: "Investir", portefeuille: "Mon portefeuille", apprendre: "Apprendre" };
+const vibre = (ms = 8) => { try { navigator.vibrate && navigator.vibrate(ms); } catch (e) {} };
+function toast(texte) {
+  const t = document.getElementById("toasts");
+  t.innerHTML = `<div class="toast">${ICONES.ok.replace("<svg", '<svg width="18" height="18"')}${esc(texte)}</div>`;
+  clearTimeout(toast.minuteur); toast.minuteur = setTimeout(() => { t.innerHTML = ""; }, 2700);
+}
+// curseur des controles segmentes : il glisse depuis sa position precedente
+const posCurseur = {};
+function seg(cle, liste, actif, attr) {
+  const i = Math.max(0, liste.findIndex(([v]) => v === actif)), de = posCurseur[cle] ?? i; posCurseur[cle] = i;
+  return `<div class="seg" role="tablist" style="--n:${liste.length};--i:${i};--de:${de}"><i class="curseur"></i>${liste.map(([v, l]) => `<button role="tab" aria-selected="${v === actif}" class="${v === actif ? "on" : ""}" data-${attr}="${v}">${l}</button>`).join("")}</div>`;
+}
 const METEO = {
   soleil: ["☀️", "Bourse bon marché", "Bon moment pour investir : tu peux placer toute la somme prévue."],
   nuageux: ["🌥️", "Bourse dans la normale", "Investis 80 % de ta somme et garde 20 % en réserve."],
@@ -183,7 +208,7 @@ function tousMessages() {
 const cleMsg = (m) => m.titre + "|" + m.texte;
 
 // ---------- chargement
-async function charger() {
+async function charger(recharge) {
   try {
     const r = await fetch("data/resultats.json?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error(r.status);
@@ -196,20 +221,54 @@ async function charger() {
   if (!D) { document.getElementById("ecran").innerHTML = `<div class="carte vide-etat">Impossible de charger les données. Vérifie ta connexion puis rouvre l'application.</div>`; return; }
   document.getElementById("sousTitre").textContent = "Cours du " + dateFr(D.date_cours);
   majPastille();
+  if (!history.state) history.replaceState({ ecran }, "");
+  ecranAffiche = recharge ? ecranAffiche : null;
   rendre();
 }
 function majPastille() {
   const vus = lire("vus", []);
   const n = tousMessages().filter((m) => !vus.includes(cleMsg(m))).length;
   const p = document.getElementById("pastille"); p.hidden = !n; p.textContent = n;
+  document.getElementById("cloche").classList.toggle("sonne", n > 0);
+  document.getElementById("cloche").setAttribute("aria-label", n ? `Messages, ${n} non lu${n > 1 ? "s" : ""}` : "Messages");
 }
 
 // ---------- ecrans
+let ecranAffiche = null;
+const defilement = {};
 function rendre() {
-  document.getElementById("nav").innerHTML = ONGLETS.map(([id, ic, nom]) => `<button class="${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}"><span>${ic}</span>${nom}</button>`).join("");
-  document.getElementById("ecran").innerHTML = ({ accueil, classement, investir, portefeuille, apprendre })[ecran]();
+  const i = ONGLETS.findIndex(([id]) => id === ecran), avant = ONGLETS.findIndex(([id]) => id === ecranAffiche);
+  const change = ecranAffiche !== ecran;
+  document.getElementById("nav").innerHTML = `<i class="curseur" style="--i:${i};--de:${avant < 0 ? i : avant}"></i>` + ONGLETS.map(([id, nom]) => `<button class="${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}" ${ecran === id ? 'aria-current="page"' : ""}>${ICONES[id]}${nom}</button>`).join("");
+  if (!change) document.querySelector("#nav .curseur").style.animation = "none";
+  const h = new Date().getHours();
+  document.getElementById("titre").textContent = TITRES[ecran] || (h < 12 ? "Bonjour" : h < 18 ? "Bon après-midi" : "Bonsoir");
+  const m = document.getElementById("ecran");
+  m.innerHTML = ({ accueil, classement, investir, portefeuille, apprendre })[ecran]();
+  if (change) {
+    m.classList.remove("entre-d", "entre-g"); void m.offsetWidth;
+    if (avant >= 0) m.classList.add(i > avant ? "entre-d" : "entre-g");
+    window.scrollTo(0, defilement[ecran] || 0);
+  }
+  ecranAffiche = ecran;
   animerCompteurs();
 }
+function allerA(cible, sansHistoire) {
+  const feuilleOuverte = !!document.querySelector("#couche > *");
+  if (feuilleOuverte) { document.getElementById("couche").innerHTML = ""; ficheEtat.s = null; majPastille(); }
+  if (cible === ecran) {
+    if (feuilleOuverte && history.state && history.state.feuille) history.replaceState({ ecran }, "");
+    if (!feuilleOuverte) window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+  defilement[ecran] = window.scrollY;
+  ecran = cible; recherche = "";
+  if (!sansHistoire) history[feuilleOuverte ? "replaceState" : "pushState"]({ ecran }, "");
+  vibre(6); rendre();
+}
+function rendreSansSaut() { const y = window.scrollY; rendre(); window.scrollTo(0, y); }
+window.addEventListener("scroll", () => { document.getElementById("entete").classList.toggle("replie", window.scrollY > 24); }, { passive: true });
+
 function animerCompteurs() {
   document.querySelectorAll(".compteur[data-cible]").forEach((el) => {
     const cible = +el.dataset.cible, plan = lire("plan", null), depart = plan ? plan.montant : cible, t0 = performance.now();
@@ -228,6 +287,16 @@ function ligneAction(a, i, h) {
   </button>`;
 }
 
+function sceneMeteo(code) {
+  const soleil = (cx, cy, r) => `<g class="rayons">${Array.from({ length: 12 }, (_, k) => `<rect x="${cx - 2}" y="${cy - r - 22}" width="4" height="12" rx="2" fill="#FFD66B" opacity=".9" transform="rotate(${k * 30} ${cx} ${cy})"/>`).join("")}</g><circle cx="${cx}" cy="${cy}" r="${r}" fill="#FFC93C"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#lueur)"/>`;
+  const nuage = (x, y, k, c) => `<g class="nuage" transform="translate(${x} ${y}) scale(${k})"><path d="M20 60a18 18 0 0 1 4-35.5A24 24 0 0 1 70 22a17 17 0 0 1 12 38z" fill="${c}"/></g>`;
+  const defs = `<defs><radialGradient id="lueur" cx=".35" cy=".35" r=".8"><stop offset="0" stop-color="#FFF4C2"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></radialGradient></defs>`;
+  const corps = code === "soleil" ? soleil(90, 90, 30)
+    : code === "nuageux" ? soleil(104, 72, 24) + nuage(22, 70, 1.05, "#fff") + `<g opacity=".55">${nuage(64, 104, .7, "#C9D8FF")}</g>`
+    : nuage(30, 40, 1.1, "#DCE5FF") + `<g opacity=".6">${nuage(80, 22, .7, "#B7C8F5")}</g>` + Array.from({ length: 7 }, (_, k) => `<line class="goutte" x1="${48 + k * 11}" y1="${112 + (k % 2) * 8}" x2="${44 + k * 11}" y2="${124 + (k % 2) * 8}" stroke="#9FD0FF" stroke-width="3" stroke-linecap="round" style="animation-delay:${(k * 0.17).toFixed(2)}s"/>`).join("");
+  return `<svg class="scene" viewBox="0 0 180 180" aria-hidden="true">${defs}${corps}</svg>`;
+}
+
 function accueil() {
   const m = METEO[D.meteo.code];
   const top = D.portefeuilles.lt.slice(0, 3).map(action);
@@ -236,39 +305,44 @@ function accueil() {
   const st = etatSuivi();
   const carte = CARTES[jourIndex() % CARTES.length];
   return `
-  <div class="carte meteo">
-    <div class="ligne"><span class="gros">${m[0]}</span><div><h2 style="margin:0">${m[1]}</h2><div class="gris">PER moyen ${nb(D.marche.per)} · rendement ${nb(D.marche.rendement)} %</div></div></div>
-    <p style="margin:12px 0 0">${m[2]}</p>
-  </div>
-  ${!profil ? `<button class="carte appel" data-quiz><span style="font-size:30px">🧭</span><span><b>Quel investisseur es-tu ?</b><div class="gris">5 questions, 1 minute. L'application s'adapte à ta réponse.</div></span><span class="chev">›</span></button>` : ""}
-  ${st ? `<button class="carte appel" data-onglet="portefeuille"><span style="font-size:30px">${({ prevu: "✅", mieux: "🌟", moins: "🧘", depart: "🌱" })[st.statut]}</span><span><b>Mon suivi : ${fcfa(st.valeur)}</b><div class="gris">${pc(st.gain)} depuis le ${dateFr(st.plan.date)} · ${({ prevu: "comme prévu", mieux: "mieux que prévu", moins: "moins bien que prévu", depart: "c'est le début" })[st.statut]}</div></span><span class="chev">›</span></button>` : ""}
+  <section class="meteo" aria-label="Météo de la bourse">
+    ${sceneMeteo(D.meteo.code)}
+    <div class="etiq">Météo de la bourse</div>
+    <div class="gros-mot">${{ soleil: "Bon marché", nuageux: "Dans la normale", pluie: "Chère" }[D.meteo.code]}</div>
+    <p>${m[2]}</p>
+    <div class="chiffres"><div><b>${Math.round(D.meteo.part_actions * 100)} %</b><span>en actions</span></div><div><b>${nb(D.marche.per)}</b><span>PER moyen</span></div><div><b>${nb(D.marche.rendement)} %</b><span>rendement</span></div></div>
+  </section>
+  ${!profil ? `<button class="carte appel" data-quiz><span class="pict">🧭</span><span><b>Quel investisseur es-tu ?</b><div class="gris">5 questions, 1 minute. L'application s'adapte à ta réponse.</div></span>${ICONES.chev}</button>` : ""}
+  ${st ? `<button class="carte appel" data-onglet="portefeuille"><span class="pict">${({ prevu: "✅", mieux: "🌟", moins: "🧘", depart: "🌱" })[st.statut]}</span><span><b>Mon suivi : ${fcfa(st.valeur)}</b><div class="gris">${pc(st.gain)} depuis le ${dateFr(st.plan.date)}, ${({ prevu: "comme prévu", mieux: "mieux que prévu", moins: "moins bien que prévu", depart: "c'est le début" })[st.statut]}</div></span>${ICONES.chev}</button>` : ""}
   <div class="carte">
     <div class="ligne entre"><h3 style="margin:0">Fiabilité de l'analyse</h3>${barres(D.fiabilite)}</div>
     <div class="gris" style="margin-top:6px">${D.fiabilite} % · mise à jour le ${dateFr(D.maj)}.</div>
     ${alerte ? `<div class="puce" style="margin-top:10px">⚠ ${esc(alerte.titre)}</div>` : ""}
   </div>
-  <div class="carte">
-    <div class="ligne entre"><h2 style="margin:0">Top long terme</h2><button class="bouton second petit" data-onglet="classement">Tout voir</button></div>
-    ${top.map((a, i) => ligneAction(a, i + 1, "lt")).join("")}
-  </div>
-  <button class="carte appel" data-onglet="apprendre"><span style="font-size:30px">💡</span><span><b>Carte du jour</b><div class="gris">${esc(carte[0])}</div></span><span class="chev">›</span></button>`;
+  <div class="titre-section"><h2>Top long terme</h2><button class="lien" style="padding:0" data-onglet="classement">Tout voir</button></div>
+  <div class="liste">${top.map((a, i) => ligneAction(a, i + 1, "lt")).join("")}</div>
+  <button class="carte appel" data-onglet="apprendre"><span class="pict">💡</span><span><b>Carte du jour</b><div class="gris">${esc(carte[0])}</div></span>${ICONES.chev}</button>`;
 }
 
+function listeClassement() {
+  const q = recherche.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const simple = (t) => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const liste = D.classements[horizon].map(action).filter((a) => !q || simple(a.nom).includes(q) || a.s.toLowerCase().includes(q));
+  return liste.map((a) => ligneAction(a, D.classements[horizon].indexOf(a.s) + 1, horizon)).join("") || `<div class="vide-etat">Aucune action ne correspond à « ${esc(recherche)} ».</div>`;
+}
 function classement() {
   const hz = D.horizons[horizon];
-  const q = recherche.trim().toLowerCase();
-  const liste = D.classements[horizon].map(action).filter((a) => !q || a.nom.toLowerCase().includes(q) || a.s.toLowerCase().includes(q));
   const exclues = D.actions.filter((a) => !D.classements[horizon].includes(a.s));
   return `
-  <div class="seg" role="tablist">${Object.keys(H).map((h) => `<button role="tab" class="${h === horizon ? "on" : ""}" data-horizon="${h}">${H[h]}</button>`).join("")}</div>
-  <div class="carte">
-    <div class="gris">${esc(hz.duree)} · la note compte le dividende et le prix${horizon === "ct" ? ", plus la tendance du cours" : ""}, comparés à toute la bourse. Les bilans sont expliqués dans chaque fiche, mais ne changent pas la note (test sur 10 ans).</div>
-    <div class="gris" style="margin-top:8px">Feu de solidité (d'après les bilans) : <span class="feu f-vert"><i></i>Solide</span> <span class="feu f-orange"><i></i>Moyenne</span> <span class="feu f-rouge"><i></i>Fragile</span></div>
-    ${horizon === "ct" ? `<div class="puce" style="margin-top:8px">⚠ Le court terme suit la hausse récente : c'est le plus risqué.</div>` : ""}
-  </div>
-  <div class="champ"><input id="cherche" type="search" placeholder="Chercher une action (ex. Sonatel)" value="${esc(recherche)}" aria-label="Chercher une action"></div>
-  <div class="carte" style="padding:4px 12px">${liste.map((a) => ligneAction(a, D.classements[horizon].indexOf(a.s) + 1, horizon)).join("") || `<div class="vide-etat">Aucune action trouvée.</div>`}</div>
-  ${exclues.length && !q ? `<div class="gris" style="padding:0 4px 8px">Non classées : ${exclues.map((a) => esc(a.nom) + " (" + esc((a.drapeaux || ["données manquantes"])[0]) + ")").join(", ")}.</div>` : ""}`;
+  ${seg("horizon", Object.keys(H).map((h) => [h, H[h]]), horizon, "horizon")}
+  <details class="aide">
+    <summary><span><b>${esc(hz.duree)}</b> · comment lire ce classement ?</span>${ICONES.chev}</summary>
+    <div class="gris">Les étoiles comptent le dividende et le prix${horizon === "ct" ? ", plus la tendance du cours" : ""}, comparés à toute la bourse. Le feu dit si l'entreprise est solide d'après ses bilans : <span class="feu f-vert"><i></i>Solide</span> <span class="feu f-orange"><i></i>Moyenne</span> <span class="feu f-rouge"><i></i>Fragile</span>. Il ne change pas les étoiles. Glisse la liste à gauche ou à droite pour changer d'horizon.</div>
+  </details>
+  ${horizon === "ct" ? `<div class="puce" style="margin:0 0 12px">⚠ Le court terme suit la hausse récente : c'est le plus risqué.</div>` : ""}
+  <div class="champ recherche">${ICONES.loupe}<input id="cherche" type="search" enterkeyhint="search" autocomplete="off" placeholder="Chercher une action, ex. Sonatel" value="${esc(recherche)}" aria-label="Chercher une action"></div>
+  <div class="liste" id="liste" data-glisse-horizon>${listeClassement()}</div>
+  ${exclues.length ? `<div class="gris" style="padding:0 4px 8px">Non classées : ${exclues.map((a) => esc(a.nom) + " (" + esc((a.drapeaux || ["données manquantes"])[0]) + ")").join(", ")}.</div>` : ""}`;
 }
 
 // ---------- fiche d'une action
@@ -305,14 +379,14 @@ function fiche(s) {
   const parleOk = "speechSynthesis" in window;
   ouvrir(`
     <div class="ligne entre" style="margin-bottom:12px"><div><h2 style="margin:0">${esc(a.nom)}</h2><div class="gris">${esc(a.s)} · ${esc(a.secteur)} · ${esc(a.pays)}</div></div>${fermerBtn}</div>
-    <div class="seg">${Object.keys(H).map((x) => `<button class="${x === h ? "on" : ""}" data-fhorizon="${x}">${H[x]}</button>`).join("")}</div>
+    ${seg("fiche", Object.keys(H).map((x) => [x, H[x]]), h, "fhorizon")}
     <div class="carte" style="text-align:center">
       ${a.notes && a.notes[h] != null ? `<div class="grandes-etoiles" aria-label="${e} étoiles sur 5">${[0, 1, 2, 3, 4].map((i) => `<span style="animation-delay:${(0.1 + i * 0.08).toFixed(2)}s">${i < e ? "★" : "☆"}</span>`).join("")}</div>
-      <div style="font-size:20px;font-weight:800;margin-top:4px">${MOT[e]}</div><div class="gris">${nb(a.notes[h], 0)}/100 · fiabilité ${a.fiabilite[h]} % ${barres(a.fiabilite[h])}</div>` : `<div class="gris">Pas de note pour l'instant.</div>`}
+      <div style="font-size:20px;font-weight:800;margin-top:4px">${MOT[e]}</div><div class="gris ligne" style="justify-content:center;margin-top:2px">${nb(a.notes[h], 0)}/100 · fiabilité ${a.fiabilite[h]} % ${barres(a.fiabilite[h])}</div>` : `<div class="gris">Pas de note pour l'instant.</div>`}
       ${parleOk ? `<button class="bouton second" style="margin-top:12px" data-ecouter>🔊 Écouter l'explication</button>` : ""}
     </div>
     <div class="carte"><div class="ligne entre"><span style="font-size:26px;font-weight:700">${fcfa(a.cours)}</span>${a.var_jour != null ? `<span class="fleche ${a.var_jour >= 0 ? "haut" : "bas"}">${a.var_jour >= 0 ? "▲ +" : "▼ "}${nb(a.var_jour, 2)} % aujourd'hui</span>` : ""}</div>
-      <div class="grille3" style="margin-top:12px"><button class="case" data-mot="dividende"><div class="gris">Rendement ⓘ</div><div class="val">${a.rendement != null ? nb(a.rendement) + " %" : "—"}</div></button><button class="case" data-mot="per"><div class="gris">PER ⓘ</div><div class="val">${a.per != null ? nb(a.per) : "—"}</div></button><div class="case"><div class="gris">Sur 1 an</div><div class="val">${a.tendance != null ? (a.tendance > 0 ? "+" : "") + nb(a.tendance, 0) + " %" : "—"}</div></div></div>
+      <div class="grille3" style="margin-top:12px"><button class="case" data-mot="dividende"><div class="gris">Rendement <span aria-hidden="true">ⓘ</span></div><div class="val">${a.rendement != null ? nb(a.rendement) + " %" : "—"}</div></button><button class="case" data-mot="per"><div class="gris">PER <span aria-hidden="true">ⓘ</span></div><div class="val">${a.per != null ? nb(a.per) : "—"}</div></button><div class="case"><div class="gris">Sur 1 an</div><div class="val">${a.tendance != null ? (a.tendance > 0 ? "+" : "") + nb(a.tendance, 0) + " %" : "—"}</div></div></div>
     </div>
     ${a.feu ? `<div class="carte"><div class="ligne entre"><h3 style="margin:0">Solidité de l'entreprise</h3>${feu(a, true)}</div>
       <div class="gris" style="margin-top:6px">${a.feu.couleur === "gris" ? "Pas assez de chiffres dans ses bilans pour juger." : "D'après ses bilans : " + esc(a.feu.pourquoi) + "."}</div>
@@ -377,7 +451,7 @@ function investir() {
     <h3 style="margin-top:14px">Pendant combien de temps ?</h3>
     ${puces([[1, "1 an"], [3, "3 ans"], [5, "5 ans"]], inv.duree, "iduree")}
   </div>
-  <button class="carte appel" data-quiz><span style="font-size:28px">${PROFILS[profil][0]}</span><span><b>Ton profil : ${profil}</b><div class="gris">${lire("profil", null) ? "D'après ton quiz · le refaire" : "Profil par défaut · fais le quiz (1 min)"}</div></span><span class="chev">›</span></button>
+  <button class="carte appel" data-quiz><span class="pict">${PROFILS[profil][0]}</span><span><b>Ton profil : ${profil}</b><div class="gris">${lire("profil", null) ? "D'après ton quiz. Touche pour le refaire." : "Profil par défaut. Fais le quiz en 1 minute."}</div></span>${ICONES.chev}</button>
   <div class="carte">
     <h3>Ce que tu achètes</h3>
     <div class="ligne" style="align-items:center;gap:14px">${anneau(segs)}<div style="flex:1;min-width:0">${plan.lignes.map((l, i) => `<div class="leg-ligne"><i style="background:${COULEURS[i % COULEURS.length]}"></i><span><b>${esc(action(l.s).nom)}</b><div class="gris">${l.qte} action${l.qte > 1 ? "s" : ""} · ${nb((l.cout + l.frais) / inv.montant * 100, 0)} %</div></span></div>`).join("")}
@@ -401,8 +475,8 @@ function investir() {
   <div class="carte">
     <h3>Portefeuille type long terme</h3>
     <div class="gris" style="margin-bottom:6px">10 actions, 3 au plus par groupe, 5 banques au plus. Construis-le petit à petit.</div>
-    ${D.portefeuilles.lt.map((s, i) => ligneAction(action(s), i + 1, "lt")).join("")}
   </div>
+  <div class="liste">${D.portefeuilles.lt.map((s, i) => ligneAction(action(s), i + 1, "lt")).join("")}</div>
   <p class="gris" style="text-align:center">Aide à la décision, pas un conseil d'investissement.</p>`;
 }
 
@@ -424,7 +498,7 @@ function propositionMois(montant, profil) {
 
 // ---------- portefeuille : suivi + mes actions
 function portefeuille() {
-  return `<div class="seg">${[["suivi", "Mon suivi"], ["actions", "Mes actions"]].map(([v, l]) => `<button class="${v === vuePf ? "on" : ""}" data-vuepf="${v}">${l}</button>`).join("")}</div>` + (vuePf === "suivi" ? suivi() : mesActions());
+  return seg("pf", [["suivi", "Mon suivi"], ["actions", "Mes actions"]], vuePf, "vuepf") + (vuePf === "suivi" ? suivi() : mesActions());
 }
 
 function suivi() {
@@ -485,7 +559,7 @@ function mesActions() {
     ${divs ? `<div class="ligne entre"><span class="gris">Dividendes reçus</span><b class="haut">+${fcfa(divs)}</b></div>` : ""}
     ${pf.length ? `<div class="gris" style="margin-top:8px">Frais fixes ${esc(frais.sgi)} estimés : ${fcfa(fixes)} par an (${valeur ? nb(fixes / valeur * 100) : "—"} % du portefeuille)${valeur && fixes / valeur > 0.03 ? ". C'est beaucoup au début : cette part baisse vite quand le portefeuille grandit" : ""}.</div>` : ""}
   </div>
-  <div class="carte" style="padding:4px 12px">${lignes || `<div class="vide-etat">Aucune action pour l'instant. Ouvre une action dans le classement et touche « Ajouter à mon portefeuille ».</div>`}</div>
+  <div class="liste">${lignes || `<div class="vide-etat"><b>Aucune action pour l'instant</b><p>Ouvre une action dans le classement et touche « Ajouter à mon portefeuille ».</p><button class="bouton second" data-onglet="classement">Voir le classement</button></div>`}</div>
   <button class="bouton second" data-dividende style="margin-bottom:12px">💰 J'ai reçu un dividende</button>
   <div class="carte">
     <h3>Frais de ma SGI</h3>
@@ -561,11 +635,82 @@ function apprendre() {
 function ouvrir(html) {
   const c = document.getElementById("couche");
   const dejaOuvert = c.querySelector(".feuille>div");
+  if (!c.firstElementChild) history.pushState({ ecran, feuille: true }, "");
   const pos = dejaOuvert ? dejaOuvert.scrollTop : 0;
   c.innerHTML = `<div class="feuille ${dejaOuvert ? "sans-anim" : ""}" data-fond><div role="dialog" aria-modal="true">${html}</div></div>`;
   if (dejaOuvert) c.querySelector(".feuille>div").scrollTop = pos;
 }
-function fermer() { if ("speechSynthesis" in window) speechSynthesis.cancel(); document.getElementById("couche").innerHTML = ""; ficheEtat.s = null; majPastille(); }
+function fermer(depuisRetour) {
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+  const c = document.getElementById("couche"), f = c.querySelector(".feuille");
+  if (!c.firstElementChild) return;
+  if (!depuisRetour && history.state && history.state.feuille) { history.back(); return; }  // popstate refermera
+  ficheEtat.s = null; majPastille();
+  if (f && !matchMedia("(prefers-reduced-motion: reduce)").matches) { f.classList.add("part"); setTimeout(() => { if (c.firstElementChild === f) c.innerHTML = ""; }, 210); }
+  else c.innerHTML = "";
+}
+window.addEventListener("popstate", (ev) => {
+  if (document.querySelector("#couche > *")) return fermer(true);
+  const cible = (ev.state && ev.state.ecran) || "accueil";
+  if (cible !== ecran) { defilement[ecran] = window.scrollY; ecran = cible; recherche = ""; rendre(); }
+});
+// tirer une feuille vers le bas pour la fermer
+(() => {
+  let y0 = null, dy = 0, panneau = null, t0 = 0;
+  document.addEventListener("touchstart", (e) => {
+    const p = e.target.closest(".feuille>div");
+    if (!p || p.scrollTop > 0) return;
+    panneau = p; y0 = e.touches[0].clientY; dy = 0; t0 = Date.now();
+  }, { passive: true });
+  document.addEventListener("touchmove", (e) => {
+    if (y0 == null) return;
+    dy = e.touches[0].clientY - y0;
+    if (dy > 0 && panneau.scrollTop <= 0) { panneau.style.transition = "none"; panneau.style.transform = `translateY(${dy}px)`; }
+  }, { passive: true });
+  document.addEventListener("touchend", () => {
+    if (y0 == null) return;
+    const vite = dy / Math.max(1, Date.now() - t0) > 0.6;
+    if (dy > 120 || (vite && dy > 40)) { panneau.style.transition = "transform .2s ease-in"; panneau.style.transform = "translateY(100%)"; setTimeout(() => fermer(), 180); }
+    else { panneau.style.transition = "transform .25s cubic-bezier(.2,.8,.2,1)"; panneau.style.transform = ""; }
+    y0 = null; panneau = null;
+  });
+})();
+// glisser a gauche / a droite sur le classement pour changer d'horizon
+(() => {
+  let x0 = null, y0 = 0;
+  document.addEventListener("touchstart", (e) => { if (e.target.closest("[data-glisse-horizon]")) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; } }, { passive: true });
+  document.addEventListener("touchend", (e) => {
+    if (x0 == null) return;
+    const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+    if (Math.abs(dx) < 70 || Math.abs(dy) > 45) return;
+    const k = Object.keys(H), i = k.indexOf(horizon) + (dx < 0 ? 1 : -1);
+    if (i < 0 || i >= k.length) return;
+    horizon = k[i]; vibre(6); rendre();
+    const l = document.getElementById("liste");
+    l.style.animation = `${dx < 0 ? "glisseD" : "glisseG"} .28s cubic-bezier(.2,.8,.2,1) both`;
+  });
+})();
+// tirer l'accueil vers le bas pour actualiser
+(() => {
+  let y0 = null, dy = 0;
+  const zone = () => document.getElementById("tirer");
+  document.addEventListener("touchstart", (e) => { if (ecran === "accueil" && window.scrollY <= 0 && !document.querySelector("#couche > *") && !e.target.closest("nav")) { y0 = e.touches[0].clientY; dy = 0; } }, { passive: true });
+  document.addEventListener("touchmove", (e) => {
+    if (y0 == null) return;
+    dy = Math.min(110, e.touches[0].clientY - y0);
+    if (dy > 10) { zone().style.height = dy * 0.55 + "px"; zone().innerHTML = ICONES.fleche + (dy > 80 ? "Relâche pour actualiser" : "Tire pour actualiser"); }
+  }, { passive: true });
+  document.addEventListener("touchend", async () => {
+    if (y0 == null) return;
+    y0 = null;
+    const z = zone();
+    if (dy > 80) {
+      z.classList.add("charge"); z.style.height = "44px"; z.innerHTML = ico('<path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/>') + "Actualisation…";
+      vibre(10); await charger(true); z.classList.remove("charge"); toast("Données à jour");
+    }
+    z.style.height = "0"; setTimeout(() => { z.innerHTML = ""; }, 200);
+  });
+})();
 
 function ecranQuiz() {
   const { i, choix, score } = quiz;
@@ -609,6 +754,8 @@ function ecranMessages() {
 
 function celebration(type, montant) {
   const div = type === "dividende", serie = lire("mois", []);
+  vibre([10, 40, 18]);
+  if (!document.querySelector("#couche > *")) history.pushState({ ecran, feuille: true }, "");
   document.getElementById("couche").innerHTML = `<div class="celeb" data-celeb>
     <video src="celebration.mp4" autoplay muted playsinline></video><img src="celebration_fin.jpg" alt="">
     <div class="c-carte">
@@ -625,9 +772,9 @@ document.addEventListener("click", (ev) => {
   if (!t || !D) return;
   const d = t.dataset;
   if (d.fond !== undefined && ev.target === t) return fermer();
-  if (d.onglet) { fermer(); ecran = d.onglet; recherche = ""; rendre(); return window.scrollTo(0, 0); }
-  if (d.msgaller) { fermer(); ecran = d.msgaller; rendre(); return window.scrollTo(0, 0); }
-  if (d.horizon) { horizon = d.horizon; return rendre(); }
+  if (d.onglet) return allerA(d.onglet);
+  if (d.msgaller) return allerA(d.msgaller);
+  if (d.horizon) { if (d.horizon !== horizon) { horizon = d.horizon; vibre(5); rendre(); } return; }
   if (d.fiche) return fiche(d.fiche);
   if (d.fhorizon) { ficheEtat.h = d.fhorizon; return fiche(); }
   if (d.fmontant) { ficheEtat.montant = +d.fmontant; return fiche(); }
@@ -647,11 +794,12 @@ document.addEventListener("click", (ev) => {
     const s = d.enregistrer, qte = +document.getElementById("qte").value, prix = +document.getElementById("prix").value;
     const pf = lire("portefeuille", []).filter((p) => p.s !== s);
     if (qte > 0 && prix > 0) pf.push({ s, qte, prix });
-    ecrire("portefeuille", pf); fermer(); ecran = "portefeuille"; vuePf = "actions"; return rendre();
+    ecrire("portefeuille", pf); vuePf = "actions"; allerA("portefeuille"); if (ecran === "portefeuille") rendre();
+    vibre(12); return toast(qte > 0 ? "Enregistré dans ton portefeuille" : "Action retirée");
   }
-  if (d.retirer) { ecrire("portefeuille", lire("portefeuille", []).filter((p) => p.s !== d.retirer)); fermer(); return rendre(); }
-  if (d.imontant) { inv.montant = +d.imontant; return rendre(); }
-  if (d.iduree) { inv.duree = +d.iduree; return rendre(); }
+  if (d.retirer) { ecrire("portefeuille", lire("portefeuille", []).filter((p) => p.s !== d.retirer)); fermer(); rendre(); return toast("Action retirée de ton portefeuille"); }
+  if (d.imontant) { inv.montant = +d.imontant; vibre(5); return rendreSansSaut(); }
+  if (d.iduree) { inv.duree = +d.iduree; vibre(5); return rendreSansSaut(); }
   if (d.vuepf) { vuePf = d.vuepf; return rendre(); }
   if (d.valider !== undefined) {
     const plan = construirePlan(inv.montant, lire("profil", null) || "Équilibré");
@@ -667,11 +815,11 @@ document.addEventListener("click", (ev) => {
     ecran = "portefeuille"; vuePf = "suivi"; rendre();
     return celebration("plan", inv.montant);
   }
-  if (d.arreter !== undefined) { if (confirmerArret(t)) { ecrire("plan", null); ecrire("histoSuivi", []); rendre(); } return; }
+  if (d.arreter !== undefined) { if (confirmerArret(t)) { ecrire("plan", null); ecrire("histoSuivi", []); rendre(); toast("Suivi arrêté"); } return; }
   if (d.mois !== undefined) {
     const mois = auj().slice(0, 7), serie = lire("mois", []);
     if (!serie.includes(mois)) serie.push(mois);
-    ecrire("mois", serie); rendre();
+    ecrire("mois", serie); rendreSansSaut();
     return celebration("mois", lire("mensuel", 20000));
   }
   if (d.dividende !== undefined) {
@@ -685,11 +833,11 @@ document.addEventListener("click", (ev) => {
     return;
   }
   if (d.quiz !== undefined) { quiz = { i: 0, choix: null, score: 0 }; return ecranQuiz(); }
-  if (d.qopt) { quiz.choix = +d.qopt; return ecranQuiz(); }
+  if (d.qopt) { quiz.choix = +d.qopt; vibre(5); return ecranQuiz(); }
   if (d.qsuite !== undefined && quiz && quiz.choix != null) { quiz.score += QUESTIONS[quiz.i][1][quiz.choix][1]; quiz.i++; quiz.choix = null; if (quiz.i >= QUESTIONS.length) ecrire("profil", profilDe(quiz.score)); return ecranQuiz(); }
-  if (d.quizfin !== undefined) { fermer(); ecran = "investir"; rendre(); return window.scrollTo(0, 0); }
+  if (d.quizfin !== undefined) { toast(`Profil enregistré : ${lire("profil", "")}`); return allerA("investir"); }
   if (d.filtre) { filtreMsg = d.filtre; return ecranMessages(); }
-  if (d.flip !== undefined) return t.classList.toggle("retourne");
+  if (d.flip !== undefined) { vibre(5); return t.classList.toggle("retourne"); }
   if (d.lecon) {
     const i = +d.lecon, [ic, ti, tx] = LECONS[i];
     const l = lire("lecons", []); if (!l.includes(i)) { l.push(i); ecrire("lecons", l); }
@@ -697,7 +845,7 @@ document.addEventListener("click", (ev) => {
       ${i + 1 < LECONS.length ? `<button class="bouton" data-lecon="${i + 1}">Leçon suivante</button>` : `<button class="bouton" data-fermer>Terminé 🎓</button>`}`);
     return rendre();
   }
-  if (t.id === "cloche") return ecranMessages();
+  if (t.id === "cloche") { vibre(5); return ecranMessages(); }
 });
 function confirmerArret(b) {
   if (b.dataset.sur) return true;
@@ -707,14 +855,14 @@ function confirmerArret(b) {
 }
 document.addEventListener("input", (ev) => {
   const t = ev.target;
-  if (t.id === "cherche") { recherche = t.value; const pos = t.selectionStart; rendre(); const n = document.getElementById("cherche"); n.focus(); n.setSelectionRange(pos, pos); }
+  if (t.id === "cherche") { recherche = t.value; document.getElementById("liste").innerHTML = listeClassement(); }
   if (t.id === "mensuel") ecrire("mensuel", Math.max(0, +t.value || 0));
   if (t.dataset.frais) { const f = lire("frais", FRAIS_DEFAUT); f[t.dataset.frais] = +t.value || 0; ecrire("frais", f); }
 });
 document.addEventListener("change", (ev) => {
   const t = ev.target;
-  if (t.id === "montantLibre" && +t.value > 0) { inv.montant = Math.round(+t.value); return rendre(); }
-  if (t.id === "mensuel" || t.dataset.frais) rendre();
+  if (t.id === "montantLibre" && +t.value > 0) { inv.montant = Math.round(+t.value); return rendreSansSaut(); }
+  if (t.id === "mensuel" || t.dataset.frais) rendreSansSaut();
 });
 document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") fermer(); });
 
