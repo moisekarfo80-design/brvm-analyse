@@ -15,6 +15,7 @@ Regles reprises du plan (tests n°4 et n°5) :
 import csv
 import datetime as dt
 import json
+import math
 import statistics as st
 from pathlib import Path
 
@@ -91,7 +92,16 @@ def serie_resultats(h):
             rn[int(an)] = x["n"]
         if x.get("n1") is not None and int(an) - 1 not in rn:
             rn[int(an) - 1] = x["n1"]
-    return dict(sorted(rn.items()))
+    rn = dict(sorted(rn.items()))
+    # unites differentes selon les annees (FCFA, milliers, millions) : on ramene tout a l'unite de l'annee la plus recente
+    ref = next((v for a, v in sorted(rn.items(), reverse=True) if v), None)
+    if ref:
+        lref = math.log10(abs(ref))
+        for a, v in rn.items():
+            if v:
+                k = min(range(-3, 4), key=lambda k: abs(math.log10(abs(v) * 1000 ** k) - lref))
+                rn[a] = v * 1000 ** k
+    return rn
 
 
 def prix_a(serie, jour):

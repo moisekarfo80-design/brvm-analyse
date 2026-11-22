@@ -325,7 +325,30 @@ def evaluer(pages):
     return score, banque, ch, statut, ok, pb, manquants
 
 
-def lire_pdf(chemin, diag=False):
+def ordre_colonnes(pages, exercice):
+    """True si le document place l'annee precedente AVANT l'annee de l'exercice (ex. « 2024 | 2025 »)."""
+    if not exercice:
+        return False
+    a, b = str(exercice), str(exercice - 1)
+    avant = apres = 0
+    for l in "\n".join(pages).splitlines():
+        for x, y in ((a, b), (a[2:], b[2:])):
+            ia = [m.start() for m in re.finditer(rf"(?<!\d){x}(?!\d)", l)]
+            ib = [m.start() for m in re.finditer(rf"(?<!\d){y}(?!\d)", l)]
+            if ia and ib and len(x) == 4 or (ia and ib and re.search(r"(d[ée]c|sept|juin|mars)\.?[- ]?\d{2}", l, re.I)):
+                if ib[0] < ia[0]:
+                    avant += 1
+                else:
+                    apres += 1
+                break
+    return avant > apres
+
+
+def inverser(ch):
+    return {k: dict(v, n=v["n1"], n1=v["n"]) for k, v in ch.items()}
+
+
+def lire_pdf(chemin, diag=False, exercice=None):
     pages, ocr = texte_pdf(chemin)
     essais = [("pdfplumber/ocr", pages)]
     pt = texte_pdftotext(chemin)
@@ -333,6 +356,13 @@ def lire_pdf(chemin, diag=False):
         essais.append(("pdftotext", pt))
     resultats = [(evaluer(p), nom, p) for nom, p in essais]
     (score, banque, ch, statut, ok, pb, manquants), outil, pages = max(resultats, key=lambda x: x[0][0])
+    inverse = ordre_colonnes(pages, exercice)
+    if inverse:  # colonnes « annee precedente | annee en cours » : on remet dans l'ordre
+        ok_avant = [x for x in ok if "identique" in x or "actif" in x]  # controles qui ne dependent pas de l'ordre
+        ch = inverser(ch)
+        statut, ok, pb, manquants = controler(banque, ch, [])
+        ok = sorted(set(ok + ok_avant)) + ["colonnes remises dans l'ordre (annee precedente en premier dans le document)"]
+        statut = "valide" if ok_avant and not pb else statut
     communique = False
     if statut != "valide":  # dernier recours : communique ecrit en phrases
         cm = lire_communique(pages)
@@ -352,7 +382,7 @@ def lire_pdf(chemin, diag=False):
     rat = ratios(banque, ch)
     if communique:  # sans bilan detaille : seulement la croissance
         rat = {k: v for k, v in rat.items() if k.startswith("croissance")}
-    return {"banque": banque, "pages_ocr": ocr, "manquants": manquants, "outil": outil, "communique": communique, "chiffres": {k: {"n": v["n"], "n1": v["n1"]} for k, v in ch.items()},
+    return {"banque": banque, "pages_ocr": ocr, "manquants": manquants, "outil": outil, "communique": communique, "colonnes_inversees": inverse, "chiffres": {k: {"n": v["n"], "n1": v["n1"]} for k, v in ch.items()},
             "lignes_lues": {k: v["ligne"] for k, v in ch.items()}, "statut": statut, "controles_ok": ok,
             "problemes": pb, "ratios": rat}
 
@@ -529,7 +559,7 @@ def lire_exercice(sym, candidats, exercice):
             with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
                 f.write(contenu)
                 f.flush()
-                r = lire_pdf(f.name, diag="--diag" in sys.argv)
+                r = lire_pdf(f.name, diag="--diag" in sys.argv, exercice=exercice)
             r.update(exercice=exercice, url=p["url"], titre=p["titre"], lu_le=dt.date.today().isoformat())
             if res is None or (r["statut"] == "valide" and res["statut"] != "valide"):
                 res = r
@@ -541,7 +571,10 @@ def lire_exercice(sym, candidats, exercice):
 
 
 def proche(a, b, tol=0.006):
-    return a is not None and b is not None and abs(a - b) <= tol * max(abs(a), abs(b), 1)
+    """Egalite a 0,6 % pres, en tolerant un changement d'unite (FCFA, milliers, millions)."""
+    if a is None or b is None:
+        return False
+    return any(abs(a - b * 1000 ** k) <= tol * max(abs(a), abs(b * 1000 ** k), 1) for k in (-2, -1, 0, 1, 2))
 
 
 def controle_croise(hist):
