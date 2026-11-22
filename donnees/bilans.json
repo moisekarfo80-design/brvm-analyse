@@ -7,6 +7,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "rn": {
      "n": 36463616375,
@@ -42,12 +44,14 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sitab-ci-annule-et-remplace-le-precedent-etats-financiers-exercice-2025",
    "titre": "SITAB CI (Annule et remplace le précédent) : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "UNXC": {
    "banque": false,
    "pages_ocr": 1,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 29031727207,
@@ -97,12 +101,14 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/uniwax-ci-etats-financiers-exercice-2025",
    "titre": "UNIWAX CI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "ONTBF": {
    "banque": false,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 146176657128,
@@ -158,12 +164,14 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/onatel-bf-etats-financiers-approuves-exercice-2025",
    "titre": "ONATEL BF : Etats financiers approuvés - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "ABJC": {
    "banque": false,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 13298,
@@ -203,6 +211,8 @@
    "banque": true,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 68063,
@@ -264,6 +274,8 @@
    "banque": false,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 2454158321,
@@ -320,6 +332,8 @@
    "banque": true,
    "pages_ocr": 4,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 46526723396,
@@ -378,6 +392,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 57489834311,
@@ -434,6 +450,8 @@
    "banque": true,
    "pages_ocr": 8,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 37996,
@@ -489,6 +507,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {},
    "lignes_lues": {},
    "statut": "a confirmer",
@@ -508,6 +528,8 @@
    "banque": true,
    "pages_ocr": 4,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 49666,
@@ -565,6 +587,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 21263067001,
@@ -619,6 +643,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {},
    "lignes_lues": {},
    "statut": "a confirmer",
@@ -640,6 +666,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 302320,
@@ -690,49 +718,48 @@
    "banque": true,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdftotext",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 2086073,
      "n1": 1266559
     },
     "rn": {
-     "n": 45523493630,
-     "n1": 99708
+     "n": 493630,
+     "n1": 299708
     },
     "cp": {
      "n": 1794802,
      "n1": 1133230
     },
     "total_actif": {
-     "n": 7955172,
+     "n": 27955172,
      "n1": 17650776
     },
     "total_passif": {
-     "n": 7955172,
+     "n": 27955172,
      "n1": 17650776
     }
    },
    "lignes_lues": {
-    "pnb": "Produit net bancaire 2 ,448,994 1 ,424,261 2 ,086,073 1 ,266,559 17% 12%",
-    "rn": "Résultat net consolidé 5 94,122 3 45,523 493,630 2 99,708",
-    "cp": "Total capitaux propres 2,863,523 1 ,597,846 1 ,794,802 1 ,133,230",
-    "total_actif": "Total Actif 34,487,211 1 9,243,865 2 7,955,172 17,650,776",
-    "total_passif": "Total Passif 34,487,211 1 9,243,865 2 7,955,172 17,650,776"
+    "pnb": "Produit net bancaire                                   2,448,994           1,424,261           2,086,073          1,266,559             17% ",
+    "rn": "Résultat net consolidé                                  594,122               345,523            493,630             299,708            20% ",
+    "cp": "Total capitaux propres                                                      2,863,523               1,597,846        1,794,802              ",
+    "total_actif": "Total Actif                                                               34,487,211               19,243,865      27,955,172               ",
+    "total_passif": "Total Passif                                                              34,487,211               19,243,865      27,955,172               "
    },
-   "statut": "a confirmer",
+   "statut": "valide",
    "controles_ok": [
-    "total actif = total passif"
+    "total actif = total passif",
+    "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [
-    "resultat net incoherent avec les capitaux propres",
-    "resultat net superieur au chiffre d'affaires / PNB",
-    "resultat net qui varie enormement : a verifier"
-   ],
+   "problemes": [],
    "ratios": {
-    "roe": 25364.0756,
-    "marge": 21822.5794,
+    "roe": 0.275,
+    "marge": 0.2366,
     "croissance_activite": 0.647,
-    "croissance_resultat": 456567.1152
+    "croissance_resultat": 0.647
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/eti-tg-etats-financiers-ifrs-exercice-2025",
@@ -745,48 +772,47 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdftotext",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 32108628,
      "n1": 30694517
     },
     "rn": {
-     "n": 65981,
-     "n1": 8595
+     "n": 465981,
+     "n1": 595275
     },
     "ebe": {
      "n": 1501461,
-     "n1": 73316
+     "n1": 473316
     },
     "total_actif": {
-     "n": 9148981,
-     "n1": 1061747
+     "n": 39148981,
+     "n1": 61061747
     },
     "total_passif": {
-     "n": 9148981,
-     "n1": 1061747
+     "n": 39148981,
+     "n1": 61061747
     }
    },
    "lignes_lues": {
-    "ca": "Chiffre d'affaires 32 108 628 30 694 517 1 414 111 5%",
-    "rn": "Immobilisations financières 1 714 596 1 437 244 Résultat net de l'exercice 4 65 981 1 8 595 275",
-    "ebe": "Excedent brut D'exploitation 1 501 461 4 73 316",
-    "total_actif": "TOTAL ACTIF 3 9 148 981 6 1 061 747 TOTAL PASSIF 3 9 148 981 6 1 061 747",
-    "total_passif": "TOTAL ACTIF 3 9 148 981 6 1 061 747 TOTAL PASSIF 3 9 148 981 6 1 061 747"
+    "ca": "Chiffre d'affaires                                        32 108 628       30 694 517                       1 414 111                       ",
+    "rn": "Immobilisations financières                                 1 714 596           1 437 244    Résultat net de l'exercice                     ",
+    "ebe": "Excedent brut D'exploitation                                                                                                                ",
+    "total_actif": "TOTAL ACTIF                                               39 148 981          61 061 747     TOTAL PASSIF                                   ",
+    "total_passif": "TOTAL ACTIF                                               39 148 981          61 061 747     TOTAL PASSIF                                   "
    },
-   "statut": "a confirmer",
+   "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
     "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [
-    "resultat net qui varie enormement : a verifier",
-    "capitaux propres non publie ou non lu"
-   ],
+   "problemes": [],
    "ratios": {
-    "marge": 0.0021,
+    "marge": 0.0145,
     "croissance_activite": 0.0461,
-    "croissance_resultat": 6.6767,
+    "croissance_resultat": -0.2172,
     "marge_ebe": 0.0468
    },
    "exercice": 2025,
@@ -797,21 +823,60 @@
   "LNBB": {
    "banque": false,
    "pages_ocr": 0,
-   "manquants": [
-    "resultat net",
-    "capitaux propres",
-    "chiffre d'affaires"
-   ],
-   "chiffres": {},
-   "lignes_lues": {},
+   "manquants": [],
+   "outil": "pdftotext",
+   "communique": false,
+   "chiffres": {
+    "ca": {
+     "n": 57100,
+     "n1": 2024
+    },
+    "rn": {
+     "n": 4622243779,
+     "n1": 7175554255
+    },
+    "cp": {
+     "n": 21953860132,
+     "n1": 23614741046
+    },
+    "dettes_fin": {
+     "n": 993695713,
+     "n1": 989567713
+    },
+    "ebe": {
+     "n": 7163992034,
+     "n1": 5362563665
+    },
+    "total_passif": {
+     "n": 9661311921,
+     "n1": 4446075141
+    }
+   },
+   "lignes_lues": {
+    "ca": "chiffre d’affaires des jeux en ligne est passé de 57,1 milliards de F CFA en 2024",
+    "rn": "Résultat net de l'exercice                                                                             4 622 243 779             7 175 554 2",
+    "cp": "Total Capitaux Propres et Ressources Assimilées                                                      21 953 860 132            23 614 741 04",
+    "dettes_fin": "Total Dettes Financières et Ressources Assimilées                                                        993 695 713               989 567 7",
+    "ebe": "Excédent Brut d'exploitation                                                                             7 163 992 034                5 362 ",
+    "total_passif": "Total Passif Circulant                                                                                 9 661 311 921             4 446 075 1"
+   },
    "statut": "a confirmer",
-   "controles_ok": [],
-   "problemes": [
-    "resultat net introuvable",
-    "capitaux propres non publie ou non lu",
-    "chiffre d'affaires non publie ou non lu"
+   "controles_ok": [
+    "resultat net identique sur deux lignes differentes"
    ],
-   "ratios": {},
+   "problemes": [
+    "resultat net superieur au chiffre d'affaires / PNB",
+    "activite qui varie de plus de 80 % : a verifier",
+    "excedent brut superieur au chiffre d'affaires"
+   ],
+   "ratios": {
+    "roe": 0.2105,
+    "marge": 80949.9786,
+    "croissance_activite": 27.2115,
+    "croissance_resultat": -0.3558,
+    "dette_cp": 0.0453,
+    "marge_ebe": 125463.9586
+   },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/lnb-bn-etats-financiers-exercice-2025",
    "titre": "LNB BN : Etats financiers - Exercice 2025",
@@ -824,6 +889,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "rn": {
      "n": 2036626234,
@@ -856,6 +923,8 @@
    "banque": true,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 97819,
@@ -906,7 +975,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/nsia-banque-ci-etats-financiers-et-communique-exercice-2025",
    "titre": "NSIA BANQUE CI : Etats financiers et Communiqué - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "NTLC": {
    "banque": false,
@@ -914,6 +983,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 233261162741,
@@ -947,35 +1018,55 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/nestle-ci-etats-financiers-exercice-2025",
    "titre": "NESTLE CI - Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "ORAC": {
    "banque": false,
    "pages_ocr": 0,
-   "manquants": [
-    "resultat net",
-    "capitaux propres",
-    "chiffre d'affaires"
+   "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
+   "chiffres": {
+    "ca": {
+     "n": 1197100,
+     "n1": 1084100
+    },
+    "rn": {
+     "n": 167800,
+     "n1": 158200
+    },
+    "cp": {
+     "n": 707800,
+     "n1": 713800
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'affaires 4.1 1 197,1 1 084,1 113,0 10,4%",
+    "rn": "Résultat net de l'ensemble consolidé 167,8 158,2 9,6 6,1%",
+    "cp": "Total capitaux propres 707,8 713,8 (6,0) (0,8,%)"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique sur deux lignes differentes"
    ],
-   "chiffres": {},
-   "lignes_lues": {},
-   "statut": "a confirmer",
-   "controles_ok": [],
-   "problemes": [
-    "resultat net introuvable",
-    "capitaux propres non publie ou non lu",
-    "chiffre d'affaires non publie ou non lu"
-   ],
-   "ratios": {},
+   "problemes": [],
+   "ratios": {
+    "roe": 0.2371,
+    "marge": 0.1402,
+    "croissance_activite": 0.1042,
+    "croissance_resultat": 0.0607
+   },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/orange-ci-etats-financiers-approuves-exercice-2025",
    "titre": "ORANGE CI : Etats financiers approuvés - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "ORGT": {
    "banque": true,
    "pages_ocr": 0,
    "manquants": [],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 186609,
@@ -1028,7 +1119,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/oragroup-tg-etats-financiers-exercice-2025",
    "titre": "ORAGROUP TG : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "PALC": {
    "banque": false,
@@ -1036,6 +1127,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 197629996,
@@ -1080,7 +1173,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/palm-ci-etats-financiers-exercice-2025",
    "titre": "PALM CI - Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "PRSC": {
    "banque": false,
@@ -1090,6 +1183,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {},
    "lignes_lues": {},
    "statut": "a confirmer",
@@ -1103,7 +1198,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/tractafric-motors-ci-etats-financiers-exercice-2025",
    "titre": "TRACTAFRIC MOTORS CI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SAFC": {
    "banque": true,
@@ -1111,6 +1206,8 @@
    "manquants": [
     "resultat net"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "pnb": {
      "n": 5735,
@@ -1154,7 +1251,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/safca-ci-etats-financiers-exercice-2025-annule-et-remplace-le-precedent",
    "titre": "SAFCA CI : Etats financiers - Exercice 2025 - (Annule et remplace le précédent)",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SCRC": {
    "banque": false,
@@ -1162,10 +1259,12 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdftotext",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 80568589,
-     "n1": 7219127
+     "n1": 87219127
     },
     "rn": {
      "n": -7953932,
@@ -1181,10 +1280,10 @@
     }
    },
    "lignes_lues": {
-    "ca": "Chiffre d'affaires 80 568 589 8 7 219 127",
-    "rn": "Résultat net - 7 953 932 2 473 760",
-    "total_actif": "Total actif 156 426 278 133 450 356",
-    "total_passif": "Total passif 156 426 278 133 450 356 Gain / perte - Actuarielle sur engagement de retraite 52 753 -45 496"
+    "ca": "Chiffre d'affaires                                                               80 568 589            87 219 127       Elimination des prof",
+    "rn": "ACTIFS                                                                                                                                      ",
+    "total_actif": "Total actif                                             156 426 278       133 450 356",
+    "total_passif": "Total passif                                            156 426 278       133 450 356                                                       "
    },
    "statut": "a confirmer",
    "controles_ok": [
@@ -1192,72 +1291,98 @@
     "resultat net identique sur deux lignes differentes"
    ],
    "problemes": [
-    "activite qui varie de plus de 80 % : a verifier",
     "resultat net qui varie enormement : a verifier",
     "capitaux propres non publie ou non lu"
    ],
    "ratios": {
     "marge": -0.0987,
-    "croissance_activite": 10.1604,
+    "croissance_activite": -0.0763,
     "croissance_resultat": -4.2153
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sucrivoire-ci-etats-financiers-exercice-2025-annule-et-remplace-le-precedent",
    "titre": "SUCRIVOIRE CI : Etats financiers - Exercice 2025 - (Annule et remplace le précédent)",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SDCC": {
    "banque": false,
    "pages_ocr": 0,
    "manquants": [
-    "resultat net",
-    "capitaux propres",
-    "chiffre d'affaires"
+    "capitaux propres"
    ],
-   "chiffres": {},
-   "lignes_lues": {},
-   "statut": "a confirmer",
-   "controles_ok": [],
-   "problemes": [
-    "resultat net introuvable",
-    "capitaux propres non publie ou non lu",
-    "chiffre d'affaires non publie ou non lu"
+   "outil": "pdfplumber/ocr",
+   "communique": true,
+   "chiffres": {
+    "ca": {
+     "n": 189400000000,
+     "n1": 172181818182
+    },
+    "rn": {
+     "n": 4663000000,
+     "n1": 3559541985
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d’affaires : 189,4 milliards FCFA, en hausse de 10 %",
+    "rn": "Résultat net : 4,663 milliards FCFA, en progression de 31 %"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "chiffres repris du communique officiel (croissance seulement)"
    ],
-   "ratios": {},
+   "problemes": [],
+   "ratios": {
+    "croissance_activite": 0.1,
+    "croissance_resultat": 0.31
+   },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sodeci-etats-financiers-exercice-2025",
    "titre": "SODECI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SDSC": {
    "banque": false,
    "pages_ocr": 1,
    "manquants": [
-    "resultat net",
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
-     "n": 92004,
-     "n1": 268365
+     "n": 92004268,
+     "n1": 85643038
+    },
+    "rn": {
+     "n": 7970,
+     "n1": 21068973
+    },
+    "ebe": {
+     "n": 4264164,
+     "n1": 4585287
     }
    },
    "lignes_lues": {
-    "ca": "Total Chiffre d’affaires 92 004 268 365"
+    "ca": "Chiffre d'Affaires [92004 268] 85643038]  |Variation de l'actif circulant HAO - 1 866 548 -1 866 548",
+    "rn": "[RESULTAT NET | _7ea970] 21068973]  [TRESORERIE NETTE AU 31 DECEMBRE | 74781848] 15 616 726|",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION [_____4 264 164] 4 585 287| Subventions d'investissement reçues"
    },
    "statut": "a confirmer",
    "controles_ok": [],
    "problemes": [
-    "resultat net introuvable",
+    "resultat net qui varie enormement : a verifier",
     "capitaux propres non publie ou non lu"
    ],
    "ratios": {
-    "croissance_activite": -0.6572
+    "marge": 0.0001,
+    "croissance_activite": 0.0743,
+    "croissance_resultat": -0.9996,
+    "marge_ebe": 0.0463
    },
    "exercice": 2025,
-   "url": "https://www.brvm.org/fr/africa-glogal-logistics-ci-attestation-des-commissaires-aux-comptes-etats-financiers-exercice-2025",
-   "titre": "AFRICA GLOGAL LOGISTICS CI : Attestation des Commissaires Aux Comptes - Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "url": "https://www.brvm.org/fr/africa-global-logistics-ci-etats-financiers-certifies-exercice-2025",
+   "titre": "AFRICA GLOBAL LOGISTICS CI : Etats Financiers certifiés - Exercice 2025",
+   "lu_le": "2026-11-22"
   },
   "SHEC": {
    "banque": false,
@@ -1265,9 +1390,11 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
-     "n": 600707830161,
+     "n": 174600707830,
      "n1": 4270581013
     },
     "rn": {
@@ -1304,38 +1431,68 @@
     "capitaux propres non publie ou non lu"
    ],
    "ratios": {
-    "marge": 0.01,
-    "croissance_activite": 139.6619,
+    "marge": 0.0345,
+    "croissance_activite": 39.8845,
     "croissance_resultat": 0.1259,
-    "marge_ebe": 0.0286
+    "marge_ebe": 0.0983
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/vivo-energy-etats-financiers-exercice-2025",
    "titre": "VIVO ENERGY : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SLBC": {
    "banque": false,
    "pages_ocr": 0,
    "manquants": [
-    "resultat net",
-    "capitaux propres",
-    "chiffre d'affaires"
+    "capitaux propres"
    ],
-   "chiffres": {},
-   "lignes_lues": {},
-   "statut": "a confirmer",
-   "controles_ok": [],
-   "problemes": [
-    "resultat net introuvable",
-    "capitaux propres non publie ou non lu",
-    "chiffre d'affaires non publie ou non lu"
+   "outil": "pdftotext",
+   "communique": false,
+   "chiffres": {
+    "ca": {
+     "n": 309722,
+     "n1": 378123
+    },
+    "rn": {
+     "n": 21472,
+     "n1": 45781
+    },
+    "ebe": {
+     "n": 57494,
+     "n1": 87445
+    },
+    "total_actif": {
+     "n": 307546,
+     "n1": 339517
+    },
+    "total_passif": {
+     "n": 307546,
+     "n1": 339517
+    }
+   },
+   "lignes_lues": {
+    "ca": "CHIFFRE D'AFFAIRES ET AUTRES PRODUITS                      309 722    378 123                     RESSOURCES",
+    "rn": "Résultat net de l'exercice                                 21 472     45 781",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION                                57 494     87 445   Augmentation de Capital par apports nouveaux",
+    "total_actif": "Total Actif                                               307 546    339 517    NB: \"Comptes certifiés par les commissaires aux comptes\"",
+    "total_passif": "Total Passif                                              307 546    339 517"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "total actif = total passif"
    ],
-   "ratios": {},
+   "problemes": [],
+   "ratios": {
+    "marge": 0.0693,
+    "croissance_activite": -0.1809,
+    "croissance_resultat": -0.531,
+    "marge_ebe": 0.1856
+   },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/solibra-ci-etats-financiers-exercice-2025",
    "titre": "SOLIBRA CI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SMBC": {
    "banque": false,
@@ -1343,6 +1500,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 206740,
@@ -1387,30 +1546,48 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/smb-ci-etats-financiers-et-projet-daffectation-du-resultat-exercice-2025",
    "titre": "SMB CI : Etats financiers et projet d'affectation du résultat - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SNTS": {
    "banque": false,
    "pages_ocr": 3,
-   "manquants": [
-    "resultat net",
-    "capitaux propres",
-    "chiffre d'affaires"
+   "manquants": [],
+   "outil": "pdftotext",
+   "communique": false,
+   "chiffres": {
+    "ca": {
+     "n": 1923122,
+     "n1": 1776443
+    },
+    "rn": {
+     "n": 413588,
+     "n1": 393662
+    },
+    "cp": {
+     "n": 1399263,
+     "n1": 1274638
+    }
+   },
+   "lignes_lues": {
+    "ca": "Chiffre d'affaires                                                         1 923 122    1 776 443",
+    "rn": "Résultat net de l'ensemble consolidé                                         413 588      393 662",
+    "cp": "Total capitaux propres                                                        1 399 263    1 274 638"
+   },
+   "statut": "valide",
+   "controles_ok": [
+    "resultat net identique sur deux lignes differentes"
    ],
-   "chiffres": {},
-   "lignes_lues": {},
-   "statut": "a confirmer",
-   "controles_ok": [],
-   "problemes": [
-    "resultat net introuvable",
-    "capitaux propres non publie ou non lu",
-    "chiffre d'affaires non publie ou non lu"
-   ],
-   "ratios": {},
+   "problemes": [],
+   "ratios": {
+    "roe": 0.2956,
+    "marge": 0.2151,
+    "croissance_activite": 0.0826,
+    "croissance_resultat": 0.0506
+   },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sonatel-sn-etats-financiers-et-attestation-des-commissaires-aux-comptes-exercice-2025",
    "titre": "SONATEL SN : Etats financiers et attestation des Commissaires Aux Comptes – Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SOGC": {
    "banque": false,
@@ -1419,6 +1596,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "rn": {
      "n": 12492623,
@@ -1444,7 +1623,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sogb-ci-etats-financiers-syscohada-exercice-2025",
    "titre": "SOGB CI : Etats financiers SYSCOHADA - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "SPHC": {
    "banque": false,
@@ -1452,6 +1631,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 340830548704,
@@ -1496,7 +1677,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/saph-ci-etats-financiers-syscohada-exercice-2025",
    "titre": "SAPH CI - Etats financiers SYSCOHADA - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "STAC": {
    "banque": false,
@@ -1505,6 +1686,8 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "rn": {
      "n": -96558,
@@ -1537,7 +1720,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/setao-ci-etats-financiers-exercice-2025",
    "titre": "SETAO CI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "TTLC": {
    "banque": false,
@@ -1545,6 +1728,8 @@
    "manquants": [
     "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
     "ca": {
      "n": 588709,
@@ -1588,38 +1773,45 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/totalenergies-marketing-ci-etats-financiers-approuves-exercice-2025",
    "titre": "TOTALENERGIES MARKETING CI  : Etats financiers approuvés - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "TTLS": {
    "banque": false,
    "pages_ocr": 0,
    "manquants": [
-    "capitaux propres",
-    "chiffre d'affaires"
+    "capitaux propres"
    ],
+   "outil": "pdfplumber/ocr",
+   "communique": false,
    "chiffres": {
+    "ca": {
+     "n": 455209,
+     "n1": -29700
+    },
     "rn": {
      "n": 6146527,
      "n1": 7090811
     }
    },
    "lignes_lues": {
+    "ca": "Le chiffre d’affaires hors taxes s’établit à 455,209 milliards de FCFA, en retrait de 6% (-29,7",
     "rn": "RESULTAT NET 6 146 527 7 090 811"
    },
    "statut": "a confirmer",
    "controles_ok": [],
    "problemes": [
-    "capitaux propres non publie ou non lu",
-    "chiffre d'affaires non publie ou non lu"
+    "resultat net superieur au chiffre d'affaires / PNB",
+    "capitaux propres non publie ou non lu"
    ],
    "ratios": {
+    "marge": 13.5026,
     "croissance_resultat": -0.1332
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/totalenergies-marketing-sn-etats-financiers-syscohada-exercice-2025",
    "titre": "TOTALENERGIES MARKETING SN : Etats financiers SYSCOHADA - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   }
  },
- "maj": "2026-11-21T23:50Z"
+ "maj": "2026-11-22T00:02Z"
 }
