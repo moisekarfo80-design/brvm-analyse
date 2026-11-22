@@ -25,6 +25,30 @@ function toast(texte) {
   t.innerHTML = `<div class="toast">${ICONES.ok.replace("<svg", '<svg width="18" height="18"')}${esc(texte)}</div>`;
   clearTimeout(toast.minuteur); toast.minuteur = setTimeout(() => { t.innerHTML = ""; }, 2700);
 }
+const GROUPES = [["tout", "Tout", "✨", null], ["banques", "Banques", "🏦", ["Banques et finance"]], ["agri", "Agriculture", "🌾", ["Agriculture"]],
+  ["industrie", "Industrie", "🏭", ["Industrie"]], ["telecoms", "Télécoms", "📡", ["Télécoms"]], ["distrib", "Distribution", "🛒", ["Distribution", "Distribution de carburant"]],
+  ["conso", "Consommation", "🍽️", ["Boissons et alimentation", "Tabac", "Consommation"]], ["services", "Énergie et services", "⚡", ["Énergie et eau", "Services", "Transport et logistique"]]];
+let groupe = "tout";
+const initiales = (nom) => {
+  const mots = nom.replace(/\(.*?\)/g, "").split(/[\s-]+/).filter((m) => m && !/^(de|du|la|le|et|ci|sa|bf|sn|ml|ne|bn)$/i.test(m));
+  return (mots.length >= 2 ? mots[0][0] + mots[1][0] : (mots[0] || nom).slice(0, 2)).toUpperCase();
+};
+function podium(h) {
+  const top = D.classements[h].slice(0, 3).map(action);
+  if (top.length < 3) return "";
+  const ordre = [[top[1], 2, 74], [top[0], 1, 104], [top[2], 3, 56]];
+  return `<div class="podium" aria-label="Les 3 meilleures actions">${ordre.map(([a, r, hauteur], k) => `
+    <button class="marche m${r}" data-fiche="${a.s}" style="--h:${hauteur}px;--d:${(0.12 * k).toFixed(2)}s">
+      <span class="avatar">${r === 1 ? '<span class="couronne" aria-hidden="true">👑</span>' : ""}${esc(initiales(a.nom))}<i>${r}</i></span>
+      <span class="nom-p">${esc(a.nom)}</span>
+      <span class="colonne-p"><b>${nb(a.notes[h], 0)}</b></span>
+    </button>`).join("")}</div>`;
+}
+function anneauProgres(p, taille = 64) {
+  const r = taille / 2 - 6, C = 2 * Math.PI * r;
+  return `<svg class="anneau-p" width="${taille}" height="${taille}" viewBox="0 0 ${taille} ${taille}" aria-hidden="true"><circle cx="${taille / 2}" cy="${taille / 2}" r="${r}" fill="none" stroke="rgba(23,71,201,.14)" stroke-width="6"/><circle cx="${taille / 2}" cy="${taille / 2}" r="${r}" fill="none" stroke="#1747C9" stroke-width="6" stroke-linecap="round" stroke-dasharray="${(C * p).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${taille / 2} ${taille / 2})" style="--c:${C.toFixed(1)}"/><text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="${taille / 4.2}" font-weight="800" fill="#0B1B47">${Math.round(p * 100)}%</text></svg>`;
+}
+
 // curseur des controles segmentes : il glisse depuis sa position precedente
 const posCurseur = {};
 function seg(cle, liste, actif, attr) {
@@ -239,10 +263,18 @@ const defilement = {};
 function rendre() {
   const i = ONGLETS.findIndex(([id]) => id === ecran), avant = ONGLETS.findIndex(([id]) => id === ecranAffiche);
   const change = ecranAffiche !== ecran;
-  document.getElementById("nav").innerHTML = `<i class="curseur" style="--i:${i};--de:${avant < 0 ? i : avant}"></i>` + ONGLETS.map(([id, nom]) => `<button class="${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}" ${ecran === id ? 'aria-current="page"' : ""}>${ICONES[id]}${nom}</button>`).join("");
+  document.getElementById("nav").innerHTML = `<i class="curseur" style="--i:${i};--de:${avant < 0 ? i : avant}"></i>` + ONGLETS.map(([id, nom]) => id === "investir"
+    ? `<button class="fab ${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}" ${ecran === id ? 'aria-current="page"' : ""}><span class="rond">${ICONES[id]}</span>${nom}</button>`
+    : `<button class="${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}" ${ecran === id ? 'aria-current="page"' : ""}>${ICONES[id]}${nom}</button>`).join("");
+  document.querySelector("#nav .curseur").style.opacity = ecran === "investir" ? "0" : "1";
   if (!change) document.querySelector("#nav .curseur").style.animation = "none";
   const h = new Date().getHours();
-  document.getElementById("titre").textContent = TITRES[ecran] || (h < 12 ? "Bonjour" : h < 18 ? "Bon après-midi" : "Bonsoir");
+  const prenom = lire("prenom", "");
+  const t = document.getElementById("titre");
+  t.textContent = TITRES[ecran] || (prenom ? `Salut ${prenom}` : h < 18 ? "Bonjour" : "Bonsoir");
+  document.getElementById("entete").classList.toggle("souligne", ecran === "accueil");
+  t.parentElement.dataset.prenom = ecran === "accueil" ? "1" : "";
+  document.getElementById("sousTitre").textContent = ecran === "accueil" ? (prenom ? "On fait grandir ton argent aujourd'hui ?" : "Touche ici pour ajouter ton prénom") : "Cours du " + dateFr(D.date_cours);
   const m = document.getElementById("ecran");
   m.innerHTML = ({ accueil, classement, investir, portefeuille, apprendre })[ecran]();
   if (change) {
@@ -314,20 +346,29 @@ function accueil() {
   </section>
   ${!profil ? `<button class="carte appel" data-quiz><span class="pict">🧭</span><span><b>Quel investisseur es-tu ?</b><div class="gris">5 questions, 1 minute. L'application s'adapte à ta réponse.</div></span>${ICONES.chev}</button>` : ""}
   ${st ? `<button class="carte appel" data-onglet="portefeuille"><span class="pict">${({ prevu: "✅", mieux: "🌟", moins: "🧘", depart: "🌱" })[st.statut]}</span><span><b>Mon suivi : ${fcfa(st.valeur)}</b><div class="gris">${pc(st.gain)} depuis le ${dateFr(st.plan.date)}, ${({ prevu: "comme prévu", mieux: "mieux que prévu", moins: "moins bien que prévu", depart: "c'est le début" })[st.statut]}</div></span>${ICONES.chev}</button>` : ""}
+  <div class="titre-section"><h2>Les champions du long terme</h2><button class="lien" style="padding:0" data-onglet="classement">Tout voir</button></div>
+  ${podium("lt")}
+  ${(() => { const f = lire("lecons", []).length, suite = LECONS.findIndex((_, i) => !lire("lecons", []).includes(i)); return `
+  <button class="carte continuer" data-${suite < 0 ? "onglet=\"apprendre\"" : `lecon="${suite}"`}>
+    ${anneauProgres(f / LECONS.length)}
+    <span><b>${f ? "Continue tes leçons" : "Commence à apprendre"}</b><div class="gris">${suite < 0 ? "Toutes les leçons sont faites, bravo !" : `Prochaine : ${esc(LECONS[suite][1])}`}</div><span class="mini-bouton">${f ? "Continuer" : "Commencer"} ${ICONES.chev}</span></span>
+  </button>`; })()}
+  <button class="carte appel" data-onglet="apprendre"><span class="pict">💡</span><span><b>Carte du jour</b><div class="gris">${esc(carte[0])}</div></span>${ICONES.chev}</button>
   <div class="carte">
     <div class="ligne entre"><h3 style="margin:0">Fiabilité de l'analyse</h3>${barres(D.fiabilite)}</div>
     <div class="gris" style="margin-top:6px">${D.fiabilite} % · mise à jour le ${dateFr(D.maj)}.</div>
     ${alerte ? `<div class="puce" style="margin-top:10px">⚠ ${esc(alerte.titre)}</div>` : ""}
-  </div>
-  <div class="titre-section"><h2>Top long terme</h2><button class="lien" style="padding:0" data-onglet="classement">Tout voir</button></div>
-  <div class="liste">${top.map((a, i) => ligneAction(a, i + 1, "lt")).join("")}</div>
-  <button class="carte appel" data-onglet="apprendre"><span class="pict">💡</span><span><b>Carte du jour</b><div class="gris">${esc(carte[0])}</div></span>${ICONES.chev}</button>`;
+  </div>`;
 }
 
 function listeClassement() {
   const q = recherche.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   const simple = (t) => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  const liste = D.classements[horizon].map(action).filter((a) => !q || simple(a.nom).includes(q) || a.s.toLowerCase().includes(q));
+  const g = GROUPES.find((x) => x[0] === groupe)[3];
+  const sansFiltre = !q && !g;
+  const liste = D.classements[horizon].map(action).filter((a) => (!q || simple(a.nom).includes(q) || a.s.toLowerCase().includes(q)) && (!g || g.includes(a.secteur)))
+    .filter((a) => !sansFiltre || D.classements[horizon].indexOf(a.s) >= 3);
+  const pod = document.getElementById("podiumClassement"); if (pod) pod.hidden = !sansFiltre;
   return liste.map((a) => ligneAction(a, D.classements[horizon].indexOf(a.s) + 1, horizon)).join("") || `<div class="vide-etat">Aucune action ne correspond à « ${esc(recherche)} ».</div>`;
 }
 function classement() {
@@ -341,6 +382,8 @@ function classement() {
   </details>
   ${horizon === "ct" ? `<div class="puce" style="margin:0 0 12px">⚠ Le court terme suit la hausse récente : c'est le plus risqué.</div>` : ""}
   <div class="champ recherche">${ICONES.loupe}<input id="cherche" type="search" enterkeyhint="search" autocomplete="off" placeholder="Chercher une action, ex. Sonatel" value="${esc(recherche)}" aria-label="Chercher une action"></div>
+  <div class="puces-defile" role="tablist" aria-label="Secteurs">${GROUPES.map(([id, nom, ic]) => `<button role="tab" aria-selected="${id === groupe}" class="chip ${id === groupe ? "on" : ""}" data-groupe="${id}"><span>${ic}</span>${nom}</button>`).join("")}</div>
+  <div id="podiumClassement" data-glisse-horizon ${recherche || groupe !== "tout" ? "hidden" : ""}>${podium(horizon)}</div>
   <div class="liste" id="liste" data-glisse-horizon>${listeClassement()}</div>
   ${exclues.length ? `<div class="gris" style="padding:0 4px 8px">Non classées : ${exclues.map((a) => esc(a.nom) + " (" + esc((a.drapeaux || ["données manquantes"])[0]) + ")").join(", ")}.</div>` : ""}`;
 }
@@ -768,12 +811,18 @@ function celebration(type, montant) {
 
 // ---------- interactions
 document.addEventListener("click", (ev) => {
+  if (D && ev.target.closest("header h1[data-prenom='1']")) {
+    return ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">Comment tu t'appelles ?</h2>${fermerBtn}</div>
+      <div class="champ"><label for="prenom">Ton prénom (il reste sur ce téléphone)</label><input id="prenom" maxlength="20" autocomplete="given-name" value="${esc(lire("prenom", ""))}"></div>
+      <button class="bouton" data-prenomok>Enregistrer</button>`);
+  }
   const t = ev.target.closest("button,[data-fond]");
   if (!t || !D) return;
   const d = t.dataset;
   if (d.fond !== undefined && ev.target === t) return fermer();
   if (d.onglet) return allerA(d.onglet);
   if (d.msgaller) return allerA(d.msgaller);
+  if (d.groupe) { groupe = d.groupe; vibre(5); const y = window.scrollY; rendre(); window.scrollTo(0, y); return; }
   if (d.horizon) { if (d.horizon !== horizon) { horizon = d.horizon; vibre(5); rendre(); } return; }
   if (d.fiche) return fiche(d.fiche);
   if (d.fhorizon) { ficheEtat.h = d.fhorizon; return fiche(); }
@@ -844,6 +893,10 @@ document.addEventListener("click", (ev) => {
     ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">${ic} ${esc(ti)}</h2>${fermerBtn}</div><div class="carte"><p style="margin:0;font-size:16px;line-height:1.6">${esc(tx)}</p></div>
       ${i + 1 < LECONS.length ? `<button class="bouton" data-lecon="${i + 1}">Leçon suivante</button>` : `<button class="bouton" data-fermer>Terminé 🎓</button>`}`);
     return rendre();
+  }
+  if (d.prenomok !== undefined) {
+    const v = document.getElementById("prenom").value.trim().slice(0, 20);
+    ecrire("prenom", v); fermer(); rendre(); return toast(v ? `Enchanté, ${v} !` : "Prénom effacé");
   }
   if (t.id === "cloche") { vibre(5); return ecranMessages(); }
 });

@@ -258,6 +258,59 @@ nav button:active svg{transform:scale(.88)}
 .aide[open] .chev{transform:rotate(90deg)}
 .aide>div{padding:0 16px 14px;line-height:1.6}
 .case .gris{font-size:12px;white-space:nowrap}
+
+/* fond doux */
+body{background:radial-gradient(90% 50% at 100% 0%,#E3EBFF 0%,rgba(227,235,255,0) 60%),radial-gradient(80% 40% at 0% 30%,#EEF3FF 0%,rgba(238,243,255,0) 70%),var(--papier);background-attachment:fixed}
+header{background:rgba(244,247,253,.7)}
+header.souligne h1{cursor:pointer}
+header.souligne #titre{position:relative;display:inline-block;padding-bottom:6px}
+header.souligne #titre::after{content:"";position:absolute;left:-2px;right:-6px;bottom:-4px;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M3 8c40-5 90-7 194-3' fill='none' stroke='%231747C9' stroke-width='3.2' stroke-linecap='round'/%3E%3Cpath d='M30 10.5c45-3 90-3.5 140-1.5' fill='none' stroke='%237FA0FF' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;
+  clip-path:inset(0 100% 0 0);animation:trait .9s .25s var(--doux) forwards}
+@keyframes trait{to{clip-path:inset(0 0 0 0)}}
+header.replie #titre::after{display:none}
+
+/* bouton central rond */
+nav button.fab{gap:4px}
+nav .fab .rond{width:54px;height:54px;margin-top:-30px;border-radius:50%;background:linear-gradient(145deg,#3A68E8,#1747C9 55%,#0F35A3);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 22px -8px rgba(23,71,201,.9),0 0 0 5px rgba(255,255,255,.95);transition:transform .25s var(--doux)}
+nav .fab .rond svg{width:26px;height:26px}
+nav .fab:active .rond{transform:scale(.9)}
+nav .fab.on .rond{transform:rotate(90deg)}
+nav .fab.on{color:var(--bleu)}
+nav .curseur{transition:opacity .2s}
+
+/* carte continuer avec anneau */
+.continuer{display:flex;align-items:center;gap:16px;width:100%;text-align:left;border:0;cursor:pointer;background:linear-gradient(120deg,#fff 40%,#EEF3FF);transition:transform .15s}
+.continuer:active{transform:scale(.98)}
+.continuer>span{flex:1;min-width:0}
+.anneau-p{flex-shrink:0}
+.anneau-p circle+circle{animation:remplit 1s .2s var(--doux) both}
+@keyframes remplit{from{stroke-dasharray:0 var(--c)}}
+.mini-bouton{display:inline-flex;align-items:center;gap:2px;margin-top:8px;padding:6px 8px 6px 12px;border-radius:12px;background:var(--bleu);color:#fff;font-weight:700;font-size:13px}
+.mini-bouton .chev{color:#fff;width:16px;height:16px}
+
+/* podium */
+.podium{display:grid;grid-template-columns:1fr 1.15fr 1fr;align-items:end;gap:8px;margin:4px 0 16px;padding:18px 12px 0;border-radius:var(--r-grand);background:#fff;box-shadow:var(--ombre);overflow:hidden}
+.marche{display:flex;flex-direction:column;align-items:center;gap:6px;border:0;background:none;padding:0;cursor:pointer;min-width:0}
+.marche:active .avatar{transform:scale(.92)}
+.avatar{position:relative;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#fff;background:linear-gradient(145deg,#7FA0FF,#1747C9);box-shadow:0 0 0 3px #fff,0 6px 14px -6px rgba(23,71,201,.8);transition:transform .15s;animation:pop .5s calc(var(--d) + .35s) both}
+.m1 .avatar{width:64px;height:64px;font-size:19px;background:linear-gradient(145deg,#2A5BE0,#0B1B47)}
+.m3 .avatar{background:linear-gradient(145deg,#A9BEF5,#5B83E8)}
+.avatar i{position:absolute;bottom:-4px;right:-4px;width:20px;height:20px;border-radius:50%;background:var(--or);color:#fff;font-style:normal;font-size:11px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 2px #fff}
+.couronne{position:absolute;top:-22px;left:50%;transform:translateX(-50%) rotate(-8deg);font-size:22px}
+.nom-p{font-size:12.5px;font-weight:700;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 2px}
+.colonne-p{width:100%;height:var(--h);border-radius:16px 16px 0 0;display:flex;justify-content:center;padding-top:10px;color:#fff;font-size:20px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 3px,transparent 3px 10px),linear-gradient(180deg,#5B83E8,#1747C9);transform-origin:bottom;animation:pousseH .7s var(--d) var(--doux) both}
+.m1 .colonne-p{background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 3px,transparent 3px 10px),linear-gradient(180deg,#2A5BE0,#0B1B47)}
+.m3 .colonne-p{background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 3px,transparent 3px 10px),linear-gradient(180deg,#A9BEF5,#5B83E8)}
+
+/* puces de secteur */
+.puces-defile{display:flex;gap:8px;overflow-x:auto;margin:0 -16px 12px;padding:2px 16px 4px;scrollbar-width:none}
+.puces-defile::-webkit-scrollbar{display:none}
+.chip{display:inline-flex;align-items:center;gap:6px;flex-shrink:0;min-height:40px;padding:0 14px 0 8px;border-radius:20px;border:0;background:#fff;box-shadow:var(--ombre);font-weight:600;font-size:13.5px;cursor:pointer;transition:background .2s,color .2s,transform .15s}
+.chip span{width:26px;height:26px;border-radius:50%;background:var(--ciel);display:flex;align-items:center;justify-content:center;font-size:14px}
+.chip:active{transform:scale(.95)}
+.chip.on{background:var(--nuit);color:#fff}
+.chip.on span{background:rgba(255,255,255,.16)}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
