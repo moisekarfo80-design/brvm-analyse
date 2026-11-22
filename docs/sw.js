@@ -1,6 +1,6 @@
 // Garde l'application disponible hors connexion. Les donnees du jour sont gerees par la page.
-const VERSION = "brvm-v1";
-const COQUILLE = ["./", "index.html", "manifest.json", "icone-192.png", "icone-512.png", "celebration_fin.jpg"];
+const VERSION = "brvm-v2";
+const COQUILLE = ["./", "index.html", "app.js", "manifest.json", "icone-192.png", "icone-512.png", "celebration_fin.jpg"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(COQUILLE))); self.skipWaiting(); });
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION).map((k) => caches.delete(k)))));

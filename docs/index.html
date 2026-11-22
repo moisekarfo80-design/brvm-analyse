@@ -82,6 +82,76 @@ nav button.on{color:var(--bleu)}
 .celeb .c-carte{position:relative;margin:16px;padding:18px;border-radius:22px;background:#fff;animation:monte .5s cubic-bezier(.2,.8,.2,1) 1.7s both}
 .celeb img{display:none}
 .hors{background:var(--orange2);color:var(--orange);font-size:13px;font-weight:600;padding:8px 16px;text-align:center}
+
+.petit{width:auto!important;min-height:40px!important;padding:0 12px}
+.appel{display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;font:inherit}
+.appel>span:nth-child(2){flex:1;min-width:0}
+.chev{font-size:26px;color:var(--bleu)}
+.puces{display:flex;gap:6px;margin:6px 0}
+.puce-choix{flex:1;min-height:44px;border-radius:12px;border:1px solid var(--ligne);background:#fff;font-weight:600;font-size:14px;cursor:pointer;transition:all .2s}
+.puce-choix.on{background:var(--bleu);border-color:var(--bleu);color:#fff;transform:scale(1.02)}
+.trois{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.trois>div{border-radius:14px;padding:10px 8px;text-align:center;animation:entree .4s both}
+.trois b{display:block;font-size:15px;margin-top:4px}
+.t-mal{background:#FBEDEC}.t-mal b{color:var(--rouge)}
+.t-prob{background:var(--bleu);color:#fff}.t-prob .gris{color:rgba(255,255,255,.85)}
+.t-bien{background:#E3F5EA}.t-bien b{color:var(--vert)}
+.critere{margin:10px 0}
+.jauge{height:10px;border-radius:5px;background:#EEF2FA;overflow:hidden;margin-top:5px}
+.jauge span{display:block;height:100%;border-radius:5px;transform-origin:left;animation:pousse .7s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pousse{from{transform:scaleX(0)}}
+.grandes-etoiles span{display:inline-block;font-size:34px;color:var(--or);animation:pop .45s ease-out both}
+@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.25)}100%{transform:scale(1)}}
+.pop{animation:pop .5s ease-out both}
+button.case{border:0;font:inherit;cursor:pointer}
+.anneau{flex-shrink:0;animation:tourne .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes tourne{from{transform:rotate(-90deg);opacity:0}}
+.leg-ligne{display:flex;gap:8px;align-items:flex-start;margin:5px 0;font-size:13px}
+.leg-ligne i{width:12px;height:12px;border-radius:4px;flex-shrink:0;margin-top:3px}
+.legende{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--gris)}
+.legende i{display:inline-block;width:12px;height:6px;border-radius:3px;margin-right:4px;vertical-align:middle}
+.compteur{font-size:32px;font-weight:800;letter-spacing:-.5px}
+.etiquette{font-size:12px;font-weight:700;padding:4px 10px;border-radius:10px}
+.e-prevu{background:#E3F5EA;color:var(--vert)}.e-mieux{background:var(--bleu2);color:var(--bleu)}.e-moins{background:var(--orange2);color:var(--orange)}.e-depart{background:var(--bleu2);color:var(--bleu)}
+.cause{display:grid;grid-template-columns:120px 1fr 64px;gap:8px;align-items:center;margin:8px 0;font-size:13px}
+.cause .jauge{margin:0}
+.etapes{display:flex;justify-content:space-between;gap:4px}
+.etapes>div{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1}
+.etapes span{width:34px;height:34px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-weight:700;background:#E8EDF7;color:var(--gris)}
+.etapes .fait span{background:var(--bleu);color:#fff;animation:pop .4s both}
+.etapes small{font-size:11px;color:var(--gris)}
+.badge-carte{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#FFF6E0,#fff)}
+.badge-carte>span{font-size:34px;animation:pop .6s both}
+.flip{display:block;width:100%;height:200px;perspective:1000px;border:0;background:none;padding:0;cursor:pointer;font:inherit}
+.flip-in{position:relative;display:block;width:100%;height:100%;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.flip.retourne .flip-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:18px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left;background:linear-gradient(135deg,#1747C9,#3E6BE6);color:#fff}
+.face b{font-size:19px}
+.face small{font-weight:700;letter-spacing:1px;opacity:.8}
+.face .gris{color:rgba(255,255,255,.8)}
+.face.dos{transform:rotateY(180deg);background:#fff;color:var(--encre);border:1px solid var(--ligne)}
+.defile{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 8px;margin:0 -16px;padding-left:16px;padding-right:16px}
+.lecon{scroll-snap-align:start;flex:0 0 168px;min-height:150px;display:flex;flex-direction:column;gap:8px;padding:14px;border-radius:18px;background:#fff;border:1px solid var(--bleu);text-align:left;cursor:pointer;font:inherit}
+.lecon.faite{border-color:var(--ligne)}
+.lecon .ic{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;background:var(--bleu2)}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.badges>div{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border-radius:14px;background:#fff;border:1px solid var(--ligne);opacity:.5;text-align:center}
+.badges>div.ok{opacity:1}
+.badges span{width:40px;height:40px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;background:#E8EDF7;color:var(--gris)}
+.badges .ok span{background:var(--bleu);color:#fff}
+.badges small{font-size:11px;line-height:1.2}
+.question{font-size:21px;font-weight:700;line-height:1.3;margin-bottom:14px;animation:entree .35s both}
+.option{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:12px 16px;margin-bottom:8px;border-radius:16px;border:2px solid var(--ligne);background:#fff;text-align:left;font:inherit;font-weight:500;cursor:pointer;transition:all .2s;animation:entree .35s both}
+.option i{width:20px;height:20px;border-radius:10px;border:2px solid #A9B8DA;flex-shrink:0;transition:all .2s}
+.option.on{border-color:var(--bleu);background:var(--bleu2);font-weight:700;transform:scale(1.02)}
+.option.on i{border:6px solid var(--bleu)}
+.bouton:disabled{opacity:.45}
+.lien{border:0;background:none;color:var(--bleu);font-weight:700;padding:8px 0 0;cursor:pointer;font:inherit;font-weight:700}
+.non-lu{width:9px;height:9px;border-radius:5px;background:var(--bleu);flex-shrink:0}
+.sans-anim,.sans-anim>div{animation:none!important}
+.colonne{width:100%;max-width:36px;border-radius:6px 6px 2px 2px;transform-origin:bottom;animation:pousseH .6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pousseH{from{transform:scaleY(0)}}
+nav button{font-size:10.5px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.celeb video{display:none}.celeb img{display:block}}
 </style>
 </head>
@@ -97,296 +167,6 @@ nav button.on{color:var(--bleu)}
 <nav><div id="nav"></div></nav>
 <div id="couche"></div>
 
-<script>
-"use strict";
-const FRAIS_DEFAUT = { courtage: 1.0, tva: 18, brvm: 0.3, conservation: 0.5, tenue: 8000, sgi: "SA2IF" };
-const ONGLETS = [["accueil", "🏠", "Accueil"], ["classement", "🏆", "Classement"], ["investir", "💸", "Investir"], ["portefeuille", "💼", "Portefeuille"]];
-const METEO = {
-  soleil: ["☀️", "Bourse bon marché", "Bon moment pour investir : tu peux placer toute la somme prévue."],
-  nuageux: ["🌥️", "Bourse dans la normale", "Investis 80 % de ta somme et garde 20 % en réserve."],
-  pluie: ["🌧️", "Bourse chère", "Investis doucement : moitié en actions, moitié en réserve."]
-};
-const H = { lt: "Long terme", mt: "Moyen terme", ct: "Court terme" };
-let D = null, ecran = "accueil", horizon = "lt", recherche = "";
-
-// ---------- stockage local (le portefeuille ne quitte jamais le telephone)
-const lire = (k, d) => { try { const v = localStorage.getItem("brvm." + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } };
-const ecrire = (k, v) => { try { localStorage.setItem("brvm." + k, JSON.stringify(v)); } catch (e) {} };
-
-// ---------- outils
-const fcfa = (x) => x == null ? "—" : Math.round(x).toLocaleString("fr-FR").replace(/ | /g, " ") + " FCFA";
-const nb = (x, d = 1) => x == null ? "—" : x.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const dateFr = (iso) => iso ? new Date(iso.slice(0, 10) + "T12:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }) : "—";
-const action = (s) => D.actions.find((a) => a.s === s);
-const etoiles = (n) => n ? `<span class="etoiles" aria-label="${n} étoiles sur 5">${"★".repeat(n)}<span class="vide">${"★".repeat(5 - n)}</span></span>` : `<span class="gris">non noté</span>`;
-const fleche = (v) => v == null ? "" : `<span class="fleche ${v > 0.4 ? "haut" : v < -0.4 ? "bas" : "gris"}">${v > 0.4 ? "▲" : v < -0.4 ? "▼" : "="} ${v > 0 ? "+" : ""}${nb(v, 0)} en 1 mois</span>`;
-const barres = (f) => { const n = f >= 80 ? 4 : f >= 60 ? 3 : f >= 35 ? 2 : 1; return `<span class="barres" aria-label="fiabilité ${n} sur 4">${[1, 2, 3, 4].map((i) => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`; };
-const fraisOrdre = (m) => { const f = lire("frais", FRAIS_DEFAUT); return m * (f.courtage * (1 + f.tva / 100) + f.brvm) / 100; };
-
-// ---------- chargement des donnees (reseau d'abord, sinon derniere copie)
-async function charger() {
-  try {
-    const r = await fetch("data/resultats.json?t=" + Date.now(), { cache: "no-store" });
-    if (!r.ok) throw new Error(r.status);
-    D = await r.json();
-    ecrire("cache", D);
-    document.getElementById("hors").hidden = true;
-  } catch (e) {
-    D = lire("cache", null);
-    document.getElementById("hors").hidden = !D;
-  }
-  if (!D) { document.getElementById("ecran").innerHTML = `<div class="carte vide-etat">Impossible de charger les données. Vérifie ta connexion puis rouvre l'application.</div>`; return; }
-  const vus = lire("vus", []);
-  const nouveaux = D.messages.filter((m) => !vus.includes(m.titre + m.texte)).length;
-  const p = document.getElementById("pastille"); p.hidden = !nouveaux; p.textContent = nouveaux;
-  document.getElementById("sousTitre").textContent = "Cours du " + dateFr(D.date_cours);
-  if (!lire("fiabVue", "") || lire("fiabVue", "") !== D.maj) { ecrire("fiabVue", D.maj); toastFiabilite(); }
-  rendre();
-}
-
-function toastFiabilite() {
-  const alerte = D.messages.find((m) => m.type === "alerte");
-  const t = document.createElement("div");
-  t.className = "carte";
-  t.style.cssText = "position:fixed;left:12px;right:12px;top:calc(70px + env(safe-area-inset-top));z-index:15;max-width:496px;margin:0 auto;box-shadow:0 10px 30px rgba(14,27,61,.2)";
-  t.innerHTML = `<div class="ligne entre"><b>Mise à jour : fiabilité ${D.fiabilite} %</b>${barres(D.fiabilite)}</div><div class="gris">${esc(alerte ? alerte.texte : "Données du " + dateFr(D.date_cours) + ". Notes encore provisoires (bilans pas encore lus).")}</div>`;
-  document.body.appendChild(t);
-  t.onclick = () => t.remove();
-  setTimeout(() => t.remove(), 6000);
-}
-
-// ---------- ecrans
-function rendre() {
-  document.getElementById("nav").innerHTML = ONGLETS.map(([id, ic, nom]) => `<button class="${ecran === id ? "on" : ""}" data-onglet="${id}" aria-label="${nom}"><span>${ic}</span>${nom}</button>`).join("");
-  const e = document.getElementById("ecran");
-  e.innerHTML = ({ accueil, classement, investir, portefeuille })[ecran]();
-  window.scrollTo(0, 0);
-}
-
-function ligneAction(a, i, h) {
-  const n = a.notes ? a.notes[h] : null;
-  return `<button class="action" data-fiche="${a.s}">
-    <span class="rang">${i}</span>
-    <span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${fcfa(a.cours)} · ${esc(a.secteur)}</div>${(a.drapeaux || []).length ? `<span class="puce">⚠ ${esc(a.drapeaux[0])}</span>` : ""}</span>
-    <span style="text-align:right">${etoiles(a.etoiles && a.etoiles[h])}<div class="note">${n == null ? "—" : nb(n, 0)}<span class="gris">/100</span></div>${fleche(a.fleches && a.fleches[h])}</span>
-  </button>`;
-}
-
-function accueil() {
-  const m = METEO[D.meteo.code];
-  const top = D.portefeuilles.lt.slice(0, 3).map(action);
-  const alerte = D.messages.find((x) => x.type !== "info");
-  return `
-  <div class="carte meteo">
-    <div class="ligne"><span class="gros">${m[0]}</span><div><h2 style="margin:0">${m[1]}</h2><div class="gris">PER moyen ${nb(D.marche.per)} · rendement ${nb(D.marche.rendement)} %</div></div></div>
-    <p style="margin:12px 0 0">${m[2]}</p>
-  </div>
-  <div class="carte">
-    <div class="ligne entre"><h3 style="margin:0">Fiabilité de l'analyse</h3>${barres(D.fiabilite)}</div>
-    <div class="gris" style="margin-top:6px">${D.fiabilite} % · mise à jour le ${dateFr(D.maj)}. Les notes sont provisoires tant que les bilans ne sont pas lus.</div>
-    ${alerte ? `<div class="puce" style="margin-top:10px">⚠ ${esc(alerte.titre)}</div>` : ""}
-  </div>
-  <div class="carte">
-    <div class="ligne entre"><h2 style="margin:0">Top long terme</h2><button class="bouton second" style="width:auto;min-height:40px;padding:0 12px" data-aller="classement">Tout voir</button></div>
-    ${top.map((a, i) => ligneAction(a, i + 1, "lt")).join("")}
-  </div>
-  <div class="carte">
-    <h3>Le savais-tu ?</h3>
-    <p style="margin:0" class="gris">Le <b>PER</b> dit combien d'années de bénéfices tu paies en achetant une action. Plus il est bas, moins l'action est chère. Le <b>rendement</b> est ce que le dividende te rapporte chaque année, en pourcentage du prix.</p>
-  </div>`;
-}
-
-function classement() {
-  const hz = D.horizons[horizon];
-  const q = recherche.trim().toLowerCase();
-  const liste = D.classements[horizon].map(action).filter((a) => !q || a.nom.toLowerCase().includes(q) || a.s.toLowerCase().includes(q));
-  const exclues = D.actions.filter((a) => !D.classements[horizon].includes(a.s));
-  return `
-  <div class="seg" role="tablist">${Object.keys(H).map((h) => `<button role="tab" class="${h === horizon ? "on" : ""}" data-horizon="${h}">${H[h]}</button>`).join("")}</div>
-  <div class="carte">
-    <div class="gris">${esc(hz.duree)} · critères : ${hz.mesure} points sur 100, dont ${hz.bilans} tirés des bilans (seulement pour les sociétés dont le bilan est lu). Pas encore suivi : ${Object.entries(hz.manque).map(([k, v]) => esc(k) + " (" + v + ")").join(", ")}.</div>
-    ${horizon === "ct" ? `<div class="puce" style="margin-top:8px">⚠ Le court terme suit la hausse récente : c'est le plus risqué.</div>` : ""}
-  </div>
-  <div class="champ"><input id="cherche" type="search" placeholder="Chercher une action (ex. Sonatel)" value="${esc(recherche)}" aria-label="Chercher une action"></div>
-  <div class="carte" style="padding:4px 12px">${liste.map((a) => ligneAction(a, D.classements[horizon].indexOf(a.s) + 1, horizon)).join("") || `<div class="vide-etat">Aucune action trouvée.</div>`}</div>
-  ${exclues.length && !q ? `<div class="gris" style="padding:0 4px 8px">Non classées : ${exclues.map((a) => esc(a.nom) + " (" + esc((a.drapeaux || ["données manquantes"])[0]) + ")").join(", ")}.</div>` : ""}`;
-}
-
-function fiche(s) {
-  const a = action(s);
-  const mes = lire("portefeuille", []).find((p) => p.s === s);
-  ouvrir(`
-    <div class="ligne entre" style="margin-bottom:12px"><div><h2 style="margin:0">${esc(a.nom)}</h2><div class="gris">${esc(a.s)} · ${esc(a.secteur)} · ${esc(a.pays)}</div></div><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
-    <div class="carte"><div class="ligne entre"><span style="font-size:26px;font-weight:700">${fcfa(a.cours)}</span>${a.var_jour != null ? `<span class="fleche ${a.var_jour >= 0 ? "haut" : "bas"}">${a.var_jour >= 0 ? "▲ +" : "▼ "}${nb(a.var_jour, 2)} % aujourd'hui</span>` : ""}</div>
-      <div class="grille3" style="margin-top:12px"><div class="case"><div class="gris">Rendement</div><div class="val">${a.rendement != null ? nb(a.rendement) + " %" : "—"}</div></div><div class="case"><div class="gris">PER</div><div class="val">${a.per != null ? nb(a.per) : "—"}</div></div><div class="case"><div class="gris">Sur 1 an</div><div class="val">${a.tendance != null ? (a.tendance > 0 ? "+" : "") + nb(a.tendance, 0) + " %" : "—"}</div></div></div>
-    </div>
-    ${a.notes ? `<div class="carte"><h3>Notes par horizon</h3>${Object.keys(H).map((h) => `<div class="ligne entre" style="padding:8px 0;border-bottom:1px solid var(--ligne)"><span><b>${H[h]}</b><div class="gris">${fleche(a.fleches && a.fleches[h]) || "pas encore d'historique"}</div></span><span style="text-align:right">${etoiles(a.etoiles && a.etoiles[h])}<div class="note">${a.notes[h] == null ? "—" : nb(a.notes[h], 0) + "/100"}</div></span></div>`).join("")}<div class="gris" style="margin-top:8px">Fiabilité long terme : ${a.fiabilite.lt} %. ${a.bilan ? "Bilan " + esc(a.bilan.exercice) + (a.bilan.manuel ? " (chiffres saisis à la main, PDF scanné)" : " lu automatiquement et contrôlé") + "." : "Bilan pas encore lu : notes provisoires."}</div></div>` : ""}
-    <div class="carte"><h3>Pourquoi cette note ?</h3>${(a.raisons || []).map(([t, txt]) => `<div class="raison r-${t}"><b>${{ plus: "+", moins: "−", attention: "!", neutre: "•" }[t]}</b><span>${esc(txt)}</span></div>`).join("")}${(a.drapeaux || []).map((d) => `<div class="raison r-attention"><b>!</b><span>${esc(d)}</span></div>`).join("")}</div>
-    ${a.resultats && a.resultats.length >= 3 ? graphResultats(a.resultats) : ""}
-    ${a.dividende ? `<div class="carte"><h3>Dernier dividende</h3><div>${fcfa(a.dividende)} par action, versé le ${dateFr(a.date_dividende)}</div></div>` : ""}
-    <button class="bouton" data-ajouter="${a.s}">${mes ? "Modifier dans mon portefeuille" : "Ajouter à mon portefeuille"}</button>
-    <p class="gris" style="text-align:center">Aide à la décision, pas un conseil d'investissement.</p>`);
-}
-
-function graphResultats(r) {
-  const max = Math.max(...r.map((x) => Math.abs(x[1]))) || 1;
-  const unite = max >= 1e9 ? [1e9, "milliards"] : max >= 1e6 ? [1e6, "millions"] : [1e3, "milliers"];
-  return `<div class="carte"><h3>Résultat net par année</h3><div class="gris" style="margin-bottom:10px">En ${unite[1]} de FCFA, d'après les bilans officiels</div>
-    <div style="display:flex;align-items:flex-end;gap:8px;height:120px">${r.map(([an, v]) => `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px">
-      <span style="font-size:11px;font-weight:600;color:${v < 0 ? "var(--rouge)" : "var(--encre)"}">${nb(v / unite[0], 1)}</span>
-      <div style="width:100%;max-width:36px;height:${Math.max(4, Math.abs(v) / max * 80)}px;border-radius:6px 6px 2px 2px;background:${v < 0 ? "var(--rouge)" : "var(--bleu)"}"></div>
-      <span class="gris" style="font-size:11px">${an}</span></div>`).join("")}</div></div>`;
-}
-
-function investir() {
-  const montant = lire("mensuel", 20000);
-  const part = D.meteo.part_actions;
-  const enActions = montant * part;
-  const frais = lire("frais", FRAIS_DEFAUT);
-  const choix = D.portefeuilles.lt.map(action).filter((a) => a.cours && a.cours <= enActions);
-  const p = choix[0];
-  let propo = `<div class="vide-etat">Aucune des actions conseillées ne coûte moins de ${fcfa(enActions)}. Garde cet argent et achète le mois prochain avec deux mois d'argent.</div>`;
-  if (p) {
-    const qte = Math.floor(enActions / (p.cours * (1 + (frais.courtage * (1 + frais.tva / 100) + frais.brvm) / 100)));
-    const cout = qte * p.cours, fr = fraisOrdre(cout), pct = fr / cout * 100;
-    propo = `<div class="ligne entre"><span><b>${qte} × ${esc(p.nom)}</b><div class="gris">${fcfa(p.cours)} l'action · ${etoiles(p.etoiles.lt)}</div></span></div>
-      <div class="gris" style="margin-top:8px">Coût ${fcfa(cout)} + frais d'environ ${fcfa(fr)} (${nb(pct)} %).</div>
-      ${pct > 2 ? `<div class="puce" style="margin-top:8px">⚠ Frais supérieurs à 2 % : mieux vaut attendre et acheter avec deux mois d'argent.</div>` : ""}
-      ${choix.length > 1 ? `<div class="gris" style="margin-top:8px">Autres choix dans ton budget : ${choix.slice(1, 4).map((a) => esc(a.nom) + " (" + fcfa(a.cours) + ")").join(", ")}.</div>` : ""}`;
-  }
-  const serie = lire("mois", []);
-  return `
-  <div class="carte">
-    <h2>Mon investissement du mois</h2>
-    <div class="champ"><label for="mensuel">Somme mise de côté chaque mois</label><input id="mensuel" type="number" inputmode="numeric" min="0" step="1000" value="${montant}"></div>
-    <div class="ligne entre"><span>${METEO[D.meteo.code][0]} En actions (${Math.round(part * 100)} %)</span><b>${fcfa(enActions)}</b></div>
-    <div class="ligne entre" style="margin-top:4px"><span>🛟 En réserve</span><b>${fcfa(montant - enActions)}</b></div>
-  </div>
-  <div class="carte"><h3>Ce que je te propose ce mois-ci</h3>${propo}</div>
-  <div class="carte">
-    <h3>Portefeuille type long terme</h3>
-    <div class="gris" style="margin-bottom:6px">10 actions, 3 au plus par groupe, 5 banques au plus. Construis-le petit à petit, une ou deux actions par mois.</div>
-    ${D.portefeuilles.lt.map((s, i) => ligneAction(action(s), i + 1, "lt")).join("")}
-  </div>
-  <button class="bouton" data-mois>J'ai investi ce mois-ci ✓</button>
-  <p class="gris" style="text-align:center">${serie.length ? `Déjà ${serie.length} mois enregistré${serie.length > 1 ? "s" : ""}.` : "Touche le bouton après ton achat pour suivre ta régularité."}</p>`;
-}
-
-function portefeuille() {
-  const pf = lire("portefeuille", []);
-  const frais = lire("frais", FRAIS_DEFAUT);
-  let valeur = 0, achat = 0;
-  const lignes = pf.map((p) => {
-    const a = action(p.s) || { nom: p.s, cours: null };
-    const v = (a.cours || p.prix) * p.qte; valeur += v; achat += p.prix * p.qte;
-    const g = v - p.prix * p.qte;
-    const e = a.etoiles ? a.etoiles.lt : null;
-    return `<button class="action" data-fiche="${p.s}"><span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${p.qte} × ${fcfa(a.cours)} · acheté ${fcfa(p.prix)}</div>${e && e <= 2 ? `<span class="puce">⚠ Note long terme faible (${e}★) : à revoir au bilan annuel</span>` : ""}</span><span style="text-align:right"><b>${fcfa(v)}</b><div class="fleche ${g >= 0 ? "haut" : "bas"}">${g >= 0 ? "+" : ""}${fcfa(g)}</div></span></button>`;
-  }).join("");
-  const fixes = frais.tenue * (1 + frais.tva / 100) + valeur * frais.conservation * (1 + frais.tva / 100) / 100;
-  return `
-  <div class="carte">
-    <h2>Mon portefeuille</h2>
-    <div class="ligne entre"><span class="gris">Valeur actuelle</span><b style="font-size:22px">${fcfa(valeur)}</b></div>
-    <div class="ligne entre"><span class="gris">Gain ou perte</span><b class="${valeur - achat >= 0 ? "haut" : "bas"}">${valeur - achat >= 0 ? "+" : ""}${fcfa(valeur - achat)}</b></div>
-    ${pf.length ? `<div class="gris" style="margin-top:8px">Frais fixes ${esc(frais.sgi)} estimés : ${fcfa(fixes)} par an (${valeur ? nb(fixes / valeur * 100) : "—"} % du portefeuille)${valeur && fixes / valeur > 0.03 ? ". C'est beaucoup au début : cette part baisse vite quand le portefeuille grandit" : ""}.</div>` : ""}
-  </div>
-  <div class="carte" style="padding:4px 12px">${lignes || `<div class="vide-etat">Aucune action pour l'instant. Ouvre une action dans le classement et touche « Ajouter à mon portefeuille ».</div>`}</div>
-  <button class="bouton second" data-dividende style="margin-bottom:12px">💰 J'ai reçu un dividende</button>
-  <div class="carte">
-    <h3>Frais de ma SGI</h3>
-    <div class="gris" style="margin-bottom:10px">Par défaut : grille officielle SA2IF (maximums). Remplace par tes vrais chiffres si besoin.</div>
-    <div class="grille3">
-      <div class="champ"><label for="f-courtage">Courtage %</label><input id="f-courtage" data-frais="courtage" type="number" step="0.05" value="${frais.courtage}"></div>
-      <div class="champ"><label for="f-tva">TVA %</label><input id="f-tva" data-frais="tva" type="number" step="1" value="${frais.tva}"></div>
-      <div class="champ"><label for="f-tenue">Tenue /an</label><input id="f-tenue" data-frais="tenue" type="number" step="500" value="${frais.tenue}"></div>
-    </div>
-    <div class="gris">Le portefeuille est enregistré uniquement sur ce téléphone.</div>
-  </div>`;
-}
-
-// ---------- fenetres
-function ouvrir(html) {
-  const c = document.getElementById("couche");
-  c.innerHTML = `<div class="feuille" data-fond><div role="dialog" aria-modal="true">${html}</div></div>`;
-}
-function fermer() { document.getElementById("couche").innerHTML = ""; }
-
-function formulaireAjout(s) {
-  const pf = lire("portefeuille", []);
-  const p = pf.find((x) => x.s === s);
-  const a = action(s);
-  ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">${esc(a.nom)}</h2><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
-    <div class="champ"><label for="qte">Nombre d'actions</label><input id="qte" type="number" inputmode="numeric" min="0" value="${p ? p.qte : 1}"></div>
-    <div class="champ"><label for="prix">Prix d'achat moyen (FCFA)</label><input id="prix" type="number" inputmode="numeric" min="0" value="${p ? p.prix : a.cours}"></div>
-    <button class="bouton" data-enregistrer="${s}">Enregistrer</button>
-    ${p ? `<button class="bouton second" style="margin-top:10px" data-retirer="${s}">Retirer du portefeuille</button>` : ""}`);
-}
-
-function celebration(type, montant) {
-  const div = type === "dividende";
-  const serie = lire("mois", []);
-  document.getElementById("couche").innerHTML = `<div class="celeb" data-celeb>
-    <video src="celebration.mp4" autoplay muted playsinline></video><img src="celebration_fin.jpg" alt="">
-    <div class="c-carte">
-      <div class="ligne"><span style="font-size:30px">${div ? "💰" : "🔥"}</span><div><h2 style="margin:0">${div ? "Tu as reçu un dividende !" : "Investissement du mois fait !"}</h2><div class="gris">${div ? "De l'argent gagné sans rien vendre" : serie.length + " mois enregistré" + (serie.length > 1 ? "s" : "")}</div></div></div>
-      <div style="font-size:34px;font-weight:800;color:var(--vert);margin:10px 0">+${fcfa(montant)}</div>
-      <div class="gris" style="margin-bottom:12px">${div ? "Ajoute-le à ton investissement du mois prochain." : "La régularité compte plus que le bon moment pour acheter."}</div>
-      <button class="bouton" data-fermer>Continuer</button>
-    </div></div>`;
-}
-
-// ---------- interactions
-document.addEventListener("click", (ev) => {
-  const t = ev.target.closest("button,[data-fond]");
-  if (!t) return;
-  if (t.dataset.fond !== undefined && ev.target === t) return fermer();
-  if (t.dataset.onglet) { ecran = t.dataset.onglet; recherche = ""; return rendre(); }
-  if (t.dataset.aller) { ecran = t.dataset.aller; return rendre(); }
-  if (t.dataset.horizon) { horizon = t.dataset.horizon; return rendre(); }
-  if (t.dataset.fiche) return fiche(t.dataset.fiche);
-  if (t.dataset.fermer !== undefined) return fermer();
-  if (t.dataset.ajouter) return formulaireAjout(t.dataset.ajouter);
-  if (t.dataset.enregistrer) {
-    const s = t.dataset.enregistrer, qte = +document.getElementById("qte").value, prix = +document.getElementById("prix").value;
-    const pf = lire("portefeuille", []).filter((p) => p.s !== s);
-    if (qte > 0 && prix > 0) pf.push({ s, qte, prix });
-    ecrire("portefeuille", pf); fermer(); ecran = "portefeuille"; return rendre();
-  }
-  if (t.dataset.retirer) { ecrire("portefeuille", lire("portefeuille", []).filter((p) => p.s !== t.dataset.retirer)); fermer(); return rendre(); }
-  if (t.dataset.mois !== undefined) {
-    const mois = new Date().toISOString().slice(0, 7), serie = lire("mois", []);
-    if (!serie.includes(mois)) serie.push(mois);
-    ecrire("mois", serie);
-    celebration("mois", lire("mensuel", 20000)); return rendre();
-  }
-  if (t.dataset.dividende !== undefined) {
-    ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">Dividende reçu</h2><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
-      <div class="champ"><label for="mdiv">Montant reçu (FCFA)</label><input id="mdiv" type="number" inputmode="numeric" min="0" value=""></div>
-      <button class="bouton" data-diviok>Valider</button>`);
-    return;
-  }
-  if (t.dataset.diviok !== undefined) { const m = +document.getElementById("mdiv").value; if (m > 0) celebration("dividende", m); return; }
-  if (t.id === "cloche") {
-    const vus = D.messages.map((m) => m.titre + m.texte); ecrire("vus", vus);
-    document.getElementById("pastille").hidden = true;
-    ouvrir(`<div class="ligne entre" style="margin-bottom:12px"><h2 style="margin:0">Messages</h2><button class="fermer" data-fermer aria-label="Fermer">✕</button></div>
-      ${D.messages.map((m) => `<div class="carte msg m-${m.type}"><span class="ic">${{ alerte: "⚠️", info: "ℹ️", faire: "✋" }[m.type]}</span><div><b>${esc(m.titre)}</b><div class="gris">${esc(m.texte)}</div></div></div>`).join("")}
-      <div class="gris">Sources : ${D.sources.map(esc).join(" · ")}</div>`);
-  }
-});
-document.addEventListener("input", (ev) => {
-  const t = ev.target;
-  if (t.id === "cherche") { recherche = t.value; const pos = t.selectionStart; rendre(); const n = document.getElementById("cherche"); n.focus(); n.setSelectionRange(pos, pos); }
-  if (t.id === "mensuel") { ecrire("mensuel", Math.max(0, +t.value || 0)); }
-  if (t.dataset.frais) { const f = lire("frais", FRAIS_DEFAUT); f[t.dataset.frais] = +t.value || 0; ecrire("frais", f); }
-});
-document.addEventListener("change", (ev) => { if (ev.target.id === "mensuel" || ev.target.dataset.frais) rendre(); });
-document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") fermer(); });
-
-if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
-charger();
-</script>
+<script src="app.js"></script>
 </body>
 </html>

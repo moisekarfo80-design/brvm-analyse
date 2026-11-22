@@ -80,9 +80,12 @@ def main():
                        f"diversification respectee ({h})")
     ok &= verifier(abs(r["marche"]["per"] - per_avant * 1.02) < 0.2, f"PER du marche suit les cours ({r['marche']['per']})")
     ok &= verifier(all(1 <= e <= 5 for a in r["actions"] for e in a.get("etoiles", {}).values()), "etoiles entre 1 et 5")
-    ok &= verifier(all(a["fiabilite"][h] <= 59 for a in r["actions"] if a.get("fiabilite") and not a.get("bilan") for h in a["fiabilite"]),
-                   "sans bilan : fiabilite plafonnee a 59")
-    ok &= verifier(all(a["fiabilite"]["ct"] <= 59 for a in r["actions"] if a.get("fiabilite")), "court terme plafonne (actualite non suivie)")
+    ok &= verifier(all(a["fiabilite"][h] <= 85 for a in r["actions"] if a.get("fiabilite") and not a.get("bilan") for h in a["fiabilite"]),
+                   "sans bilan : fiabilite reduite (85 au plus)")
+    ok &= verifier(all(a["fiabilite"]["ct"] <= 80 for a in r["actions"] if a.get("fiabilite")), "court terme reduit (actualite non suivie)")
+    ok &= verifier(all(a["notes"]["lt"] is None or abs(a["notes"]["lt"] - (20 * a["criteres"]["div"] + 25 * a["criteres"]["valo"]) / 45) < 1
+                       for a in r["actions"] if a.get("notes")), "note long terme = dividende 20 + prix 25 (bilans hors note)")
+    ok &= verifier(r.get("projections") and r["projections"]["portefeuille"]["median"] > 0, "fourchettes de gains presentes")
 
     print("2. Le lendemain, meme page (jour ferie)")
     import datetime as dt

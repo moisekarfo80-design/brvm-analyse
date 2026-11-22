@@ -1,0 +1,47 @@
+{
+ "source": "Test 2016-2025 de la méthode : 10 actions, météo de la bourse, frais SA2IF",
+ "z": 0.84,
+ "portefeuille": {
+  "median": 0.0984,
+  "sigma": 0.1942,
+  "cas": 10,
+  "perte": 0.4
+ },
+ "etoiles": {
+  "4": {
+   "median": 0.15,
+   "sigma": 0.2805,
+   "cas": 105,
+   "perte": 0.26,
+   "groupe": "haut"
+  },
+  "5": {
+   "median": 0.15,
+   "sigma": 0.2805,
+   "cas": 105,
+   "perte": 0.26,
+   "groupe": "haut"
+  },
+  "2": {
+   "median": 0.1562,
+   "sigma": 0.3414,
+   "cas": 81,
+   "perte": 0.36,
+   "groupe": "milieu"
+  },
+  "3": {
+   "median": 0.1562,
+   "sigma": 0.3414,
+   "cas": 81,
+   "perte": 0.36,
+   "groupe": "milieu"
+  },
+  "1": {
+   "median": 0.0261,
+   "sigma": 0.4375,
+   "cas": 105,
+   "perte": 0.43,
+   "groupe": "bas"
+  }
+ }
+}

@@ -5,7 +5,9 @@ la fiabilite et les messages, puis ecrit docs/data/resultats.json (lu par l'appl
 Regles reprises du plan (tests n°4 et n°5) :
 - dividende et prix (PER) compares a la moyenne du marche ;
 - poids : long terme dividende 20 / valorisation 25 ; moyen terme 20 / 30 ; court terme 20 / 15 / tendance 20 ;
-- familles non encore mesurees (qualite, croissance, actualite) : fiabilite plafonnee a 59 ;
+- bilans (solidite, croissance) : affiches et expliques, mais HORS de la note. Test n°7 (22/11/2026) : aucune
+  facon de les compter (poids fort, moyen, faible, filet de securite) ne fait mieux de facon fiable que 620 ;
+- fiabilite : qualite des donnees (cours recent, PER connu, bilan lu, liquidite, actualite non suivie) ;
 - dividende exceptionnel (> 2,5 fois le rendement moyen) et taux de distribution > 100 % penalises ;
 - etoiles anti-clignotement (2 points au-dela de la limite pendant 5 seances) ;
 - action peu echangee : une etoile de moins ;
@@ -24,11 +26,11 @@ D = RACINE / "donnees"
 SORTIE = RACINE / "docs" / "data" / "resultats.json"
 
 HORIZONS = {
-    "lt": {"nom": "Long terme", "duree": "3 ans et plus", "div": 20, "valo": 25, "tend": 0, "qual": 30, "croi": 20,
+    "lt": {"nom": "Long terme", "duree": "3 ans et plus", "div": 20, "valo": 25, "tend": 0, "qual": 0, "croi": 0,
            "manque": {"Actualité": 5}},
-    "mt": {"nom": "Moyen terme", "duree": "6 à 18 mois", "div": 20, "valo": 30, "tend": 0, "qual": 20, "croi": 20,
+    "mt": {"nom": "Moyen terme", "duree": "6 à 18 mois", "div": 20, "valo": 30, "tend": 0, "qual": 0, "croi": 0,
            "manque": {"Actualité": 10}},
-    "ct": {"nom": "Court terme", "duree": "moins de 6 mois", "div": 20, "valo": 15, "tend": 20, "qual": 10, "croi": 15,
+    "ct": {"nom": "Court terme", "duree": "moins de 6 mois", "div": 20, "valo": 15, "tend": 20, "qual": 0, "croi": 0,
            "manque": {"Actualité": 20}},
 }
 LIMITES = [(80, 5), (65, 4), (50, 3), (35, 2)]
@@ -281,6 +283,7 @@ def main():
                 fiche["raisons"].append(("attention", f"Endettement élevé : dettes = {fr(r_['dette_cp'], 1)} fois les fonds propres"))
             rn_n = ((b.get("chiffres") or {}).get("rn") or {}).get("n")
             if rn_n is not None and rn_n < 0:
+                fiche["drapeaux"].append(f"En perte au dernier bilan ({ex})")
                 fiche["raisons"].append(("moins", f"Entreprise en perte en {ex}" + (" (perte réduite par rapport à l'année d'avant)" if r_.get("croissance_resultat", 0) > 0 else "")))
             elif r_.get("perte_precedente"):
                 fiche["raisons"].append(("plus", f"Retour au bénéfice en {ex}"))
@@ -309,10 +312,17 @@ def main():
             poids = sum(p for p, _ in parts)
             total = sum(p * v for p, v in parts)
             fiche["notes"][h] = None if fiche.get("anomalie") else round(total / poids, 1)
-            manque = 100 - poids
-            # plafond 59 tant qu'une famille de plus de 10 points manque
-            gros_manque = (s_qual is None and w["qual"] > 10) or (s_croi is None and w["croi"] > 10) or w["manque"].get("Actualité", 0) > 10
-            fiche["fiabilite"][h] = min(59, poids) if gros_manque else poids
+            f_ = 100 - w["manque"].get("Actualité", 0)
+            if per_ok is None: f_ -= 20
+            if not fiche.get("bilan"): f_ -= 15
+            if fiche.get("peu_liquide"): f_ -= 10
+            if "Cours ancien" in fiche["drapeaux"]: f_ -= 20
+            if w["tend"] and s_tend is None: f_ -= 10
+            fiche["fiabilite"][h] = max(10, f_)
+        # detail par critere pour l'ecran « Pourquoi cette note » (0-100)
+        r1 = lambda v: None if v is None else round(v)
+        fiche["criteres"] = {"div": r1(s_div), "valo": r1(s_valo), "tend": r1(s_tend), "qual": r1(s_qual),
+                             "croi": r1(s_croi), "actu": None}
         res.append(fiche)
 
     # ---- etoiles anti-clignotement + fleches sur 1 mois
@@ -408,8 +418,8 @@ def main():
         messages.append({"type": "alerte", "titre": "Variation anormale", "texte": "Note suspendue (fractionnement d'actions possible) : " + ", ".join(anomalies) + "."})
     sans = [f["nom"] for f in res if f.get("notes") and not f.get("bilan")]
     messages.append({"type": "info", "titre": f"Bilans lus : {nb_bilans} sociétés sur {len([f for f in res if f.get('notes')])}",
-                     "texte": ("Pour ces sociétés, les notes tiennent compte de la solidité et de la croissance. " if nb_bilans else "")
-                     + (f"Pas encore de bilan validé pour : {', '.join(sans[:12])}{' …' if len(sans) > 12 else ''}. Leur fiabilité reste plafonnée à 59 %. " if sans else "")
+                     "texte": ("Les bilans sont montrés dans chaque fiche (solidité, croissance, pertes), mais ils ne changent pas la note : sur 10 ans, les compter n'a pas amélioré les résultats. " if nb_bilans else "")
+                     + (f"Pas encore de bilan validé pour : {', '.join(sans[:12])}{' …' if len(sans) > 12 else ''}. " if sans else "")
                      + "L'actualité n'est pas encore suivie."})
 
     sortie = {
@@ -423,6 +433,7 @@ def main():
         "horizons": {h: {"nom": w["nom"], "duree": w["duree"], "manque": w["manque"],
                          "mesure": w["div"] + w["valo"] + w["tend"] + w["qual"] + w["croi"],
                          "bilans": w["qual"] + w["croi"]} for h, w in HORIZONS.items()},
+        "projections": json.loads((D / "projections.json").read_text()) if (D / "projections.json").exists() else None,
         "classements": classements,
         "portefeuilles": portefeuilles,
         "actions": res,
