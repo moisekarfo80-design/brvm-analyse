@@ -24,7 +24,7 @@ BANQUES = ["BICB", "BICC", "BOAB", "BOABF", "BOAC", "BOAM", "BOAN", "BOAS", "CBI
 NORMES = {11.5, 11.25, 10.375, 9.5, 8.625, 8.0, 7.5, 6.625, 6.0, 5.0, 3.0, 100.0}
 
 MOT = re.compile(r"solvabilit|fonds propres effectifs\s*/|\bCAR\b|capital adequacy|fonds propres (?:effectifs )?(?:sur|rapport[ée]s? aux) (?:les )?(?:risques|actifs) pond", re.I)
-POURCENT = re.compile(r"(?<![\d,.])(\d{1,2}(?:[.,]\d{1,2})?)\s?%")
+POURCENT = re.compile(r"(?<![\d,.])(\d{1,2}(?:[.,]\d{1,3})?)\s?%")
 ANNEE = re.compile(r"\b(20[12]\d)\b")
 
 
@@ -88,7 +88,9 @@ def chercher(pages, exercice, diag=False):
                 v_n1, v_n = float(m_de.group(1).replace(",", ".")), float(m_de.group(2).replace(",", "."))
             elif re.search(r"(sup[ée]rieur|plus de|au-del[àa] de)\s+(?:à\s+)?" + re.escape(re.sub(r"\.0$", "", str(v_n)).replace(".", ",")), bloc):
                 approx = True
-            confiance = poids_ligne(bloc)
+            confiance = poids_ligne(bloc[:vals[0][0] + 10])  # ce qui est ecrit avant le chiffre
+            if re.search(r"solvabilit", bloc[:vals[0][0]], re.I) is None and "solvabilit" in bloc.lower():
+                confiance -= 1  # le mot vient apres le chiffre : moins sur
             an_phrase = exercice
             annees_bloc = sorted(set(int(a) for a in ANNEE.findall(bloc)))
             if len(ans_l) >= 2 and exercice in ans_l and (exercice - 1) in ans_l and len(vals) >= 2:
