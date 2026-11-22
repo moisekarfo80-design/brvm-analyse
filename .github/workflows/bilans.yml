@@ -65,8 +65,12 @@ jobs:
         run: |
           git config user.name "brvm-analyse (automatique)"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 1) on enregistre d'abord les donnees sources, puis on se met a jour (nos donnees gardent la priorite)
+          git add donnees/bilans.json
+          git diff --cached --quiet || git commit -q -m "Bilans lus le $(date -u +%d/%m/%Y) (donnees)"
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin main && break; sleep 5; done
+          # 2) les fichiers calcules sont refaits a partir de l'etat le plus recent, jamais fusionnes
+          python serveur/analyse.py
           git add donnees docs/data
-          if git diff --cached --quiet; then echo "Rien de nouveau."; else
-            git commit -m "Bilans lus le $(date -u +%d/%m/%Y)"
-            git pull --rebase -q && git push
-          fi
+          git diff --cached --quiet || git commit -q -m "Bilans lus le $(date -u +%d/%m/%Y) (notes)"
+          for i in 1 2 3; do git push -q origin HEAD:main && break; git pull -q --rebase -X theirs origin main; python serveur/analyse.py; git add donnees docs/data; git diff --cached --quiet || git commit -q -m "Bilans lus le (notes, reprise)"; done
