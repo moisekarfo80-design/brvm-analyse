@@ -58,7 +58,9 @@ def charger():
     ops = json.loads((D / "operations_capital.json").read_text()) if (D / "operations_capital.json").exists() else {}
     statut = json.loads((D / "statut_collecte.json").read_text()) if (D / "statut_collecte.json").exists() else None
     etat = json.loads((D / "etat.json").read_text()) if (D / "etat.json").exists() else {}
-    bilans = json.loads((D / "bilans.json").read_text()).get("societes", {}) if (D / "bilans.json").exists() else {}
+    tout_bilans = json.loads((D / "bilans.json").read_text()) if (D / "bilans.json").exists() else {}
+    bilans = tout_bilans.get("societes", {})
+    historique = tout_bilans.get("historique", {})
     if (D / "bilans_manuels.json").exists():  # chiffres saisis a la main quand le PDF est illisible
         for sym, b in json.loads((D / "bilans_manuels.json").read_text()).get("societes", {}).items():
             if sym not in bilans or bilans[sym].get("statut") != "valide" or b.get("prioritaire"):
@@ -75,7 +77,21 @@ def charger():
             hist.setdefault(s, []).append((r["date"], c, v))
     for s in hist:
         hist[s].sort()
-    return ref, ops, statut, etat, hist, bilans
+    return ref, ops, statut, etat, hist, bilans, historique
+
+
+def serie_resultats(h):
+    """Resultat net par annee a partir des bilans valides de plusieurs exercices (et de leur colonne N-1)."""
+    rn = {}
+    for an, b in h.items():
+        if b.get("statut") != "valide":
+            continue
+        x = (b.get("chiffres") or {}).get("rn") or {}
+        if x.get("n") is not None:
+            rn[int(an)] = x["n"]
+        if x.get("n1") is not None and int(an) - 1 not in rn:
+            rn[int(an) - 1] = x["n1"]
+    return dict(sorted(rn.items()))
 
 
 def prix_a(serie, jour):
@@ -85,7 +101,7 @@ def prix_a(serie, jour):
 
 
 def main():
-    ref, ops, statut, etat, hist, bilans = charger()
+    ref, ops, statut, etat, hist, bilans, historique = charger()
     actions = ref["actions"]
     date_donnees = max(p[0] for s in hist for p in hist[s])
     jour = dt.date.fromisoformat(date_donnees)
@@ -196,11 +212,33 @@ def main():
                 if "roe" in r_: comp.append(lin(r_["roe"], 0.0, 0.25))
                 if "marge" in r_: comp.append(lin(r_["marge"], 0.0, 0.15))
                 if "dette_cp" in r_: comp.append(lin(-r_["dette_cp"], -1.5, 0.0))
+            # regularite sur plusieurs annees
+            rns = serie_resultats(historique.get(s, {}))
+            regul = cagr = None
+            if len(rns) >= 3:
+                benef = sum(1 for v in rns.values() if v > 0)
+                regul = benef / len(rns)
+                comp.append(lin(regul, 0.5, 1.0))
+                ans = sorted(rns)
+                v0, v1 = rns[ans[0]], rns[ans[-1]]
+                if v0 > 0 and v1 > 0:
+                    cagr = (v1 / v0) ** (1 / (ans[-1] - ans[0])) - 1
+                fiche["resultats"] = [[a, round(v)] for a, v in rns.items()]
+                if benef == len(rns):
+                    fiche["raisons"].append(("plus", f"Bénéfice chaque année de {ans[0]} à {ans[-1]} ({benef} ans sur {len(rns)})"))
+                else:
+                    fiche["raisons"].append(("moins" if regul < 0.75 else "neutre", f"En perte {len(rns) - benef} année(s) sur {len(rns)} depuis {ans[0]}"))
+                if cagr is not None:
+                    fiche["raisons"].append(("plus" if cagr > 0.05 else "moins" if cagr < -0.03 else "neutre",
+                                             f"Résultat : {'+' if cagr >= 0 else ''}{fr(cagr*100, 0)} % par an en moyenne de {ans[0]} à {ans[-1]}"))
             if len(comp) >= 2:
                 s_qual = st.mean(comp)
             comp = []
             if "croissance_resultat" in r_: comp.append(lin(r_["croissance_resultat"], -0.25, 0.25))
             if "croissance_activite" in r_: comp.append(lin(r_["croissance_activite"], -0.10, 0.15))
+            if cagr is not None:
+                comp.append(lin(cagr, -0.10, 0.15))
+                comp.append(lin(cagr, -0.10, 0.15))  # la tendance sur plusieurs annees compte double
             if comp:
                 s_croi = st.mean(comp)
             ex = b.get("exercice", "")

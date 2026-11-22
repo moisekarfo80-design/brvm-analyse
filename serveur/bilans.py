@@ -420,12 +420,13 @@ SLUGS = {  # pages « rapports » de brvm.org -> symbole (verifie a la main)
     "air-liquide-ci": "SIVC", "bank-africa-bf": "BOABF", "bank-africa-bn": "BOAB", "bank-africa-ci": "BOAC",
     "bank-africa-ml": "BOAM", "bank-africa-ng": "BOAN", "bank-africa-sn": "BOAS", "bbgci": "BBGC", "bernabe-ci": "BNBC",
     "bici-ci": "BICC", "biic": "BICB", "bollore-transport-logistics": "SDSC", "cfao-motors-ci": "CFAC", "cie-ci": "CIEC",
-    "coris-bank-international": "CBIBF", "cote-divoire-telecom": "ORAC", "ecobank-ci": "ECOC", "ecobank-tg": "ETIT",
-    "filtisac-ci": "FTSC", "lnb": "LNBB", "sgci": "SGBC", "nsbc": "NSBC",
+    "coris-bank-international": "CBIBF", "ecobank-ci": "ECOC", "ecobank-tg": "ETIT",
+    "filtisac-ci": "FTSC", "lnb": "LNBB", "sgci": "SGBC", "nsbc": "NSBC", "total": "TTLC",
+    "total-senegal-sa": "TTLS", "totalenergies-marketing-sn": "TTLS", "sonatel": "SNTS",
 }
 
 
-IGNORER = {"fctc-sonatel", "fctcsnts", "fctcept", "sgb-ci", "dcbr", "edksn", "fimsno1"}
+IGNORER = {"cote-divoire-telecom", "fctc-sonatel", "fctcsnts", "fctcept", "sgb-ci", "dcbr", "edksn", "fimsno1"}
 
 
 def pages_societes():
@@ -445,9 +446,11 @@ def pages_societes():
         for slug, nom in liens:
             nom = unescape(nom).strip()
             sym = SLUGS.get(slug) or (None if slug in IGNORER else symbole_de(nom))
-            if sym and (sym not in res or slug in SLUGS):
-                res[sym] = f"{INDEX_SOCIETES}/{slug}"
-            elif not sym:
+            if sym:
+                res.setdefault(sym, [])
+                if f"{INDEX_SOCIETES}/{slug}" not in res[sym]:
+                    res[sym].append(f"{INDEX_SOCIETES}/{slug}")
+            else:
                 autres.append(f"{slug}={nom[:30]}")
         time.sleep(1)
     return res, autres
@@ -480,11 +483,11 @@ def annuels(pubs, exercice):
     out = []
     for p in pubs:
         n = (p["titre"] + " " + p["url"].rsplit("/", 1)[-1]).lower().replace("_", " ").replace("-", " ")
-        if not re.search(rf"exercice\s*(clos[^0-9]*)?{exercice}\b|\b{exercice}\b.*(etats|états) financiers|(etats|états) financiers.*\b{exercice}\b", n):
+        if not re.search(rf"exercice\s*(clos[^0-9]*)?{exercice}\b|\b{exercice}\b.*(etats|états) financiers|(etats|états) financiers.*\b{exercice}\b|r[ée]sultats annuels.*\b{exercice}\b|31 d[ée]cembre {exercice}", n):
             continue
         if re.search(r"trimestre|semestre|semestriel|attestation|convocation|avis|dividende|resolution|résolution", n):
             continue
-        if not re.search(r"etats|états|financi|rapport d.activit[ée]s? annuel|rapport annuel|comptes", n):
+        if not re.search(r"etats|états|financi|rapport d.activit[ée]s? annuel|rapport annuel|comptes|r[ée]sultats annuels", n):
             continue
         out.append(p)
     return out
@@ -516,56 +519,94 @@ def pdf_depuis(url):
     return requests.get(u, headers=ENTETES, timeout=60).content
 
 
+def lire_exercice(sym, candidats, exercice):
+    res = None
+    for p in candidats[:3]:
+        try:
+            contenu = pdf_depuis(p["url"])
+            if not contenu:
+                continue
+            with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+                f.write(contenu)
+                f.flush()
+                r = lire_pdf(f.name, diag="--diag" in sys.argv)
+            r.update(exercice=exercice, url=p["url"], titre=p["titre"], lu_le=dt.date.today().isoformat())
+            if res is None or (r["statut"] == "valide" and res["statut"] != "valide"):
+                res = r
+            if r["statut"] == "valide":
+                break
+        except Exception as e:
+            print(f"  {sym} {exercice} : erreur {e.__class__.__name__} {str(e)[:100]}")
+    return res
+
+
+def proche(a, b, tol=0.006):
+    return a is not None and b is not None and abs(a - b) <= tol * max(abs(a), abs(b), 1)
+
+
+def controle_croise(hist):
+    """La colonne N-1 du rapport de l'annee Y doit egaler la colonne N du rapport de Y-1.
+    Deux documents differents qui concordent : chiffres confirmes (et mis en « valide »)."""
+    for an in sorted(hist, reverse=True):
+        prec = hist.get(str(int(an) - 1))
+        if not prec:
+            continue
+        a = hist[an]["chiffres"].get("rn", {})
+        b = prec["chiffres"].get("rn", {})
+        if proche(a.get("n1"), b.get("n")):
+            for x in (hist[an], prec):
+                if "confirme par le rapport de l'autre annee" not in x["controles_ok"]:
+                    x["controles_ok"].append("confirme par le rapport de l'autre annee")
+                douteux = [q for q in x["problemes"] if "non publie" not in q and "introuvable" not in q]
+                if x["statut"] != "valide" and not douteux:
+                    x["statut"] = "valide"
+
+
 def main():
     if len(sys.argv) > 1 and sys.argv[1].lower().endswith(".pdf"):
         print(json.dumps(lire_pdf(sys.argv[1]), ensure_ascii=False, indent=1))
         return
-    nums = [a for a in sys.argv[1:] if a.isdigit()]
-    exercice = int(nums[0]) if nums else dt.date.today().year - 1
-    actuel = json.loads(SORTIE.read_text()) if SORTIE.exists() else {"societes": {}}
-    pubs = lister_publications(exercice)
-    print(f"{len(pubs)} publications « Exercice {exercice} » trouvees")
-    if "--diag" in sys.argv:
-        for p in pubs:
-            print(f"  PUB {p['symbole'] or '?':<6} {p['titre'][:110]}")
-    par_sym = {}
-    for p in pubs:
-        if p["symbole"]:
-            par_sym.setdefault(p["symbole"], []).append(p)
-        else:
-            print("  societe non reconnue :", p["titre"][:90])
-    for sym, lst in sorted(par_sym.items()):
-        lst.sort(key=preference, reverse=True)
-        deja = actuel["societes"].get(sym)
-        if "--tout" not in sys.argv and deja and deja.get("exercice") == exercice and deja.get("url") == lst[0]["url"] and deja.get("statut") == "valide":
+    nums = [int(a) for a in sys.argv[1:] if a.isdigit()]
+    dernier = nums[0] if nums else dt.date.today().year - 1
+    nb_ans = 5
+    for a in sys.argv:
+        if a.startswith("--ans="):
+            nb_ans = int(a.split("=")[1])
+    exercices = list(range(dernier, dernier - nb_ans, -1))
+    actuel = json.loads(SORTIE.read_text()) if SORTIE.exists() else {}
+    actuel.setdefault("societes", {})
+    actuel.setdefault("historique", {})
+    seuls = [a for a in sys.argv[1:] if re.fullmatch(r"[A-Z]{3,6}", a)]
+    pages, _ = pages_societes()
+    print(f"{len(pages)} pages de societes ; exercices {exercices}")
+    for sym, urls in sorted(pages.items()):
+        if seuls and sym not in seuls:
             continue
-        res = None
-        for p in lst[:3]:
-            try:
-                contenu = pdf_depuis(p["url"])
-                if not contenu:
-                    continue
-                with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
-                    f.write(contenu)
-                    f.flush()
-                    r = lire_pdf(f.name, diag="--diag" in sys.argv)
-                r.update(exercice=exercice, url=p["url"], titre=p["titre"], lu_le=dt.date.today().isoformat())
-                if res is None or (r["statut"] == "valide" and res["statut"] != "valide"):
-                    res = r
-                if r["statut"] == "valide":
-                    break
-            except Exception as e:
-                print(f"  {sym} : erreur {e.__class__.__name__} {str(e)[:100]}")
-        if res:
-            actuel["societes"][sym] = res
-            print(f"  {sym:<6} {res['statut']:<12} ocr {res['pages_ocr']:>2}  {', '.join(res['problemes']) or 'ok'}  {res['ratios']}")
-        time.sleep(1)
-    actuel["maj"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
-    SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=1))
+        pubs = [p for u in urls for p in publications_societe(u)]
+        hist = actuel["historique"].setdefault(sym, {})
+        for ex in exercices:
+            deja = hist.get(str(ex))
+            if deja and deja.get("statut") == "valide" and "--tout" not in sys.argv:
+                continue
+            cand = sorted(annuels(pubs, ex), key=preference, reverse=True)
+            if not cand:
+                continue
+            r = lire_exercice(sym, cand, ex)
+            if r:
+                hist[str(ex)] = r
+        controle_croise(hist)
+        valides = sorted((int(a) for a, x in hist.items() if x["statut"] == "valide"), reverse=True)
+        lignes = " ".join(f"{a}:{'ok' if hist[a]['statut'] == 'valide' else '--'}" for a in sorted(hist, reverse=True))
+        if valides and valides[0] >= dernier - 1:
+            actuel["societes"][sym] = hist[str(valides[0])]
+        elif str(dernier) in hist:
+            actuel["societes"][sym] = hist[str(dernier)]
+        print(f"  {sym:<6} {lignes}")
+        actuel["maj"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=1))  # sauvegarde au fil de l'eau
     v = sum(1 for s in actuel["societes"].values() if s["statut"] == "valide")
-    print(f"Bilans : {v} valides, {len(actuel['societes']) - v} a confirmer")
-
-
+    nh = sum(1 for h in actuel["historique"].values() for x in h.values() if x["statut"] == "valide")
+    print(f"Bilans : {v} societes avec un bilan recent valide ; {nh} bilans annuels valides au total")
 
 
 
@@ -575,8 +616,9 @@ def test_pages():
     print(f"{len(pages)} societes reconnues")
     for x in inconnues:
         print("  AUTRE", x)
-    for sym, url in sorted(pages.items())[:60]:
-        pubs = publications_societe(url, pages=3)
+    for sym, urls in sorted(pages.items())[:60]:
+        pubs = [p for u in urls for p in publications_societe(u, pages=3)]
+        url = urls[0]
         par_an = {an: len(annuels(pubs, an)) for an in range(2021, 2026)}
         print(f"  {sym:<6} {url.rsplit('/', 1)[-1]:<28} {len(pubs):>3} publications ; annuelles {par_an}")
         if sym in ("SGBC", "SNTS"):

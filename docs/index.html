@@ -223,9 +223,20 @@ function fiche(s) {
     </div>
     ${a.notes ? `<div class="carte"><h3>Notes par horizon</h3>${Object.keys(H).map((h) => `<div class="ligne entre" style="padding:8px 0;border-bottom:1px solid var(--ligne)"><span><b>${H[h]}</b><div class="gris">${fleche(a.fleches && a.fleches[h]) || "pas encore d'historique"}</div></span><span style="text-align:right">${etoiles(a.etoiles && a.etoiles[h])}<div class="note">${a.notes[h] == null ? "—" : nb(a.notes[h], 0) + "/100"}</div></span></div>`).join("")}<div class="gris" style="margin-top:8px">Fiabilité long terme : ${a.fiabilite.lt} %. ${a.bilan ? "Bilan " + esc(a.bilan.exercice) + (a.bilan.manuel ? " (chiffres saisis à la main, PDF scanné)" : " lu automatiquement et contrôlé") + "." : "Bilan pas encore lu : notes provisoires."}</div></div>` : ""}
     <div class="carte"><h3>Pourquoi cette note ?</h3>${(a.raisons || []).map(([t, txt]) => `<div class="raison r-${t}"><b>${{ plus: "+", moins: "−", attention: "!", neutre: "•" }[t]}</b><span>${esc(txt)}</span></div>`).join("")}${(a.drapeaux || []).map((d) => `<div class="raison r-attention"><b>!</b><span>${esc(d)}</span></div>`).join("")}</div>
+    ${a.resultats && a.resultats.length >= 3 ? graphResultats(a.resultats) : ""}
     ${a.dividende ? `<div class="carte"><h3>Dernier dividende</h3><div>${fcfa(a.dividende)} par action, versé le ${dateFr(a.date_dividende)}</div></div>` : ""}
     <button class="bouton" data-ajouter="${a.s}">${mes ? "Modifier dans mon portefeuille" : "Ajouter à mon portefeuille"}</button>
     <p class="gris" style="text-align:center">Aide à la décision, pas un conseil d'investissement.</p>`);
+}
+
+function graphResultats(r) {
+  const max = Math.max(...r.map((x) => Math.abs(x[1]))) || 1;
+  const unite = max >= 1e9 ? [1e9, "milliards"] : max >= 1e6 ? [1e6, "millions"] : [1e3, "milliers"];
+  return `<div class="carte"><h3>Résultat net par année</h3><div class="gris" style="margin-bottom:10px">En ${unite[1]} de FCFA, d'après les bilans officiels</div>
+    <div style="display:flex;align-items:flex-end;gap:8px;height:120px">${r.map(([an, v]) => `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px">
+      <span style="font-size:11px;font-weight:600;color:${v < 0 ? "var(--rouge)" : "var(--encre)"}">${nb(v / unite[0], 1)}</span>
+      <div style="width:100%;max-width:36px;height:${Math.max(4, Math.abs(v) / max * 80)}px;border-radius:6px 6px 2px 2px;background:${v < 0 ? "var(--rouge)" : "var(--bleu)"}"></div>
+      <span class="gris" style="font-size:11px">${an}</span></div>`).join("")}</div></div>`;
 }
 
 function investir() {
