@@ -628,11 +628,13 @@ def main():
             if r:
                 hist[str(ex)] = r
         controle_croise(hist)
-        valides = sorted((int(a) for a, x in hist.items() if x["statut"] == "valide"), reverse=True)
         lignes = " ".join(f"{a}:{'ok' if hist[a]['statut'] == 'valide' else '--'}" for a in sorted(hist, reverse=True))
-        if valides and valides[0] >= dernier - 1:
-            actuel["societes"][sym] = hist[str(valides[0])]
-        elif str(dernier) in hist:
+        existant = actuel["societes"].get(sym)
+        ex_existant = int(existant.get("exercice", 0)) if existant and existant.get("statut") == "valide" else 0
+        recents = [a for a in sorted((int(a) for a, x in hist.items() if x["statut"] == "valide"), reverse=True)]
+        if recents and recents[0] >= ex_existant:  # on ne remplace jamais un bilan par un plus ancien
+            actuel["societes"][sym] = hist[str(recents[0])]
+        elif not existant and str(dernier) in hist:
             actuel["societes"][sym] = hist[str(dernier)]
         print(f"  {sym:<6} {lignes}")
         actuel["maj"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")

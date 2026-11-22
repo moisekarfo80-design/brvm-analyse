@@ -10,6 +10,9 @@ on:
       exercice:
         description: "Exercice a lire (ex. 2025)"
         default: "2025"
+      ans:
+        description: "Nombre d'exercices a lire (en remontant)"
+        default: "5"
       tout:
         description: "Tout relire, meme les bilans deja valides"
         type: boolean
@@ -54,7 +57,7 @@ jobs:
 
       - name: Lire les bilans
         if: ${{ !inputs.pages }}
-        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }} ${{ inputs.tout && '--tout' || '' }} ${{ inputs.diag && '--diag' || '' }}
+        run: python serveur/bilans.py ${{ inputs.exercice || '2025' }} --ans=${{ inputs.ans || '5' }} ${{ inputs.tout && '--tout' || '' }} ${{ inputs.diag && '--diag' || '' }}
 
       - name: Recalculer les notes
         if: ${{ !inputs.pages }}
