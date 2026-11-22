@@ -36,7 +36,7 @@ def valeurs(texte):
         v = float(m.group(1).replace(",", "."))
         avant = texte[max(0, m.start() - 28):m.start()].lower()
         avant = avant[avant.rfind("%") + 1:] if "%" in avant else avant  # seulement depuis le pourcentage precedent
-        if re.search(r"[≥>]|norme|minimum|minimal|exig|seuil|plancher|au moins|requis", avant):
+        if re.search(r"[≥>]|norme|minimum|minimal|\bmin\b|exig|seuil|plancher|au moins|requis|r[ée]glementaire", avant):
             continue
         if v in NORMES and norme_dans_ligne:
             continue
@@ -80,17 +80,29 @@ def chercher(pages, exercice, diag=False):
                         break
             ans_l = [int(a) for a in ans_l]
             v_n, v_n1 = vals[0][1], vals[1][1] if len(vals) > 1 else None
+            approx = False
+            m_de = re.search(r"\bde\s+(\d{1,2}(?:[.,]\d{1,2})?)\s?%\s*(?:\S+\s+){0,4}?[àa]\s+(\d{1,2}(?:[.,]\d{1,2})?)\s?%", bloc)
+            if m_de:  # « passe de 13,9 % a 14,4 % »
+                v_n1, v_n = float(m_de.group(1).replace(",", ".")), float(m_de.group(2).replace(",", "."))
+            elif re.search(r"(sup[ée]rieur|plus de|au-del[àa] de)\s+(?:à\s+)?" + re.escape(re.sub(r"\.0$", "", str(v_n)).replace(".", ",")), bloc):
+                approx = True
             confiance = poids_ligne(bloc)
+            an_phrase = exercice
+            annees_bloc = sorted(set(int(a) for a in ANNEE.findall(bloc)))
             if len(ans_l) >= 2 and exercice in ans_l and (exercice - 1) in ans_l and len(vals) >= 2:
                 if ans_l.index(exercice) > ans_l.index(exercice - 1):
                     v_n, v_n1 = vals[1][1], vals[0][1]
                 confiance += 2
             elif str(exercice) in bloc:
                 confiance += 1
-            elif re.search(r"\b(20[12]\d)\b", bloc) and str(exercice) not in bloc and len(vals) == 1:
-                continue  # phrase sur une autre annee
-            cand.append({"ratio": v_n, "ratio_n1": v_n1, "phrase": re.sub(r"\s+", " ", bloc)[:220], "page": ip + 1, "confiance": confiance})
+            elif len(annees_bloc) == 1 and annees_bloc[0] != exercice:
+                if annees_bloc[0] != exercice - 1 or len(vals) > 2:
+                    continue  # phrase sur une autre annee
+                an_phrase = annees_bloc[0]  # chiffre de l'annee d'avant, garde avec son annee
+            cand.append({"ratio": v_n, "ratio_n1": v_n1, "approx": approx, "annee": an_phrase, "phrase": re.sub(r"\s+", " ", bloc)[:220], "page": ip + 1, "confiance": confiance})
     cand = [c for c in cand if c["confiance"] >= 3]
+    if any(c["annee"] == exercice for c in cand):
+        cand = [c for c in cand if c["annee"] == exercice]
     if not cand:
         return None
     # la valeur la plus souvent citee parmi les meilleures mentions
@@ -105,7 +117,7 @@ def chercher(pages, exercice, diag=False):
     return choix
 
 
-def pages_du_pdf(chemin, ocr_max=30):
+def pages_du_pdf(chemin, ocr_max=50):
     """Texte complet (pdftotext) ; si le document est scanne, OCR des premieres pages."""
     try:
         r = subprocess.run(["pdftotext", "-layout", "-l", "250", str(chemin), "-"], capture_output=True, text=True, timeout=300)
@@ -122,21 +134,25 @@ def pages_du_pdf(chemin, ocr_max=30):
 
 
 def documents(pubs, exercice):
-    """Rapports de l'exercice ou de l'annee suivante qui peuvent citer le ratio, les plus riches d'abord."""
+    """Rapports de l'exercice qui peuvent citer le ratio : rapports annuels complets d'abord."""
     out = []
     for p in pubs:
         n = (p["titre"] + " " + p["url"].rsplit("/", 1)[-1]).lower().replace("_", " ").replace("-", " ")
-        if not re.search(rf"\b({exercice}|{exercice + 1})\b", n):
+        ans_doc = [int(a) for a in ANNEE.findall(n)]
+        if exercice not in ans_doc and not (exercice + 1 in ans_doc and re.search(r"exercice|annuel", n) is None and False):
             continue
         if re.search(r"convocation|avis de|attestation|resolution|résolution|dividende|projet", n):
             continue
+        periodique = re.search(r"trimestre|semestre|semestriel", n)
+        if periodique and max(ans_doc) > exercice:
+            continue
         score = 0
-        score += 6 if re.search(r"rapport annuel|rapport d.activit|rapport de gestion|pilier 3|pilier iii|informations? prudenti", n) else 0
-        score += 3 if re.search(r"etats|états|financi", n) else 0
-        score += 2 if re.search(r"communiqu|r[ée]sultats annuels", n) else 0
-        score -= 2 if re.search(rf"\b{exercice + 1}\b", n) and not re.search(rf"\b{exercice}\b", n) else 0
-        score -= 1 if re.search(r"trimestre|semestre|semestriel", n) else 0
-        if score > 0:
+        score += 8 if re.search(r"rapport annuel|rapport de gestion|pilier 3|pilier iii|informations? prudenti", n) else 0
+        score += 5 if re.search(r"etats|états|financi|annuel|exercice", n) else 0
+        score += 2 if re.search(r"communiqu|r[ée]sultats", n) else 0
+        score += 1 if re.search(r"2[eè]me semestre|deuxi[eè]me semestre|4[eè]me trimestre", n) else 0
+        score -= 4 if periodique and not re.search(r"2[eè]me semestre|deuxi[eè]me semestre|4[eè]me trimestre", n) else 0
+        if score > -4:
             out.append((score, p))
     return [p for _, p in sorted(out, key=lambda x: -x[0])]
 
@@ -156,9 +172,9 @@ def main():
             print(f"  {sym:<6} deja lu : {deja['ratio']} % ({deja['exercice']})")
             continue
         pubs = [p for u in pages.get(sym, []) for p in B.publications_societe(u)]
-        trouve = None
+        trouve = trouve_ancien = None
         for ex in (exercice, exercice - 1):
-            for doc in documents(pubs, ex)[:5]:
+            for doc in documents(pubs, ex)[:7]:
                 try:
                     contenu = B.pdf_depuis(doc["url"])
                     if not contenu:
@@ -173,11 +189,15 @@ def main():
                 except Exception as e:
                     print(f"    {sym} : erreur {e.__class__.__name__} {str(e)[:80]}")
                     continue
-                if r:
+                if r and r.get("annee", ex) < ex and not trouve_ancien:
+                    trouve_ancien = {**r, "exercice": r["annee"], "document": doc["titre"], "url": doc["url"], "lu_le": dt.date.today().isoformat()}
+                    continue
+                if r and r.get("annee", ex) == ex:
                     trouve = {**r, "exercice": ex, "document": doc["titre"], "url": doc["url"], "lu_le": dt.date.today().isoformat()}
                     break
             if trouve:
                 break
+        trouve = trouve or trouve_ancien
         if trouve:
             actuel[sym] = trouve
             print(f"  {sym:<6} {trouve['ratio']} % ({trouve['exercice']}, {trouve['mentions']} mention(s)) : {trouve['phrase'][:110]}")
