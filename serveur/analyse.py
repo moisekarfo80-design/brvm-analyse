@@ -40,6 +40,31 @@ def fr(x, d=1):
     return f"{x:.{d}f}".replace(".", ",")
 
 
+NORME_SOLVA, MOYENNE_SOLVA = 11.5, 14.7   # Commission bancaire de l'UMOA, ratio de solvabilite total (2025)
+
+
+def feu_solidite(s_qual, fiche):
+    """Feu vert / orange / rouge : la societe est-elle solide ? (information, ne change pas la note)."""
+    perte = next((d for d in fiche["drapeaux"] if d.startswith("En perte au dernier bilan")), None)
+    sol = (fiche.get("solvabilite") or {}).get("ratio")
+    pourquoi = []
+    if s_qual is not None:
+        pourquoi.append(f"solidité {round(s_qual)}/100")
+    if sol is not None:
+        pourquoi.append(f"solvabilité {fr(sol, 1)} %")
+    if perte:
+        pourquoi.append(perte[0].lower() + perte[1:])
+    if s_qual is None and sol is None and not perte:
+        return {"couleur": "gris", "mot": "Non mesurée", "pourquoi": "pas assez de chiffres dans les bilans"}
+    if perte or (s_qual is not None and s_qual < 50) or (sol is not None and sol < NORME_SOLVA):
+        c, m = "rouge", "Fragile"
+    elif (s_qual is not None and s_qual < 75) or (sol is not None and sol < 13.0):
+        c, m = "orange", "Moyenne"
+    else:
+        c, m = "vert", "Solide"
+    return {"couleur": c, "mot": m, "pourquoi": ", ".join(pourquoi)}
+
+
 def lin(x, a, b):
     return max(0.0, min(100.0, 100 * (x - a) / (b - a)))
 
@@ -64,6 +89,7 @@ def charger():
     tout_bilans = json.loads((D / "bilans.json").read_text()) if (D / "bilans.json").exists() else {}
     bilans = tout_bilans.get("societes", {})
     historique = tout_bilans.get("historique", {})
+    solva = json.loads((D / "solvabilite.json").read_text()) if (D / "solvabilite.json").exists() else {}
     if (D / "bilans_manuels.json").exists():  # chiffres saisis a la main quand le PDF est illisible
         for sym, b in json.loads((D / "bilans_manuels.json").read_text()).get("societes", {}).items():
             plus_recent = int(b.get("exercice", 0)) > int((bilans.get(sym) or {}).get("exercice", 0) or 0)
@@ -81,7 +107,7 @@ def charger():
             hist.setdefault(s, []).append((r["date"], c, v))
     for s in hist:
         hist[s].sort()
-    return ref, ops, statut, etat, hist, bilans, historique
+    return ref, ops, statut, etat, hist, bilans, historique, solva
 
 
 def serie_resultats(h):
@@ -121,7 +147,7 @@ def prix_a(serie, jour):
 
 
 def main():
-    ref, ops, statut, etat, hist, bilans, historique = charger()
+    ref, ops, statut, etat, hist, bilans, historique, solva = charger()
     actions = ref["actions"]
     date_donnees = max(p[0] for s in hist for p in hist[s])
     jour = dt.date.fromisoformat(date_donnees)
@@ -220,6 +246,9 @@ def main():
 
         # solidite et croissance (bilans annuels lus et controles)
         s_qual = s_croi = None
+        sv = solva.get(s)
+        if sv and int(sv.get("exercice", 0)) < jour.year - 3:
+            sv = None
         b = bilans.get(s)
         if b and b.get("statut") == "valide" and int(b.get("exercice") or 0) < jour.year - 3:
             fiche["drapeaux"].append(f"Dernier bilan lisible trop ancien ({b.get('exercice')}) : non utilisé")
@@ -262,6 +291,8 @@ def main():
                 if cagr is not None:
                     fiche["raisons"].append(("plus" if cagr > 0.05 else "moins" if cagr < -0.03 else "neutre",
                                              f"Résultat : {'+' if cagr >= 0 else ''}{fr(cagr*100, 0)} % par an en moyenne de {ans[0]} à {ans[-1]}"))
+            if sv:
+                comp.append(lin(sv["ratio"], 11.5, 17.0))  # banques : assez de fonds propres pour encaisser des pertes
             if len(comp) >= 2:
                 s_qual = st.mean(comp)
             comp = []
@@ -294,6 +325,17 @@ def main():
             fiche["bilan"] = {"exercice": ex, "source": b.get("url") or b.get("source"), "manuel": bool(b.get("manuel"))}
         elif b:
             fiche["drapeaux"].append("Bilan à confirmer : non utilisé")
+
+        # solvabilite des banques (rapports annuels) puis feu de solidite
+        if sv:
+            ra = sv["ratio"]
+            fiche["solvabilite"] = {"ratio": ra, "ratio_n1": sv.get("ratio_n1"), "exercice": sv["exercice"], "norme": NORME_SOLVA,
+                                    "document": sv.get("document"), "source": sv.get("url"), "phrase": sv.get("phrase")}
+            t = "attention" if ra < NORME_SOLVA else "moins" if ra < 12.5 else "plus" if ra >= 14.7 else "neutre"
+            fiche["raisons"].append((t, f"Solvabilité {sv['exercice']} : {fr(ra, 1)} % (minimum exigé {fr(NORME_SOLVA, 1)} %, moyenne des banques de l'UMOA {fr(MOYENNE_SOLVA, 1)} %)"))
+            if ra < NORME_SOLVA:
+                fiche["drapeaux"].append(f"Solvabilité sous la norme ({fr(ra, 1)} %)")
+        fiche["feu"] = feu_solidite(s_qual, fiche)
 
         # liquidite (a partir de l'historique collecte chaque soir)
         vols = [p for p in serie if p[2] is not None][-60:]

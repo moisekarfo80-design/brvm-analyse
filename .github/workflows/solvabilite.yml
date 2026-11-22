@@ -1,0 +1,61 @@
+# Lecture du ratio de solvabilite des banques cotees (rapports annuels publies sur brvm.org).
+# Chaque lundi apres les bilans, a la main (Actions > Solvabilite des banques > Run workflow),
+# et automatiquement quand le programme de lecture est modifie.
+name: Solvabilite des banques
+
+on:
+  schedule:
+    - cron: "41 9 * * 1"
+  push:
+    paths:
+      - "serveur/solvabilite.py"
+  workflow_dispatch:
+    inputs:
+      exercice:
+        description: "Exercice a lire (ex. 2025)"
+        default: "2025"
+      tout:
+        description: "Tout relire"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mise-a-jour
+  cancel-in-progress: false
+
+jobs:
+  solvabilite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les outils
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra poppler-utils
+          pip install -r requirements.txt
+
+      - name: Lire la solvabilite
+        run: python serveur/solvabilite.py ${{ inputs.exercice || '2025' }} --diag ${{ (inputs.tout || github.event_name == 'push') && '--tout' || '' }} 2>&1 | tee solvabilite_journal.txt
+
+      - name: Enregistrer
+        run: |
+          git config user.name "brvm-analyse (automatique)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p donnees/journaux && tail -c 60000 solvabilite_journal.txt > donnees/journaux/solvabilite.txt
+          git add donnees/solvabilite.json donnees/journaux/solvabilite.txt
+          git diff --cached --quiet || git commit -q -m "Solvabilite des banques lue le $(date -u +%d/%m/%Y) (donnees)"
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin main && break; sleep 5; done
+          python serveur/analyse.py
+          git add donnees docs/data
+          git diff --cached --quiet || git commit -q -m "Solvabilite des banques (notes)"
+          for i in 1 2 3; do git push -q origin HEAD:main && break; sleep 5; git pull -q --rebase -X theirs origin main; done

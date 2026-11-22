@@ -39,6 +39,11 @@ const barres = (f) => { const n = f >= 80 ? 4 : f >= 60 ? 3 : f >= 35 ? 2 : 1; r
 const tauxOrdre = () => { const f = lire("frais", FRAIS_DEFAUT); return (f.courtage * (1 + f.tva / 100) + f.brvm) / 100; };
 const fraisOrdre = (m) => m * tauxOrdre();
 const puces = (liste, actif, attr) => `<div class="puces">${liste.map(([v, l]) => `<button class="puce-choix ${v === actif ? "on" : ""}" data-${attr}="${v}">${l}</button>`).join("")}</div>`;
+const FEUX = { vert: "#1F9D55", orange: "#E08A00", rouge: "#C0362C", gris: "#A9B3C7" };
+const feu = (a, long) => !a.feu ? "" : long
+  ? `<span class="feu f-${a.feu.couleur}"><i></i>${esc(a.feu.mot)}</span>`
+  : `<span class="feu f-${a.feu.couleur}" title="Solidité : ${esc(a.feu.mot)}" aria-label="Solidité : ${esc(a.feu.mot)}"><i></i>${esc(a.feu.mot)}</span>`;
+const autresDrapeaux = (a) => (a.drapeaux || []).filter((d) => !/^En perte au dernier bilan|^Solvabilité/.test(d));
 const fermerBtn = `<button class="fermer" data-fermer aria-label="Fermer">✕</button>`;
 
 // ---------- fourchettes de gains (modele tire du test 2016-2025)
@@ -218,7 +223,7 @@ function ligneAction(a, i, h) {
   const n = a.notes ? a.notes[h] : null;
   return `<button class="action" data-fiche="${a.s}">
     ${i ? `<span class="rang">${i}</span>` : ""}
-    <span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${fcfa(a.cours)} · ${esc(a.secteur)}</div>${(a.drapeaux || []).length ? `<span class="puce">⚠ ${esc(a.drapeaux[0])}</span>` : ""}</span>
+    <span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${fcfa(a.cours)} · ${esc(a.secteur)}</div>${feu(a)}${autresDrapeaux(a)[0] ? ` <span class="puce">⚠ ${esc(autresDrapeaux(a)[0])}</span>` : ""}</span>
     <span style="text-align:right">${etoiles(a.etoiles && a.etoiles[h])}<div class="note">${n == null ? "—" : nb(n, 0)}<span class="gris">/100</span></div>${fleche(a.fleches && a.fleches[h])}</span>
   </button>`;
 }
@@ -258,6 +263,7 @@ function classement() {
   <div class="seg" role="tablist">${Object.keys(H).map((h) => `<button role="tab" class="${h === horizon ? "on" : ""}" data-horizon="${h}">${H[h]}</button>`).join("")}</div>
   <div class="carte">
     <div class="gris">${esc(hz.duree)} · la note compte le dividende et le prix${horizon === "ct" ? ", plus la tendance du cours" : ""}, comparés à toute la bourse. Les bilans sont expliqués dans chaque fiche, mais ne changent pas la note (test sur 10 ans).</div>
+    <div class="gris" style="margin-top:8px">Feu de solidité (d'après les bilans) : <span class="feu f-vert"><i></i>Solide</span> <span class="feu f-orange"><i></i>Moyenne</span> <span class="feu f-rouge"><i></i>Fragile</span></div>
     ${horizon === "ct" ? `<div class="puce" style="margin-top:8px">⚠ Le court terme suit la hausse récente : c'est le plus risqué.</div>` : ""}
   </div>
   <div class="champ"><input id="cherche" type="search" placeholder="Chercher une action (ex. Sonatel)" value="${esc(recherche)}" aria-label="Chercher une action"></div>
@@ -308,6 +314,10 @@ function fiche(s) {
     <div class="carte"><div class="ligne entre"><span style="font-size:26px;font-weight:700">${fcfa(a.cours)}</span>${a.var_jour != null ? `<span class="fleche ${a.var_jour >= 0 ? "haut" : "bas"}">${a.var_jour >= 0 ? "▲ +" : "▼ "}${nb(a.var_jour, 2)} % aujourd'hui</span>` : ""}</div>
       <div class="grille3" style="margin-top:12px"><button class="case" data-mot="dividende"><div class="gris">Rendement ⓘ</div><div class="val">${a.rendement != null ? nb(a.rendement) + " %" : "—"}</div></button><button class="case" data-mot="per"><div class="gris">PER ⓘ</div><div class="val">${a.per != null ? nb(a.per) : "—"}</div></button><div class="case"><div class="gris">Sur 1 an</div><div class="val">${a.tendance != null ? (a.tendance > 0 ? "+" : "") + nb(a.tendance, 0) + " %" : "—"}</div></div></div>
     </div>
+    ${a.feu ? `<div class="carte"><div class="ligne entre"><h3 style="margin:0">Solidité de l'entreprise</h3>${feu(a, true)}</div>
+      <div class="gris" style="margin-top:6px">${a.feu.couleur === "gris" ? "Pas assez de chiffres dans ses bilans pour juger." : "D'après ses bilans : " + esc(a.feu.pourquoi) + "."}</div>
+      ${a.solvabilite ? jaugeSolva(a.solvabilite) : a.secteur === "Banques et finance" ? `<div class="gris" style="margin-top:8px">Solvabilité : pas encore trouvée dans ses rapports.</div>` : ""}
+      <div class="gris" style="margin-top:8px">Le feu ne change pas la note : il t'aide à éviter une société fragile.</div></div>` : ""}
     <div class="carte"><h3>Pourquoi cette note ?</h3>${bars}
       <div class="gris" style="margin-top:8px">« Compte » : le critère entre dans la note. « Pour info » : tiré des bilans, montré pour t'aider à juger, mais sans effet sur la note.</div></div>
     ${f ? `<div class="carte"><h3>Si je mets…</h3>
@@ -321,6 +331,16 @@ function fiche(s) {
     ${a.dividende ? `<div class="carte"><h3>Dernier dividende</h3><div>${fcfa(a.dividende)} par action, versé le ${dateFr(a.date_dividende)}</div></div>` : ""}
     <button class="bouton" data-ajouter="${a.s}">${mes ? "Modifier dans mon portefeuille" : "Ajouter à mon portefeuille"}</button>
     <p class="gris" style="text-align:center">Aide à la décision, pas un conseil d'investissement.</p>`);
+}
+
+function jaugeSolva(sv) {
+  const max = 25, pos = (v) => Math.min(100, v / max * 100);
+  const c = sv.ratio < sv.norme ? FEUX.rouge : sv.ratio < 13 ? FEUX.orange : FEUX.vert;
+  return `<div style="margin-top:12px"><div class="ligne entre"><b>Solvabilité ${esc(sv.exercice)}</b><b style="color:${c}">${nb(sv.ratio, 1)} %</b></div>
+    <div class="solva"><span style="width:${pos(sv.ratio)}%;background:${c}"></span><i style="left:${pos(sv.norme)}%" title="minimum"></i><i class="moy" style="left:${pos(14.7)}%"></i></div>
+    <div class="ligne entre gris" style="font-size:12px"><span>| minimum exigé 11,5 %</span><span>| moyenne des banques 14,7 %</span></div>
+    <div class="gris" style="margin-top:6px">Les fonds propres de la banque, comparés aux risques qu'elle prend. Plus c'est haut, mieux elle peut encaisser des crédits non remboursés.${sv.ratio_n1 ? ` L'année d'avant : ${nb(sv.ratio_n1, 1)} %.` : ""}</div>
+    ${sv.source ? `<a class="lien" href="${esc(sv.source)}" target="_blank" rel="noopener">Source : ${esc((sv.document || "rapport").slice(0, 60))}</a>` : ""}</div>`;
 }
 
 function graphResultats(r) {
@@ -452,7 +472,7 @@ function mesActions() {
     const v = (a.cours || p.prix) * p.qte; valeur += v; achat += p.prix * p.qte;
     const g = v - p.prix * p.qte;
     const e = a.etoiles ? a.etoiles.lt : null;
-    return `<button class="action" data-fiche="${p.s}"><span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${p.qte} × ${fcfa(a.cours)} · acheté ${fcfa(p.prix)}</div>${e && e <= 2 ? `<span class="puce">⚠ Note long terme faible (${e}★) : à revoir au bilan annuel</span>` : ""}</span><span style="text-align:right"><b>${fcfa(v)}</b><div class="fleche ${g >= 0 ? "haut" : "bas"}">${g >= 0 ? "+" : ""}${fcfa(g)}</div></span></button>`;
+    return `<button class="action" data-fiche="${p.s}"><span class="info"><span class="nom">${esc(a.nom)}</span><div class="gris">${p.qte} × ${fcfa(a.cours)} · acheté ${fcfa(p.prix)}</div>${e && e <= 2 ? `<span class="puce">⚠ Note long terme faible (${e}★) : à revoir au bilan annuel</span>` : ""}${a.feu && a.feu.couleur === "rouge" ? `<span class="puce">⚠ Entreprise fragile : ${esc(a.feu.pourquoi)}</span>` : ""}</span><span style="text-align:right"><b>${fcfa(v)}</b><div class="fleche ${g >= 0 ? "haut" : "bas"}">${g >= 0 ? "+" : ""}${fcfa(g)}</div></span></button>`;
   }).join("");
   const fixes = frais.tenue * (1 + frais.tva / 100) + valeur * frais.conservation * (1 + frais.tva / 100) / 100;
   const divs = lire("dividendes", []).reduce((s, d) => s + d.montant, 0);
