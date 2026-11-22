@@ -321,6 +321,7 @@ def main():
             elif "croissance_resultat" in r_:
                 g = r_["croissance_resultat"]
                 fiche["raisons"].append(("plus" if g > 0.05 else "moins" if g < -0.05 else "neutre",
+                                         "Résultat net stable sur un an" if abs(g) < 0.005 else
                                          f"Résultat net {'en hausse' if g > 0 else 'en baisse'} : {'+' if g > 0 else ''}{fr(g*100, 0)} % sur un an"))
             fiche["bilan"] = {"exercice": ex, "source": b.get("url") or b.get("source"), "manuel": bool(b.get("manuel"))}
         elif b:

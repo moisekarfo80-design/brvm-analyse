@@ -338,12 +338,13 @@ function jaugeSolva(sv) {
   const c = sv.ratio < sv.norme ? FEUX.rouge : sv.ratio < 13 ? FEUX.orange : FEUX.vert;
   return `<div style="margin-top:12px"><div class="ligne entre"><b>Solvabilité</b> <span class="gris">(${esc(sv.periode || sv.exercice)})</span><b style="color:${c}">${sv.approx ? "plus de " : ""}${nb(sv.ratio, 1)} %</b></div>
     <div class="solva"><span style="width:${pos(sv.ratio)}%;background:${c}"></span><i style="left:${pos(sv.norme)}%" title="minimum"></i><i class="moy" style="left:${pos(14.7)}%"></i></div>
-    <div class="ligne entre gris" style="font-size:12px"><span>| minimum exigé 11,5 %</span><span>| moyenne des banques 14,7 %</span></div>
+    <div class="legende"><span><i style="background:#0E1B3D;width:3px;height:12px"></i>minimum exigé 11,5 %</span><span><i style="background:#7E95D6;width:3px;height:12px"></i>moyenne des banques 14,7 %</span></div>
     <div class="gris" style="margin-top:6px">Les fonds propres de la banque, comparés aux risques qu'elle prend. Plus c'est haut, mieux elle peut encaisser des crédits non remboursés.${sv.ratio_n1 ? ` L'année d'avant : ${nb(sv.ratio_n1, 1)} %.` : ""}</div>
     ${sv.source ? `<a class="lien" href="${esc(sv.source)}" target="_blank" rel="noopener">Source : ${esc((sv.document || "rapport").slice(0, 60))}</a>` : ""}</div>`;
 }
 
 function graphResultats(r) {
+  r = r.slice(-8);  // les 8 dernieres annees
   const max = Math.max(...r.map((x) => Math.abs(x[1]))) || 1;
   const unite = max >= 1e9 ? [1e9, "milliards"] : max >= 1e6 ? [1e6, "millions"] : [1e3, "milliers"];
   return `<div class="carte"><h3>Résultat net par année</h3><div class="gris" style="margin-bottom:10px">En ${unite[1]} de FCFA, d'après les bilans officiels</div>
