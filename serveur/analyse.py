@@ -64,7 +64,8 @@ def charger():
     historique = tout_bilans.get("historique", {})
     if (D / "bilans_manuels.json").exists():  # chiffres saisis a la main quand le PDF est illisible
         for sym, b in json.loads((D / "bilans_manuels.json").read_text()).get("societes", {}).items():
-            if sym not in bilans or bilans[sym].get("statut") != "valide" or b.get("prioritaire"):
+            plus_recent = int(b.get("exercice", 0)) > int((bilans.get(sym) or {}).get("exercice", 0) or 0)
+            if sym not in bilans or bilans[sym].get("statut") != "valide" or b.get("prioritaire") or plus_recent:
                 bilans[sym] = dict(b, statut="valide", manuel=True)
     hist = {}
     with open(D / "historique.csv", newline="", encoding="utf-8") as f:
