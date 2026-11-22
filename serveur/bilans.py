@@ -416,57 +416,59 @@ def lister_publications(exercice, pages=30):
 INDEX_SOCIETES = "https://www.brvm.org/fr/rapports-societe-cotes"
 
 
+SLUGS = {  # pages « rapports » de brvm.org -> symbole (verifie a la main)
+    "air-liquide-ci": "SIVC", "bank-africa-bf": "BOABF", "bank-africa-bn": "BOAB", "bank-africa-ci": "BOAC",
+    "bank-africa-ml": "BOAM", "bank-africa-ng": "BOAN", "bank-africa-sn": "BOAS", "bbgci": "BBGC", "bernabe-ci": "BNBC",
+    "bici-ci": "BICC", "biic": "BICB", "bollore-transport-logistics": "SDSC", "cfao-motors-ci": "CFAC", "cie-ci": "CIEC",
+    "coris-bank-international": "CBIBF", "cote-divoire-telecom": "ORAC", "ecobank-ci": "ECOC", "ecobank-tg": "ETIT",
+    "filtisac-ci": "FTSC", "lnb": "LNBB", "sgci": "SGBC",
+}
+
+
 def pages_societes():
-    """Liste des pages « rapports » de chaque societe cotee : {symbole: url}."""
+    """Pages « rapports » de chaque societe cotee : {symbole: url}."""
     import requests
     from html import unescape
-    res, inconnues = {}, []
-    for p in range(4):
+    res, autres = {}, []
+    for p in range(5):
         try:
-            html = requests.get(INDEX_SOCIETES + (f"?page={p}" if p else ""), headers=ENTETES, timeout=40).text
+            html = requests.get(f"https://www.brvm.org/fr/rapports-societes-cotees?page={p}", headers=ENTETES, timeout=40).text
         except Exception as e:
             print("  index illisible :", e)
             continue
-        for slug, txt in re.findall(r'href="(?:https://www\.brvm\.org)?/fr/rapports-societe-cotes/([a-z0-9\-]+)"[^>]*>(.*?)</a>', html, re.S):
-            nom = unescape(re.sub("<[^>]+>", " ", txt)).strip()
-            sym = symbole_de(nom + " " + slug.replace("-", " ").upper())
+        liens = re.findall(r'href="/fr/rapports-societe-cotes/([a-z0-9\-]+)">([^<]+)</a>', html)
+        if not liens:
+            break
+        for slug, nom in liens:
+            nom = unescape(nom).strip()
+            sym = SLUGS.get(slug) or symbole_de(nom)
             if sym and sym not in res:
                 res[sym] = f"{INDEX_SOCIETES}/{slug}"
             elif not sym:
-                inconnues.append(f"{slug} ({nom[:40]})")
+                autres.append(f"{slug}={nom[:30]}")
         time.sleep(1)
-    return res, inconnues
+    return res, autres
 
 
-def publications_societe(url, pages=5):
+def publications_societe(url, pages=6):
     """Toutes les publications (titre, lien PDF) d'une societe, toutes annees confondues."""
     import requests
     from html import unescape
-    pubs = []
+    out, vus = [], set()
     for p in range(pages):
         try:
             html = requests.get(url + (f"?page={p}" if p else ""), headers=ENTETES, timeout=40).text
         except Exception:
             break
-        trouve = re.findall(r'<a[^>]+href="([^"]+\.pdf)"[^>]*>(.*?)</a>', html, re.S | re.I)
-        lignes = re.findall(r'<(?:td|div|span|p)[^>]*>\s*([^<]{10,200}?(?:Exercice|exercice|EXERCICE)[^<]{0,80})</', html)
-        # un lien « Telecharger » suit le titre : on associe chaque PDF au texte qui le precede
-        for m in re.finditer(r'([^<>]{12,220}?)\s*(?:</[^>]+>\s*)*(?:<[^>]+>\s*)*<a[^>]+href="([^"]+\.pdf)"', html, re.S):
-            titre = unescape(re.sub(r"\s+", " ", m.group(1))).strip()
-            pubs.append((titre, m.group(2)))
-        for u, t in trouve:
-            t = unescape(re.sub("<[^>]+>", "", t)).strip()
-            if len(t) > 15:
-                pubs.append((t, u))
-        if not trouve:
+        lignes = re.findall(r'<strong>(.*?)</strong>\s*</td>\s*<td[^>]*>\s*<a href="([^"]+)"', html, re.S)
+        if not lignes:
             break
+        for t, u in lignes:
+            u = u if u.startswith("http") else "https://www.brvm.org" + u
+            if u not in vus:
+                vus.add(u)
+                out.append({"titre": unescape(re.sub(r"\s+", " ", t)).strip(), "url": u})
         time.sleep(0.7)
-    vus, out = set(), []
-    for t, u in pubs:
-        u = u if u.startswith("http") else "https://www.brvm.org" + u
-        if u not in vus:
-            vus.add(u)
-            out.append({"titre": t, "url": u})
     return out
 
 
@@ -566,14 +568,8 @@ def main():
 
 def test_pages():
     """Diagnostic : pages des societes et publications trouvees (sans rien lire)."""
-    import requests
-    h = requests.get("https://www.brvm.org/fr/rapports-societes-cotees", headers=ENTETES, timeout=40).text
-    liens = sorted(set(re.findall(r'href="([^"]*rapports-societe-cotes/[^"?#]+)"', h)))
-    print("INDEX2", len(h), "car.,", len(liens), "liens :", " ".join(l.rsplit("/", 1)[-1] for l in liens))
-    i = h.find("rapports-societe-cotes/")
-    print("  extrait :", re.sub(r"\s+", " ", h[max(0, i - 300):i + 300]))
     pages, inconnues = pages_societes()
-    print(f"{len(pages)} societes reconnues ; non reconnues : {inconnues}")
+    print(f"{len(pages)} societes reconnues ; autres pages (obligations, fonds, inconnues) : {inconnues}")
     for sym, url in sorted(pages.items())[:60]:
         pubs = publications_societe(url, pages=3)
         par_an = {an: len(annuels(pubs, an)) for an in range(2021, 2026)}
