@@ -231,8 +231,14 @@ def main():
                 if "dette_cp" in r_: comp.append(lin(-r_["dette_cp"], -1.5, 0.0))
             # regularite sur plusieurs annees
             rns = {} if b.get("prioritaire") else serie_resultats(historique.get(s, {}))  # erreur connue : pas de serie automatique
-            if b.get("serie_rn") and len(b["serie_rn"]) > len(rns):  # serie saisie a la main (source officielle)
-                rns = {int(k): v for k, v in sorted(b["serie_rn"].items())}
+            if b.get("serie_rn"):  # serie saisie a la main (source officielle) : complete et remplace la lecture automatique
+                man = {int(k): v for k, v in b["serie_rn"].items()}
+                ref_man = next(iter(man.values()))
+                for an, v in list(rns.items()):  # meme unite que la saisie manuelle
+                    if v:
+                        k = min(range(-3, 4), key=lambda k: abs(math.log10(abs(v) * 1000 ** k) - math.log10(abs(ref_man))))
+                        rns[an] = v * 1000 ** k
+                rns = dict(sorted({**rns, **man}.items()))
             regul = cagr = None
             if len(rns) >= 3:
                 benef = sum(1 for v in rns.values() if v > 0)
