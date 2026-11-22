@@ -413,6 +413,78 @@ def lister_publications(exercice, pages=30):
     return res
 
 
+INDEX_SOCIETES = "https://www.brvm.org/fr/rapports-societe-cotes"
+
+
+def pages_societes():
+    """Liste des pages « rapports » de chaque societe cotee : {symbole: url}."""
+    import requests
+    from html import unescape
+    res, inconnues = {}, []
+    for p in range(4):
+        try:
+            html = requests.get(INDEX_SOCIETES + (f"?page={p}" if p else ""), headers=ENTETES, timeout=40).text
+        except Exception as e:
+            print("  index illisible :", e)
+            continue
+        for slug, txt in re.findall(r'href="(?:https://www\.brvm\.org)?/fr/rapports-societe-cotes/([a-z0-9\-]+)"[^>]*>(.*?)</a>', html, re.S):
+            nom = unescape(re.sub("<[^>]+>", " ", txt)).strip()
+            sym = symbole_de(nom + " " + slug.replace("-", " ").upper())
+            if sym and sym not in res:
+                res[sym] = f"{INDEX_SOCIETES}/{slug}"
+            elif not sym:
+                inconnues.append(f"{slug} ({nom[:40]})")
+        time.sleep(1)
+    return res, inconnues
+
+
+def publications_societe(url, pages=5):
+    """Toutes les publications (titre, lien PDF) d'une societe, toutes annees confondues."""
+    import requests
+    from html import unescape
+    pubs = []
+    for p in range(pages):
+        try:
+            html = requests.get(url + (f"?page={p}" if p else ""), headers=ENTETES, timeout=40).text
+        except Exception:
+            break
+        trouve = re.findall(r'<a[^>]+href="([^"]+\.pdf)"[^>]*>(.*?)</a>', html, re.S | re.I)
+        lignes = re.findall(r'<(?:td|div|span|p)[^>]*>\s*([^<]{10,200}?(?:Exercice|exercice|EXERCICE)[^<]{0,80})</', html)
+        # un lien « Telecharger » suit le titre : on associe chaque PDF au texte qui le precede
+        for m in re.finditer(r'([^<>]{12,220}?)\s*(?:</[^>]+>\s*)*(?:<[^>]+>\s*)*<a[^>]+href="([^"]+\.pdf)"', html, re.S):
+            titre = unescape(re.sub(r"\s+", " ", m.group(1))).strip()
+            pubs.append((titre, m.group(2)))
+        for u, t in trouve:
+            t = unescape(re.sub("<[^>]+>", "", t)).strip()
+            if len(t) > 15:
+                pubs.append((t, u))
+        if not trouve:
+            break
+        time.sleep(0.7)
+    vus, out = set(), []
+    for t, u in pubs:
+        u = u if u.startswith("http") else "https://www.brvm.org" + u
+        if u not in vus:
+            vus.add(u)
+            out.append({"titre": t, "url": u})
+    return out
+
+
+def annuels(pubs, exercice):
+    """Publications annuelles (etats financiers ou rapport annuel) d'un exercice donne."""
+    out = []
+    for p in pubs:
+        n = (p["titre"] + " " + p["url"].rsplit("/", 1)[-1]).lower().replace("_", " ").replace("-", " ")
+        if not re.search(rf"exercice\s*(clos[^0-9]*)?{exercice}\b|\b{exercice}\b.*(etats|états) financiers|(etats|états) financiers.*\b{exercice}\b", n):
+            continue
+        if re.search(r"trimestre|semestre|semestriel|attestation|convocation|avis|dividende|resolution|résolution", n):
+            continue
+        if not re.search(r"etats|états|financi|rapport d.activit[ée]s? annuel|rapport annuel|comptes", n):
+            continue
+        out.append(p)
+    return out
+
+
 def preference(pub):
     n = (pub["titre"] + pub["url"]).lower()
     score = 0
@@ -489,5 +561,24 @@ def main():
     print(f"Bilans : {v} valides, {len(actuel['societes']) - v} a confirmer")
 
 
+
+
+
+def test_pages():
+    """Diagnostic : pages des societes et publications trouvees (sans rien lire)."""
+    pages, inconnues = pages_societes()
+    print(f"{len(pages)} societes reconnues ; non reconnues : {inconnues}")
+    for sym, url in sorted(pages.items())[:60]:
+        pubs = publications_societe(url, pages=3)
+        par_an = {an: len(annuels(pubs, an)) for an in range(2021, 2026)}
+        print(f"  {sym:<6} {url.rsplit('/', 1)[-1]:<28} {len(pubs):>3} publications ; annuelles {par_an}")
+        if sym in ("SGBC", "SNTS"):
+            for p in pubs[:8]:
+                print("      -", p["titre"][:100])
+
+
 if __name__ == "__main__":
-    main()
+    if "--pages" in sys.argv:
+        test_pages()
+    else:
+        main()

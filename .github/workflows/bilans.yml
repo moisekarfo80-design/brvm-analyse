@@ -18,6 +18,10 @@ on:
         description: "Afficher les lignes lues (diagnostic)"
         type: boolean
         default: false
+      pages:
+        description: "Seulement lister les pages des societes (test)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -44,13 +48,20 @@ jobs:
           sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra poppler-utils
           pip install -r requirements.txt
 
+      - name: Lister les pages des societes
+        if: ${{ inputs.pages }}
+        run: python serveur/bilans.py --pages
+
       - name: Lire les bilans
+        if: ${{ !inputs.pages }}
         run: python serveur/bilans.py ${{ inputs.exercice || '2025' }} ${{ inputs.tout && '--tout' || '' }} ${{ inputs.diag && '--diag' || '' }}
 
       - name: Recalculer les notes
+        if: ${{ !inputs.pages }}
         run: python serveur/analyse.py
 
       - name: Enregistrer
+        if: ${{ !inputs.pages }}
         run: |
           git config user.name "brvm-analyse (automatique)"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
