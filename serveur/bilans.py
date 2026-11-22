@@ -231,6 +231,9 @@ def extraire(pages):
     return banque, out, rn_lus
 
 
+SUSPECT = re.compile(r"(?<![\d])\d{1,2} \d{1,2} \d{3}(?!\d)|(?<![\d])\d \d \d{3}(?!\d)")
+
+
 def controler(banque, ch, rn_lus):
     ok, pb = [], []
     ch = {k: v for k, v in ch.items() if v.get("n1") is not None}  # une ligne incomplete ne sert pas aux controles
@@ -258,8 +261,17 @@ def controler(banque, ch, rn_lus):
     base1 = (ch.get("pnb") if banque else ch.get("ca")) or {}
     if base and base1.get("n1") and base1["n1"] > 0 and abs(base["n"] / base1["n1"] - 1) > 0.8:
         pb.append("activite qui varie de plus de 80 % : a verifier")
-    if rn and rn.get("n1") and rn["n1"] > 0 and (rn["n"] / rn["n1"] - 1 > 4 or rn["n"] / rn["n1"] - 1 < -0.95):
+    if rn and rn.get("n1") and rn["n1"] > 0 and rn["n"] > 0 and (rn["n"] / rn["n1"] - 1 > 4 or rn["n"] / rn["n1"] - 1 < -0.99):
         pb.append("resultat net qui varie enormement : a verifier")
+    # faux espaces dans les chiffres (« 4 65 981 1 8 595 275 ») sur une ligne utilisee
+    for k, v in ch.items():
+        if SUSPECT.search(normaliser(v.get("ligne", ""))):
+            pb.append(f"chiffres mal espaces sur la ligne « {k} » : lecture douteuse")
+            break
+    # colonnes en deux monnaies : croissances identiques de l'activite et du resultat
+    if base and rn and base.get("n1") and rn.get("n1") and base["n1"] > 0 and rn["n1"] > 0:
+        if abs((base["n"] / base["n1"]) - (rn["n"] / rn["n1"])) < 0.0005 and abs(base["n"] / base["n1"] - 1) > 0.02:
+            pb.append("activite et resultat varient exactement pareil : colonnes melangees ?")
     ebe = ch.get("ebe")
     if ebe and base and base["n"] > 0 and abs(ebe["n"]) > base["n"]:
         pb.append("excedent brut superieur au chiffre d'affaires")
@@ -279,8 +291,10 @@ def ratios(banque, ch):
     if base and base1 and base1 > 0:
         r["croissance_activite"] = base / base1 - 1
     rn1 = g("rn", "n1")
-    if rn is not None and rn1 and rn1 > 0:
+    if rn is not None and rn >= 0 and rn1 and rn1 > 0:
         r["croissance_resultat"] = rn / rn1 - 1
+    elif rn is not None and rn1 and rn1 > 0 and rn < 0:
+        r["croissance_resultat"] = -1.0  # passage du benefice a la perte
     elif rn is not None and rn1 is not None and rn1 <= 0:
         # depart en perte : retour au benefice = tres bien ; perte reduite = bien ; perte aggravee = mal
         r["croissance_resultat"] = 0.5 if rn > 0 else (0.15 if rn > rn1 else -0.5)
@@ -307,6 +321,7 @@ def evaluer(pages):
     ch = {k: v for k, v in ch.items() if v.get("n1") is not None}
     statut, ok, pb, manquants = controler(banque, ch, rn_lus)
     score = (2 if statut == "valide" else 0) + len(ok) + 0.2 * len(ch) - 0.5 * len(pb)
+    score -= 0.05 * len(SUSPECT.findall(normaliser("\n".join(pages))))
     return score, banque, ch, statut, ok, pb, manquants
 
 
