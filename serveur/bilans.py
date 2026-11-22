@@ -421,8 +421,11 @@ SLUGS = {  # pages « rapports » de brvm.org -> symbole (verifie a la main)
     "bank-africa-ml": "BOAM", "bank-africa-ng": "BOAN", "bank-africa-sn": "BOAS", "bbgci": "BBGC", "bernabe-ci": "BNBC",
     "bici-ci": "BICC", "biic": "BICB", "bollore-transport-logistics": "SDSC", "cfao-motors-ci": "CFAC", "cie-ci": "CIEC",
     "coris-bank-international": "CBIBF", "cote-divoire-telecom": "ORAC", "ecobank-ci": "ECOC", "ecobank-tg": "ETIT",
-    "filtisac-ci": "FTSC", "lnb": "LNBB", "sgci": "SGBC",
+    "filtisac-ci": "FTSC", "lnb": "LNBB", "sgci": "SGBC", "nsbc": "NSBC",
 }
+
+
+IGNORER = {"fctc-sonatel", "fctcsnts", "fctcept", "sgb-ci", "dcbr", "edksn", "fimsno1"}
 
 
 def pages_societes():
@@ -441,8 +444,8 @@ def pages_societes():
             break
         for slug, nom in liens:
             nom = unescape(nom).strip()
-            sym = SLUGS.get(slug) or symbole_de(nom)
-            if sym and sym not in res:
+            sym = SLUGS.get(slug) or (None if slug in IGNORER else symbole_de(nom))
+            if sym and (sym not in res or slug in SLUGS):
                 res[sym] = f"{INDEX_SOCIETES}/{slug}"
             elif not sym:
                 autres.append(f"{slug}={nom[:30]}")
@@ -569,7 +572,9 @@ def main():
 def test_pages():
     """Diagnostic : pages des societes et publications trouvees (sans rien lire)."""
     pages, inconnues = pages_societes()
-    print(f"{len(pages)} societes reconnues ; autres pages (obligations, fonds, inconnues) : {inconnues}")
+    print(f"{len(pages)} societes reconnues")
+    for x in inconnues:
+        print("  AUTRE", x)
     for sym, url in sorted(pages.items())[:60]:
         pubs = publications_societe(url, pages=3)
         par_an = {an: len(annuels(pubs, an)) for an in range(2021, 2026)}
