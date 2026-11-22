@@ -180,6 +180,101 @@
     "croissance_activite": 0.0461
    },
    "prioritaire": true
+  },
+  "BOAM": {
+   "banque": true,
+   "exercice": 2025,
+   "source": "Fiche BOA Mali sur brvm.org (indicateurs des 3 dernieres annees) et etats financiers certifies 2025 (presse : allAfrica, 26/03/2026)",
+   "chiffres": {
+    "rn": {
+     "n": 11081,
+     "n1": 9123
+    },
+    "pnb": {
+     "n": 37996,
+     "n1": 36158
+    }
+   },
+   "serie_rn": {
+    "2023": 5778,
+    "2024": 9123,
+    "2025": 11081
+   },
+   "ratios": {
+    "croissance_resultat": 0.2146,
+    "croissance_activite": 0.0508,
+    "coef_exploitation": 0.6314
+   }
+  },
+  "BOAN": {
+   "banque": true,
+   "exercice": 2025,
+   "source": "Communique BOA Niger du 27/04/2026 sur brvm.org et fiche BRVM (millions FCFA)",
+   "chiffres": {
+    "rn": {
+     "n": 409,
+     "n1": 5002
+    },
+    "pnb": {
+     "n": 21125,
+     "n1": 21380
+    },
+    "cp": {
+     "n": 36064,
+     "n1": 42156
+    }
+   },
+   "serie_rn": {
+    "2023": 10077,
+    "2024": 5002,
+    "2025": 409
+   },
+   "ratios": {
+    "roe": 0.0113,
+    "coef_exploitation": 0.662,
+    "croissance_resultat": -0.9182,
+    "croissance_activite": -0.0119
+   }
+  },
+  "SHEC": {
+   "banque": false,
+   "exercice": 2025,
+   "source": "Rapport d'activite Vivo Energy CI (4e trimestre 2025) sur brvm.org ; presse Daba Finance (millions FCFA)",
+   "chiffres": {
+    "rn": {
+     "n": 6028,
+     "n1": 5354
+    },
+    "ca": {
+     "n": 604978,
+     "n1": 600708
+    }
+   },
+   "ratios": {
+    "marge": 0.01,
+    "croissance_resultat": 0.1259,
+    "croissance_activite": 0.0071
+   }
+  },
+  "LNBB": {
+   "banque": false,
+   "exercice": 2025,
+   "source": "Etats financiers 2025 de la LNB (presse : allAfrica, 18/05/2026 ; Richbourse) (milliards FCFA)",
+   "chiffres": {
+    "rn": {
+     "n": 4.62,
+     "n1": 7.17
+    },
+    "ca": {
+     "n": 99,
+     "n1": 103
+    }
+   },
+   "ratios": {
+    "marge": 0.0467,
+    "croissance_resultat": -0.3556,
+    "croissance_activite": -0.0388
+   }
   }
  }
 }

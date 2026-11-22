@@ -224,6 +224,8 @@ def main():
                 if "dette_cp" in r_: comp.append(lin(-r_["dette_cp"], -1.5, 0.0))
             # regularite sur plusieurs annees
             rns = serie_resultats(historique.get(s, {}))
+            if b.get("serie_rn") and len(b["serie_rn"]) > len(rns):  # serie saisie a la main (source officielle)
+                rns = {int(k): v for k, v in sorted(b["serie_rn"].items())}
             regul = cagr = None
             if len(rns) >= 3:
                 benef = sum(1 for v in rns.values() if v > 0)
