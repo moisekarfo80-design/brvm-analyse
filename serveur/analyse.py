@@ -219,6 +219,9 @@ def main():
         # solidite et croissance (bilans annuels lus et controles)
         s_qual = s_croi = None
         b = bilans.get(s)
+        if b and b.get("statut") == "valide" and int(b.get("exercice") or 0) < jour.year - 3:
+            fiche["drapeaux"].append(f"Dernier bilan lisible trop ancien ({b.get('exercice')}) : non utilisé")
+            b = None
         if b and b.get("statut") == "valide":
             r_ = b.get("ratios", {})
             comp = []
