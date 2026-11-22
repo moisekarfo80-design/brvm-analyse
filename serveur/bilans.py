@@ -189,7 +189,7 @@ def valeurs_apres(ligne, debut):
     m = re.search(r"[A-Za-zÀ-ÿ]{3,}", reste)
     seg = reste[: m.start()] if m and re.search(r"\d", reste[: m.start()]) else reste
     seg = re.sub(r"\([A-Z0-9 +\-àé]+\)", " ", seg)  # retire les references du type (XG+XH+RQ+RS)
-    vals = [v for v in nombres(seg) if abs(v) >= 1000 or v == 0]
+    vals = [v for v in nombres(seg) if (abs(v) >= 1000 or v == 0) and not 1990 <= v <= 2035]  # une annee n'est pas un montant
     if len(vals) == 3 and abs(vals[0] - vals[1] - vals[2]) <= 0.002 * max(map(abs, vals)):
         vals = vals[:2]  # N, N-1, variation
     return vals

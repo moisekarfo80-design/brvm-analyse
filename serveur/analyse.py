@@ -88,9 +88,9 @@ def serie_resultats(h):
         if b.get("statut") != "valide":
             continue
         x = (b.get("chiffres") or {}).get("rn") or {}
-        if x.get("n") is not None:
+        if x.get("n") and not 1990 <= x["n"] <= 2035:  # une annee lue comme un montant ; 0 = ligne non lue
             rn[int(an)] = x["n"]
-        if x.get("n1") is not None and int(an) - 1 not in rn:
+        if x.get("n1") and int(an) - 1 not in rn and not 1990 <= x["n1"] <= 2035:
             rn[int(an) - 1] = x["n1"]
     rn = dict(sorted(rn.items()))
     # unites differentes selon les annees (FCFA, milliers, millions) : on ramene tout a l'unite de l'annee la plus recente
@@ -101,6 +101,13 @@ def serie_resultats(h):
             if v:
                 k = min(range(-3, 4), key=lambda k: abs(math.log10(abs(v) * 1000 ** k) - lref))
                 rn[a] = v * 1000 ** k
+    # valeur isolee aberrante : plus de 8 fois l'ecart typique des autres annees (lecture douteuse)
+    if len(rn) >= 4:
+        for a in list(rn):
+            autres = [abs(v) for b, v in rn.items() if b != a and v]
+            med = st.median(autres) if autres else 0
+            if med and abs(rn[a]) > 8 * med:
+                del rn[a]
     return rn
 
 
@@ -223,7 +230,7 @@ def main():
                 if "marge" in r_: comp.append(lin(r_["marge"], 0.0, 0.15))
                 if "dette_cp" in r_: comp.append(lin(-r_["dette_cp"], -1.5, 0.0))
             # regularite sur plusieurs annees
-            rns = serie_resultats(historique.get(s, {}))
+            rns = {} if b.get("prioritaire") else serie_resultats(historique.get(s, {}))  # erreur connue : pas de serie automatique
             if b.get("serie_rn") and len(b["serie_rn"]) > len(rns):  # serie saisie a la main (source officielle)
                 rns = {int(k): v for k, v in sorted(b["serie_rn"].items())}
             regul = cagr = None
