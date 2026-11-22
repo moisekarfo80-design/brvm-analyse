@@ -50,7 +50,7 @@
    "banque": false,
    "pages_ocr": 1,
    "manquants": [],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -79,12 +79,12 @@
     }
    },
    "lignes_lues": {
-    "ca": "XB CHIFFRE D'AFFAIRES (A + B + C + D) 29 031 727 207 27 333 349 555",
-    "rn": "XI RESULTAT NET (XG+XH+RQ+RS) -624 111 469 -2 188 937 902",
-    "cp": "CP TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 24 619 180 792 15 591 475 518",
-    "dettes_fin": "DD TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES 1 023 606 969 946 536 663",
-    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 28 1 126 739 480 -352 217 043",
-    "total_passif": "DZ TOTAL GENERAL 31 735 934 378 34 241 097 739"
+    "ca": "XB    CHIFFRE D'AFFAIRES (A + B + C + D)                                                       29 031 727 207     27 333 349 555",
+    "rn": "XI    RESULTAT NET (XG+XH+RQ+RS)                                                                 -624 111 469      -2 188 937 902",
+    "cp": "CP    TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES                               24 619 180 792     15 591 475 518",
+    "dettes_fin": "DD    TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES                              1 023 606 969        946 536 663",
+    "ebe": "XD    EXCEDENT BRUT D'EXPLOITATION (XC+RK)                                              28      1 126 739 480       -352 217 043",
+    "total_passif": "DZ    TOTAL GENERAL                                                                 31 735 934 378     34 241 097 739"
    },
    "statut": "a confirmer",
    "controles_ok": [],
@@ -107,7 +107,7 @@
    "banque": false,
    "pages_ocr": 0,
    "manquants": [],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -140,13 +140,13 @@
     }
    },
    "lignes_lues": {
-    "ca": "XB CHIFFRE D'AFFAIRES (A + B + C + D) 146 176 657 128 141 841 255 383",
-    "rn": "XI RESULTAT NET (XG+XH+RQ+RS) 15 886 921 152 21 471 148 928",
-    "cp": "CP 57 541 603 762 62 561 325 597",
-    "dettes_fin": "DD 69 691 712 889 67 226 213 127",
-    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK) 56 730 677 804 64 219 933 668",
-    "total_actif": "BZ TOTAL GENERAL 969 534 045 321 644 631 665 476 324 902 379 845 301 493 038 967",
-    "total_passif": "DZ TOTAL GENERAL 324 902 379 845 301 493 038 967"
+    "ca": "XB   CHIFFRE D'AFFAIRES (A + B + C + D)                                         146 176 657 128    141 841 255 383",
+    "rn": "XI   RESULTAT NET (XG+XH+RQ+RS)                                                  15 886 921 152     21 471 148 928",
+    "cp": "CP                                                           57 541 603 762               62 561 325 597",
+    "dettes_fin": "DD                                                           69 691 712 889               67 226 213 127",
+    "ebe": "XD EXCEDENT BRUT D'EXPLOITATION (XC+RK)                                          56 730 677 804     64 219 933 668",
+    "total_actif": "BZ TOTAL GENERAL                                      969 534 045 321     644 631 665 476   324 902 379 845    301 493 038 967",
+    "total_passif": "DZ TOTAL GENERAL                                            324 902 379 845             301 493 038 967"
    },
    "statut": "valide",
    "controles_ok": [
@@ -170,7 +170,7 @@
    "banque": false,
    "pages_ocr": 0,
    "manquants": [],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -187,9 +187,9 @@
     }
    },
    "lignes_lues": {
-    "ca": "Chiffre d'affaires 17 13 298 12 467",
-    "rn": "Résultat net de l'ensemble 12 1 331 1 515",
-    "cp": "Total capitaux propres 5 512 4 182"
+    "ca": "Chiffre d'affaires                                              17     13 298        12 467",
+    "rn": "Résultat net de l'ensemble                                      12       1 331          1 515",
+    "cp": "Total capitaux propres                                                              5 512           4 182"
    },
    "statut": "valide",
    "controles_ok": [
@@ -205,7 +205,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/servair-abidjan-ci-etats-financiers-ifrs-exercice-2025",
    "titre": "SERVAIR ABIDJAN CI : Etats financiers IFRS - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BICC": {
    "banque": true,
@@ -268,29 +268,29 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/bici-ci-etats-financiers-exercice-2025",
    "titre": "BICI CI  : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BNBC": {
    "banque": false,
    "pages_ocr": 0,
    "manquants": [],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
-     "n": 2454158321,
-     "n1": 5312422329
+     "n": 42454158321,
+     "n1": 45312422329
     },
     "rn": {
-     "n": 2318122,
+     "n": 22318122,
      "n1": 7313440
     },
     "cp": {
-     "n": 7769953951,
-     "n1": 7747635829
+     "n": 17769953951,
+     "n1": 17747635829
     },
     "dettes_fin": {
-     "n": 42437472,
+     "n": 942437472,
      "n1": 1632307975
     },
     "ebe": {
@@ -298,17 +298,17 @@
      "n1": 2166419027
     },
     "total_passif": {
-     "n": 4288081045,
-     "n1": 47539176
+     "n": 11887953177,
+     "n1": 14288081045
     }
    },
    "lignes_lues": {
-    "ca": "CHIFFRE D'AFFAIRES 4 2 454 158 321 4 5 312 422 329 (en francs CFA)",
-    "rn": "Résultat net de l'exercice (bénéfice + ou perte -) 2 2 318 122 7 313 440 Flux de trésorerie provenant des activités d'investissements ( 453 ",
-    "cp": "TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 1 7 769 953 951 1 7 747 635 829 + Augmentations de capital par apports nouveaux - -",
-    "dettes_fin": "TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES 9 42 437 472 1 632 307 975 - Dividendes versés - -",
-    "ebe": "EXCEDENT BRUT D'EXPLOITATION 2 009 282 436 2 166 419 027 Report à nouveau antérieur : 13 293 130 538",
-    "total_passif": "TOTAL PASSIF CIRCULANT 1 1 887 953 177 1 4 288 081 045 Flux de trésorerie provenant des activités de financement ( 761 929 162) 2 47 539 176"
+    "ca": "CHIFFRE D'AFFAIRES                                                                    42 454 158 321      45 312 422 329                    ",
+    "rn": "Résultat net de l'exercice (bénéfice + ou perte -)                                        22 318 122           7 313 440     Flux de trésore",
+    "cp": "TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES                                       17 769 953 951      17 747 635 829     + Augmentations",
+    "dettes_fin": "TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES                                        942 437 472       1 632 307 975     - Dividendes ve",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION                                                           2 009 282 436        2 166 419 027    Report à nouvea",
+    "total_passif": "TOTAL PASSIF CIRCULANT                                                                11 887 953 177      14 288 081 045     Flux de trésore"
    },
    "statut": "valide",
    "controles_ok": [
@@ -316,17 +316,17 @@
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.0003,
-    "marge": 0.0009,
-    "croissance_activite": -0.538,
-    "croissance_resultat": -0.683,
-    "dette_cp": 0.0055,
-    "marge_ebe": 0.8187
+    "roe": 0.0013,
+    "marge": 0.0005,
+    "croissance_activite": -0.0631,
+    "croissance_resultat": 2.0517,
+    "dette_cp": 0.053,
+    "marge_ebe": 0.0473
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/bernabe-ci-etats-financiers-exercice-2025",
    "titre": "BERNABE CI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BOAB": {
    "banque": true,
@@ -384,7 +384,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/boa-bn-etats-financiers-exercice-2025",
    "titre": "BOA BN : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BOABF": {
    "banque": true,
@@ -444,7 +444,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/boa-bf-etats-financiers-exercice-2025",
    "titre": "BOA BF - Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BOAM": {
    "banque": true,
@@ -497,7 +497,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/boa-ml-etats-financiers-exercice-2025",
    "titre": "BOA ML : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BOAN": {
    "banque": false,
@@ -522,7 +522,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/boa-ng-rapport-des-commissaires-aux-comptes-sur-les-etats-financiers-annuels-exercice-2025",
    "titre": "BOA NG : Rapport des Commissaires Aux Comptes sur les Etats Financiers annuels - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "BOAS": {
    "banque": true,
@@ -579,7 +579,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/boa-sn-etats-financiers-exercice-2025",
    "titre": "BOA SN : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "CABC": {
    "banque": false,
@@ -633,7 +633,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sicable-ci-etats-financiers-syscohada-exercice-2025",
    "titre": "SICABLE CI : Etats financiers SYSCOHADA - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "CBIBF": {
    "banque": false,
@@ -658,7 +658,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/coris-bank-international-bf-etats-financiers-exercice-2025",
    "titre": "CORIS BANK INTERNATIONAL BF : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "CIEC": {
    "banque": false,
@@ -666,7 +666,7 @@
    "manquants": [
     "capitaux propres"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -691,11 +691,11 @@
     }
    },
    "lignes_lues": {
-    "ca": "Chiffre d'affaires (A+B+C+D)=XB 302 320 263 294 Flux de trésorerie provenant des activités opérationnelles (B+C) 43 912 41 129",
-    "rn": "Résultat net de l'exercice 13 121 10 555 Variation des prêts et avances consentis (160) 1",
-    "ebe": "Excédent brut d'exploitation 37 161 30 174 Flux de trésorerie provenant des capitaux étrangers F -5 295 -4 481",
-    "total_actif": "Total actif 2 018 446 2 019 136 Total passif 2 018 446 2 019 136",
-    "total_passif": "Total actif 2 018 446 2 019 136 Total passif 2 018 446 2 019 136"
+    "ca": "Chiffre d'affaires (A+B+C+D)=XB                                                        302 320             263 294       Flux de trésorerie ",
+    "rn": "Résultat net de l'exercice                                                 13 121            10 555     Variation des prêts et avances conse",
+    "ebe": "Excédent brut d'exploitation                                                            37 161              30 174       Flux de trésorerie ",
+    "total_actif": "Total actif                                                                         2 018 446            2 019 136       Total passif       ",
+    "total_passif": "Total actif                                                                         2 018 446            2 019 136       Total passif       "
    },
    "statut": "valide",
    "controles_ok": [
@@ -712,7 +712,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/etats-financiers-syscohada-et-ifrs-exercice-2025-cie-ci",
    "titre": "Etats financiers SYSCOHADA et IFRS - Exercice 2025 - CIE CI",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "ETIT": {
    "banque": true,
@@ -749,12 +749,14 @@
     "total_actif": "Total Actif                                                               34,487,211               19,243,865      27,955,172               ",
     "total_passif": "Total Passif                                                              34,487,211               19,243,865      27,955,172               "
    },
-   "statut": "valide",
+   "statut": "a confirmer",
    "controles_ok": [
     "total actif = total passif",
     "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [],
+   "problemes": [
+    "activite et resultat varient exactement pareil : colonnes melangees ?"
+   ],
    "ratios": {
     "roe": 0.275,
     "marge": 0.2366,
@@ -764,7 +766,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/eti-tg-etats-financiers-ifrs-exercice-2025",
    "titre": "ETI TG : Etats financiers IFRS - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "FTSC": {
    "banque": false,
@@ -818,7 +820,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/filtisac-ci-etats-financiers-exercice-2025",
    "titre": "FILTISAC CI : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "LNBB": {
    "banque": false,
@@ -880,7 +882,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/lnb-bn-etats-financiers-exercice-2025",
    "titre": "LNB BN : Etats financiers - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "NEIC": {
    "banque": false,
@@ -917,7 +919,7 @@
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/nei-ceda-ci-etats-financiers-syscohada-exercice-2025",
    "titre": "NEI CEDA CI : Etats financiers SYSCOHADA - Exercice 2025",
-   "lu_le": "2026-11-21"
+   "lu_le": "2026-11-22"
   },
   "NSBC": {
    "banque": true,
@@ -983,7 +985,7 @@
    "manquants": [
     "capitaux propres"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -992,17 +994,17 @@
     },
     "rn": {
      "n": 18426899479,
-     "n1": 8149967087
+     "n1": 18149967087
     },
     "ebe": {
      "n": 46171248459,
-     "n1": 3543421067
+     "n1": 43543421067
     }
    },
    "lignes_lues": {
-    "ca": "Sous total Chiffre d'affaires 233,261,162,741 220,113,267,165 Autres achats et - 28,938,539,464 - 2 9,049,885,199",
-    "rn": "Ecarts de conversion Actif 49,431,591 209,249,250 Résultat net de l'exercice 18,426,899,479 1 8,149,967,087",
-    "ebe": "Excédent Brut d'Exploitation 46,171,248,459 4 3,543,421,067"
+    "ca": "Sous total Chiffre d'affaires                      233,261,162,741             220,113,267,165   Autres achats et                           ",
+    "rn": "Ecarts de conversion Actif                                        49,431,591                 209,249,250   Résultat net de l'exercice       ",
+    "ebe": "Excédent Brut d'Exploitation                                                                                                                "
    },
    "statut": "a confirmer",
    "controles_ok": [],
@@ -1012,7 +1014,7 @@
    "ratios": {
     "marge": 0.079,
     "croissance_activite": 0.0597,
-    "croissance_resultat": 1.261,
+    "croissance_resultat": 0.0153,
     "marge_ebe": 0.1979
    },
    "exercice": 2025,
@@ -1101,18 +1103,16 @@
     "cout_risque": "Coût du risque -6 971 -69 056",
     "total_actif": "TOTAL DE L'ACTIF 4 014 192 3 961 395"
    },
-   "statut": "a confirmer",
+   "statut": "valide",
    "controles_ok": [
     "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [
-    "resultat net qui varie enormement : a verifier"
-   ],
+   "problemes": [],
    "ratios": {
     "roe": -0.1157,
     "marge": -0.0431,
     "croissance_activite": -0.0452,
-    "croissance_resultat": -1.0457,
+    "croissance_resultat": -1.0,
     "coef_exploitation": 0.3315,
     "cout_risque_pnb": 0.0374
    },
@@ -1127,7 +1127,7 @@
    "manquants": [
     "capitaux propres"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -1152,11 +1152,11 @@
     }
    },
    "lignes_lues": {
-    "ca": "Actifs circulants HAO 0 0 CHIFFRE D'AFFAIRES 197 629 996 172 182 502",
-    "rn": "- Dividendes versés -7 930 821 -9 675 923 Résultat net de l'exercice 15 508 655 15 861 643",
-    "ebe": "Passif circulant 41 633 570 41 473 506 EXCEDENT BRUT D'EXPLOITATION 33 027 296 37 115 862",
-    "total_actif": "TOTAL ACTIF 199 116 293 202 603 319 Achats de matières premières et fournitures liées -85 706 070 -55 737 873",
-    "total_passif": "TOTAL PASSIF 199 116 293 202 603 319 Dotations aux amortissements, aux provisions et dépré. -19 109 395 -18 179 127"
+    "ca": "Actifs circulants HAO                                                                0                0 CHIFFRE D'AFFAIRES                  ",
+    "rn": "- Dividendes versés                                                        -7 930 821       -9 675 923 Résultat net de l'exercice           ",
+    "ebe": "Passif circulant                                                          41 633 570       41 473 506 EXCEDENT BRUT D'EXPLOITATION          ",
+    "total_actif": "TOTAL ACTIF                         199 116 293      202 603 319 Achats de matières premières et fournitures liées                -85 706 07",
+    "total_passif": "TOTAL PASSIF                         199 116 293      202 603 319    Dotations aux amortissements, aux provisions et dépré.        -19 109 3"
    },
    "statut": "valide",
    "controles_ok": [
@@ -1206,7 +1206,7 @@
    "manquants": [
     "resultat net"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "pnb": {
@@ -1218,24 +1218,24 @@
      "n1": 5215
     },
     "charges_gen": {
-     "n": -4103,
-     "n1": -3525
+     "n": 4103,
+     "n1": 3525
     },
     "total_actif": {
-     "n": 9555,
-     "n1": 4195
+     "n": 79555,
+     "n1": 74195
     },
     "total_passif": {
-     "n": 9555,
+     "n": 79555,
      "n1": 74195
     }
    },
    "lignes_lues": {
-    "pnb": "10 PRODUIT NET BANCAIRE 5 735 3 980",
-    "cp": "9 COMPTES DE REGULARISATION 4 410 3 818 9 CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 5 916 5 215",
-    "charges_gen": "12 CHARGES GENERALES D'EXPLOITATION - 4 103 - 3 525",
-    "total_actif": "TOTAL ACTIF 7 9 555 7 4 195 TOTAL PASSIF 7 9 555 74 195",
-    "total_passif": "TOTAL ACTIF 7 9 555 7 4 195 TOTAL PASSIF 7 9 555 74 195"
+    "pnb": "10      PRODUIT NET BANCAIRE                                                                                      5 735               3 980",
+    "cp": "9       COMPTES DE REGULARISATION                                                           4 410                 3 818               9     ",
+    "charges_gen": "12      CHARGES GENERALES D'EXPLOITATION                                                              -           4 103       -        3 525",
+    "total_actif": "TOTAL ACTIF                                                79 555                74 195                                              TOTAL P",
+    "total_passif": "TOTAL ACTIF                                                79 555                74 195                                              TOTAL P"
    },
    "statut": "a confirmer",
    "controles_ok": [
@@ -1285,19 +1285,16 @@
     "total_actif": "Total actif                                             156 426 278       133 450 356",
     "total_passif": "Total passif                                            156 426 278       133 450 356                                                       "
    },
-   "statut": "a confirmer",
+   "statut": "valide",
    "controles_ok": [
     "total actif = total passif",
     "resultat net identique sur deux lignes differentes"
    ],
-   "problemes": [
-    "resultat net qui varie enormement : a verifier",
-    "capitaux propres non publie ou non lu"
-   ],
+   "problemes": [],
    "ratios": {
     "marge": -0.0987,
     "croissance_activite": -0.0763,
-    "croissance_resultat": -4.2153
+    "croissance_resultat": -1.0
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/fr/sucrivoire-ci-etats-financiers-exercice-2025-annule-et-remplace-le-precedent",
@@ -1500,7 +1497,7 @@
    "manquants": [
     "capitaux propres"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -1525,11 +1522,11 @@
     }
    },
    "lignes_lues": {
-    "ca": "CHIFFRE D'AFFAIRES 206 740 229 061",
-    "rn": "Résultat net de l'exercice 13 075 8 698",
-    "ebe": "TOTAL ACTIF 180 003 163 113 EXCEDENT BRUT D'EXPLOITATION 18 480 13 030",
-    "total_actif": "TOTAL ACTIF 180 003 163 113 EXCEDENT BRUT D'EXPLOITATION 18 480 13 030",
-    "total_passif": "TOTAL PASSIF 180 003 163 113"
+    "ca": "CHIFFRE D'AFFAIRES                                             206 740      229 061",
+    "rn": "Résultat net de l'exercice                            13 075                8 698",
+    "ebe": "TOTAL ACTIF                                          180 003            163 113             EXCEDENT BRUT D'EXPLOITATION                    ",
+    "total_actif": "TOTAL ACTIF                                          180 003            163 113             EXCEDENT BRUT D'EXPLOITATION                    ",
+    "total_passif": "TOTAL PASSIF                                         180 003            163 113"
    },
    "statut": "valide",
    "controles_ok": [
@@ -1596,7 +1593,7 @@
     "capitaux propres",
     "chiffre d'affaires"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "rn": {
@@ -1609,8 +1606,8 @@
     }
    },
    "lignes_lues": {
-    "rn": "Autres réserves disponibles Résultat net de l'exercice 12 492 623 13 110 790",
-    "ebe": "EXCEDENT BRUT D'EXPLOITATION 23 541 209 24 974 609"
+    "rn": "Autres réserves disponibles                                                                         Résultat net de l'exercice              ",
+    "ebe": "EXCEDENT BRUT D'EXPLOITATION                                        23 541 209           24 974 609"
    },
    "statut": "valide",
    "controles_ok": [
@@ -1631,7 +1628,7 @@
    "manquants": [
     "capitaux propres"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -1656,11 +1653,11 @@
     }
    },
    "lignes_lues": {
-    "ca": "Actifs circulants HAO CHIFFRE D'AFFAIRES 340 830 548 704 279 437 727 425",
-    "rn": "- Dividendes versés -9 405 345 840 -1 840 176 360 Résultat net de l'exercice 24 972 070 150 18 790 217 905",
-    "ebe": "Passif circulant 36 225 398 864 32 917 169 803 EXCEDENT BRUT D'EXPLOITATION 49 671 937 893 40 098 245 829",
-    "total_actif": "TOTAL ACTIF 225 842 735 644 222 208 164 550 Achats de matières premières et fournitures liées -185 052 282 570 -166 266 403 509",
-    "total_passif": "TOTAL PASSIF 225 842 735 644 222 208 164 550 Dotations aux amortissements, aux provisions et dépréciations -12 209 443 538 -11 200 976 582"
+    "ca": "Actifs circulants HAO                                                                                                 CHIFFRE D'AFFAIRES    ",
+    "rn": "- Dividendes versés                                                        -9 405 345 840            -1 840 176 360   Résultat net de l'exer",
+    "ebe": "Passif circulant                                                         36 225 398 864           32 917 169 803      EXCEDENT BRUT D'EXPLOI",
+    "total_actif": "TOTAL ACTIF                                                             225 842 735 644          222 208 164 550      Achats de matières pre",
+    "total_passif": "TOTAL PASSIF                                                            225 842 735 644          222 208 164 550      Dotations aux amortiss"
    },
    "statut": "valide",
    "controles_ok": [
@@ -1781,7 +1778,7 @@
    "manquants": [
     "capitaux propres"
    ],
-   "outil": "pdfplumber/ocr",
+   "outil": "pdftotext",
    "communique": false,
    "chiffres": {
     "ca": {
@@ -1795,7 +1792,7 @@
    },
    "lignes_lues": {
     "ca": "Le chiffre d’affaires hors taxes s’établit à 455,209 milliards de FCFA, en retrait de 6% (-29,7",
-    "rn": "RESULTAT NET 6 146 527 7 090 811"
+    "rn": "RESULTAT NET                                                                                                        6 146 527           7 09"
    },
    "statut": "a confirmer",
    "controles_ok": [],
@@ -1813,5 +1810,5 @@
    "lu_le": "2026-11-22"
   }
  },
- "maj": "2026-11-22T00:02Z"
+ "maj": "2026-11-22T00:14Z"
 }
