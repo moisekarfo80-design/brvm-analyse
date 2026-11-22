@@ -9,6 +9,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "rn": {
      "n": 36463616375,
@@ -52,6 +53,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 29031727207,
@@ -109,6 +111,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 146176657128,
@@ -150,7 +153,8 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "total actif = total passif"
+    "total actif = total passif",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
@@ -172,6 +176,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 13298,
@@ -213,34 +218,35 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 68063,
-     "n1": 79563
+     "n": 79563,
+     "n1": 68063
     },
     "rn": {
-     "n": 26226,
-     "n1": 36520
+     "n": 36520,
+     "n1": 26226
     },
     "cp": {
-     "n": 99783,
-     "n1": 120570
+     "n": 120570,
+     "n1": 99783
     },
     "charges_gen": {
-     "n": 34714,
-     "n1": 34248
+     "n": 34248,
+     "n1": 34714
     },
     "cout_risque": {
-     "n": 1309,
-     "n1": 1498
+     "n": 1498,
+     "n1": 1309
     },
     "total_actif": {
-     "n": 1015578,
-     "n1": 1126270
+     "n": 1126270,
+     "n1": 1015578
     },
     "total_passif": {
-     "n": 1015578,
-     "n1": 1126270
+     "n": 1126270,
+     "n1": 1015578
     }
    },
    "lignes_lues": {
@@ -254,16 +260,17 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "total actif = total passif"
+    "total actif = total passif",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.2628,
-    "marge": 0.3853,
-    "croissance_activite": -0.1445,
-    "croissance_resultat": -0.2819,
-    "coef_exploitation": 0.51,
-    "cout_risque_pnb": 0.0192
+    "roe": 0.3029,
+    "marge": 0.459,
+    "croissance_activite": 0.169,
+    "croissance_resultat": 0.3925,
+    "coef_exploitation": 0.4305,
+    "cout_risque_pnb": 0.0188
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260417_-_etats_financiers_-_exercice_2025_-_bici_ci.pdf",
@@ -276,6 +283,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 42454158321,
@@ -335,30 +343,31 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 46526723396,
-     "n1": 51273938002
+     "n": 51273938002,
+     "n1": 46526723396
     },
     "rn": {
-     "n": 19647175711,
-     "n1": 20107229743
+     "n": 20107229743,
+     "n1": 19647175711
     },
     "cp": {
-     "n": 117396355692,
-     "n1": 117506988771
+     "n": 117506988771,
+     "n1": 117396355692
     },
     "charges_gen": {
-     "n": -22369685063,
-     "n1": -22704331053
+     "n": -22704331053,
+     "n1": -22369685063
     },
     "cout_risque": {
-     "n": -124264109,
-     "n1": 685664328
+     "n": 685664328,
+     "n1": -124264109
     },
     "total_actif": {
-     "n": 940187227041,
-     "n1": 964662725647
+     "n": 964662725647,
+     "n1": 940187227041
     }
    },
    "lignes_lues": {
@@ -371,16 +380,18 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique sur deux lignes differentes"
+    "resultat net identique sur deux lignes differentes",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.1674,
-    "marge": 0.4223,
-    "croissance_activite": -0.0926,
-    "croissance_resultat": -0.0229,
-    "coef_exploitation": 0.4808,
-    "cout_risque_pnb": 0.0027
+    "roe": 0.1711,
+    "marge": 0.3922,
+    "croissance_activite": 0.102,
+    "croissance_resultat": 0.0234,
+    "coef_exploitation": 0.4428,
+    "cout_risque_pnb": 0.0134
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260415_-_etats_financiers_-_exercice_2025_-_boa_bn.pdf",
@@ -395,30 +406,31 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 57489834311,
-     "n1": 57819599384
+     "n": 57819599384,
+     "n1": 57489834311
     },
     "rn": {
-     "n": 22419223685,
-     "n1": 19252015161
+     "n": 19252015161,
+     "n1": 22419223685
     },
     "charges_gen": {
-     "n": -25686355185,
-     "n1": -25417867609
+     "n": -25417867609,
+     "n1": -25686355185
     },
     "cout_risque": {
-     "n": -4302883480,
-     "n1": -8355052420
+     "n": -8355052420,
+     "n1": -4302883480
     },
     "total_actif": {
-     "n": 1079053439829,
-     "n1": 1148674652683
+     "n": 1148674652683,
+     "n1": 1079053439829
     },
     "total_passif": {
-     "n": 1079053439830,
-     "n1": 1148674652683
+     "n": 1148674652683,
+     "n1": 1079053439830
     }
    },
    "lignes_lues": {
@@ -431,16 +443,18 @@
    },
    "statut": "valide",
    "controles_ok": [
+    "resultat net identique sur deux lignes differentes",
     "total actif = total passif",
-    "resultat net identique sur deux lignes differentes"
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "marge": 0.39,
-    "croissance_activite": -0.0057,
-    "croissance_resultat": 0.1645,
-    "coef_exploitation": 0.4468,
-    "cout_risque_pnb": 0.0748
+    "marge": 0.333,
+    "croissance_activite": 0.0057,
+    "croissance_resultat": -0.1413,
+    "coef_exploitation": 0.4396,
+    "cout_risque_pnb": 0.1445
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260323_-_etats_financiers_-_exercice_2025_-_boa_bf.pdf",
@@ -449,55 +463,57 @@
   },
   "BOAM": {
    "banque": true,
-   "pages_ocr": 8,
-   "manquants": [],
+   "pages_ocr": 4,
+   "manquants": [
+    "PNB"
+   ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
-    "pnb": {
-     "n": 37996,
-     "n1": 330474
-    },
     "rn": {
      "n": 9123471904,
-     "n1": 11081189907
+     "n1": 5778294073
     },
     "cp": {
      "n": 46195155867,
-     "n1": 49820422180
+     "n1": 40197098666
     },
     "charges_gen": {
      "n": 19137414613,
-     "n1": 19677566853
+     "n1": 19293119055
     },
-    "total_passif": {
-     "n": 541491190619,
-     "n1": 553455473338
+    "cout_risque": {
+     "n": 7303550434,
+     "n1": 5891859794
+    },
+    "total_actif": {
+     "n": 0,
+     "n1": 560353600050
     }
    },
    "lignes_lues": {
-    "pnb": "10 PRODUIT NET BANCAIRE 37 996 330 474",
-    "rn": "16 RESULTAT DE L'EXERCICE 9123 471 904 11 081 189 907",
-    "cp": "] CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 46 195 155 867 49 820 422 180",
-    "charges_gen": "12. [CHARGES GENERALES D'EXPLOITATION 19137 414613 19677 566853",
-    "total_passif": "D [TOTAL DU PASSIF | 541491190619] 553455 473 338"
+    "rn": "16 RESULTAT DE L'EXERCICE 5 778 294 073 9 123 471 904",
+    "cp": "9 CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 40 197 098 666 46 195 155 867",
+    "charges_gen": "12 [CHARGES GENERALES D'EXPLOITATION 19 293 119 055 19 137 414 613",
+    "cout_risque": "15 |COÛT DU RISQUE 5 891 859 794 7 303 550 434",
+    "total_actif": "D 1 TOTALDE L'ACTIF 77 | 560353600050 | sa1s11s0cte —"
    },
-   "statut": "a confirmer",
-   "controles_ok": [],
+   "statut": "valide",
+   "controles_ok": [
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
+   ],
    "problemes": [
-    "resultat net superieur au chiffre d'affaires / PNB",
-    "activite qui varie de plus de 80 % : a verifier"
+    "PNB non publie ou non lu"
    ],
    "ratios": {
     "roe": 0.1975,
-    "marge": 240116.6413,
-    "croissance_activite": -0.885,
-    "croissance_resultat": -0.1767,
-    "coef_exploitation": 503669.1918
+    "croissance_resultat": 0.5789
    },
-   "exercice": 2025,
-   "url": "https://www.brvm.org/sites/default/files/20260324_-_etats_financiers_-_exercice_2025_-_boa_ml.pdf",
-   "titre": "BOA ML : Etats financiers - Exercice 2025",
+   "exercice": 2024,
+   "url": "https://www.brvm.org/sites/default/files/20250319_-_etats_financiers_certifies_par_les_cacs_-_exercice_2024_-_boa_mali.pdf",
+   "titre": "BOA MALI : Etats financiers certifiés par les Commissaires Aux Comptes - Exercice 2024",
    "lu_le": "2026-11-22"
   },
   "BOAN": {
@@ -510,10 +526,13 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {},
    "lignes_lues": {},
    "statut": "a confirmer",
-   "controles_ok": [],
+   "controles_ok": [
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
+   ],
    "problemes": [
     "resultat net introuvable",
     "capitaux propres non publie ou non lu",
@@ -521,8 +540,8 @@
    ],
    "ratios": {},
    "exercice": 2025,
-   "url": "https://www.brvm.org/sites/default/files/20260401_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_exercice_2025_-_boa_ng.pdf",
-   "titre": "BOA NG : Rapport des Commissaires Aux Comptes sur les Etats Financiers annuels - Exercice 2025",
+   "url": "https://www.brvm.org/sites/default/files/20260401_-_rapport_des_cac_sur_les_conventions_reglementees_et_les_credits_accordes_aux_dirigeants_de_la_banque_-_exercice_2025_-_boa_ng.pdf",
+   "titre": "BOA NG : Rapport des Commissaires Aux Comptes sur les Conventions règlementées et les crédits accordés aux dirigeants de la banque - Exercice 2025",
    "lu_le": "2026-11-22"
   },
   "BOAS": {
@@ -531,30 +550,31 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 49666,
-     "n1": 51926
+     "n": 51926,
+     "n1": 49666
     },
     "rn": {
-     "n": 19984,
-     "n1": 21905
+     "n": 21905,
+     "n1": 19984
     },
     "cp": {
-     "n": 88621,
-     "n1": 96526
+     "n": 96526,
+     "n1": 88621
     },
     "charges_gen": {
-     "n": -19688,
-     "n1": -20167
+     "n": -20167,
+     "n1": -19688
     },
     "total_actif": {
-     "n": 783173,
-     "n1": 836158
+     "n": 836158,
+     "n1": 783173
     },
     "total_passif": {
-     "n": 783173,
-     "n1": 836158
+     "n": 836158,
+     "n1": 783173
     }
    },
    "lignes_lues": {
@@ -567,15 +587,17 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "total actif = total passif"
+    "total actif = total passif",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.2255,
-    "marge": 0.4024,
-    "croissance_activite": -0.0435,
-    "croissance_resultat": -0.0877,
-    "coef_exploitation": 0.3964
+    "roe": 0.2269,
+    "marge": 0.4219,
+    "croissance_activite": 0.0455,
+    "croissance_resultat": 0.0961,
+    "coef_exploitation": 0.3884
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260317_-_etats_financiers_-_exercice_2025_-_boa_sn.pdf",
@@ -590,6 +612,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 21263067001,
@@ -647,6 +670,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {},
    "lignes_lues": {},
    "statut": "a confirmer",
@@ -670,6 +694,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 302320,
@@ -723,6 +748,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "pnb": {
      "n": 2086073,
@@ -779,6 +805,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 32108628,
@@ -831,6 +858,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 57100,
@@ -895,6 +923,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 6744255774,
@@ -938,30 +967,31 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 97819,
-     "n1": 112928
+     "n": 112928,
+     "n1": 97819
     },
     "rn": {
-     "n": 38112,
-     "n1": 40712
+     "n": 40712,
+     "n1": 38112
     },
     "cp": {
-     "n": 211371,
-     "n1": 233303
+     "n": 233303,
+     "n1": 211371
     },
     "charges_gen": {
-     "n": -49945,
-     "n1": -53554
+     "n": -53554,
+     "n1": -49945
     },
     "total_actif": {
-     "n": 2510429,
-     "n1": 3073062
+     "n": 3073062,
+     "n1": 2510429
     },
     "total_passif": {
-     "n": 2510429,
-     "n1": 3073062
+     "n": 3073062,
+     "n1": 2510429
     }
    },
    "lignes_lues": {
@@ -974,16 +1004,18 @@
    },
    "statut": "valide",
    "controles_ok": [
+    "resultat net identique sur deux lignes differentes",
     "total actif = total passif",
-    "resultat net identique sur deux lignes differentes"
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.1803,
-    "marge": 0.3896,
-    "croissance_activite": -0.1338,
-    "croissance_resultat": -0.0639,
-    "coef_exploitation": 0.5106
+    "roe": 0.1745,
+    "marge": 0.3605,
+    "croissance_activite": 0.1545,
+    "croissance_resultat": 0.0682,
+    "coef_exploitation": 0.4742
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260513_-_etats_financiers_et_communique_-_exercice_2025_-_nsia_banque_ci.pdf",
@@ -998,6 +1030,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 233261162741,
@@ -1041,6 +1074,7 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 1197100,
@@ -1083,6 +1117,7 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "pnb": {
      "n": 186609,
@@ -1143,6 +1178,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 197629996,
@@ -1196,6 +1232,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 74676306247,
@@ -1262,6 +1299,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "pnb": {
      "n": 5735,
@@ -1315,6 +1353,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 80568589,
@@ -1363,6 +1402,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": true,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 189400000000,
@@ -1379,7 +1419,8 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "chiffres repris du communique officiel (croissance seulement)"
+    "chiffres repris du communique officiel (croissance seulement)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
@@ -1399,6 +1440,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 85643038,
@@ -1444,6 +1486,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 174600707830,
@@ -1501,26 +1544,27 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "ca": {
-     "n": 309722,
-     "n1": 378123
+     "n": 378123,
+     "n1": 309722
     },
     "rn": {
-     "n": 21472,
-     "n1": 45781
+     "n": 45781,
+     "n1": 21472
     },
     "ebe": {
-     "n": 57494,
-     "n1": 87445
+     "n": 87445,
+     "n1": 57494
     },
     "total_actif": {
-     "n": 307546,
-     "n1": 339517
+     "n": 339517,
+     "n1": 307546
     },
     "total_passif": {
-     "n": 307546,
-     "n1": 339517
+     "n": 339517,
+     "n1": 307546
     }
    },
    "lignes_lues": {
@@ -1532,14 +1576,16 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "total actif = total passif"
+    "total actif = total passif",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "marge": 0.0693,
-    "croissance_activite": -0.1809,
-    "croissance_resultat": -0.531,
-    "marge_ebe": 0.1856
+    "marge": 0.1211,
+    "croissance_activite": 0.2208,
+    "croissance_resultat": 1.1321,
+    "marge_ebe": 0.2313
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260519_-_etats_financiers_-_exercice_2025_-_solibra_ci.pdf",
@@ -1554,6 +1600,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 206740,
@@ -1607,6 +1654,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 1620701,
@@ -1651,6 +1699,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "rn": {
      "n": 12492623,
@@ -1687,6 +1736,7 @@
    ],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 340830548704,
@@ -1743,6 +1793,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "rn": {
      "n": -96558,
@@ -1786,6 +1837,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 588709,
@@ -1838,6 +1890,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 455208888295,
@@ -1903,26 +1956,27 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 39196,
-     "n1": 45207
+     "n": 45207,
+     "n1": 39196
     },
     "rn": {
-     "n": 27270,
-     "n1": 30341
+     "n": 30341,
+     "n1": 27270
     },
     "cp": {
-     "n": 95569,
-     "n1": 125910
+     "n": 125910,
+     "n1": 95569
     },
     "charges_gen": {
-     "n": 10252,
-     "n1": 12668
+     "n": 12668,
+     "n1": 10252
     },
     "total_passif": {
-     "n": 1340710,
-     "n1": 1520447
+     "n": 1520447,
+     "n1": 1340710
     }
    },
    "lignes_lues": {
@@ -1934,15 +1988,16 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique sur deux lignes differentes"
+    "resultat net identique sur deux lignes differentes",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.2853,
-    "marge": 0.6957,
-    "croissance_activite": -0.133,
-    "croissance_resultat": -0.1012,
-    "coef_exploitation": 0.2616
+    "roe": 0.241,
+    "marge": 0.6712,
+    "croissance_activite": 0.1534,
+    "croissance_resultat": 0.1126,
+    "coef_exploitation": 0.2802
    },
    "exercice": 2024,
    "url": "https://www.brvm.org/sites/default/files/20250626_-_etats_financiers_-_exercice_2024_-_biic_bn.pdf",
@@ -1955,34 +2010,35 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 60811,
-     "n1": 72724
+     "n": 72724,
+     "n1": 60811
     },
     "rn": {
-     "n": 26075,
-     "n1": 32044
+     "n": 32044,
+     "n1": 26075
     },
     "cp": {
-     "n": 95800,
-     "n1": 112644
+     "n": 112644,
+     "n1": 95800
     },
     "charges_gen": {
-     "n": -23147,
-     "n1": -25105
+     "n": -25105,
+     "n1": -23147
     },
     "cout_risque": {
-     "n": -4824,
-     "n1": -6792
+     "n": -6792,
+     "n1": -4824
     },
     "total_actif": {
-     "n": 938738,
-     "n1": 1075479
+     "n": 1075479,
+     "n1": 938738
     },
     "total_passif": {
-     "n": 938738,
-     "n1": 1075479
+     "n": 1075479,
+     "n1": 938738
     }
    },
    "lignes_lues": {
@@ -1996,17 +2052,18 @@
    },
    "statut": "valide",
    "controles_ok": [
+    "resultat net identique sur deux lignes differentes",
     "total actif = total passif",
-    "resultat net identique sur deux lignes differentes"
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.2722,
-    "marge": 0.4288,
-    "croissance_activite": -0.1638,
-    "croissance_resultat": -0.1863,
-    "coef_exploitation": 0.3806,
-    "cout_risque_pnb": 0.0793
+    "roe": 0.2845,
+    "marge": 0.4406,
+    "croissance_activite": 0.1959,
+    "croissance_resultat": 0.2289,
+    "coef_exploitation": 0.3452,
+    "cout_risque_pnb": 0.0934
    },
    "exercice": 2024,
    "url": "https://www.brvm.org/sites/default/files/20250402_-_etats_financiers_-_exercice_2024_-_boa_ci.pdf",
@@ -2019,6 +2076,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 158313246307,
@@ -2083,22 +2141,23 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 122316,
-     "n1": 132725
+     "n": 132725,
+     "n1": 122316
     },
     "rn": {
-     "n": 57477,
-     "n1": 63482
+     "n": 63482,
+     "n1": 57477
     },
     "cp": {
-     "n": 199352,
-     "n1": 218573
+     "n": 218573,
+     "n1": 199352
     },
     "cout_risque": {
-     "n": 1799,
-     "n1": 1136
+     "n": 1136,
+     "n1": 1799
     }
    },
    "lignes_lues": {
@@ -2109,15 +2168,17 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique sur deux lignes differentes"
+    "resultat net identique sur deux lignes differentes",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.2883,
-    "marge": 0.4699,
-    "croissance_activite": -0.0784,
-    "croissance_resultat": -0.0946,
-    "cout_risque_pnb": 0.0147
+    "roe": 0.2904,
+    "marge": 0.4783,
+    "croissance_activite": 0.0851,
+    "croissance_resultat": 0.1045,
+    "cout_risque_pnb": 0.0086
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260414_-_rapport_dactivites_et_etats_financiers_-_exercice_2025_-_ecobank_ci.pdf",
@@ -2130,22 +2191,23 @@
    "manquants": [],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
-     "n": 263207,
-     "n1": 276048
+     "n": 276048,
+     "n1": 263207
     },
     "rn": {
-     "n": 101228,
-     "n1": 101352
+     "n": 101352,
+     "n1": 101228
     },
     "cp": {
-     "n": 451721,
-     "n1": 495113
+     "n": 495113,
+     "n1": 451721
     },
     "charges_gen": {
-     "n": -87741,
-     "n1": -94052
+     "n": -94052,
+     "n1": -87741
     }
    },
    "lignes_lues": {
@@ -2156,15 +2218,17 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "resultat net identique sur deux lignes differentes"
+    "resultat net identique sur deux lignes differentes",
+    "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
-    "roe": 0.2241,
-    "marge": 0.3846,
-    "croissance_activite": -0.0465,
-    "croissance_resultat": -0.0012,
-    "coef_exploitation": 0.3334
+    "roe": 0.2047,
+    "marge": 0.3672,
+    "croissance_activite": 0.0488,
+    "croissance_resultat": 0.0012,
+    "coef_exploitation": 0.3407
    },
    "exercice": 2025,
    "url": "https://www.brvm.org/sites/default/files/20260421_-_rapport_dactivites_annuel_et_etats_financiers_-_exercice_2025_-_societe_generale_ci_annule_et_remplace_le_precedent.pdf",
@@ -2179,6 +2243,7 @@
    ],
    "outil": "pdftotext",
    "communique": true,
+   "colonnes_inversees": true,
    "chiffres": {
     "pnb": {
      "n": 109000000000,
@@ -2195,7 +2260,8 @@
    },
    "statut": "valide",
    "controles_ok": [
-    "chiffres repris du communique officiel (croissance seulement)"
+    "chiffres repris du communique officiel (croissance seulement)",
+    "confirme par le rapport de l'autre annee"
    ],
    "problemes": [],
    "ratios": {
@@ -2216,6 +2282,7 @@
    ],
    "outil": "pdfplumber/ocr",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 2024546,
@@ -2246,6 +2313,7 @@
    "manquants": [],
    "outil": "pdftotext",
    "communique": false,
+   "colonnes_inversees": false,
    "chiffres": {
     "ca": {
      "n": 10074573973,
@@ -2305,7 +2373,7 @@
    "lu_le": "2026-11-22"
   }
  },
- "maj": "2026-11-22T01:31Z",
+ "maj": "2026-11-22T02:48Z",
  "historique": {
   "ABJC": {
    "2025": {
@@ -2314,6 +2382,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 13298,
@@ -2359,6 +2428,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -2380,6 +2450,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 11254,
@@ -2421,6 +2492,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 10804244269,
@@ -2489,6 +2561,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 353113,
@@ -2540,6 +2613,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -2561,26 +2635,27 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 39196,
-      "n1": 45207
+      "n": 45207,
+      "n1": 39196
      },
      "rn": {
-      "n": 27270,
-      "n1": 30341
+      "n": 30341,
+      "n1": 27270
      },
      "cp": {
-      "n": 95569,
-      "n1": 125910
+      "n": 125910,
+      "n1": 95569
      },
      "charges_gen": {
-      "n": 10252,
-      "n1": 12668
+      "n": 12668,
+      "n1": 10252
      },
      "total_passif": {
-      "n": 1340710,
-      "n1": 1520447
+      "n": 1520447,
+      "n1": 1340710
      }
     },
     "lignes_lues": {
@@ -2592,15 +2667,16 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2853,
-     "marge": 0.6957,
-     "croissance_activite": -0.133,
-     "croissance_resultat": -0.1012,
-     "coef_exploitation": 0.2616
+     "roe": 0.241,
+     "marge": 0.6712,
+     "croissance_activite": 0.1534,
+     "croissance_resultat": 0.1126,
+     "coef_exploitation": 0.2802
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250626_-_etats_financiers_-_exercice_2024_-_biic_bn.pdf",
@@ -2615,34 +2691,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 68063,
-      "n1": 79563
+      "n": 79563,
+      "n1": 68063
      },
      "rn": {
-      "n": 26226,
-      "n1": 36520
+      "n": 36520,
+      "n1": 26226
      },
      "cp": {
-      "n": 99783,
-      "n1": 120570
+      "n": 120570,
+      "n1": 99783
      },
      "charges_gen": {
-      "n": 34714,
-      "n1": 34248
+      "n": 34248,
+      "n1": 34714
      },
      "cout_risque": {
-      "n": 1309,
-      "n1": 1498
+      "n": 1498,
+      "n1": 1309
      },
      "total_actif": {
-      "n": 1015578,
-      "n1": 1126270
+      "n": 1126270,
+      "n1": 1015578
      },
      "total_passif": {
-      "n": 1015578,
-      "n1": 1126270
+      "n": 1126270,
+      "n1": 1015578
      }
     },
     "lignes_lues": {
@@ -2656,16 +2733,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2628,
-     "marge": 0.3853,
-     "croissance_activite": -0.1445,
-     "croissance_resultat": -0.2819,
-     "coef_exploitation": 0.51,
-     "cout_risque_pnb": 0.0192
+     "roe": 0.3029,
+     "marge": 0.459,
+     "croissance_activite": 0.169,
+     "croissance_resultat": 0.3925,
+     "coef_exploitation": 0.4305,
+     "cout_risque_pnb": 0.0188
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260417_-_etats_financiers_-_exercice_2025_-_bici_ci.pdf",
@@ -2682,6 +2760,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -2705,26 +2784,27 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 47275,
-      "n1": 55506
+      "n": 55506,
+      "n1": 47275
      },
      "rn": {
-      "n": 12391,
-      "n1": 16694
+      "n": 16694,
+      "n1": 12391
      },
      "charges_gen": {
-      "n": 29533,
-      "n1": 35579
+      "n": 35579,
+      "n1": 29533
      },
      "total_actif": {
-      "n": 926252,
-      "n1": 920563
+      "n": 920563,
+      "n1": 926252
      },
      "total_passif": {
-      "n": 926252,
-      "n1": 920563
+      "n": 920563,
+      "n1": 926252
      }
     },
     "lignes_lues": {
@@ -2736,15 +2816,17 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "marge": 0.2621,
-     "croissance_activite": -0.1483,
-     "croissance_resultat": -0.2578,
-     "coef_exploitation": 0.6247
+     "marge": 0.3008,
+     "croissance_activite": 0.1741,
+     "croissance_resultat": 0.3473,
+     "coef_exploitation": 0.641
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_bici_ci.pdf",
@@ -2759,26 +2841,27 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 44167,
-      "n1": 47275
+      "n": 47275,
+      "n1": 44167
      },
      "rn": {
-      "n": 9603,
-      "n1": 12391
+      "n": 12391,
+      "n1": 9603
      },
      "charges_gen": {
-      "n": 27436,
-      "n1": 29533
+      "n": 29533,
+      "n1": 27436
      },
      "total_actif": {
-      "n": 847724,
-      "n1": 926252
+      "n": 926252,
+      "n1": 847724
      },
      "total_passif": {
-      "n": 847724,
-      "n1": 926252
+      "n": 926252,
+      "n1": 847724
      }
     },
     "lignes_lues": {
@@ -2790,15 +2873,17 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "marge": 0.2174,
-     "croissance_activite": -0.0657,
-     "croissance_resultat": -0.225,
-     "coef_exploitation": 0.6212
+     "marge": 0.2621,
+     "croissance_activite": 0.0704,
+     "croissance_resultat": 0.2903,
+     "coef_exploitation": 0.6247
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/bilan_et_compte_de_resultat_bicici_31_12_2022_.pdf",
@@ -2811,30 +2896,31 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 45315,
-      "n1": 44167
+      "n": 44167,
+      "n1": 45315
      },
      "rn": {
-      "n": 2021,
-      "n1": 9602
+      "n": 9602,
+      "n1": 2021
      },
      "cp": {
-      "n": 62819,
-      "n1": 71522
+      "n": 71522,
+      "n1": 62819
      },
      "charges_gen": {
-      "n": 32191,
-      "n1": 27436
+      "n": 27436,
+      "n1": 32191
      },
      "total_actif": {
-      "n": 831386,
-      "n1": 847724
+      "n": 847724,
+      "n1": 831386
      },
      "total_passif": {
-      "n": 831386,
-      "n1": 847724
+      "n": 847724,
+      "n1": 831386
      }
     },
     "lignes_lues": {
@@ -2847,15 +2933,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.0322,
-     "marge": 0.0446,
-     "croissance_activite": 0.026,
-     "croissance_resultat": -0.7895,
-     "coef_exploitation": 0.7104
+     "roe": 0.1343,
+     "marge": 0.2174,
+     "croissance_activite": -0.0253,
+     "croissance_resultat": 3.7511,
+     "coef_exploitation": 0.6212
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220406_-_etats_financiers_exercice_2021_-_bicici.pdf",
@@ -2870,6 +2958,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 42454158321,
@@ -2929,6 +3018,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 45312422329,
@@ -2988,6 +3078,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 51384,
@@ -3024,7 +3115,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -3046,6 +3138,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 44428368,
@@ -3082,7 +3175,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -3106,30 +3200,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 46526723396,
-      "n1": 51273938002
+      "n": 51273938002,
+      "n1": 46526723396
      },
      "rn": {
-      "n": 19647175711,
-      "n1": 20107229743
+      "n": 20107229743,
+      "n1": 19647175711
      },
      "cp": {
-      "n": 117396355692,
-      "n1": 117506988771
+      "n": 117506988771,
+      "n1": 117396355692
      },
      "charges_gen": {
-      "n": -22369685063,
-      "n1": -22704331053
+      "n": -22704331053,
+      "n1": -22369685063
      },
      "cout_risque": {
-      "n": -124264109,
-      "n1": 685664328
+      "n": 685664328,
+      "n1": -124264109
      },
      "total_actif": {
-      "n": 940187227041,
-      "n1": 964662725647
+      "n": 964662725647,
+      "n1": 940187227041
      }
     },
     "lignes_lues": {
@@ -3142,16 +3237,18 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1674,
-     "marge": 0.4223,
-     "croissance_activite": -0.0926,
-     "croissance_resultat": -0.0229,
-     "coef_exploitation": 0.4808,
-     "cout_risque_pnb": 0.0027
+     "roe": 0.1711,
+     "marge": 0.3922,
+     "croissance_activite": 0.102,
+     "croissance_resultat": 0.0234,
+     "coef_exploitation": 0.4428,
+     "cout_risque_pnb": 0.0134
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260415_-_etats_financiers_-_exercice_2025_-_boa_bn.pdf",
@@ -3164,30 +3261,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 47832439739,
-      "n1": 46526723396
+      "n": 46526723396,
+      "n1": 47832439739
      },
      "rn": {
-      "n": 21528745870,
-      "n1": 19647175711
+      "n": 19647175711,
+      "n1": 21528745870
      },
      "cp": {
-      "n": 112817609313,
-      "n1": 117396355692
+      "n": 117396355692,
+      "n1": 112817609313
      },
      "charges_gen": {
-      "n": -22910259126,
-      "n1": -22369685063
+      "n": -22369685063,
+      "n1": -22910259126
      },
      "cout_risque": {
-      "n": 705521710,
-      "n1": 124264109
+      "n": 124264109,
+      "n1": 705521710
      },
      "total_passif": {
-      "n": 906823805860,
-      "n1": 940187227041
+      "n": 940187227041,
+      "n1": 906823805860
      }
     },
     "lignes_lues": {
@@ -3198,16 +3296,19 @@
      "cout_risque": "RCR_0150/15. COÛT DU RISQUE 705 521 710 124 264 109",
      "total_passif": "RBP_0170|10. TOTAL DU PASSIF 906 823 805 860] 940 187 227 041"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1908,
-     "marge": 0.4501,
-     "croissance_activite": 0.0281,
-     "croissance_resultat": 0.0958,
-     "coef_exploitation": 0.479,
-     "cout_risque_pnb": 0.0147
+     "roe": 0.1674,
+     "marge": 0.4223,
+     "croissance_activite": -0.0273,
+     "croissance_resultat": -0.0874,
+     "coef_exploitation": 0.4808,
+     "cout_risque_pnb": 0.0027
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250422_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_boa_benin.pdf",
@@ -3220,34 +3321,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 46412884468,
-      "n1": 47832439739
+      "n": 47832439739,
+      "n1": 46412884468
      },
      "rn": {
-      "n": 19143162703,
-      "n1": 21528745870
+      "n": 21528745870,
+      "n1": 19143162703
      },
      "cp": {
-      "n": 104674009283,
-      "n1": 112817609313
+      "n": 112817609313,
+      "n1": 104674009283
      },
      "charges_gen": {
-      "n": -23257961554,
-      "n1": -22910259126
+      "n": -22910259126,
+      "n1": -23257961554
      },
      "cout_risque": {
-      "n": 667878530,
-      "n1": 705521710
+      "n": 705521710,
+      "n1": 667878530
      },
      "total_actif": {
-      "n": 907782418322,
-      "n1": 906823805860
+      "n": 906823805860,
+      "n1": 907782418322
      },
      "total_passif": {
-      "n": 907782418322,
-      "n1": 906823805860
+      "n": 906823805860,
+      "n1": 907782418322
      }
     },
     "lignes_lues": {
@@ -3261,17 +3363,19 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1829,
-     "marge": 0.4125,
-     "croissance_activite": -0.0297,
-     "croissance_resultat": -0.1108,
-     "coef_exploitation": 0.5011,
-     "cout_risque_pnb": 0.0144
+     "roe": 0.1908,
+     "marge": 0.4501,
+     "croissance_activite": 0.0306,
+     "croissance_resultat": 0.1246,
+     "coef_exploitation": 0.479,
+     "cout_risque_pnb": 0.0147
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240403_-_etats_financiers_-_exercice_2023_-_boa_benin.pdf",
@@ -3284,34 +3388,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 45259365692,
-      "n1": 46412884468
+      "n": 46412884468,
+      "n1": 45259365692
      },
      "rn": {
-      "n": 16663938680,
-      "n1": 19143162703
+      "n": 19143162703,
+      "n1": 16663938680
      },
      "cp": {
-      "n": 97192147880,
-      "n1": 104674009283
+      "n": 104674009283,
+      "n1": 97192147880
      },
      "charges_gen": {
-      "n": -21655848585,
-      "n1": -23257961554
+      "n": -23257961554,
+      "n1": -21655848585
      },
      "cout_risque": {
-      "n": 3667,
-      "n1": 878530
+      "n": 878530,
+      "n1": 3667
      },
      "total_actif": {
-      "n": 884426057334,
-      "n1": 907782418322
+      "n": 907782418322,
+      "n1": 884426057334
      },
      "total_passif": {
-      "n": 884426057334,
-      "n1": 907782418322
+      "n": 907782418322,
+      "n1": 884426057334
      }
     },
     "lignes_lues": {
@@ -3325,16 +3430,18 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1715,
-     "marge": 0.3682,
-     "croissance_activite": -0.0249,
-     "croissance_resultat": -0.1295,
-     "coef_exploitation": 0.4785,
+     "roe": 0.1829,
+     "marge": 0.4125,
+     "croissance_activite": 0.0255,
+     "croissance_resultat": 0.1488,
+     "coef_exploitation": 0.5011,
      "cout_risque_pnb": 0.0
     },
     "exercice": 2022,
@@ -3348,30 +3455,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 45286322647,
-      "n1": 45259365692
+      "n": 45259365692,
+      "n1": 45286322647
      },
      "rn": {
-      "n": 13312371256,
-      "n1": 16663938680
+      "n": 16663938680,
+      "n1": 13312371256
      },
      "cp": {
-      "n": 89836969716,
-      "n1": 97192147880
+      "n": 97192147880,
+      "n1": 89836969716
      },
      "charges_gen": {
-      "n": -22932426511,
-      "n1": -21655848585
+      "n": -21655848585,
+      "n1": -22932426511
      },
      "cout_risque": {
-      "n": 485757328,
-      "n1": 611263316
+      "n": 611263316,
+      "n1": 485757328
      },
      "total_actif": {
-      "n": 902792134544,
-      "n1": 884426057334
+      "n": 884426057334,
+      "n1": 902792134544
      }
     },
     "lignes_lues": {
@@ -3384,16 +3492,18 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1482,
-     "marge": 0.294,
-     "croissance_activite": 0.0006,
-     "croissance_resultat": -0.2011,
-     "coef_exploitation": 0.5064,
-     "cout_risque_pnb": 0.0107
+     "roe": 0.1715,
+     "marge": 0.3682,
+     "croissance_activite": -0.0006,
+     "croissance_resultat": 0.2518,
+     "coef_exploitation": 0.4785,
+     "cout_risque_pnb": 0.0135
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220322_-_etats_financiers_exercice_2021_-_boa_bn.pdf",
@@ -3410,30 +3520,31 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 57489834311,
-      "n1": 57819599384
+      "n": 57819599384,
+      "n1": 57489834311
      },
      "rn": {
-      "n": 22419223685,
-      "n1": 19252015161
+      "n": 19252015161,
+      "n1": 22419223685
      },
      "charges_gen": {
-      "n": -25686355185,
-      "n1": -25417867609
+      "n": -25417867609,
+      "n1": -25686355185
      },
      "cout_risque": {
-      "n": -4302883480,
-      "n1": -8355052420
+      "n": -8355052420,
+      "n1": -4302883480
      },
      "total_actif": {
-      "n": 1079053439829,
-      "n1": 1148674652683
+      "n": 1148674652683,
+      "n1": 1079053439829
      },
      "total_passif": {
-      "n": 1079053439830,
-      "n1": 1148674652683
+      "n": 1148674652683,
+      "n1": 1079053439830
      }
     },
     "lignes_lues": {
@@ -3446,16 +3557,18 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "marge": 0.39,
-     "croissance_activite": -0.0057,
-     "croissance_resultat": 0.1645,
-     "coef_exploitation": 0.4468,
-     "cout_risque_pnb": 0.0748
+     "marge": 0.333,
+     "croissance_activite": 0.0057,
+     "croissance_resultat": -0.1413,
+     "coef_exploitation": 0.4396,
+     "cout_risque_pnb": 0.1445
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260323_-_etats_financiers_-_exercice_2025_-_boa_bf.pdf",
@@ -3470,26 +3583,27 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 60576445149,
-      "n1": 57489834311
+      "n": 57489834311,
+      "n1": 60576445149
      },
      "rn": {
-      "n": 29062589535,
-      "n1": 22419223685
+      "n": 22419223685,
+      "n1": 29062589535
      },
      "charges_gen": {
-      "n": -24301686323,
-      "n1": -25686355185
+      "n": -25686355185,
+      "n1": -24301686323
      },
      "cout_risque": {
-      "n": -332173110,
-      "n1": 302883480
+      "n": 302883480,
+      "n1": -332173110
      },
      "total_actif": {
-      "n": 1098275937341,
-      "n1": 1079053439829
+      "n": 1079053439829,
+      "n1": 1098275937341
      }
     },
     "lignes_lues": {
@@ -3499,17 +3613,20 @@
      "cout_risque": "15 COUT DU RISQUE LÉ en 25 -332 173 110 -4 302 883 480",
      "total_actif": "[|__| TOTALDEL'ACTIF 1.098 275 937 341] 1 079 053 439 829"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu"
     ],
     "ratios": {
-     "marge": 0.4798,
-     "croissance_activite": 0.0537,
-     "croissance_resultat": 0.2963,
-     "coef_exploitation": 0.4012,
-     "cout_risque_pnb": 0.0055
+     "marge": 0.39,
+     "croissance_activite": -0.051,
+     "croissance_resultat": -0.2286,
+     "coef_exploitation": 0.4468,
+     "cout_risque_pnb": 0.0053
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250416_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_boa_bf.pdf",
@@ -3524,26 +3641,27 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 56645788278,
-      "n1": 60576445149
+      "n": 60576445149,
+      "n1": 56645788278
      },
      "rn": {
-      "n": 25476935672,
-      "n1": 29062589535
+      "n": 29062589535,
+      "n1": 25476935672
      },
      "charges_gen": {
-      "n": -22296348155,
-      "n1": -24301686323
+      "n": -24301686323,
+      "n1": -22296348155
      },
      "cout_risque": {
-      "n": 328015304,
-      "n1": -332173110
+      "n": -332173110,
+      "n1": 328015304
      },
      "total_actif": {
-      "n": 1163299866414,
-      "n1": 1098275937341
+      "n": 1098275937341,
+      "n1": 1163299866414
      }
     },
     "lignes_lues": {
@@ -3553,17 +3671,20 @@
      "cout_risque": "15 COUT DU RISQUE -3 328 015 304 -332 173 110",
      "total_actif": "|__| TOTALDEL'ACTIF 1 163 299 866 414] 1 098 275 937 341"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu"
     ],
     "ratios": {
-     "marge": 0.4498,
-     "croissance_activite": -0.0649,
-     "croissance_resultat": -0.1234,
-     "coef_exploitation": 0.3936,
-     "cout_risque_pnb": 0.0058
+     "marge": 0.4798,
+     "croissance_activite": 0.0694,
+     "croissance_resultat": 0.1407,
+     "coef_exploitation": 0.4012,
+     "cout_risque_pnb": 0.0055
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240301_-_etats_financiers_certifies_-_exercice_2023_-_boa_bf.pdf",
@@ -3578,30 +3699,31 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 7828241839,
-      "n1": 56645788278
+      "n": 56645788278,
+      "n1": 7828241839
      },
      "rn": {
-      "n": 21244692497,
-      "n1": 25476935672
+      "n": 25476935672,
+      "n1": 21244692497
      },
      "charges_gen": {
-      "n": -20069825655,
-      "n1": -22296348155
+      "n": -22296348155,
+      "n1": -20069825655
      },
      "cout_risque": {
-      "n": -4475652783,
-      "n1": -3328015304
+      "n": -3328015304,
+      "n1": -4475652783
      },
      "total_actif": {
-      "n": 1073229476522,
-      "n1": 1163299866414
+      "n": 1163299866414,
+      "n1": 1073229476522
      },
      "total_passif": {
-      "n": 1073229476522,
-      "n1": 1163299866414
+      "n": 1163299866414,
+      "n1": 1073229476522
      }
     },
     "lignes_lues": {
@@ -3614,20 +3736,21 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
-     "resultat net superieur au chiffre d'affaires / PNB",
      "activite qui varie de plus de 80 % : a verifier",
      "capitaux propres non publie ou non lu"
     ],
     "ratios": {
-     "marge": 2.7139,
-     "croissance_activite": -0.8618,
-     "croissance_resultat": -0.1661,
-     "coef_exploitation": 2.5638,
-     "cout_risque_pnb": 0.5717
+     "marge": 0.4498,
+     "croissance_activite": 6.2361,
+     "croissance_resultat": 0.1992,
+     "coef_exploitation": 0.3936,
+     "cout_risque_pnb": 0.0588
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/20230223_-_etats_financiers_exercice_2022_-_boa_bf.pdf",
@@ -3642,22 +3765,23 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 47367496842,
-      "n1": 50828241839
+      "n": 50828241839,
+      "n1": 47367496842
      },
      "rn": {
-      "n": 17607918915,
-      "n1": 21244692497
+      "n": 21244692497,
+      "n1": 17607918915
      },
      "charges_gen": {
-      "n": -20185571146,
-      "n1": -20069825655
+      "n": -20069825655,
+      "n1": -20185571146
      },
      "cout_risque": {
-      "n": -5275014348,
-      "n1": -4475652783
+      "n": -4475652783,
+      "n1": -5275014348
      }
     },
     "lignes_lues": {
@@ -3668,15 +3792,19 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
-    "problemes": [],
+    "problemes": [
+     "capitaux propres non publie ou non lu"
+    ],
     "ratios": {
-     "marge": 0.3717,
-     "croissance_activite": -0.0681,
-     "croissance_resultat": -0.1712,
-     "coef_exploitation": 0.4261,
-     "cout_risque_pnb": 0.1114
+     "marge": 0.418,
+     "croissance_activite": 0.0731,
+     "croissance_resultat": 0.2065,
+     "coef_exploitation": 0.3949,
+     "cout_risque_pnb": 0.0881
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220429_-_etats_financiers_exercice_2021_-_boa_bf.pdf",
@@ -3695,6 +3823,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -3716,34 +3845,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 60811,
-      "n1": 72724
+      "n": 72724,
+      "n1": 60811
      },
      "rn": {
-      "n": 26075,
-      "n1": 32044
+      "n": 32044,
+      "n1": 26075
      },
      "cp": {
-      "n": 95800,
-      "n1": 112644
+      "n": 112644,
+      "n1": 95800
      },
      "charges_gen": {
-      "n": -23147,
-      "n1": -25105
+      "n": -25105,
+      "n1": -23147
      },
      "cout_risque": {
-      "n": -4824,
-      "n1": -6792
+      "n": -6792,
+      "n1": -4824
      },
      "total_actif": {
-      "n": 938738,
-      "n1": 1075479
+      "n": 1075479,
+      "n1": 938738
      },
      "total_passif": {
-      "n": 938738,
-      "n1": 1075479
+      "n": 1075479,
+      "n1": 938738
      }
     },
     "lignes_lues": {
@@ -3757,17 +3887,18 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2722,
-     "marge": 0.4288,
-     "croissance_activite": -0.1638,
-     "croissance_resultat": -0.1863,
-     "coef_exploitation": 0.3806,
-     "cout_risque_pnb": 0.0793
+     "roe": 0.2845,
+     "marge": 0.4406,
+     "croissance_activite": 0.1959,
+     "croissance_resultat": 0.2289,
+     "coef_exploitation": 0.3452,
+     "cout_risque_pnb": 0.0934
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250402_-_etats_financiers_-_exercice_2024_-_boa_ci.pdf",
@@ -3780,34 +3911,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 47810,
-      "n1": 13001
+      "n": 13001,
+      "n1": 47810
      },
      "rn": {
-      "n": 26075,
-      "n1": 6006
+      "n": 6006,
+      "n1": 26075
      },
      "cp": {
-      "n": 81726,
-      "n1": 14075
+      "n": 14075,
+      "n1": 81726
      },
      "charges_gen": {
-      "n": -21323,
-      "n1": -23147
+      "n": -23147,
+      "n1": -21323
      },
      "cout_risque": {
-      "n": -2737,
-      "n1": -2087
+      "n": -2087,
+      "n1": -2737
      },
      "total_actif": {
-      "n": 843300,
-      "n1": 938739
+      "n": 938739,
+      "n1": 843300
      },
      "total_passif": {
-      "n": 843300,
-      "n1": 938739
+      "n": 938739,
+      "n1": 843300
      }
     },
     "lignes_lues": {
@@ -3819,21 +3951,20 @@
      "total_actif": "TOTAL DE L'ACTIF 843 300 938 739 95 439 11,3%",
      "total_passif": "TOTAL DU PASSIF 843 300 938 739 95 439 11,3%"
     },
-    "statut": "a confirmer",
+    "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
     ],
-    "problemes": [
-     "activite qui varie de plus de 80 % : a verifier"
-    ],
+    "problemes": [],
     "ratios": {
-     "roe": 0.3191,
-     "marge": 0.5454,
-     "croissance_activite": 2.6774,
-     "croissance_resultat": 3.3415,
-     "coef_exploitation": 0.446,
-     "cout_risque_pnb": 0.0572
+     "roe": 0.4267,
+     "marge": 0.462,
+     "croissance_activite": -0.7281,
+     "croissance_resultat": -0.7697,
+     "coef_exploitation": 1.7804,
+     "cout_risque_pnb": 0.1605
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240314_-_etats_financiers_-_exercice_2023_-_boa_ci.pdf",
@@ -3849,23 +3980,26 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "rn": {
-      "n": 16638,
-      "n1": 20069
+      "n": 20069,
+      "n1": 16638
      }
     },
     "lignes_lues": {
      "rn": "Resultat net 14 216 16 638 20 069"
     },
     "statut": "a confirmer",
-    "controles_ok": [],
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu",
      "chiffre d'affaires non publie ou non lu"
     ],
     "ratios": {
-     "croissance_resultat": -0.171
+     "croissance_resultat": 0.2062
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/20230405_-_etats_financiers_exercice_2022_-_boa_ci.pdf",
@@ -3880,6 +4014,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 37996,
@@ -3935,26 +4070,27 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "rn": {
-      "n": 5778294073,
-      "n1": 9123471904
+      "n": 9123471904,
+      "n1": 5778294073
      },
      "cp": {
-      "n": 40197098666,
-      "n1": 46195155867
+      "n": 46195155867,
+      "n1": 40197098666
      },
      "charges_gen": {
-      "n": 19293119055,
-      "n1": 19137414613
+      "n": 19137414613,
+      "n1": 19293119055
      },
      "cout_risque": {
-      "n": 5891859794,
-      "n1": 7303550434
+      "n": 7303550434,
+      "n1": 5891859794
      },
      "total_actif": {
-      "n": 560353600050,
-      "n1": 0
+      "n": 0,
+      "n1": 560353600050
      }
     },
     "lignes_lues": {
@@ -3964,14 +4100,17 @@
      "cout_risque": "15 |COÛT DU RISQUE 5 891 859 794 7 303 550 434",
      "total_actif": "D 1 TOTALDE L'ACTIF 77 | 560353600050 | sa1s11s0cte —"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "PNB non publie ou non lu"
     ],
     "ratios": {
-     "roe": 0.1437,
-     "croissance_resultat": -0.3667
+     "roe": 0.1975,
+     "croissance_resultat": 0.5789
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250319_-_etats_financiers_certifies_par_les_cacs_-_exercice_2024_-_boa_mali.pdf",
@@ -3984,34 +4123,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 35307377468,
-      "n1": 35519117119
+      "n": 35519117119,
+      "n1": 35307377468
      },
      "rn": {
-      "n": 2460477481,
-      "n1": 5778294073
+      "n": 5778294073,
+      "n1": 2460477481
      },
      "cp": {
-      "n": 34541828466,
-      "n1": 40197098666
+      "n": 40197098666,
+      "n1": 34541828466
      },
      "charges_gen": {
-      "n": 19328225947,
-      "n1": 19293119055
+      "n": 19293119055,
+      "n1": 19328225947
      },
      "cout_risque": {
-      "n": 5891,
-      "n1": 859794
+      "n": 859794,
+      "n1": 5891
      },
      "total_actif": {
-      "n": 576750741496,
-      "n1": 560353606059
+      "n": 560353606059,
+      "n1": 576750741496
      },
      "total_passif": {
-      "n": 576750741496,
-      "n1": 560353606059
+      "n": 560353606059,
+      "n1": 576750741496
      }
     },
     "lignes_lues": {
@@ -4025,15 +4165,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.0712,
-     "marge": 0.0697,
-     "croissance_activite": -0.006,
-     "croissance_resultat": -0.5742,
-     "coef_exploitation": 0.5474,
+     "roe": 0.1437,
+     "marge": 0.1627,
+     "croissance_activite": 0.006,
+     "croissance_resultat": 1.3484,
+     "coef_exploitation": 0.5432,
      "cout_risque_pnb": 0.0
     },
     "exercice": 2023,
@@ -4047,6 +4189,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 35407562442,
@@ -4103,34 +4246,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 32348310259,
-      "n1": 35407562442
+      "n": 35407562442,
+      "n1": 32348310259
      },
      "rn": {
-      "n": 528378608,
-      "n1": 2095292328
+      "n": 2095292328,
+      "n1": 528378608
      },
      "cp": {
-      "n": 26839742203,
-      "n1": 32186115601
+      "n": 32186115601,
+      "n1": 26839742203
      },
      "charges_gen": {
-      "n": 17158820980,
-      "n1": 19133867702
+      "n": 19133867702,
+      "n1": 17158820980
      },
      "cout_risque": {
-      "n": 14326516061,
-      "n1": 12200388291
+      "n": 12200388291,
+      "n1": 14326516061
      },
      "total_actif": {
-      "n": 579477949704,
-      "n1": 581464087673
+      "n": 581464087673,
+      "n1": 579477949704
      },
      "total_passif": {
-      "n": 579477949704,
-      "n1": 581464087673
+      "n": 581464087673,
+      "n1": 579477949704
      }
     },
     "lignes_lues": {
@@ -4144,16 +4288,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.0197,
-     "marge": 0.0163,
-     "croissance_activite": -0.0864,
-     "croissance_resultat": -0.7478,
-     "coef_exploitation": 0.5304,
-     "cout_risque_pnb": 0.4429
+     "roe": 0.0651,
+     "marge": 0.0592,
+     "croissance_activite": 0.0946,
+     "croissance_resultat": 2.9655,
+     "coef_exploitation": 0.5404,
+     "cout_risque_pnb": 0.3446
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220322_-_etats_financiers_exercice_2021_-_boa_ml.pdf",
@@ -4172,10 +4317,13 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
-    "controles_ok": [],
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
+    ],
     "problemes": [
      "resultat net introuvable",
      "capitaux propres non publie ou non lu",
@@ -4183,8 +4331,8 @@
     ],
     "ratios": {},
     "exercice": 2025,
-    "url": "https://www.brvm.org/sites/default/files/20260401_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_exercice_2025_-_boa_ng.pdf",
-    "titre": "BOA NG : Rapport des Commissaires Aux Comptes sur les Etats Financiers annuels - Exercice 2025",
+    "url": "https://www.brvm.org/sites/default/files/20260401_-_rapport_des_cac_sur_les_conventions_reglementees_et_les_credits_accordes_aux_dirigeants_de_la_banque_-_exercice_2025_-_boa_ng.pdf",
+    "titre": "BOA NG : Rapport des Commissaires Aux Comptes sur les Conventions règlementées et les crédits accordés aux dirigeants de la banque - Exercice 2025",
     "lu_le": "2026-11-22"
    },
    "2023": {
@@ -4193,6 +4341,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 24623850858,
@@ -4238,6 +4387,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 240995106003,
@@ -4279,6 +4429,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 24254744453,
@@ -4339,30 +4490,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 49666,
-      "n1": 51926
+      "n": 51926,
+      "n1": 49666
      },
      "rn": {
-      "n": 19984,
-      "n1": 21905
+      "n": 21905,
+      "n1": 19984
      },
      "cp": {
-      "n": 88621,
-      "n1": 96526
+      "n": 96526,
+      "n1": 88621
      },
      "charges_gen": {
-      "n": -19688,
-      "n1": -20167
+      "n": -20167,
+      "n1": -19688
      },
      "total_actif": {
-      "n": 783173,
-      "n1": 836158
+      "n": 836158,
+      "n1": 783173
      },
      "total_passif": {
-      "n": 783173,
-      "n1": 836158
+      "n": 836158,
+      "n1": 783173
      }
     },
     "lignes_lues": {
@@ -4375,15 +4527,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2255,
-     "marge": 0.4024,
-     "croissance_activite": -0.0435,
-     "croissance_resultat": -0.0877,
-     "coef_exploitation": 0.3964
+     "roe": 0.2269,
+     "marge": 0.4219,
+     "croissance_activite": 0.0455,
+     "croissance_resultat": 0.0961,
+     "coef_exploitation": 0.3884
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260317_-_etats_financiers_-_exercice_2025_-_boa_sn.pdf",
@@ -4399,23 +4553,27 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "rn": {
-      "n": 17022,
-      "n1": 19984
+      "n": 19984,
+      "n1": 17022
      }
     },
     "lignes_lues": {
      "rn": "20 RESULTAT NET 17 022 19984"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu",
      "chiffre d'affaires non publie ou non lu"
     ],
     "ratios": {
-     "croissance_resultat": -0.1482
+     "croissance_resultat": 0.174
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250319_-_etats_financiers_certifies_par_les_cacs_-_exercice_2024_-_boa_senegal.pdf",
@@ -4428,30 +4586,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 40503,
-      "n1": 45426
+      "n": 45426,
+      "n1": 40503
      },
      "rn": {
-      "n": 15681,
-      "n1": 17022
+      "n": 17022,
+      "n1": 15681
      },
      "cp": {
-      "n": 64615,
-      "n1": 76637
+      "n": 76637,
+      "n1": 64615
      },
      "charges_gen": {
-      "n": -16260,
-      "n1": -20702
+      "n": -20702,
+      "n1": -16260
      },
      "total_actif": {
-      "n": 696306,
-      "n1": 758148
+      "n": 758148,
+      "n1": 696306
      },
      "total_passif": {
-      "n": 696306,
-      "n1": 758148
+      "n": 758148,
+      "n1": 696306
      }
     },
     "lignes_lues": {
@@ -4464,15 +4623,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2427,
-     "marge": 0.3872,
-     "croissance_activite": -0.1084,
-     "croissance_resultat": -0.0788,
-     "coef_exploitation": 0.4015
+     "roe": 0.2221,
+     "marge": 0.3747,
+     "croissance_activite": 0.1215,
+     "croissance_resultat": 0.0855,
+     "coef_exploitation": 0.4557
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240403_-_etats_financiers_certifies_-_exercice_2023_-_boa_senegal.pdf",
@@ -4485,26 +4646,27 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 35727,
-      "n1": 40503
+      "n": 40503,
+      "n1": 35727
      },
      "rn": {
-      "n": 11070,
-      "n1": 15581
+      "n": 15581,
+      "n1": 11070
      },
      "cp": {
-      "n": 53327,
-      "n1": 64615
+      "n": 64615,
+      "n1": 53327
      },
      "charges_gen": {
-      "n": -15829,
-      "n1": -16260
+      "n": -16260,
+      "n1": -15829
      },
      "total_actif": {
-      "n": 626289,
-      "n1": 696306
+      "n": 696306,
+      "n1": 626289
      }
     },
     "lignes_lues": {
@@ -4514,15 +4676,18 @@
      "charges_gen": "12 [Charges générales d'exploitation - 15829 |- 16 260",
      "total_actif": "TOTAL DE L'ACTIF 626 289 696 306"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2076,
-     "marge": 0.3098,
-     "croissance_activite": -0.1179,
-     "croissance_resultat": -0.2895,
-     "coef_exploitation": 0.4431
+     "roe": 0.2411,
+     "marge": 0.3847,
+     "croissance_activite": 0.1337,
+     "croissance_resultat": 0.4075,
+     "coef_exploitation": 0.4015
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/20230310_-_etats_financiers_certifies_2022_-_boa_sn.pdf",
@@ -4535,30 +4700,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 29997,
-      "n1": 35727
+      "n": 35727,
+      "n1": 29997
      },
      "rn": {
-      "n": 7667,
-      "n1": 11070
+      "n": 11070,
+      "n1": 7667
      },
      "cp": {
-      "n": 46551,
-      "n1": 53327
+      "n": 53327,
+      "n1": 46551
      },
      "charges_gen": {
-      "n": -16612,
-      "n1": -15829
+      "n": -15829,
+      "n1": -16612
      },
      "total_actif": {
-      "n": 561588,
-      "n1": 626289
+      "n": 626289,
+      "n1": 561588
      },
      "total_passif": {
-      "n": 561588,
-      "n1": 626289
+      "n": 626289,
+      "n1": 561588
      }
     },
     "lignes_lues": {
@@ -4571,15 +4737,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1647,
-     "marge": 0.2556,
-     "croissance_activite": -0.1604,
-     "croissance_resultat": -0.3074,
-     "coef_exploitation": 0.5538
+     "roe": 0.2076,
+     "marge": 0.3098,
+     "croissance_activite": 0.191,
+     "croissance_resultat": 0.4439,
+     "coef_exploitation": 0.4431
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220330_-_etats_financiers_exercice_2021_-_boa_sn.pdf",
@@ -4596,6 +4764,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 21263067001,
@@ -4651,6 +4820,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 19125318524,
@@ -4704,6 +4874,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 17752564089,
@@ -4772,6 +4943,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 16481281370,
@@ -4830,6 +5002,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 19036863791,
@@ -4889,6 +5062,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -4913,6 +5087,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 131000,
@@ -4953,6 +5128,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "charges_gen": {
       "n": 34332,
@@ -4977,54 +5153,61 @@
    },
    "2022": {
     "banque": true,
-    "pages_ocr": 0,
-    "manquants": [
-     "resultat net"
-    ],
+    "pages_ocr": 3,
+    "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 90298,
-      "n1": 111106
+      "n": 111106,
+      "n1": 90298
+     },
+     "rn": {
+      "n": 56478,
+      "n1": 46549
      },
      "cp": {
-      "n": 189815,
-      "n1": 228513
+      "n": 228513,
+      "n1": 189815
      },
-     "cout_risque": {
-      "n": 11469,
-      "n1": 14237
+     "charges_gen": {
+      "n": 32691,
+      "n1": 29336
      },
      "total_actif": {
-      "n": 952977,
-      "n1": 0
+      "n": 2289034,
+      "n1": 1952977
      },
      "total_passif": {
-      "n": 1952977,
-      "n1": 2289034
+      "n": 2289034,
+      "n1": 1952977
      }
     },
     "lignes_lues": {
-     "pnb": "10                           PRODUIT NET BANCAIRE                                   90 298         111 106",
-     "cp": "I     CAPITAUX PROPRES ET RESSOURCES ASSIMILEES                                            189 815                   228 513",
-     "cout_risque": "15    COUT DU RISQUE                                                                11 469          14 237",
-     "total_actif": "TOTAL DE L'ACTIF                                    'l 952 977                 0y,",
-     "total_passif": "TOTAL DU PASSIF                                        1 952 977                  2 289 034"
+     "pnb": "PRODUIT NET BANCAIRE                                  90 298          111 106",
+     "rn": "2A                                  RESULTAT NET                                       46 549           56 478",
+     "cp": "I    CAPITAUX PROPRES ET RESSOURCES ASSIMILEES                                 189 815          228 513",
+     "charges_gen": "12    CHARGES GENERALES D'EXPLOITATION                                                 29 336           32 691",
+     "total_actif": "TOTAL DE L'ACTIF                                      1 952 977     2 289 034",
+     "total_passif": "TOTAL DU PASSIF                                    1 952 977        2 289 034"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
-    "problemes": [
-     "total actif different du total passif",
-     "resultat net introuvable"
+    "statut": "valide",
+    "controles_ok": [
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)"
     ],
+    "problemes": [],
     "ratios": {
-     "croissance_activite": -0.1873,
-     "cout_risque_pnb": 0.127
+     "roe": 0.2472,
+     "marge": 0.5083,
+     "croissance_activite": 0.2304,
+     "croissance_resultat": 0.2133,
+     "coef_exploitation": 0.2942
     },
     "exercice": 2022,
-    "url": "https://www.brvm.org/sites/default/files/20230427_-_etats_financiers_exercice_2022_-_coris_bank_international_bf.pdf",
-    "titre": "CORIS BANK INTERNATIONAL BURKINA FASO : Etats financiers Exercice 2022",
+    "url": "https://www.brvm.org/sites/default/files/20230427_-_rapport_des_commissaires_aux_comptes_exercice_2022_-_coris_bank_international_bf.pdf",
+    "titre": "CORIS BANK INTERNATIONAL BURKINA FASO : Rapport des Commissaires Aux Comptes Exercice 2022",
     "lu_le": "2026-11-22"
    }
   },
@@ -5038,6 +5221,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 180544660176,
@@ -5067,6 +5251,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 158313246307,
@@ -5133,6 +5318,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 54627456,
@@ -5171,6 +5357,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 5533563559,
@@ -5202,6 +5389,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 119731739139,
@@ -5258,6 +5446,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 302320,
@@ -5313,6 +5502,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 263294,
@@ -5368,6 +5558,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 257218,
@@ -5423,6 +5614,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 238854,
@@ -5477,6 +5669,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 231783,
@@ -5531,22 +5724,23 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 122316,
-      "n1": 132725
+      "n": 132725,
+      "n1": 122316
      },
      "rn": {
-      "n": 57477,
-      "n1": 63482
+      "n": 63482,
+      "n1": 57477
      },
      "cp": {
-      "n": 199352,
-      "n1": 218573
+      "n": 218573,
+      "n1": 199352
      },
      "cout_risque": {
-      "n": 1799,
-      "n1": 1136
+      "n": 1136,
+      "n1": 1799
      }
     },
     "lignes_lues": {
@@ -5557,15 +5751,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2883,
-     "marge": 0.4699,
-     "croissance_activite": -0.0784,
-     "croissance_resultat": -0.0946,
-     "cout_risque_pnb": 0.0147
+     "roe": 0.2904,
+     "marge": 0.4783,
+     "croissance_activite": 0.0851,
+     "croissance_resultat": 0.1045,
+     "cout_risque_pnb": 0.0086
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260414_-_rapport_dactivites_et_etats_financiers_-_exercice_2025_-_ecobank_ci.pdf",
@@ -5578,30 +5774,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 110189,
-      "n1": 12127
+      "n": 12127,
+      "n1": 110189
      },
      "rn": {
-      "n": 48071,
-      "n1": 57477
+      "n": 57477,
+      "n1": 48071
      },
      "cp": {
-      "n": 178208,
-      "n1": 199352
+      "n": 199352,
+      "n1": 178208
      },
      "cout_risque": {
-      "n": -5933,
-      "n1": -2935
+      "n": -2935,
+      "n1": -5933
      },
      "total_actif": {
-      "n": 1953299,
-      "n1": 2050681
+      "n": 2050681,
+      "n1": 1953299
      },
      "total_passif": {
-      "n": 1953299,
-      "n1": 2050681
+      "n": 2050681,
+      "n1": 1953299
      }
     },
     "lignes_lues": {
@@ -5614,18 +5811,21 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
+     "resultat net superieur au chiffre d'affaires / PNB",
      "activite qui varie de plus de 80 % : a verifier"
     ],
     "ratios": {
-     "roe": 0.2697,
-     "marge": 0.4363,
-     "croissance_activite": 8.0863,
-     "croissance_resultat": -0.1636,
-     "cout_risque_pnb": 0.0538
+     "roe": 0.2883,
+     "marge": 4.7396,
+     "croissance_activite": -0.8899,
+     "croissance_resultat": 0.1957,
+     "cout_risque_pnb": 0.242
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250325_-_rapport_dactivites_annuel_-_exercice_2024_-_ecobank_ci_annule_et_remplace_le_precedent.pdf",
@@ -5638,30 +5838,31 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 99155,
-      "n1": 11034
+      "n": 11034,
+      "n1": 99155
      },
      "rn": {
-      "n": 44598,
-      "n1": 48071
+      "n": 48071,
+      "n1": 44598
      },
      "cp": {
-      "n": 163719,
-      "n1": 178208
+      "n": 178208,
+      "n1": 163719
      },
      "cout_risque": {
-      "n": 5933,
-      "n1": 5782
+      "n": 5782,
+      "n1": 5933
      },
      "total_actif": {
-      "n": 1901235,
-      "n1": 1953299
+      "n": 1953299,
+      "n1": 1901235
      },
      "total_passif": {
-      "n": 1901235,
-      "n1": 1953299
+      "n": 1953299,
+      "n1": 1901235
      }
     },
     "lignes_lues": {
@@ -5674,18 +5875,21 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
+     "resultat net superieur au chiffre d'affaires / PNB",
      "activite qui varie de plus de 80 % : a verifier"
     ],
     "ratios": {
-     "roe": 0.2724,
-     "marge": 0.4498,
-     "croissance_activite": 7.9863,
-     "croissance_resultat": -0.0722,
-     "cout_risque_pnb": 0.0598
+     "roe": 0.2697,
+     "marge": 4.3566,
+     "croissance_activite": -0.8887,
+     "croissance_resultat": 0.0779,
+     "cout_risque_pnb": 0.524
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240328_-_resultats_financiers_-_exercice_2023_-_ecobank_ci.pdf",
@@ -5698,22 +5902,23 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 99155,
-      "n1": 90545
+      "n": 90545,
+      "n1": 99155
      },
      "rn": {
-      "n": 34304,
-      "n1": 44598
+      "n": 44598,
+      "n1": 34304
      },
      "cp": {
-      "n": 144829,
-      "n1": 163719
+      "n": 163719,
+      "n1": 144829
      },
      "cout_risque": {
-      "n": -5782,
-      "n1": -1974
+      "n": -1974,
+      "n1": -5782
      }
     },
     "lignes_lues": {
@@ -5722,15 +5927,18 @@
      "cp": "9 CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 144 829 163 719",
      "cout_risque": "Coût du risque - 5 782 - 1974 -51,7% 6 192"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2369,
-     "marge": 0.346,
-     "croissance_activite": 0.0951,
-     "croissance_resultat": -0.2308,
-     "cout_risque_pnb": 0.0583
+     "roe": 0.2724,
+     "marge": 0.4926,
+     "croissance_activite": -0.0868,
+     "croissance_resultat": 0.3001,
+     "cout_risque_pnb": 0.0218
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/20230405_-_etats_financiers_exercice_2022_-_ecobank_ci.pdf",
@@ -5743,6 +5951,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 86521,
@@ -5799,6 +6008,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 2086073,
@@ -5853,6 +6063,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 2063666,
@@ -5907,6 +6118,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 1861797,
@@ -5959,6 +6171,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 1679765,
@@ -6015,6 +6228,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 32108628,
@@ -6069,6 +6283,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 30694517,
@@ -6126,6 +6341,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 38214973,
@@ -6177,6 +6393,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 45464126,
@@ -6232,6 +6449,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 41473743,
@@ -6285,6 +6503,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 57100,
@@ -6349,6 +6568,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 102544,
@@ -6395,6 +6615,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 2036626234,
@@ -6431,6 +6652,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 6744255774,
@@ -6476,6 +6698,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 8525436230,
@@ -6521,6 +6744,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 8988063184,
@@ -6566,6 +6790,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 8874246101,
@@ -6611,30 +6836,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 97819,
-      "n1": 112928
+      "n": 112928,
+      "n1": 97819
      },
      "rn": {
-      "n": 38112,
-      "n1": 40712
+      "n": 40712,
+      "n1": 38112
      },
      "cp": {
-      "n": 211371,
-      "n1": 233303
+      "n": 233303,
+      "n1": 211371
      },
      "charges_gen": {
-      "n": -49945,
-      "n1": -53554
+      "n": -53554,
+      "n1": -49945
      },
      "total_actif": {
-      "n": 2510429,
-      "n1": 3073062
+      "n": 3073062,
+      "n1": 2510429
      },
      "total_passif": {
-      "n": 2510429,
-      "n1": 3073062
+      "n": 3073062,
+      "n1": 2510429
      }
     },
     "lignes_lues": {
@@ -6647,16 +6873,18 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1803,
-     "marge": 0.3896,
-     "croissance_activite": -0.1338,
-     "croissance_resultat": -0.0639,
-     "coef_exploitation": 0.5106
+     "roe": 0.1745,
+     "marge": 0.3605,
+     "croissance_activite": 0.1545,
+     "croissance_resultat": 0.0682,
+     "coef_exploitation": 0.4742
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260513_-_etats_financiers_et_communique_-_exercice_2025_-_nsia_banque_ci.pdf",
@@ -6669,30 +6897,31 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 91002,
-      "n1": 97819
+      "n": 97819,
+      "n1": 91002
      },
      "rn": {
-      "n": 34813,
-      "n1": 38112
+      "n": 38112,
+      "n1": 34813
      },
      "cp": {
-      "n": 189719,
-      "n1": 215330
+      "n": 215330,
+      "n1": 189719
      },
      "charges_gen": {
-      "n": -45811,
-      "n1": -49945
+      "n": -49945,
+      "n1": -45811
      },
      "total_actif": {
-      "n": 2037064,
-      "n1": 2514388
+      "n": 2514388,
+      "n1": 2037064
      },
      "total_passif": {
-      "n": 2037064,
-      "n1": 2514388
+      "n": 2514388,
+      "n1": 2037064
      }
     },
     "lignes_lues": {
@@ -6705,16 +6934,18 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1835,
-     "marge": 0.3826,
-     "croissance_activite": -0.0697,
-     "croissance_resultat": -0.0866,
-     "coef_exploitation": 0.5034
+     "roe": 0.177,
+     "marge": 0.3896,
+     "croissance_activite": 0.0749,
+     "croissance_resultat": 0.0948,
+     "coef_exploitation": 0.5106
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250325_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_nsia_banque_ci.pdf",
@@ -6727,34 +6958,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 80105,
-      "n1": 91002
+      "n": 91002,
+      "n1": 80105
      },
      "rn": {
-      "n": 32382,
-      "n1": 34813
+      "n": 34813,
+      "n1": 32382
      },
      "cp": {
-      "n": 164905,
-      "n1": 189719
+      "n": 189719,
+      "n1": 164905
      },
      "charges_gen": {
-      "n": -43467,
-      "n1": -45811
+      "n": -45811,
+      "n1": -43467
      },
      "cout_risque": {
-      "n": -4152,
-      "n1": -3376
+      "n": -3376,
+      "n1": -4152
      },
      "total_actif": {
-      "n": 1885056,
-      "n1": 2037064
+      "n": 2037064,
+      "n1": 1885056
      },
      "total_passif": {
-      "n": 1885056,
-      "n1": 2037064
+      "n": 2037064,
+      "n1": 1885056
      }
     },
     "lignes_lues": {
@@ -6768,17 +7000,19 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1964,
-     "marge": 0.4042,
-     "croissance_activite": -0.1197,
-     "croissance_resultat": -0.0698,
-     "coef_exploitation": 0.5426,
-     "cout_risque_pnb": 0.0518
+     "roe": 0.1835,
+     "marge": 0.3826,
+     "croissance_activite": 0.136,
+     "croissance_resultat": 0.0751,
+     "coef_exploitation": 0.5034,
+     "cout_risque_pnb": 0.0371
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240328_-_etats_financiers_-_exercice_2023_-_nsia_banque_ci.pdf",
@@ -6791,34 +7025,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 76622,
-      "n1": 80105
+      "n": 80105,
+      "n1": 76622
      },
      "rn": {
-      "n": 23713,
-      "n1": 32382
+      "n": 32382,
+      "n1": 23713
      },
      "cp": {
-      "n": 132524,
-      "n1": 164905
+      "n": 164905,
+      "n1": 132524
      },
      "charges_gen": {
-      "n": -41417,
-      "n1": -43467
+      "n": -43467,
+      "n1": -41417
      },
      "cout_risque": {
-      "n": -6048,
-      "n1": -4152
+      "n": -4152,
+      "n1": -6048
      },
      "total_actif": {
-      "n": 1644547,
-      "n1": 1885056
+      "n": 1885056,
+      "n1": 1644547
      },
      "total_passif": {
-      "n": 1644547,
-      "n1": 1885056
+      "n": 1885056,
+      "n1": 1644547
      }
     },
     "lignes_lues": {
@@ -6832,17 +7067,19 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.1789,
-     "marge": 0.3095,
-     "croissance_activite": -0.0435,
-     "croissance_resultat": -0.2677,
-     "coef_exploitation": 0.5405,
-     "cout_risque_pnb": 0.0789
+     "roe": 0.1964,
+     "marge": 0.4042,
+     "croissance_activite": 0.0455,
+     "croissance_resultat": 0.3656,
+     "coef_exploitation": 0.5426,
+     "cout_risque_pnb": 0.0518
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/20230331_-_etats_financiers_exercice_2022_-_nsia_banque_ci.pdf",
@@ -6855,34 +7092,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 71364,
-      "n1": 76622
+      "n": 76622,
+      "n1": 71364
      },
      "rn": {
-      "n": 7201,
-      "n1": 23713
+      "n": 23713,
+      "n1": 7201
      },
      "cp": {
-      "n": 108810,
-      "n1": 132524
+      "n": 132524,
+      "n1": 108810
      },
      "charges_gen": {
-      "n": -40921,
-      "n1": -41417
+      "n": -41417,
+      "n1": -40921
      },
      "cout_risque": {
-      "n": -16058,
-      "n1": -6048
+      "n": -6048,
+      "n1": -16058
      },
      "total_actif": {
-      "n": 1549535,
-      "n1": 1644547
+      "n": 1644547,
+      "n1": 1549535
      },
      "total_passif": {
-      "n": 1549535,
-      "n1": 1644547
+      "n": 1644547,
+      "n1": 1549535
      }
     },
     "lignes_lues": {
@@ -6896,17 +7134,19 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.0662,
-     "marge": 0.1009,
-     "croissance_activite": -0.0686,
-     "croissance_resultat": -0.6963,
-     "coef_exploitation": 0.5734,
-     "cout_risque_pnb": 0.225
+     "roe": 0.1789,
+     "marge": 0.3095,
+     "croissance_activite": 0.0737,
+     "croissance_resultat": 2.293,
+     "coef_exploitation": 0.5405,
+     "cout_risque_pnb": 0.0789
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220512_-_etats_financiers_-_exercice_2021_-_nsia_banque_ci_annule_et_remplace_le_precedent.pdf",
@@ -6923,6 +7163,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 233261162741,
@@ -6968,6 +7209,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 220113267165,
@@ -7013,6 +7255,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 203618,
@@ -7032,8 +7275,10 @@
      "rn": "Ecarts de conversion Actif 121 233 860Résultat net de l'exercice 16 556 698 463",
      "ebe": "Excédent Brut d'Exploitation 34 264 339 190"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu"
     ],
@@ -7056,6 +7301,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 206734071633,
@@ -7075,8 +7321,10 @@
      "rn": "Ecarts de conversion Actif 101,318,643 0Résultat net de l'exercice 16,627,044,028 21,268,135,622",
      "ebe": "Excédent Brut d'Exploitation 29,084,160,755 38,669,759,777"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu"
     ],
@@ -7099,6 +7347,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 195188462419,
@@ -7119,7 +7368,9 @@
      "ebe": "Excédent Brut d'Exploitation 38,669,759,777"
     },
     "statut": "a confirmer",
-    "controles_ok": [],
+    "controles_ok": [
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "activite qui varie de plus de 80 % : a verifier",
      "capitaux propres non publie ou non lu"
@@ -7143,6 +7394,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 146176657128,
@@ -7184,7 +7436,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -7206,6 +7459,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 139154,
@@ -7243,7 +7497,8 @@
     "statut": "valide",
     "controles_ok": [
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -7268,6 +7523,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -7291,6 +7547,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 1008,
@@ -7329,6 +7586,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -7352,6 +7610,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1197100,
@@ -7394,6 +7653,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1084100,
@@ -7438,6 +7698,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1016500,
@@ -7487,6 +7748,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 965025,
@@ -7536,6 +7798,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 186609,
@@ -7597,6 +7860,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 0,
@@ -7606,8 +7870,10 @@
     "lignes_lues": {
      "rn": "Impôts différés relatifs aux éléments qui seront reclassés ultérieurement en résultat net 0 0"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu",
      "chiffre d'affaires non publie ou non lu"
@@ -7627,6 +7893,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 215280,
@@ -7663,7 +7930,8 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
      "resultat net qui varie enormement : a verifier"
@@ -7687,6 +7955,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 222431,
@@ -7723,7 +7992,8 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
      "resultat net incoherent avec les capitaux propres",
@@ -7749,6 +8019,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 187315,
@@ -7790,7 +8061,8 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
      "total actif different du total passif",
@@ -7819,6 +8091,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 197629996,
@@ -7874,6 +8147,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 172182502,
@@ -7929,6 +8203,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 232712921927,
@@ -7983,6 +8258,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 195659428,
@@ -8035,6 +8311,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -8056,6 +8333,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 74676306247,
@@ -8120,6 +8398,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 54627456,
@@ -8166,6 +8445,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 70092374932,
@@ -8208,7 +8488,8 @@
     "statut": "valide",
     "controles_ok": [
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -8230,6 +8511,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 65019,
@@ -8265,7 +8547,9 @@
      "total_passif": "Autres produits HAO                      0             0       Total Passif circulant           24 218   13 871                             "
     },
     "statut": "a confirmer",
-    "controles_ok": [],
+    "controles_ok": [
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "total actif different du total passif"
     ],
@@ -8291,6 +8575,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 5735,
@@ -8346,6 +8631,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -8369,6 +8655,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 3567,
@@ -8424,6 +8711,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 80568589,
@@ -8474,6 +8762,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -8497,6 +8786,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 68134694,
@@ -8545,6 +8835,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 68635111,
@@ -8594,6 +8885,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 62497301147,
@@ -8644,6 +8936,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": true,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 189400000000,
@@ -8660,7 +8953,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "chiffres repris du communique officiel (croissance seulement)"
+     "chiffres repris du communique officiel (croissance seulement)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -8680,6 +8974,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 172235053,
@@ -8712,7 +9007,8 @@
     "statut": "a confirmer",
     "controles_ok": [
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
      "resultat net qui varie enormement : a verifier",
@@ -8737,6 +9033,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 175458474,
@@ -8794,6 +9091,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 5375,
@@ -8834,6 +9132,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 135513686,
@@ -8889,6 +9188,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 92004268,
@@ -8935,6 +9235,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 85643038,
@@ -8980,6 +9281,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 82623385,
@@ -9027,6 +9329,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -9050,6 +9353,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 88721263,
@@ -9094,22 +9398,23 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 263207,
-      "n1": 276048
+      "n": 276048,
+      "n1": 263207
      },
      "rn": {
-      "n": 101228,
-      "n1": 101352
+      "n": 101352,
+      "n1": 101228
      },
      "cp": {
-      "n": 451721,
-      "n1": 495113
+      "n": 495113,
+      "n1": 451721
      },
      "charges_gen": {
-      "n": -87741,
-      "n1": -94052
+      "n": -94052,
+      "n1": -87741
      }
     },
     "lignes_lues": {
@@ -9120,15 +9425,17 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2241,
-     "marge": 0.3846,
-     "croissance_activite": -0.0465,
-     "croissance_resultat": -0.0012,
-     "coef_exploitation": 0.3334
+     "roe": 0.2047,
+     "marge": 0.3672,
+     "croissance_activite": 0.0488,
+     "croissance_resultat": 0.0012,
+     "coef_exploitation": 0.3407
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260421_-_rapport_dactivites_annuel_et_etats_financiers_-_exercice_2025_-_societe_generale_ci_annule_et_remplace_le_precedent.pdf",
@@ -9141,26 +9448,27 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 253286,
-      "n1": 263207
+      "n": 263207,
+      "n1": 253286
      },
      "rn": {
-      "n": 97230,
-      "n1": 101228
+      "n": 101228,
+      "n1": 97230
      },
      "cp": {
-      "n": 403973,
-      "n1": 451721
+      "n": 451721,
+      "n1": 403973
      },
      "charges_gen": {
-      "n": -91125,
-      "n1": -87741
+      "n": -87741,
+      "n1": -91125
      },
      "cout_risque": {
-      "n": -27654,
-      "n1": -36235
+      "n": -36235,
+      "n1": -27654
      }
     },
     "lignes_lues": {
@@ -9172,16 +9480,18 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2407,
-     "marge": 0.3839,
-     "croissance_activite": -0.0377,
-     "croissance_resultat": -0.0395,
-     "coef_exploitation": 0.3598,
-     "cout_risque_pnb": 0.1092
+     "roe": 0.2241,
+     "marge": 0.3846,
+     "croissance_activite": 0.0392,
+     "croissance_resultat": 0.0411,
+     "coef_exploitation": 0.3334,
+     "cout_risque_pnb": 0.1377
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250207_-_rapport_dactivites_annuel_-_exercice_2024_-_societe_generale_ci.pdf",
@@ -9194,26 +9504,27 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 215101,
-      "n1": 253286
+      "n": 253286,
+      "n1": 215101
      },
      "rn": {
-      "n": 74612,
-      "n1": 97230
+      "n": 97230,
+      "n1": 74612
      },
      "cp": {
-      "n": 345011,
-      "n1": 403973
+      "n": 403973,
+      "n1": 345011
      },
      "charges_gen": {
-      "n": -86213,
-      "n1": -91125
+      "n": -91125,
+      "n1": -86213
      },
      "cout_risque": {
-      "n": -28816,
-      "n1": -27654
+      "n": -27654,
+      "n1": -28816
      }
     },
     "lignes_lues": {
@@ -9225,16 +9536,18 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "resultat net identique sur deux lignes differentes"
+     "resultat net identique sur deux lignes differentes",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2163,
-     "marge": 0.3469,
-     "croissance_activite": -0.1508,
-     "croissance_resultat": -0.2326,
-     "coef_exploitation": 0.4008,
-     "cout_risque_pnb": 0.134
+     "roe": 0.2407,
+     "marge": 0.3839,
+     "croissance_activite": 0.1775,
+     "croissance_resultat": 0.3031,
+     "coef_exploitation": 0.3598,
+     "cout_risque_pnb": 0.1092
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240209_-_rapport_dactivites_annuel_-_exercice_2023_-_societe_generale_ci.pdf",
@@ -9247,6 +9560,7 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "pnb": {
       "n": 164062,
@@ -9304,6 +9618,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 174600707830,
@@ -9361,6 +9676,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 550696009519,
@@ -9416,6 +9732,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 488901792280,
@@ -9471,6 +9788,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 366163189012,
@@ -9527,6 +9845,7 @@
     ],
     "outil": "pdftotext",
     "communique": true,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
       "n": 109000000000,
@@ -9543,7 +9862,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "chiffres repris du communique officiel (croissance seulement)"
+     "chiffres repris du communique officiel (croissance seulement)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -9561,34 +9881,35 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 95600,
-      "n1": 102800
+      "n": 102800,
+      "n1": 95600
      },
      "rn": {
-      "n": 43513,
-      "n1": 50234
+      "n": 50234,
+      "n1": 43513
      },
      "cp": {
-      "n": 164402,
-      "n1": 187136
+      "n": 187136,
+      "n1": 164402
      },
      "charges_gen": {
-      "n": -34900,
-      "n1": -36892
+      "n": -36892,
+      "n1": -34900
      },
      "cout_risque": {
-      "n": -8000,
-      "n1": -5200
+      "n": -5200,
+      "n1": -8000
      },
      "total_actif": {
-      "n": 1605875,
-      "n1": 1685249
+      "n": 1685249,
+      "n1": 1605875
      },
      "total_passif": {
-      "n": 1605875,
-      "n1": 1685249
+      "n": 1685249,
+      "n1": 1605875
      }
     },
     "lignes_lues": {
@@ -9602,17 +9923,19 @@
     },
     "statut": "valide",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "roe": 0.2647,
-     "marge": 0.4552,
-     "croissance_activite": -0.07,
-     "croissance_resultat": -0.1338,
-     "coef_exploitation": 0.3651,
-     "cout_risque_pnb": 0.0837
+     "roe": 0.2684,
+     "marge": 0.4887,
+     "croissance_activite": 0.0753,
+     "croissance_resultat": 0.1545,
+     "coef_exploitation": 0.3589,
+     "cout_risque_pnb": 0.0506
     },
     "exercice": 2024,
     "url": "https://www.brvm.org/sites/default/files/20250305_-_rapport_dactivites_annuel_-_exercice_2024_-_sib_ci.pdf",
@@ -9625,34 +9948,35 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 83500,
-      "n1": 95600
+      "n": 95600,
+      "n1": 83500
      },
      "rn": {
-      "n": 40090,
-      "n1": 43513
+      "n": 43513,
+      "n1": 40090
      },
      "cp": {
-      "n": 148389,
-      "n1": 16013
+      "n": 16013,
+      "n1": 148389
      },
      "charges_gen": {
-      "n": -32613,
-      "n1": -34900
+      "n": -34900,
+      "n1": -32613
      },
      "cout_risque": {
-      "n": -7992,
-      "n1": -5716
+      "n": -5716,
+      "n1": -7992
      },
      "total_actif": {
-      "n": 1499554,
-      "n1": 1605875
+      "n": 1605875,
+      "n1": 1499554
      },
      "total_passif": {
-      "n": 1499554,
-      "n1": 1605875
+      "n": 1605875,
+      "n1": 1499554
      }
     },
     "lignes_lues": {
@@ -9664,19 +9988,23 @@
      "total_actif": "TOTAL ACTIFS                                              1 499 554    1 605 875     106 321        7%",
      "total_passif": "TOTAL PASSIFS                                             1 499 554   1 605 875      106 321        7%"
     },
-    "statut": "valide",
+    "statut": "a confirmer",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
-    "problemes": [],
+    "problemes": [
+     "resultat net incoherent avec les capitaux propres"
+    ],
     "ratios": {
-     "roe": 0.2702,
-     "marge": 0.4801,
-     "croissance_activite": -0.1266,
-     "croissance_resultat": -0.0787,
-     "coef_exploitation": 0.3906,
-     "cout_risque_pnb": 0.0957
+     "roe": 2.7174,
+     "marge": 0.4552,
+     "croissance_activite": 0.1449,
+     "croissance_resultat": 0.0854,
+     "coef_exploitation": 0.3651,
+     "cout_risque_pnb": 0.0598
     },
     "exercice": 2023,
     "url": "https://www.brvm.org/sites/default/files/20240411_-_rapport_dactivites_annuel_-_exercice_2023_-_sib_ci.pdf",
@@ -9691,22 +10019,23 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 76532,
-      "n1": 83542
+      "n": 83542,
+      "n1": 76532
      },
      "rn": {
-      "n": 34031,
-      "n1": 40090
+      "n": 40090,
+      "n1": 34031
      },
      "charges_gen": {
-      "n": -31100,
-      "n1": -32613
+      "n": -32613,
+      "n1": -31100
      },
      "cout_risque": {
-      "n": 1312,
-      "n1": -2276
+      "n": -2276,
+      "n1": 1312
      }
     },
     "lignes_lues": {
@@ -9715,17 +10044,20 @@
      "charges_gen": "CHARGES GENERALES D'EXPLOITATION -31 100 -32 613",
      "cout_risque": "COUT DU RISQUE 1 312 -2 276"
     },
-    "statut": "a confirmer",
-    "controles_ok": [],
+    "statut": "valide",
+    "controles_ok": [
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
+    ],
     "problemes": [
      "capitaux propres non publie ou non lu"
     ],
     "ratios": {
-     "marge": 0.4447,
-     "croissance_activite": -0.0839,
-     "croissance_resultat": -0.1511,
-     "coef_exploitation": 0.4064,
-     "cout_risque_pnb": 0.0171
+     "marge": 0.4799,
+     "croissance_activite": 0.0916,
+     "croissance_resultat": 0.178,
+     "coef_exploitation": 0.3904,
+     "cout_risque_pnb": 0.0272
     },
     "exercice": 2022,
     "url": "https://www.brvm.org/sites/default/files/rapport_dactivite_sib_2022.pdf",
@@ -9738,34 +10070,35 @@
     "manquants": [],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "pnb": {
-      "n": 2065,
-      "n1": 2800
+      "n": 2800,
+      "n1": 2065
      },
      "rn": {
-      "n": 30261,
-      "n1": 34031
+      "n": 34031,
+      "n1": 30261
      },
      "cp": {
-      "n": 116767,
-      "n1": 130799
+      "n": 130799,
+      "n1": 116767
      },
      "charges_gen": {
-      "n": -29843,
-      "n1": -31100
+      "n": -31100,
+      "n1": -29843
      },
      "cout_risque": {
-      "n": -6149,
-      "n1": -78700
+      "n": -78700,
+      "n1": -6149
      },
      "total_actif": {
-      "n": 1224290,
-      "n1": 1316459
+      "n": 1316459,
+      "n1": 1224290
      },
      "total_passif": {
-      "n": 1224290,
-      "n1": 1316459
+      "n": 1316459,
+      "n1": 1224290
      }
     },
     "lignes_lues": {
@@ -9779,19 +10112,21 @@
     },
     "statut": "a confirmer",
     "controles_ok": [
+     "resultat net identique sur deux lignes differentes",
      "total actif = total passif",
-     "resultat net identique sur deux lignes differentes"
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [
      "resultat net superieur au chiffre d'affaires / PNB"
     ],
     "ratios": {
-     "roe": 0.2592,
-     "marge": 14.6542,
-     "croissance_activite": -0.2625,
-     "croissance_resultat": -0.1108,
-     "coef_exploitation": 14.4518,
-     "cout_risque_pnb": 2.9777
+     "roe": 0.2602,
+     "marge": 12.1539,
+     "croissance_activite": 0.3559,
+     "croissance_resultat": 0.1246,
+     "coef_exploitation": 11.1071,
+     "cout_risque_pnb": 28.1071
     },
     "exercice": 2021,
     "url": "https://www.brvm.org/sites/default/files/20220414_-_etats_financiers_exercice_2021_-_sib_ci_1.pdf",
@@ -9809,6 +10144,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 2024546,
@@ -9842,6 +10178,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 2024546,
@@ -9875,6 +10212,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 2023,
@@ -9907,6 +10245,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1138,
@@ -9940,6 +10279,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 119234,
@@ -9987,6 +10327,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 10074573973,
@@ -10055,26 +10396,27 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": true,
     "chiffres": {
      "ca": {
-      "n": 309722,
-      "n1": 378123
+      "n": 378123,
+      "n1": 309722
      },
      "rn": {
-      "n": 21472,
-      "n1": 45781
+      "n": 45781,
+      "n1": 21472
      },
      "ebe": {
-      "n": 57494,
-      "n1": 87445
+      "n": 87445,
+      "n1": 57494
      },
      "total_actif": {
-      "n": 307546,
-      "n1": 339517
+      "n": 339517,
+      "n1": 307546
      },
      "total_passif": {
-      "n": 307546,
-      "n1": 339517
+      "n": 339517,
+      "n1": 307546
      }
     },
     "lignes_lues": {
@@ -10086,14 +10428,16 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "colonnes remises dans l'ordre (annee precedente en premier dans le document)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
-     "marge": 0.0693,
-     "croissance_activite": -0.1809,
-     "croissance_resultat": -0.531,
-     "marge_ebe": 0.1856
+     "marge": 0.1211,
+     "croissance_activite": 0.2208,
+     "croissance_resultat": 1.1321,
+     "marge_ebe": 0.2313
     },
     "exercice": 2025,
     "url": "https://www.brvm.org/sites/default/files/20260519_-_etats_financiers_-_exercice_2025_-_solibra_ci.pdf",
@@ -10108,6 +10452,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 309722,
@@ -10139,7 +10484,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "total actif = total passif"
+     "total actif = total passif",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -10161,6 +10507,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 311395,
@@ -10214,6 +10561,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 281880,
@@ -10270,6 +10618,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 299269,
@@ -10325,6 +10674,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 206740,
@@ -10380,6 +10730,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 229061,
@@ -10435,6 +10786,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 247646,
@@ -10490,6 +10842,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 276854,
@@ -10548,6 +10901,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 139353,
@@ -10603,6 +10957,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1620701,
@@ -10644,6 +10999,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1455048739,
@@ -10685,6 +11041,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 1455049,
@@ -10731,6 +11088,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 12492623,
@@ -10768,6 +11126,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 13110790,
@@ -10805,6 +11164,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 5270303,
@@ -10842,6 +11202,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 15652984,
@@ -10879,6 +11240,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 14728280,
@@ -10917,6 +11279,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 340830548704,
@@ -10972,6 +11335,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 279437727425,
@@ -11030,6 +11394,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 206469431933,
@@ -11085,6 +11450,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 224421228771,
@@ -11140,6 +11506,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 208794460641,
@@ -11198,6 +11565,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": -96558,
@@ -11242,6 +11610,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": -348195,
@@ -11286,6 +11655,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 2023,
@@ -11328,6 +11698,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 2022,
@@ -11370,6 +11741,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 2021,
@@ -11413,6 +11785,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 36463616375,
@@ -11459,6 +11832,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 44730358142,
@@ -11506,6 +11880,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 12399004223,
@@ -11553,6 +11928,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 11503188097,
@@ -11600,6 +11976,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 9499192306,
@@ -11647,6 +12024,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 588709,
@@ -11701,6 +12079,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 621042,
@@ -11755,6 +12134,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 578922,
@@ -11809,6 +12189,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 573130,
@@ -11863,6 +12244,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 494433,
@@ -11911,6 +12293,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 455208888295,
@@ -11978,6 +12361,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": true,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 484940000000,
@@ -12015,6 +12399,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 499194465,
@@ -12059,6 +12444,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "rn": {
       "n": 8475035,
@@ -12092,6 +12478,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": true,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 395000000000,
@@ -12108,7 +12495,8 @@
     },
     "statut": "valide",
     "controles_ok": [
-     "chiffres repris du communique officiel (croissance seulement)"
+     "chiffres repris du communique officiel (croissance seulement)",
+     "confirme par le rapport de l'autre annee"
     ],
     "problemes": [],
     "ratios": {
@@ -12128,6 +12516,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 34682083215,
@@ -12192,6 +12581,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 36174563380,
@@ -12238,6 +12628,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 46059378554,
@@ -12307,6 +12698,7 @@
     "manquants": [],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 29031727207,
@@ -12368,6 +12760,7 @@
     ],
     "outil": "pdfplumber/ocr",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {},
     "lignes_lues": {},
     "statut": "a confirmer",
@@ -12391,6 +12784,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 29686986976,
@@ -12447,6 +12841,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 36372536951,
@@ -12502,6 +12897,7 @@
     ],
     "outil": "pdftotext",
     "communique": false,
+    "colonnes_inversees": false,
     "chiffres": {
      "ca": {
       "n": 38191193639,
