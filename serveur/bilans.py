@@ -567,15 +567,11 @@ def main():
 def test_pages():
     """Diagnostic : pages des societes et publications trouvees (sans rien lire)."""
     import requests
-    h = requests.get(INDEX_SOCIETES, headers=ENTETES, timeout=40).text
-    print("INDEX", len(h), "caracteres")
-    for m in sorted(set(re.findall(r'(?:href|value)="([^"]*rapports[^"]*)"', h)))[:20]:
-        print("  lien :", m)
-    i = h.find("sgci")
-    print("  autour de sgci :", re.sub(r"\s+", " ", h[max(0, i - 400):i + 300]) if i >= 0 else "absent")
-    h2 = requests.get(INDEX_SOCIETES + "/sgci", headers=ENTETES, timeout=40).text
-    j = h2.find("Exercice 2025")
-    print("  page sgci :", len(h2), "car. ; autour de Exercice 2025 :", re.sub(r"\s+", " ", h2[max(0, j - 500):j + 400]) if j >= 0 else "absent")
+    h = requests.get("https://www.brvm.org/fr/rapports-societes-cotees", headers=ENTETES, timeout=40).text
+    liens = sorted(set(re.findall(r'href="([^"]*rapports-societe-cotes/[^"?#]+)"', h)))
+    print("INDEX2", len(h), "car.,", len(liens), "liens :", " ".join(l.rsplit("/", 1)[-1] for l in liens))
+    i = h.find("rapports-societe-cotes/")
+    print("  extrait :", re.sub(r"\s+", " ", h[max(0, i - 300):i + 300]))
     pages, inconnues = pages_societes()
     print(f"{len(pages)} societes reconnues ; non reconnues : {inconnues}")
     for sym, url in sorted(pages.items())[:60]:
