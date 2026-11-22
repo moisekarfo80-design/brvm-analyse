@@ -1,0 +1,74 @@
+{
+ "BICB": {
+  "ratio": 19.64,
+  "ratio_n1": null,
+  "phrase": "Les crédits clientèle nets progressent plus vite que les Le ratio de solvabilité total s’établit à 19,64 %, au-dessus",
+  "page": 7,
+  "confiance": 5,
+  "mentions": 2,
+  "exercice": 2025,
+  "document": "BIIC BN : Rapport d'activités annuel et Etats Financiers IFRS - Exercice 2025",
+  "url": "https://www.brvm.org/sites/default/files/20260619_-_rapport_dactivites_annuel_et_etats_financiers_ifrs_-_exercice_2025_-_biic.pdf",
+  "lu_le": "2026-11-22"
+ },
+ "BOAS": {
+  "ratio": 13.9,
+  "ratio_n1": 14.4,
+  "phrase": "Le ratio de solvabilité s’est consolidé en passant de 13,9% à 14,4% à fin décembre 2024.",
+  "page": 2,
+  "confiance": 3,
+  "mentions": 1,
+  "exercice": 2025,
+  "document": "BANK OF AFRICA SENEGAL : Rapport d'activités du 4ème trimestre 2025",
+  "url": "https://www.brvm.org/sites/default/files/20250505_-_rapport_dactivites_-_4eme_trimestre_2025_-_boa_sn.pdf",
+  "lu_le": "2026-11-22"
+ },
+ "ECOC": {
+  "ratio": 19.3,
+  "ratio_n1": null,
+  "phrase": "La structure financière demeure solide, avec un ratio de solvabilité de 19,3 %, soit une",
+  "page": 4,
+  "confiance": 3,
+  "mentions": 1,
+  "exercice": 2025,
+  "document": "ECOBANK CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025",
+  "url": "https://www.brvm.org/sites/default/files/20250902_-_rapport_dactivites_-_1er_semestre_2025_-_ecobank_ci.pdf",
+  "lu_le": "2026-11-22"
+ },
+ "SAFC": {
+  "ratio": 11.5,
+  "ratio_n1": null,
+  "phrase": "3 Ratio de solvabilité total (%) min. 11,50 % 12,107 % 12,632 % Conforme",
+  "page": 2,
+  "confiance": 5,
+  "mentions": 1,
+  "exercice": 2025,
+  "document": "SAFCA CI : Rapport d'activités - 3e trimestre 2026",
+  "url": "https://www.brvm.org/sites/default/files/20261102_-_rapport_dactivites_-_3e_trimestre_2026_-_safca_ci.pdf",
+  "lu_le": "2026-11-22"
+ },
+ "SGBC": {
+  "ratio": 17.7,
+  "ratio_n1": null,
+  "phrase": "Le ratio de solvabilité ressort à 17,7% largement au-dessus des",
+  "page": 2,
+  "confiance": 3,
+  "mentions": 1,
+  "exercice": 2025,
+  "document": "SOCIETE GENERALE CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025",
+  "url": "https://www.brvm.org/sites/default/files/20250828_-_rapport_dactivites_-_1er_semestre_2025_-_societe_generale_ci.pdf",
+  "lu_le": "2026-11-22"
+ },
+ "SIBC": {
+  "ratio": 14.0,
+  "ratio_n1": null,
+  "phrase": "avec un ratio de solvabilité supérieur à 14%, nettement au-dessus du seuil réglementaire.",
+  "page": 4,
+  "confiance": 3,
+  "mentions": 1,
+  "exercice": 2025,
+  "document": "SIB CI : Rapport d'activités annuel et Etats Financiers - Exercice 2025",
+  "url": "https://www.brvm.org/sites/default/files/20260421_-_rapport_dactivites_annuel_et_etats_financiers_-_exercice_2025_-_sib_ci.pdf",
+  "lu_le": "2026-11-22"
+ }
+}
