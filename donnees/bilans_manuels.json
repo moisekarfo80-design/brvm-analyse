@@ -1,5 +1,5 @@
 {
- "explication": "Chiffres saisis a la main quand le PDF officiel est un scan illisible automatiquement. Source : etats financiers annuels publies sur brvm.org, verifies lors du test n°1.",
+ "explication": "Chiffres saisis a la main quand le PDF officiel est un scan illisible automatiquement. Source : etats financiers annuels publies sur brvm.org, verifies lors du test n°1. « prioritaire » : remplace la lecture automatique meme quand elle passe les controles (erreur connue).",
  "societes": {
   "CBIBF": {
    "banque": true,
@@ -63,7 +63,8 @@
     "roe": 0.2075,
     "croissance_resultat": 0.2036,
     "croissance_activite": 0.174
-   }
+   },
+   "prioritaire": true
   },
   "SAFC": {
    "banque": true,
@@ -177,7 +178,8 @@
     "marge": 0.0145,
     "croissance_resultat": -0.25,
     "croissance_activite": 0.0461
-   }
+   },
+   "prioritaire": true
   }
  }
 }
