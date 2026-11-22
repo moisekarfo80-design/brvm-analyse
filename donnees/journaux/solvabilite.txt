@@ -6,7 +6,7 @@
       | Les crédits clientèle nets progressent plus vite que les         Le ratio de solvabilité total s’établit à 19,64 %, au-dessus
       | Lecture : ratio CET1, Tier 1 et solvabilité totale indiqués à 19,64 % ; minimum réglementaire BCEAO présenté à
       | 11,50 % pour la solvabilité totale.
-  BICB   19.64 % (fin d'année 2025, 2 mention(s)) : Les crédits clientèle nets progressent plus vite que les Le ratio de solvabilité total s’établit à 19,64 %, au
+  BICB   19.64 % (fin d'année 2025, 1 mention(s)) : Les crédits clientèle nets progressent plus vite que les Le ratio de solvabilité total s’établit à 19,64 %, au
     BICC : BICI CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (2 pages, 0 en OCR)
     BICC : BICI CI : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (2 pages, 0 en OCR)
     BICC : BICI CI : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (2 pages, 0 en OCR)
@@ -15,7 +15,7 @@
     BICC : BICI CÔTE D'IVOIRE : Rapport d'activités - 3ème trimestre 2025 [3e trimestre 2025] (2 pages, 0 en OCR)
     BICC : BICI CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025 [1er semestre 2025] (2 pages, 0 en OCR)
     BICC : BICI CÔTE D'IVOIRE : Rapport d'activités - 1er trimestre 2025 [1er trimestre 2025] (2 pages, 0 en OCR)
-  BICC   non trouve (92 publications)
+  BICC   non trouve (90 publications)
     BOAB : BOA BN : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (1 pages, 1 en OCR)
     BOAB : BOA BN : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (1 pages, 1 en OCR)
     BOAB : BOA BENIN : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (1 pages, 1 en OCR)
@@ -112,15 +112,9 @@
     ORGT : ORAGROUP TOGO : Rapport d'activités du 1er trimestre 2025 [1er trimestre 2025] (2 pages, 0 en OCR)
   ORGT   non trouve (40 publications)
     SAFC : SAFCA CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (4 pages, 0 en OCR)
+      | 3      Ratio de solvabilité total (%)                                      min. 11,50 %               12,107 %              12,632 %    Conforme
       | Le ratio de solvabilité total ressort à 12,11 % pour une norme minimale de 11,50 %, le ratio de fonds propres de base (Tier
-    SAFC : SAFCA CI : Rapport d'activités - 2eme trimestre 2026 [1er semestre 2026] (2 pages, 0 en OCR)
-    SAFC : SAFCA CI : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (2 pages, 0 en OCR)
-    SAFC : ALIOS FINANCE (SAFCA CI) : Rapport d'activités au 4ème trimestre 2025 [fin d'année 2025] (2 pages, 0 en OCR)
-    SAFC : SAFCA CI : Etats financiers - Exercice 2025 - (Annule et remplace le précédent) [fin d'année 2025] (2 pages, 0 en OCR)
-    SAFC : SAFCA CI : Etats financiers - Exercice 2025 [fin d'année 2025] (2 pages, 0 en OCR)
-    SAFC : SAFCA CÔTE D'IVOIRE : Rapport d'activités - 2eme trimestre 2025 [1er semestre 2025] (2 pages, 0 en OCR)
-    SAFC : SAFCA CI : Rapport d'activités - 1er trimestre 2025 [1er trimestre 2025] (2 pages, 0 en OCR)
-  SAFC   non trouve (79 publications)
+  SAFC   12.107 % (3e trimestre 2026, 1 mention(s)) : 3 Ratio de solvabilité total (%) min. 11,50 % 12,107 % 12,632 % Conforme
     SGBC : SOCIETE GENERALE CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (3 pages, 0 en OCR)
     SGBC : SOCIETE GENERALE CI : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (5 pages, 0 en OCR)
       | des performances financières solides sur le 1er semestre 2026, avec     Le ratio de solvabilité ressort à 17,6% largement au-dessus des
