@@ -1,12 +1,4 @@
-    BICB : BIIC BN : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (4 pages, 0 en OCR)
-    BICB : BIIC BN : Rapport d'activités et Etats financiers IFRS - 1er semestre 2026 [1er semestre 2026] (9 pages, 0 en OCR)
-    BICB : BIIC BN : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (4 pages, 0 en OCR)
-    BICB : BIIC BN : Rapport d'activités annuel et Etats Financiers IFRS - Exercice 2025 [fin d'année 2025] (22 pages, 0 en OCR)
-      | 19,64% Marge de solvabilité préservée
-      | Les crédits clientèle nets progressent plus vite que les         Le ratio de solvabilité total s’établit à 19,64 %, au-dessus
-      | Lecture : ratio CET1, Tier 1 et solvabilité totale indiqués à 19,64 % ; minimum réglementaire BCEAO présenté à
-      | 11,50 % pour la solvabilité totale.
-  BICB   19.64 % (fin d'année 2025, 1 mention(s)) : Les crédits clientèle nets progressent plus vite que les Le ratio de solvabilité total s’établit à 19,64 %, au
+  BICB   deja lu : 19.64 % (fin d'année 2025)
     BICC : BICI CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (2 pages, 0 en OCR)
     BICC : BICI CI : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (2 pages, 0 en OCR)
     BICC : BICI CI : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (2 pages, 0 en OCR)
@@ -15,7 +7,7 @@
     BICC : BICI CÔTE D'IVOIRE : Rapport d'activités - 3ème trimestre 2025 [3e trimestre 2025] (2 pages, 0 en OCR)
     BICC : BICI CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025 [1er semestre 2025] (2 pages, 0 en OCR)
     BICC : BICI CÔTE D'IVOIRE : Rapport d'activités - 1er trimestre 2025 [1er trimestre 2025] (2 pages, 0 en OCR)
-  BICC   non trouve (90 publications)
+  BICC   non trouve (92 publications)
     BOAB : BOA BN : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (1 pages, 1 en OCR)
     BOAB : BOA BN : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (1 pages, 1 en OCR)
     BOAB : BOA BENIN : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (1 pages, 1 en OCR)
@@ -60,13 +52,7 @@
     BOAN : BOA NIGER : Rapport d'activités - 3ème trimestre 2025 [3e trimestre 2025] (1 pages, 1 en OCR)
     BOAN : BOA NIGER : Rapport d'activités - 1er semestre 2025 [1er semestre 2025] (1 pages, 1 en OCR)
   BOAN   non trouve (94 publications)
-    BOAS : BOA SN : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (1 pages, 1 en OCR)
-    BOAS : BOA SENEGAL : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (1 pages, 1 en OCR)
-    BOAS : BOA SN : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (1 pages, 1 en OCR)
-    BOAS : BOA SN : Etats Financiers - 1er trimestre 2026 [1er trimestre 2026] (4 pages, 4 en OCR)
-    BOAS : BANK OF AFRICA SENEGAL : Rapport d'activités du 4ème trimestre 2025 [fin d'année 2025] (2 pages, 2 en OCR)
-      | Le ratio de solvabilité s’est consolidé en passant de 13,9% à 14,4% à fin décembre 2024.
-  BOAS   14.4 % (fin d'année 2024, 1 mention(s)) : Le ratio de solvabilité s’est consolidé en passant de 13,9% à 14,4% à fin décembre 2024.
+  BOAS   deja lu : 14.4 % (fin d'année 2024)
     CBIBF : CORIS BANK INTERNATIONAL BF : Rapport d'Examen Limité des Commissaires Aux Compt [fin d'année 2026] (12 pages, 12 en OCR)
     CBIBF : CORIS BANK INTERNATIONAL BF : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (5 pages, 5 en OCR)
     CBIBF : CORIS BANK INTERNATIONAL BF : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (3 pages, 3 en OCR)
@@ -77,14 +63,7 @@
     CBIBF : CORIS BANK INTERNATIONAL BURKINA FASO : Rapport d'activités - 1er semestre 2025 [1er semestre 2025] (2 pages, 2 en OCR)
     CBIBF : CORIS BANK INTERNATIONAL BURKINA FSAO : Rapport d'activités du 1er trimestre 202 [1er trimestre 2025] (2 pages, 2 en OCR)
   CBIBF  non trouve (21 publications)
-    ECOC : ECOBANK CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (8 pages, 0 en OCR)
-    ECOC : ECOBANK CI : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (12 pages, 0 en OCR)
-    ECOC : ECOBANK CI : Rapport d'activités - 1er trimestre 2026 [1er trimestre 2026] (7 pages, 0 en OCR)
-    ECOC : ECOBANK CI : Rapport d'activités et Etats financiers - Exercice 2025 [fin d'année 2025] (13 pages, 0 en OCR)
-    ECOC : ECOBANK CÔTE D'IVOIRE : Rapport d'activités - 3ème trimestre 2025 [3e trimestre 2025] (5 pages, 5 en OCR)
-    ECOC : ECOBANK CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025 [1er semestre 2025] (9 pages, 9 en OCR)
-      | La structure financière demeure solide, avec un ratio de solvabilité de 19,3 %, soit une
-  ECOC   19.3 % (1er semestre 2025, 1 mention(s)) : La structure financière demeure solide, avec un ratio de solvabilité de 19,3 %, soit une
+  ECOC   deja lu : 19.3 % (1er semestre 2025)
     ETIT : ETI TG : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (8 pages, 0 en OCR)
     ETIT : ETI TG : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (5 pages, 0 en OCR)
     ETIT : ETI TG : Rapport d'examen limité sur les informations financières intermédiaires [1er semestre 2026] (7 pages, 0 en OCR)
@@ -111,18 +90,7 @@
     ORGT : ORAGROUP TOGO : Rapport d'activités - 1er semestre 2025 [1er semestre 2025] (3 pages, 0 en OCR)
     ORGT : ORAGROUP TOGO : Rapport d'activités du 1er trimestre 2025 [1er trimestre 2025] (2 pages, 0 en OCR)
   ORGT   non trouve (40 publications)
-    SAFC : SAFCA CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (4 pages, 0 en OCR)
-      | 3      Ratio de solvabilité total (%)                                      min. 11,50 %               12,107 %              12,632 %    Conforme
-      | Le ratio de solvabilité total ressort à 12,11 % pour une norme minimale de 11,50 %, le ratio de fonds propres de base (Tier
-  SAFC   12.107 % (3e trimestre 2026, 1 mention(s)) : 3 Ratio de solvabilité total (%) min. 11,50 % 12,107 % 12,632 % Conforme
-    SGBC : SOCIETE GENERALE CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (3 pages, 0 en OCR)
-    SGBC : SOCIETE GENERALE CI : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (5 pages, 0 en OCR)
-      | des performances financières solides sur le 1er semestre 2026, avec     Le ratio de solvabilité ressort à 17,6% largement au-dessus des
-  SGBC   17.6 % (1er semestre 2026, 1 mention(s)) : des performances financières solides sur le 1er semestre 2026, avec Le ratio de solvabilité ressort à 17,6% la
-    SIBC : SIB CI : Rapport d'activités - 3e trimestre 2026 [3e trimestre 2026] (3 pages, 0 en OCR)
-    SIBC : SIB CI : Rapport d'activités - 1er semestre 2026 [1er semestre 2026] (7 pages, 0 en OCR)
-    SIBC : SIB CI : Rapport d'activité - 1er trimestre 2026 [1er trimestre 2026] (4 pages, 0 en OCR)
-    SIBC : SIB CI : Rapport d'activités annuel et Etats Financiers - Exercice 2025 [fin d'année 2025] (8 pages, 0 en OCR)
-      | avec un ratio de solvabilité supérieur à 14%, nettement au-dessus du seuil réglementaire.
-  SIBC   14.0 % (fin d'année 2025, 1 mention(s)) : avec un ratio de solvabilité supérieur à 14%, nettement au-dessus du seuil réglementaire.
+  SAFC   deja lu : 12.107 % (3e trimestre 2026)
+  SGBC   deja lu : 17.6 % (1er semestre 2026)
+  SIBC   deja lu : 14.0 % (fin d'année 2025)
 Solvabilite lue pour 6 banques sur 16
