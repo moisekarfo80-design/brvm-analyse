@@ -154,18 +154,21 @@ def lire_dividende(t):
 
 
 def lire_resultats(t):
-    """Phrase sur l'evolution du resultat net, et son sens (+1 hausse, -1 baisse)."""
+    """Phrase courte sur l'evolution du resultat net (ou du benefice), et son sens (+1 hausse, -1 baisse)."""
     plat = re.sub(r"\s+", " ", t)
-    for phrase in re.split(r"(?<=[.;])\s", plat):
-        p = phrase.lower()
-        if "résultat net" not in p and "resultat net" not in p and "bénéfice" not in p:
-            continue
-        if not re.search(r"\d+(?:,\d+)?\s?%", p):
-            continue
-        sens = 1 if re.search(r"hausse|progress|augment|amélior|ameliore|croissance|bond", p) else -1 if re.search(r"baisse|recul|diminu|repli|dégrad|degrad|chute|perte", p) else 0
-        if sens:
-            return phrase.strip()[:230], sens
-    return None, 0
+    motif = re.compile(r"(r[ée]sultat net|b[ée]n[ée]fice(?: net)?)[^.;%]{0,160}?(hausse|progress\w*|augment\w*|am[ée]lior\w*|croissance|bond\w*|baisse|recul\w*|diminu\w*|repli|d[ée]grad\w*|chute|contraction)[^.;%]{0,60}?[+-]?\d+(?:[.,]\d+)?\s?%", re.I)
+    m = motif.search(plat)
+    if not m:
+        return None, 0
+    k = plat.rfind(". ", 0, m.start())
+    debut = max(k + 2 if k >= 0 else 0, m.start() - 80)
+    if debut == m.start() - 80:
+        debut = plat.find(" ", debut) + 1  # ne pas couper un mot
+    fin = plat.find(".", m.end())
+    phrase = plat[debut:fin if 0 < fin - m.end() < 80 else m.end()].strip()
+    sens = -1 if re.search(r"baisse|recul|diminu|repli|d[ée]grad|chute|contraction", m.group(2), re.I) else 1
+    phrase = phrase[:1].upper() + phrase[1:]
+    return phrase[:230], sens
 
 
 ANNONCES = {"communiques": None, "convocations-assemblees-generales": "assemblee", "changements-de-dirigeants": "dirigeants",
@@ -246,9 +249,14 @@ def dividendes(pages, diag=False):
     return out
 
 
+INCONNUS = {}
+
+
 def ajouter(actuel, sym, item, premier, auj):
     """Ajoute une publication si elle est nouvelle ; renvoie True si nouvelle."""
     if not sym:
+        nom = (item.get("emetteur") or item["titre"].split(":")[0]).strip()[:40]
+        INCONNUS[nom] = INCONNUS.get(nom, 0) + 1
         return False
     liste = actuel.setdefault(sym, [])
     cle = item.get("url") or f"{item['type']}|{item['date']}|{item['titre']}"
@@ -257,7 +265,8 @@ def ajouter(actuel, sym, item, premier, auj):
             for k, v in item.items():
                 x.setdefault(k, v)
             return False
-    item["vu_le"] = "initial" if premier else auj.isoformat()
+    vieux = item.get("date") and item["date"] < (auj - dt.timedelta(days=10)).isoformat()
+    item["vu_le"] = "initial" if (premier or vieux) else auj.isoformat()  # pas d'alerte pour une vieille publication
     liste.append(item)
     return True
 
@@ -267,8 +276,14 @@ def main():
     histo = "--historique" in sys.argv
     auj = dt.date.today()
     actuel = json.loads(SORTIE.read_text()) if SORTIE.exists() else {}
-    if actuel and "version" not in actuel.get("_info", {}):  # ancien format (rapports sans date) : on repart de zero
+    if actuel and "_info" not in actuel:  # ancien format (rapports sans date) : on repart de zero
         actuel = {}
+    if actuel.get("_info", {}).get("version") == 2:  # nouvelle lecture des phrases de resultats : on relit
+        for k, l in actuel.items():
+            if not k.startswith("_"):
+                for x in l:
+                    for c in ("lu", "detail", "sens"):
+                        x.pop(c, None)
     premier = not actuel
     pages = 40 if (premier or histo) else 2
     nouv = {}
@@ -287,7 +302,7 @@ def main():
     for d in divs:
         sym = d.pop("sym")
         titre = f"Dividende {('exercice ' + d['exercice']) if d.get('exercice') else ''} : {fr_nb(d['dividende'])} FCFA net par action".replace("  ", " ")
-        item = {"date": d["ex_dividende"] or d["paiement"], "titre": titre, "url": "", "type": "dividende", **{k: v for k, v in d.items() if k != "emetteur"}}
+        item = {"date": d["ex_dividende"] or d["paiement"], "titre": titre, "url": "", "type": "dividende", **d}
         if ajouter(actuel, sym, item, premier, auj):
             nouv[sym] = nouv.get(sym, 0) + 1
     # 3. rapports de resultats (pages « rapports » de chaque societe, date tiree du nom du fichier)
@@ -326,7 +341,9 @@ def main():
         if diag:
             for x in liste[:3]:
                 print(f"    {sym:<6} {x.get('date')} {x['type']:<10} {x['titre'][:70]} {('| ' + x['detail'][:80]) if x.get('detail') else ''}")
-    actuel["_info"] = {"version": 2, "maj": auj.isoformat(), "documents_lus": lus}
+    if INCONNUS:
+        print("  Sociétés non reconnues :", "; ".join(f"{k} ({v})" for k, v in sorted(INCONNUS.items(), key=lambda kv: -kv[1])[:40]))
+    actuel["_info"] = {"version": 3, "maj": auj.isoformat(), "documents_lus": lus}
     SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=0))
     print(f"Actualite : {len(actuel) - 1} societes, {sum(nouv.values())} nouvelle(s) publication(s), {lus} document(s) lu(s)")
 

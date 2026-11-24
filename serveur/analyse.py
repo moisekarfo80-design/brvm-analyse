@@ -223,6 +223,10 @@ def main():
         source_div = "bulletin"
         if annonce and (annonce.get("paiement") or annonce["date"]) > (ddiv or ""):
             div_annonce, ddiv_annonce = annonce["dividende"], annonce.get("paiement") or annonce["date"]
+            # le tableau de la BRVM donne parfois le brut : meme rapport net / tableau que pour le dividende de reference
+            meme = next((x for x in actu if x["type"] == "dividende" and x.get("dividende") and x.get("paiement") == ddiv), None)
+            if meme and div and 0.8 <= div / meme["dividende"] <= 1.02:
+                div_annonce *= div / meme["dividende"]
             for op in ops.get(s, []):
                 if annonce["date"] < op["date"]:
                     div_annonce = div_annonce / op["ratio"]
