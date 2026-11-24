@@ -211,7 +211,8 @@ function courbeSuivi(st) {
 
 // ---------- messages (ceux du serveur + ceux calcules sur le telephone)
 function tousMessages() {
-  const m = D.messages.map((x) => ({ ...x, quand: dateFr(D.maj) }));
+  const miens = new Set([...lire("portefeuille", []).map((p) => p.s), ...((lire("plan", null) || {}).lignes || []).map((l) => l.s)]);
+  const m = D.messages.filter((x) => !x.actu || miens.has(x.s)).map((x) => ({ ...x, quand: dateFr(D.maj), fiche: x.fiche || x.s }));
   const st = etatSuivi();
   if (st) {
     const faits = st.etapes.filter((e) => e.fait);
@@ -414,7 +415,7 @@ function fiche(s) {
   const bars = CRITERES.map(([c, nom], i) => {
     const v = crit[c], p = poidsCritere(c, h);
     const coul = v == null ? "#E8EDF7" : v >= 65 ? "#1747C9" : v >= 45 ? "#7E95D6" : "#B9C4DE";
-    const etiquette = v == null ? (c === "actu" ? "pas encore suivie" : "pas de donnée") : p ? `compte ${p} pts` : c === "tend" ? "compte au court terme" : "pour info";
+    const etiquette = v == null ? (c === "actu" ? ((a.actualite || []).length ? "suivie, voir plus bas" : "aucun communiqué récent") : "pas de donnée") : p ? `compte ${p} pts` : c === "tend" ? "compte au court terme" : "pour info";
     return `<div class="critere"><div class="ligne entre"><span>${nom}</span><span class="gris">${v == null ? "—" : v + "/100"} · ${etiquette}</span></div><div class="jauge"><span style="width:${v || 0}%;background:${coul};animation-delay:${(0.1 + i * 0.07).toFixed(2)}s"></span></div></div>`;
   }).join("");
   const mod = D.projections && e ? D.projections.etoiles[String(e)] : null;
@@ -444,8 +445,9 @@ function fiche(s) {
       <div class="gris" style="margin-top:8px">D'après ${mod.cas} cas réels de 2016 à 2025 d'actions notées comme celle-ci : ${Math.round(mod.perte * 100)} % ont perdu de l'argent sur un an. Une seule action, c'est risqué : mieux vaut en avoir plusieurs.</div></div>` : ""}
     <div class="carte"><h3>Les raisons, en détail</h3>${(a.raisons || []).map(([t, txt]) => `<div class="raison r-${t}"><b>${{ plus: "+", moins: "−", attention: "!", neutre: "•" }[t]}</b><span>${esc(txt)}</span></div>`).join("")}${(a.drapeaux || []).map((d) => `<div class="raison r-attention"><b>!</b><span>${esc(d)}</span></div>`).join("")}
       <div class="gris" style="margin-top:6px">${a.bilan ? "Bilan " + esc(a.bilan.exercice) + (a.bilan.manuel ? " (chiffres saisis à la main, PDF scanné)" : " lu automatiquement et contrôlé") + "." : "Bilan pas encore lu."}</div></div>
+    ${blocActualite(a)}
     ${a.resultats && a.resultats.length >= 3 ? graphResultats(a.resultats) : ""}
-    ${a.dividende ? `<div class="carte"><h3>Dernier dividende</h3><div>${fcfa(a.dividende)} par action, versé le ${dateFr(a.date_dividende)}</div></div>` : ""}
+    ${a.dividende ? `<div class="carte"><h3>Dernier dividende</h3><div>${fcfa(a.dividende)} par action, ${a.date_dividende > auj() ? "payé le" : "versé le"} ${dateFr(a.date_dividende)}</div>${a.dividende_source === "communiqué" ? `<div class="gris">D'après le communiqué de la société.</div>` : ""}</div>` : ""}
     <button class="bouton" data-ajouter="${a.s}">${mes ? "Modifier dans mon portefeuille" : "Ajouter à mon portefeuille"}</button>
     <p class="gris" style="text-align:center">Aide à la décision, pas un conseil d'investissement.</p>`);
 }
@@ -458,6 +460,20 @@ function jaugeSolva(sv) {
     <div class="legende"><span><i style="background:#0E1B3D;width:3px;height:12px"></i>minimum exigé 11,5 %</span><span><i style="background:#7E95D6;width:3px;height:12px"></i>moyenne des banques 14,7 %</span></div>
     <div class="gris" style="margin-top:6px">Les fonds propres de la banque, comparés aux risques qu'elle prend. Plus c'est haut, mieux elle peut encaisser des crédits non remboursés.${sv.ratio_n1 ? ` L'année d'avant : ${nb(sv.ratio_n1, 1)} %.` : ""}</div>
     ${sv.source ? `<a class="lien" href="${esc(sv.source)}" target="_blank" rel="noopener">Source : ${esc((sv.document || "rapport").slice(0, 60))}</a>` : ""}</div>`;
+}
+
+const ICONES_ACTU = { resultats: "📊", dividende: "💰", assemblee: "🏛️", capital: "🔀", suspension: "⛔", dirigeants: "👤", autre: "📄" };
+function blocActualite(a) {
+  const l = a.actualite || [];
+  return `<div class="carte"><h3>Actualité de l'entreprise</h3>
+    ${l.length ? l.map((x) => `<div class="actu">
+      <span class="ic">${ICONES_ACTU[x.type] || "📄"}</span>
+      <div style="flex:1;min-width:0"><div class="gris">${dateFr(x.date)}</div><div class="titre-actu">${esc(x.titre.replace(/^[^:]{2,40}:\s*/, ""))}</div>
+        ${x.dividende ? `<div class="detail-actu haut">${fcfa(x.dividende)} net par action${x.paiement ? ", payé le " + dateFr(x.paiement) : ""}</div>` : ""}
+        ${x.detail ? `<div class="detail-actu ${x.sens > 0 ? "haut" : x.sens < 0 ? "bas" : ""}">${x.sens > 0 ? "▲ " : x.sens < 0 ? "▼ " : ""}${esc(x.detail)}</div>` : ""}
+        <a class="lien" href="${esc(x.url)}" target="_blank" rel="noopener">Lire le document</a></div></div>`).join("")
+      : `<div class="gris">Aucun communiqué publié sur brvm.org depuis 2 ans.</div>`}
+    <div class="gris" style="margin-top:6px">Communiqués officiels publiés sur brvm.org. Ils ne changent pas la note pour l'instant.</div></div>`;
 }
 
 function graphResultats(r) {

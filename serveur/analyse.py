@@ -65,6 +65,22 @@ def feu_solidite(s_qual, fiche):
     return {"couleur": c, "mot": m, "pourquoi": ", ".join(pourquoi)}
 
 
+ACTU = {}
+LIB_ACTU = {"resultats": "Résultats publiés", "dividende": "Dividende annoncé", "assemblee": "Assemblée générale", "capital": "Opération sur le capital",
+            "suspension": "Cotation suspendue ou reprise", "dirigeants": "Changement à la direction", "autre": "Publication"}
+
+
+def actualite_de(s, jour):
+    """Dernieres publications de la societe (2 ans), du plus recent au plus ancien."""
+    limite = (jour - dt.timedelta(days=730)).isoformat()
+    out = []
+    for x in ACTU.get(s, []):
+        if not x.get("date") or x["date"] < limite:
+            continue
+        out.append({k: x[k] for k in ("date", "titre", "type", "url", "detail", "sens", "dividende", "paiement") if x.get(k) is not None})
+    return out[:8]
+
+
 def lin(x, a, b):
     return max(0.0, min(100.0, 100 * (x - a) / (b - a)))
 
@@ -90,6 +106,8 @@ def charger():
     bilans = tout_bilans.get("societes", {})
     historique = tout_bilans.get("historique", {})
     solva = json.loads((D / "solvabilite.json").read_text()) if (D / "solvabilite.json").exists() else {}
+    global ACTU
+    ACTU = json.loads((D / "actualite.json").read_text()) if (D / "actualite.json").exists() else {}
     if (D / "bilans_manuels.json").exists():  # chiffres saisis a la main quand le PDF est illisible
         for sym, b in json.loads((D / "bilans_manuels.json").read_text()).get("societes", {}).items():
             plus_recent = int(b.get("exercice", 0)) > int((bilans.get(sym) or {}).get("exercice", 0) or 0)
@@ -199,10 +217,25 @@ def main():
             fiche["anomalie"] = True
 
         div, ddiv = a.get("dividende"), a.get("date_dividende")
+        actu = actualite_de(s, jour)
+        fiche["actualite"] = actu[:6]
+        annonce = next((x for x in actu if x["type"] == "dividende" and x.get("dividende")), None)
+        source_div = "bulletin"
+        if annonce and (annonce.get("paiement") or annonce["date"]) > (ddiv or ""):
+            div_annonce, ddiv_annonce = annonce["dividende"], annonce.get("paiement") or annonce["date"]
+            for op in ops.get(s, []):
+                if annonce["date"] < op["date"]:
+                    div_annonce = div_annonce / op["ratio"]
+            source_div = "communiqué"
+        else:
+            annonce = None
         frais = bool(div and ddiv and (jour - dt.date.fromisoformat(ddiv)).days <= 430)
         for op in ops.get(s, []):  # la reference (bulletin) est ajustee seulement si elle precede l'operation
             if frais and ref["date"] < op["date"]:
                 div = div / op["ratio"]
+        if annonce:  # dividende annonce par la societe, plus recent que le bulletin de reference
+            div, ddiv, frais = div_annonce, ddiv_annonce, (jour - dt.date.fromisoformat(ddiv_annonce)).days <= 430
+        fiche["dividende_source"] = source_div
         rdt = div / cours if frais else 0.0
         bpa = a.get("bpa")
         for op in ops.get(s, []):
@@ -464,7 +497,17 @@ def main():
     messages.append({"type": "info", "titre": f"Bilans lus : {nb_bilans} sociétés sur {len([f for f in res if f.get('notes')])}",
                      "texte": ("Les bilans sont montrés dans chaque fiche (solidité, croissance, pertes), mais ils ne changent pas la note : sur 10 ans, les compter n'a pas amélioré les résultats. " if nb_bilans else "")
                      + (f"Pas encore de bilan validé pour : {', '.join(sans[:12])}{' …' if len(sans) > 12 else ''}. " if sans else "")
-                     + "L'actualité n'est pas encore suivie."})
+                     + "L'actualité (communiqués officiels) est montrée dans chaque fiche, sans changer la note pour l'instant."})
+    # nouvelles publications importantes (4 derniers jours) : l'application ne montre que celles de ton portefeuille
+    limite = (jour - dt.timedelta(days=4)).isoformat()
+    for f in res:
+        for x in ACTU.get(f["s"], [])[:10]:
+            vu = x.get("vu_le", "initial")
+            if vu == "initial" or vu < limite or x["type"] not in ("resultats", "dividende", "suspension", "capital", "dirigeants"):
+                continue
+            texte = x.get("detail") or (f"{fr(x['dividende'], 0)} FCFA net par action" + (f", payé le {dt.date.fromisoformat(x['paiement']).strftime('%d/%m/%Y')}" if x.get("paiement") else "") if x.get("dividende") else x["titre"])
+            messages.append({"type": "alerte" if x["type"] in ("suspension", "capital") or x.get("sens") == -1 else "info",
+                             "titre": f"{f['nom']} : {LIB_ACTU[x['type']].lower()}", "texte": texte, "s": f["s"], "actu": True, "url": x["url"]})
 
     sortie = {
         "version": 1,

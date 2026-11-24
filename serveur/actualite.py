@@ -74,6 +74,13 @@ def date_de(texte):
 
 
 def date_dossier(url):
+    """Date lisible dans le lien : /files/20261116_-_... ou /files/2026-11/..."""
+    m = re.search(r"/(20\d\d)(\d{2})(\d{2})[_-]", url)
+    if m:
+        try:
+            return dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
+        except ValueError:
+            pass
     m = re.search(r"/files/(20\d\d)-(\d{2})/", url)
     return f"{m.group(1)}-{m.group(2)}-01" if m else None
 
@@ -161,60 +168,171 @@ def lire_resultats(t):
     return None, 0
 
 
+ANNONCES = {"communiques": None, "convocations-assemblees-generales": "assemblee", "changements-de-dirigeants": "dirigeants",
+            "franchissements-de-seuil": "capital"}
+DIVIDENDES = "https://www.brvm.org/fr/esv/paiement-de-dividendes"
+
+
+def cellules(tr):
+    return [unescape(re.sub(r"<[^>]+>|\s+", " ", c)).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+
+
+def annonces(section, pages, diag=False):
+    """Lignes datees d'une rubrique « Annonces emetteurs » : date, societe, titre, PDF."""
+    import requests
+    out = []
+    for p in range(pages):
+        try:
+            html = requests.get(f"https://www.brvm.org/fr/emetteurs/type-annonces/{section}" + (f"?page={p}" if p else ""), headers=B.ENTETES, timeout=40).text
+        except Exception as e:
+            print(f"  {section} page {p} illisible : {e.__class__.__name__}")
+            break
+        lignes = [tr for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S) if "<td" in tr]
+        if diag and p == 0 and lignes:
+            print(f"    {section} ligne brute :", re.sub(r"\s+", " ", lignes[0])[:300])
+        n = 0
+        for tr in lignes:
+            c = cellules(tr)
+            lien = re.search(r'href="([^"]+\.pdf)"', tr, re.I) or re.search(r'href="(/[^"]+)"', tr)
+            date = next((date_de(x) for x in c if date_de(x)), None)
+            titre = max(c, key=len) if c else ""
+            if not titre or not date:
+                continue
+            u = lien.group(1) if lien else ""
+            u = u if not u or u.startswith("http") else "https://www.brvm.org" + u
+            societe = next((x for x in c if x and x != titre and not date_de(x) and "Télécharger" not in x), "")
+            sym = B.symbole_de(societe) if societe else None
+            sym = sym or B.symbole_de(titre.split(":")[0])
+            out.append({"sym": sym, "date": date, "titre": titre, "url": u, "type": ANNONCES[section] or type_de(titre)})
+            n += 1
+        if not n:
+            break
+        time.sleep(0.8)
+    return out
+
+
+def dividendes(pages, diag=False):
+    """Tableau officiel des paiements de dividendes : emetteur, exercice, paiement, ex-dividende, montant net."""
+    import requests
+    out = []
+    for p in range(pages):
+        try:
+            html = requests.get(DIVIDENDES + (f"?page={p}" if p else ""), headers=B.ENTETES, timeout=40).text
+        except Exception as e:
+            print(f"  dividendes page {p} illisible : {e.__class__.__name__}")
+            break
+        lignes = [tr for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S) if "<td" in tr]
+        if diag and p == 0 and lignes:
+            print("    dividendes ligne brute :", re.sub(r"\s+", " ", lignes[0])[:300])
+        n = 0
+        for tr in lignes:
+            c = [x for x in cellules(tr)]
+            dates = [date_de(x) for x in c if date_de(x)]
+            montants = [x for x in c if re.fullmatch(r"[\d  .,]+(?:\s*F\s*CFA|\s*FCFA)?", x) and re.search(r"\d", x) and not re.fullmatch(r"20\d\d", x.strip())]
+            if not c or len(dates) < 1 or not montants:
+                continue
+            emetteur = c[0]
+            sym = B.symbole_de(emetteur)
+            exo = next((x for x in c if re.fullmatch(r"(?:Exercice\s*)?20\d\d", x)), "")
+            m = montants[-1].replace("FCFA", "").replace("F CFA", "").replace(" ", "").replace(" ", "")
+            m = float(m.replace(",", ".")) if m.count(".") <= 1 else float(m.replace(".", ""))
+            paiement, exdiv = dates[0], dates[1] if len(dates) > 1 else None
+            out.append({"sym": sym, "emetteur": emetteur, "exercice": re.sub(r"\D", "", exo) or None, "paiement": paiement,
+                        "ex_dividende": exdiv, "dividende": m})
+            n += 1
+        if not n:
+            break
+        time.sleep(0.8)
+    return out
+
+
+def ajouter(actuel, sym, item, premier, auj):
+    """Ajoute une publication si elle est nouvelle ; renvoie True si nouvelle."""
+    if not sym:
+        return False
+    liste = actuel.setdefault(sym, [])
+    cle = item.get("url") or f"{item['type']}|{item['date']}|{item['titre']}"
+    for x in liste:
+        if (x.get("url") or f"{x['type']}|{x['date']}|{x['titre']}") == cle:
+            for k, v in item.items():
+                x.setdefault(k, v)
+            return False
+    item["vu_le"] = "initial" if premier else auj.isoformat()
+    liste.append(item)
+    return True
+
+
 def main():
-    seuls = [a for a in sys.argv[1:] if re.fullmatch(r"[A-Z]{3,6}", a)]
     diag = "--diag" in sys.argv
+    histo = "--historique" in sys.argv
     auj = dt.date.today()
     actuel = json.loads(SORTIE.read_text()) if SORTIE.exists() else {}
+    if actuel and "version" not in actuel.get("_info", {}):  # ancien format (rapports sans date) : on repart de zero
+        actuel = {}
     premier = not actuel
-    pages, _ = B.pages_societes()
-    nb_nouv = 0
-    for sym, urls in sorted(pages.items()):
-        if seuls and sym not in seuls:
-            continue
-        connus = {x["url"]: x for x in actuel.get(sym, [])}
-        liste = []
+    pages = 40 if (premier or histo) else 2
+    nouv = {}
+    # 1. annonces datees
+    for section in ANNONCES:
+        lignes = annonces(section, pages, diag)
+        sans = sum(1 for x in lignes if not x["sym"])
+        print(f"  {section} : {len(lignes)} annonces ({sans} sans société reconnue)")
+        for x in lignes:
+            sym = x.pop("sym")
+            if ajouter(actuel, sym, x, premier, auj):
+                nouv[sym] = nouv.get(sym, 0) + 1
+    # 2. dividendes officiels
+    divs = dividendes(pages if (premier or histo) else 2, diag)
+    print(f"  dividendes : {len(divs)} paiements ({sum(1 for x in divs if not x['sym'])} sans société reconnue)")
+    for d in divs:
+        sym = d.pop("sym")
+        titre = f"Dividende {('exercice ' + d['exercice']) if d.get('exercice') else ''} : {fr_nb(d['dividende'])} FCFA net par action".replace("  ", " ")
+        item = {"date": d["ex_dividende"] or d["paiement"], "titre": titre, "url": "", "type": "dividende", **{k: v for k, v in d.items() if k != "emetteur"}}
+        if ajouter(actuel, sym, item, premier, auj):
+            nouv[sym] = nouv.get(sym, 0) + 1
+    # 3. rapports de resultats (pages « rapports » de chaque societe, date tiree du nom du fichier)
+    pages_soc, _ = B.pages_societes()
+    for sym, urls in sorted(pages_soc.items()):
         for u in urls:
             try:
-                liste += publications(u, diag=diag and sym == sorted(pages)[0])
+                pubs = B.publications_societe(u, pages=8)
+            except Exception:
+                continue
+            for p in pubs:
+                d = date_dossier(p["url"]) or date_de(p["titre"])
+                if not d or d < "2014-01-01":
+                    continue
+                if ajouter(actuel, sym, {"date": d, "titre": p["titre"], "url": p["url"], "type": type_de(p["titre"])}, premier, auj):
+                    nouv[sym] = nouv.get(sym, 0) + 1
+    # 4. lecture des documents recents (resultats : phrase sur le resultat net ; communiques : resume)
+    limite = (auj - dt.timedelta(days=120)).isoformat()
+    lus = 0
+    for sym, liste in actuel.items():
+        if sym.startswith("_"):
+            continue
+        liste.sort(key=lambda x: (x.get("date") or "0000", x["titre"]), reverse=True)
+        for x in liste[:12]:
+            if x.get("date", "") < limite or x.get("lu") or not x.get("url") or x["type"] not in ("resultats", "dividende", "autre", "capital", "suspension") or lus >= 80:
+                continue
+            try:
+                t = texte(x["url"])
+                ph, sens = lire_resultats(t)
+                if ph:
+                    x["detail"], x["sens"] = ph, sens
+                lus += 1
             except Exception as e:
-                print(f"  {sym} : erreur {e.__class__.__name__}")
-        nouv = 0
-        for p in liste:
-            ancien = connus.get(p["url"])
-            item = ancien or {"titre": p["titre"], "url": p["url"], "type": type_de(p["titre"]),
-                              "vu_le": "initial" if premier else auj.isoformat()}
-            item["date"] = p["date"] or p["date_titre"] or (ancien or {}).get("date")
-            if not ancien:
-                nouv += 1
-            ref = item["date"] or (item["vu_le"] if item["vu_le"] != "initial" else None)
-            recent = bool(ref) and ref >= (auj - dt.timedelta(days=400)).isoformat()
-            if recent and item["type"] in ("dividende", "resultats") and "lu" not in item:
-                try:
-                    t = texte(item["url"])
-                    if item["type"] == "dividende":
-                        mt, pay = lire_dividende(t)
-                        if mt:
-                            item["dividende"], item["paiement"] = mt, pay
-                    else:
-                        ph, sens = lire_resultats(t)
-                        if ph:
-                            item["detail"], item["sens"] = ph, sens
-                    item["lu"] = True
-                except Exception as e:
-                    print(f"    {sym} : lecture impossible ({e.__class__.__name__}) {item['titre'][:60]}")
-            connus[p["url"]] = item
-        tous = sorted(connus.values(), key=lambda x: (x.get("date") or "0000", x["titre"]), reverse=True)
-        actuel[sym] = tous[:40]
-        nb_nouv += nouv
-        d0 = tous[0] if tous else None
-        print(f"  {sym:<6} {len(liste):>3} publications, {nouv} nouvelle(s)" + (f" | derniere : {d0.get('date')} {d0['type']} : {d0['titre'][:70]}" if d0 else ""))
-        for x in tous[:6]:
-            if diag and (x.get("detail") or x.get("dividende")):
-                print(f"      {x.get('date')} {x['type']} : {x.get('dividende') or ''} {x.get('paiement') or ''} {x.get('detail') or ''}"[:200])
-        SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=1))
-    sans_date = sum(1 for v in actuel.values() for x in v if not x.get("date"))
-    print(f"Actualite : {len(actuel)} societes, {nb_nouv} nouvelle(s) publication(s), {sans_date} sans date")
+                print(f"    {sym} : lecture impossible ({e.__class__.__name__}) {x['titre'][:60]}")
+            x["lu"] = True
+        if diag:
+            for x in liste[:3]:
+                print(f"    {sym:<6} {x.get('date')} {x['type']:<10} {x['titre'][:70]} {('| ' + x['detail'][:80]) if x.get('detail') else ''}")
+    actuel["_info"] = {"version": 2, "maj": auj.isoformat(), "documents_lus": lus}
+    SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=0))
+    print(f"Actualite : {len(actuel) - 1} societes, {sum(nouv.values())} nouvelle(s) publication(s), {lus} document(s) lu(s)")
+
+
+def fr_nb(v):
+    return (f"{v:,.4f}".rstrip("0").rstrip(".") if v % 1 else f"{v:,.0f}").replace(",", " ").replace(".", ",")
 
 
 if __name__ == "__main__":
