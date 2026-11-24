@@ -464,14 +464,14 @@ function jaugeSolva(sv) {
 
 const ICONES_ACTU = { resultats: "📊", dividende: "💰", assemblee: "🏛️", capital: "🔀", suspension: "⛔", dirigeants: "👤", autre: "📄" };
 function blocActualite(a) {
-  const l = a.actualite || [];
+  const l = (a.actualite || []).filter((x) => !/attestation|commissaires aux comptes|examen limit/i.test(x.titre)).slice(0, 5);
   return `<div class="carte"><h3>Actualité de l'entreprise</h3>
     ${l.length ? l.map((x) => `<div class="actu">
       <span class="ic">${ICONES_ACTU[x.type] || "📄"}</span>
-      <div style="flex:1;min-width:0"><div class="gris">${dateFr(x.date)}</div><div class="titre-actu">${esc(x.titre.replace(/^[^:]{2,40}:\s*/, ""))}</div>
-        ${x.dividende ? `<div class="detail-actu haut">${fcfa(x.dividende)} net par action${x.paiement ? ", payé le " + dateFr(x.paiement) : ""}</div>` : ""}
+      <div style="flex:1;min-width:0"><div class="gris">${dateFr(x.date)}</div><div class="titre-actu">${x.type === "dividende" && x.dividende ? `Dividende${x.exercice ? " de l'exercice " + esc(x.exercice) : ""}` : esc(x.titre.replace(/^[^:]{2,40}:\s*/, ""))}</div>
+        ${x.dividende ? `<div class="detail-actu haut">${fcfa(x.dividende)} par action${x.paiement ? ", payé le " + dateFr(x.paiement) : ""}</div>` : ""}
         ${x.detail ? `<div class="detail-actu ${x.sens > 0 ? "haut" : x.sens < 0 ? "bas" : ""}">${x.sens > 0 ? "▲ " : x.sens < 0 ? "▼ " : ""}${esc(x.detail)}</div>` : ""}
-        <a class="lien" href="${esc(x.url)}" target="_blank" rel="noopener">Lire le document</a></div></div>`).join("")
+        <a class="lien" href="${esc(x.url || "https://www.brvm.org/fr/esv/paiement-de-dividendes")}" target="_blank" rel="noopener">${x.url ? "Lire le document" : "Voir sur brvm.org"}</a></div></div>`).join("")
       : `<div class="gris">Aucun communiqué publié sur brvm.org depuis 2 ans.</div>`}
     <div class="gris" style="margin-top:6px">Communiqués officiels publiés sur brvm.org. Ils ne changent pas la note pour l'instant.</div></div>`;
 }

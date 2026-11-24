@@ -509,7 +509,7 @@ def main():
             vu = x.get("vu_le", "initial")
             if vu == "initial" or vu < limite or x["type"] not in ("resultats", "dividende", "suspension", "capital", "dirigeants"):
                 continue
-            texte = x.get("detail") or (f"{fr(x['dividende'], 0)} FCFA net par action" + (f", payé le {dt.date.fromisoformat(x['paiement']).strftime('%d/%m/%Y')}" if x.get("paiement") else "") if x.get("dividende") else x["titre"])
+            texte = x.get("detail") or (f"Dividende de {fr(x['dividende'], 0)} FCFA par action" + (f", payé le {dt.date.fromisoformat(x['paiement']).strftime('%d/%m/%Y')}" if x.get("paiement") else "") if x.get("dividende") else x["titre"])
             messages.append({"type": "alerte" if x["type"] in ("suspension", "capital") or x.get("sens") == -1 else "info",
                              "titre": f"{f['nom']} : {LIB_ACTU[x['type']].lower()}", "texte": texte, "s": f["s"], "actu": True, "url": x["url"]})
 

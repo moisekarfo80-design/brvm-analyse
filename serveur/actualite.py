@@ -302,7 +302,7 @@ def main():
     print(f"  dividendes : {len(divs)} paiements ({sum(1 for x in divs if not x['sym'])} sans société reconnue)")
     for d in divs:
         sym = d.pop("sym")
-        titre = f"Dividende {('exercice ' + d['exercice']) if d.get('exercice') else ''} : {fr_nb(d['dividende'])} FCFA net par action".replace("  ", " ")
+        titre = f"Dividende {('exercice ' + d['exercice']) if d.get('exercice') else ''} : {fr_nb(d['dividende'])} FCFA par action".replace("  ", " ")
         item = {"date": d["ex_dividende"] or d["paiement"], "titre": titre, "url": "", "type": "dividende", **d}
         if ajouter(actuel, sym, item, premier, auj):
             nouv[sym] = nouv.get(sym, 0) + 1
