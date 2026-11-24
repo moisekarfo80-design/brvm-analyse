@@ -1,0 +1,52 @@
+# Actualite des societes (communiques brvm.org). Chaque soir de semaine avant l'analyse,
+# a la main, et quand le programme de lecture est modifie.
+name: Actualite des societes
+
+on:
+  schedule:
+    - cron: "29 17 * * 1-5"
+  push:
+    paths:
+      - "serveur/actualite.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mise-a-jour
+  cancel-in-progress: false
+
+jobs:
+  actualite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les outils
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra poppler-utils
+          pip install -r requirements.txt
+
+      - name: Lire les communiques
+        run: python serveur/actualite.py --diag 2>&1 | tee actualite_journal.txt
+
+      - name: Enregistrer
+        run: |
+          git config user.name "brvm-analyse (automatique)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p donnees/journaux && tail -c 60000 actualite_journal.txt > donnees/journaux/actualite.txt
+          git add donnees/actualite.json donnees/journaux/actualite.txt
+          git diff --cached --quiet || git commit -q -m "Actualite des societes du $(date -u +%d/%m/%Y) (donnees)"
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin main && break; sleep 5; done
+          python serveur/analyse.py
+          git add donnees docs/data
+          git diff --cached --quiet || git commit -q -m "Actualite des societes (notes)"
+          for i in 1 2 3; do git push -q origin HEAD:main && break; sleep 5; git pull -q --rebase -X theirs origin main; done
