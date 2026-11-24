@@ -1,48 +1,155 @@
-  ABJC    60 publications, 60 nouvelle(s) | derniere : None resultats : SERVAIR ABIDJAN CÔTE D'IVOIRE : Rapport d'activités du 1er trimestre 2
-  BBGC     3 publications, 3 nouvelle(s) | derniere : None resultats : BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme
-  BICB    10 publications, 10 nouvelle(s) | derniere : None resultats : BIIC BN : Rapport des Commissaires Aux Comptes sur les Etats Financier
-  BICC    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport semestriel - BICI CI - Exercice 2015
-  BNBC    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport semestriel - BERNABE CI - Exercice 2015
-  BOAB    59 publications, 59 nouvelle(s) | derniere : None resultats : Rapport troisième trimestre - BANK OF AFRICA BN - Exercice 2014
-  BOABF   60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport activité 1er semestre 2017 - BANK OF AFRICA BF
-  BOAC    60 publications, 60 nouvelle(s) | derniere : 2020-04-23 resultats : BANK OF AFRICA CI : Etats financiers exercice 2019 (annule et remplace
-  BOAM    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport troisième trimestre - BANK OF AFRICA ML - Exercice 2012
-  BOAN    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport troisième trimestre - BANK OF AFRICA NG - Exercice 2014
-  BOAS    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport troisième trimestre - BANK OF AFRICA SN - Exercice 2015
-  CABC    60 publications, 60 nouvelle(s) | derniere : None resultats : SICABLE CÔTE D'IVOIRE : Rapport spécial des Commissaires Aux Comptes s
-  CBIBF   21 publications, 21 nouvelle(s) | derniere : 2026-06-30 resultats : CORIS BANK INTERNATIONAL BF : Rapport d'Examen Limité des Commissaires
-  CFAC    58 publications, 58 nouvelle(s) | derniere : None resultats : TRACTAFRIC MOTORS CÔTE D'IVOIRE : Etats financiers - Exercices 2018 à 
-  CIEC    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport troisième trimestre - CIE CI - Exercice 2015
-  ECOC    46 publications, 46 nouvelle(s) | derniere : None resultats : ECOBANK CÔTE D'IVOIRE : Rapport d'activités et Attestation des Commiss
-  ETIT    60 publications, 60 nouvelle(s) | derniere : 2016-09-30 resultats : Etats Financiers au 30 Septembre 2016 - ECOBANK TRANS. INCORP. TG
-  FTSC    60 publications, 60 nouvelle(s) | derniere : None resultats : Résultats au premier trimestre 2017_ FILTISAC CI
-  LNBB     8 publications, 8 nouvelle(s) | derniere : None resultats : LOTERIE NATIONALE DU BENIN : Rapport d'activités du 1er trimestre 2025
-  NEIC    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport semestriel - NEI-CEDA CI - Exercice 2014
-  NSBC    45 publications, 45 nouvelle(s) | derniere : None resultats : NSIA BANQUE CÔTE D'IVOIRE : Rapport d'activités du 3ème trimestre 2024
-  NTLC    60 publications, 60 nouvelle(s) | derniere : 2016-06-30 resultats : Tableau d'Activité et de Résultat semestriel au 30 juin 2016 - NESTLE 
-  ONTBF   60 publications, 60 nouvelle(s) | derniere : 2022-12-31 resultats : ONATEL BURKINA FASO : Résultats financiers au 31 décembre 2022
-  ORAC    27 publications, 27 nouvelle(s) | derniere : None resultats : Rapport annuel intégré - Exercice 2025 - ORANGE CI
-  ORGT    40 publications, 40 nouvelle(s) | derniere : None resultats : ORAGROUP TOGO : Rapport des commissaires aux comptes sur l'information
-  PALC    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport semestriel - PALM CI - Exercice 2015
-  PRSC    59 publications, 59 nouvelle(s) | derniere : None resultats : Tractafric Motors CI : Rapport d'activité du 1er semestre 2022
-  SAFC    60 publications, 60 nouvelle(s) | derniere : None resultats : SAFCA CÔTE D'IVOIRE : Rapport des Commissaires Aux Comptes sur les Eta
-  SCRC    50 publications, 50 nouvelle(s) | derniere : None resultats : SUCRIVOIRE CÔTE D'IVOIRE : Rapport d'activités du 1er trimestre 2025
-  SDCC    60 publications, 60 nouvelle(s) | derniere : None resultats : SODECI : Rapport d’activités au premier semestre 2018
-  SDSC    59 publications, 59 nouvelle(s) | derniere : None resultats : Rapport semestriel - BOLLORE TRANSPORT & LOGISTICS CI - Exercice 2015
-  SGBC    60 publications, 60 nouvelle(s) | derniere : None resultats : SOCIÉTÉ GÉNÉRALE CI : Etats Financiers certifiés et approuvés - exerci
-  SHEC    44 publications, 44 nouvelle(s) | derniere : None resultats : VIVO ENERY CÔTE D'IVOIRE : Rapport d'activités - 2ème trimestre 2025
-  SIBC    54 publications, 54 nouvelle(s) | derniere : 2018-06-30 resultats : SIB CI : Attestion des Commissaires aux comptes du CAC au 30 juin 2018
-  SICC    37 publications, 37 nouvelle(s) | derniere : None resultats : SICOR CI : Rapport d'activités au 1er semestre 2019
-  SIVC    60 publications, 60 nouvelle(s) | derniere : None resultats : Rapport troisième trimestre - AIR LIQUIDE CI - Exercice 2013
-  SLBC    60 publications, 60 nouvelle(s) | derniere : None resultats : SUCRIVOIRE CÔTE D'IVOIRE : Etats financiers - Normes IFRS - Exercice 2
-  SMBC    60 publications, 60 nouvelle(s) | derniere : None autre : SMB CÔTE D'IVOIRE : Rapports Annuels Exercice 2020 (Annule et remplace
-  SNTS    60 publications, 60 nouvelle(s) | derniere : 2020-02-27 resultats : SONATEL SENEGAL : Présentation des résultats de l’exercice 2019 (Annul
-  SOGC    60 publications, 60 nouvelle(s) | derniere : 2016-09-30 resultats : Rapport d'activités au 30 Septembre 2016 - SOGB
-  SPHC    59 publications, 59 nouvelle(s) | derniere : None resultats : SAPH CÔTE D'IVOIRE : Rapport d'activités - 3ème trimestre 2025
-  STAC    57 publications, 57 nouvelle(s) | derniere : None resultats : SETAO CÔTE D'IVOIRE : Rapport d'activités - 3ème trimestre 2025
-  STBC    60 publications, 60 nouvelle(s) | derniere : 2017-05-18 assemblee : Rapport annuel exercice 2016 - SITAB (AGO du 18 mai 2017).compressed
-  TTLC    59 publications, 59 nouvelle(s) | derniere : None resultats : TotalEnergies Marketing Côte d'Ivoire : Rapport d'activité et Attestat
-  TTLS    53 publications, 53 nouvelle(s) | derniere : None resultats : TotalEnergies Marketing Sénégal : Rapport d'activités - 3ème trimestre
-  UNLC    25 publications, 25 nouvelle(s) | derniere : None resultats : UNILEVER CÔTE D'IVOIRE : Rapport d'activités au 1er trimestre 2021
-  UNXC    60 publications, 60 nouvelle(s) | derniere : None resultats : UNIWAX CÔTE D'IVOIRE : Rapport d'activités du 1er trimestre 2025
-Actualite : 47 societes, 2433 nouvelle(s) publication(s), 1718 sans date
+    communiques ligne brute : <td>SNTS</td><td class="text-right">3 950</td><td class="text-right">1,28% <span class="icone-seance good"></span></td> 
+  communiques : 393 annonces (154 sans société reconnue)
+    convocations-assemblees-generales ligne brute : <td>SNTS</td><td class="text-right">3 950</td><td class="text-right">1,28% <span class="icone-seance good"></span></td> 
+  convocations-assemblees-generales : 600 annonces (67 sans société reconnue)
+    changements-de-dirigeants ligne brute : <td>SNTS</td><td class="text-right">3 950</td><td class="text-right">1,28% <span class="icone-seance good"></span></td> 
+  changements-de-dirigeants : 109 annonces (13 sans société reconnue)
+    franchissements-de-seuil ligne brute : <td>SNTS</td><td class="text-right">3 950</td><td class="text-right">1,28% <span class="icone-seance good"></span></td> 
+  franchissements-de-seuil : 35 annonces (5 sans société reconnue)
+    dividendes ligne brute : <td>SNTS</td><td class="text-right">3 950</td><td class="text-right">1,28% <span class="icone-seance good"></span></td> 
+  dividendes : 383 paiements (122 sans société reconnue)
+    SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
+    SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
+    SOGC   2026-10-30 resultats  SOGB CI : Rapport d'activités - 3e trimestre 2026 | Le résultat net au 30 septembre 2026 est en baisse de 34% par rapport à la même 
+    ETIT   2026-10-28 resultats  ETI TG : Rapport d'activités - 3e trimestre 2026 | GROUPE ECOBANK Tableau d’activité Troisième trimestre 2026 Exercice clos le 30 s
+    ETIT   2026-10-23 assemblee  ETI TG : Communiqué - Annulation de l'Assemblée Générale Ordinaire 
+    ETIT   2026-10-02 assemblee  ETI TG : Avis de convocation - Assemblée Générale Ordinaire 
+    SNTS   2026-10-29 resultats  SONATEL SN : Rapport d'activités - 3e trimestre 2026 
+    SNTS   2026-10-13 autre      SONATEL SN : Communiqué 
+    SNTS   2026-09-18 assemblee  SONATEL SN : Avis de convocation - Assemblée Générale Extraordinaire 
+    SCRC   2026-11-02 resultats  SUCRIVOIRE CI : Rapport d'activités - 1er semestre 2026 | ▪ Excédent brut d'exploitation de 7,08 milliards FCFA, en hausse de 77%, et résu
+    SCRC   2026-09-22 autre      SUCRIVOIRE CI : Communiqué 
+    SCRC   2026-09-21 resultats  SUCRIVOIRE CI : Rapport d'activités - 1er trimestre 2026 | *__ Résultat net de 4,35 milliards FCFA, en progression de 36% (+1,15 milliard F
+    UNXC   2026-10-28 resultats  UNIWAX CI : Rapport d'activités - 3e trimestre 2026 
+    UNXC   2026-09-18 capital    UNIWAX CI : Communiqué - Déclarations de franchissement de seuil 
+    UNXC   2026-07-13 resultats  UNIWAX CI : Rapport d'activités - 1er semestre 2026 
+    BICC   2026-10-30 resultats  BICI CI : Rapport d'activités - 3e trimestre 2026 | Le Résultat Net ressort bénéficiaire à 31 435 MXOF au terme du troisième trimest
+    BICC   2026-10-13 resultats  BICI CI : Rapport d'activités - 1er semestre 2026 | En conséquence, les performances du premier semestre 2026 traduisent une amélior
+    BICC   2026-07-14 autre      BICI CI : Communiqué 
+    NSBC   2026-10-30 resultats  NSIA BANQUE CI : Rapport d'activités - 3e trimestre 2026 
+    NSBC   2026-10-23 resultats  NSIA BANQUE CI : Rapport d'activités - 1er semestre 2026 
+    NSBC   2026-07-14 autre      NSIA BANQUE CI : Communiqué 
+    FTSC   2026-11-16 dirigeants FILTISAC CI : Changement important dans la Direction 
+    FTSC   2026-11-05 resultats  FILTISAC CI : Rapport d'activités - 3e trimestre 2026 - (Annule et rem 
+    FTSC   2026-11-02 resultats  FILTISAC CI : Rapport d'activités - 3e trimestre 2026 
+    SIVC   2026-06-29 assemblee  ERIUM CI : Pouvoir - Assemblée Générale Ordinaire 
+    SIVC   2026-06-26 resultats  ERIUM CI : Etats financiers - Exercice 2025 
+    SIVC   2026-06-26 assemblee  Avis de convocation - Assemblée Générale Ordinaire - ERIUM CI 
+    BOAN   2026-10-26 resultats  BOA NG : Rapport d'activités - 3e trimestre 2026 | o résultat Net en forte progression de 121,9% pour atteindre 6 291 millions de F
+    BOAN   2026-09-25 resultats  BOA NIGER : Attestation des Commissaires Aux Comptes et Rapport d'acti 
+    BOAN   2026-04-30 resultats  BOA NG : Rapport d'activités - 1er trimestre 2026 
+    SAFC   2026-11-02 resultats  SAFCA CI : Rapport d'activités - 3e trimestre 2026 | 20,00 % 10,233 % 11,430 % Conforme dirigeants et au personnel II - COMMENTAIRE D
+    SAFC   2026-09-03 resultats  SAFCA CI : Rapport d'activités - 2eme trimestre 2026 | RAPPORT D'ACTIVITES 2e TRIMESTRE 2026 ALIOS FINANCE CÔTE D'IVOIRE I - TABLEAUX D
+    SAFC   2026-07-03 resultats  SAFCA CÔTE D'IVOIRE : Rapport des Commissaires Aux Comptes sur les Eta 
+    ONTBF  2026-10-23 resultats  MOOV BF (Ex ONATEL) : Rapport d'activités - 3e trimestre 2026 | L'EBITA à fin septembre 2026 ressort à 18,9 Mds FCFA et le résultat net IFRS s'é
+    ONTBF  2026-10-01 resultats  Rapport d'activités et Attestation des Commissaires Aux Comptes - 1er  
+    ONTBF  2026-06-12 dividende  Dividende exercice 2025 : 145,3214 FCFA net par action 
+    SPHC   2026-10-13 resultats  SAPH CI : Rapport d'activités - 3e trimestre 2026 
+    SPHC   2026-09-22 dirigeants SAPH : Communiqué - Changement important dans la Direction 
+    SPHC   2026-09-04 resultats  SAPH CI : Rapport d'activités et Attestation des Commissaires Aux Comp 
+    LNBB   2026-10-28 resultats  LNB BN : Rapport d'activités - 3e trimestre 2026 | Le résultat net s’établit ainsi à 1 778 millions de FCFA, contre 1 034 millions 
+    LNBB   2026-07-31 resultats  LNB BN : Rapport d'activités et rapport d'examen limité des Commissair | En dépit du recul du produit brut des jeux, le Résultat d'Exploitation et le Rés
+    LNBB   2026-07-31 dividende  Dividende exercice 2025 : 164,1709 FCFA net par action 
+    SEMC   2025-12-17 dirigeants EVIOSYS PACKAGING SIEM CI : Changement de dénomination sociale 
+    SEMC   2025-12-17 assemblee  EVIOSYS PACKAGING SIEM CI : Avis de convocation - Assemblée Générale O 
+    SEMC   2025-03-28 assemblee  EVIOSYS PACKAGING SIEM CÔTE D'IVOIRE : Avis de convocation à l'Assembl 
+    ORGT   2026-11-12 resultats  ORAGROUP TG : Rapport d'activités - 3e trimestre 2026 | Commentaires de la Direction Le résultat net consolidé au 3° trimestre 2026 s'ét
+    ORGT   2026-10-09 resultats  ORAGROUP TG : Rapport d'activités - 1er semestre 2026 | Le résultat net s'établit à 18,5 milliards FCFA, en hausse de 1 % par rapport au
+    ORGT   2026-07-05 assemblee  ORAGROUP TG : Avis de convocation et Projet de résolution - Assemblée  
+    UNLC   2026-03-12 assemblee  UNILEVER CI : Avis de convocation - Assemblée Générale Ordinaire 
+    UNLC   2025-04-08 autre      UNILEVER CÔTE D'IVOIRE : Communiqué de presse 
+    UNLC   2024-09-04 resultats  UNILEVER CÔTE D'IVOIRE : Etats Financiers - Exercice 2023 
+    SGBC   2026-10-30 resultats  SOCIETE GENERALE CI : Rapport d'activités - 3e trimestre 2026 
+    SGBC   2026-08-31 resultats  SOCIETE GENERALE CI : Rapport d'activités - 1er semestre 2026 
+    SGBC   2026-06-04 assemblee  SOCIETE GENERALE CI : Avis de convocation - Assemblée Générale Mixte 
+    ECOC   2026-10-27 resultats  ECOBANK CI : Rapport d'activités - 3e trimestre 2026 
+    ECOC   2026-09-09 resultats  ECOBANK CI : Rapport d'activités - 1er semestre 2026 | UN MEILLEUR CHOIX POUR UNE AFRIQUE MEILLEURE Le tableau ci-après résume les perf
+    ECOC   2026-05-22 dividende  Dividende exercice 2025 : 888 FCFA net par action 
+    SICC   2026-06-12 resultats  SICOR CI : Rapport d'activités annuel et Etats Financiers - Exercice 2 
+    SICC   2026-05-16 assemblee  SICOR CI : Avis de convocation - Assemblée Générale Ordinaire 
+    SICC   2024-12-05 resultats  SICOR CI : Rapport annuel - Exercice 2023 
+    SLBC   2026-10-30 resultats  SOLIBRA CI : Rapport d'activités - 1er semestre 2026 | ANS p # SN mx, É NU A # vous à ms RAPPORT D'ACTIVITE DU PREMIER SEMESTRE 2026 I-
+    SLBC   2026-07-29 dividende  Dividende exercice 2025 : 2 127 FCFA net par action 
+    SLBC   2026-05-20 assemblee  SOLIBRA CI : Pouvoir - Assemblée Générale Ordinaire 
+    STAC   2026-10-30 resultats  SETAO CI : Rapport d'activités - 3e trimestre 2026 | SETAO - Publication du tableau d’activité et de résultat au 30 septembre 2026 Va
+    STAC   2026-10-30 resultats  SETAO CI : Rapport d'activités - 1er semestre 2026 | SETAO - Publication du tableau d’activité et de résultat au 30 juin 2026 Variati
+    STAC   2026-10-30 resultats  SETAO CI : Attestation des Commissaires Aux Comptes sur le rapport d'a 
+    BNBC   2026-10-27 resultats  BERNABE CI : Rapport d'activités - 3e trimestre 2026 
+    BNBC   2026-10-27 resultats  BERNABE CI : Rapport d'activités - 1er semestre 2026 
+    BNBC   2026-10-27 resultats  BERNABE CI : Attestation des Commissaires Aux Comptes sur le rapport d 
+    SHEC   2026-11-17 resultats  VIVO ENERGY CI : Rapport d'activités - 3e trimestre 2026 | Le rapport d’activité du troisième trimestre 2026 1.1 Tableau d’activité et de r
+    SHEC   2026-09-24 dividende  Dividende exercice 2025 : 96,67 FCFA net par action 
+    SHEC   2026-07-20 resultats  VIVO ENERGY CI : Rapport d'activités - 2eme trimestre 2026 
+    SIBC   2026-11-02 resultats  SIB CI : Rapport d'activités - 3e trimestre 2026 | Au terme de ce troisième trimestre 2026, la Société Ivoirienne de Banque (SIB) a
+    SIBC   2026-09-28 resultats  SIB CI : Rapport d'activités - 1er semestre 2026 | TABLEAU D’ACTIVITÉS ET DE RÉSULTATS en Milliards FCFA Variation Données 30/06/20
+    SIBC   2026-09-28 resultats  SIB CI : Attestation des Commissaires Aux Comptes - 1er semestre 2026 
+    BOAM   2026-09-23 resultats  BOA MALI : Rapport d'activités - 1er semestre 2026 | e Hausse du résultat net de 8,2% par rapport à fin juin 2025.
+    BOAM   2026-06-23 resultats  BOA MALI : Rapport d'activités - 1er trimestre 2026 
+    BOAM   2026-03-25 assemblee  BOA ML : Avis de convocation - Assemblée Générale Ordinaire 
+    ORAC   2026-10-28 resultats  ORANGE CI : Rapport d'activités - 3e trimestre 2026 | GROUPE ORANGE CI Résultats financiers consolidés - Septembre 2026 Abidjan – Octo
+    ORAC   2026-10-08 resultats  ORANGE CI : Rapport d'activités - 1er semestre 2026 | GROUPE ORANGE CI Résultats financiers consolidés - Juin 2026 Abidjan – Juillet 2
+    ORAC   2026-10-08 resultats  ORANGE CI : Attestation des Commissaires Aux Comptes sur le rapport d' 
+    CFAC   2026-10-30 resultats  CFAO MOTORS CI : Rapport d'activités - 1er semestre 2026 
+    CFAC   2026-08-13 dividende  Dividende exercice 2025 : 63 FCFA net par action 
+    CFAC   2026-07-13 resultats  CFAO MOTORS CI : Rapport annuel - Exercice 2025 
+    ABJC   2026-10-16 resultats  SERVAIR ABIDJAN CI : Rapport d'activités - 1er semestre 2026 | SERVAIR ABIDJAN servair / bi d “ Société anonyme au capital de 1 364 000 000 de 
+    ABJC   2026-10-16 resultats  SERVAIR ABIDJAN CI : Attestation des Commissaires Aux Comptes sur le r 
+    ABJC   2026-10-16 resultats  SERVAIR ABIDJAN CI - Rapport d'activités - 3e trimestre 2026 | n siège social : Aéroport Felix Houphouet Boigny - RCCM: CI-ABJ-1969-B-6360 a ga
+    TTLC   2026-10-27 resultats  TOTALENERGIES MARKETING CI : Rapport d'activités - 3e trimestre 2026 | COMMUNIQUÉ TotalEnergies Marketing Côte d’Ivoire Publication des comptes à fin s
+    TTLC   2026-10-27 resultats  TOTALENERGIES MARKETING CI : Rapport d'activités - 1er semestre 2026 | Dans l’ensemble, la performance commerciale permet au résultat net de s’établir 
+    TTLC   2026-10-27 resultats  TOTALENERGIES MARKETING CI : Attestation des Commissaires Aux Comptes  
+    CIEC   2026-10-29 resultats  CIE CI : Rapport d'activités - 1er semestre 2026 | Valeur % Chiffre d’affaires CIE 138 243 141 513 3 270 2,31% 306 786 Résultat opé
+    CIEC   2026-10-29 resultats  CIE CI : Attestation des Commissaires Aux Comptes sur le rapport d'act 
+    CIEC   2026-07-27 dividende  Dividende exercice 2025 : 234 FCFA net par action 
+    BOAB   2026-11-02 resultats  BOA BN : Rapport d'activités - 3e trimestre 2026 
+    BOAB   2026-07-23 resultats  BOA BN : Rapport d'activités - 1er semestre 2026 
+    BOAB   2026-05-04 resultats  BOA BENIN : Rapport d'activités - 1er trimestre 2026 
+    STBC   2026-10-30 resultats  SITAB CI : Rapport d'activités - 3e trimestre 2026 | 724 Abidjan 01 République de Côte d'Ivoire BRANDS Tél : + 225 27 22 48 98 13 Fax
+    STBC   2026-10-30 resultats  SITAB CI : Rapport d'activités - 1er semestre 2026 | Cette tendance se reflète au niveau du résultat net qui ressort à 17,9 milliards
+    STBC   2026-08-17 resultats  SITAB CI : Rapport d'activités – 2ème trimestre 2026 | : (225) 27 22 48 98 03 fé | &.4 Le : eme RAPPORT D'ACTIVITE DU 2°" TRIMESTRE 202
+    SDCC   2026-10-30 resultats  SODE CI : Rapport d'activités - 3e trimestre 2026 | 196 -737 Impôt sur le résultat -1 363 -1 085 -278 -25,6 % -1 579 -3 243 Résultat
+    SDCC   2026-10-30 resultats  SODE CI : Rapport d'activités - 1er semestre 2026 | -737 Impôt sur le résultat -1 579 -1 455 -124 -8,5 % -3 243 Résultat Net 2 667 1
+    SDCC   2026-09-15 dividende  Dividende exercice 2025 : 525 FCFA net par action 
+    BOAC   2026-11-02 resultats  BOA CI : Rapport d'activités - 3e trimestre 2026 | La banque affiche au 30 septembre 2026 un résultat net de 29 657 millions de FCF
+    BOAC   2026-10-01 resultats  BOA CI : Rapport d’examen limité des états financiers - 1er semestre 2 
+    BOAC   2026-10-01 resultats  BOA CI : Rapport d'activités - 1er semestre 2026 | La banque affiche au 30 juin 2026 un résultat net de 19 817 millions de FCFA, so
+    BOABF  2026-10-26 resultats  BOA BF : Rapport d'activités - 3e trimestre 2026 | | déc-25 EE | Indicateursen |" |" |" | Envaleur | En pourcentage(*) a TC Ge Prod
+    BOABF  2026-08-05 resultats  BOA BF : Rapport d'activités - 1er semestre 2026 | en repli de 5,2% sur os p ' P ' une année glissante : 1 - Le résultat net après 
+    BOABF  2026-08-05 resultats  BOA BF : Etats financiers - 1er semestre 2026 
+    BOAS   2026-10-21 resultats  BOA SN : Rapport d'activités - 3e trimestre 2026 | MmBANK OF AFRICA BMCE GROUP (®) Ü RAPPORT D’ACTIVITE DU 3°"€ TRIMESTRE 2026 | l-
+    BOAS   2026-09-21 resultats  BOA SENEGAL : Rapport d'activités - 1er semestre 2026 
+    BOAS   2026-04-22 resultats  BOA SN : Rapport d'activités - 1er trimestre 2026 
+    NEIC   2026-10-30 resultats  NEI-CEDA CI : Rapport d'activités - 3e trimestre 2026 | trimestre 3ème trimestre Année 2025 Variations FCFA 2026 2025 En valeur En (1) (
+    NEIC   2026-10-30 resultats  NEI-CEDA CI : Rapport d'activités - 1er semestre 2026 | semestre l.t semestre Année 2025 Variations En FCFA 2026 2025 En valeur pourcent
+    NEIC   2026-10-30 resultats  NEI-CEDA CI : Attestation des Commissaires Aux Comptes sur le rapport  | semestre l.t semestre Année 2025 Variations En FCFA 2026 2025 En valeur pourcent
+    SDSC   2026-10-26 dividende  Dividende exercice 2025 : 92 FCFA net par action 
+    SDSC   2026-10-05 resultats  AFRICA GLOGAL LOGISTICS CI : Attestation des Commissaires Aux Comptes  
+    SDSC   2026-09-17 resultats  AFRICA GLOBAL LOGISTICS CI : Rapport des Commissaires Aux Comptes sur  
+    TTLS   2026-11-09 resultats  TOTALENERGIES MARKETING SN : Attestation des Commissaires Aux Comptes  
+    TTLS   2026-10-30 resultats  TOTALENERGIES MARKETING SN : Rapport d'activités - 3e trimestre 2026 
+    TTLS   2026-10-30 resultats  TOTALENERGIES MARKETING SN : Rapport d'activités - 1er semestre 2026 
+    PALC   2026-10-27 resultats  PALM CI : Rapport d'activités - 3e trimestre 2026 
+    PALC   2026-10-07 resultats  PALM CI : Rapport d'activités - 1er semestre 2026 
+    PALC   2026-10-07 resultats  PALM CI : Attestation des Commissaires Aux Comptes sur le rapport d'ac 
+    CABC   2026-10-30 resultats  SICABLE CI : Rapport d'activités - 3e trimestre 2026 
+    CABC   2026-10-30 resultats  SICABLE CI : Rapport d'activités - 1er semestre 2026 
+    CABC   2026-10-30 resultats  SICABLE CI : Attestation des Commissaires Aux Comptes sur le rapport d 
+    SMBC   2026-10-30 resultats  SMB CI : Rapport d'activités - 3e trimestre 2026 
+    SMBC   2026-10-30 resultats  SMB CI : Rapport d'activités - 1er semestre 2026 
+    SMBC   2026-10-30 resultats  SMB CI : Attestation des Commissaires Aux Comptes sur le rapport d'act 
+    PRSC   2026-10-29 resultats  TRACTAFRIC MOTORS CI : Rapport d'activités - 1er semestre 2026 
+    PRSC   2026-10-29 resultats  TRACTAFRIC MOTORS CI : Etats financiers - 1er semestre 2026 
+    PRSC   2026-10-22 dividende  Dividende exercice 2025 : 209 FCFA net par action 
+    NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 3e trimestre 2026 
+    NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 1er semestre 2026 
+    NTLC   2026-09-04 dividende  Dividende exercice 2025 : 420 FCFA net par action 
+    BICB   2026-11-10 resultats  BIIC BN : Rapport d'activités - 3e trimestre 2026 
+    BICB   2026-09-21 resultats  BIIC BN : Rapport d'activités et Etats financiers IFRS - 1er semestre  
+    BICB   2026-07-30 dividende  Dividende exercice 2025 : 254,6 FCFA net par action 
+    CBIBF  2026-10-29 resultats  CORIS BANK INTERNATIONAL BF : Rapport d'activités - 3e trimestre 2026 
+    CBIBF  2026-08-31 resultats  CORIS BANK INTERNATIONAL BF : Rapport d'activités - 1er semestre 2026 
+    CBIBF  2026-08-31 resultats  CORIS BANK INTERNATIONAL BF : Rapport d'Examen Limité des Commissaires 
+    BBGC   2026-10-28 resultats  BRIDGE BANK GROUP CI : Rapport d'activités - 3e trimestre 2026 
+    BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme 
+    BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : 1er semestre 2026 
+Actualite : 48 societes, 3329 nouvelle(s) publication(s), 80 document(s) lu(s)
