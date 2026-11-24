@@ -95,6 +95,18 @@
 },
 {
 "date": "2025-07-11",
+"titre": "Dividende exercice 2024 : 600 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2024",
+"paiement": "2025-07-15",
+"ex_dividende": "2025-07-11",
+"dividende": 600.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-11",
 "titre": "Dividende exercice 2024 : 600 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -142,6 +154,18 @@
 },
 {
 "date": "2024-08-02",
+"titre": "Dividende exercice 2023 : 207 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2023",
+"paiement": "2024-08-06",
+"ex_dividende": "2024-08-02",
+"dividende": 207.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-08-02",
 "titre": "Dividende exercice 2023 : 207 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -185,6 +209,18 @@
 "titre": "SOGB CI : Rapport d'activités du 3ème trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231026_-_rapport_dactivites_-_3eme_trimestre_2023_-_sogb_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-07-13",
+"titre": "Dividende exercice 2022 : 558 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2022",
+"paiement": "2023-07-17",
+"ex_dividende": "2023-07-13",
+"dividende": 558.0,
 "vu_le": "initial"
 },
 {
@@ -243,6 +279,18 @@
 },
 {
 "date": "2022-07-19",
+"titre": "Dividende exercice 2021 : 541,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2021",
+"paiement": "2022-07-21",
+"ex_dividende": "2022-07-19",
+"dividende": 541.8,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-19",
 "titre": "Dividende exercice 2021 : 541,8 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -279,6 +327,18 @@
 "titre": "SOGB CI : Rapport d'activité au 3ème trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211025_-_rapport_dactivite_au_3eme_trimestre_2021_-_sogb_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-13",
+"titre": "Dividende exercice 2020 : 250 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2020",
+"paiement": "2021-07-15",
+"ex_dividende": "2021-07-13",
+"dividende": 250.0,
 "vu_le": "initial"
 },
 {
@@ -351,6 +411,18 @@
 },
 {
 "date": "2020-07-15",
+"titre": "Dividende exercice 2019 : 126 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2019",
+"paiement": "2020-07-15",
+"ex_dividende": null,
+"dividende": 126.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-15",
 "titre": "Dividende exercice 2019 : 126 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -360,6 +432,18 @@
 "dividende": 126.0,
 "vu_le": "initial",
 "emetteur": "SOGB"
+},
+{
+"date": "2020-07-13",
+"titre": "Dividende exercice 2019 : 126 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2019",
+"paiement": "2020-07-15",
+"ex_dividende": "2020-07-13",
+"dividende": 126.0,
+"vu_le": "initial"
 },
 {
 "date": "2020-07-13",
@@ -424,6 +508,18 @@
 },
 {
 "date": "2019-07-16",
+"titre": "Dividende exercice 2018 : 129 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2018",
+"paiement": "2019-07-16",
+"ex_dividende": null,
+"dividende": 129.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-16",
 "titre": "Dividende exercice 2018 : 129 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -433,6 +529,18 @@
 "dividende": 129.0,
 "vu_le": "initial",
 "emetteur": "SOGB"
+},
+{
+"date": "2019-07-11",
+"titre": "Dividende exercice 2018 : 126 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2018",
+"paiement": "2019-07-15",
+"ex_dividende": "2019-07-11",
+"dividende": 126.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-07-11",
@@ -497,6 +605,18 @@
 },
 {
 "date": "2018-07-23",
+"titre": "Dividende exercice 2018 : 432 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2018",
+"paiement": "2018-07-23",
+"ex_dividende": null,
+"dividende": 432.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-23",
 "titre": "Dividende exercice 2018 : 432 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -506,6 +626,18 @@
 "dividende": 432.0,
 "vu_le": "initial",
 "emetteur": "SOGB"
+},
+{
+"date": "2018-07-19",
+"titre": "Dividende exercice 2017 : 432 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2017",
+"paiement": "2018-07-23",
+"ex_dividende": "2018-07-19",
+"dividende": 432.0,
+"vu_le": "initial"
 },
 {
 "date": "2018-07-19",
@@ -570,6 +702,18 @@
 },
 {
 "date": "2017-07-31",
+"titre": "Dividende exercice 2016 : 3 204 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2016",
+"paiement": "2017-07-31",
+"ex_dividende": null,
+"dividende": 3204.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-31",
 "titre": "Dividende exercice 2016 : 3 204 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -579,6 +723,18 @@
 "dividende": 3204.0,
 "vu_le": "initial",
 "emetteur": "SOGB"
+},
+{
+"date": "2017-07-27",
+"titre": "Dividende exercice 2016 : 3 204 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2016",
+"paiement": "2017-07-31",
+"ex_dividende": "2017-07-27",
+"dividende": 3204.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-27",
@@ -1018,6 +1174,18 @@
 "titre": "Ecobank Transnational Incorporated : Rapport d'activités - 3ème trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231130_-_rapport_dactivites_-_3eme_trimestre_2023_-_ecobank_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-06-06",
+"titre": "Dividende exercice 2022 : 0,6048 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK TG",
+"exercice": "2022",
+"paiement": "2023-06-08",
+"ex_dividende": "2023-06-06",
+"dividende": 0.6048,
 "vu_le": "initial"
 },
 {
@@ -2257,6 +2425,18 @@
 },
 {
 "date": "2026-05-22",
+"titre": "Dividende exercice 2025 : 1 740 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2025",
+"paiement": "2026-05-26",
+"ex_dividende": "2026-05-22",
+"dividende": 1740.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-05-22",
 "titre": "Dividende exercice 2025 : 1 740 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -2332,6 +2512,18 @@
 },
 {
 "date": "2025-05-20",
+"titre": "Dividende exercice 2024 : 1 655 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2024",
+"paiement": "2025-05-22",
+"ex_dividende": "2025-05-20",
+"dividende": 1655.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-05-20",
 "titre": "Dividende exercice 2024 : 1 655 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -2400,6 +2592,18 @@
 },
 {
 "date": "2024-05-15",
+"titre": "Dividende exercice 2023 : 1 575 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2023",
+"paiement": "2024-05-17",
+"ex_dividende": "2024-05-15",
+"dividende": 1575.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-05-15",
 "titre": "Dividende exercice 2023 : 1 575 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -2450,6 +2654,18 @@
 "titre": "SONATEL SENEGAL : Résultat financier du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230721_-_rapport_dactivites_-_1er_semestre_2023_-_sonatel_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-05-15",
+"titre": "Dividende exercice 2022 : 1 500 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2022",
+"paiement": "2023-05-17",
+"ex_dividende": "2023-05-15",
+"dividende": 1500.0,
 "vu_le": "initial"
 },
 {
@@ -2525,6 +2741,18 @@
 "titre": "SONATEL SENEGAL : Résultats financiers du 1er semestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20220721_-_resultats_financiers_-_1er_semestre_2022_-_sonatel_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-05-16",
+"titre": "Dividende exercice 2021 : 1 400 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2021",
+"paiement": "2022-05-18",
+"ex_dividende": "2022-05-16",
+"dividende": 1400.0,
 "vu_le": "initial"
 },
 {
@@ -2611,6 +2839,18 @@
 },
 {
 "date": "2021-05-12",
+"titre": "Dividende exercice 2020 : 1 225 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2020",
+"paiement": "2021-05-17",
+"ex_dividende": "2021-05-12",
+"dividende": 1225.0,
+"vu_le": "initial"
+},
+{
+"date": "2021-05-12",
 "titre": "Dividende exercice 2020 : 1 225 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -2693,6 +2933,18 @@
 },
 {
 "date": "2020-05-18",
+"titre": "Dividende exercice 2019 : 1 225 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2019",
+"paiement": "2020-05-20",
+"ex_dividende": "2020-05-18",
+"dividende": 1225.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-05-18",
 "titre": "Dividende exercice 2019 : 1 225 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -2761,6 +3013,18 @@
 },
 {
 "date": "2019-05-14",
+"titre": "Dividende exercice 2018 : 1 500 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2018",
+"paiement": "2019-05-14",
+"ex_dividende": null,
+"dividende": 1500.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-14",
 "titre": "Dividende exercice 2018 : 1 500 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -2776,6 +3040,18 @@
 "titre": "SONATEL SENEGAL : Rapport d’activités du 1er trimestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20190510_-_rapport_dactivites_du_1er_trimestre_2019_-_sonatel_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-05-10",
+"titre": "Dividende exercice 2018 : 1 500 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SONATEL",
+"exercice": "2018",
+"paiement": "2019-05-14",
+"ex_dividende": "2019-05-10",
+"dividende": 1500.0,
 "vu_le": "initial"
 },
 {
@@ -3233,6 +3509,18 @@
 },
 {
 "date": "2021-08-18",
+"titre": "Dividende exercice 2020 : 40,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SUCRIVOIRE",
+"exercice": "2020",
+"paiement": "2021-08-20",
+"ex_dividende": "2021-08-18",
+"dividende": 40.5,
+"vu_le": "initial"
+},
+{
+"date": "2021-08-18",
 "titre": "Dividende exercice 2020 : 40,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -3329,6 +3617,18 @@
 },
 {
 "date": "2018-09-28",
+"titre": "Dividende exercice 2017 : 72 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SUCRIVOIRE",
+"exercice": "2017",
+"paiement": "2018-09-28",
+"ex_dividende": null,
+"dividende": 72.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-09-28",
 "titre": "Dividende exercice 2017 : 72 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -3379,6 +3679,18 @@
 "titre": "Rapport d’activités au 4ème trimestre 2017 – SUCRIVOIRE",
 "url": "https://www.brvm.org/sites/default/files/20180130_-_rapport_dactivites_-_t4_-_2017.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-09-29",
+"titre": "Dividende exercice 2016 : 549 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SUCRIVOIRE",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": null,
+"dividende": 549.0,
 "vu_le": "initial"
 },
 {
@@ -3637,6 +3949,18 @@
 },
 {
 "date": "2022-07-27",
+"titre": "Dividende exercice 2021 : 60,75 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2021",
+"paiement": "2022-07-29",
+"ex_dividende": "2022-07-27",
+"dividende": 60.75,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-27",
 "titre": "Dividende exercice 2021 : 60,75 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -3694,6 +4018,18 @@
 "titre": "UNIWAX CI : Attestation des commissaires aux comptes au 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211103_-_attestation_des_commissaires_aux_comptes_-_1er_semestre_2021_-_uniwax_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-14",
+"titre": "Dividende exercice 2020 : 18 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2020",
+"paiement": "2021-07-16",
+"ex_dividende": "2021-07-14",
+"dividende": 18.0,
 "vu_le": "initial"
 },
 {
@@ -3766,6 +4102,18 @@
 },
 {
 "date": "2019-07-11",
+"titre": "Dividende exercice 2018 : 181,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2018",
+"paiement": "2019-07-11",
+"ex_dividende": null,
+"dividende": 181.8,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-11",
 "titre": "Dividende exercice 2018 : 181,8 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -3775,6 +4123,18 @@
 "dividende": 181.8,
 "vu_le": "initial",
 "emetteur": "UNIWAX CI"
+},
+{
+"date": "2019-07-09",
+"titre": "Dividende exercice 2018 : 181,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2018",
+"paiement": "2019-07-11",
+"ex_dividende": "2019-07-09",
+"dividende": 181.8,
+"vu_le": "initial"
 },
 {
 "date": "2019-07-09",
@@ -3825,6 +4185,18 @@
 },
 {
 "date": "2018-07-13",
+"titre": "Dividende exercice 2017 : 173,7 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2017",
+"paiement": "2018-07-13",
+"ex_dividende": null,
+"dividende": 173.7,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-13",
 "titre": "Dividende exercice 2017 : 173,7 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -3834,6 +4206,18 @@
 "dividende": 173.7,
 "vu_le": "initial",
 "emetteur": "UNIWAX CI"
+},
+{
+"date": "2018-07-11",
+"titre": "Dividende exercice 2017 : 173,7 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2017",
+"paiement": "2018-07-13",
+"ex_dividende": "2018-07-11",
+"dividende": 173.7,
+"vu_le": "initial"
 },
 {
 "date": "2018-07-11",
@@ -3870,6 +4254,18 @@
 },
 {
 "date": "2017-07-10",
+"titre": "Dividende exercice 2016 : 868,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2016",
+"paiement": "2017-07-10",
+"ex_dividende": null,
+"dividende": 868.5,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-10",
 "titre": "Dividende exercice 2016 : 868,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -3879,6 +4275,18 @@
 "dividende": 868.5,
 "vu_le": "initial",
 "emetteur": "UNIWAX CI"
+},
+{
+"date": "2017-07-06",
+"titre": "Dividende exercice 2016 : 868 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "UNIWAX CI",
+"exercice": "2016",
+"paiement": "2017-07-10",
+"ex_dividende": "2017-07-06",
+"dividende": 868.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-06",
@@ -4000,6 +4408,18 @@
 },
 {
 "date": "2026-07-03",
+"titre": "Dividende exercice 2025 : 1 315 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2025",
+"paiement": "2026-07-06",
+"ex_dividende": "2026-07-03",
+"dividende": 1315.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-03",
 "titre": "Dividende exercice 2025 : 1 315 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4054,6 +4474,18 @@
 },
 {
 "date": "2025-05-21",
+"titre": "Dividende exercice 2024 : 944 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2024",
+"paiement": "2025-05-23",
+"ex_dividende": "2025-05-21",
+"dividende": 944.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-05-21",
 "titre": "Dividende exercice 2024 : 944 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4104,6 +4536,18 @@
 "titre": "BICI CI : Rapport d'activités - 1er semestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20241031_-_rapport_dactivites_-_1er_semestre_2024_-_bici_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-06-25",
+"titre": "Dividende exercice 2023 : 540,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2023",
+"paiement": "2024-06-27",
+"ex_dividende": "2024-06-25",
+"dividende": 540.9,
 "vu_le": "initial"
 },
 {
@@ -4165,6 +4609,18 @@
 "titre": "BICICI : Rapport d'activités du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230728_-_rapport_dactivites_-_1er_semestre_2023_-_bicici.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-07-27",
+"titre": "Dividende exercice 2022 : 401,4 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2022",
+"paiement": "2023-07-31",
+"ex_dividende": "2023-07-27",
+"dividende": 401.4,
 "vu_le": "initial"
 },
 {
@@ -4251,6 +4707,18 @@
 },
 {
 "date": "2022-07-13",
+"titre": "Dividende exercice 2021 : 518 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2021",
+"paiement": "2022-07-15",
+"ex_dividende": "2022-07-13",
+"dividende": 518.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-13",
 "titre": "Dividende exercice 2021 : 518 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4287,6 +4755,18 @@
 "titre": "BICI CÔTE D'IVOIRE : Rapport d'activité au 3ème trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211201_-_rapport_dactivite_au_3eme_trimestre_2021_-_bici_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-02",
+"titre": "Dividende exercice 2020 : 50 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2020",
+"paiement": "2021-07-06",
+"ex_dividende": "2021-07-02",
+"dividende": 50.0,
 "vu_le": "initial"
 },
 {
@@ -4366,6 +4846,18 @@
 },
 {
 "date": "2019-07-17",
+"titre": "Dividende exercice 2018 : 182,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2018",
+"paiement": "2019-07-17",
+"ex_dividende": null,
+"dividende": 182.9,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-17",
 "titre": "Dividende exercice 2018 : 182,9 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4375,6 +4867,18 @@
 "dividende": 182.9,
 "vu_le": "initial",
 "emetteur": "BICI CI"
+},
+{
+"date": "2019-07-15",
+"titre": "Dividende exercice 2018 : 182,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2018",
+"paiement": "2019-07-17",
+"ex_dividende": "2019-07-15",
+"dividende": 182.9,
+"vu_le": "initial"
 },
 {
 "date": "2019-07-15",
@@ -4425,6 +4929,18 @@
 },
 {
 "date": "2018-06-28",
+"titre": "Dividende exercice 2017 : 213,56 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2017",
+"paiement": "2018-07-02",
+"ex_dividende": "2018-06-28",
+"dividende": 213.56,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-28",
 "titre": "Dividende exercice 2017 : 213,56 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4454,6 +4970,18 @@
 "titre": "Rapport d'activité du 1er semestre 2017 - BICICI",
 "url": "https://www.brvm.org/sites/default/files/20171031-rapport_d27activite_du_1er_semestre_2017_bicici.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-07-24",
+"titre": "Dividende exercice 2016 : 2 771,41 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BICI CI",
+"exercice": "2016",
+"paiement": "2017-07-24",
+"ex_dividende": null,
+"dividende": 2771.41,
 "vu_le": "initial"
 },
 {
@@ -4750,6 +5278,18 @@
 },
 {
 "date": "2025-07-07",
+"titre": "Dividende exercice 2024 : 759,2612 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2024",
+"paiement": "2025-07-09",
+"ex_dividende": "2025-07-07",
+"dividende": 759.2612,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-07",
 "titre": "Dividende exercice 2024 : 759,2612 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4825,6 +5365,18 @@
 },
 {
 "date": "2024-07-04",
+"titre": "Dividende exercice 2023 : 454,829 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2023",
+"paiement": "2024-07-08",
+"ex_dividende": "2024-07-04",
+"dividende": 454.829,
+"vu_le": "initial"
+},
+{
+"date": "2024-07-04",
 "titre": "Dividende exercice 2023 : 454,829 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -4889,6 +5441,18 @@
 "titre": "NSIA BANQUE CI : Résultats financiers - 1er semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230823_-_resultats_financiers_-_1er_semestre_2023_-_nsia_banque_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-06-05",
+"titre": "Dividende exercice 2022 : 363,6 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2022",
+"paiement": "2023-06-07",
+"ex_dividende": "2023-06-05",
+"dividende": 363.6,
 "vu_le": "initial"
 },
 {
@@ -5045,6 +5609,18 @@
 },
 {
 "date": "2020-07-27",
+"titre": "Dividende exercice 2019 : 77,6867 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2019",
+"paiement": "2020-07-27",
+"ex_dividende": null,
+"dividende": 77.68666379,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-27",
 "titre": "Dividende exercice 2019 : 77,6867 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5052,6 +5628,18 @@
 "exercice": "2019",
 "paiement": "2020-07-27",
 "ex_dividende": null,
+"dividende": 77.68666379,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-23",
+"titre": "Dividende exercice 2019 : 77,6867 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2019",
+"paiement": "2020-07-27",
+"ex_dividende": "2020-07-23",
 "dividende": 77.68666379,
 "vu_le": "initial"
 },
@@ -5153,6 +5741,18 @@
 },
 {
 "date": "2019-07-09",
+"titre": "Dividende exercice 2018 : 194,2 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2018",
+"paiement": "2019-07-09",
+"ex_dividende": null,
+"dividende": 194.2,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-09",
 "titre": "Dividende exercice 2018 : 194,2 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5160,6 +5760,18 @@
 "exercice": "2018",
 "paiement": "2019-07-09",
 "ex_dividende": null,
+"dividende": 194.2,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-05",
+"titre": "Dividende exercice 2018 : 194,2 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2018",
+"paiement": "2019-07-09",
+"ex_dividende": "2019-07-05",
 "dividende": 194.2,
 "vu_le": "initial"
 },
@@ -5233,6 +5845,18 @@
 },
 {
 "date": "2018-06-25",
+"titre": "Dividende exercice 2017 : 466,1 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2017",
+"paiement": "2018-06-25",
+"ex_dividende": null,
+"dividende": 466.1,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-25",
 "titre": "Dividende exercice 2017 : 466,1 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5240,6 +5864,18 @@
 "exercice": "2017",
 "paiement": "2018-06-25",
 "ex_dividende": null,
+"dividende": 466.1,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-21",
+"titre": "Dividende exercice 2017 : 466,1 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2017",
+"paiement": "2018-06-25",
+"ex_dividende": "2018-06-21",
 "dividende": 466.1,
 "vu_le": "initial"
 },
@@ -5367,6 +6003,18 @@
 },
 {
 "date": "2025-09-26",
+"titre": "Dividende exercice 2024 : 1 320 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2024",
+"paiement": "2025-09-30",
+"ex_dividende": "2025-09-26",
+"dividende": 1320.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-09-26",
 "titre": "Dividende exercice 2024 : 1 320 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5431,6 +6079,18 @@
 "titre": "FILTISAC CI : Rapport d'activités - 3ème trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20241031_-_rapport_dactivites_-_3eme_trimestre_2024_-_filtisac_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-09-26",
+"titre": "Dividende exercice 2023 : 143,1 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2023",
+"paiement": "2024-09-30",
+"ex_dividende": "2024-09-26",
+"dividende": 143.1,
 "vu_le": "initial"
 },
 {
@@ -5580,6 +6240,18 @@
 },
 {
 "date": "2021-07-28",
+"titre": "Dividende exercice 2020 : 235 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2020",
+"paiement": "2021-07-30",
+"ex_dividende": "2021-07-28",
+"dividende": 235.0,
+"vu_le": "initial"
+},
+{
+"date": "2021-07-28",
 "titre": "Dividende exercice 2020 : 235 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5634,6 +6306,18 @@
 },
 {
 "date": "2020-08-06",
+"titre": "Dividende exercice 2019 : 125 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2019",
+"paiement": "2020-08-06",
+"ex_dividende": null,
+"dividende": 125.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-08-06",
 "titre": "Dividende exercice 2019 : 125 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5643,6 +6327,18 @@
 "dividende": 125.0,
 "vu_le": "initial",
 "emetteur": "FILTISAC CI"
+},
+{
+"date": "2020-07-04",
+"titre": "Dividende exercice 2019 : 125 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2019",
+"paiement": "2020-08-06",
+"ex_dividende": "2020-07-04",
+"dividende": 125.0,
+"vu_le": "initial"
 },
 {
 "date": "2020-07-04",
@@ -5700,6 +6396,18 @@
 },
 {
 "date": "2019-07-31",
+"titre": "Dividende exercice 2018 : 110 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2018",
+"paiement": "2019-07-31",
+"ex_dividende": null,
+"dividende": 110.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-31",
 "titre": "Dividende exercice 2018 : 110 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5709,6 +6417,18 @@
 "dividende": 110.0,
 "vu_le": "initial",
 "emetteur": "FILTISAC CI"
+},
+{
+"date": "2019-07-29",
+"titre": "Dividende exercice 2018 : 110 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2018",
+"paiement": "2019-07-31",
+"ex_dividende": "2019-07-29",
+"dividende": 110.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-07-29",
@@ -5766,6 +6486,18 @@
 },
 {
 "date": "2018-08-13",
+"titre": "Dividende exercice 2017 : 161,27 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2017",
+"paiement": "2018-08-16",
+"ex_dividende": "2018-08-13",
+"dividende": 161.27,
+"vu_le": "initial"
+},
+{
+"date": "2018-08-13",
 "titre": "Dividende exercice 2017 : 161,27 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5806,6 +6538,18 @@
 },
 {
 "date": "2018-01-09",
+"titre": "Dividende exercice 2016 : 1 200 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2016",
+"paiement": "2018-01-09",
+"ex_dividende": null,
+"dividende": 1200.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-01-09",
 "titre": "Dividende exercice 2016 : 1 200 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5815,6 +6559,18 @@
 "dividende": 1200.0,
 "vu_le": "initial",
 "emetteur": "FILTISAC CI"
+},
+{
+"date": "2018-01-05",
+"titre": "Dividende exercice 2016 : 1 200 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2016",
+"paiement": "2018-01-09",
+"ex_dividende": "2018-01-05",
+"dividende": 1200.0,
+"vu_le": "initial"
 },
 {
 "date": "2018-01-05",
@@ -5844,6 +6600,18 @@
 },
 {
 "date": "2017-07-31",
+"titre": "Dividende exercice 2016 : 1 045 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2016",
+"paiement": "2017-07-31",
+"ex_dividende": null,
+"dividende": 1045.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-31",
 "titre": "Dividende exercice 2016 : 1 045 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -5853,6 +6621,18 @@
 "dividende": 1045.0,
 "vu_le": "initial",
 "emetteur": "FILTISAC CI"
+},
+{
+"date": "2017-07-27",
+"titre": "Dividende exercice 2016 : 1 045 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "FILTISAC CI",
+"exercice": "2016",
+"paiement": "2017-07-31",
+"ex_dividende": "2017-07-27",
+"dividende": 1045.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-27",
@@ -6346,6 +7126,18 @@
 },
 {
 "date": "2017-09-29",
+"titre": "Dividende exercice 2016 : 630 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "AIR LIQUIDE CI",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": null,
+"dividende": 630.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-09-29",
 "titre": "Dividende exercice 2016 : 630 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -6355,6 +7147,18 @@
 "dividende": 630.0,
 "vu_le": "initial",
 "emetteur": "AIR LIQUIDE CI"
+},
+{
+"date": "2017-09-27",
+"titre": "Dividende exercice 2016 : 630 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "AIR LIQUIDE CI",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": "2017-09-27",
+"dividende": 630.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-09-27",
@@ -6571,6 +7375,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-05-30",
+"titre": "Dividende exercice 2024 : 209,25 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2024",
+"paiement": "2025-06-03",
+"ex_dividende": "2025-05-30",
+"dividende": 209.25,
+"vu_le": "initial"
+},
+{
 "date": "2025-04-29",
 "titre": "BOA NIGER : Rapport d'activités du 1er trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250429_-_rapport_dactivites_-_1er_trimestre_2025_-_boa_ng.pdf",
@@ -6648,6 +7464,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-05-29",
+"titre": "Dividende exercice 2023 : 609,15 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2023",
+"paiement": "2024-05-31",
+"ex_dividende": "2024-05-29",
+"dividende": 609.15,
+"vu_le": "initial"
+},
+{
 "date": "2024-05-02",
 "titre": "BOA NIGER : Rapport d'activités - 1er trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20240502_-_rapport_dactivites_-_1er_trimestre_2024_-_boa_niger.pdf",
@@ -6683,6 +7511,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2023-05-23",
+"titre": "Dividende exercice 2022 : 613,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2022",
+"paiement": "2023-05-25",
+"ex_dividende": "2023-05-23",
+"dividende": 613.8,
+"vu_le": "initial"
+},
+{
 "date": "2023-05-03",
 "titre": "BOA NIGER : Rapport d'activité du 1er trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230503_-_rapport_dactivite_-_1er_trimestre_2023_-_boa_niger.pdf",
@@ -6708,6 +7548,18 @@
 "titre": "BOA NIGER : Rapport d'activité du 3ème trimestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20221116_-_rapport_dactivite_-_3eme_trimestre_2022_-_boa_niger.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-05-10",
+"titre": "Dividende exercice 2021 : 567,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2021",
+"paiement": "2022-05-12",
+"ex_dividende": "2022-05-10",
+"dividende": 567.3,
 "vu_le": "initial"
 },
 {
@@ -6767,6 +7619,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-05-04",
+"titre": "Dividende exercice 2020 : 429,66 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2020",
+"paiement": "2021-05-06",
+"ex_dividende": "2021-05-04",
+"dividende": 429.66,
+"vu_le": "initial"
+},
+{
 "date": "2021-04-30",
 "titre": "BOA NIGER : Rapport d'activités au 1er trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210430_-_rapport_dactivites_au_1er_trimestre_2021_-_boa_niger.pdf",
@@ -6816,6 +7680,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-05-18",
+"titre": "Dividende exercice 2019 : 429,66 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2019",
+"paiement": "2020-05-20",
+"ex_dividende": "2020-05-18",
+"dividende": 429.66,
+"vu_le": "initial"
+},
+{
 "date": "2020-04-15",
 "titre": "BANK OF AFRICA NIGER : Rapport d'activité du 1er trimestre 2020",
 "url": "https://www.brvm.org/sites/default/files/20200415_-_boa_niger_rapport_dactivites_trimestriel_1t2020.pdf",
@@ -6848,6 +7724,30 @@
 "titre": "BOA NIGER : Etats Financiers et Rapport d'activité du 1er semestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20191003_-_etats_financiers_et_rapport_dactivite_semestriel_juin_2019_-_boa_niger.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-05-27",
+"titre": "Dividende exercice 2018 : 385,95 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2018",
+"paiement": "2019-05-27",
+"ex_dividende": null,
+"dividende": 385.95,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-23",
+"titre": "Dividende exercice 2018 : 385,95 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2018",
+"paiement": "2019-05-27",
+"ex_dividende": "2019-05-23",
+"dividende": 385.95,
 "vu_le": "initial"
 },
 {
@@ -6907,6 +7807,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2018-05-29",
+"titre": "Dividende exercice 2017 : 379,44 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA NG",
+"exercice": "2017",
+"paiement": "2018-05-31",
+"ex_dividende": "2018-05-29",
+"dividende": 379.44,
+"vu_le": "initial"
+},
+{
 "date": "2018-05-02",
 "titre": "BOA NIGER : Rapport d'activité du 1er trimestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20180502-boa-niger_rapport_dactivite_mars_2018_0.pdf",
@@ -6956,6 +7868,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2016-05-25",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2016",
+"url": "https://www.brvm.org/sites/default/files/20160525_-_cm_-_bank_of_africa_ng_-_exercice_2016.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2016-05-24",
 "titre": "Rapport annuel Exercice 2014 BANK OF AFRICA NG",
 "url": "https://www.brvm.org/sites/default/files/20160524_-_ra_-_bank_of_africa_ng_-_exercice_2014.pdf",
@@ -6967,6 +7886,20 @@
 "titre": "Rapport semestriel - BANK OF AFRICA NG - Exercice 2015",
 "url": "https://www.brvm.org/sites/default/files/20151012_-_rs_-_bank_of_africa_ng_-_exercice_2015.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2015-09-18",
+"titre": "Franchissement de seuil - BANK OF AFRICA NG - Exercice 2015 (2)",
+"url": "https://www.brvm.org/sites/default/files/20150918_-_fs_-_bank_of_africa_ng_-_exercice_2015_2.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2015-09-04",
+"titre": "Franchissement de seuil - BANK OF AFRICA NG - Exercice 2015 (1)",
+"url": "https://www.brvm.org/sites/default/files/20150904_-_fs_-_bank_of_africa_ng_-_exercice_2015_1.pdf",
+"type": "capital",
 "vu_le": "initial"
 },
 {
@@ -6998,6 +7931,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2014-07-15",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2014",
+"url": "https://www.brvm.org/sites/default/files/20140715_-_cm_-_bank_of_africa_ng_-_exercice_2014.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2014-06-19",
 "titre": "Rapport premier trimestre - BANK OF AFRICA NG - Exercice 2014",
 "url": "https://www.brvm.org/sites/default/files/20140619_-_rt1_-_bank_of_africa_ng_-_exercice_2014.pdf",
@@ -7009,6 +7949,62 @@
 "titre": "Etats financiers provisoires - BANK OF AFRICA NG - Exercice 2013.",
 "url": "https://www.brvm.org/sites/default/files/20140324_-_efp_-_bank_of_africa_ng_-_exercice_2013.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2013-09-17",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130917_-_cm_-_bank_of_africa_ng_-_exercice_2013.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2012-05-10",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2012",
+"url": "https://www.brvm.org/sites/default/files/20120510_-_cm_-_bank_of_africa_ng_-_exercice_2012.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-08-09",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2010 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20100809_-_cm_-_bank_of_africa_ng_-_exercice_2010_groupe_boa.pdf.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-06-11",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2010 (Distribution d'action gratuite)",
+"url": "https://www.brvm.org/sites/default/files/20100611_-_cm_-_bank_of_africa_ng_-_exercice_2010_distribution_daction_gratuite.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-05-21",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2010",
+"url": "https://www.brvm.org/sites/default/files/20100521_-_cm_-_bank_of_africa_ng_-_exercice_2010.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-11-20",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2009",
+"url": "https://www.brvm.org/sites/default/files/20091120_-_cm_-_bank_of_africa_ng_-_exercice_2009.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-10-13",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2009 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20091013_-_cm_-_bank_of_africa_ng_-_exercice_2009_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2007-05-16",
+"titre": "COMMUNIQUE - BANK OF AFRICA NG - Exercice 2007 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20070516_-_cm_-_bank_of_africa_ng_-_exercice_2007_groupe_boa.pdf",
+"type": "autre",
 "vu_le": "initial"
 }
 ],
@@ -7480,6 +8476,18 @@
 },
 {
 "date": "2026-06-12",
+"titre": "Dividende exercice 2025 : 145,3214 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2025",
+"paiement": "2026-06-15",
+"ex_dividende": "2026-06-12",
+"dividende": 145.3214,
+"vu_le": "initial"
+},
+{
+"date": "2026-06-12",
 "titre": "Dividende exercice 2025 : 145,3214 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -7569,6 +8577,18 @@
 },
 {
 "date": "2025-07-17",
+"titre": "Dividende exercice 2024 : 189,5299 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2024",
+"paiement": "2025-07-21",
+"ex_dividende": "2025-07-17",
+"dividende": 189.5299,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-17",
 "titre": "Dividende exercice 2024 : 189,5299 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -7633,6 +8653,18 @@
 "titre": "MOOV AFRICA BURKINA FASO (Ex ONATEL BF) : Rapport d’activités du 1er semestre 2024 – Exercice 2024",
 "url": "https://www.brvm.org/sites/default/files/20240911_-_rapport_dactivites_du_1er_semestre_2024_-_exercice_2024_-_onatel_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-08-01",
+"titre": "Dividende exercice 2023 : 266,4463 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2023",
+"paiement": "2024-07-31",
+"ex_dividende": "2024-08-01",
+"dividende": 266.44625,
 "vu_le": "initial"
 },
 {
@@ -7712,6 +8744,18 @@
 },
 {
 "date": "2023-06-22",
+"titre": "Dividende exercice 2022 : 287,8799 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2022",
+"paiement": "2023-06-26",
+"ex_dividende": "2023-06-22",
+"dividende": 287.8799,
+"vu_le": "initial"
+},
+{
+"date": "2023-06-22",
 "titre": "Dividende exercice 2022 : 287,8799 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -7748,6 +8792,18 @@
 "titre": "ONATEL BURKINA FASO : Avis de Convocation à l'Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20230419_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_onatel_bf.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2022-06-13",
+"titre": "Dividende exercice 2021 : 416,5791 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2021",
+"paiement": "2022-06-15",
+"ex_dividende": "2022-06-13",
+"dividende": 416.5791,
 "vu_le": "initial"
 },
 {
@@ -7820,6 +8876,18 @@
 },
 {
 "date": "2021-05-28",
+"titre": "Dividende exercice 2020 : 399,5635 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2020",
+"paiement": "2021-06-01",
+"ex_dividende": "2021-05-28",
+"dividende": 399.5635,
+"vu_le": "initial"
+},
+{
+"date": "2021-05-28",
 "titre": "Dividende exercice 2020 : 399,5635 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -7870,6 +8938,18 @@
 "titre": "ONATEL BF : Rapport d'activités au 3ème trimestre 2020",
 "url": "https://www.brvm.org/sites/default/files/20201027_-_rapport_dactivites_du_3eme_trimestre_2020_-_onatel_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2020-06-08",
+"titre": "Dividende exercice 2019 : 387,17 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2019",
+"paiement": "2020-06-10",
+"ex_dividende": "2020-06-08",
+"dividende": 387.17,
 "vu_le": "initial"
 },
 {
@@ -7928,6 +9008,18 @@
 },
 {
 "date": "2019-06-03",
+"titre": "Dividende exercice 2018 : 409,38 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2018",
+"paiement": "2019-06-03",
+"ex_dividende": null,
+"dividende": 409.38,
+"vu_le": "initial"
+},
+{
+"date": "2019-06-03",
 "titre": "Dividende exercice 2018 : 409,38 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -7937,6 +9029,18 @@
 "dividende": 409.38,
 "vu_le": "initial",
 "emetteur": "ONATEL BF"
+},
+{
+"date": "2019-05-29",
+"titre": "Dividende exercice 2018 : 409,36 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2018",
+"paiement": "2019-06-03",
+"ex_dividende": "2019-05-29",
+"dividende": 409.36,
+"vu_le": "initial"
 },
 {
 "date": "2019-05-29",
@@ -8015,6 +9119,18 @@
 },
 {
 "date": "2018-06-06",
+"titre": "Dividende exercice 2017 : 727,9125 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2017",
+"paiement": "2018-06-06",
+"ex_dividende": null,
+"dividende": 727.9125,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-06",
 "titre": "Dividende exercice 2017 : 727,9125 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -8051,6 +9167,18 @@
 "titre": "ONATEL BF : Convocation à l’Assemblée Générale Mixte",
 "url": "https://www.brvm.org/sites/default/files/20180504_-_avis_de_convocation_agm_-_onatel_0.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2018-05-04",
+"titre": "Dividende exercice 2017 : 727,9125 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ONATEL BF",
+"exercice": "2017",
+"paiement": "2018-06-06",
+"ex_dividende": "2018-05-04",
+"dividende": 727.9125,
 "vu_le": "initial"
 },
 {
@@ -8473,6 +9601,18 @@
 },
 {
 "date": "2025-07-15",
+"titre": "Dividende exercice 2024 : 368 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2024",
+"paiement": "2025-07-17",
+"ex_dividende": "2025-07-15",
+"dividende": 368.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-15",
 "titre": "Dividende exercice 2024 : 368 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -8516,6 +9656,18 @@
 "titre": "SAPH CI : Attestation des Commissaires Aux Comptes et rapport d'activités - 1er semestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20241029_-_attestation_des_cacs_et_rapport_dactivites_-_1er_semestre_2024_-_saph_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-08-08",
+"titre": "Dividende exercice 2023 : 64,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2023",
+"paiement": "2024-08-12",
+"ex_dividende": "2024-08-08",
+"dividende": 64.8,
 "vu_le": "initial"
 },
 {
@@ -8612,6 +9764,18 @@
 "titre": "SAPH CI : Rapport d'activités - 3ème trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231102_-_rapport_dactivites_-_3eme_trimestre_2023_-_saph_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-09-26",
+"titre": "Dividende exercice 2022 : 294,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2022",
+"paiement": "2023-09-29",
+"ex_dividende": "2023-09-26",
+"dividende": 294.3,
 "vu_le": "initial"
 },
 {
@@ -8733,6 +9897,18 @@
 },
 {
 "date": "2022-08-02",
+"titre": "Dividende exercice 2021 : 365,4 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2021",
+"paiement": "2022-08-04",
+"ex_dividende": "2022-08-02",
+"dividende": 365.4,
+"vu_le": "initial"
+},
+{
+"date": "2022-08-02",
 "titre": "Dividende exercice 2021 : 365,4 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -8790,6 +9966,18 @@
 "titre": "SAPH CI : Attestation des Commissaires Aux Comptes sur le tableau d'activités et de résultat et le rapport d'activité semestriel",
 "url": "https://www.brvm.org/sites/default/files/20210930_-_rapport_dactivite_du_1er_semestre_-_saph_ci_1.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-08-20",
+"titre": "Dividende exercice 2020 : 132,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2020",
+"paiement": "2021-08-24",
+"ex_dividende": "2021-08-20",
+"dividende": 132.3,
 "vu_le": "initial"
 },
 {
@@ -8998,6 +10186,18 @@
 "titre": "SAPH CI : Rapport d’activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181024_-_rapport_dactivites_au_1er_semestre_2018_-_saph.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-09-25",
+"titre": "Dividende exercice 2017 : 78 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2017",
+"paiement": "2018-09-27",
+"ex_dividende": "2018-09-25",
+"dividende": 78.0,
 "vu_le": "initial"
 },
 {
@@ -9270,6 +10470,18 @@
 },
 {
 "date": "2025-07-29",
+"titre": "Dividende exercice 2024 : 275,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "LNB",
+"exercice": "2024",
+"paiement": "2025-07-31",
+"ex_dividende": "2025-07-29",
+"dividende": 275.5,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-29",
 "titre": "Dividende exercice 2024 : 275,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -9332,9 +10544,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-12-31",
+"titre": "EVIOSYS PACKAGING SIEM CI : Rapport annuel 2023",
+"url": "https://www.brvm.org/sites/default/files/20241231_-_rapport_annuel_2023_-_eviosys_packaging_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-12-16",
+"titre": "EVIOSYS PACKAGING SIEM CI : Etats financiers de synthèse - Exercice 2023",
+"url": "https://www.brvm.org/sites/default/files/20241216_-_etats_financiers_de_synthese_-exercice_2023_-_eviosys_packaging_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
 "date": "2024-12-16",
 "titre": "EVIOSYS PACKAGING SIEM CI : Avis de convocation - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20241216_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_eviosys_packaging_siem_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2023-09-14",
+"titre": "CROWN SIEM CI : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/eviosys_packaging_siem_avis_de_convocation_-_assemblee_generale_ordinaire_exercice_2022.pdf",
 "type": "assemblee",
 "vu_le": "initial"
 },
@@ -9343,6 +10576,231 @@
 "titre": "EVIOSYS PACKAGING SIEM : Avis de convocation à l'Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20220613_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_eviosys_packaging_siem_0.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2022-05-10",
+"titre": "EVIOSYS PACKAGING SIEM : Etats financiers Exercice 2021",
+"url": "https://www.brvm.org/sites/default/files/20220510_-_etats_financiers_exercice_2021_-_eviosys_packaging_siem.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-12-24",
+"titre": "Dividende exercice 2020 : 14,4 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CROWN SIEM CI",
+"exercice": "2020",
+"paiement": "2021-12-28",
+"ex_dividende": "2021-12-24",
+"dividende": 14.4,
+"vu_le": "initial"
+},
+{
+"date": "2021-10-07",
+"titre": "CROWN SIEM CI : Avis de convocation à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20211007_-_avis_de_convocation_a_lagm_-_crown_siem.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2021-09-07",
+"titre": "CROWN SIEM CI : Etats financiers - exercice 2020",
+"url": "https://www.brvm.org/sites/default/files/20210907_-_etats_financiers_-_exercice_2020_-_crown_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2020-12-11",
+"titre": "CROWN SIEM CI : Etats Financiers - Exercice 2019",
+"url": "https://www.brvm.org/sites/default/files/20201211_-_etats_financiers_-_exercice_2019_-_crown_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2020-12-11",
+"titre": "CROWN SIEM CI : Avis de convocation à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20201211_-_avis_de_convocation_a_lassemblee_generale_mixte_-_crown_siem_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2020-12-08",
+"titre": "CROWN SIEM CI : Rapport d'activités au 1er semestre 2020",
+"url": "https://www.brvm.org/sites/default/files/20201208_-_rapport_dactivites_au_1er_semestre_2020_-_crown_siem.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-10-31",
+"titre": "CROW SIEM CI : Rapport d'activités au 1er semestre 2019",
+"url": "https://www.brvm.org/sites/default/files/20191031_-_rapport_dactivites_au_1er_semestre_2019_-_crown_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-06-20",
+"titre": "CROWN SIEM CI : Communiqué - Changement important dans la direction",
+"url": "https://www.brvm.org/sites/default/files/2019_-_crown_siem_-changement_important_dans_la_direction_20-06-2019.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2019-06-05",
+"titre": "CROWN SIEM CI: Etats financiers Exercice 2018",
+"url": "https://www.brvm.org/sites/default/files/20190605_-_etats_financiers_exercice_2018_-_crown_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-06-05",
+"titre": "CROWN SIEM CI: Avis de convocation – Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20190605_-_avis_de_convocation_a_lassemblee_generale_ordinaire_-_crown_siem_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2018-11-09",
+"titre": "CROWN SIEM CI : Attestation des Commissaires aux comptes du rapport d'activités du 1er semestre 2018",
+"url": "https://www.brvm.org/sites/default/files/20181109_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivite_-_crown_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-10-31",
+"titre": "CROWN SIEM : Rapport d’activités du 1er semestre 2018",
+"url": "https://www.brvm.org/sites/default/files/20181031_-_rapport_dactivites_du_1er_semestre_2018_-_crown_siem.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-06-04",
+"titre": "CROWN SIEM : Avis de convocation à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/crown_siem_convocation_agm.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2017-11-02",
+"titre": "Attestation des Commissaires Aux Comptes 1er trimestre 2017 - CROWN SIEM",
+"url": "https://www.brvm.org/sites/default/files/20171102_-_crown_siem_-_attestation_des_cac_-_1er_semestre_2017.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-10-31",
+"titre": "Rapport activité 1er semestre 2017 - CROWN SIEM",
+"url": "https://www.brvm.org/sites/default/files/20171031_-_crown_siem_-_rapport_activite_1er_semestre_2017.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-09-29",
+"titre": "Dividende exercice 2016 : 676,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CROWN SIEM CI",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": null,
+"dividende": 676.8,
+"vu_le": "initial"
+},
+{
+"date": "2017-09-27",
+"titre": "Dividende exercice 2016 : 676,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CROWN SIEM CI",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": "2017-09-27",
+"dividende": 676.8,
+"vu_le": "initial"
+},
+{
+"date": "2017-06-06",
+"titre": "Etats Financiers 2016 - CROWN SIEM CI",
+"url": "https://www.brvm.org/sites/default/files/20170606-etats_financiers_exercice_2017-_crown_siem_ci.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-06-06",
+"titre": "Avis de convocation Assemblée Générale Ordinaire - CROWN SIEM",
+"url": "https://www.brvm.org/sites/default/files/20170606-avis_de_convovation_a_ago_du_28_juin_2017-_crown_siem.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2016-07-27",
+"titre": "Rapport annuel Exercice 2015 CROWN SIEM CI",
+"url": "https://www.brvm.org/sites/default/files/20160727_-_ra_-_crown_siem_ci_-_exercice_2015.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2016-06-09",
+"titre": "Etats financiers provisoires - CROWN SIEM CI - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20160609_-_efp_-_crown_siem_ci_-_exercice_2015.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2016-06-09",
+"titre": "Convocation Assemblée générale ordinaire Exercice 2015 CROWN SIEM CI",
+"url": "https://www.brvm.org/sites/default/files/20160609_-_ago_-_crown_siem_ci_-_exercice_2015.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2015-11-03",
+"titre": "Rapport semestriel - CROWN SIEM CI - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20151103_-_rs_-_crown_siem_ci_-_exercice_2015.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2015-08-20",
+"titre": "Changement de dirigeant - CROWN SIEM CI - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20150820_-_cd_-_crown_siem_ci_-_exercice_2015.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2015-08-20",
+"titre": "COMMUNIQUE - CROWN SIEM CI - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20150820_-_cm_-_crown_siem_ci_-_exercice_2015.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2015-05-26",
+"titre": "Etats financiers provisoires - CROWN SIEM CI - Exercice 2014",
+"url": "https://www.brvm.org/sites/default/files/20150526_-_efp_-_crown_siem_ci_-_exercice_2014.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-10-27",
+"titre": "Rapport semestriel - CROWN SIEM CI - Exercice 2014",
+"url": "https://www.brvm.org/sites/default/files/20141027_-_rs_-_crown_siem_ci_-_exercice_2014.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-08-27",
+"titre": "Rapport annuel Exercice 2013 CROWN SIEM CI",
+"url": "https://www.brvm.org/sites/default/files/20140827_-_ra_-_crown_siem_ci_-_exercice_2013.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-06-02",
+"titre": "Etats financiers provisoires - CROWN SIEM CI - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20140602_-_efp_-_crown_siem_ci_-_exercice_2013.pdf",
+"type": "resultats",
 "vu_le": "initial"
 }
 ],
@@ -9663,6 +11121,18 @@
 },
 {
 "date": "2020-07-15",
+"titre": "Dividende exercice 2019 : 59,52 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORAGROUP",
+"exercice": "2019",
+"paiement": "2020-07-17",
+"ex_dividende": "2020-07-15",
+"dividende": 59.52,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-15",
 "titre": "Dividende exercice 2019 : 59,52 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -9724,6 +11194,18 @@
 },
 {
 "date": "2019-07-01",
+"titre": "Dividende exercice 2018 : 56,73 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORAGROUP",
+"exercice": "2018",
+"paiement": "2019-07-01",
+"ex_dividende": null,
+"dividende": 56.73,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-01",
 "titre": "Dividende exercice 2018 : 56,73 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -9733,6 +11215,18 @@
 "dividende": 56.73,
 "vu_le": "initial",
 "emetteur": "ORAGROUP"
+},
+{
+"date": "2019-06-27",
+"titre": "Dividende exercice 2018 : 56,73 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORAGROUP",
+"exercice": "2018",
+"paiement": "2019-07-01",
+"ex_dividende": "2019-06-27",
+"dividende": 56.73,
+"vu_le": "initial"
 },
 {
 "date": "2019-06-27",
@@ -10163,6 +11657,18 @@
 },
 {
 "date": "2025-08-01",
+"titre": "Dividende exercice 2024 : 1 863 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2024",
+"paiement": "2025-08-05",
+"ex_dividende": "2025-08-01",
+"dividende": 1863.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-08-01",
 "titre": "Dividende exercice 2024 : 1 863 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10231,6 +11737,18 @@
 },
 {
 "date": "2024-06-21",
+"titre": "Dividende exercice 2022 : 1 553,847 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2022",
+"paiement": "2024-06-25",
+"ex_dividende": "2024-06-21",
+"dividende": 1553.847,
+"vu_le": "initial"
+},
+{
+"date": "2024-06-21",
 "titre": "Dividende exercice 2022 : 1 553,847 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10281,6 +11799,18 @@
 "titre": "SOCIETE GENERALE CÔTE D'IVOIRE : Rapport d'activités du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230906_-_rapport_dactivites_-_1er_semestre_2023_-_societe_generale_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-05-26",
+"titre": "Dividende exercice 2022 : 1 112,43 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2022",
+"paiement": "2023-05-31",
+"ex_dividende": "2023-05-26",
+"dividende": 1112.43,
 "vu_le": "initial"
 },
 {
@@ -10339,6 +11869,18 @@
 },
 {
 "date": "2022-06-08",
+"titre": "Dividende exercice 2021 : 1 004,93 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2021",
+"paiement": "2022-06-10",
+"ex_dividende": "2022-06-08",
+"dividende": 1004.93,
+"vu_le": "initial"
+},
+{
+"date": "2022-06-08",
 "titre": "Dividende exercice 2021 : 1 004,93 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10382,6 +11924,18 @@
 "titre": "SOCIETE GENERALE CI : Rapport d'activités au 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210907_-_rapport_dactivites_au_1er_semestre_2021_-_sgci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-06-28",
+"titre": "Dividende exercice 2020 : 368,298 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2020",
+"paiement": "2021-06-30",
+"ex_dividende": "2021-06-28",
+"dividende": 368.298,
 "vu_le": "initial"
 },
 {
@@ -10454,6 +12008,18 @@
 },
 {
 "date": "2020-07-29",
+"titre": "Dividende exercice 2019 : 273 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2019",
+"paiement": "2020-07-29",
+"ex_dividende": null,
+"dividende": 273.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-29",
 "titre": "Dividende exercice 2019 : 273 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10461,6 +12027,18 @@
 "exercice": "2019",
 "paiement": "2020-07-29",
 "ex_dividende": null,
+"dividende": 273.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-27",
+"titre": "Dividende exercice 2019 : 273 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2019",
+"paiement": "2020-07-29",
+"ex_dividende": "2020-07-27",
 "dividende": 273.0,
 "vu_le": "initial"
 },
@@ -10534,6 +12112,18 @@
 },
 {
 "date": "2019-07-29",
+"titre": "Dividende exercice 2018 : 206 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2018",
+"paiement": "2019-07-31",
+"ex_dividende": "2019-07-29",
+"dividende": 206.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-29",
 "titre": "Dividende exercice 2018 : 206 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10574,6 +12164,18 @@
 },
 {
 "date": "2018-07-17",
+"titre": "Dividende exercice 2017 : 585 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2017",
+"paiement": "2018-07-17",
+"ex_dividende": null,
+"dividende": 585.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-17",
 "titre": "Dividende exercice 2017 : 585 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10581,6 +12183,18 @@
 "exercice": "2017",
 "paiement": "2018-07-17",
 "ex_dividende": null,
+"dividende": 585.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-13",
+"titre": "Dividende exercice 2017 : 585 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2017",
+"paiement": "2018-07-17",
+"ex_dividende": "2018-07-13",
 "dividende": 585.0,
 "vu_le": "initial"
 },
@@ -10661,6 +12275,18 @@
 },
 {
 "date": "2017-07-04",
+"titre": "Dividende exercice 2016 : 5 837 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2016",
+"paiement": "2017-07-04",
+"ex_dividende": null,
+"dividende": 5837.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-04",
 "titre": "Dividende exercice 2016 : 5 837 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10668,6 +12294,18 @@
 "exercice": "2016",
 "paiement": "2017-07-04",
 "ex_dividende": null,
+"dividende": 5837.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-06-30",
+"titre": "Dividende exercice 2016 : 5 837 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2016",
+"paiement": "2017-07-04",
+"ex_dividende": "2017-06-30",
 "dividende": 5837.0,
 "vu_le": "initial"
 },
@@ -10815,6 +12453,18 @@
 },
 {
 "date": "2026-05-22",
+"titre": "Dividende exercice 2025 : 888 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2025",
+"paiement": "2026-05-26",
+"ex_dividende": "2026-05-22",
+"dividende": 888.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-05-22",
 "titre": "Dividende exercice 2025 : 888 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10858,6 +12508,18 @@
 "titre": "ECOBANK CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250902_-_rapport_dactivites_-_1er_semestre_2025_-_ecobank_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-05-31",
+"titre": "Dividende exercice 2024 : 804 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2024",
+"paiement": "2025-05-30",
+"ex_dividende": "2025-05-31",
+"dividende": 804.0,
 "vu_le": "initial"
 },
 {
@@ -10937,6 +12599,18 @@
 },
 {
 "date": "2024-05-28",
+"titre": "Dividende exercice 2023 : 594 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2023",
+"paiement": "2024-05-30",
+"ex_dividende": "2024-05-28",
+"dividende": 594.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-05-28",
 "titre": "Dividende exercice 2023 : 594 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -10987,6 +12661,18 @@
 "titre": "ECOBANK CÔTE D'IVOIRE : Rapport d'activités du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230911_-_rapport_dactivites_-_1er_semestre_2023_-_ecobank_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-05-25",
+"titre": "Dividende exercice 2022 : 549 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2022",
+"paiement": "2023-05-30",
+"ex_dividende": "2023-05-25",
+"dividende": 549.0,
 "vu_le": "initial"
 },
 {
@@ -11066,6 +12752,18 @@
 },
 {
 "date": "2022-04-26",
+"titre": "Dividende exercice 2021 : 420,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2021",
+"paiement": "2022-04-29",
+"ex_dividende": "2022-04-26",
+"dividende": 420.3,
+"vu_le": "initial"
+},
+{
+"date": "2022-04-26",
 "titre": "Dividende exercice 2021 : 420,3 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11116,6 +12814,18 @@
 "titre": "ECOBANK CI : Rapport d'activités du 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210914_-_rapport_dactivites_au_1er_semestre_2021_-_ecobank_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-05-04",
+"titre": "Dividende exercice 2020 : 294,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2020",
+"paiement": "2021-05-06",
+"ex_dividende": "2021-05-04",
+"dividende": 294.3,
 "vu_le": "initial"
 },
 {
@@ -11174,6 +12884,18 @@
 },
 {
 "date": "2020-07-20",
+"titre": "Dividende exercice 2019 : 352,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2019",
+"paiement": "2020-07-20",
+"ex_dividende": null,
+"dividende": 352.8,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-20",
 "titre": "Dividende exercice 2019 : 352,8 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11186,6 +12908,18 @@
 },
 {
 "date": "2020-07-16",
+"titre": "Dividende exercice 2019 : 353 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2019",
+"paiement": "2020-07-20",
+"ex_dividende": "2020-07-16",
+"dividende": 353.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-16",
 "titre": "Dividende exercice 2019 : 353 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11195,6 +12929,18 @@
 "dividende": 353.0,
 "vu_le": "initial",
 "emetteur": "ECOBANK CI"
+},
+{
+"date": "2020-07-16",
+"titre": "Dividende exercice 2019 : 352,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2019",
+"paiement": "2020-07-20",
+"ex_dividende": "2020-07-16",
+"dividende": 352.8,
+"vu_le": "initial"
 },
 {
 "date": "2020-07-16",
@@ -11252,6 +12998,18 @@
 },
 {
 "date": "2019-05-15",
+"titre": "Dividende exercice 2018 : 214 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2018",
+"paiement": "2019-05-15",
+"ex_dividende": null,
+"dividende": 214.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-15",
 "titre": "Dividende exercice 2018 : 214 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11261,6 +13019,18 @@
 "dividende": 214.0,
 "vu_le": "initial",
 "emetteur": "ECOBANK CI"
+},
+{
+"date": "2019-05-13",
+"titre": "Dividende exercice 2018 : 241 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2018",
+"paiement": "2019-05-15",
+"ex_dividende": "2019-05-13",
+"dividende": 241.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-05-13",
@@ -11325,6 +13095,18 @@
 },
 {
 "date": "2018-06-22",
+"titre": "Dividende exercice 2017 : 1 844 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2017",
+"paiement": "2018-06-22",
+"ex_dividende": null,
+"dividende": 1844.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-22",
 "titre": "Dividende exercice 2017 : 1 844 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11334,6 +13116,18 @@
 "dividende": 1844.0,
 "vu_le": "initial",
 "emetteur": "ECOBANK CI"
+},
+{
+"date": "2018-06-20",
+"titre": "Dividende exercice 2017 : 1 844 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK CI",
+"exercice": "2017",
+"paiement": "2018-06-22",
+"ex_dividende": "2018-06-20",
+"dividende": 1844.0,
+"vu_le": "initial"
 },
 {
 "date": "2018-06-20",
@@ -11714,6 +13508,18 @@
 },
 {
 "date": "2025-07-25",
+"titre": "Dividende exercice 2024 : 1 220 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2024",
+"paiement": "2025-07-29",
+"ex_dividende": "2025-07-25",
+"dividende": 1220.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-25",
 "titre": "Dividende exercice 2024 : 1 220 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11866,6 +13672,18 @@
 },
 {
 "date": "2022-08-10",
+"titre": "Dividende exercice 2021 : 4 050 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2021",
+"paiement": "2022-08-12",
+"ex_dividende": "2022-08-10",
+"dividende": 4050.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-08-10",
 "titre": "Dividende exercice 2021 : 4 050 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11895,6 +13713,18 @@
 "titre": "SOLIBRA CI: Rapport d'activité du 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211022_-_rapport_dactivite_au_1er_semestre_2021_-_solibra_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-30",
+"titre": "Dividende exercice 2020 : 2 736 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2020",
+"paiement": "2021-08-03",
+"ex_dividende": "2021-07-30",
+"dividende": 2736.0,
 "vu_le": "initial"
 },
 {
@@ -11974,6 +13804,18 @@
 },
 {
 "date": "2019-06-06",
+"titre": "Dividende exercice 2018 : 1 368 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2018",
+"paiement": "2019-06-06",
+"ex_dividende": null,
+"dividende": 1368.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-06-06",
 "titre": "Dividende exercice 2018 : 1 368 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -11983,6 +13825,18 @@
 "dividende": 1368.0,
 "vu_le": "initial",
 "emetteur": "SOLIBRA"
+},
+{
+"date": "2019-06-03",
+"titre": "Dividende exercice 2018 : 1 368 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2018",
+"paiement": "2019-06-06",
+"ex_dividende": "2019-06-03",
+"dividende": 1368.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-06-03",
@@ -12015,6 +13869,18 @@
 "titre": "SOLIBRA : Rapport d’activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181025_-_rapport_dactivites_du_1er_semestre_2018_-_solibra.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-06-14",
+"titre": "Dividende exercice 2017 : 2 322 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2017",
+"paiement": "2018-06-14",
+"ex_dividende": "2018-06-14",
+"dividende": 2322.0,
 "vu_le": "initial"
 },
 {
@@ -12304,6 +14170,18 @@
 },
 {
 "date": "2022-07-14",
+"titre": "Dividende exercice 2021 : 66,15 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SETAO CI",
+"exercice": "2021",
+"paiement": "2022-07-18",
+"ex_dividende": "2022-07-14",
+"dividende": 66.15,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-14",
 "titre": "Dividende exercice 2021 : 66,15 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -12347,6 +14225,18 @@
 "titre": "SETAO CI : Attestation des commissaires aux comptes du 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211109_-_attestation_des_commissaires_aux_comptes_-_1er_semestre_2021_-_setao_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-14",
+"titre": "Dividende exercice 2020 : 66,15 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SETAO CI",
+"exercice": "2020",
+"paiement": "2021-07-16",
+"ex_dividende": "2021-07-14",
+"dividende": 66.15,
 "vu_le": "initial"
 },
 {
@@ -12669,6 +14559,18 @@
 },
 {
 "date": "2023-07-20",
+"titre": "Dividende exercice 2022 : 150 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BERNABE CI",
+"exercice": "2022",
+"paiement": "2023-07-24",
+"ex_dividende": "2023-07-20",
+"dividende": 150.0,
+"vu_le": "initial"
+},
+{
+"date": "2023-07-20",
 "titre": "Dividende exercice 2022 : 150 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -12856,6 +14758,18 @@
 },
 {
 "date": "2019-07-17",
+"titre": "Dividende exercice 2018 : 45 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BERNABE CI",
+"exercice": "2018",
+"paiement": "2019-07-19",
+"ex_dividende": "2019-07-17",
+"dividende": 45.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-17",
 "titre": "Dividende exercice 2018 : 45 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -12903,6 +14817,18 @@
 },
 {
 "date": "2018-07-25",
+"titre": "Dividende exercice 2017 : 63 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BERNABE CI",
+"exercice": "2017",
+"paiement": "2018-07-25",
+"ex_dividende": null,
+"dividende": 63.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-25",
 "titre": "Dividende exercice 2017 : 63 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -12912,6 +14838,18 @@
 "dividende": 63.0,
 "vu_le": "initial",
 "emetteur": "BERNABE CI"
+},
+{
+"date": "2018-07-23",
+"titre": "Dividende exercice 2017 : 63 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BERNABE CI",
+"exercice": "2017",
+"paiement": "2018-07-25",
+"ex_dividende": "2018-07-23",
+"dividende": 63.0,
+"vu_le": "initial"
 },
 {
 "date": "2018-07-23",
@@ -12976,6 +14914,18 @@
 },
 {
 "date": "2017-07-11",
+"titre": "Dividende exercice 2016 : 3 252 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BERNABE CI",
+"exercice": "2016",
+"paiement": "2017-07-11",
+"ex_dividende": null,
+"dividende": 3252.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-11",
 "titre": "Dividende exercice 2016 : 3 252 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -12985,6 +14935,18 @@
 "dividende": 3252.0,
 "vu_le": "initial",
 "emetteur": "BERNABE CI"
+},
+{
+"date": "2017-07-07",
+"titre": "Dividende exercice 2016 : 3 252 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BERNABE CI",
+"exercice": "2016",
+"paiement": "2017-07-11",
+"ex_dividende": "2017-07-07",
+"dividende": 3252.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-07",
@@ -13176,6 +15138,18 @@
 },
 {
 "date": "2025-10-20",
+"titre": "Dividende exercice 2024 : 85,56 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2024",
+"paiement": "2025-10-22",
+"ex_dividende": "2025-10-20",
+"dividende": 85.56,
+"vu_le": "initial"
+},
+{
+"date": "2025-10-20",
 "titre": "Dividende exercice 2024 : 85,56 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13219,6 +15193,18 @@
 "titre": "VIVO ENERGY CÔTE D'IVOIRE : Rapport d'activités - 3ème trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20241118_-_rapport_dactivites_-_3eme_trimestre_2024_-_vivo_energy_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-09-25",
+"titre": "Dividende exercice 2023 : 57 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2023",
+"paiement": "2024-09-27",
+"ex_dividende": "2024-09-25",
+"dividende": 57.0,
 "vu_le": "initial"
 },
 {
@@ -13291,6 +15277,18 @@
 },
 {
 "date": "2023-12-26",
+"titre": "Dividende exercice 2022 : 53 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2022",
+"paiement": "2023-12-28",
+"ex_dividende": "2023-12-26",
+"dividende": 53.0,
+"vu_le": "initial"
+},
+{
+"date": "2023-12-26",
 "titre": "Dividende exercice 2022 : 53 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13348,6 +15346,18 @@
 "titre": "VIVO ENERGY CI : Rapport d'activité du 3ème trimestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20221213_-_rapport_dactivite_-_3eme_trimestre_2022_-_vivo_energy_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-10-26",
+"titre": "Dividende exercice 2021 : 29 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2021",
+"paiement": "2022-10-28",
+"ex_dividende": "2022-10-26",
+"dividende": 29.0,
 "vu_le": "initial"
 },
 {
@@ -13469,6 +15479,18 @@
 },
 {
 "date": "2020-11-26",
+"titre": "Dividende exercice 2019 : 63,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2019",
+"paiement": "2020-11-26",
+"ex_dividende": null,
+"dividende": 63.9,
+"vu_le": "initial"
+},
+{
+"date": "2020-11-26",
 "titre": "Dividende exercice 2019 : 63,9 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13478,6 +15500,18 @@
 "dividende": 63.9,
 "vu_le": "initial",
 "emetteur": "VIVO ENERGY CI"
+},
+{
+"date": "2020-11-24",
+"titre": "Dividende exercice 2019 : 63,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2019",
+"paiement": "2020-11-26",
+"ex_dividende": "2020-11-24",
+"dividende": 63.9,
+"vu_le": "initial"
 },
 {
 "date": "2020-11-24",
@@ -13521,6 +15555,18 @@
 },
 {
 "date": "2019-07-31",
+"titre": "Dividende exercice 2018 : 64,286 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2018",
+"paiement": "2019-08-02",
+"ex_dividende": "2019-07-31",
+"dividende": 64.286,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-31",
 "titre": "Dividende exercice 2018 : 64,286 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13554,6 +15600,18 @@
 },
 {
 "date": "2018-07-23",
+"titre": "Dividende exercice 2017 : 42,86 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2017",
+"paiement": "2018-07-23",
+"ex_dividende": null,
+"dividende": 42.86,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-23",
 "titre": "Dividende exercice 2017 : 42,86 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13563,6 +15621,18 @@
 "dividende": 42.86,
 "vu_le": "initial",
 "emetteur": "VIVO ENERGY CI"
+},
+{
+"date": "2018-07-19",
+"titre": "Dividende exercice 2017 : 42,86 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2017",
+"paiement": "2018-07-23",
+"ex_dividende": "2018-07-19",
+"dividende": 42.86,
+"vu_le": "initial"
 },
 {
 "date": "2018-07-19",
@@ -13606,6 +15676,18 @@
 },
 {
 "date": "2017-07-31",
+"titre": "Dividende exercice 2016 : 33,7 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2016",
+"paiement": "2017-07-31",
+"ex_dividende": null,
+"dividende": 33.7,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-31",
 "titre": "Dividende exercice 2016 : 33,7 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13615,6 +15697,18 @@
 "dividende": 33.7,
 "vu_le": "initial",
 "emetteur": "VIVO ENERGY CI"
+},
+{
+"date": "2017-07-27",
+"titre": "Dividende exercice 2016 : 33,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2016",
+"paiement": "2017-07-27",
+"ex_dividende": null,
+"dividende": 33.3,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-27",
@@ -13630,6 +15724,18 @@
 },
 {
 "date": "2017-07-25",
+"titre": "Dividende exercice 2016 : 33,7 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2016",
+"paiement": "2017-07-27",
+"ex_dividende": "2017-07-25",
+"dividende": 33.7,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-25",
 "titre": "Dividende exercice 2016 : 33,7 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13639,6 +15745,18 @@
 "dividende": 33.7,
 "vu_le": "initial",
 "emetteur": "VIVO ENERGY CI"
+},
+{
+"date": "2017-07-25",
+"titre": "Dividende exercice 2016 : 33,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2016",
+"paiement": "2017-07-25",
+"ex_dividende": null,
+"dividende": 33.3,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-25",
@@ -13768,6 +15886,18 @@
 },
 {
 "date": "2026-07-30",
+"titre": "Dividende exercice 2025 : 425 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2025",
+"paiement": "2026-07-31",
+"ex_dividende": "2026-07-30",
+"dividende": 425.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-30",
 "titre": "Dividende exercice 2025 : 425 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13811,6 +15941,18 @@
 "titre": "SIB CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250909_-_rapport_dactivites_-_1er_semestre_2025_-_sib_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-07-29",
+"titre": "Dividende exercice 2024 : 375 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2024",
+"paiement": "2025-07-31",
+"ex_dividende": "2025-07-29",
+"dividende": 375.0,
 "vu_le": "initial"
 },
 {
@@ -13869,6 +16011,18 @@
 },
 {
 "date": "2024-07-29",
+"titre": "Dividende exercice 2023 : 495 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2023",
+"paiement": "2024-07-31",
+"ex_dividende": "2024-07-29",
+"dividende": 495.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-07-29",
 "titre": "Dividende exercice 2023 : 495 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13919,6 +16073,18 @@
 "titre": "SIB CÔTE D'IVOIRE : Attestation des Commissaires Aux Comptes sur le Rapport d'activités du 1er semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230921_-_attestation_des_cac_sur_le_rapport_dactivites_du_1er_semestre_2023_-_sib_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-08-09",
+"titre": "Dividende exercice 2022 : 495 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2022",
+"paiement": "2023-08-11",
+"ex_dividende": "2023-08-09",
+"dividende": 495.0,
 "vu_le": "initial"
 },
 {
@@ -13984,6 +16150,18 @@
 },
 {
 "date": "2022-06-28",
+"titre": "Dividende exercice 2021 : 405 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2021",
+"paiement": "2022-06-30",
+"ex_dividende": "2022-06-28",
+"dividende": 405.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-06-28",
 "titre": "Dividende exercice 2021 : 405 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -14027,6 +16205,18 @@
 "titre": "SIB CI : Rapport d'activité au 3ème trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211029_-_rapport_dactivite_au_3eme_trimestre_2021_-_sib_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-21",
+"titre": "Dividende exercice 2020 : 360 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2020",
+"paiement": "2021-07-23",
+"ex_dividende": "2021-07-21",
+"dividende": 360.0,
 "vu_le": "initial"
 },
 {
@@ -14106,6 +16296,18 @@
 },
 {
 "date": "2020-06-19",
+"titre": "Dividende exercice 2019 : 270 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2019",
+"paiement": "2020-06-19",
+"ex_dividende": null,
+"dividende": 270.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-06-19",
 "titre": "Dividende exercice 2019 : 270 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -14115,6 +16317,18 @@
 "dividende": 270.0,
 "vu_le": "initial",
 "emetteur": "SIB"
+},
+{
+"date": "2020-06-17",
+"titre": "Dividende exercice 2019 : 270 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2019",
+"paiement": "2020-06-19",
+"ex_dividende": "2020-06-17",
+"dividende": 270.0,
+"vu_le": "initial"
 },
 {
 "date": "2020-06-17",
@@ -14165,6 +16379,18 @@
 },
 {
 "date": "2019-07-05",
+"titre": "Dividende exercice 2018 : 252 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2018",
+"paiement": "2019-07-05",
+"ex_dividende": null,
+"dividende": 252.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-05",
 "titre": "Dividende exercice 2018 : 252 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -14174,6 +16400,18 @@
 "dividende": 252.0,
 "vu_le": "initial",
 "emetteur": "SIB"
+},
+{
+"date": "2019-07-03",
+"titre": "Dividende exercice 2018 : 252 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2018",
+"paiement": "2019-07-05",
+"ex_dividende": "2019-07-03",
+"dividende": 252.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-07-03",
@@ -14245,6 +16483,18 @@
 },
 {
 "date": "2018-06-06",
+"titre": "Dividende exercice 2017 : 945 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2017",
+"paiement": "2018-06-08",
+"ex_dividende": "2018-06-06",
+"dividende": 945.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-06",
 "titre": "Dividende exercice 2017 : 945 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -14281,6 +16531,18 @@
 "titre": "Rapport d'activités et attestation des Commissaires Aux Comptes - 1er semestre 2017 – SIB CI",
 "url": "https://www.brvm.org/sites/default/files/20171002-rapport_d27activites_et_attestation_des_cac_-_1er_semestre_2017_-_sib_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-06-09",
+"titre": "Dividende exercice 2016 : 855 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SIB",
+"exercice": "2016",
+"paiement": "2017-06-09",
+"ex_dividende": null,
+"dividende": 855.0,
 "vu_le": "initial"
 },
 {
@@ -14355,6 +16617,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2026-06-02",
+"titre": "Dividende exercice 2025 : 305,04 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": "2025",
+"paiement": "2026-06-03",
+"ex_dividende": "2026-06-02",
+"dividende": 305.04,
+"vu_le": "initial"
+},
+{
 "date": "2026-03-25",
 "titre": "BOA ML : Avis de convocation - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20260324_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ml.pdf",
@@ -14387,6 +16661,30 @@
 "titre": "BOA MALI : Rapport d'activités au 1er trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250603_-_rapport_dactivites_-_1er_trimestre_2025_-_boa_mali.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-05-30",
+"titre": "Dividende exercice 2024 : 237,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": "2024",
+"paiement": "2025-06-03",
+"ex_dividende": "2025-05-30",
+"dividende": 237.5,
+"vu_le": "initial"
+},
+{
+"date": "2025-05-30",
+"titre": "Dividende exercice 2024 : 237,15 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": "2024",
+"paiement": "2025-06-03",
+"ex_dividende": "2025-05-30",
+"dividende": 237.15,
 "vu_le": "initial"
 },
 {
@@ -14436,6 +16734,18 @@
 "titre": "BOA MALI : Rapport d'activités - 1er trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20240605_-_rapport_dactivites_-_1er_trimestre_2024_-_boa_mali.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-05-16",
+"titre": "Dividende exercice 2023 : 144 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": "2023",
+"paiement": "2024-05-21",
+"ex_dividende": "2024-05-16",
+"dividende": 144.0,
 "vu_le": "initial"
 },
 {
@@ -14649,6 +16959,20 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-04-06",
+"titre": "BANK OF AFRICA MALI : Projets de résolutions à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/projets_de_resolutions_de_lag_mixte_du_25_04_2020_-_boa_mali.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2020-04-06",
+"titre": "BANK OF AFRICA MALI : Avis de convocation à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/avis_de_convocation_de_lag_mixte_du_25_04_2020_-_boa_mali.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2020-03-24",
 "titre": "BOA MALI : Rapport d'activité du 4eme trimestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20200324_-_rapport_dactivite_du_4eme_trimestre_2019_-_boa_mali.pdf",
@@ -14684,6 +17008,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-05-13",
+"titre": "Dividende exercice 2018 : 271 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": "2018",
+"paiement": "2019-05-15",
+"ex_dividende": "2019-05-13",
+"dividende": 271.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-13",
+"titre": "Dividende : 271 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": null,
+"paiement": "2019-05-15",
+"ex_dividende": "2019-05-13",
+"dividende": 271.0,
+"vu_le": "initial"
+},
+{
 "date": "2019-04-04",
 "titre": "BOA MALI : Etats financiers Exercice 2018",
 "url": "https://www.brvm.org/sites/default/files/20190404_-_etats_financiers_exercice_2018_-_boa_mali.pdf",
@@ -14716,6 +17064,18 @@
 "titre": "Attestation des Commissaires aux comptes du rapport d'activités du 1er semestre 2018 – BOA MALI",
 "url": "https://www.brvm.org/sites/default/files/20181023_-_attestation_des_commissaires_aux_comptes_du_rapport_dactivites_du_1er_semestre_2018_-_boam.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-05-29",
+"titre": "Dividende exercice 2017 : 290 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA ML",
+"exercice": "2017",
+"paiement": "2018-05-31",
+"ex_dividende": "2018-05-29",
+"dividende": 290.0,
 "vu_le": "initial"
 },
 {
@@ -14782,6 +17142,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2016-05-31",
+"titre": "COMMUNIQUE - BANK OF AFRICA ML - Exercice 2016",
+"url": "https://www.brvm.org/sites/default/files/20160531_-_cm_-_bank_of_africa_ml_-_exercice_2016.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2016-03-01",
 "titre": "Rapport annuel Exercice 2014 BANK OF AFRICA ML",
 "url": "https://www.brvm.org/sites/default/files/20160301_-_ra_-_bank_of_africa_ml_-_exercice_2014.pdf",
@@ -14793,6 +17160,20 @@
 "titre": "Rapport annuel Exercice 2013 BANK OF AFRICA ML",
 "url": "https://www.brvm.org/sites/default/files/20160301_-_ra_-_bank_of_africa_ml_-_exercice_2013.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2013-03-18",
+"titre": "Changement de dirigeant - BANK OF AFRICA ML - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130318_-_cd_-_bank_of_africa_ml_-_exercice_2013.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2013-03-18",
+"titre": "COMMUNIQUE - BANK OF AFRICA ML - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130318_-_cm_-_bank_of_africa_ml_-_exercice_2013.pdf",
+"type": "autre",
 "vu_le": "initial"
 }
 ],
@@ -14830,6 +17211,18 @@
 "titre": "ORANGE CI : Etats financiers approuvés - Exercice 2025",
 "url": "https://www.brvm.org/sites/default/files/20260608_-_etats_financiers_approuves_-_exercice_2025_-_orange_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2026-06-05",
+"titre": "Dividende exercice 2025 : 800 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORANGE CI",
+"exercice": "2025",
+"paiement": "2026-06-08",
+"ex_dividende": "2026-06-05",
+"dividende": 800.0,
 "vu_le": "initial"
 },
 {
@@ -14898,6 +17291,18 @@
 "titre": "ORANGE CÔTE D'IVOIRE : Rapport RSE 2024",
 "url": "https://www.brvm.org/sites/default/files/20250721_-_rapport_rse_2024_-_orange_ci.pdf",
 "type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2025-06-05",
+"titre": "Dividende exercice 2024 : 750 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORANGE CI",
+"exercice": "2024",
+"paiement": "2025-06-11",
+"ex_dividende": "2025-06-05",
+"dividende": 750.0,
 "vu_le": "initial"
 },
 {
@@ -14977,6 +17382,18 @@
 },
 {
 "date": "2024-05-30",
+"titre": "Dividende exercice 2023 : 780 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORANGE CI",
+"exercice": "2023",
+"paiement": "2024-06-03",
+"ex_dividende": "2024-05-30",
+"dividende": 780.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-05-30",
 "titre": "Dividende exercice 2023 : 780 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15048,6 +17465,18 @@
 "titre": "ORANGE CI : Rapport d'activités - 1er Trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230630_-_rapport_dactivites_-_1er_trimestre_2023_-_orange_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-06-16",
+"titre": "Dividende exercice 2022 : 752,76 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ORANGE CI",
+"exercice": "2022",
+"paiement": "2023-06-13",
+"ex_dividende": "2023-06-16",
+"dividende": 752.76,
 "vu_le": "initial"
 },
 {
@@ -15203,6 +17632,18 @@
 },
 {
 "date": "2024-08-28",
+"titre": "Dividende exercice 2023 : 15,87 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2023",
+"paiement": "2024-08-30",
+"ex_dividende": "2024-08-28",
+"dividende": 15.87,
+"vu_le": "initial"
+},
+{
+"date": "2024-08-28",
 "titre": "Dividende exercice 2023 : 15,87 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15239,6 +17680,18 @@
 "titre": "CFAO MOTORS CI : Attestation des Commissaires Aux Comptes sur le Rapport d'activités du 1er semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231114_-_attestation_des_cac_sur_le_rapport_dactivites_du_1er_semestre_2023_-_cfao_motors_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-09-13",
+"titre": "Dividende exercice 2022 : 27,45 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2022",
+"paiement": "2023-09-15",
+"ex_dividende": "2023-09-13",
+"dividende": 27.45,
 "vu_le": "initial"
 },
 {
@@ -15293,6 +17746,18 @@
 "titre": "CFAO Motors CI : Communiqué de presse",
 "url": "https://www.brvm.org/sites/default/files/20220923_-_communique_de_presse_-_cfao_motors_ci.pdf",
 "type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2022-07-29",
+"titre": "Dividende exercice 2021 : 69,47 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2021",
+"paiement": "2022-08-02",
+"ex_dividende": "2022-07-29",
+"dividende": 69.47,
 "vu_le": "initial"
 },
 {
@@ -15358,6 +17823,18 @@
 },
 {
 "date": "2021-07-13",
+"titre": "Dividende exercice 2020 : 22,15 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2020",
+"paiement": "2021-07-15",
+"ex_dividende": "2021-07-13",
+"dividende": 22.15,
+"vu_le": "initial"
+},
+{
+"date": "2021-07-13",
 "titre": "Dividende exercice 2020 : 22,15 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15405,6 +17882,18 @@
 },
 {
 "date": "2020-08-25",
+"titre": "Dividende exercice 2019 : 26,073 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2019",
+"paiement": "2020-08-25",
+"ex_dividende": null,
+"dividende": 26.073,
+"vu_le": "initial"
+},
+{
+"date": "2020-08-25",
 "titre": "Dividende exercice 2019 : 26,073 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15414,6 +17903,18 @@
 "dividende": 26.073,
 "vu_le": "initial",
 "emetteur": "CFAO MOTORS CI"
+},
+{
+"date": "2020-08-21",
+"titre": "Dividende exercice 2019 : 26,073 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2019",
+"paiement": "2020-08-25",
+"ex_dividende": "2020-08-21",
+"dividende": 26.073,
+"vu_le": "initial"
 },
 {
 "date": "2020-08-21",
@@ -15464,6 +17965,18 @@
 },
 {
 "date": "2019-07-23",
+"titre": "Dividende exercice 2018 : 31,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2018",
+"paiement": "2019-07-23",
+"ex_dividende": null,
+"dividende": 31.5,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-23",
 "titre": "Dividende exercice 2018 : 31,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15473,6 +17986,18 @@
 "dividende": 31.5,
 "vu_le": "initial",
 "emetteur": "CFAO MOTORS CI"
+},
+{
+"date": "2019-07-19",
+"titre": "Dividende exercice 2018 : 31,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2018",
+"paiement": "2019-07-23",
+"ex_dividende": "2019-07-19",
+"dividende": 31.5,
+"vu_le": "initial"
 },
 {
 "date": "2019-07-19",
@@ -15551,6 +18076,18 @@
 },
 {
 "date": "2018-07-27",
+"titre": "Dividende exercice 2017 : 9,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2017",
+"paiement": "2018-07-27",
+"ex_dividende": null,
+"dividende": 9.9,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-27",
 "titre": "Dividende exercice 2017 : 9,9 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15560,6 +18097,18 @@
 "dividende": 9.9,
 "vu_le": "initial",
 "emetteur": "CFAO MOTORS CI"
+},
+{
+"date": "2018-07-25",
+"titre": "Dividende exercice 2017 : 9,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2017",
+"paiement": "2018-07-27",
+"ex_dividende": "2018-07-25",
+"dividende": 9.9,
+"vu_le": "initial"
 },
 {
 "date": "2018-07-25",
@@ -15610,6 +18159,18 @@
 },
 {
 "date": "2017-07-24",
+"titre": "Dividende exercice 2016 : 2 032 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2016",
+"paiement": "2017-07-24",
+"ex_dividende": null,
+"dividende": 2032.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-24",
 "titre": "Dividende exercice 2016 : 2 032 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15619,6 +18180,18 @@
 "dividende": 2032.0,
 "vu_le": "initial",
 "emetteur": "CFAO MOTORS CI"
+},
+{
+"date": "2017-07-20",
+"titre": "Dividende exercice 2016 : 2 032 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2016",
+"paiement": "2017-07-24",
+"ex_dividende": "2017-07-20",
+"dividende": 2032.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-20",
@@ -15933,6 +18506,18 @@
 },
 {
 "date": "2024-09-26",
+"titre": "Dividende exercice 2023 : 206,195 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2023",
+"paiement": "2024-09-30",
+"ex_dividende": "2024-09-26",
+"dividende": 206.195,
+"vu_le": "initial"
+},
+{
+"date": "2024-09-26",
 "titre": "Dividende exercice 2023 : 206,195 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -16001,6 +18586,18 @@
 },
 {
 "date": "2023-08-29",
+"titre": "Dividende exercice 2022 : 92 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2022",
+"paiement": "2023-08-31",
+"ex_dividende": "2023-08-29",
+"dividende": 92.0,
+"vu_le": "initial"
+},
+{
+"date": "2023-08-29",
 "titre": "Dividende exercice 2022 : 92 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -16065,6 +18662,18 @@
 "titre": "SERVAIR ABIDJAN CI : Changement Important dans la direction",
 "url": "https://www.brvm.org/sites/default/files/20230119_-_changement_important_dans_la_direction_-_servair_abidjan_ci.pdf",
 "type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2022-08-22",
+"titre": "Dividende exercice 2021 : 57,73 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2021",
+"paiement": "2022-08-24",
+"ex_dividende": "2022-08-22",
+"dividende": 57.73,
 "vu_le": "initial"
 },
 {
@@ -16165,6 +18774,18 @@
 },
 {
 "date": "2019-09-30",
+"titre": "Dividende exercice 2018 : 41,239 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2018",
+"paiement": "2019-09-30",
+"ex_dividende": null,
+"dividende": 41.239003,
+"vu_le": "initial"
+},
+{
+"date": "2019-09-30",
 "titre": "Dividende exercice 2018 : 41,239 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -16174,6 +18795,18 @@
 "dividende": 41.239003,
 "vu_le": "initial",
 "emetteur": "SERVAIR ABIDJAN CI"
+},
+{
+"date": "2019-09-26",
+"titre": "Dividende exercice 2018 : 41,239 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2018",
+"paiement": "2019-09-30",
+"ex_dividende": "2019-09-26",
+"dividende": 41.239003,
+"vu_le": "initial"
 },
 {
 "date": "2019-09-26",
@@ -16189,6 +18822,18 @@
 },
 {
 "date": "2019-05-23",
+"titre": "Dividende exercice 2018 : 164,96 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2018",
+"paiement": "2019-05-27",
+"ex_dividende": "2019-05-23",
+"dividende": 164.96,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-23",
 "titre": "Dividende exercice 2018 : 164,96 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -16198,6 +18843,18 @@
 "dividende": 164.96,
 "vu_le": "initial",
 "emetteur": "SERVAIR ABIDJAN CI"
+},
+{
+"date": "2019-05-23",
+"titre": "Dividende exercice 2018 : 123,717 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2018",
+"paiement": "2019-05-27",
+"ex_dividende": "2019-05-23",
+"dividende": 123.717,
+"vu_le": "initial"
 },
 {
 "date": "2019-05-23",
@@ -16234,6 +18891,18 @@
 },
 {
 "date": "2018-06-20",
+"titre": "Dividende exercice 2017 : 98,97 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2017",
+"paiement": "2018-06-20",
+"ex_dividende": null,
+"dividende": 98.97,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-20",
 "titre": "Dividende exercice 2017 : 98,97 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -16243,6 +18912,18 @@
 "dividende": 98.97,
 "vu_le": "initial",
 "emetteur": "SERVAIR ABIDJAN CI"
+},
+{
+"date": "2018-06-18",
+"titre": "Dividende exercice 2017 : 98,97 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2017",
+"paiement": "2018-06-20",
+"ex_dividende": "2018-06-18",
+"dividende": 98.97,
+"vu_le": "initial"
 },
 {
 "date": "2018-06-18",
@@ -16272,6 +18953,18 @@
 },
 {
 "date": "2017-07-24",
+"titre": "Dividende exercice 2016 : 49,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2016",
+"paiement": "2017-07-24",
+"ex_dividende": null,
+"dividende": 49.5,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-24",
 "titre": "Dividende exercice 2016 : 49,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -16281,6 +18974,18 @@
 "dividende": 49.5,
 "vu_le": "initial",
 "emetteur": "SERVAIR ABIDJAN CI"
+},
+{
+"date": "2017-07-20",
+"titre": "Dividende exercice 2016 : 49,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2016",
+"paiement": "2017-07-24",
+"ex_dividende": "2017-07-20",
+"dividende": 49.5,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-20",
@@ -17103,6 +19808,18 @@
 },
 {
 "date": "2025-07-29",
+"titre": "Dividende exercice 2024 : 180 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2024",
+"paiement": "2025-07-31",
+"ex_dividende": "2025-07-29",
+"dividende": 180.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-07-29",
 "titre": "Dividende exercice 2024 : 180 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17139,6 +19856,18 @@
 "titre": "CIE CI : Rapport d'activités certifié par les Commissaires Aux Comptes - 1er semestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20241030_-_rapport_dactivites_certifie_par_les_cacs_-_1er_semestre_2024_-_cie_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-07-26",
+"titre": "Dividende exercice 2023 : 171 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2023",
+"paiement": "2024-07-30",
+"ex_dividende": "2024-07-26",
+"dividende": 171.0,
 "vu_le": "initial"
 },
 {
@@ -17204,6 +19933,18 @@
 },
 {
 "date": "2023-07-27",
+"titre": "Dividende exercice 2022 : 157,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2022",
+"paiement": "2023-07-31",
+"ex_dividende": "2023-07-27",
+"dividende": 157.5,
+"vu_le": "initial"
+},
+{
+"date": "2023-07-27",
 "titre": "Dividende exercice 2022 : 157,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17265,6 +20006,18 @@
 },
 {
 "date": "2022-07-21",
+"titre": "Dividende exercice 2021 : 153,161 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2021",
+"paiement": "2022-07-25",
+"ex_dividende": "2022-07-21",
+"dividende": 153.161,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-21",
 "titre": "Dividende exercice 2021 : 153,161 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17319,6 +20072,18 @@
 },
 {
 "date": "2021-07-12",
+"titre": "Dividende exercice 2020 : 167,14 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2020",
+"paiement": "2021-07-14",
+"ex_dividende": "2021-07-12",
+"dividende": 167.14,
+"vu_le": "initial"
+},
+{
+"date": "2021-07-12",
 "titre": "Dividende exercice 2020 : 167,14 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17366,6 +20131,18 @@
 },
 {
 "date": "2020-08-05",
+"titre": "Dividende exercice 2019 : 104,979 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2019",
+"paiement": "2020-08-05",
+"ex_dividende": null,
+"dividende": 104.979,
+"vu_le": "initial"
+},
+{
+"date": "2020-08-05",
 "titre": "Dividende exercice 2019 : 104,979 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17375,6 +20152,18 @@
 "dividende": 104.979,
 "vu_le": "initial",
 "emetteur": "CIE CI"
+},
+{
+"date": "2020-08-03",
+"titre": "Dividende exercice 2019 : 104,979 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2019",
+"paiement": "2020-08-05",
+"ex_dividende": "2020-08-03",
+"dividende": 104.979,
+"vu_le": "initial"
 },
 {
 "date": "2020-08-03",
@@ -17421,6 +20210,18 @@
 "titre": "CIE CI : Attestation des Commissaires Aux Comptes et Rapport d'activités au 1er semestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20191031_-_attestation_des_cac_et_rapport_dactivite_semestriel_du_1er_semestre_-_cie_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-08-06",
+"titre": "Dividende exercice 2018 : 79,23 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2018",
+"paiement": "2019-08-09",
+"ex_dividende": "2019-08-06",
+"dividende": 79.23,
 "vu_le": "initial"
 },
 {
@@ -17486,6 +20287,18 @@
 },
 {
 "date": "2018-07-18",
+"titre": "Dividende exercice 2017 : 31,95 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2017",
+"paiement": "2018-07-20",
+"ex_dividende": "2018-07-18",
+"dividende": 31.95,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-18",
 "titre": "Dividende exercice 2017 : 31,95 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17495,6 +20308,18 @@
 "dividende": 31.95,
 "vu_le": "initial",
 "emetteur": "CIE CI"
+},
+{
+"date": "2018-07-17",
+"titre": "Dividende exercice 2017 : 31,95 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2017",
+"paiement": "2018-07-20",
+"ex_dividende": "2018-07-17",
+"dividende": 31.95,
+"vu_le": "initial"
 },
 {
 "date": "2018-07-17",
@@ -17538,6 +20363,18 @@
 },
 {
 "date": "2017-09-20",
+"titre": "Dividende exercice 2016 : 3 465 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2016",
+"paiement": "2017-09-20",
+"ex_dividende": null,
+"dividende": 3465.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-09-20",
 "titre": "Dividende exercice 2016 : 3 465 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -17547,6 +20384,18 @@
 "dividende": 3465.0,
 "vu_le": "initial",
 "emetteur": "CIE CI"
+},
+{
+"date": "2017-07-10",
+"titre": "Dividende exercice 2016 : 3 465 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2016",
+"paiement": "2017-07-12",
+"ex_dividende": "2017-07-10",
+"dividende": 3465.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-10",
@@ -17718,6 +20567,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2026-05-22",
+"titre": "Dividende exercice 2025 : 585 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2025",
+"paiement": "2026-05-26",
+"ex_dividende": "2026-05-22",
+"dividende": 585.0,
+"vu_le": "initial"
+},
+{
 "date": "2026-05-04",
 "titre": "BOA BENIN : Rapport d'activités - 1er trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20260504_-_rapport_dactivites_-_1er_trimestre_2026_-_boa_benin.pdf",
@@ -17750,6 +20611,18 @@
 "titre": "BOA BN : Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20251029_-_rapport_dactivites_-_1er_semestre_2025_-_boa_bn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-05-30",
+"titre": "Dividende exercice 2024 : 468 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2024",
+"paiement": "2025-06-03",
+"ex_dividende": "2025-05-30",
+"dividende": 468.0,
 "vu_le": "initial"
 },
 {
@@ -17809,6 +20682,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-05-23",
+"titre": "Dividende exercice 2023 : 706 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2023",
+"paiement": "2024-05-27",
+"ex_dividende": "2024-05-23",
+"dividende": 706.0,
+"vu_le": "initial"
+},
+{
 "date": "2024-04-03",
 "titre": "BOA BENIN : Etats financiers - Exercice 2023",
 "url": "https://www.brvm.org/sites/default/files/20240403_-_etats_financiers_-_exercice_2023_-_boa_benin.pdf",
@@ -17837,6 +20722,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2023-05-23",
+"titre": "Dividende exercice 2022 : 627 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2022",
+"paiement": "2023-05-25",
+"ex_dividende": "2023-05-23",
+"dividende": 627.0,
+"vu_le": "initial"
+},
+{
 "date": "2023-05-03",
 "titre": "BOA BENIN : Rapport d'activité du 1er trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230503_-_rapport_dactivite_-_1er_trimestre_2023_-_boa_benin.pdf",
@@ -17862,6 +20759,18 @@
 "titre": "BOA BENIN : Rapport d'activités du 1er semestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20221004_-_rapport_dactivite_du_1er_semestre_2022_-_boa_bn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-05-23",
+"titre": "Dividende exercice 2021 : 546 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2021",
+"paiement": "2022-05-25",
+"ex_dividende": "2022-05-23",
+"dividende": 546.0,
 "vu_le": "initial"
 },
 {
@@ -17914,6 +20823,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-05-18",
+"titre": "Dividende exercice 2020 : 436 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2020",
+"paiement": "2021-05-20",
+"ex_dividende": "2021-05-18",
+"dividende": 436.0,
+"vu_le": "initial"
+},
+{
 "date": "2021-04-26",
 "titre": "BOA BENIN : Rapport d'activité au 1er trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210426_-_rapport_dactivite_au_1er_trimestre_2021_-_boa_bn.pdf",
@@ -17956,6 +20877,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-05-13",
+"titre": "Dividende exercice 2019 : 436 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2019",
+"paiement": "2020-05-15",
+"ex_dividende": "2020-05-13",
+"dividende": 436.0,
+"vu_le": "initial"
+},
+{
 "date": "2020-04-10",
 "titre": "BANK OF AFRICA BENIN : Rapport d'activité du 1er trimestre 2020",
 "url": "https://www.brvm.org/sites/default/files/20200410_-_rapport_dactivite_1er_trimestre_2020_-_bank_of_africa_bn.pdf",
@@ -17974,6 +20907,30 @@
 "titre": "BOA BENIN : Rapport d'activités du 3e trimestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20191119_-_rapport_dactivite_au_3eme_trimestre_2019_-_boa_bn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-05-22",
+"titre": "Dividende exercice 2018 : 416 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2018",
+"paiement": "2019-05-22",
+"ex_dividende": null,
+"dividende": 416.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-20",
+"titre": "Dividende exercice 2019 : 416 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2019",
+"paiement": "2019-05-22",
+"ex_dividende": "2019-05-20",
+"dividende": 416.0,
 "vu_le": "initial"
 },
 {
@@ -18026,6 +20983,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2018-05-15",
+"titre": "Dividende exercice 2017 : 407 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BN",
+"exercice": "2017",
+"paiement": "2018-05-15",
+"ex_dividende": null,
+"dividende": 407.0,
+"vu_le": "initial"
+},
+{
 "date": "2018-03-29",
 "titre": "BOA BENIN: Convocation Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/ago_boa-benin_nouvel_avis_de_convocation.pdf",
@@ -18037,6 +21006,13 @@
 "titre": "BOA BENIN : Convocation à l'Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/ago_boa-benin_avis_de_convocation.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2018-02-12",
+"titre": "Communique 09.02.18",
+"url": "https://www.brvm.org/sites/default/files/communique_09.02.18_2.pdf",
+"type": "autre",
 "vu_le": "initial"
 },
 {
@@ -18082,10 +21058,24 @@
 "vu_le": "initial"
 },
 {
+"date": "2016-03-31",
+"titre": "Convocation Assemblée générale ordinaire Exercice 2015 BANK OF AFRICA BN",
+"url": "https://www.brvm.org/sites/default/files/20160331_-_ago_-_bank_of_africa_bn_-_exercice_2015.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2016-02-25",
 "titre": "Rapport annuel Exercice 2014 BANK OF AFRICA BN",
 "url": "https://www.brvm.org/sites/default/files/20160225_-_ra_-_bank_of_africa_bn_-_exercice_2014.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2015-10-30",
+"titre": "Convocation Assemblée générale spéciale Exercice 2015 BANK OF AFRICA BN",
+"url": "https://www.brvm.org/sites/default/files/20151030_-_ags_-_bank_of_africa_bn_-_exercice_2015.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -18128,6 +21118,97 @@
 "titre": "Etats financiers provisoires - BANK OF AFRICA BN - Exercice 2013",
 "url": "https://www.brvm.org/sites/default/files/20140416_-_efp_-_bank_of_africa_bn_-_exercice_2013.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2013-03-18",
+"titre": "Changement de dirigeant - BANK OF AFRICA BN - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130318_-_cd_-_bank_of_africa_bn_-_exercice_2013.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2013-03-18",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130318_-_cm_-_bank_of_africa_bn_-_exercice_2013.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2011-06-29",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2011",
+"url": "https://www.brvm.org/sites/default/files/20110629_-_cm_-_bank_of_africa_bn_-_exercice_2011.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-08-09",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2010 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20100809_-_cm_-_bank_of_africa_bn_-_exercice_2010_groupe_boa.pdf.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-06-16",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2010",
+"url": "https://www.brvm.org/sites/default/files/20100616_-_cm_-_bank_of_africa_bn_-_exercice_2010.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-10-13",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2009 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20091013_-_cm_-_bank_of_africa_bn_-_exercice_2009_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2007-12-03",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2007",
+"url": "https://www.brvm.org/sites/default/files/20071203_-_cm_-_bank_of_africa_bn_-_exercice_2007.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2007-05-16",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2007 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20070516_-_cm_-_bank_of_africa_bf_-_exercice_2007_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2006-10-24",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2006",
+"url": "https://www.brvm.org/sites/default/files/20061024_-_cm_-_bank_of_africa_bn_-_exercice_2006.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2005-02-22",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2005 (tentative d'escroquerie)",
+"url": "https://www.brvm.org/sites/default/files/20050222_-_cm_-_bank_of_africa_bn_-_exercice_2005_tentative_descroquerie.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2005-02-02",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2005 (Augmentatiopn de capital)",
+"url": "https://www.brvm.org/sites/default/files/20050202_-_cm_-_bank_of_africa_bn_-_exercice_2005_augmentatiopn_de_capital.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2005-01-18",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2005 (Fitch Ratings)",
+"url": "https://www.brvm.org/sites/default/files/20050118_-_cm_-_bank_of_africa_bn_-_exercice_2005_fitch_ratings.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2004-11-22",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2004",
+"url": "https://www.brvm.org/sites/default/files/20041122_-_cm_-_bank_of_africa_bn_-_exercice_2004.pdf",
+"type": "autre",
 "vu_le": "initial"
 }
 ],
@@ -18256,6 +21337,18 @@
 },
 {
 "date": "2025-08-27",
+"titre": "Dividende exercice 2024 : 2 375 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SITAB",
+"exercice": "2024",
+"paiement": "2025-08-29",
+"ex_dividende": "2025-08-27",
+"dividende": 2375.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-08-27",
 "titre": "Dividende exercice 2024 : 2 375 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18338,6 +21431,18 @@
 },
 {
 "date": "2024-07-25",
+"titre": "Dividende exercice 2023 : 675 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SITAB",
+"exercice": "2023",
+"paiement": "2024-07-29",
+"ex_dividende": "2024-07-25",
+"dividende": 675.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-07-25",
 "titre": "Dividende exercice 2023 : 675 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18413,6 +21518,18 @@
 },
 {
 "date": "2023-07-25",
+"titre": "Dividende exercice 2022 : 551 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SITAB",
+"exercice": "2022",
+"paiement": "2023-07-27",
+"ex_dividende": "2023-07-25",
+"dividende": 551.0,
+"vu_le": "initial"
+},
+{
+"date": "2023-07-25",
 "titre": "Dividende exercice 2022 : 551 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18463,6 +21580,18 @@
 "titre": "SITAB CI : États financiers certifiés, approuvés et attestation des Commissaires Aux Comptes - exercice 2021",
 "url": "https://www.brvm.org/sites/default/files/20220811_-_etats_financiers_certifies_-_approuves_et_attestation_des_commissaires_aux_comptes_-_exercice_2021_-_sitab_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-07-19",
+"titre": "Dividende exercice 2021 : 445,117 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SITAB",
+"exercice": "2021",
+"paiement": "2022-07-21",
+"ex_dividende": "2022-07-19",
+"dividende": 445.117,
 "vu_le": "initial"
 },
 {
@@ -18887,6 +22016,18 @@
 },
 {
 "date": "2025-09-26",
+"titre": "Dividende exercice 2024 : 400 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2024",
+"paiement": "2025-09-30",
+"ex_dividende": "2025-09-26",
+"dividende": 400.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-09-26",
 "titre": "Dividende exercice 2024 : 400 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18927,6 +22068,18 @@
 },
 {
 "date": "2024-09-23",
+"titre": "Dividende exercice 2023 : 481,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2023",
+"paiement": "2024-09-25",
+"ex_dividende": "2024-09-23",
+"dividende": 481.5,
+"vu_le": "initial"
+},
+{
+"date": "2024-09-23",
 "titre": "Dividende exercice 2023 : 481,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18963,6 +22116,18 @@
 "titre": "SODE CI : Rapport d'activités du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231024_-_rapport_dactivites_-_1er_semestre_2023_-_sode_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-09-13",
+"titre": "Dividende exercice 2022 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2022",
+"paiement": "2023-09-15",
+"ex_dividende": "2023-09-13",
+"dividende": 450.0,
 "vu_le": "initial"
 },
 {
@@ -19021,6 +22186,18 @@
 },
 {
 "date": "2022-10-19",
+"titre": "Dividende exercice 2021 : 432 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2021",
+"paiement": "2022-10-21",
+"ex_dividende": "2022-10-19",
+"dividende": 432.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-10-19",
 "titre": "Dividende exercice 2021 : 432 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -19071,6 +22248,18 @@
 "titre": "SODECI : Rapport d'activité au 3ème trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211028_-_rapport_dactivite_au_3eme_trimestre_2021_-_sodeci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-23",
+"titre": "Dividende exercice 2020 : 337,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2020",
+"paiement": "2021-07-27",
+"ex_dividende": "2021-07-23",
+"dividende": 337.5,
 "vu_le": "initial"
 },
 {
@@ -19129,6 +22318,18 @@
 },
 {
 "date": "2020-09-23",
+"titre": "Dividende exercice 2019 : 292,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2019",
+"paiement": "2020-09-25",
+"ex_dividende": "2020-09-23",
+"dividende": 292.5,
+"vu_le": "initial"
+},
+{
+"date": "2020-09-23",
 "titre": "Dividende exercice 2019 : 292,5 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -19172,6 +22373,18 @@
 "titre": "SODE CI : Attestation des Commissaires Aux Comptes et rapport d’activités au 1er semestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20191025_-_rapport_dactivite_et_attestation_des_commissaires_aux_comptes_au_1er_semestre_2019_-_sodeci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-10-25",
+"titre": "Dividende exercice 2018 : 270 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2018",
+"paiement": "2019-10-29",
+"ex_dividende": "2019-10-25",
+"dividende": 270.0,
 "vu_le": "initial"
 },
 {
@@ -19230,6 +22443,18 @@
 },
 {
 "date": "2018-09-20",
+"titre": "Dividende exercice 2017 : 253,47 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2017",
+"paiement": "2018-09-24",
+"ex_dividende": "2018-09-20",
+"dividende": 253.47,
+"vu_le": "initial"
+},
+{
+"date": "2018-09-20",
 "titre": "Dividende exercice 2017 : 253,47 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -19270,6 +22495,18 @@
 },
 {
 "date": "2017-09-28",
+"titre": "Dividende exercice 2016 : 2 700 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2016",
+"paiement": "2017-09-28",
+"ex_dividende": null,
+"dividende": 2700.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-09-28",
 "titre": "Dividende exercice 2016 : 2 700 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -19279,6 +22516,18 @@
 "dividende": 2700.0,
 "vu_le": "initial",
 "emetteur": "SODECI"
+},
+{
+"date": "2017-09-26",
+"titre": "Dividende exercice 2016 : 2 700 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2016",
+"paiement": "2017-09-28",
+"ex_dividende": "2017-09-26",
+"dividende": 2700.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-09-26",
@@ -19470,6 +22719,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2026-05-05",
+"titre": "Dividende : 594,528 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": null,
+"paiement": "2026-05-06",
+"ex_dividende": "2026-05-05",
+"dividende": 594.528,
+"vu_le": "initial"
+},
+{
 "date": "2026-03-30",
 "titre": "BOA CI : Avis de convocation - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20260327_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
@@ -19491,6 +22752,32 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-10-14",
+"titre": "BOA CÔTE D'IVOIRE : Report de l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20251014_-_report_de_lassemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2025-10-06",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation - Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20251006_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2025-05-16",
+"titre": "Dividende exercice 2024 : 469 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2024",
+"paiement": "2025-05-20",
+"ex_dividende": "2025-05-16",
+"dividende": 469.0,
+"vu_le": "initial"
+},
+{
 "date": "2025-05-16",
 "titre": "BOA CÔTE D'IVOIRE : Rapport d'activités du 1er trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250516_-_rapport_dactivites_-_1er_trimestre_2025_-_boa_ci.pdf",
@@ -19498,10 +22785,24 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-05-12",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20250512_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2025-04-02",
 "titre": "BOA CÔTE D'IVOIRE : Etats financiers - Exercice 2024",
 "url": "https://www.brvm.org/sites/default/files/20250402_-_etats_financiers_-_exercice_2024_-_boa_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-04-02",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation - Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20250402_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19519,10 +22820,36 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-09-27",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Extraordinaire",
+"url": "https://www.brvm.org/sites/default/files/20240927_-_avis_de_convocation_-_assemblee_generale_extraordinaire_-_boa_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2024-05-14",
 "titre": "BOA CI : Rapport d'activités du 1er trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20240514_-_rapport_dactivites_-_1er_trimestre_2024_-_boa_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-04-25",
+"titre": "Dividende exercice 2023 : 684 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2023",
+"paiement": "2024-04-29",
+"ex_dividende": "2024-04-25",
+"dividende": 684.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-03-15",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20240314_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19554,10 +22881,29 @@
 "vu_le": "initial"
 },
 {
+"date": "2023-04-26",
+"titre": "Dividende exercice 2022 : 540 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2022",
+"paiement": "2023-04-28",
+"ex_dividende": "2023-04-26",
+"dividende": 540.0,
+"vu_le": "initial"
+},
+{
 "date": "2023-04-05",
 "titre": "BOA CI : Etats financiers exercice 2022",
 "url": "https://www.brvm.org/sites/default/files/20230405_-_etats_financiers_exercice_2022_-_boa_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-03-09",
+"titre": "BANK OF AFRICA CÔTE D'IVOIRE : Avis de Convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/avis_de_convocation_ago_boa_ci_29_03_23.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19596,6 +22942,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2022-04-26",
+"titre": "Dividende exercice 2021 : 374 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2021",
+"paiement": "2022-04-28",
+"ex_dividende": "2022-04-26",
+"dividende": 374.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-03-14",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20220314_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2021-11-02",
 "titre": "BOA CI : Rapport d'activité au 3ème trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211102_-_rapport_dactivite_au_3eme_trimestre_2021_-_boa_ci.pdf",
@@ -19624,6 +22989,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-05-10",
+"titre": "Dividende exercice 2020 : 315 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2020",
+"paiement": "2021-05-12",
+"ex_dividende": "2021-05-10",
+"dividende": 315.0,
+"vu_le": "initial"
+},
+{
 "date": "2021-04-26",
 "titre": "BOA CÔTE D'IVOIRE : Rapport d'activité au 1er trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210426_-_rapport_dactivite_au_1er_trimestre_2021_-_boa_ci.pdf",
@@ -19635,6 +23012,13 @@
 "titre": "BOA CÔTE D'IVOIRE : Etats Financiers - Exercice 2020",
 "url": "https://www.brvm.org/sites/default/files/20210412_-_etats_financiers_-_exercice_2020_-_boa_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-03-30",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20210330_-_avis_de_convocation_ago_-_boa_ci.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19659,6 +23043,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-06-11",
+"titre": "Dividende exercice 2019 : 315 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2019",
+"paiement": "2020-06-15",
+"ex_dividende": "2020-06-11",
+"dividende": 315.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-05-06",
+"titre": "BANK OF AFRICA CI : Avis de convocation à l'Assemblée Générale Ordinaire – (Annule et remplace celui du 23 avril 2020)",
+"url": "https://www.brvm.org/sites/default/files/avis_rectificatif_de_convocation_ago_boaci_du_22_05_2020_annule_et_remp.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2020-04-29",
 "titre": "BANK OF AFRICA CI : Rapport d'activité du 1er trimestre 2020",
 "url": "https://www.brvm.org/sites/default/files/20200429_-_rapport_dactivite_du_1er_trimestre_2020_-_bank_of_africa_ci.pdf",
@@ -19677,6 +23080,13 @@
 "titre": "BANK OF AFRICA CÔTE D'IVOIRE : Etats financiers exercice 2019",
 "url": "https://www.brvm.org/sites/default/files/20200423_-_etats_financiers_exercice_2019_-_boa_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2020-04-23",
+"titre": "BANK OF AFRICA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20200423_-_avis_de_convocation_ago_boaci_-11_05_2020.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19708,6 +23118,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-05-16",
+"titre": "Dividende exercice 2018 : 306 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2018",
+"paiement": "2019-05-20",
+"ex_dividende": "2019-05-16",
+"dividende": 306.0,
+"vu_le": "initial"
+},
+{
 "date": "2019-05-15",
 "titre": "BOA CÔTE D'IVOIRE : Rapport d’activités du 1er trimestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20190515_-_rapport_dactivites_du_1er_trimestre_2019_-_boac.pdf",
@@ -19719,6 +23141,13 @@
 "titre": "BOA CÔTE D'IVOIRE : Etats financiers provisoires Exercice 2018",
 "url": "https://www.brvm.org/sites/default/files/20190329_-_boaci_-_etats_financiers_2018_provisoires.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-03-25",
+"titre": "BOA CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20190325_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_ci.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19750,6 +23179,37 @@
 "vu_le": "initial"
 },
 {
+"date": "2018-06-06",
+"titre": "Dividende exercice 2017 : 295 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2017",
+"paiement": "2018-06-06",
+"ex_dividende": null,
+"dividende": 295.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-04",
+"titre": "Dividende exercice 2017 : 295 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA CI",
+"exercice": "2017",
+"paiement": "2018-06-06",
+"ex_dividende": "2018-06-04",
+"dividende": 295.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-05-01",
+"titre": "BOA CÔTE D'IVOIRE : Convocation à l’Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20180420_-_avis_de_convocation_agm_14_mai_2018.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2018-04-30",
 "titre": "BOA CÔTE D'IVOIRE : Rapport d’activités du 1er trimestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20180430_-_boaci_-_rapport_dactivites_au_1er_trimestre_2018.pdf",
@@ -19761,6 +23221,13 @@
 "titre": "BOA CÔTE D'IVOIRE : Etats financiers 31 Décembre 2017",
 "url": "https://www.brvm.org/sites/default/files/20180423-boa-ci_etats_financiers_31_decembre_2017.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-04-20",
+"titre": "BOA CÔTE D'IVOIRE : Convocation à l’Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20180420_-_avis_de_convocation_agm_boa_ci_14_mai_2018.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19813,6 +23280,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2016-05-25",
+"titre": "COMMUNIQUE - BANK OF AFRICA CI - Exercice 2016",
+"url": "https://www.brvm.org/sites/default/files/20160525_-_cm_-_bank_of_africa_ci_-_exercice_2016.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2016-04-30",
 "titre": "Rapport premier trimestre - BANK OF AFRICA CI - Exercice 2016",
 "url": "https://www.brvm.org/sites/default/files/20160430_-_rt1_-_bank_of_africa_ci_-_exercice_2016.pdf",
@@ -19824,6 +23298,13 @@
 "titre": "Etats financiers provisoires - BANK OF AFRICA CI - Exercice 2015",
 "url": "https://www.brvm.org/sites/default/files/20160303_-_efp_-_bank_of_africa_ci_-_exercice_2015.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2016-03-03",
+"titre": "Convocation Assemblée générale mixte Exercice 2015 BANK OF AFRICA CI",
+"url": "https://www.brvm.org/sites/default/files/20160303_-_agm_-_bank_of_africa_ci_-_exercice_2015.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -19841,6 +23322,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2015-09-05",
+"titre": "Franchissement de seuil - BANK OF AFRICA CI - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20150904_-_fs_-_bank_of_africa_ci_-_exercice_2015.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
 "date": "2015-06-16",
 "titre": "Rapport annuel Exercice 2014 BANK OF AFRICA CI",
 "url": "https://www.brvm.org/sites/default/files/20150616_-_ra_-_bank_of_africa_ci_-_exercice_2014.pdf",
@@ -19852,6 +23340,27 @@
 "titre": "Rapport troisième trimestre - BANK OF AFRICA CI - Exercice 2014",
 "url": "https://www.brvm.org/sites/default/files/20141215_-_rt3_-_bank_of_africa_ci_-_exercice_2014.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-12-08",
+"titre": "Changement de dirigeant - BANK OF AFRICA CI - Exercice 2014",
+"url": "https://www.brvm.org/sites/default/files/20141208_-_cd_-_bank_of_africa_ci_-_exercice_2014.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2014-12-08",
+"titre": "COMMUNIQUE - BAN K OF AFRICA CI - Exercice 2014 (Changement dans la direction)",
+"url": "https://www.brvm.org/sites/default/files/20141208_-_cm_-_ban_k_of_africa_ci_-_exercice_2014_changement_dans_la_direction.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-11-28",
+"titre": "COMMUNIQUE - BANK OF AFRICA CI - Exercice 2014 (Augmentation de capital)",
+"url": "https://www.brvm.org/sites/default/files/20141128_-_cm_-_bank_of_africa_ci_-_exercice_2014_augmentation_de_capital.pdf",
+"type": "capital",
 "vu_le": "initial"
 },
 {
@@ -19880,6 +23389,27 @@
 "titre": "Etats financiers provisoires - BANK OF AFRICA CI - Exercice 2013",
 "url": "https://www.brvm.org/sites/default/files/20140326_-_efp_-_bank_of_africa_ci_-_exercice_2013.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2010-08-09",
+"titre": "COMMUNIQUE - BANK OF AFRICA CI - Exercice 2010 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20100809_-_cm_-_bank_of_africa_ci_-_exercice_2010_groupe_boa.pdf.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-10-13",
+"titre": "COMMUNIQUE - BANK OF AFRICA CI - Exercice 2009 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20091013_-_cm_-_bank_of_africa_ci_-_exercice_2009_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2007-05-16",
+"titre": "COMMUNIQUE - BANK OF AFRICA CI - Exercice 2007 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20070516_-_cm_-_bank_of_africa_ci_-_exercice_2007_groupe_boa.pdf",
+"type": "autre",
 "vu_le": "initial"
 }
 ],
@@ -19917,6 +23447,18 @@
 "titre": "BOA BF : Rapport d'activités - 1er trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20260430_-_rapport_dactivites_-_1er_trimestre_2026_-_boa_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2026-04-22",
+"titre": "Dividende exercice 2025 : 397 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2025",
+"paiement": "2026-04-23",
+"ex_dividende": "2026-04-22",
+"dividende": 397.0,
 "vu_le": "initial"
 },
 {
@@ -19969,6 +23511,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-04-17",
+"titre": "Dividende exercice 2024 : 428 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2024",
+"paiement": "2025-04-22",
+"ex_dividende": "2025-04-17",
+"dividende": 428.0,
+"vu_le": "initial"
+},
+{
 "date": "2025-04-16",
 "titre": "BOA BURKINA FASO : Rapport d'activités - 2ème semestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20250416_-_rapport_dactivites_-_2eme_semestre_2024_-_boa_bf.pdf",
@@ -20015,6 +23569,18 @@
 "titre": "BOA BF : Avis de convocation - Assemblée Générale Extraordinaire",
 "url": "https://www.brvm.org/sites/default/files/20240801_-_avis_de_convocation_-_assemblee_generale_extraordinaire_-_boa_bf.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2024-05-02",
+"titre": "Dividende exercice 2023 : 704 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2023",
+"paiement": "2024-05-06",
+"ex_dividende": "2024-05-02",
+"dividende": 704.0,
 "vu_le": "initial"
 },
 {
@@ -20067,6 +23633,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2023-05-03",
+"titre": "Dividende exercice 2022 : 577 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2022",
+"paiement": "2023-05-05",
+"ex_dividende": "2023-05-03",
+"dividende": 577.0,
+"vu_le": "initial"
+},
+{
+"date": "2023-03-09",
+"titre": "BANK OF AFRICA BURKINA FASO : • Avis de Convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20230308_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_boa_bf.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2023-02-23",
 "titre": "BOA BURKINA FASO : Rapport d'activité du 2ème semestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20230223_-_rapport_dactivite_-_2eme_semestre_2022_-_boa_bf.pdf",
@@ -20113,6 +23698,18 @@
 "titre": "Bank Of Africa Burkina Faso : Rapport d'activités au 1er semestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20220819_-_rapport_dactivite_du_1er_semestre_2022_-_boa_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-04-29",
+"titre": "Dividende exercice 2021 : 448 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2021",
+"paiement": "2022-05-04",
+"ex_dividende": "2022-04-29",
+"dividende": 448.0,
 "vu_le": "initial"
 },
 {
@@ -20186,10 +23783,29 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-04-29",
+"titre": "Dividende exercice 2020 : 370 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2020",
+"paiement": "2021-05-03",
+"ex_dividende": "2021-04-29",
+"dividende": 370.0,
+"vu_le": "initial"
+},
+{
 "date": "2021-03-11",
 "titre": "BANK OF AFRICA BURKINA FASO : Etats financiers exercice 2020",
 "url": "https://www.brvm.org/sites/default/files/20210311_-_etats_financiers_exercice_2020_-_boa_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-03-11",
+"titre": "BANK OF AFRICA BURKINA FASO : Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20210311_-_avis_de_convocation_-_assemblee_generale_mixte_-_boa_bf.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -20211,6 +23827,18 @@
 "titre": "BOA BURKINA FASO : Etats financiers certifiés et approuvés du 1er semestre 2020",
 "url": "https://www.brvm.org/sites/default/files/20200821_-_etats_financiers_certifies_et_approuves_-_exercice_2019_-_boa_burkina_faso.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2020-04-29",
+"titre": "Dividende exercice 2019 : 370 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2019",
+"paiement": "2020-05-04",
+"ex_dividende": "2020-04-29",
+"dividende": 370.0,
 "vu_le": "initial"
 },
 {
@@ -20263,6 +23891,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-05-02",
+"titre": "Dividende exercice 2018 : 366 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2018",
+"paiement": "2019-05-02",
+"ex_dividende": null,
+"dividende": 366.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-04-29",
+"titre": "Dividende exercice 2018 : 366 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2018",
+"paiement": "2019-05-02",
+"ex_dividende": "2019-04-29",
+"dividende": 366.0,
+"vu_le": "initial"
+},
+{
 "date": "2019-04-04",
 "titre": "BOA BF : Rapport d’activités du 2ème semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20190404_-_rapport_dactivites_du_2e_semestre_2018_-_boa_bf.pdf",
@@ -20302,6 +23954,30 @@
 "titre": "BOA BF : Attestation des Commissaires aux comptes du rapport d'activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181025_-_rapport_cac_au_1er_semestre_2018_-_boabf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-05-07",
+"titre": "Dividende : 358 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": null,
+"paiement": "2018-05-07",
+"ex_dividende": null,
+"dividende": 358.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-05-03",
+"titre": "Dividende exercice 2017 : 358 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA BF",
+"exercice": "2017",
+"paiement": "2018-05-07",
+"ex_dividende": "2018-05-03",
+"dividende": 358.0,
 "vu_le": "initial"
 },
 {
@@ -20355,6 +24031,13 @@
 },
 {
 "date": "2017-03-13",
+"titre": "BANK OF AFRICA BURKINA FASO - CONVOCATION AGM 2017",
+"url": "https://www.brvm.org/sites/default/files/20170313-avis_de_convocation_agm_du_28_mars_2017-boa_burkina_faso.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2017-03-13",
 "titre": "BANK OF AFRICA BF - Etats Financiers Exercice 2016",
 "url": "https://www.brvm.org/sites/default/files/20170313-etats_financiers_exercice_2016_-_boa_burkina_faso.pdf",
 "type": "resultats",
@@ -20365,6 +24048,13 @@
 "titre": "Rapport premier trimestre - BANK OF AFRICA BF - Exercice 2016",
 "url": "https://www.brvm.org/sites/default/files/20160511_-_rt1_-_bank_of_africa_bf_-_exercice_2016.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2016-03-10",
+"titre": "Convocation Assemblée générale mixte Exercice 2015 BANK OF AFRICA BF",
+"url": "https://www.brvm.org/sites/default/files/20160310_-_agm_-_bank_of_africa_bf_-_exercice_2015.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -20403,6 +24093,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2014-09-15",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2014",
+"url": "https://www.brvm.org/sites/default/files/20140915_-_cm_-_bank_of_africa_bf_-_exercice_2014.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2014-08-25",
 "titre": "Rapport annuel Exercice 2013 BANK OF AFRICA BF",
 "url": "https://www.brvm.org/sites/default/files/20140825_-_ra_-_bank_of_africa_bf_-_exercice_2013.pdf",
@@ -20421,6 +24118,55 @@
 "titre": "Etats financiers provisoires - BANK OF AFRICA BF - Exercice 2013",
 "url": "https://www.brvm.org/sites/default/files/20140324_-_efp_-_bank_of_africa_bf_-_exercice_2013.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2013-06-03",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130603_-_cm_-_bank_of_africa_bf_-_exercice_2013.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2011-09-21",
+"titre": "Changement de dirigeant - BANK OF AFRICA BF - Exercice 2011",
+"url": "https://www.brvm.org/sites/default/files/20110921_-_cd_-_bank_of_africa_bf_-_exercice_2011.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2011-09-21",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2011 (Changement dans la direction)",
+"url": "https://www.brvm.org/sites/default/files/20110921_-_cm_-_bank_of_africa_bf_-_exercice_2011_changement_dans_la_direction.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2011-06-01",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2011 (Augmentation de capital)",
+"url": "https://www.brvm.org/sites/default/files/20110601_-_cm_-_bank_of_africa_bf_-_exercice_2011_augmentation_de_capital.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2010-08-09",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2010 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20100809_-_cm_-_bank_of_africa_bf_-_exercice_2010_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-10-13",
+"titre": "COMMUNIQUE - BANK OF AFRICA BF - Exercice 2009 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20091013_-_cm_-_bank_of_africa_bf_-_exercice_2009_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2007-05-16",
+"titre": "COMMUNIQUE - BANK OF AFRICA BN - Exercice 2007 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20070516_-_cm_-_bank_of_africa_bn_-_exercice_2007_groupe_boa.pdf",
+"type": "autre",
 "vu_le": "initial"
 }
 ],
@@ -20442,6 +24188,18 @@
 "type": "resultats",
 "vu_le": "initial",
 "lu": true
+},
+{
+"date": "2026-05-29",
+"titre": "Dividende exercice 2025 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2025",
+"paiement": "2026-06-01",
+"ex_dividende": "2026-05-29",
+"dividende": 450.0,
+"vu_le": "initial"
 },
 {
 "date": "2026-04-22",
@@ -20514,6 +24272,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-05-28",
+"titre": "Dividende exercice 2024 : 350 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2024",
+"paiement": "2025-06-02",
+"ex_dividende": "2025-05-28",
+"dividende": 350.0,
+"vu_le": "initial"
+},
+{
 "date": "2025-05-05",
 "titre": "BANK OF AFRICA SENEGAL : Rapport d'activités du 4ème trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250505_-_rapport_dactivites_-_4eme_trimestre_2025_-_boa_sn.pdf",
@@ -20546,6 +24316,18 @@
 "titre": "BOA SN : Avis de convocation - Assemblée Générale Extraordinaire",
 "url": "https://www.brvm.org/sites/default/files/20240725_-_avis_de_convocation_-_assemblee_generale_extraordinaire_-_boa_sn.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2024-06-25",
+"titre": "Dividende exercice 2023 : 300 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2023",
+"paiement": "2024-06-27",
+"ex_dividende": "2024-06-25",
+"dividende": 300.0,
 "vu_le": "initial"
 },
 {
@@ -20591,6 +24373,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2023-05-30",
+"titre": "Dividende exercice 2022 : 187,5 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2022",
+"paiement": "2023-06-01",
+"ex_dividende": "2023-05-30",
+"dividende": 187.5,
+"vu_le": "initial"
+},
+{
 "date": "2023-03-20",
 "titre": "Avis de convocation Assemblée Générale Ordinaire BOA SN (Annule et remplace le précédent)",
 "url": "https://www.brvm.org/sites/default/files/boasn_avis_de_convocation_ago_2023_-_annule_et_remplace.pdf",
@@ -20605,6 +24399,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2023-03-10",
+"titre": "BANK OF AFRICA SENEGAL : Avis de Convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20230310_-_avis_de_convocation_ago_-boa_sn.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2022-12-07",
 "titre": "BOA SENEGAL : Rapport d'activité 3e trimestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20221207_-_rapport_dactivite_3e_trimestre_2022_-_boa_senegal.pdf",
@@ -20616,6 +24417,18 @@
 "titre": "BOA SENEGAL : Rapport d'activité du 1er Semestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20221116_-_rapport_dactivite_-_1er_semestre_2022_-_boa_senegal.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-05-30",
+"titre": "Dividende exercice 2021 : 161 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2021",
+"paiement": "2022-06-01",
+"ex_dividende": "2022-05-30",
+"dividende": 161.0,
 "vu_le": "initial"
 },
 {
@@ -20654,6 +24467,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-05-28",
+"titre": "Dividende exercice 2020 : 161,01 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2020",
+"paiement": "2021-06-01",
+"ex_dividende": "2021-05-28",
+"dividende": 161.01,
+"vu_le": "initial"
+},
+{
 "date": "2021-04-30",
 "titre": "BOA SENEGAL : Rapport d'activités au 1er trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210430_-_rapport_dactivites_au_1er_trimestre_2021_-_boa_senegal.pdf",
@@ -20672,6 +24497,13 @@
 "titre": "BANK OF AFRICA SENEGAL : Etats financiers exercice 2020",
 "url": "https://www.brvm.org/sites/default/files/20210311_-_etats_financiers_exercice_2020_-_boa_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-03-10",
+"titre": "BANK OF AFRICA-SENEGAL : Convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/boasn_ago_2021_-_avis_de_convocation.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -20703,9 +24535,28 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-06-17",
+"titre": "Dividende exercice 2019 : 161 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2019",
+"paiement": "2020-06-19",
+"ex_dividende": "2020-06-17",
+"dividende": 161.0,
+"vu_le": "initial"
+},
+{
 "date": "2020-06-02",
 "titre": "BANK OF AFRICA SN : Rapport de l’Assemblée Générale Ordinaire et Etats financiers certifiés et approuvés",
 "url": "https://www.brvm.org/sites/default/files/20200602_-_rapport_de_lassemblee_generale_ordinaire_et_etats_financiers_certifies_et_approuves_-_boa_sn.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2020-05-13",
+"titre": "BANK OF AFRICA SENEGAL : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/boa_sn_avis_de_convocation_ago_29052020.pdf",
 "type": "assemblee",
 "vu_le": "initial"
 },
@@ -20752,6 +24603,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-05-30",
+"titre": "Dividende exercice 2018 : 160 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2018",
+"paiement": "2019-06-03",
+"ex_dividende": "2019-05-30",
+"dividende": 160.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-29",
+"titre": "Dividende exercice 2018 : 160 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2018",
+"paiement": "2019-06-03",
+"ex_dividende": "2019-05-29",
+"dividende": 160.0,
+"vu_le": "initial"
+},
+{
 "date": "2019-04-15",
 "titre": "BANK OF AFRICA SENEGAL : Etats financiers Exercice 2018",
 "url": "https://www.brvm.org/sites/default/files/20190415_-_etats_financiers_exercice_2018_-_boa_sn.pdf",
@@ -20784,6 +24659,18 @@
 "titre": "BOA SENEGAL : Attestation des Commissaires aux comptes du rapport d'activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181102_-_attestation_des_commissaires_aux_comptes_du_rapport_dactivites_du_1er_semestre_2018-boas_0.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-05-02",
+"titre": "Dividende exercice 2017 : 160 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BANK OF AFRICA SN",
+"exercice": "2017",
+"paiement": "2018-05-02",
+"ex_dividende": null,
+"dividende": 160.0,
 "vu_le": "initial"
 },
 {
@@ -20836,6 +24723,20 @@
 "vu_le": "initial"
 },
 {
+"date": "2017-03-17",
+"titre": "BANK OF AFRICA SN - CONVOCATION AGM 2017",
+"url": "https://www.brvm.org/sites/default/files/boa-sn_avis_de_convocation_agm_du_30_mars_2017.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2016-06-16",
+"titre": "Convocation Assemblée générale mixte Exercice 2015 BANK OF AFRICA SN",
+"url": "https://www.brvm.org/sites/default/files/20160616_-_agm_-_bank_of_africa_sn_-_exercice_2015.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2016-05-11",
 "titre": "Rapport premier trimestre - BANK OF AFRICA SN - Exercice 2016",
 "url": "https://www.brvm.org/sites/default/files/20160511_-_rt1_-_bank_of_africa_sn_-_exercice_2016.pdf",
@@ -20864,6 +24765,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2015-11-12",
+"titre": "COMMUNIQUE - BANK OF AFRICA SN - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20151112_-_cm_-_bank_of_africa_sn_-_exercice_2015.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2015-11-04",
 "titre": "Rapport semestriel - BANK OF AFRICA SN - Exercice 2015",
 "url": "https://www.brvm.org/sites/default/files/20151104_-_rs_-_bank_of_africa_sn_-_exercice_2015.pdf",
@@ -20882,6 +24790,41 @@
 "titre": "Etats financiers provisoires - BANK OF AFRICA SN - Exercice 2014",
 "url": "https://www.brvm.org/sites/default/files/20150408_-_efp_-_bank_of_africa_sn_-_exercice_2014.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2013-03-18",
+"titre": "Changement de dirigeant - BANK OF AFRICA SN - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130318_-_cd_-_bank_of_africa_sn_-_exercice_2013.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2013-03-18",
+"titre": "COMMUNIQUE - BANK OF AFRICA SN - Exercice 2013",
+"url": "https://www.brvm.org/sites/default/files/20130318_-_cm_-_bank_of_africa_sn_-_exercice_2013.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-08-09",
+"titre": "COMMUNIQUE - BANK OF AFRICA SN - Exercice 2010 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20100809_-_cm_-_bank_of_africa_sn_-_exercice_2010_groupe_boa.pdf.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-10-13",
+"titre": "COMMUNIQUE - BANK OF AFRICA SN - Exercice 2009 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20091013_-_cm_-_bank_of_africa_sn_-_exercice_2009_groupe_boa.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2007-05-16",
+"titre": "COMMUNIQUE - BANK OF AFRICA SN - Exercice 2007 (Groupe BOA)",
+"url": "https://www.brvm.org/sites/default/files/20070516_-_cm_-_bank_of_africa_sn_-_exercice_2007_groupe_boa.pdf",
+"type": "autre",
 "vu_le": "initial"
 }
 ],
@@ -21027,6 +24970,18 @@
 },
 {
 "date": "2024-06-21",
+"titre": "Dividende exercice 2023 : 81,78 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NEI-CEDA CI",
+"exercice": "2023",
+"paiement": "2024-06-25",
+"ex_dividende": "2024-06-21",
+"dividende": 81.78,
+"vu_le": "initial"
+},
+{
+"date": "2024-06-21",
 "titre": "Dividende exercice 2023 : 81,78 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -21063,6 +25018,18 @@
 "titre": "NEI-CEDA CÔTE D'IVOIRE : Rapport d'activités - 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231031_-_rapport_dactivites_-_1er_semestre_2023_-_nei-ceda_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-09-20",
+"titre": "Dividende exercice 2022 : 35,25 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NEI-CEDA CI",
+"exercice": "2022",
+"paiement": "2023-09-22",
+"ex_dividende": "2023-09-20",
+"dividende": 35.25,
 "vu_le": "initial"
 },
 {
@@ -21522,6 +25489,18 @@
 },
 {
 "date": "2025-08-27",
+"titre": "Dividende exercice 2024 : 92 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2024",
+"paiement": "2025-08-29",
+"ex_dividende": "2025-08-27",
+"dividende": 92.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-08-27",
 "titre": "Dividende exercice 2024 : 92 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -21558,6 +25537,18 @@
 "titre": "AFRICA GLOBAL LOGISTICS CÔTE D'IVOIRE : Rapport d'activités du 1er trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250513_-_rapport_dactivites_-_1er_trimestre_2025_-_africa_global_logistics_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-12-10",
+"titre": "Dividende exercice 2023 : 92 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2023",
+"paiement": "2024-12-12",
+"ex_dividende": "2024-12-10",
+"dividende": 92.0,
 "vu_le": "initial"
 },
 {
@@ -21605,6 +25596,18 @@
 "titre": "AFRICA GLOBAL LOGISTICS CI (EX-BOLLORE TRANSPORT ET LOGISTICS) : Rapport d'activités - 1er trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20240502_-_rapport_dactivites_-_1er_trimestre_2024_-_africa_global_logistics_ci_ex-bollore.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-11-16",
+"titre": "Dividende exercice 2022 : 92 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2022",
+"paiement": "2023-11-20",
+"ex_dividende": "2023-11-16",
+"dividende": 92.0,
 "vu_le": "initial"
 },
 {
@@ -21705,6 +25708,18 @@
 },
 {
 "date": "2022-06-21",
+"titre": "Dividende exercice 2021 : 130 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2021",
+"paiement": "2022-06-23",
+"ex_dividende": "2022-06-21",
+"dividende": 130.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-06-21",
 "titre": "Dividende exercice 2021 : 130 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -21741,6 +25756,18 @@
 "titre": "BOLLORE TRANSPORT & LOGISTICS : Rapport d'activité et Attestation des commissaires aux comptes - 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20211109_-_rapport_dactivite_et_attestation_des_commissaires_aux_comptes_-_1er_semestre_2021_-_sdsc.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-08-09",
+"titre": "Dividende exercice 2020 : 100 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2020",
+"paiement": "2021-08-11",
+"ex_dividende": "2021-08-09",
+"dividende": 100.0,
 "vu_le": "initial"
 },
 {
@@ -21806,6 +25833,18 @@
 },
 {
 "date": "2020-12-18",
+"titre": "Dividende exercice 2019 : 100 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2019",
+"paiement": "2020-12-18",
+"ex_dividende": null,
+"dividende": 100.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-12-18",
 "titre": "Dividende exercice 2019 : 100 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -21815,6 +25854,18 @@
 "dividende": 100.0,
 "vu_le": "initial",
 "emetteur": "BOLLORE TRANSPORT & LOGISTICS"
+},
+{
+"date": "2020-12-16",
+"titre": "Dividende exercice 2019 : 100 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2019",
+"paiement": "2020-12-18",
+"ex_dividende": "2020-12-16",
+"dividende": 100.0,
+"vu_le": "initial"
 },
 {
 "date": "2020-12-16",
@@ -21903,6 +25954,18 @@
 "titre": "BOLLORE TRANSPORT & LOGISTICS CI : Attestation des Commissaires Aux Comptes au 1er semestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20191031_-_attestation_des_cac_sur_le_rapport_dactivite_semestriel_du_1er_semestre_-_bollore.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-06-03",
+"titre": "Dividende exercice 2018 : 184 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2018",
+"paiement": "2019-06-06",
+"ex_dividende": "2019-06-03",
+"dividende": 184.0,
 "vu_le": "initial"
 },
 {
@@ -21996,6 +26059,18 @@
 },
 {
 "date": "2017-07-13",
+"titre": "Dividende exercice 2016 : 8 977 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2016",
+"paiement": "2017-07-13",
+"ex_dividende": null,
+"dividende": 8977.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-13",
 "titre": "Dividende exercice 2016 : 8 977 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22005,6 +26080,18 @@
 "dividende": 8977.0,
 "vu_le": "initial",
 "emetteur": "BOLLORE TRANSPORT & LOGISTICS"
+},
+{
+"date": "2017-07-11",
+"titre": "Dividende exercice 2016 : 8 997 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2016",
+"paiement": "2017-07-13",
+"ex_dividende": "2017-07-11",
+"dividende": 8997.0,
+"vu_le": "initial"
 },
 {
 "date": "2017-07-11",
@@ -22172,6 +26259,18 @@
 },
 {
 "date": "2026-07-16",
+"titre": "Dividende exercice 2025 : 176,65 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2025",
+"paiement": "2026-07-17",
+"ex_dividende": "2026-07-16",
+"dividende": 176.65,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-16",
 "titre": "Dividende exercice 2025 : 176,65 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22236,6 +26335,18 @@
 "titre": "TOTALENERGIES MARKETING SENEGAL : Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20251031_-_rapport_dactivites_-_1er_semestre_2025_-_totalenergies_marketing_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-07-09",
+"titre": "Dividende exercice 2024 : 222,4 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2024",
+"paiement": "2025-07-11",
+"ex_dividende": "2025-07-09",
+"dividende": 222.4,
 "vu_le": "initial"
 },
 {
@@ -22308,6 +26419,18 @@
 },
 {
 "date": "2024-06-27",
+"titre": "Dividende exercice 2023 : 207,58 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2023",
+"paiement": "2024-06-29",
+"ex_dividende": "2024-06-27",
+"dividende": 207.58,
+"vu_le": "initial"
+},
+{
+"date": "2024-06-27",
 "titre": "Dividende exercice 2023 : 207,58 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22315,6 +26438,18 @@
 "exercice": "2023",
 "paiement": "2024-06-29",
 "ex_dividende": "2024-06-27",
+"dividende": 207.58,
+"vu_le": "initial"
+},
+{
+"date": "2024-06-26",
+"titre": "Dividende exercice 2023 : 207,58 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2023",
+"paiement": "2024-06-28",
+"ex_dividende": "2024-06-26",
 "dividende": 207.58,
 "vu_le": "initial"
 },
@@ -22381,6 +26516,18 @@
 },
 {
 "date": "2023-07-11",
+"titre": "Dividende exercice 2022 : 241,01 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2022",
+"paiement": "2023-07-13",
+"ex_dividende": "2023-07-11",
+"dividende": 241.01,
+"vu_le": "initial"
+},
+{
+"date": "2023-07-11",
 "titre": "Dividende exercice 2022 : 241,01 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22442,6 +26589,18 @@
 },
 {
 "date": "2022-07-20",
+"titre": "Dividende exercice 2021 : 187,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2021",
+"paiement": "2022-07-22",
+"ex_dividende": "2022-07-20",
+"dividende": 187.3,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-20",
 "titre": "Dividende exercice 2021 : 187,3 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22496,6 +26655,18 @@
 },
 {
 "date": "2021-07-28",
+"titre": "Dividende exercice 2020 : 223,6 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2020",
+"paiement": "2021-07-30",
+"ex_dividende": "2021-07-28",
+"dividende": 223.6,
+"vu_le": "initial"
+},
+{
+"date": "2021-07-28",
 "titre": "Dividende exercice 2020 : 223,6 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22529,6 +26700,18 @@
 },
 {
 "date": "2020-12-22",
+"titre": "Dividende exercice 2019 : 105,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2019",
+"paiement": "2020-12-22",
+"ex_dividende": null,
+"dividende": 105.3,
+"vu_le": "initial"
+},
+{
+"date": "2020-12-22",
 "titre": "Dividende exercice 2019 : 105,3 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22536,6 +26719,18 @@
 "exercice": "2019",
 "paiement": "2020-12-22",
 "ex_dividende": null,
+"dividende": 105.3,
+"vu_le": "initial"
+},
+{
+"date": "2020-12-18",
+"titre": "Dividende exercice 2019 : 105,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2019",
+"paiement": "2020-12-22",
+"ex_dividende": "2020-12-18",
 "dividende": 105.3,
 "vu_le": "initial"
 },
@@ -22595,6 +26790,18 @@
 },
 {
 "date": "2019-07-25",
+"titre": "Dividende exercice 2018 : 105,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2018",
+"paiement": "2019-07-29",
+"ex_dividende": "2019-07-25",
+"dividende": 105.3,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-25",
 "titre": "Dividende exercice 2018 : 105,3 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22624,6 +26831,18 @@
 "titre": "TOTAL SENEGAL : Attestation des Commissaires aux comptes du rapport d'activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181109_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivite_-_total_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-07-25",
+"titre": "Dividende exercice 2017 : 56,25 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2017",
+"paiement": "2018-07-27",
+"ex_dividende": "2018-07-25",
+"dividende": 56.25,
 "vu_le": "initial"
 },
 {
@@ -22668,6 +26887,18 @@
 },
 {
 "date": "2017-07-25",
+"titre": "Dividende exercice 2016 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2016",
+"paiement": "2017-07-25",
+"ex_dividende": null,
+"dividende": 450.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-25",
 "titre": "Dividende exercice 2016 : 450 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22675,6 +26906,18 @@
 "exercice": "2016",
 "paiement": "2017-07-25",
 "ex_dividende": null,
+"dividende": 450.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-21",
+"titre": "Dividende exercice 2016 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2016",
+"paiement": "2017-07-25",
+"ex_dividende": "2017-07-21",
 "dividende": 450.0,
 "vu_le": "initial"
 },
@@ -22762,6 +27005,18 @@
 },
 {
 "date": "2026-06-26",
+"titre": "Dividende exercice 2025 : 501,596 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2025",
+"paiement": "2026-06-29",
+"ex_dividende": "2026-06-26",
+"dividende": 501.596,
+"vu_le": "initial"
+},
+{
+"date": "2026-06-26",
 "titre": "Dividende exercice 2025 : 501,596 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22805,6 +27060,18 @@
 "titre": "PALM CÔTE D'IVOIRE : Attestation des Commissaires Aux Comptes et Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20251016_-_attestation_des_commissaires_aux_comptes_et_rapport_dactivites_-_1er_semestre_2025_-_palm_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-09-08",
+"titre": "Dividende exercice 2024 : 513,012 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2024",
+"paiement": "2025-09-10",
+"ex_dividende": "2025-09-08",
+"dividende": 513.012,
 "vu_le": "initial"
 },
 {
@@ -22870,6 +27137,18 @@
 },
 {
 "date": "2024-07-24",
+"titre": "Dividende exercice 2023 : 563,306 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2023",
+"paiement": "2024-07-26",
+"ex_dividende": "2024-07-24",
+"dividende": 563.306,
+"vu_le": "initial"
+},
+{
+"date": "2024-07-24",
 "titre": "Dividende exercice 2023 : 563,306 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22924,6 +27203,18 @@
 },
 {
 "date": "2023-07-17",
+"titre": "Dividende exercice 2022 : 1 213,632 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2022",
+"paiement": "2023-07-19",
+"ex_dividende": "2023-07-17",
+"dividende": 1213.632,
+"vu_le": "initial"
+},
+{
+"date": "2023-07-17",
 "titre": "Dividende exercice 2022 : 1 213,632 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -22967,6 +27258,18 @@
 "titre": "PALM CI : Attestation des Commissaires Aux Comptes et rapport d'activités du 1er semestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20221018_-_attestation_des_commissaires_aux_comptes_et_rapport_dactivites_du_1er_semestre_2022_-_palm_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2022-08-29",
+"titre": "Dividende exercice 2021 : 1 236,34 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2021",
+"paiement": "2022-08-31",
+"ex_dividende": "2022-08-29",
+"dividende": 1236.34,
 "vu_le": "initial"
 },
 {
@@ -23021,6 +27324,18 @@
 "titre": "PALM CI : Attestation des Commissaires Aux Compte sur le tableau d'activités et de résultat et le rapport d'activité semestrie",
 "url": "https://www.brvm.org/sites/default/files/20210922_-_attestation_des_cac_sur_le_tableau_dactivites_et_de_resultat_et_le_rapport_dactivite_semestriel_-_palm_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-08-25",
+"titre": "Dividende exercice 2020 : 102,51 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2020",
+"paiement": "2021-08-27",
+"ex_dividende": "2021-08-25",
+"dividende": 102.51,
 "vu_le": "initial"
 },
 {
@@ -23114,6 +27429,18 @@
 },
 {
 "date": "2018-09-20",
+"titre": "Dividende exercice 2017 : 253,47 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2017",
+"paiement": "2018-09-24",
+"ex_dividende": "2018-09-20",
+"dividende": 253.47,
+"vu_le": "initial"
+},
+{
+"date": "2018-09-20",
 "titre": "Dividende exercice 2017 : 253,47 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23147,6 +27474,18 @@
 },
 {
 "date": "2017-09-29",
+"titre": "Dividende exercice 2016 : 240,6 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": null,
+"dividende": 240.6,
+"vu_le": "initial"
+},
+{
+"date": "2017-09-29",
 "titre": "Dividende exercice 2016 : 240,6 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23156,6 +27495,18 @@
 "dividende": 240.6,
 "vu_le": "initial",
 "emetteur": "PALM CI"
+},
+{
+"date": "2017-09-27",
+"titre": "Dividende exercice 2016 : 240,6 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "PALM CI",
+"exercice": "2016",
+"paiement": "2017-09-29",
+"ex_dividende": "2017-09-27",
+"dividende": 240.6,
+"vu_le": "initial"
 },
 {
 "date": "2017-09-27",
@@ -23351,6 +27702,18 @@
 },
 {
 "date": "2026-05-29",
+"titre": "Dividende : 152,02 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": null,
+"paiement": "2026-06-01",
+"ex_dividende": "2026-05-29",
+"dividende": 152.02,
+"vu_le": "initial"
+},
+{
+"date": "2026-05-29",
 "titre": "Dividende : 152,02 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23429,6 +27792,18 @@
 "titre": "SICABLE CÔTE D'IVOIRE : Etats financiers - Exercice 2024",
 "url": "https://www.brvm.org/sites/default/files/20250903_-_etats_financiers_-_exercice_2024_-_sicable_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-05-28",
+"titre": "Dividende exercice 2024 : 128,1 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2024",
+"paiement": "2025-06-02",
+"ex_dividende": "2025-05-28",
+"dividende": 128.1,
 "vu_le": "initial"
 },
 {
@@ -23564,6 +27939,18 @@
 },
 {
 "date": "2023-07-31",
+"titre": "Dividende exercice 2022 : 69 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2022",
+"paiement": "2023-08-02",
+"ex_dividende": "2023-07-31",
+"dividende": 69.0,
+"vu_le": "initial"
+},
+{
+"date": "2023-07-31",
 "titre": "Dividende exercice 2022 : 69 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23600,6 +27987,18 @@
 "titre": "SICABLE CI : Activity report for the 1st half-year of 2022",
 "url": "https://www.brvm.org/sites/default/files/20221028_-_rapport_dactivite_-_1er_semestre_2022_-_sicable_ci.pdf",
 "type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2022-07-29",
+"titre": "Dividende exercice 2021 : 69 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2021",
+"paiement": "2022-08-02",
+"ex_dividende": "2022-07-29",
+"dividende": 69.0,
 "vu_le": "initial"
 },
 {
@@ -23651,6 +28050,18 @@
 },
 {
 "date": "2021-07-29",
+"titre": "Dividende exercice 2020 : 133 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2020",
+"paiement": "2021-08-02",
+"ex_dividende": "2021-07-29",
+"dividende": 133.0,
+"vu_le": "initial"
+},
+{
+"date": "2021-07-29",
 "titre": "Dividende exercice 2020 : 133 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23691,6 +28102,18 @@
 },
 {
 "date": "2020-07-29",
+"titre": "Dividende exercice 2019 : 75 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2019",
+"paiement": "2020-07-29",
+"ex_dividende": null,
+"dividende": 75.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-29",
 "titre": "Dividende exercice 2019 : 75 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23700,6 +28123,18 @@
 "dividende": 75.0,
 "vu_le": "initial",
 "emetteur": "SICABLE"
+},
+{
+"date": "2020-07-27",
+"titre": "Dividende exercice 2019 : 75 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2019",
+"paiement": "2020-07-29",
+"ex_dividende": "2020-07-27",
+"dividende": 75.0,
+"vu_le": "initial"
 },
 {
 "date": "2020-07-27",
@@ -23757,6 +28192,18 @@
 },
 {
 "date": "2019-06-03",
+"titre": "Dividende exercice 2018 : 75 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2018",
+"paiement": "2019-06-03",
+"ex_dividende": null,
+"dividende": 75.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-06-03",
 "titre": "Dividende exercice 2018 : 75 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23766,6 +28213,18 @@
 "dividende": 75.0,
 "vu_le": "initial",
 "emetteur": "SICABLE"
+},
+{
+"date": "2019-05-29",
+"titre": "Dividende exercice 2018 : 75 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2018",
+"paiement": "2019-06-03",
+"ex_dividende": "2019-05-29",
+"dividende": 75.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-05-29",
@@ -23809,6 +28268,18 @@
 },
 {
 "date": "2018-05-29",
+"titre": "Dividende exercice 2017 : 100 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2017",
+"paiement": "2018-05-31",
+"ex_dividende": "2018-05-29",
+"dividende": 100.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-05-29",
 "titre": "Dividende exercice 2017 : 100 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -23845,6 +28316,18 @@
 "titre": "Rapport d’activités et attestation des CAC- au 1er semestre 2017 – SICABLE CI",
 "url": "https://www.brvm.org/sites/default/files/20170908-rapport_dactivites_et_attestation_des_cac-_au_1er_semestre_2017_-_sicable_ci_0.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-06-28",
+"titre": "Dividende exercice 2016 : 2 000 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SICABLE",
+"exercice": "2016",
+"paiement": "2017-06-30",
+"ex_dividende": "2017-06-28",
+"dividende": 2000.0,
 "vu_le": "initial"
 },
 {
@@ -24053,6 +28536,18 @@
 },
 {
 "date": "2025-09-11",
+"titre": "Dividende exercice 2024 : 700 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2024",
+"paiement": "2025-09-15",
+"ex_dividende": "2025-09-11",
+"dividende": 700.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-09-11",
 "titre": "Dividende exercice 2024 : 700 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24117,6 +28612,18 @@
 "titre": "SMB CI : Rapport d'activités - 3ème trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20241030_-_rapport_dactivites_-_3eme_trimestre_2024_-_smb_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-09-26",
+"titre": "Dividende exercice 2023 : 1 080 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2023",
+"paiement": "2024-09-30",
+"ex_dividende": "2024-09-26",
+"dividende": 1080.0,
 "vu_le": "initial"
 },
 {
@@ -24224,6 +28731,18 @@
 },
 {
 "date": "2022-08-22",
+"titre": "Dividende exercice 2021 : 720 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2021",
+"paiement": "2022-08-24",
+"ex_dividende": "2022-08-22",
+"dividende": 720.0,
+"vu_le": "initial"
+},
+{
+"date": "2022-08-22",
 "titre": "Dividende exercice 2021 : 720 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24316,6 +28835,18 @@
 "titre": "SMB CI : Communique changement important dans la direction",
 "url": "https://www.brvm.org/sites/default/files/20210817_-_communique_changement_important_dans_la_direction_-_smb_ci.pdf",
 "type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-13",
+"titre": "Dividende exercice 2020 : 810 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2020",
+"paiement": "2021-07-15",
+"ex_dividende": "2021-07-13",
+"dividende": 810.0,
 "vu_le": "initial"
 },
 {
@@ -24430,6 +28961,18 @@
 },
 {
 "date": "2019-08-30",
+"titre": "Dividende exercice 2018 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2018",
+"paiement": "2019-08-30",
+"ex_dividende": null,
+"dividende": 450.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-08-30",
 "titre": "Dividende exercice 2018 : 450 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24442,6 +28985,18 @@
 },
 {
 "date": "2019-08-29",
+"titre": "Dividende exercice 2018 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2018",
+"paiement": "2019-08-29",
+"ex_dividende": null,
+"dividende": 450.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-08-29",
 "titre": "Dividende exercice 2018 : 450 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24451,6 +29006,18 @@
 "dividende": 450.0,
 "vu_le": "initial",
 "emetteur": "SMB"
+},
+{
+"date": "2019-08-28",
+"titre": "Dividende exercice 2018 : 450 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2018",
+"paiement": "2019-08-30",
+"ex_dividende": "2019-08-28",
+"dividende": 450.0,
+"vu_le": "initial"
 },
 {
 "date": "2019-08-28",
@@ -24802,6 +29369,18 @@
 },
 {
 "date": "2025-09-26",
+"titre": "Dividende exercice 2024 : 207 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2024",
+"paiement": "2025-09-30",
+"ex_dividende": "2025-09-26",
+"dividende": 207.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-09-26",
 "titre": "Dividende exercice 2024 : 207 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24852,6 +29431,18 @@
 "titre": "TRACTAFRIC MOTORS CI : Communiqué - Changement important dans la Direction",
 "url": "https://www.brvm.org/sites/default/files/20241029_-_communique_-_changement_important_dans_la_direction_-_tractafric_motors_ci.pdf",
 "type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2024-09-20",
+"titre": "Dividende exercice 2023 : 182,7 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2023",
+"paiement": "2024-09-24",
+"ex_dividende": "2024-09-20",
+"dividende": 182.7,
 "vu_le": "initial"
 },
 {
@@ -24931,6 +29522,18 @@
 },
 {
 "date": "2023-09-11",
+"titre": "Dividende exercice 2022 : 224,1 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2022",
+"paiement": "2023-09-13",
+"ex_dividende": "2023-09-11",
+"dividende": 224.1,
+"vu_le": "initial"
+},
+{
+"date": "2023-09-11",
 "titre": "Dividende exercice 2022 : 224,1 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24999,6 +29602,18 @@
 },
 {
 "date": "2022-08-26",
+"titre": "Dividende exercice 2021 : 175,86 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2021",
+"paiement": "2022-08-30",
+"ex_dividende": "2022-08-26",
+"dividende": 175.86,
+"vu_le": "initial"
+},
+{
+"date": "2022-08-26",
 "titre": "Dividende exercice 2021 : 175,86 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25060,6 +29675,18 @@
 },
 {
 "date": "2021-08-31",
+"titre": "Dividende exercice 2020 : 162,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2020",
+"paiement": "2021-09-02",
+"ex_dividende": "2021-08-31",
+"dividende": 162.9,
+"vu_le": "initial"
+},
+{
+"date": "2021-08-31",
 "titre": "Dividende exercice 2020 : 162,9 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25114,6 +29741,18 @@
 },
 {
 "date": "2020-09-01",
+"titre": "Dividende exercice 2019 : 159,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2019",
+"paiement": "2020-09-01",
+"ex_dividende": null,
+"dividende": 159.3,
+"vu_le": "initial"
+},
+{
+"date": "2020-09-01",
 "titre": "Dividende exercice 2019 : 159,3 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25123,6 +29762,18 @@
 "dividende": 159.3,
 "vu_le": "initial",
 "emetteur": "TRACTAFRIC CI"
+},
+{
+"date": "2020-08-28",
+"titre": "Dividende exercice 2019 : 159,3 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2019",
+"paiement": "2020-09-01",
+"ex_dividende": "2020-08-28",
+"dividende": 159.3,
+"vu_le": "initial"
 },
 {
 "date": "2020-08-28",
@@ -25169,6 +29820,18 @@
 "titre": "TRACTAFRIC MOTORS CI : Rapport d'activités au 1er semestre 2019",
 "url": "https://www.brvm.org/sites/default/files/20191025_-_rapport_dactivite_du_1er_semestre_2019_-_tractafric_motors_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-09-16",
+"titre": "Dividende exercice 2018 : 9 623 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2018",
+"paiement": "2019-09-18",
+"ex_dividende": "2019-09-16",
+"dividende": 9623.0,
 "vu_le": "initial"
 },
 {
@@ -25230,6 +29893,18 @@
 "titre": "Attestation des Commissaires Aux Comptes 1er trimestre 2017 - TRACTAFRIC MOTORS CI",
 "url": "https://www.brvm.org/sites/default/files/20171102_-_tractafric_motors_ci_cocac_pwc_attestation_des_cac_au_30062017.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-09-21",
+"titre": "Dividende exercice 2016 : 13 500 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2016",
+"paiement": "2017-09-25",
+"ex_dividende": "2017-09-21",
+"dividende": 13500.0,
 "vu_le": "initial"
 },
 {
@@ -25439,6 +30114,18 @@
 },
 {
 "date": "2025-08-13",
+"titre": "Dividende exercice 2024 : 820 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NESTLE CI",
+"exercice": "2024",
+"paiement": "2025-08-18",
+"ex_dividende": "2025-08-13",
+"dividende": 820.0,
+"vu_le": "initial"
+},
+{
+"date": "2025-08-13",
 "titre": "Dividende exercice 2024 : 820 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25500,6 +30187,18 @@
 },
 {
 "date": "2024-07-16",
+"titre": "Dividende exercice 2023 : 675 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NESTLE CI",
+"exercice": "2023",
+"paiement": "2024-07-20",
+"ex_dividende": "2024-07-16",
+"dividende": 675.0,
+"vu_le": "initial"
+},
+{
+"date": "2024-07-16",
 "titre": "Dividende exercice 2023 : 675 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25550,6 +30249,18 @@
 "titre": "NESTLE CÔTE D'IVOIRE : Rapport d'activités du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230928_-_rapport_dactivites_-_1er_semestre_2023_-_nestle_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-08-03",
+"titre": "Dividende exercice 2022 : 728,1 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NESTLE CI",
+"exercice": "2022",
+"paiement": "2023-08-08",
+"ex_dividende": "2023-08-03",
+"dividende": 728.1,
 "vu_le": "initial"
 },
 {
@@ -25622,6 +30333,18 @@
 },
 {
 "date": "2022-07-29",
+"titre": "Dividende exercice 2021 : 856,8 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NESTLE CI",
+"exercice": "2021",
+"paiement": "2022-08-02",
+"ex_dividende": "2022-07-29",
+"dividende": 856.8,
+"vu_le": "initial"
+},
+{
+"date": "2022-07-29",
 "titre": "Dividende exercice 2021 : 856,8 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25679,6 +30402,18 @@
 "titre": "NESTLE CI : Rapport d'activités du 1er semestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210924_-_rapport_dactivites_du_1er_semestre_2021_-_nestle_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-07-28",
+"titre": "Dividende exercice 2020 : 363,665 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NESTLE CI",
+"exercice": "2020",
+"paiement": "2021-07-30",
+"ex_dividende": "2021-07-28",
+"dividende": 363.665,
 "vu_le": "initial"
 },
 {
@@ -25979,6 +30714,18 @@
 },
 {
 "date": "2025-09-11",
+"titre": "Dividende exercice 2024 : 254,6 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BIIC",
+"exercice": "2024",
+"paiement": "2025-09-15",
+"ex_dividende": "2025-09-11",
+"dividende": 254.6,
+"vu_le": "initial"
+},
+{
+"date": "2025-09-11",
 "titre": "Dividende exercice 2024 : 254,6 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -26052,6 +30799,18 @@
 },
 {
 "date": "2026-06-18",
+"titre": "Dividende exercice 2025 : 900 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CORIS BANK INTERNATIONAL",
+"exercice": "2025",
+"paiement": "2026-06-19",
+"ex_dividende": "2026-06-18",
+"dividende": 900.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-06-18",
 "titre": "Dividende exercice 2025 : 900 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -26095,6 +30854,18 @@
 "titre": "CORIS BANK INTERNATIONAL BURKINA FASO : Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250825_-_rapport_dactivites_-_1er_semestre_2025_-_coris_bank_international_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-07-03",
+"titre": "Dividende exercice 2024 : 555 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CORIS BANK INTERNATIONAL",
+"exercice": "2024",
+"paiement": "2025-07-07",
+"ex_dividende": "2025-07-03",
+"dividende": 555.0,
 "vu_le": "initial"
 },
 {
@@ -26149,6 +30920,18 @@
 "titre": "CORIS BANK INTERNATIONAL BF : Attestation des Commissaires Aux Comptes sur le rapport d'activités - 1er semestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20240820_-_rapport_dactivites_-_1er_semestre_2024_-_coris_bank_international_bf.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2024-07-03",
+"titre": "Dividende exercice 2023 : 790 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CORIS BANK INTERNATIONAL",
+"exercice": "2023",
+"paiement": "2024-07-05",
+"ex_dividende": "2024-07-03",
+"dividende": 790.0,
 "vu_le": "initial"
 },
 {
@@ -26310,7 +31093,7 @@
 }
 ],
 "_info": {
-"version": 4,
+"version": 5,
 "maj": "2026-11-24",
 "documents_lus": 0
 }

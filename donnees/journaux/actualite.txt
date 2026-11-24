@@ -1,13 +1,13 @@
     communiques ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  communiques : 30 annonces (2 sans société reconnue)
+  communiques : 393 annonces (26 sans société reconnue)
     convocations-assemblees-generales ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  convocations-assemblees-generales : 30 annonces (0 sans société reconnue)
+  convocations-assemblees-generales : 600 annonces (17 sans société reconnue)
     changements-de-dirigeants ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  changements-de-dirigeants : 30 annonces (0 sans société reconnue)
-    franchissements-de-seuil ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  franchissements-de-seuil : 30 annonces (4 sans société reconnue)
-    dividendes ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  dividendes : 20 paiements (1 sans société reconnue)
+  changements-de-dirigeants : 109 annonces (1 sans société reconnue)
+    franchissements-de-seuil ligne brute : <td>Valeur des transactions</td><td class="text-right">894 995 971 FCFA</td><td></td> 
+  franchissements-de-seuil : 35 annonces (1 sans société reconnue)
+    dividendes ligne brute : <td>Valeur des transactions</td><td class="text-right">894 995 971 FCFA</td><td></td> 
+  dividendes : 383 paiements (19 sans société reconnue)
     SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
     SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
     SOGC   2026-10-30 resultats  SOGB CI : Rapport d'activités - 3e trimestre 2026 | Le résultat net au 30 septembre 2026 est en baisse de 34%
@@ -43,7 +43,7 @@
     SAFC   2026-07-03 resultats  SAFCA CÔTE D'IVOIRE : Rapport des Commissaires Aux Comptes sur les Eta 
     ONTBF  2026-10-23 resultats  MOOV BF (Ex ONATEL) : Rapport d'activités - 3e trimestre 2026 | L'EBITA à fin septembre 2026 ressort à 18,9 Mds FCFA et le résultat net IFRS s'é
     ONTBF  2026-10-01 resultats  Rapport d'activités et Attestation des Commissaires Aux Comptes - 1er  
-    ONTBF  2026-06-12 dividende  Dividende exercice 2025 : 145,3214 FCFA net par action 
+    ONTBF  2026-06-12 dividende  Dividende exercice 2025 : 145,3214 FCFA par action 
     SPHC   2026-10-13 resultats  SAPH CI : Rapport d'activités - 3e trimestre 2026 
     SPHC   2026-09-22 dirigeants SAPH : Communiqué - Changement important dans la Direction 
     SPHC   2026-09-04 resultats  SAPH CI : Rapport d'activités et Attestation des Commissaires Aux Comp 
@@ -64,7 +64,7 @@
     SGBC   2026-08-21 dividende  Dividende exercice 2025 : 2 606 FCFA par action 
     ECOC   2026-10-27 resultats  ECOBANK CI : Rapport d'activités - 3e trimestre 2026 
     ECOC   2026-09-09 resultats  ECOBANK CI : Rapport d'activités - 1er semestre 2026 
-    ECOC   2026-05-22 dividende  Dividende exercice 2025 : 888 FCFA net par action 
+    ECOC   2026-05-22 dividende  Dividende exercice 2025 : 888 FCFA par action 
     SICC   2026-06-12 resultats  SICOR CI : Rapport d'activités annuel et Etats Financiers - Exercice 2 
     SICC   2026-05-16 assemblee  SICOR CI : Avis de convocation - Assemblée Générale Ordinaire 
     SICC   2024-12-05 resultats  SICOR CI : Rapport annuel - Exercice 2023 
@@ -85,7 +85,7 @@
     SIBC   2026-09-28 resultats  SIB CI : Attestation des Commissaires Aux Comptes - 1er semestre 2026 
     BOAM   2026-09-23 resultats  BOA MALI : Rapport d'activités - 1er semestre 2026 
     BOAM   2026-06-23 resultats  BOA MALI : Rapport d'activités - 1er trimestre 2026 
-    BOAM   2026-03-25 assemblee  BOA ML : Avis de convocation - Assemblée Générale Ordinaire 
+    BOAM   2026-06-02 dividende  Dividende exercice 2025 : 305,04 FCFA par action 
     ORAC   2026-10-28 resultats  ORANGE CI : Rapport d'activités - 3e trimestre 2026 | T3_2026 40 351 188,6 Résultat Net, données IFRS Le résultat net consolidé s’élèv
     ORAC   2026-10-08 resultats  ORANGE CI : Rapport d'activités - 1er semestre 2026 | Résultat Net, données IFRS S1_2025 37 364 109,3 Le résultat net consolidé s’élèv
     ORAC   2026-10-08 resultats  ORANGE CI : Attestation des Commissaires Aux Comptes sur le rapport d' 
@@ -103,7 +103,7 @@
     CIEC   2026-07-27 dividende  Dividende exercice 2025 : 234 FCFA par action 
     BOAB   2026-11-02 resultats  BOA BN : Rapport d'activités - 3e trimestre 2026 
     BOAB   2026-07-23 resultats  BOA BN : Rapport d'activités - 1er semestre 2026 
-    BOAB   2026-05-04 resultats  BOA BENIN : Rapport d'activités - 1er trimestre 2026 
+    BOAB   2026-05-22 dividende  Dividende exercice 2025 : 585 FCFA par action 
     STBC   2026-10-30 resultats  SITAB CI : Rapport d'activités - 3e trimestre 2026 | En conséquence, le résultat net est en baisse de 33% et se chiffre à 8,7 milliar
     STBC   2026-10-30 resultats  SITAB CI : Rapport d'activités - 1er semestre 2026 | Cette tendance se reflète au niveau du résultat net qui ressort à 17,9 milliards
     STBC   2026-08-17 resultats  SITAB CI : Rapport d'activités – 2ème trimestre 2026 
@@ -118,7 +118,7 @@
     BOABF  2026-08-05 resultats  BOA BF : Etats financiers - 1er semestre 2026 
     BOAS   2026-10-21 resultats  BOA SN : Rapport d'activités - 3e trimestre 2026 | Grace à la bonne tenue de ces indicateurs de rentabilité, le résultat net progre
     BOAS   2026-09-21 resultats  BOA SENEGAL : Rapport d'activités - 1er semestre 2026 
-    BOAS   2026-04-22 resultats  BOA SN : Rapport d'activités - 1er trimestre 2026 
+    BOAS   2026-05-29 dividende  Dividende exercice 2025 : 450 FCFA par action 
     NEIC   2026-10-30 resultats  NEI-CEDA CI : Rapport d'activités - 3e trimestre 2026 
     NEIC   2026-10-30 resultats  NEI-CEDA CI : Rapport d'activités - 1er semestre 2026 
     NEIC   2026-10-30 resultats  NEI-CEDA CI : Attestation des Commissaires Aux Comptes sur le rapport  
@@ -152,5 +152,5 @@
     BBGC   2026-10-28 resultats  BRIDGE BANK GROUP CI : Rapport d'activités - 3e trimestre 2026 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : 1er semestre 2026 
-  Sociétés non reconnues : Franchissement de seuil - BANK OF AFRICA (3); AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); Franchissement de seuil - MOVIS CI - Exe (1); TOTAL (1)
-Actualite : 48 societes, 19 nouvelle(s) publication(s), 0 document(s) lu(s)
+  Sociétés non reconnues : MOVIS CI (14); TOTAL (12); MOVIS CÔTE D'IVOIRE (2); CRRH-UEMOA (2); COMMUNIQUE - MOVIS CI - Exercice 2013 (P (2); COMMUNIQUE - TPCI 6,50% 2006-2009 - Exer (2); Dividende exercice 2018 (2); Dividende exercice 2017 (2); AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); TPBF 6,50% 2018-2025 (1); Ordonnance de prorogation AGO - MOVIS CI (1); Première cotation - TPBF 6.50% 2017-2024 (1); COMMUNIQUE MOVIS CI (1); COMMUNIQUE - MOVIS CI - Exercice 2014 (P (1); COMMUNIQUE - MOVIS CI - Exercice 2014 (1); COMMUNIQUE -TRITURAF - Exercice 2013 (1); COMMUNIQUE - MOVIS CI - Exercice 2013 (C (1); COMMUNIQUE - MOVIS CI - Exercice 2012 (1); COMMUNIQUE - TRITURAF CI - Exercice 2012 (1); COMMUNIQUE - MOVIS CI - Exercice 2010 (S (1); COMMUNIQUE - SHELTER AFRIQUE - Exercice  (1); COMMUNIQUE - MOVIS CI - Exercice 2009 (S (1); TOTAL ENERGIES CÔTE D'IVOIRE (1); ORIS BANK INTERNATIONAL (1); Avis de convocation à l’Assemblée Généra (1); Convocation à l'Assemblée Générale Extra (1); Convocation Assemblée Générale Ordinaire (1); Convocation Assemblée générale de clôtur (1); Changement de dirigeant - MOVIS CI - Exe (1); Franchissement de seuil - MOVIS CI - Exe (1); Dividende exercice 2022 (1); Dividende exercice 2021 (1); Dividende exercice 2020 (1)
+Actualite : 48 societes, 463 nouvelle(s) publication(s), 0 document(s) lu(s)
