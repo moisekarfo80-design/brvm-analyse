@@ -21,7 +21,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_sogb_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le résultat net au 30 septembre 2026 est en baisse de 34% par rapport à la même période en 2025 et s’établit à 7 619 millions de FCFA, soit 11% du chiffre d’affaires contre 15% en septembre 2025.",
+"detail": "Le résultat net au 30 septembre 2026 est en baisse de 34%",
 "sens": -1,
 "lu": true
 },
@@ -31,8 +31,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_sogb_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "- Varlation : : Indicateur en FCFA , à : : - Année 2025 .: ne 2026 | 2025 RS En pourcentage Chiffre d'affaires 41 788 962 432 | 55 355 482 614 98 979 031525 | -13 566 520 182 -24,51% Résultat d'exploitation 6 331 656 596 | 11 967 ",
-"sens": -1,
 "lu": true
 },
 {
@@ -52,7 +50,8 @@
 "paiement": "2026-08-06",
 "ex_dividende": "2026-07-05",
 "dividende": 570.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2026-05-20",
@@ -779,7 +778,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261028_-_rapport_dactivites_-_3e_trimestre_2026_-_eti_tg.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "GROUPE ECOBANK Tableau d’activité Troisième trimestre 2026 Exercice clos le 30 septembre 2026 États financiers consolidés condensés SEPTEMBRE 2026 EN UN COUP D’ŒIL 1 962 M$EU 737 M$EU 516 M$EU 27,5 Md$EU Produit net bancaire Résul",
+"detail": ": « Nous avons 24,9 % Rendement des capitaux propres corporels enregistré un bénéfice avant impôts de 737 millions de dollars, en hausse de 12 %, et un rendement des capitaux propres corporels de 24,9 %",
 "sens": 1,
 "lu": true
 },
@@ -811,7 +810,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260729_-_rapport_dexamen_limite_sur_les_informations_financieres_intermediaires_-_1er_semestre_2026_-_eti_tg.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le bénéfice par action a progressé de 2 % et la valeur comptable tangible par action de 24 %.",
+"detail": "Le bénéfice par action a progressé de 2 % et la valeur comptable tangible par action de 24 %",
 "sens": 1,
 "lu": true
 },
@@ -821,7 +820,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260729_-_rapport_dactivites_-_1er_semestre_2026_-_eti_tg.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le bénéfice par action a progressé de 2 % et la valeur comptable tangible par action de 24 %.",
+"detail": "Le bénéfice par action a progressé de 2 % et la valeur comptable tangible par action de 24 %",
 "sens": 1,
 "lu": true
 },
@@ -1563,8 +1562,6 @@
 "url": "https://www.brvm.org/sites/default/files/20260724_-_communique_de_presse_-_sonatel_sn_0.pdf",
 "type": "autre",
 "vu_le": "initial",
-"detail": "Poursuite d’une trajectoire de croissance rentable et d’innovation au service des populations Grâce à une dynamique commerciale très performante sur le marché Retail (Data, Fixe Broadband et Orange Money) et à une gestion rigoureu",
-"sens": 1,
 "lu": true
 },
 {
@@ -2276,8 +2273,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261102_-_rapport_dactivites_-_1er_semestre_2026_-_sucrivoire_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "▪ Excédent brut d'exploitation de 7,08 milliards FCFA, en hausse de 77%, et résultat net de − 4,79 milliards FCFA, en amélioration de 1,92 milliard par rapport au premier semestre 2025.",
-"sens": 1,
 "lu": true
 },
 {
@@ -2294,7 +2289,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260921_-_rapport_dactivites_-_1er_trimestre_2026_-_sucrivoire_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "*__ Résultat net de 4,35 milliards FCFA, en progression de 36% (+1,15 milliard FCFA).",
+"detail": "*__ Résultat net de 4,35 milliards FCFA, en progression de 36% (+1,15 milliard FCFA)",
 "sens": 1,
 "lu": true
 },
@@ -3271,7 +3266,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_bicici.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le Résultat Net ressort bénéficiaire à 31 435 MXOF au terme du troisième trimestre de l’exercice 2026, en hausse de 14,7 % par rapport à la même période de 2025.",
+"detail": "Le Résultat Net ressort bénéficiaire à 31 435 MXOF au terme du troisième trimestre de l’exercice 2026, en hausse de 14,7 % par rapport à la même période de 2025",
 "sens": 1,
 "lu": true
 },
@@ -3281,7 +3276,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261013_-_rapport_dactivites_-_1er_semestre_2026_-_bici_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "En conséquence, les performances du premier semestre 2026 traduisent une amélioration continue de la rentabilité de la Banque, le Résultat Net ressort ainsi bénéficiaire à 19 948 MXOF, contre 16 253 MXOF au 30 juin 2025, soit une ",
+"detail": "2026 traduisent une amélioration continue de la rentabilité de la Banque, le Résultat Net ressort ainsi bénéficiaire à 19 948 MXOF, contre 16 253 MXOF au 30 juin 2025, soit une progression de 3 695 MXOF (+22,7 %)",
 "sens": 1,
 "lu": true
 },
@@ -4473,8 +4468,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261102_-_rapport_dactivites_-_1er_semestre_2026_-_filtisac_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "3962 Abidjan 01 RCCM : CI-ABJ-1965-B-4412 COMPARATIF D’ACTIVITÉ AU 30 JUIN 2026 COMPTES SOCIAUX Variation 30-06-2026 vs 30 Juin 2026 30 Juin 2025 30-06-2025 Exercice 2025 (MFCFA) (MFCFA) (MFCFA) En % En valeur Chiffre d'affaires n",
-"sens": 1,
 "lu": true
 },
 {
@@ -5593,7 +5586,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261026_-_rapport_dactivites_-_3e_trimestre_2026_-_boa_ng.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "o résultat Net en forte progression de 121,9% pour atteindre 6 291 millions de FCFA contre 2 835 millions de FCFA à la même période de l'année passée.",
+"detail": "Et à une amélioration du taux de couverture des créances en souffrance; o résultat Net en forte progression de 121,9%",
 "sens": 1,
 "lu": true
 },
@@ -6152,8 +6145,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261102_-_rapport_dactivites_-_3e_trimestre_2026_-_safca_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "20,00 % 10,233 % 11,430 % Conforme dirigeants et au personnel II - COMMENTAIRE DE LA DIRECTION Au 30/09/2026, SAFCA — ALIOS Finance Côte d'Ivoire poursuit une trajectoire de croissance rentable : un total de bilan de 146,75 millia",
-"sens": 1,
 "lu": true
 },
 {
@@ -6162,7 +6153,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260903_-_rapport_dactivites_-_2eme_trimestre_2026_-_safca_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "RAPPORT D'ACTIVITES 2e TRIMESTRE 2026 ALIOS FINANCE CÔTE D'IVOIRE I - TABLEAUX D'ACTIVITES ET DE RESULTAT Postes - Compte de Résultat (en millions de F CFA) Annexe 1 POSTE LIBELLES 30/06/2026 30/06/2025 Variations en valeur en % 1",
+"detail": "Le résultat net atteint 731 millions FCFA contre 221 millions FCFA un an auparavant, représentant une progression remarquable de 231 %",
 "sens": 1,
 "lu": true
 },
@@ -6601,7 +6592,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261023_-_rapport_dactivites_-_3e_trimestre_2026_-_onatel_bf.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "L'EBITA à fin septembre 2026 ressort à 18,9 Mds FCFA et le résultat net IFRS s'établit à 10,9 Mds FCFA au 30 septembre 2026, soit une progression de 6,6% par rapport à l’année 2025.",
+"detail": "L'EBITA à fin septembre 2026 ressort à 18,9 Mds FCFA et le résultat net IFRS s'établit à 10,9 Mds FCFA au 30 septembre 2026, soit une progression de 6,6% par rapport à l’année 2025",
 "sens": 1,
 "lu": true
 },
@@ -7538,7 +7529,8 @@
 "paiement": "2026-08-28",
 "ex_dividende": "2026-08-27",
 "dividende": 489.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2026-04-29",
@@ -8279,7 +8271,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261028_-_rapport_dactivites_-_3e_trimestre_2026_-_lnb_bn.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le résultat net s’établit ainsi à 1 778 millions de FCFA, contre 1 034 millions un an plus tôt, soit une progression de 72 %.",
+"detail": "Le résultat net s’établit ainsi à 1 778 millions de FCFA, contre 1 034 millions un an plus tôt, soit une progression de 72 %",
 "sens": 1,
 "lu": true
 },
@@ -8289,7 +8281,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260731_-_rapport_dactivites_et_rapport_dexamen_limite_des_cacs-_1er_semestre_2026_-_lnb_bn.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "En dépit du recul du produit brut des jeux, le Résultat d'Exploitation et le Résultat Net ont progressé respectivement de 40% et de 60% par rapport au premier semestre 2025.",
+"detail": "En dépit du recul du produit brut des jeux, le Résultat d'Exploitation et le Résultat Net ont progressé respectivement de 40% et de 60% par rapport au premier semestre 2025",
 "sens": 1,
 "lu": true
 },
@@ -8302,7 +8294,8 @@
 "paiement": "2026-08-03",
 "ex_dividende": "2026-07-31",
 "dividende": 164.1709,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "LNB"
 },
 {
 "date": "2026-06-29",
@@ -8444,7 +8437,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261112_-_rapport_dactivites_-_3e_trimestre_2026_-_oragroup_tg.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Commentaires de la Direction Le résultat net consolidé au 3° trimestre 2026 s'établit à 21,7 Mds FCFA, en hausse de 14 % par rapport à la même période de.",
+"detail": "Commentaires de la Direction Le résultat net consolidé au 3° trimestre 2026 s'établit à 21,7 Mds FCFA, en hausse de 14 % par rapport à la même période de",
 "sens": 1,
 "lu": true
 },
@@ -8454,7 +8447,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261009_-_rapport_dactivites_-_1er_semestre_2026_-_oragroup_tg.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le résultat net s'établit à 18,5 milliards FCFA, en hausse de 1 % par rapport au premier semestre 2025.",
+"detail": "Le résultat net s'établit à 18,5 milliards FCFA, en hausse de 1 % par rapport au premier semestre 2025",
 "sens": 1,
 "lu": true
 },
@@ -9703,8 +9696,6 @@
 "url": "https://www.brvm.org/sites/default/files/20260909_-_rapport_dactivites_-_1er_semestre_2026_-_ecobank_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "UN MEILLEUR CHOIX POUR UNE AFRIQUE MEILLEURE Le tableau ci-après résume les performances : Variation Juin 2026 / Juin 2025 (en millions de FCFA) Juin 2025 Juin 2026 (%) Valeur COMPTE DE RESULTAT Produit Net Bancaire 62 842 64 078 ",
-"sens": 1,
 "lu": true
 },
 {
@@ -10525,8 +10516,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_solibra_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "ANS p # SN mx, É NU A # vous à ms RAPPORT D'ACTIVITE DU PREMIER SEMESTRE 2026 I- Tableau d'activité et de résultats Indicateurs en F CFA 1° semestre 2026 | 1° semestre 2025 Année 2025 En valeur En pourcentage 1 2 3) = (1)-2 4}=[G)",
-"sens": 1,
 "lu": true
 },
 {
@@ -10538,7 +10527,8 @@
 "paiement": "2026-07-30",
 "ex_dividende": "2026-07-29",
 "dividende": 2127.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2026-05-20",
@@ -11006,8 +10996,8 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_setao_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "SETAO - Publication du tableau d’activité et de résultat au 30 septembre 2026 Variation en Variation en Tableau de Résultat Septembre Septembre Rappel à fin valeur % 2026 2025 décembre (Sept 2026 - Sept (Sept 2026 - Nb : données e",
-"sens": 1,
+"detail": "Le résultat net à fin septembre 2026 est une perte qui s’élève à 346 386 813 F CFA, en baisse de 27% par rapport à la même période en 2025",
+"sens": -1,
 "lu": true
 },
 {
@@ -11016,8 +11006,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_setao_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "SETAO - Publication du tableau d’activité et de résultat au 30 juin 2026 Variation en Variation en Tableau de Résultat Rappel à fin Juin 2026 Juin 2025 valeur % décembre (6 mois) (6 mois) (Juin 2026 - (Juin 2026 - Nb : données en ",
-"sens": -1,
 "lu": true
 },
 {
@@ -11962,7 +11950,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261117_-_rapport_dactivites_-_3e_trimestre_2026_-_vivo_energy_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Le rapport d’activité du troisième trimestre 2026 1.1 Tableau d’activité et de résultat Variation (30.09.2026-30.09.2025) Indicateurs en millions de FCFA 30.09.2026 30.09.2025 En En pourcentage valeur (%) Volume (milliers de M3/ T",
+"detail": "Le résultat net Par rapport à la même période de l’exercice précédent, le résultat net au 30 Septembre 2026 est en hausse de 15%",
 "sens": 1,
 "lu": true
 },
@@ -11975,7 +11963,8 @@
 "paiement": "2026-09-25",
 "ex_dividende": "2026-09-24",
 "dividende": 96.67,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2026-07-20",
@@ -12576,7 +12565,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261102_-_rapport_dactivites_-_3e_trimestre_2026_-_sib_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Au terme de ce troisième trimestre 2026, la Société Ivoirienne de Banque (SIB) aﬃche un résultat net d’un montant de 45,7 milliards en augmentation de 6% par rapport à ﬁn septembre 2025, conﬁrmant ainsi la pertinence de son modèle",
+"detail": "De ce troisième trimestre 2026, la Société Ivoirienne de Banque (SIB) aﬃche un résultat net d’un montant de 45,7 milliards en augmentation de 6%",
 "sens": 1,
 "lu": true
 },
@@ -12586,7 +12575,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260928_-_rapport_dactivites_-_1er_semestre_2026_-_sib_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "TABLEAU D’ACTIVITÉS ET DE RÉSULTATS en Milliards FCFA Variation Données 30/06/2025 30/06/2026 Valeur % Produit Net Bancaire 54,3 Bonsoir M.KADER 56,6 2,3 4% Résultat Brut d’exploitation 34,7 36,6 1,9 6% Résultat net 29,4 32,1 2,7 ",
+"detail": "La Société Ivoirienne de Banque (SIB) clôture le semestre sur un Résultat Net de 32 milliards FCFA, en hausse de +9%, marquant une création de valeur soutenue pour ses actionnaires",
 "sens": 1,
 "lu": true
 },
@@ -13165,8 +13154,6 @@
 "url": "https://www.brvm.org/sites/default/files/20260923_-_rapport_dactivites_-_1er_semestre_2026_-_boa_mali.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "e Hausse du résultat net de 8,2% par rapport à fin juin 2025.",
-"sens": 1,
 "lu": true
 },
 {
@@ -13625,7 +13612,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261028_-_rapport_dactivites_-_3e_trimestre_2026_-_orange_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "GROUPE ORANGE CI Résultats financiers consolidés - Septembre 2026 Abidjan – Octobre 2026 1 Orange Restricted Résultats financiers consolidés au 30 septembre 2026 Groupe Orange Côte d’Ivoire T3 2026 T3 2025 Variation N/N-1 Indicate",
+"detail": "T3_2026 40 351 188,6 Résultat Net, données IFRS Le résultat net consolidé s’élève à 141 Milliards FCFA, en hausse de +18,3 %",
 "sens": 1,
 "lu": true
 },
@@ -13635,7 +13622,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261008_-_rapport_dactivites_-_1er_semestre_2026_-_orange_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "GROUPE ORANGE CI Résultats financiers consolidés - Juin 2026 Abidjan – Juillet 2026 1 Orange Restricted Résultats financiers consolidés au 30 juin 2026 Groupe Orange Côte d’Ivoire S1 2026 S1 2025 Variation N/N-1 Indicateurs % vale",
+"detail": "Résultat Net, données IFRS S1_2025 37 364 109,3 Le résultat net consolidé s’élève à 90 Milliards FCFA, en hausse de +18,3 %",
 "sens": 1,
 "lu": true
 },
@@ -13920,7 +13907,8 @@
 "paiement": "2026-08-14",
 "ex_dividende": "2026-08-13",
 "dividende": 63.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2026-07-13",
@@ -14580,8 +14568,8 @@
 "url": "https://www.brvm.org/sites/default/files/20261016_-_rapport_dactivites_-_1er_semestre_2026_-_servair_abidjan_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "SERVAIR ABIDJAN servair / bi d “ Société anonyme au capital de 1 364 000 000 de f cfa ani Ja n siège social : Aéroport Felix Houphouet Boigny - RCCM: CI-ABJ-1969-B-6360 a gategroup member 07 BP 08 ABIDJAN 07 1/ TABLEAU D'ACTIVITE ",
-"sens": 1,
+"detail": "Pas encore par une amélioration du résultat, le résultat d'exploitation et le résultat net enregistrant respectivement des baisses de 11,6 % et 11,7 %",
+"sens": -1,
 "lu": true
 },
 {
@@ -14598,7 +14586,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261016_-_rapport_dactivites_-_3e_trimestre_2026_-_servair_abidjan_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "n siège social : Aéroport Felix Houphouet Boigny - RCCM: CI-ABJ-1969-B-6360 a gategroup member 07 BP 08 ABIDJAN 07 1/ TABLEAU D'ACTIVITE ET DE RESULTAT TRIMESTRIEL 3ème trimestre 3ème trimestre Annuel Variation 2026/2025 en KCFA S",
+"detail": "Résultats, avec un résultat des activités ordinaires en hausse de 1,2% et un résultat net en progression de 0,4% par rapport à la même période de l’exercice précédent",
 "sens": 1,
 "lu": true
 },
@@ -14611,7 +14599,8 @@
 "paiement": "2026-09-30",
 "ex_dividende": "2026-09-29",
 "dividende": 124.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2026-05-01",
@@ -15169,7 +15158,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261027_-_rapport_dactivites_-_3e_trimestre_2026_-_totalenergies_marketing_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "COMMUNIQUÉ TotalEnergies Marketing Côte d’Ivoire Publication des comptes à fin septembre 2026 Abidjan, le 21/10/2026 Comptes à fin septembre 2026 TABLEAU D’ACTIVITÉ ET DE RÉSULTATS 30/09/2026 30/09/2025 % en millions de FCFA Chiff",
+"detail": "Net 8 549 6 517 31,2 % Commentaires sur l’activité À fin septembre 2026, le résultat net cumulé progresse de 31,2 %",
 "sens": 1,
 "lu": true
 },
@@ -15179,7 +15168,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261027_-_rapport_dactivites_-_1er_semestre_2026_-_totalenergies_marketing_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Dans l’ensemble, la performance commerciale permet au résultat net de s’établir à 5,643 milliards de FCFA, contre 4,785 milliards de FCFA au premier semestre 2025, soit une hausse de 17,9 %.",
+"detail": "Dans l’ensemble, la performance commerciale permet au résultat net de s’établir à 5,643 milliards de FCFA, contre 4,785 milliards de FCFA au premier semestre 2025, soit une hausse de 17,9 %",
 "sens": 1,
 "lu": true
 },
@@ -15780,8 +15769,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261029_-_rapport_dactivites_-_1er_semestre_2026_-_cie_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Valeur % Chiffre d’affaires CIE 138 243 141 513 3 270 2,31% 306 786 Résultat opérationnel 8 533 10 503 1970 23,09% 22 652 Résultat financier -1 972 -2433 -461 23,39% -4 370 | Résultat avant impôts 6561 8 070 1 509 23,00% 18 282 Im",
-"sens": 1,
 "lu": true
 },
 {
@@ -15801,7 +15788,8 @@
 "paiement": "2026-07-28",
 "ex_dividende": "2026-07-27",
 "dividende": 234.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2026-06-04",
@@ -16856,8 +16844,8 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_sitab_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "724 Abidjan 01 République de Côte d'Ivoire BRANDS Tél : + 225 27 22 48 98 13 Fax : + 225 27 22 48 98 90 ? em RAPPORT D’ACTIVITE DU 3°\" TRIMESTRE 2026 I- Tableau d'activité et de résultats Indicateurs en milliers FCFA Trimestre 3 |",
-"sens": 1,
+"detail": "En conséquence, le résultat net est en baisse de 33% et se chiffre à 8,7 milliards de FCFA, contre 12,9 milliards en 2025",
+"sens": -1,
 "lu": true
 },
 {
@@ -16866,7 +16854,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_sitab_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "Cette tendance se reflète au niveau du résultat net qui ressort à 17,9 milliards de FCFA, contre 18,1 milliards de FCFA au premier semestre 2025, soit une légère baisse de 0,9 %.",
+"detail": "Cette tendance se reflète au niveau du résultat net qui ressort à 17,9 milliards de FCFA, contre 18,1 milliards de FCFA au premier semestre 2025, soit une légère baisse de 0,9 %",
 "sens": -1,
 "lu": true
 },
@@ -16876,8 +16864,6 @@
 "url": "https://www.brvm.org/sites/default/files/20260817_-_rapport_dactivites_-_2eme_trimestre_2026_-_sitab_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": ": (225) 27 22 48 98 03 fé | &.4 Le : eme RAPPORT D'ACTIVITE DU 2°\" TRIMESTRE 2026 I- Tableau d'activité et de résultats Indicateurs en milliers FCFA RS Eee noms F9 2026 2025 En valeur | pourcentage (%) Volumes de ventes (en millie",
-"sens": 1,
 "lu": true
 },
 {
@@ -16889,7 +16875,8 @@
 "paiement": "2026-08-13",
 "ex_dividende": "2026-08-12",
 "dividende": 1707.2,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SITAB"
 },
 {
 "date": "2026-07-15",
@@ -17510,7 +17497,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_sode_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "196 -737 Impôt sur le résultat -1 363 -1 085 -278 -25,6 % -1 579 -3 243 Résultat Net 2 133 1 902 231 12,1 % 2 667 4 663 • Évolution de l’activité et des résultats Le chiffre d’affaires s’établit à 126 464 millions de FCFA, en haus",
+"detail": "Le résultat net ressort à 2 133 millions de FCFA, en progression de 231 millions de FCFA (+12,1 %)",
 "sens": 1,
 "lu": true
 },
@@ -17520,8 +17507,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_sode_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "-737 Impôt sur le résultat -1 579 -1 455 -124 -8,5 % -3 243 Résultat Net 2 667 1 355 1 312 96,8 % 4 663 • Évolution de l’activité et des résultats Le chiffre d’affaires atteint 83 974 millions de FCFA, contre 82 300 millions de FC",
-"sens": 1,
 "lu": true
 },
 {
@@ -17533,7 +17518,8 @@
 "paiement": "2026-09-16",
 "ex_dividende": "2026-09-15",
 "dividende": 525.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2026-06-08",
@@ -18115,7 +18101,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261102_-_rapport_dactivites_-_3e_trimestre_2026_-_boa_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "La banque affiche au 30 septembre 2026 un résultat net de 29 657 millions de FCFA, soit une progression de 11,35% comparativement au 30 septembre 2025.",
+"detail": "La banque affiche au 30 septembre 2026 un résultat net de 29 657 millions de FCFA, soit une progression de 11,35% comparativement au 30 septembre 2025",
 "sens": 1,
 "lu": true
 },
@@ -18133,7 +18119,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261001_-_rapport_dactivites_-_1er_semestre_2026_-_boa_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "La banque affiche au 30 juin 2026 un résultat net de 19 817 millions de FCFA, soit une progression de 8% comparativement au 30 juin 2025.",
+"detail": "La banque affiche au 30 juin 2026 un résultat net de 19 817 millions de FCFA, soit une progression de 8% comparativement au 30 juin 2025",
 "sens": 1,
 "lu": true
 },
@@ -18572,7 +18558,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261026_-_rapport_dactivites_-_3e_trimestre_2026_-_boa_bf.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "| déc-25 EE | Indicateursen |\" |\" |\" | Envaleur | En pourcentage(*) a TC Ge Produit Net Bancaire | 45706 | 43276 | 57 820 2 430 21075 | 15230 | 22076 5 845 38,4% Résultat Net 18 051 13 445 19 252 4 605 34,0% II- Commentaires Au tr",
+"detail": "- Le Résultat Net après impôt se fixe à 18 051 millions de FCFA au 30 septembre 2026, en progression annuelle de 34,2%",
 "sens": 1,
 "lu": true
 },
@@ -18582,7 +18568,7 @@
 "url": "https://www.brvm.org/sites/default/files/20260805_-_rapport_dactivites_-_1er_semestre_2026_-_boa_bf.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "en repli de 5,2% sur os p ' P ' une année glissante : 1 - Le résultat net après déduction des charges fiscales affiche 10 770 millions de FCFA, en hausse annuelle de 31% eu égard au coût du risque qui connait une amelioration de 6",
+"detail": "En repli de 5,2% sur os p ' P ' une année glissante : 1 - Le résultat net après déduction des charges fiscales affiche 10 770 millions de FCFA, en hausse annuelle de 31% eu égard au coût du risque qui connait une amelioration de 6",
 "sens": 1,
 "lu": true
 },
@@ -19113,7 +19099,7 @@
 "url": "https://www.brvm.org/sites/default/files/20261021_-_rapport_dactivites_-_3e_trimestre_2026_-_boa_sn.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "MmBANK OF AFRICA BMCE GROUP (®) Ü RAPPORT D’ACTIVITE DU 3°\"€ TRIMESTRE 2026 | l- Tableau d'activité et de résultats Encours de la clientèle Var Sept.25-Sept.26 Troisième Troisième bé - trimestre trimestre bre dE Valeur % 2026 2025",
+"detail": "Grace à la bonne tenue de ces indicateurs de rentabilité, le résultat net progresse de 11,0% pour se fixer à 18 174 millions de FCFA",
 "sens": 1,
 "lu": true
 },
@@ -19574,8 +19560,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_nei-ceda_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "trimestre 3ème trimestre Année 2025 Variations FCFA 2026 2025 En valeur En (1) (2) (3)=(1)-(2) pourcent age(Yol (4)=(((1)- Q\\ il2tl Chiffre d'affaires 3 156 962 631 3 406 085 967 5 139 206 354 -249 t23 336 o7% Résultat 30 0BB 078 ",
-"sens": -1,
 "lu": true
 },
 {
@@ -19584,8 +19568,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_nei-ceda_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "semestre l.t semestre Année 2025 Variations En FCFA 2026 2025 En valeur pourcenta (1) (1) (3)=(1)-(2) se(%) (4)=(((1)- (2\\ /t2tl Chiffre d'affaires 258 69 1 309 t t74 537 800 5 139 206 354 -915 846 49r -)78% Résultat -945 076 877 ",
-"sens": -1,
 "lu": true
 },
 {
@@ -19594,8 +19576,6 @@
 "url": "https://www.brvm.org/sites/default/files/20261030_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivites_-_1er_semestre_2026_-_nei-ceda_ci.pdf",
 "type": "resultats",
 "vu_le": "initial",
-"detail": "semestre l.t semestre Année 2025 Variations En FCFA 2026 2025 En valeur pourcenta (1) (1) (3)=(1)-(2) se(%) (4)=(((1)- (2\\ /t2tl Chiffre d'affaires 258 69 1 309 t t74 537 800 5 139 206 354 -915 846 49r -)78% Résultat -945 076 877 ",
-"sens": -1,
 "lu": true
 },
 {
@@ -19607,7 +19587,8 @@
 "paiement": "2026-09-10",
 "ex_dividende": "2026-09-09",
 "dividende": 159.54,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NEI-CEDA CI"
 },
 {
 "date": "2026-06-01",
@@ -20104,7 +20085,8 @@
 "paiement": "2026-10-27",
 "ex_dividende": "2026-10-26",
 "dividende": 92.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2026-10-05",
@@ -22385,7 +22367,8 @@
 "paiement": "2026-09-18",
 "ex_dividende": "2026-09-17",
 "dividende": 800.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2026-06-07",
@@ -23105,7 +23088,8 @@
 "paiement": "2026-10-23",
 "ex_dividende": "2026-10-22",
 "dividende": 209.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2026-06-15",
@@ -23721,7 +23705,8 @@
 "paiement": "2026-09-07",
 "ex_dividende": "2026-09-04",
 "dividende": 420.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NESTLE CI"
 },
 {
 "date": "2026-05-24",
@@ -24223,7 +24208,8 @@
 "paiement": "2026-07-31",
 "ex_dividende": "2026-07-30",
 "dividende": 254.6,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BIIC"
 },
 {
 "date": "2026-07-22",
@@ -24597,7 +24583,7 @@
 }
 ],
 "_info": {
-"version": 2,
+"version": 3,
 "maj": "2026-11-24",
 "documents_lus": 80
 }
