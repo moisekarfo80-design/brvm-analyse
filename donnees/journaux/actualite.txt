@@ -1,13 +1,13 @@
-    communiques ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  communiques : 393 annonces (26 sans société reconnue)
-    convocations-assemblees-generales ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  convocations-assemblees-generales : 600 annonces (17 sans société reconnue)
-    changements-de-dirigeants ligne brute : <td>SCRC</td><td class="text-right">1 255</td><td class="text-right">2,03% <span class="icone-seance good"></span></td> 
-  changements-de-dirigeants : 109 annonces (1 sans société reconnue)
-    franchissements-de-seuil ligne brute : <td>Valeur des transactions</td><td class="text-right">894 995 971 FCFA</td><td></td> 
-  franchissements-de-seuil : 35 annonces (1 sans société reconnue)
-    dividendes ligne brute : <td>Valeur des transactions</td><td class="text-right">894 995 971 FCFA</td><td></td> 
-  dividendes : 383 paiements (19 sans société reconnue)
+    communiques ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+  communiques : 30 annonces (2 sans société reconnue)
+    convocations-assemblees-generales ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+  convocations-assemblees-generales : 30 annonces (0 sans société reconnue)
+    changements-de-dirigeants ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+  changements-de-dirigeants : 30 annonces (0 sans société reconnue)
+    franchissements-de-seuil ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+  franchissements-de-seuil : 30 annonces (1 sans société reconnue)
+    dividendes ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+  dividendes : 20 paiements (1 sans société reconnue)
     SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
     SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
     SOGC   2026-10-30 resultats  SOGB CI : Rapport d'activités - 3e trimestre 2026 | Le résultat net au 30 septembre 2026 est en baisse de 34%
@@ -152,5 +152,5 @@
     BBGC   2026-10-28 resultats  BRIDGE BANK GROUP CI : Rapport d'activités - 3e trimestre 2026 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : 1er semestre 2026 
-  Sociétés non reconnues : MOVIS CI (14); TOTAL (12); MOVIS CÔTE D'IVOIRE (2); CRRH-UEMOA (2); COMMUNIQUE - MOVIS CI - Exercice 2013 (P (2); COMMUNIQUE - TPCI 6,50% 2006-2009 - Exer (2); Dividende exercice 2018 (2); Dividende exercice 2017 (2); AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); TPBF 6,50% 2018-2025 (1); Ordonnance de prorogation AGO - MOVIS CI (1); Première cotation - TPBF 6.50% 2017-2024 (1); COMMUNIQUE MOVIS CI (1); COMMUNIQUE - MOVIS CI - Exercice 2014 (P (1); COMMUNIQUE - MOVIS CI - Exercice 2014 (1); COMMUNIQUE -TRITURAF - Exercice 2013 (1); COMMUNIQUE - MOVIS CI - Exercice 2013 (C (1); COMMUNIQUE - MOVIS CI - Exercice 2012 (1); COMMUNIQUE - TRITURAF CI - Exercice 2012 (1); COMMUNIQUE - MOVIS CI - Exercice 2010 (S (1); COMMUNIQUE - SHELTER AFRIQUE - Exercice  (1); COMMUNIQUE - MOVIS CI - Exercice 2009 (S (1); TOTAL ENERGIES CÔTE D'IVOIRE (1); ORIS BANK INTERNATIONAL (1); Avis de convocation à l’Assemblée Généra (1); Convocation à l'Assemblée Générale Extra (1); Convocation Assemblée Générale Ordinaire (1); Convocation Assemblée générale de clôtur (1); Changement de dirigeant - MOVIS CI - Exe (1); Franchissement de seuil - MOVIS CI - Exe (1); Dividende exercice 2022 (1); Dividende exercice 2021 (1); Dividende exercice 2020 (1)
-Actualite : 48 societes, 463 nouvelle(s) publication(s), 0 document(s) lu(s)
+  Sociétés non reconnues : AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); Franchissement de seuil - MOVIS CI - Exe (1); TOTAL (1)
+Actualite : 48 societes, 0 nouvelle(s) publication(s), 0 document(s) lu(s)
