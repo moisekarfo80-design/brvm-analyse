@@ -285,7 +285,7 @@ def main():
                     for c in ("lu", "detail", "sens"):
                         x.pop(c, None)
     premier = not actuel
-    histo = histo or actuel.get("_info", {}).get("version", 0) < 4  # une relecture complete apres l'ajout de noms de societes
+    histo = histo or actuel.get("_info", {}).get("version", 0) < 5  # une relecture complete apres l'ajout de noms de societes
     pages = 40 if (premier or histo) else 2
     nouv = {}
     # 1. annonces datees
@@ -344,7 +344,7 @@ def main():
                 print(f"    {sym:<6} {x.get('date')} {x['type']:<10} {x['titre'][:70]} {('| ' + x['detail'][:80]) if x.get('detail') else ''}")
     if INCONNUS:
         print("  Sociétés non reconnues :", "; ".join(f"{k} ({v})" for k, v in sorted(INCONNUS.items(), key=lambda kv: -kv[1])[:40]))
-    actuel["_info"] = {"version": 4, "maj": auj.isoformat(), "documents_lus": lus}
+    actuel["_info"] = {"version": 5, "maj": auj.isoformat(), "documents_lus": lus}
     SORTIE.write_text(json.dumps(actuel, ensure_ascii=False, indent=0))
     print(f"Actualite : {len(actuel) - 1} societes, {sum(nouv.values())} nouvelle(s) publication(s), {lus} document(s) lu(s)")
 
