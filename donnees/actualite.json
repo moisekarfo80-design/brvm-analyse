@@ -43,6 +43,18 @@
 },
 {
 "date": "2026-07-05",
+"titre": "Dividende exercice 2025 : 570 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOGB",
+"exercice": "2025",
+"paiement": "2026-08-06",
+"ex_dividende": "2026-07-05",
+"dividende": 570.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-05",
 "titre": "Dividende exercice 2025 : 570 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -842,6 +854,18 @@
 "titre": "ETI TG : Avis de convocation - Assemblée Générale Extraordinaire",
 "url": "https://www.brvm.org/sites/default/files/20260722_-_avis_de_convocation_-_assemblee_generale_extraordinaire_-_eti_tg.pdf",
 "type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2026-06-29",
+"titre": "Dividende exercice 2025 : 0,9 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK TG",
+"exercice": "2025",
+"paiement": "2026-06-30",
+"ex_dividende": "2026-06-29",
+"dividende": 0.9,
 "vu_le": "initial"
 },
 {
@@ -4618,6 +4642,18 @@
 },
 {
 "date": "2026-08-03",
+"titre": "Dividende exercice 2025 : 768,16 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2025",
+"paiement": "2026-08-04",
+"ex_dividende": "2026-08-03",
+"dividende": 768.16,
+"vu_le": "initial"
+},
+{
+"date": "2026-08-03",
 "titre": "Dividende exercice 2025 : 768,16 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -8371,6 +8407,18 @@
 },
 {
 "date": "2026-08-27",
+"titre": "Dividende exercice 2025 : 489 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SAPH CI",
+"exercice": "2025",
+"paiement": "2026-08-28",
+"ex_dividende": "2026-08-27",
+"dividende": 489.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-08-27",
 "titre": "Dividende exercice 2025 : 489 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -9139,6 +9187,18 @@
 "detail": "En dépit du recul du produit brut des jeux, le Résultat d'Exploitation et le Résultat Net ont progressé respectivement de 40% et de 60% par rapport au premier semestre 2025",
 "sens": 1,
 "lu": true
+},
+{
+"date": "2026-07-31",
+"titre": "Dividende exercice 2025 : 164,1709 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "LNB",
+"exercice": "2025",
+"paiement": "2026-08-03",
+"ex_dividende": "2026-07-31",
+"dividende": 164.1709,
+"vu_le": "initial"
 },
 {
 "date": "2026-07-31",
@@ -10034,6 +10094,18 @@
 "type": "resultats",
 "vu_le": "initial",
 "lu": true
+},
+{
+"date": "2026-08-21",
+"titre": "Dividende exercice 2025 : 2 606 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2025",
+"paiement": "2026-08-24",
+"ex_dividende": "2026-08-21",
+"dividende": 2606.0,
+"vu_le": "initial"
 },
 {
 "date": "2026-08-21",
@@ -11576,6 +11648,18 @@
 },
 {
 "date": "2026-07-29",
+"titre": "Dividende exercice 2025 : 2 127 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SOLIBRA",
+"exercice": "2025",
+"paiement": "2026-07-30",
+"ex_dividende": "2026-07-29",
+"dividende": 2127.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-29",
 "titre": "Dividende exercice 2025 : 2 127 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -13023,6 +13107,18 @@
 "detail": "Le résultat net Par rapport à la même période de l’exercice précédent, le résultat net au 30 Septembre 2026 est en hausse de 15%",
 "sens": 1,
 "lu": true
+},
+{
+"date": "2026-09-24",
+"titre": "Dividende exercice 2025 : 96,67 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "VIVO ENERGY CI",
+"exercice": "2025",
+"paiement": "2026-09-25",
+"ex_dividende": "2026-09-24",
+"dividende": 96.67,
+"vu_le": "initial"
 },
 {
 "date": "2026-09-24",
@@ -14999,6 +15095,18 @@
 },
 {
 "date": "2026-08-13",
+"titre": "Dividende exercice 2025 : 63 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CFAO MOTORS CI",
+"exercice": "2025",
+"paiement": "2026-08-14",
+"ex_dividende": "2026-08-13",
+"dividende": 63.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-08-13",
 "titre": "Dividende exercice 2025 : 63 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -15707,6 +15815,18 @@
 "detail": "Résultats, avec un résultat des activités ordinaires en hausse de 1,2% et un résultat net en progression de 0,4% par rapport à la même période de l’exercice précédent",
 "sens": 1,
 "lu": true
+},
+{
+"date": "2026-09-29",
+"titre": "Dividende exercice 2025 : 124 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SERVAIR ABIDJAN CI",
+"exercice": "2025",
+"paiement": "2026-09-30",
+"ex_dividende": "2026-09-29",
+"dividende": 124.0,
+"vu_le": "initial"
 },
 {
 "date": "2026-09-29",
@@ -16931,6 +17051,18 @@
 },
 {
 "date": "2026-07-27",
+"titre": "Dividende exercice 2025 : 234 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "CIE CI",
+"exercice": "2025",
+"paiement": "2026-07-28",
+"ex_dividende": "2026-07-27",
+"dividende": 234.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-27",
 "titre": "Dividende exercice 2025 : 234 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18030,6 +18162,18 @@
 },
 {
 "date": "2026-08-12",
+"titre": "Dividende exercice 2025 : 1 707,2 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SITAB",
+"exercice": "2025",
+"paiement": "2026-08-13",
+"ex_dividende": "2026-08-12",
+"dividende": 1707.2,
+"vu_le": "initial"
+},
+{
+"date": "2026-08-12",
 "titre": "Dividende exercice 2025 : 1 707,2 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -18674,6 +18818,18 @@
 "type": "resultats",
 "vu_le": "initial",
 "lu": true
+},
+{
+"date": "2026-09-15",
+"titre": "Dividende exercice 2025 : 525 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SODECI",
+"exercice": "2025",
+"paiement": "2026-09-16",
+"ex_dividende": "2026-09-15",
+"dividende": 525.0,
+"vu_le": "initial"
 },
 {
 "date": "2026-09-15",
@@ -20756,6 +20912,18 @@
 },
 {
 "date": "2026-09-09",
+"titre": "Dividende exercice 2025 : 159,54 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NEI-CEDA CI",
+"exercice": "2025",
+"paiement": "2026-09-10",
+"ex_dividende": "2026-09-09",
+"dividende": 159.54,
+"vu_le": "initial"
+},
+{
+"date": "2026-09-09",
 "titre": "Dividende exercice 2025 : 159,54 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -21254,6 +21422,18 @@
 }
 ],
 "SDSC": [
+{
+"date": "2026-10-26",
+"titre": "Dividende exercice 2025 : 92 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS",
+"exercice": "2025",
+"paiement": "2026-10-27",
+"ex_dividende": "2026-10-26",
+"dividende": 92.0,
+"vu_le": "initial"
+},
 {
 "date": "2026-10-26",
 "titre": "Dividende exercice 2025 : 92 FCFA net par action",
@@ -23814,6 +23994,18 @@
 },
 {
 "date": "2026-09-17",
+"titre": "Dividende exercice 2025 : 800 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SMB",
+"exercice": "2025",
+"paiement": "2026-09-18",
+"ex_dividende": "2026-09-17",
+"dividende": 800.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-09-17",
 "titre": "Dividende exercice 2025 : 800 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -24544,6 +24736,18 @@
 },
 {
 "date": "2026-10-22",
+"titre": "Dividende exercice 2025 : 209 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TRACTAFRIC CI",
+"exercice": "2025",
+"paiement": "2026-10-23",
+"ex_dividende": "2026-10-22",
+"dividende": 209.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-10-22",
 "titre": "Dividende exercice 2025 : 209 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25176,6 +25380,18 @@
 },
 {
 "date": "2026-09-04",
+"titre": "Dividende exercice 2025 : 420 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NESTLE CI",
+"exercice": "2025",
+"paiement": "2026-09-07",
+"ex_dividende": "2026-09-04",
+"dividende": 420.0,
+"vu_le": "initial"
+},
+{
+"date": "2026-09-04",
 "titre": "Dividende exercice 2025 : 420 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -25690,6 +25906,18 @@
 },
 {
 "date": "2026-07-30",
+"titre": "Dividende exercice 2025 : 254,6 FCFA par action",
+"url": "",
+"type": "dividende",
+"emetteur": "BIIC",
+"exercice": "2025",
+"paiement": "2026-07-31",
+"ex_dividende": "2026-07-30",
+"dividende": 254.6,
+"vu_le": "initial"
+},
+{
+"date": "2026-07-30",
 "titre": "Dividende exercice 2025 : 254,6 FCFA net par action",
 "url": "",
 "type": "dividende",
@@ -26084,6 +26312,6 @@
 "_info": {
 "version": 4,
 "maj": "2026-11-24",
-"documents_lus": 28
+"documents_lus": 0
 }
 }
