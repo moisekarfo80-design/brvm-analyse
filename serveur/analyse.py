@@ -219,12 +219,13 @@ def main():
         div, ddiv = a.get("dividende"), a.get("date_dividende")
         actu = actualite_de(s, jour)
         fiche["actualite"] = actu[:6]
-        annonce = next((x for x in actu if x["type"] == "dividende" and x.get("dividende")), None)
+        annonce = next((x for x in sorted(ACTU.get(s, []), key=lambda x: x.get("date") or "", reverse=True)
+                        if x["type"] == "dividende" and x.get("dividende") and x.get("date")), None)
         source_div = "bulletin"
         if annonce and (annonce.get("paiement") or annonce["date"]) > (ddiv or ""):
             div_annonce, ddiv_annonce = annonce["dividende"], annonce.get("paiement") or annonce["date"]
             # le tableau de la BRVM donne parfois le brut : meme rapport net / tableau que pour le dividende de reference
-            meme = next((x for x in actu if x["type"] == "dividende" and x.get("dividende") and x.get("paiement") == ddiv), None)
+            meme = next((x for x in ACTU.get(s, []) if x["type"] == "dividende" and x.get("dividende") and x.get("paiement") == ddiv), None)
             if meme and div and 0.8 <= div / meme["dividende"] <= 1.02:
                 div_annonce *= div / meme["dividende"]
             for op in ops.get(s, []):
@@ -242,15 +243,15 @@ def main():
         fiche["dividende_source"] = source_div
         # evolution du dividende d'une annee sur l'autre (tableau officiel), pour information
         par_exo = {}
-        for x in actu:
-            if x["type"] == "dividende" and x.get("dividende") and x.get("exercice") and x["exercice"] not in par_exo:
+        for x in sorted(ACTU.get(s, []), key=lambda x: x.get("date") or "", reverse=True):
+            if x["type"] == "dividende" and x.get("dividende") and x.get("exercice") and x.get("date") and x["exercice"] not in par_exo:
                 v = x["dividende"]
                 for op in ops.get(s, []):
                     if x["date"] < op["date"]:
                         v = v / op["ratio"]
                 par_exo[x["exercice"]] = v
         exos = sorted(par_exo, reverse=True)
-        if len(exos) >= 2 and int(exos[0]) - int(exos[1]) == 1 and par_exo[exos[1]] > 0:
+        if len(exos) >= 2 and int(exos[0]) >= jour.year - 2 and int(exos[0]) - int(exos[1]) == 1 and par_exo[exos[1]] > 0:
             g = par_exo[exos[0]] / par_exo[exos[1]] - 1
             if abs(g) >= 0.10:
                 fiche["raisons"].append(("plus" if g > 0 else "moins", f"Dividende {exos[0]} {'en hausse' if g > 0 else 'en baisse'} de {fr(abs(g) * 100, 0)} % par rapport à {exos[1]}"))
