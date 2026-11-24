@@ -90,7 +90,8 @@
 "paiement": "2025-07-15",
 "ex_dividende": "2025-07-11",
 "dividende": 600.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2025-06-16",
@@ -136,7 +137,8 @@
 "paiement": "2024-08-06",
 "ex_dividende": "2024-08-02",
 "dividende": 207.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2024-05-02",
@@ -182,7 +184,8 @@
 "paiement": "2023-07-17",
 "ex_dividende": "2023-07-13",
 "dividende": 558.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2023-05-24",
@@ -235,7 +238,8 @@
 "paiement": "2022-07-21",
 "ex_dividende": "2022-07-19",
 "dividende": 541.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2022-05-30",
@@ -274,7 +278,8 @@
 "paiement": "2021-07-15",
 "ex_dividende": "2021-07-13",
 "dividende": 250.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2021-07-06",
@@ -341,7 +346,8 @@
 "paiement": "2020-07-15",
 "ex_dividende": null,
 "dividende": 126.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2020-07-13",
@@ -352,7 +358,8 @@
 "paiement": "2020-07-15",
 "ex_dividende": "2020-07-13",
 "dividende": 126.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2020-06-03",
@@ -412,7 +419,8 @@
 "paiement": "2019-07-16",
 "ex_dividende": null,
 "dividende": 129.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2019-07-11",
@@ -423,7 +431,8 @@
 "paiement": "2019-07-15",
 "ex_dividende": "2019-07-11",
 "dividende": 126.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2019-05-13",
@@ -483,7 +492,8 @@
 "paiement": "2018-07-23",
 "ex_dividende": null,
 "dividende": 432.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2018-07-19",
@@ -494,7 +504,8 @@
 "paiement": "2018-07-23",
 "ex_dividende": "2018-07-19",
 "dividende": 432.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2018-06-18",
@@ -554,7 +565,8 @@
 "paiement": "2017-07-31",
 "ex_dividende": null,
 "dividende": 3204.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2017-07-27",
@@ -565,7 +577,8 @@
 "paiement": "2017-07-31",
 "ex_dividende": "2017-07-27",
 "dividende": 3204.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOGB"
 },
 {
 "date": "2017-06-26",
@@ -832,6 +845,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2026-06-29",
+"titre": "Dividende exercice 2025 : 0,9 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK TG",
+"exercice": "2025",
+"paiement": "2026-06-30",
+"ex_dividende": "2026-06-29",
+"dividende": 0.9,
+"vu_le": "initial"
+},
+{
 "date": "2026-05-13",
 "titre": "ETI TOGO : Avis de convocation - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20260513_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_eti_tg.pdf",
@@ -969,6 +994,18 @@
 "titre": "Ecobank Transnational Incorporated : Rapport d'activités - 3ème trimestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231130_-_rapport_dactivites_-_3eme_trimestre_2023_-_ecobank_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-06-06",
+"titre": "Dividende exercice 2022 : 0,6048 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "ECOBANK TG",
+"exercice": "2022",
+"paiement": "2023-06-08",
+"ex_dividende": "2023-06-06",
+"dividende": 0.6048,
 "vu_le": "initial"
 },
 {
@@ -1315,6 +1352,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2018-03-23",
+"titre": "ECOBANK Trans. Incorp. : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/ago-ecobank_transnational_incorporated-23-03-2018.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2017-12-12",
 "titre": "Rapport d'activités du 3e trimestre - ECOBANK CI",
 "url": "https://www.brvm.org/sites/default/files/20171212_-_rapport_dactivites_3e_trimestre_-ecobank_ci.pdf",
@@ -1343,6 +1387,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2017-07-04",
+"titre": "Communiqué de presse",
+"url": "https://www.brvm.org/sites/default/files/20170704-_comunique_de_presse_publication_des_etats_financiers_audites_a_fin_juin_2017.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2017-05-23",
 "titre": "Avis de convocation A.G. Mixte - ETI TOGO",
 "url": "https://www.brvm.org/sites/default/files/20170523-_avis_de_convocation_agm_du_16_juin_2017_-_eti_tg.pdf",
@@ -1357,6 +1408,27 @@
 "vu_le": "initial"
 },
 {
+"date": "2017-01-25",
+"titre": "Eveline Tall quitte Ecobank après 20 ans",
+"url": "https://www.brvm.org/sites/default/files/20170125_-_eveline_tall_quitte_ecobank_apres_20_ans_0.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2016-11-18",
+"titre": "Nomination de Madibinet Cissé en qualité de S.G.",
+"url": "https://www.brvm.org/sites/default/files/communique_de_presse_-_eti_annonce_la_nomination_de_madibinet_cisse_en_qualite_de_sg.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2016-11-18",
+"titre": "Changement de dirigeant - ECOBANK TG - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20151118_-_cd_-_ecobank_tg_-_exercice_2015.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
 "date": "2016-10-28",
 "titre": "Etats Financiers au 30 Septembre 2016 - ECOBANK TRANS. INCORP. TG",
 "url": "https://www.brvm.org/sites/default/files/20161028_-_etats_financiers_au_30_septembre_2016_-_ecobank_trans._incorp._tg.pdf",
@@ -1364,9 +1436,37 @@
 "vu_le": "initial"
 },
 {
+"date": "2016-06-17",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2016 (Déclaration de dividende)",
+"url": "https://www.brvm.org/sites/default/files/20160617_-_cm_-_ecobank_tg_-_exercice_2016_declaration_de_dividende.pdf",
+"type": "dividende",
+"vu_le": "initial"
+},
+{
+"date": "2016-05-24",
+"titre": "Convocation Assemblée générale mixte Exercice 2015 ECOBANK TG",
+"url": "https://www.brvm.org/sites/default/files/20160524_-_agm_-_ecobank_tg_-_exercice_2015.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2016-05-20",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2016 (Nouvel accord avec Old Mutual)",
+"url": "https://www.brvm.org/sites/default/files/20160520_-_cm_-_ecobank_tg_-_exercice_2016_nouvel_accord_avec_old_mutual.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2016-04-14",
 "titre": "Rapport premier trimestre - ECOBANK TG - Exercice 2016",
 "url": "https://www.brvm.org/sites/default/files/20160414_-_rt1_-_ecobank_tg_-_exercice_2016.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2016-04-14",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2016 (Annonce de résultats)",
+"url": "https://www.brvm.org/sites/default/files/20160414_-_cm_-_ecobank_tg_-_exercice_2016_annonce_de_resultats.pdf",
 "type": "resultats",
 "vu_le": "initial"
 },
@@ -1378,10 +1478,31 @@
 "vu_le": "initial"
 },
 {
+"date": "2016-03-23",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2016 (Nomination de Laurence do Régo)",
+"url": "https://www.brvm.org/sites/default/files/20160323_-_cm_-_ecobank_tg_-_exercice_2016_nomination_de_laurence_do_rego.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2016-03-15",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2016 (Prévision d'un résultat significatifs)",
+"url": "https://www.brvm.org/sites/default/files/20160315_-_cm_-_ecobank_tg_-_exercice_2016_prevision_dun_resultat_significatifs.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
 "date": "2016-02-25",
 "titre": "Rapport annuel Exercice 2015 ECOBANK TG",
 "url": "https://www.brvm.org/sites/default/files/20160225_-_ra_-_ecobank_tg_-_excercice_2015.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2016-02-16",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2016 (Changement à la tête d'Ecobank Ghana)",
+"url": "https://www.brvm.org/sites/default/files/20160216_-_cm_-_ecobank_tg_-_exercice_2016_changement_a_la_tete_decobank_ghana.pdf",
+"type": "autre",
 "vu_le": "initial"
 },
 {
@@ -1392,10 +1513,59 @@
 "vu_le": "initial"
 },
 {
+"date": "2015-12-22",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Nomination d’un nouveau DG à Ecobank Nigeria)",
+"url": "",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2015-12-10",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Attribution d'actions gratuites)",
+"url": "https://www.brvm.org/sites/default/files/20151210_-_cm_-_ecobank_tg_-_exercice_2015_attribution_dactions_gratuites.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2015-11-18",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Changement de leadership)",
+"url": "https://www.brvm.org/sites/default/files/20151118_-_cm_-_ecobank_tg_-_exercice_2015_changement_de_leadership.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2015-10-28",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Annonce de résultats)",
+"url": "https://www.brvm.org/sites/default/files/20151028_-_cm_-_ecobank_tg_-_exercice_2015_annonce_de_resultats.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
 "date": "2015-10-27",
 "titre": "Rapport troisième trimestre - ECOBANK TG - Exercice 2015",
 "url": "https://www.brvm.org/sites/default/files/20151027_-_rt3_-_ecobank_tg_-_exercice_2015.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2015-09-23",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Obtention d'un prêt de Deutsche Bank AG)",
+"url": "https://www.brvm.org/sites/default/files/20150923_-_cm_-_ecobank_tg_-_exercice_2015_obtention_dun_pret_de_deutsche_bank_ag.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2015-08-05",
+"titre": "Changement de dirigeant - ECOBANK TG - Exercice 2015",
+"url": "https://www.brvm.org/sites/default/files/20150805_-_cd_-_ecobank_tg_-_exercice_2015.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2015-08-05",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Changements au Conseil d’Administration)",
+"url": "https://www.brvm.org/sites/default/files/20150805_-_cm_-_ecobank_tg_-_exercice_2015_changements_au_conseil_dadministration.pdf",
+"type": "dirigeants",
 "vu_le": "initial"
 },
 {
@@ -1413,9 +1583,51 @@
 "vu_le": "initial"
 },
 {
+"date": "2015-07-06",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Augmentation de capital)",
+"url": "https://www.brvm.org/sites/default/files/20150706_-_cm_-_ecobank_tg_-_exercice_2015_augmentation_de_capital.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2015-06-08",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Nomination de M. Ade Ayeyemi )",
+"url": "https://www.brvm.org/sites/default/files/20150608_-_cm_-_ecobank_tg_-_exercice_2015_nomination_de_m._ade_ayeyemi_.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2015-05-11",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Annoce de résultats trimestriels)",
+"url": "https://www.brvm.org/sites/default/files/20150511_-_cm_-_ecobank_tg_-_exercice_2015_annoce_de_resultats_trimestriels.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2015-05-08",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Accord de prêt avec la BADEA)",
+"url": "https://www.brvm.org/sites/default/files/20150508_-_cm_-_ecobank_tg_-_exercice_2015_accord_de_pret_avec_la_badea.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2015-04-30",
 "titre": "Rapport premier trimestre - ECOBANK TG - Exercice 2015",
 "url": "https://www.brvm.org/sites/default/files/20150430_-_rt1_-_ecobank_tg_-_exercice_2015.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2015-04-28",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Dotation de suretés additionnelles)",
+"url": "https://www.brvm.org/sites/default/files/20150428_-_cm_-_ecobank_tg_-_exercice_2015_dotation_de_suretes_additionnelles.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2015-04-21",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Annoce de résultats)",
+"url": "https://www.brvm.org/sites/default/files/20150421_-_cm_-_ecobank_tg_-_exercice_2015_annoce_de_resultats.pdf",
 "type": "resultats",
 "vu_le": "initial"
 },
@@ -1427,10 +1639,52 @@
 "vu_le": "initial"
 },
 {
+"date": "2015-02-13",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Bien-fondé des appels de décision de justice)",
+"url": "https://www.brvm.org/sites/default/files/20150213_-_cm_-_ecobank_tg_-_exercice_2015_bien-fonde_des_appels_de_decision_de_justice.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2015-02-12",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2015 (Obtention d'un prêt de Deutsche Bank AG)",
+"url": "https://www.brvm.org/sites/default/files/20150212_-_cm_-_ecobank_tg_-_exercice_2015_obtention_dun_pret_de_deutsche_bank_ag.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-12-22",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Accord de prêt de la Banque Européenne d’Investissement)",
+"url": "",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-12-10",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Obtention d'un prêt de Deutsche Bank AG)",
+"url": "https://www.brvm.org/sites/default/files/20141210_-_cm_-_ecobank_tg_-_exercice_2014_obtention_dun_pret_de_deutsche_bank_ag.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-12-04",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Nomination d'administrateurs non exécutifs)",
+"url": "https://www.brvm.org/sites/default/files/20141204_-_cm_-_ecobank_tg_-_exercice_2014_nomination_dadministrateurs_non_executifs.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
 "date": "2014-10-29",
 "titre": "Rapport troisième trimestre - ECOBANK TG - Exercice 2014",
 "url": "https://www.brvm.org/sites/default/files/20141029_-_rt3_-_ecobank_tg_-_exercice_2014.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-10-29",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Annonce de résults)",
+"url": "https://www.brvm.org/sites/default/files/20141029_-_cm_-_ecobank_tg_-_exercice_2014_annonce_de_results.pdf",
+"type": "autre",
 "vu_le": "initial"
 },
 {
@@ -1441,6 +1695,20 @@
 "vu_le": "initial"
 },
 {
+"date": "2014-09-25",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Partenariat avec le Fonds Mondial)",
+"url": "https://www.brvm.org/sites/default/files/20140925_-_cm_-_ecobank_tg_-_exercice_2014_partenariat_avec_le_fonds_mondial.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-09-19",
+"titre": "Franchissement de seuil - ECOBANK TG - Exercice 2014",
+"url": "https://www.brvm.org/sites/default/files/20140919_-_fs_-_ecobank_tg_-_exercice_2014.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
 "date": "2014-09-15",
 "titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Prise de pariticipation de Qatar National Bank dans ETI)",
 "url": "https://www.brvm.org/sites/default/files/20140915_-_cm_-_ecobank_tg_-_exercice_2014_prise_de_pariticipation_de_qatar_national_bank_dans_eti.pdf",
@@ -1448,9 +1716,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2014-09-04",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Partenariat avec la Qatar National Bank) Eng",
+"url": "https://www.brvm.org/sites/default/files/20140904_-_cm_-_ecobank_tg_-_exercice_2014_partenariat_avec_la_qatar_national_bank_eng.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-09-04",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Partenariat avec la Qatar National Bank)",
+"url": "https://www.brvm.org/sites/default/files/20140904_-_cm_-_ecobank_tg_-_exercice_2014_partenariat_avec_la_qatar_national_bank.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2014-08-25",
 "titre": "Rapport annuel Exercice 2013 ECOBANK TG",
 "url": "https://www.brvm.org/sites/default/files/20140825_-_ra_-_ecobank_tg_-_exercice_2013.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-08-18",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Annonce de résultats semestriels)",
+"url": "https://www.brvm.org/sites/default/files/20140818_-_cm_-_ecobank_tg_-_exercice_2014_annonce_de_resultats_semestriels.pdf",
 "type": "resultats",
 "vu_le": "initial"
 },
@@ -1466,6 +1755,27 @@
 "titre": "Rapport semestriel - ECOBANK TG - Exercice 2014",
 "url": "https://www.brvm.org/sites/default/files/20140731_-_rs_-_ecobank_tg_-_exercice_2014.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2014-07-02",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Nomination de M. Emmanuel Ikazoboh)",
+"url": "https://www.brvm.org/sites/default/files/20140702_-_cm_-_ecobank_tg_-_exercice_2014_nomination_de_m._emmanuel_ikazoboh.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2014-06-24",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Prix de Meilleure Banque de Financement)",
+"url": "https://www.brvm.org/sites/default/files/20140624_-_cm_-_ecobank_tg_-_exercice_2014_prix_de_meilleure_banque_de_financement.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-06-04",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Acquisition de Banco ProCredit)",
+"url": "https://www.brvm.org/sites/default/files/20140604_-_cm_-_ecobank_tg_-_exercice_2014_acquisition_de_banco_procredit.pdf",
+"type": "autre",
 "vu_le": "initial"
 },
 {
@@ -1490,6 +1800,41 @@
 "vu_le": "initial"
 },
 {
+"date": "2014-03-11",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Nomination d'un nouveau DG)",
+"url": "https://www.brvm.org/sites/default/files/20140311_-_cm_-_ecobank_tg_-_exercice_2014_nomination_dun_nouveau_dg.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2014-03-11",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (La mise en place d’un Comité de recherche)",
+"url": "",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-03-04",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Adoption du plan d'action)",
+"url": "https://www.brvm.org/sites/default/files/20140304_-_cm_-_ecobank_tg_-_exercice_2014_adoption_du_plan_daction.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-02-24",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Discussion avec ProCredit Holding Allemagne)",
+"url": "https://www.brvm.org/sites/default/files/20140224_-_cm_-_ecobank_tg_-_exercice_2014_discussion_avec_procredit_holding_allemagne.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-02-11",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Démission de deux membres du Conseil)",
+"url": "https://www.brvm.org/sites/default/files/20140211_-_cm_-_ecobank_tg_-_exercice_2014_demission_de_deux_membres_du_conseil.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
 "date": "2014-01-24",
 "titre": "Rapport annuel Exercice 2012 ECOBANK TG",
 "url": "https://www.brvm.org/sites/default/files/20140124_-_ra_-_ecobank_tg_-_exercice_2012.pdf",
@@ -1497,10 +1842,290 @@
 "vu_le": "initial"
 },
 {
+"date": "2014-01-24",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Démission d’un membre du conseil)",
+"url": "",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2014-01-14",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Information sur les réformes)",
+"url": "https://www.brvm.org/sites/default/files/20140114_-_cm_-_ecobank_tg_-_exercice_2014_information_sur_les_reformes.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2014-01-09",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2014 (Départ de la Directrice Exécutive)",
+"url": "https://www.brvm.org/sites/default/files/20140109_-_cm_-_ecobank_tg_-_exercice_2014_depart_de_la_directrice_executive.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2013-12-02",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Un prêt Proparco)",
+"url": "https://www.brvm.org/sites/default/files/20131202_-_cm_-_ecobank_tg_-_exercice_2013_un_pret_proparco.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2013-10-30",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Retraite de M. Kolapo Lawson)",
+"url": "https://www.brvm.org/sites/default/files/20131030_-_cm_-_ecobank_tg_-_exercice_2013_retraite_de_m._kolapo_lawson.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2013-10-28",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Ouverture de bureau en Ethiopie )",
+"url": "https://www.brvm.org/sites/default/files/20131028_-_cm_-_ecobank_tg_-_exercice_2013_ouverture_de_bureau_en_ethiopie_.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2013-09-23",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Réunion du CA)",
+"url": "https://www.brvm.org/sites/default/files/20130923_-_cm_-_ecobank_tg_-_exercice_2013_reunion_du_ca.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
 "date": "2013-08-06",
 "titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Reaffirmation de confiance du CA au Président de ETI)",
 "url": "https://www.brvm.org/sites/default/files/20130806_-_cm_-_ecobank_tg_-_exercice_2013_reaffirmation_de_confiance_du_ca_au_president_de_eti.pdf",
 "type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2013-07-22",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Ouverture d'une filiale au Sud-Soudan)",
+"url": "https://www.brvm.org/sites/default/files/20130722_-_cm_-_ecobank_tg_-_exercice_2013_ouverture_dune_filiale_au_sud-soudan.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2013-07-19",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2013 (Réponse aux articles de média)",
+"url": "https://www.brvm.org/sites/default/files/20130719_-_cm_-_ecobank_tg_-_exercice_2013_reponse_aux_articles_de_media.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2012-12-12",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Augmentation de capital)",
+"url": "https://www.brvm.org/sites/default/files/20121212_-_cm_-_ecobank_tg_-_exercice_2012_augmentation_de_capital.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2012-10-29",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Augmentation de capital 5)",
+"url": "https://www.brvm.org/sites/default/files/20121029_-_cm_-_ecobank_tg_-_exercice_2012_augmentation_de_capital_5.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2012-09-21",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Augmentation de capital 4)",
+"url": "https://www.brvm.org/sites/default/files/20120921_-_cm_-_ecobank_tg_-_exercice_2012_augmentation_de_capital_4.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2012-09-13",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Augmentation de capital 3)",
+"url": "https://www.brvm.org/sites/default/files/20120913_-_cm_-_ecobank_tg_-_exercice_2012_augmentation_de_capital_3.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2012-07-05",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Augmentation de capital 2)",
+"url": "https://www.brvm.org/sites/default/files/20120705_-_cm_-_ecobank_tg_-_exercice_2012_augmentation_de_capital_2.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2012-07-05",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Augmentation de capital 1)",
+"url": "https://www.brvm.org/sites/default/files/20120705_-_cm_-_ecobank_tg_-_exercice_2012_augmentation_de_capital_1.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2012-04-24",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2012 (Investissement de PIC)",
+"url": "https://www.brvm.org/sites/default/files/20120424_-_cm_-_ecobank_tg_-_exercice_2012_investissement_de_pic.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2011-12-23",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2011 (Annonce du plan de succession)",
+"url": "https://www.brvm.org/sites/default/files/20111223_-_cm_-_ecobank_tg_-_exercice_2011_annonce_du_plan_de_succession.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2011-10-25",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2011 (Acquiert 100% de Oceanic International, PLC)",
+"url": "https://www.brvm.org/sites/default/files/20111025_-_cm_-_ecobank_tg_-_exercice_2011_acquiert_100_de_oceanic_international_plc.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2011-06-30",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2011 (Annonce de dividende)",
+"url": "https://www.brvm.org/sites/default/files/20110630_-_cm_-_ecobank_tg_-_exercice_2011_annonce_de_dividende.pdf",
+"type": "dividende",
+"vu_le": "initial"
+},
+{
+"date": "2011-03-31",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2011 (Publication de résultats exceptionnels)",
+"url": "https://www.brvm.org/sites/default/files/20110331_-_cm_-_ecobank_tg_-_exercice_2011_publication_de_resultats_exceptionnels.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2010-12-14",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Acquisition de 70% de Premier Finance Groupe de Zimbabwé)",
+"url": "https://www.brvm.org/sites/default/files/20101214_-_cm_-_ecobank_tg_-_exercice_2010_acquisition_de_70_de_premier_finance_groupe_de_zimbabwe.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-10-12",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Ouvervuture du bureau de Dubaï)",
+"url": "https://www.brvm.org/sites/default/files/20101012_-_cm_-_ecobank_tg_-_exercice_2010_ouvervuture_du_bureau_de_dubai.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-10-12",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Lancement de la filiale Ecobank Capital)",
+"url": "https://www.brvm.org/sites/default/files/20101012_-_cm_-_ecobank_tg_-_exercice_2010_lancement_de_la_filiale_ecobank_capital.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-07-30",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Signature d'alliance avec OLD MUTUAL)",
+"url": "https://www.brvm.org/sites/default/files/20100730_-_cm_-_ecobank_tg_-_exercice_2010_signature_dalliance_avec_old_mutual.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-07-30",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Accord avec la Banque de Chine)",
+"url": "https://www.brvm.org/sites/default/files/20100730_-_cm_-_ecobank_tg_-_exercice_2010_accord_avec_la_banque_de_chine.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-07-29",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Accord avec Advanced Finance & Investment Group)",
+"url": "https://www.brvm.org/sites/default/files/20100729_-_cm_-_ecobank_tg_-_exercice_2010_accord_avec_advanced_finance_investment_group.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-07-23",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Autorisation pour représentation en Angola)",
+"url": "https://www.brvm.org/sites/default/files/20100723_-_cm_-_ecobank_tg_-_exercice_2010_autorisation_pour_representation_en_angola.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-07-12",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Accord avec IFC)",
+"url": "https://www.brvm.org/sites/default/files/20100712_-_cm_-_ecobank_tg_-_exercice_2010_accord_avec_ifc.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-06-23",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Augmentation de dividende)",
+"url": "https://www.brvm.org/sites/default/files/20100623_-_cm_-_ecobank_tg_-_exercice_2010_augmentation_de_dividende.pdf",
+"type": "dividende",
+"vu_le": "initial"
+},
+{
+"date": "2010-05-21",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Accord avec ACCION)",
+"url": "https://www.brvm.org/sites/default/files/20100521_-_cm_-_ecobank_tg_-_exercice_2010_accord_avec_accion.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-05-06",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Annonce de revenus et dividendes plus élévés)",
+"url": "https://www.brvm.org/sites/default/files/20100506_-_cm_-_ecobank_tg_-_exercice_2010_annonce_de_revenus_et_dividendes_plus_eleves.pdf",
+"type": "dividende",
+"vu_le": "initial"
+},
+{
+"date": "2010-04-30",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Prix de meilleure communication financière)",
+"url": "https://www.brvm.org/sites/default/files/20100430_-_cm_-_ecobank_tg_-_exercice_2010_prix_de_meilleure_communication_financiere.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-25",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Augmentation de capital)",
+"url": "https://www.brvm.org/sites/default/files/20100225_-_cm_-_ecobank_tg_-_exercice_2010_augmentation_de_capital.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-22",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Annonce de stratégie 2)",
+"url": "https://www.brvm.org/sites/default/files/20100222_-_cm_-_ecobank_tg_-_exercice_2010_annonce_de_strategie_2.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-08",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Annonce de stratégie 1)",
+"url": "https://www.brvm.org/sites/default/files/20100208_-_cm_-_ecobank_tg_-_exercice_2010_annonce_de_strategie_1.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-08",
+"titre": "COMMUNIQUE - BERNABE CI - Exercice 2010",
+"url": "https://www.brvm.org/sites/default/files/20100208_-_cm_-_bernabe_ci_-_exercice_2010.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-03",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Accord avec la Banque de Chine)",
+"url": "https://www.brvm.org/sites/default/files/20100203_-_cm_-_ecobank_tg_-_exercice_2010_accord_avec_la_banque_de_chine.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-02",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Ouverture bureau Affrique du Sud)",
+"url": "https://www.brvm.org/sites/default/files/20100202_-_cm_-_ecobank_tg_-_exercice_2010_ouverture_bureau_affrique_du_sud.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2010-02-01",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2010 (Ouverture Ecobank Tanzanie)",
+"url": "https://www.brvm.org/sites/default/files/20100201_-_cm_-_ecobank_tg_-_exercice_2010_ouverture_ecobank_tanzanie.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-10-12",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Un accord avec Afreximbank)",
+"url": "https://www.brvm.org/sites/default/files/20091012_-_cm_-_ecobank_tg_-_exercice_2009_un_accord_avec_afreximbank.pdf",
+"type": "autre",
 "vu_le": "initial"
 },
 {
@@ -1518,9 +2143,44 @@
 "vu_le": "initial"
 },
 {
+"date": "2009-09-10",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Ouverture Ecobank Zambie)",
+"url": "https://www.brvm.org/sites/default/files/20090910_-_cm_-_ecobank_tg_-_exercice_2009_ouverture_ecobank_zambie.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-09-10",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Ouverture Ecobank France )",
+"url": "https://www.brvm.org/sites/default/files/20090910_-_cm_-_ecobank_tg_-_exercice_2009_ouverture_ecobank_france_.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-05-04",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Résultat 2008)",
+"url": "https://www.brvm.org/sites/default/files/20090504_-_cm_-_ecobank_tg_-_exercice_2009_resultat_2008.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2009-04-27",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Augmentation de capital Ecobank Nigeria)",
+"url": "https://www.brvm.org/sites/default/files/20090427_-_cm_-_ecobank_tg_-_exercice_2009_augmentation_de_capital_ecobank_nigeria.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
 "date": "2009-04-27",
 "titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Augmentation capitaux propre ETI)",
 "url": "https://www.brvm.org/sites/default/files/20090427_-_cm_-_ecobank_tg_-_exercice_2009_augmentation_capitaux_propre_eti.pdf",
+"type": "autre",
+"vu_le": "initial"
+},
+{
+"date": "2009-01-22",
+"titre": "COMMUNIQUE - ECOBANK TG - Exercice 2009 (Démarrage Ecobank Ouganda)",
+"url": "https://www.brvm.org/sites/default/files/20090122_-_cm_-_ecobank_tg_-_exercice_2009_demarrage_ecobank_ouganda.pdf",
 "type": "autre",
 "vu_le": "initial"
 }
@@ -1580,7 +2240,8 @@
 "paiement": "2026-05-26",
 "ex_dividende": "2026-05-22",
 "dividende": 1740.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2026-04-17",
@@ -1654,7 +2315,8 @@
 "paiement": "2025-05-22",
 "ex_dividende": "2025-05-20",
 "dividende": 1655.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2025-04-18",
@@ -1721,7 +2383,8 @@
 "paiement": "2024-05-17",
 "ex_dividende": "2024-05-15",
 "dividende": 1575.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2024-04-26",
@@ -1774,7 +2437,8 @@
 "paiement": "2023-05-17",
 "ex_dividende": "2023-05-15",
 "dividende": 1500.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2023-03-24",
@@ -1848,7 +2512,8 @@
 "paiement": "2022-05-18",
 "ex_dividende": "2022-05-16",
 "dividende": 1400.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2022-04-29",
@@ -1929,7 +2594,8 @@
 "paiement": "2021-05-17",
 "ex_dividende": "2021-05-12",
 "dividende": 1225.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2021-05-06",
@@ -2010,7 +2676,8 @@
 "paiement": "2020-05-20",
 "ex_dividende": "2020-05-18",
 "dividende": 1225.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2020-04-30",
@@ -2077,7 +2744,8 @@
 "paiement": "2019-05-14",
 "ex_dividende": null,
 "dividende": 1500.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2019-05-10",
@@ -2095,7 +2763,8 @@
 "paiement": "2019-05-14",
 "ex_dividende": "2019-05-10",
 "dividende": 1500.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SONATEL"
 },
 {
 "date": "2019-03-19",
@@ -2547,7 +3216,8 @@
 "paiement": "2021-08-20",
 "ex_dividende": "2021-08-18",
 "dividende": 40.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SUCRIVOIRE"
 },
 {
 "date": "2021-07-29",
@@ -2642,7 +3312,8 @@
 "paiement": "2018-09-28",
 "ex_dividende": null,
 "dividende": 72.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SUCRIVOIRE"
 },
 {
 "date": "2018-07-25",
@@ -2695,7 +3366,8 @@
 "paiement": "2017-09-29",
 "ex_dividende": null,
 "dividende": 549.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SUCRIVOIRE"
 },
 {
 "date": "2017-05-08",
@@ -2948,7 +3620,8 @@
 "paiement": "2022-07-29",
 "ex_dividende": "2022-07-27",
 "dividende": 60.75,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2022-06-13",
@@ -3008,7 +3681,8 @@
 "paiement": "2021-07-16",
 "ex_dividende": "2021-07-14",
 "dividende": 18.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2021-05-04",
@@ -3075,7 +3749,8 @@
 "paiement": "2019-07-11",
 "ex_dividende": null,
 "dividende": 181.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2019-07-09",
@@ -3086,13 +3761,21 @@
 "paiement": "2019-07-11",
 "ex_dividende": "2019-07-09",
 "dividende": 181.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2019-06-03",
 "titre": "UNIWAX CI : Etats financiers Exercice 2018",
 "url": "https://www.brvm.org/sites/default/files/20190603_-_etats_financiers_exercice_2018_-_uniwax_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2019-06-03",
+"titre": "UNIWAX CI : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20190603_-_avis_de_convocation_et_projet_de_resolutions_a_lassemblee_generale_ordinaire_-_uniwax_ci.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -3125,7 +3808,8 @@
 "paiement": "2018-07-13",
 "ex_dividende": null,
 "dividende": 173.7,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2018-07-11",
@@ -3136,7 +3820,8 @@
 "paiement": "2018-07-13",
 "ex_dividende": "2018-07-11",
 "dividende": 173.7,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2018-04-27",
@@ -3168,7 +3853,8 @@
 "paiement": "2017-07-10",
 "ex_dividende": null,
 "dividende": 868.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2017-07-06",
@@ -3179,7 +3865,8 @@
 "paiement": "2017-07-10",
 "ex_dividende": "2017-07-06",
 "dividende": 868.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "UNIWAX CI"
 },
 {
 "date": "2017-06-06",
@@ -3296,7 +3983,8 @@
 "paiement": "2026-07-06",
 "ex_dividende": "2026-07-03",
 "dividende": 1315.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2026-04-30",
@@ -3349,7 +4037,8 @@
 "paiement": "2025-05-23",
 "ex_dividende": "2025-05-21",
 "dividende": 944.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2025-04-30",
@@ -3402,7 +4091,8 @@
 "paiement": "2024-06-27",
 "ex_dividende": "2024-06-25",
 "dividende": 540.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2024-05-08",
@@ -3462,7 +4152,8 @@
 "paiement": "2023-07-31",
 "ex_dividende": "2023-07-27",
 "dividende": 401.4,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2023-06-27",
@@ -3543,7 +4234,8 @@
 "paiement": "2022-07-15",
 "ex_dividende": "2022-07-13",
 "dividende": 518.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2022-06-21",
@@ -3582,7 +4274,8 @@
 "paiement": "2021-07-06",
 "ex_dividende": "2021-07-02",
 "dividende": 50.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2021-06-02",
@@ -3656,7 +4349,8 @@
 "paiement": "2019-07-17",
 "ex_dividende": null,
 "dividende": 182.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2019-07-15",
@@ -3667,7 +4361,8 @@
 "paiement": "2019-07-17",
 "ex_dividende": "2019-07-15",
 "dividende": 182.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2019-06-03",
@@ -3713,7 +4408,8 @@
 "paiement": "2018-07-02",
 "ex_dividende": "2018-06-28",
 "dividende": 213.56,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2018-05-17",
@@ -3745,7 +4441,8 @@
 "paiement": "2017-07-24",
 "ex_dividende": null,
 "dividende": 2771.41,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BICI CI"
 },
 {
 "date": "2017-05-09",
@@ -3920,6 +4617,18 @@
 "lu": true
 },
 {
+"date": "2026-08-03",
+"titre": "Dividende exercice 2025 : 768,16 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2025",
+"paiement": "2026-08-04",
+"ex_dividende": "2026-08-03",
+"dividende": 768.16,
+"vu_le": "initial"
+},
+{
 "date": "2026-07-14",
 "titre": "NSIA BANQUE CI : Communiqué",
 "url": "https://www.brvm.org/sites/default/files/20260713_-_communique_-_nsia_banque_ci.pdf",
@@ -4004,6 +4713,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-07-07",
+"titre": "Dividende exercice 2024 : 759,2612 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2024",
+"paiement": "2025-07-09",
+"ex_dividende": "2025-07-07",
+"dividende": 759.2612,
+"vu_le": "initial"
+},
+{
 "date": "2025-05-02",
 "titre": "NSIA BANQUE CI : Avis de convocation - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20250502_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_nsia_banque_ci.pdf",
@@ -4067,6 +4788,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-07-04",
+"titre": "Dividende exercice 2023 : 454,829 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2023",
+"paiement": "2024-07-08",
+"ex_dividende": "2024-07-04",
+"dividende": 454.829,
+"vu_le": "initial"
+},
+{
 "date": "2024-05-03",
 "titre": "NSIA BANQUE CI : Avis de convocation à l'Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20240503_-_avis_de_convocation_-_assemblee_generale_ordinaire_et_projet_de_resolution_-_nsia_banque_ci.pdf",
@@ -4120,6 +4853,18 @@
 "titre": "NSIA BANQUE CI : Résultats financiers - 1er semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230823_-_resultats_financiers_-_1er_semestre_2023_-_nsia_banque_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-06-05",
+"titre": "Dividende exercice 2022 : 363,6 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2022",
+"paiement": "2023-06-07",
+"ex_dividende": "2023-06-05",
+"dividende": 363.6,
 "vu_le": "initial"
 },
 {
@@ -4263,6 +5008,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-07-27",
+"titre": "Dividende exercice 2019 : 77,6867 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2019",
+"paiement": "2020-07-27",
+"ex_dividende": null,
+"dividende": 77.68666379,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-23",
+"titre": "Dividende exercice 2019 : 77,6867 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2019",
+"paiement": "2020-07-27",
+"ex_dividende": "2020-07-23",
+"dividende": 77.68666379,
+"vu_le": "initial"
+},
+{
 "date": "2020-06-22",
 "titre": "NSIA BANQUE CÔTE D'IVOIRE : Communiqué - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20200622_-_communique_post_ago_-_nsia_banque_ci.pdf",
@@ -4347,6 +5116,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-07-09",
+"titre": "Dividende exercice 2018 : 194,2 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2018",
+"paiement": "2019-07-09",
+"ex_dividende": null,
+"dividende": 194.2,
+"vu_le": "initial"
+},
+{
+"date": "2019-07-05",
+"titre": "Dividende exercice 2018 : 194,2 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2018",
+"paiement": "2019-07-09",
+"ex_dividende": "2019-07-05",
+"dividende": 194.2,
+"vu_le": "initial"
+},
+{
 "date": "2019-07-03",
 "titre": "NSIA BANQUE CI : Communiqué",
 "url": "https://www.brvm.org/sites/default/files/20190703_-_communique_nsia_banque_ci.pdf",
@@ -4400,6 +5193,30 @@
 "titre": "NSIA BANQUE CI : Rapport d’activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181030_-_rapport_dactivites_du_1er_semestre_2018_-_nsia_banque_ci_0.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-06-25",
+"titre": "Dividende exercice 2017 : 466,1 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2017",
+"paiement": "2018-06-25",
+"ex_dividende": null,
+"dividende": 466.1,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-21",
+"titre": "Dividende exercice 2017 : 466,1 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "NSBC",
+"exercice": "2017",
+"paiement": "2018-06-25",
+"ex_dividende": "2018-06-21",
+"dividende": 466.1,
 "vu_le": "initial"
 },
 {
@@ -4521,7 +5338,8 @@
 "paiement": "2025-09-30",
 "ex_dividende": "2025-09-26",
 "dividende": 1320.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2025-05-23",
@@ -4588,7 +5406,8 @@
 "paiement": "2024-09-30",
 "ex_dividende": "2024-09-26",
 "dividende": 143.1,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2024-05-30",
@@ -4675,6 +5494,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2022-06-10",
+"titre": "FILTISAC CI : 2ème Convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20220610_-_2eme_convocation_a_lassemblee_generale_ordinaire_-_filtisac_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2022-05-31",
 "titre": "FILTISAC CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20220531_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_filtisac_ci.pdf",
@@ -4725,7 +5551,8 @@
 "paiement": "2021-07-30",
 "ex_dividende": "2021-07-28",
 "dividende": 235.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2021-07-07",
@@ -4778,7 +5605,8 @@
 "paiement": "2020-08-06",
 "ex_dividende": null,
 "dividende": 125.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2020-07-04",
@@ -4789,7 +5617,8 @@
 "paiement": "2020-08-06",
 "ex_dividende": "2020-07-04",
 "dividende": 125.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2020-07-01",
@@ -4842,7 +5671,8 @@
 "paiement": "2019-07-31",
 "ex_dividende": null,
 "dividende": 110.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2019-07-29",
@@ -4853,7 +5683,8 @@
 "paiement": "2019-07-31",
 "ex_dividende": "2019-07-29",
 "dividende": 110.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2019-06-06",
@@ -4906,7 +5737,8 @@
 "paiement": "2018-08-16",
 "ex_dividende": "2018-08-13",
 "dividende": 161.27,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2018-06-04",
@@ -4945,7 +5777,8 @@
 "paiement": "2018-01-09",
 "ex_dividende": null,
 "dividende": 1200.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2018-01-05",
@@ -4956,7 +5789,8 @@
 "paiement": "2018-01-09",
 "ex_dividende": "2018-01-05",
 "dividende": 1200.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2017-12-08",
@@ -4981,7 +5815,8 @@
 "paiement": "2017-07-31",
 "ex_dividende": null,
 "dividende": 1045.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2017-07-27",
@@ -4992,7 +5827,8 @@
 "paiement": "2017-07-31",
 "ex_dividende": "2017-07-27",
 "dividende": 1045.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "FILTISAC CI"
 },
 {
 "date": "2017-07-21",
@@ -5481,7 +6317,8 @@
 "paiement": "2017-09-29",
 "ex_dividende": null,
 "dividende": 630.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "AIR LIQUIDE CI"
 },
 {
 "date": "2017-09-27",
@@ -5492,7 +6329,8 @@
 "paiement": "2017-09-29",
 "ex_dividende": "2017-09-27",
 "dividende": 630.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "AIR LIQUIDE CI"
 },
 {
 "date": "2017-06-14",
@@ -6613,7 +7451,8 @@
 "paiement": "2026-06-15",
 "ex_dividende": "2026-06-12",
 "dividende": 145.3214,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2026-06-11",
@@ -6701,7 +7540,8 @@
 "paiement": "2025-07-21",
 "ex_dividende": "2025-07-17",
 "dividende": 189.5299,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2025-05-09",
@@ -6768,7 +7608,8 @@
 "paiement": "2024-07-31",
 "ex_dividende": "2024-08-01",
 "dividende": 266.44625,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2024-07-10",
@@ -6842,7 +7683,8 @@
 "paiement": "2023-06-26",
 "ex_dividende": "2023-06-22",
 "dividende": 287.8799,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2023-04-28",
@@ -6881,7 +7723,8 @@
 "paiement": "2022-06-15",
 "ex_dividende": "2022-06-13",
 "dividende": 416.5791,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2022-04-27",
@@ -6948,7 +7791,8 @@
 "paiement": "2021-06-01",
 "ex_dividende": "2021-05-28",
 "dividende": 399.5635,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2021-05-05",
@@ -7001,7 +7845,8 @@
 "paiement": "2020-06-10",
 "ex_dividende": "2020-06-08",
 "dividende": 387.17,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2020-05-27",
@@ -7054,7 +7899,8 @@
 "paiement": "2019-06-03",
 "ex_dividende": null,
 "dividende": 409.38,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2019-05-29",
@@ -7065,7 +7911,8 @@
 "paiement": "2019-06-03",
 "ex_dividende": "2019-05-29",
 "dividende": 409.36,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2019-05-27",
@@ -7139,7 +7986,8 @@
 "paiement": "2018-06-06",
 "ex_dividende": null,
 "dividende": 727.9125,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2018-05-24",
@@ -7178,7 +8026,8 @@
 "paiement": "2018-06-06",
 "ex_dividende": "2018-05-04",
 "dividende": 727.9125,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ONATEL BF"
 },
 {
 "date": "2018-04-19",
@@ -7583,7 +8432,8 @@
 "paiement": "2025-07-17",
 "ex_dividende": "2025-07-15",
 "dividende": 368.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2025-04-25",
@@ -7629,7 +8479,8 @@
 "paiement": "2024-08-12",
 "ex_dividende": "2024-08-08",
 "dividende": 64.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2024-07-18",
@@ -7724,7 +8575,8 @@
 "paiement": "2023-09-29",
 "ex_dividende": "2023-09-26",
 "dividende": 294.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2023-08-02",
@@ -7840,7 +8692,8 @@
 "paiement": "2022-08-04",
 "ex_dividende": "2022-08-02",
 "dividende": 365.4,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2022-05-27",
@@ -7900,7 +8753,8 @@
 "paiement": "2021-08-24",
 "ex_dividende": "2021-08-20",
 "dividende": 132.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2021-05-17",
@@ -8107,7 +8961,8 @@
 "paiement": "2018-09-27",
 "ex_dividende": "2018-09-25",
 "dividende": 78.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SAPH CI"
 },
 {
 "date": "2018-05-29",
@@ -8362,7 +9217,8 @@
 "paiement": "2025-07-31",
 "ex_dividende": "2025-07-29",
 "dividende": 275.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "LNB"
 },
 {
 "date": "2025-06-24",
@@ -8754,7 +9610,8 @@
 "paiement": "2020-07-17",
 "ex_dividende": "2020-07-15",
 "dividende": 59.52,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORAGROUP"
 },
 {
 "date": "2020-07-10",
@@ -8814,7 +9671,8 @@
 "paiement": "2019-07-01",
 "ex_dividende": null,
 "dividende": 56.73,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORAGROUP"
 },
 {
 "date": "2019-06-27",
@@ -8825,7 +9683,8 @@
 "paiement": "2019-07-01",
 "ex_dividende": "2019-06-27",
 "dividende": 56.73,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORAGROUP"
 },
 {
 "date": "2019-06-17",
@@ -9177,6 +10036,18 @@
 "lu": true
 },
 {
+"date": "2026-08-21",
+"titre": "Dividende exercice 2025 : 2 606 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2025",
+"paiement": "2026-08-24",
+"ex_dividende": "2026-08-21",
+"dividende": 2606.0,
+"vu_le": "initial"
+},
+{
 "date": "2026-06-04",
 "titre": "SOCIETE GENERALE CI : Avis de convocation - Assemblée Générale Mixte",
 "url": "https://www.brvm.org/sites/default/files/20260603_-_avis_de_convocation_-_assemblee_generale_mixte_-_societe_generale_ci.pdf",
@@ -9216,6 +10087,18 @@
 "titre": "SOCIETE GENERALE CÔTE D'IVOIRE : Rapport d'activités - 1er semestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250828_-_rapport_dactivites_-_1er_semestre_2025_-_societe_generale_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-08-01",
+"titre": "Dividende exercice 2024 : 1 863 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2024",
+"paiement": "2025-08-05",
+"ex_dividende": "2025-08-01",
+"dividende": 1863.0,
 "vu_le": "initial"
 },
 {
@@ -9275,6 +10158,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-06-21",
+"titre": "Dividende exercice 2022 : 1 553,847 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2022",
+"paiement": "2024-06-25",
+"ex_dividende": "2024-06-21",
+"dividende": 1553.847,
+"vu_le": "initial"
+},
+{
 "date": "2024-05-08",
 "titre": "SOCIETE GENERALE CI : Assemblée Générale Ordinaire et Extraordinaire",
 "url": "https://www.brvm.org/sites/default/files/20240508_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_sgbc_0.pdf",
@@ -9314,6 +10209,18 @@
 "titre": "SOCIETE GENERALE CÔTE D'IVOIRE : Rapport d'activités du 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20230906_-_rapport_dactivites_-_1er_semestre_2023_-_societe_generale_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-05-26",
+"titre": "Dividende exercice 2022 : 1 112,43 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2022",
+"paiement": "2023-05-31",
+"ex_dividende": "2023-05-26",
+"dividende": 1112.43,
 "vu_le": "initial"
 },
 {
@@ -9359,6 +10266,18 @@
 "vu_le": "initial"
 },
 {
+"date": "2022-06-08",
+"titre": "Dividende exercice 2021 : 1 004,93 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2021",
+"paiement": "2022-06-10",
+"ex_dividende": "2022-06-08",
+"dividende": 1004.93,
+"vu_le": "initial"
+},
+{
 "date": "2022-04-29",
 "titre": "SOCIETE GENERALE CI : Rapport d'activité 1er trimestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20220429_-_rapport_dactivite_-_1er_trimestre_2022_-_sgci_ci.pdf",
@@ -9394,10 +10313,29 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-06-28",
+"titre": "Dividende exercice 2020 : 368,298 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2020",
+"paiement": "2021-06-30",
+"ex_dividende": "2021-06-28",
+"dividende": 368.298,
+"vu_le": "initial"
+},
+{
 "date": "2021-04-30",
 "titre": "SOCIETE GENERALE CÔTE D'IVOIRE : Rapport d'activités au 1er trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210430_-_rapport_dactivites_au_1er_trimestre_2021_-_sgci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2021-04-29",
+"titre": "SGCI: Avis de convocation - Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20210429_-_avis_de_convocation_-_assemblee_generale_mixte_-_sgci.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -9440,6 +10378,30 @@
 "titre": "SOCIETE GENERALE CI : Etats financiers certifiés et approuvés exercice 2019",
 "url": "https://www.brvm.org/sites/default/files/20200812_-_etats_financiers_certifies_et_approuves_exercice_2019_-_societe_generale_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2020-07-29",
+"titre": "Dividende exercice 2019 : 273 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2019",
+"paiement": "2020-07-29",
+"ex_dividende": null,
+"dividende": 273.0,
+"vu_le": "initial"
+},
+{
+"date": "2020-07-27",
+"titre": "Dividende exercice 2019 : 273 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2019",
+"paiement": "2020-07-29",
+"ex_dividende": "2020-07-27",
+"dividende": 273.0,
 "vu_le": "initial"
 },
 {
@@ -9499,6 +10461,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-07-29",
+"titre": "Dividende exercice 2018 : 206 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2018",
+"paiement": "2019-07-31",
+"ex_dividende": "2019-07-29",
+"dividende": 206.0,
+"vu_le": "initial"
+},
+{
+"date": "2019-05-24",
+"titre": "SGCI : Avis de convocation à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20190524_-_avis_de_convocation_-_assemblee_generale_mixte_-_sgci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2019-05-09",
 "titre": "SOCIETE GENERALE CI : Etats financiers Exercice 2018",
 "url": "https://www.brvm.org/sites/default/files/20190509_-_etats_financiers_exercice_2018_-_sgci.pdf",
@@ -9517,6 +10498,30 @@
 "titre": "SGB CI : Rapport d'activité du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181011_-_rapport_dactivite_1er_semestriel_2018_-_sgbci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-07-17",
+"titre": "Dividende exercice 2017 : 585 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2017",
+"paiement": "2018-07-17",
+"ex_dividende": null,
+"dividende": 585.0,
+"vu_le": "initial"
+},
+{
+"date": "2018-07-13",
+"titre": "Dividende exercice 2017 : 585 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2017",
+"paiement": "2018-07-17",
+"ex_dividende": "2018-07-13",
+"dividende": 585.0,
 "vu_le": "initial"
 },
 {
@@ -9569,10 +10574,48 @@
 "vu_le": "initial"
 },
 {
+"date": "2017-08-10",
+"titre": "Communiqué_Fractionnement d'actions- SGBCI",
+"url": "https://www.brvm.org/sites/default/files/20170810-_communique_fractionnement_dactions-_sgbci.pdf",
+"type": "capital",
+"vu_le": "initial"
+},
+{
 "date": "2017-07-31",
 "titre": "Résultat_ 1er semestre- SGBCI",
 "url": "https://www.brvm.org/sites/default/files/20170731-_resultat_1er_semestre-_sgbci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-07-04",
+"titre": "Dividende exercice 2016 : 5 837 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2016",
+"paiement": "2017-07-04",
+"ex_dividende": null,
+"dividende": 5837.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-06-30",
+"titre": "Dividende exercice 2016 : 5 837 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "SGCI",
+"exercice": "2016",
+"paiement": "2017-07-04",
+"ex_dividende": "2017-06-30",
+"dividende": 5837.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-05-24",
+"titre": "Convocation Assemblée Générale Mixte - SGBCI",
+"url": "https://www.brvm.org/sites/default/files/20170524-avis_de_convocation_a_lagm_du_13_juin_2017_-_sgbci_0.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -9707,7 +10750,8 @@
 "paiement": "2026-05-26",
 "ex_dividende": "2026-05-22",
 "dividende": 888.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2026-04-29",
@@ -9753,7 +10797,8 @@
 "paiement": "2025-05-30",
 "ex_dividende": "2025-05-31",
 "dividende": 804.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2025-04-25",
@@ -9827,7 +10872,8 @@
 "paiement": "2024-05-30",
 "ex_dividende": "2024-05-28",
 "dividende": 594.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2024-04-30",
@@ -9880,7 +10926,8 @@
 "paiement": "2023-05-30",
 "ex_dividende": "2023-05-25",
 "dividende": 549.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2023-04-28",
@@ -9954,7 +11001,8 @@
 "paiement": "2022-04-29",
 "ex_dividende": "2022-04-26",
 "dividende": 420.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2022-03-18",
@@ -10007,7 +11055,8 @@
 "paiement": "2021-05-06",
 "ex_dividende": "2021-05-04",
 "dividende": 294.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2021-04-30",
@@ -10060,7 +11109,8 @@
 "paiement": "2020-07-20",
 "ex_dividende": null,
 "dividende": 352.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2020-07-16",
@@ -10071,7 +11121,8 @@
 "paiement": "2020-07-20",
 "ex_dividende": "2020-07-16",
 "dividende": 353.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2020-07-16",
@@ -10082,7 +11133,8 @@
 "paiement": "2020-07-20",
 "ex_dividende": "2020-07-16",
 "dividende": 352.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2020-06-17",
@@ -10135,7 +11187,8 @@
 "paiement": "2019-05-15",
 "ex_dividende": null,
 "dividende": 214.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2019-05-13",
@@ -10146,7 +11199,8 @@
 "paiement": "2019-05-15",
 "ex_dividende": "2019-05-13",
 "dividende": 241.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2019-05-02",
@@ -10206,7 +11260,8 @@
 "paiement": "2018-06-22",
 "ex_dividende": null,
 "dividende": 1844.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2018-06-20",
@@ -10217,7 +11272,8 @@
 "paiement": "2018-06-22",
 "ex_dividende": "2018-06-20",
 "dividende": 1844.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ECOBANK CI"
 },
 {
 "date": "2018-05-14",
@@ -10581,7 +11637,8 @@
 "paiement": "2025-07-29",
 "ex_dividende": "2025-07-25",
 "dividende": 1220.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2025-05-09",
@@ -10732,7 +11789,8 @@
 "paiement": "2022-08-12",
 "ex_dividende": "2022-08-10",
 "dividende": 4050.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2022-06-03",
@@ -10764,7 +11822,8 @@
 "paiement": "2021-08-03",
 "ex_dividende": "2021-07-30",
 "dividende": 2736.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2021-05-04",
@@ -10838,7 +11897,8 @@
 "paiement": "2019-06-06",
 "ex_dividende": null,
 "dividende": 1368.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2019-06-03",
@@ -10849,7 +11909,8 @@
 "paiement": "2019-06-06",
 "ex_dividende": "2019-06-03",
 "dividende": 1368.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2019-04-05",
@@ -10881,7 +11942,8 @@
 "paiement": "2018-06-14",
 "ex_dividende": "2018-06-14",
 "dividende": 2322.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SOLIBRA"
 },
 {
 "date": "2018-04-04",
@@ -11165,7 +12227,8 @@
 "paiement": "2022-07-18",
 "ex_dividende": "2022-07-14",
 "dividende": 66.15,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SETAO CI"
 },
 {
 "date": "2022-06-01",
@@ -11211,7 +12274,8 @@
 "paiement": "2021-07-16",
 "ex_dividende": "2021-07-14",
 "dividende": 66.15,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SETAO CI"
 },
 {
 "date": "2021-05-31",
@@ -11528,7 +12592,8 @@
 "paiement": "2023-07-24",
 "ex_dividende": "2023-07-20",
 "dividende": 150.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BERNABE CI"
 },
 {
 "date": "2023-05-31",
@@ -11714,7 +12779,8 @@
 "paiement": "2019-07-19",
 "ex_dividende": "2019-07-17",
 "dividende": 45.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BERNABE CI"
 },
 {
 "date": "2019-06-03",
@@ -11760,7 +12826,8 @@
 "paiement": "2018-07-25",
 "ex_dividende": null,
 "dividende": 63.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BERNABE CI"
 },
 {
 "date": "2018-07-23",
@@ -11771,7 +12838,8 @@
 "paiement": "2018-07-25",
 "ex_dividende": "2018-07-23",
 "dividende": 63.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BERNABE CI"
 },
 {
 "date": "2018-06-06",
@@ -11831,7 +12899,8 @@
 "paiement": "2017-07-11",
 "ex_dividende": null,
 "dividende": 3252.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BERNABE CI"
 },
 {
 "date": "2017-07-07",
@@ -11842,7 +12911,8 @@
 "paiement": "2017-07-11",
 "ex_dividende": "2017-07-07",
 "dividende": 3252.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BERNABE CI"
 },
 {
 "date": "2017-06-02",
@@ -12017,7 +13087,8 @@
 "paiement": "2025-10-22",
 "ex_dividende": "2025-10-20",
 "dividende": 85.56,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2025-09-30",
@@ -12063,7 +13134,8 @@
 "paiement": "2024-09-27",
 "ex_dividende": "2024-09-25",
 "dividende": 57.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2024-08-19",
@@ -12130,7 +13202,8 @@
 "paiement": "2023-12-28",
 "ex_dividende": "2023-12-26",
 "dividende": 53.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2023-11-03",
@@ -12190,7 +13263,8 @@
 "paiement": "2022-10-28",
 "ex_dividende": "2022-10-26",
 "dividende": 29.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2022-09-06",
@@ -12306,7 +13380,8 @@
 "paiement": "2020-11-26",
 "ex_dividende": null,
 "dividende": 63.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2020-11-24",
@@ -12317,7 +13392,8 @@
 "paiement": "2020-11-26",
 "ex_dividende": "2020-11-24",
 "dividende": 63.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2020-09-17",
@@ -12356,7 +13432,8 @@
 "paiement": "2019-08-02",
 "ex_dividende": "2019-07-31",
 "dividende": 64.286,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2019-06-13",
@@ -12388,7 +13465,8 @@
 "paiement": "2018-07-23",
 "ex_dividende": null,
 "dividende": 42.86,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2018-07-19",
@@ -12399,7 +13477,8 @@
 "paiement": "2018-07-23",
 "ex_dividende": "2018-07-19",
 "dividende": 42.86,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2018-04-27",
@@ -12438,7 +13517,8 @@
 "paiement": "2017-07-31",
 "ex_dividende": null,
 "dividende": 33.7,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2017-07-27",
@@ -12449,7 +13529,8 @@
 "paiement": "2017-07-27",
 "ex_dividende": null,
 "dividende": 33.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2017-07-25",
@@ -12460,7 +13541,8 @@
 "paiement": "2017-07-27",
 "ex_dividende": "2017-07-25",
 "dividende": 33.7,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2017-07-25",
@@ -12471,7 +13553,8 @@
 "paiement": "2017-07-25",
 "ex_dividende": null,
 "dividende": 33.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "VIVO ENERGY CI"
 },
 {
 "date": "2016-12-15",
@@ -12596,7 +13679,8 @@
 "paiement": "2026-07-31",
 "ex_dividende": "2026-07-30",
 "dividende": 425.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2026-05-06",
@@ -12642,7 +13726,8 @@
 "paiement": "2025-07-31",
 "ex_dividende": "2025-07-29",
 "dividende": 375.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2025-05-05",
@@ -12695,7 +13780,8 @@
 "paiement": "2024-07-31",
 "ex_dividende": "2024-07-29",
 "dividende": 495.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2024-06-05",
@@ -12748,7 +13834,8 @@
 "paiement": "2023-08-11",
 "ex_dividende": "2023-08-09",
 "dividende": 495.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2023-06-07",
@@ -12808,7 +13895,8 @@
 "paiement": "2022-06-30",
 "ex_dividende": "2022-06-28",
 "dividende": 405.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2022-05-05",
@@ -12854,7 +13942,8 @@
 "paiement": "2021-07-23",
 "ex_dividende": "2021-07-21",
 "dividende": 360.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2021-07-12",
@@ -12928,7 +14017,8 @@
 "paiement": "2020-06-19",
 "ex_dividende": null,
 "dividende": 270.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2020-06-17",
@@ -12939,7 +14029,8 @@
 "paiement": "2020-06-19",
 "ex_dividende": "2020-06-17",
 "dividende": 270.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2020-05-11",
@@ -12985,7 +14076,8 @@
 "paiement": "2019-07-05",
 "ex_dividende": null,
 "dividende": 252.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2019-07-03",
@@ -12996,7 +14088,8 @@
 "paiement": "2019-07-05",
 "ex_dividende": "2019-07-03",
 "dividende": 252.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2019-05-02",
@@ -13063,7 +14156,8 @@
 "paiement": "2018-06-08",
 "ex_dividende": "2018-06-06",
 "dividende": 945.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2018-05-09",
@@ -13102,7 +14196,8 @@
 "paiement": "2017-06-09",
 "ex_dividende": null,
 "dividende": 855.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SIB"
 },
 {
 "date": "2017-05-02",
@@ -13650,7 +14745,8 @@
 "paiement": "2026-06-08",
 "ex_dividende": "2026-06-05",
 "dividende": 800.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORANGE CI"
 },
 {
 "date": "2026-05-20",
@@ -13717,7 +14813,8 @@
 "paiement": "2025-06-11",
 "ex_dividende": "2025-06-05",
 "dividende": 750.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORANGE CI"
 },
 {
 "date": "2025-04-16",
@@ -13791,7 +14888,8 @@
 "paiement": "2024-06-03",
 "ex_dividende": "2024-05-30",
 "dividende": 780.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORANGE CI"
 },
 {
 "date": "2024-04-30",
@@ -13865,7 +14963,8 @@
 "paiement": "2023-06-13",
 "ex_dividende": "2023-06-16",
 "dividende": 752.76,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "ORANGE CI"
 },
 {
 "date": "2023-03-29",
@@ -14003,7 +15102,8 @@
 "paiement": "2024-08-30",
 "ex_dividende": "2024-08-28",
 "dividende": 15.87,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2024-06-25",
@@ -14042,7 +15142,8 @@
 "paiement": "2023-09-15",
 "ex_dividende": "2023-09-13",
 "dividende": 27.45,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2023-06-09",
@@ -14073,6 +15174,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2022-10-24",
+"titre": "CFAO MOTORS CI : Attestation des Commissaires Aux Comptes du 1er semestre 2022",
+"url": "https://www.brvm.org/sites/default/files/20221024_-_attestation_des_commissaires_aux_comptes_-_1er_semestre_2022_-_cfao_motors_ci_0.pdf",
+"type": "resultats",
+"vu_le": "initial"
+},
+{
 "date": "2022-09-23",
 "titre": "CFAO Motors CI : Communiqué de presse",
 "url": "https://www.brvm.org/sites/default/files/20220923_-_communique_de_presse_-_cfao_motors_ci.pdf",
@@ -14088,7 +15196,8 @@
 "paiement": "2022-08-02",
 "ex_dividende": "2022-07-29",
 "dividende": 69.47,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2022-06-03",
@@ -14148,7 +15257,8 @@
 "paiement": "2021-07-15",
 "ex_dividende": "2021-07-13",
 "dividende": 22.15,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2021-05-27",
@@ -14194,7 +15304,8 @@
 "paiement": "2020-08-25",
 "ex_dividende": null,
 "dividende": 26.073,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2020-08-21",
@@ -14205,7 +15316,8 @@
 "paiement": "2020-08-25",
 "ex_dividende": "2020-08-21",
 "dividende": 26.073,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2020-06-24",
@@ -14251,7 +15363,8 @@
 "paiement": "2019-07-23",
 "ex_dividende": null,
 "dividende": 31.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2019-07-19",
@@ -14262,7 +15375,8 @@
 "paiement": "2019-07-23",
 "ex_dividende": "2019-07-19",
 "dividende": 31.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2019-05-24",
@@ -14336,7 +15450,8 @@
 "paiement": "2018-07-27",
 "ex_dividende": null,
 "dividende": 9.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2018-07-25",
@@ -14347,7 +15462,8 @@
 "paiement": "2018-07-27",
 "ex_dividende": "2018-07-25",
 "dividende": 9.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2018-06-25",
@@ -14393,7 +15509,8 @@
 "paiement": "2017-07-24",
 "ex_dividende": null,
 "dividende": 2032.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2017-07-20",
@@ -14404,7 +15521,8 @@
 "paiement": "2017-07-24",
 "ex_dividende": "2017-07-20",
 "dividende": 2032.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CFAO MOTORS CI"
 },
 {
 "date": "2017-05-22",
@@ -14702,7 +15820,8 @@
 "paiement": "2024-09-30",
 "ex_dividende": "2024-09-26",
 "dividende": 206.195,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2024-08-19",
@@ -14769,7 +15888,8 @@
 "paiement": "2023-08-31",
 "ex_dividende": "2023-08-29",
 "dividende": 92.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2023-07-21",
@@ -14836,7 +15956,8 @@
 "paiement": "2022-08-24",
 "ex_dividende": "2022-08-22",
 "dividende": 57.73,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2022-06-20",
@@ -14931,7 +16052,8 @@
 "paiement": "2019-09-30",
 "ex_dividende": null,
 "dividende": 41.239003,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2019-09-26",
@@ -14942,7 +16064,8 @@
 "paiement": "2019-09-30",
 "ex_dividende": "2019-09-26",
 "dividende": 41.239003,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2019-05-23",
@@ -14953,7 +16076,8 @@
 "paiement": "2019-05-27",
 "ex_dividende": "2019-05-23",
 "dividende": 164.96,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2019-05-23",
@@ -14964,7 +16088,8 @@
 "paiement": "2019-05-27",
 "ex_dividende": "2019-05-23",
 "dividende": 123.717,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2019-03-29",
@@ -14996,7 +16121,8 @@
 "paiement": "2018-06-20",
 "ex_dividende": null,
 "dividende": 98.97,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2018-06-18",
@@ -15007,7 +16133,8 @@
 "paiement": "2018-06-20",
 "ex_dividende": "2018-06-18",
 "dividende": 98.97,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2018-03-09",
@@ -15032,7 +16159,8 @@
 "paiement": "2017-07-24",
 "ex_dividende": null,
 "dividende": 49.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2017-07-20",
@@ -15043,7 +16171,8 @@
 "paiement": "2017-07-24",
 "ex_dividende": "2017-07-20",
 "dividende": 49.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SERVAIR ABIDJAN CI"
 },
 {
 "date": "2017-05-11",
@@ -15230,6 +16359,20 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-09-02",
+"titre": "TOTALENERGIES MARKETING CÔTE D'IVOIRE : Changement important au sein de la direction",
+"url": "https://www.brvm.org/sites/default/files/20250902_-_changement_important_au_sein_de_la_direction_-_totalenergies_marketing_ci.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
+"date": "2025-06-04",
+"titre": "TOTALENERGIES MARKETING CÔTE D'IVOIRE : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20250604_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_totalenergies_marketing_ci.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2025-04-30",
 "titre": "TOTALENERGIES MARKETING CÔTE D'IVOIRE : Rapport d'activités - 1er trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20250430_-_rapport_dactivites_-_1er_trimestre_2025_-_totalenergies_marketing_ci_1.pdf",
@@ -15241,6 +16384,13 @@
 "titre": "TOTALENERGIES MARKETING CÔTE D'IVOIRE : Etats financiers - Exercice 2024",
 "url": "https://www.brvm.org/sites/default/files/20250430_-_etats_financiers_-_exercice_2024_-_totalenergies_marketing_ci.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-03-18",
+"titre": "TOTALENERGIES MARKETING CÔTE D'IVOIRE : Communiqué",
+"url": "https://www.brvm.org/sites/default/files/20250318_-_communique_-_totalenergies_marketing_ci.pdf",
+"type": "autre",
 "vu_le": "initial"
 },
 {
@@ -15828,7 +16978,8 @@
 "paiement": "2025-07-31",
 "ex_dividende": "2025-07-29",
 "dividende": 180.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2025-07-07",
@@ -15867,7 +17018,8 @@
 "paiement": "2024-07-30",
 "ex_dividende": "2024-07-26",
 "dividende": 171.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2024-06-06",
@@ -15927,7 +17079,8 @@
 "paiement": "2023-07-31",
 "ex_dividende": "2023-07-27",
 "dividende": 157.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2023-06-07",
@@ -15987,7 +17140,8 @@
 "paiement": "2022-07-25",
 "ex_dividende": "2022-07-21",
 "dividende": 153.161,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2022-06-03",
@@ -16040,7 +17194,8 @@
 "paiement": "2021-07-14",
 "ex_dividende": "2021-07-12",
 "dividende": 167.14,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2021-06-04",
@@ -16086,7 +17241,8 @@
 "paiement": "2020-08-05",
 "ex_dividende": null,
 "dividende": 104.979,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2020-08-03",
@@ -16097,7 +17253,8 @@
 "paiement": "2020-08-05",
 "ex_dividende": "2020-08-03",
 "dividende": 104.979,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2020-06-12",
@@ -16143,7 +17300,8 @@
 "paiement": "2019-08-09",
 "ex_dividende": "2019-08-06",
 "dividende": 79.23,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2019-05-24",
@@ -16203,7 +17361,8 @@
 "paiement": "2018-07-20",
 "ex_dividende": "2018-07-18",
 "dividende": 31.95,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2018-07-17",
@@ -16214,7 +17373,8 @@
 "paiement": "2018-07-20",
 "ex_dividende": "2018-07-17",
 "dividende": 31.95,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2018-05-29",
@@ -16253,7 +17413,8 @@
 "paiement": "2017-09-20",
 "ex_dividende": null,
 "dividende": 3465.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2017-07-10",
@@ -16264,7 +17425,8 @@
 "paiement": "2017-07-12",
 "ex_dividende": "2017-07-10",
 "dividende": 3465.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CIE CI"
 },
 {
 "date": "2017-05-30",
@@ -16957,7 +18119,8 @@
 "paiement": "2025-08-29",
 "ex_dividende": "2025-08-27",
 "dividende": 2375.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SITAB"
 },
 {
 "date": "2025-07-21",
@@ -17038,7 +18201,8 @@
 "paiement": "2024-07-29",
 "ex_dividende": "2024-07-25",
 "dividende": 675.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SITAB"
 },
 {
 "date": "2024-06-05",
@@ -17112,7 +18276,8 @@
 "paiement": "2023-07-27",
 "ex_dividende": "2023-07-25",
 "dividende": 551.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SITAB"
 },
 {
 "date": "2023-07-13",
@@ -17165,7 +18330,8 @@
 "paiement": "2022-07-21",
 "ex_dividende": "2022-07-19",
 "dividende": 445.117,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SITAB"
 },
 {
 "date": "2022-06-13",
@@ -17572,7 +18738,8 @@
 "paiement": "2025-09-30",
 "ex_dividende": "2025-09-26",
 "dividende": 400.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2025-05-26",
@@ -17611,7 +18778,8 @@
 "paiement": "2024-09-25",
 "ex_dividende": "2024-09-23",
 "dividende": 481.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2024-06-06",
@@ -17650,7 +18818,8 @@
 "paiement": "2023-09-15",
 "ex_dividende": "2023-09-13",
 "dividende": 450.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2023-06-07",
@@ -17703,7 +18872,8 @@
 "paiement": "2022-10-21",
 "ex_dividende": "2022-10-19",
 "dividende": 432.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2022-06-02",
@@ -17756,7 +18926,8 @@
 "paiement": "2021-07-27",
 "ex_dividende": "2021-07-23",
 "dividende": 337.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2021-06-07",
@@ -17809,7 +18980,8 @@
 "paiement": "2020-09-25",
 "ex_dividende": "2020-09-23",
 "dividende": 292.5,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2020-06-15",
@@ -17855,7 +19027,8 @@
 "paiement": "2019-10-29",
 "ex_dividende": "2019-10-25",
 "dividende": 270.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2019-05-31",
@@ -17908,7 +19081,8 @@
 "paiement": "2018-09-24",
 "ex_dividende": "2018-09-20",
 "dividende": 253.47,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2018-07-27",
@@ -17947,7 +19121,8 @@
 "paiement": "2017-09-28",
 "ex_dividende": null,
 "dividende": 2700.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2017-09-26",
@@ -17958,7 +19133,8 @@
 "paiement": "2017-09-28",
 "ex_dividende": "2017-09-26",
 "dividende": 2700.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SODECI"
 },
 {
 "date": "2017-05-09",
@@ -19690,7 +20866,8 @@
 "paiement": "2024-06-25",
 "ex_dividende": "2024-06-21",
 "dividende": 81.78,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NEI-CEDA CI"
 },
 {
 "date": "2024-04-22",
@@ -19729,7 +20906,8 @@
 "paiement": "2023-09-22",
 "ex_dividende": "2023-09-20",
 "dividende": 35.25,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NEI-CEDA CI"
 },
 {
 "date": "2023-05-12",
@@ -20093,21 +21271,24 @@
 "titre": "AFRICA GLOGAL LOGISTICS CI : Attestation des Commissaires Aux Comptes - Etats financiers - Exercice 2025",
 "url": "https://www.brvm.org/sites/default/files/20261005_-_attestation_des_commissaires_aux_comptes_-_etats_financiers_-_exercice_2025_-_africa_glogal_logistics_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-09-17",
 "titre": "AFRICA GLOBAL LOGISTICS CI : Rapport des Commissaires Aux Comptes sur les Etats Financiers – Exercice 2025",
 "url": "https://www.brvm.org/sites/default/files/20260917_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_-_africa_global_logistics_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-09-17",
 "titre": "AFRICA GLOBAL LOGISTICS CI : Etats Financiers certifiés - Exercice 2025",
 "url": "https://www.brvm.org/sites/default/files/20260917_-_etats_financiers_certifies_-_exercice_2025_-_africa_global_logistics_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-08-03",
@@ -20135,7 +21316,8 @@
 "titre": "AFRICA GLOBAL LOGISTICS CI - Etats financiers - Exercice 2025",
 "url": "https://www.brvm.org/sites/default/files/20260803_-_etats_financiers_-_exercice_2025_-_africa_global_logistics_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2025-12-05",
@@ -20167,7 +21349,8 @@
 "paiement": "2025-08-29",
 "ex_dividende": "2025-08-27",
 "dividende": 92.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2025-06-04",
@@ -20206,7 +21389,8 @@
 "paiement": "2024-12-12",
 "ex_dividende": "2024-12-10",
 "dividende": 92.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2024-11-27",
@@ -20252,7 +21436,8 @@
 "paiement": "2023-11-20",
 "ex_dividende": "2023-11-16",
 "dividende": 92.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2023-11-09",
@@ -20347,7 +21532,8 @@
 "paiement": "2022-06-23",
 "ex_dividende": "2022-06-21",
 "dividende": 130.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2022-05-18",
@@ -20386,7 +21572,8 @@
 "paiement": "2021-08-11",
 "ex_dividende": "2021-08-09",
 "dividende": 100.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2021-07-01",
@@ -20446,7 +21633,8 @@
 "paiement": "2020-12-18",
 "ex_dividende": null,
 "dividende": 100.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2020-12-16",
@@ -20457,7 +21645,8 @@
 "paiement": "2020-12-18",
 "ex_dividende": "2020-12-16",
 "dividende": 100.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2020-11-05",
@@ -20545,7 +21734,8 @@
 "paiement": "2019-06-06",
 "ex_dividende": "2019-06-03",
 "dividende": 184.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2019-05-02",
@@ -20633,7 +21823,8 @@
 "paiement": "2017-07-13",
 "ex_dividende": null,
 "dividende": 8977.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2017-07-11",
@@ -20644,7 +21835,8 @@
 "paiement": "2017-07-13",
 "ex_dividende": "2017-07-11",
 "dividende": 8997.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BOLLORE TRANSPORT & LOGISTICS"
 },
 {
 "date": "2017-04-28",
@@ -20772,21 +21964,24 @@
 "titre": "TOTALENERGIES MARKETING SN : Attestation des Commissaires Aux Comptes sur le rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261109_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivites_-_1er_semestre_2026_-_totalenergies_marketing_sn.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-30",
 "titre": "TOTALENERGIES MARKETING SN : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_totalenergies_marketing_sn.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-30",
 "titre": "TOTALENERGIES MARKETING SN : Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_totalenergies_marketing_sn.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-09-25",
@@ -20796,10 +21991,29 @@
 "vu_le": "initial"
 },
 {
+"date": "2026-07-16",
+"titre": "Dividende exercice 2025 : 176,65 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2025",
+"paiement": "2026-07-17",
+"ex_dividende": "2026-07-16",
+"dividende": 176.65,
+"vu_le": "initial"
+},
+{
 "date": "2026-06-15",
 "titre": "TOTALENERGIES MARKETING SN : Rapport d'activités annuel - Exercice 2025",
 "url": "https://www.brvm.org/sites/default/files/20260615_-_rapport_dactivites_annuel_-_exercice_2025_-_totalenergies_marketing_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2026-05-29",
+"titre": "TOTALENERGIES MARKETING SENEGAL : Avis de convocation - Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20260528_-_avis_de_convocation-assemblee_generale_ordinaire_-_totalenergies_marketing_sn.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -20824,6 +22038,13 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-11-03",
+"titre": "TOTALENERGIES MARKETING SENEGAL : Communiqué - Changement important dans la Direction",
+"url": "https://www.brvm.org/sites/default/files/20251103_-_communique_-_changement_important_dans_la_direction_-_totalenergies_marketing_sn.pdf",
+"type": "dirigeants",
+"vu_le": "initial"
+},
+{
 "date": "2025-10-31",
 "titre": "TOTALENERGIES MARKETING SENEGAL : Rapport d'activités - 3ème trimestre 2025",
 "url": "https://www.brvm.org/sites/default/files/20251031_-_rapport_dactivites_-_3eme_trimestre_2025_-_totalenergies_marketing_sn.pdf",
@@ -20838,10 +22059,29 @@
 "vu_le": "initial"
 },
 {
+"date": "2025-07-09",
+"titre": "Dividende exercice 2024 : 222,4 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2024",
+"paiement": "2025-07-11",
+"ex_dividende": "2025-07-09",
+"dividende": 222.4,
+"vu_le": "initial"
+},
+{
 "date": "2025-06-10",
 "titre": "TOTALENERGIES MARKETING SENEGAL : Rapport annuel - Exercice 2024",
 "url": "https://www.brvm.org/sites/default/files/20250610_-_rapport_annuel_-_exercice_2024_-_totalenergies_marketing_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2025-05-26",
+"titre": "TOTALENERGIES MARKETING SENEGAL : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20250526_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_totalenergies_marketing_sn.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -20887,6 +22127,37 @@
 "vu_le": "initial"
 },
 {
+"date": "2024-06-27",
+"titre": "Dividende exercice 2023 : 207,58 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2023",
+"paiement": "2024-06-29",
+"ex_dividende": "2024-06-27",
+"dividende": 207.58,
+"vu_le": "initial"
+},
+{
+"date": "2024-06-26",
+"titre": "Dividende exercice 2023 : 207,58 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2023",
+"paiement": "2024-06-28",
+"ex_dividende": "2024-06-26",
+"dividende": 207.58,
+"vu_le": "initial"
+},
+{
+"date": "2024-05-13",
+"titre": "TotalEnergies Marketing Sénégal : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20240513_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_totalenergies_marketing_senegal.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2024-04-30",
 "titre": "TotalEnergies Marketing Sénégal : Rapport d'activités - 1er trimestre 2024",
 "url": "https://www.brvm.org/sites/default/files/20240430_-_rapport_dactivites_-_1er_trimestre_2024_-_totalenergies_marketing_senegal.pdf",
@@ -20926,6 +22197,25 @@
 "titre": "TotalEnergies Marketing Sénégal : Rapport d'activités - 1er Semestre 2023",
 "url": "https://www.brvm.org/sites/default/files/20231031_-_rapport_dactivites_-_1er_semestre_2023_-_totalenergies_marketing_senegal.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2023-07-11",
+"titre": "Dividende exercice 2022 : 241,01 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2022",
+"paiement": "2023-07-13",
+"ex_dividende": "2023-07-11",
+"dividende": 241.01,
+"vu_le": "initial"
+},
+{
+"date": "2023-05-26",
+"titre": "TOTALENERGIES MARKETING SEBNEGAL : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/avis_de_convocation_ago_130623_totalenergies_marketing_sn.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -20971,6 +22261,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2022-07-20",
+"titre": "Dividende exercice 2021 : 187,3 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2021",
+"paiement": "2022-07-22",
+"ex_dividende": "2022-07-20",
+"dividende": 187.3,
+"vu_le": "initial"
+},
+{
+"date": "2022-05-31",
+"titre": "TOTAL ENERGIES SENEGAL : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20220531_-_avis_de_convocation_-_assemblee_generale_ordinaire_-_total_energies_sn.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2022-04-29",
 "titre": "TOTAL SENEGAL : Rapport d'activité 1er trimestre 2022",
 "url": "https://www.brvm.org/sites/default/files/20220429_-_rapport_dactivite_-_1er_trimestre_2022_-_total_senegal.pdf",
@@ -21006,6 +22315,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2021-07-28",
+"titre": "Dividende exercice 2020 : 223,6 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2020",
+"paiement": "2021-07-30",
+"ex_dividende": "2021-07-28",
+"dividende": 223.6,
+"vu_le": "initial"
+},
+{
+"date": "2021-06-11",
+"titre": "TOTAL SENEGAL : Avis de convocation à l'Assemblée Générale Mixte",
+"url": "https://www.brvm.org/sites/default/files/20210611_-_avis_de_convocation_-_assemblee_generale_mixte_-_total_sn.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2021-06-10",
 "titre": "TOTAL SENEGAL : Rapport d'activités au 1er trimestre 2021",
 "url": "https://www.brvm.org/sites/default/files/20210610_-_rapport_dactivites_au_1er_trimestre_2021_-_total_senegal.pdf",
@@ -21020,6 +22348,30 @@
 "vu_le": "initial"
 },
 {
+"date": "2020-12-22",
+"titre": "Dividende exercice 2019 : 105,3 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2019",
+"paiement": "2020-12-22",
+"ex_dividende": null,
+"dividende": 105.3,
+"vu_le": "initial"
+},
+{
+"date": "2020-12-18",
+"titre": "Dividende exercice 2019 : 105,3 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2019",
+"paiement": "2020-12-22",
+"ex_dividende": "2020-12-18",
+"dividende": 105.3,
+"vu_le": "initial"
+},
+{
 "date": "2020-11-10",
 "titre": "TOTAL SENEGAL : Rapport de Gestion - Exercice 2019",
 "url": "https://www.brvm.org/sites/default/files/20201110_-_rapport_de_gestion_-_exercice_2019_-_total_sn.pdf",
@@ -21030,6 +22382,13 @@
 "date": "2020-10-26",
 "titre": "TOTAL SN : Avis de convocation - Assemblée Générale Ordinaire",
 "url": "https://www.brvm.org/sites/default/files/20201026-avis_de_convocation_-_assemblee_generale_ordinaire_-_total_sn.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
+"date": "2020-10-09",
+"titre": "TOTAL SENEGAL : Avis de convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20201009_-_avis_de_convocation_ago_-_total_sn.pdf",
 "type": "assemblee",
 "vu_le": "initial"
 },
@@ -21055,6 +22414,25 @@
 "vu_le": "initial"
 },
 {
+"date": "2019-07-25",
+"titre": "Dividende exercice 2018 : 105,3 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2018",
+"paiement": "2019-07-29",
+"ex_dividende": "2019-07-25",
+"dividende": 105.3,
+"vu_le": "initial"
+},
+{
+"date": "2019-06-05",
+"titre": "TOTAL SENEGAL: Avis de convocation et projet de résolutions - Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20190605_-_avis_de_convocation_et_projet_de_resolution_a_lassemblee_generale_ordinaire_-_total_senegal.pdf",
+"type": "assemblee",
+"vu_le": "initial"
+},
+{
 "date": "2019-05-02",
 "titre": "TOTAL SN : Etats financiers Exercice 2018",
 "url": "https://www.brvm.org/sites/default/files/20190502_-_etats_financiers_exercice_2018_-_total_sn.pdf",
@@ -21066,6 +22444,25 @@
 "titre": "TOTAL SENEGAL : Attestation des Commissaires aux comptes du rapport d'activités du 1er semestre 2018",
 "url": "https://www.brvm.org/sites/default/files/20181109_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivite_-_total_sn.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2018-07-25",
+"titre": "Dividende exercice 2017 : 56,25 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2017",
+"paiement": "2018-07-27",
+"ex_dividende": "2018-07-25",
+"dividende": 56.25,
+"vu_le": "initial"
+},
+{
+"date": "2018-06-07",
+"titre": "TOTAL SENEGAL : Convocation à l'Assemblée Générale Ordinaire",
+"url": "https://www.brvm.org/sites/default/files/20180607_-_total_senegal_convocation_ago_du_18_juin_2018_projets_de_resolutions.pdf",
+"type": "assemblee",
 "vu_le": "initial"
 },
 {
@@ -21087,6 +22484,30 @@
 "titre": "Bilan semestriel contrat de liquidité - TOTAL SENEGAL",
 "url": "https://www.brvm.org/sites/default/files/20170922-bilan_semestriel_contrat_de_liquidite-_total_senegal.pdf",
 "type": "resultats",
+"vu_le": "initial"
+},
+{
+"date": "2017-07-25",
+"titre": "Dividende exercice 2016 : 450 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2016",
+"paiement": "2017-07-25",
+"ex_dividende": null,
+"dividende": 450.0,
+"vu_le": "initial"
+},
+{
+"date": "2017-07-21",
+"titre": "Dividende exercice 2016 : 450 FCFA net par action",
+"url": "",
+"type": "dividende",
+"emetteur": "TOTAL SENEGAL S.A.",
+"exercice": "2016",
+"paiement": "2017-07-25",
+"ex_dividende": "2017-07-21",
+"dividende": 450.0,
 "vu_le": "initial"
 },
 {
@@ -21138,21 +22559,26 @@
 "titre": "PALM CI : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261027_-_rapport_dactivites_-_3e_trimestre_2026_-_palm_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"detail": "Le résultat net s'établit à 15 871 millions de francs CFA à fin septembre 2026, en baisse de 12%",
+"sens": -1,
+"lu": true
 },
 {
 "date": "2026-10-07",
 "titre": "PALM CI : Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261007_-_rapport_dactivites_-_1er_semestre_2026_-_palm_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-07",
 "titre": "PALM CI : Attestation des Commissaires Aux Comptes sur le rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261007_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivites_-_1er_semestre_2026_-_palm_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-06-26",
@@ -21163,7 +22589,8 @@
 "paiement": "2026-06-29",
 "ex_dividende": "2026-06-26",
 "dividende": 501.596,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2026-04-29",
@@ -21209,7 +22636,8 @@
 "paiement": "2025-09-10",
 "ex_dividende": "2025-09-08",
 "dividende": 513.012,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2025-06-26",
@@ -21269,7 +22697,8 @@
 "paiement": "2024-07-26",
 "ex_dividende": "2024-07-24",
 "dividende": 563.306,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2024-05-24",
@@ -21322,7 +22751,8 @@
 "paiement": "2023-07-19",
 "ex_dividende": "2023-07-17",
 "dividende": 1213.632,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2023-06-05",
@@ -21368,7 +22798,8 @@
 "paiement": "2022-08-31",
 "ex_dividende": "2022-08-29",
 "dividende": 1236.34,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2022-06-02",
@@ -21421,7 +22852,8 @@
 "paiement": "2021-08-27",
 "ex_dividende": "2021-08-25",
 "dividende": 102.51,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2021-06-02",
@@ -21509,7 +22941,8 @@
 "paiement": "2018-09-24",
 "ex_dividende": "2018-09-20",
 "dividende": 253.47,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2018-04-24",
@@ -21541,7 +22974,8 @@
 "paiement": "2017-09-29",
 "ex_dividende": null,
 "dividende": 240.6,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2017-09-27",
@@ -21552,7 +22986,8 @@
 "paiement": "2017-09-29",
 "ex_dividende": "2017-09-27",
 "dividende": 240.6,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "PALM CI"
 },
 {
 "date": "2017-05-11",
@@ -21715,21 +23150,24 @@
 "titre": "SICABLE CI : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_sicable_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-30",
 "titre": "SICABLE CI : Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_sicable_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-30",
 "titre": "SICABLE CI : Attestation des Commissaires Aux Comptes sur le rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivites_-_1er_semestre_2026_-_sicable_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-05-29",
@@ -21740,7 +23178,8 @@
 "paiement": "2026-06-01",
 "ex_dividende": "2026-05-29",
 "dividende": 152.02,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2026-04-20",
@@ -21821,7 +23260,8 @@
 "paiement": "2025-06-02",
 "ex_dividende": "2025-05-28",
 "dividende": 128.1,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2025-05-15",
@@ -21951,7 +23391,8 @@
 "paiement": "2023-08-02",
 "ex_dividende": "2023-07-31",
 "dividende": 69.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2023-03-14",
@@ -21990,7 +23431,8 @@
 "paiement": "2022-08-02",
 "ex_dividende": "2022-07-29",
 "dividende": 69.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2022-04-29",
@@ -22036,7 +23478,8 @@
 "paiement": "2021-08-02",
 "ex_dividende": "2021-07-29",
 "dividende": 133.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2021-04-30",
@@ -22075,7 +23518,8 @@
 "paiement": "2020-07-29",
 "ex_dividende": null,
 "dividende": 75.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2020-07-27",
@@ -22086,7 +23530,8 @@
 "paiement": "2020-07-29",
 "ex_dividende": "2020-07-27",
 "dividende": 75.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2020-06-03",
@@ -22139,7 +23584,8 @@
 "paiement": "2019-06-03",
 "ex_dividende": null,
 "dividende": 75.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2019-05-29",
@@ -22150,7 +23596,8 @@
 "paiement": "2019-06-03",
 "ex_dividende": "2019-05-29",
 "dividende": 75.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2019-03-13",
@@ -22189,7 +23636,8 @@
 "paiement": "2018-05-31",
 "ex_dividende": "2018-05-29",
 "dividende": 100.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2018-05-09",
@@ -22228,7 +23676,8 @@
 "paiement": "2017-06-30",
 "ex_dividende": "2017-06-28",
 "dividende": 2000.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SICABLE"
 },
 {
 "date": "2017-05-05",
@@ -22342,21 +23791,26 @@
 "titre": "SMB CI : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_3e_trimestre_2026_-_smb_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-30",
 "titre": "SMB CI : Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_rapport_dactivites_-_1er_semestre_2026_-_smb_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"detail": "5 904 millions de FCFA au 30 juin 2025, soit une progression de 66 % : + Un résultat net de 5 628 millions de FCFA, contre 3 925 millions de FCFA au premier semestre 2025, représentant une hausse de 43 %",
+"sens": 1,
+"lu": true
 },
 {
 "date": "2026-10-30",
 "titre": "SMB CI : Attestation des Commissaires Aux Comptes sur le rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261030_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivites_-_1er_semestre_2026_-_smb_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-09-17",
@@ -22414,7 +23868,8 @@
 "paiement": "2025-09-15",
 "ex_dividende": "2025-09-11",
 "dividende": 700.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2025-09-03",
@@ -22481,7 +23936,8 @@
 "paiement": "2024-09-30",
 "ex_dividende": "2024-09-26",
 "dividende": 1080.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2024-05-30",
@@ -22583,7 +24039,8 @@
 "paiement": "2022-08-24",
 "ex_dividende": "2022-08-22",
 "dividende": 720.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2022-06-13",
@@ -22678,7 +24135,8 @@
 "paiement": "2021-07-15",
 "ex_dividende": "2021-07-13",
 "dividende": 810.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2021-05-20",
@@ -22787,7 +24245,8 @@
 "paiement": "2019-08-30",
 "ex_dividende": null,
 "dividende": 450.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2019-08-29",
@@ -22798,7 +24257,8 @@
 "paiement": "2019-08-29",
 "ex_dividende": null,
 "dividende": 450.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2019-08-28",
@@ -22809,7 +24269,8 @@
 "paiement": "2019-08-30",
 "ex_dividende": "2019-08-28",
 "dividende": 450.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "SMB"
 },
 {
 "date": "2019-07-12",
@@ -23070,14 +24531,16 @@
 "titre": "TRACTAFRIC MOTORS CI : Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261029_-_rapport_dactivites_-_1er_semestre_2026_-_tractafric_motors_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-29",
 "titre": "TRACTAFRIC MOTORS CI : Etats financiers - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261029_-_etats_financiers_-_1er_semestre_2026_-_tractafric_motors_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-10-22",
@@ -23142,7 +24605,8 @@
 "paiement": "2025-09-30",
 "ex_dividende": "2025-09-26",
 "dividende": 207.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2025-06-13",
@@ -23195,7 +24659,8 @@
 "paiement": "2024-09-24",
 "ex_dividende": "2024-09-20",
 "dividende": 182.7,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2024-09-04",
@@ -23269,7 +24734,8 @@
 "paiement": "2023-09-13",
 "ex_dividende": "2023-09-11",
 "dividende": 224.1,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2023-08-03",
@@ -23336,7 +24802,8 @@
 "paiement": "2022-08-30",
 "ex_dividende": "2022-08-26",
 "dividende": 175.86,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2022-06-16",
@@ -23396,7 +24863,8 @@
 "paiement": "2021-09-02",
 "ex_dividende": "2021-08-31",
 "dividende": 162.9,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2021-06-07",
@@ -23449,7 +24917,8 @@
 "paiement": "2020-09-01",
 "ex_dividende": null,
 "dividende": 159.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2020-08-28",
@@ -23460,7 +24929,8 @@
 "paiement": "2020-09-01",
 "ex_dividende": "2020-08-28",
 "dividende": 159.3,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2020-06-23",
@@ -23506,7 +24976,8 @@
 "paiement": "2019-09-18",
 "ex_dividende": "2019-09-16",
 "dividende": 9623.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2019-06-13",
@@ -23566,7 +25037,8 @@
 "paiement": "2017-09-25",
 "ex_dividende": "2017-09-21",
 "dividende": 13500.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "TRACTAFRIC CI"
 },
 {
 "date": "2017-06-06",
@@ -23687,14 +25159,20 @@
 "titre": "NESTLE CI: Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261022_-_rapport_dactivites_-_3e_trimestre_2026_-_nestle_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"detail": "Résultat des Activités Ordinaires 11 986 513 11 935 555 18 426 899 0,4% 50 958 Résultat Net Commentaires : • Le chiffre d’affaires maintient une dynamique soutenue, avec une croissance de 11,0 %",
+"sens": 1,
+"lu": true
 },
 {
 "date": "2026-10-22",
 "titre": "NESTLE CI: Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261022_-_rapport_dactivites_-_1er_semestre_2026_-_nestle_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"detail": "Confirme la solidité de la performance opérationnelle et contribue à porter le résultat net à 10,1 milliards de FCFA, en hausse de 7,16 %",
+"sens": 1,
+"lu": true
 },
 {
 "date": "2026-09-04",
@@ -23752,7 +25230,8 @@
 "paiement": "2025-08-18",
 "ex_dividende": "2025-08-13",
 "dividende": 820.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NESTLE CI"
 },
 {
 "date": "2025-05-26",
@@ -23812,7 +25291,8 @@
 "paiement": "2024-07-20",
 "ex_dividende": "2024-07-16",
 "dividende": 675.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NESTLE CI"
 },
 {
 "date": "2024-05-21",
@@ -23865,7 +25345,8 @@
 "paiement": "2023-08-08",
 "ex_dividende": "2023-08-03",
 "dividende": 728.1,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NESTLE CI"
 },
 {
 "date": "2023-04-25",
@@ -23932,7 +25413,8 @@
 "paiement": "2022-08-02",
 "ex_dividende": "2022-07-29",
 "dividende": 856.8,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NESTLE CI"
 },
 {
 "date": "2022-04-22",
@@ -23992,7 +25474,8 @@
 "paiement": "2021-07-30",
 "ex_dividende": "2021-07-28",
 "dividende": 363.665,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "NESTLE CI"
 },
 {
 "date": "2021-05-11",
@@ -24190,14 +25673,20 @@
 "titre": "BIIC BN : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261110_-_rapport_dactivites_-_3e_trimestre_2026_-_biic_bn.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"detail": "IAS 34 NB : informations non certifiées par les Commissaires aux Comptes Résultat Net en hausse de 64%",
+"sens": 1,
+"lu": true
 },
 {
 "date": "2026-09-21",
 "titre": "BIIC BN : Rapport d'activités et Etats financiers IFRS - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20260921_-_rapport_dactivites_et_etats_financiers_ifrs_-_1er_semestre_2026_-_biic_bn.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"detail": "Le résultat net s’établit à 18,4 milliards FCFA, en progression de 11 %",
+"sens": 1,
+"lu": true
 },
 {
 "date": "2026-07-30",
@@ -24269,7 +25758,8 @@
 "paiement": "2025-09-15",
 "ex_dividende": "2025-09-11",
 "dividende": 254.6,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "BIIC"
 },
 {
 "date": "2025-06-27",
@@ -24306,21 +25796,24 @@
 "titre": "CORIS BANK INTERNATIONAL BF : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261029_-_rapport_dactivites_-_3e_trimestre_2026_-_coris_bank_international_bf.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-08-31",
 "titre": "CORIS BANK INTERNATIONAL BF : Rapport d'activités - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20260831_-_rapport_dactivites_-_1er_semestre_2026_-_coris_bank_international_bf.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-08-31",
 "titre": "CORIS BANK INTERNATIONAL BF : Rapport d'Examen Limité des Commissaires Aux Comptes sur les Etats Financiers au 30 juin 2026",
 "url": "https://www.brvm.org/sites/default/files/20260831_-_rapport_dexamen_limite_des_cac_sur_les_etats_financiers_au_30_juin_2026_-_coris_bank_international_bf.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-07-07",
@@ -24338,7 +25831,8 @@
 "paiement": "2026-06-19",
 "ex_dividende": "2026-06-18",
 "dividende": 900.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CORIS BANK INTERNATIONAL"
 },
 {
 "date": "2026-04-30",
@@ -24384,7 +25878,8 @@
 "paiement": "2025-07-07",
 "ex_dividende": "2025-07-03",
 "dividende": 555.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CORIS BANK INTERNATIONAL"
 },
 {
 "date": "2025-04-30",
@@ -24437,7 +25932,8 @@
 "paiement": "2024-07-05",
 "ex_dividende": "2024-07-03",
 "dividende": 790.0,
-"vu_le": "initial"
+"vu_le": "initial",
+"emetteur": "CORIS BANK INTERNATIONAL"
 },
 {
 "date": "2024-05-02",
@@ -24565,26 +26061,29 @@
 "titre": "BRIDGE BANK GROUP CI : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261028_-_rapport_dactivites_-_3e_trimestre_2026_-_bridge_bank_group_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-09-24",
 "titre": "BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20260924_-_rapport_des_commissaires_aux_comptes_-_1er_semestre_2026_-_bridge_bank_group_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 },
 {
 "date": "2026-09-24",
 "titre": "BRIDGE BANK GROUP CI : 1er semestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20260924_-_rapport_dactivites_-_1er_semestre_2026_-_bridge_bank_group_ci.pdf",
 "type": "resultats",
-"vu_le": "initial"
+"vu_le": "initial",
+"lu": true
 }
 ],
 "_info": {
-"version": 3,
+"version": 4,
 "maj": "2026-11-24",
-"documents_lus": 80
+"documents_lus": 28
 }
 }

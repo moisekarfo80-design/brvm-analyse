@@ -1,13 +1,13 @@
-    communiques ligne brute : <td>UNXC</td><td class="text-right">1 720</td><td class="text-right">1,18% <span class="icone-seance good"></span></td> 
-  communiques : 30 annonces (2 sans société reconnue)
-    convocations-assemblees-generales ligne brute : <td>UNXC</td><td class="text-right">1 720</td><td class="text-right">1,18% <span class="icone-seance good"></span></td> 
-  convocations-assemblees-generales : 30 annonces (1 sans société reconnue)
-    changements-de-dirigeants ligne brute : <td>UNXC</td><td class="text-right">1 720</td><td class="text-right">1,18% <span class="icone-seance good"></span></td> 
-  changements-de-dirigeants : 30 annonces (2 sans société reconnue)
-    franchissements-de-seuil ligne brute : <td>UNXC</td><td class="text-right">1 720</td><td class="text-right">1,18% <span class="icone-seance good"></span></td> 
-  franchissements-de-seuil : 30 annonces (5 sans société reconnue)
-    dividendes ligne brute : <td>UNXC</td><td class="text-right">1 720</td><td class="text-right">1,18% <span class="icone-seance good"></span></td> 
-  dividendes : 20 paiements (4 sans société reconnue)
+    communiques ligne brute : <td>SCRC</td><td class="text-right">1 250</td><td class="text-right">1,63% <span class="icone-seance good"></span></td> 
+  communiques : 393 annonces (70 sans société reconnue)
+    convocations-assemblees-generales ligne brute : <td>SCRC</td><td class="text-right">1 250</td><td class="text-right">1,63% <span class="icone-seance good"></span></td> 
+  convocations-assemblees-generales : 600 annonces (51 sans société reconnue)
+    changements-de-dirigeants ligne brute : <td>SCRC</td><td class="text-right">1 250</td><td class="text-right">1,63% <span class="icone-seance good"></span></td> 
+  changements-de-dirigeants : 109 annonces (8 sans société reconnue)
+    franchissements-de-seuil ligne brute : <td>SCRC</td><td class="text-right">1 250</td><td class="text-right">1,63% <span class="icone-seance good"></span></td> 
+  franchissements-de-seuil : 35 annonces (4 sans société reconnue)
+    dividendes ligne brute : <td>SCRC</td><td class="text-right">1 250</td><td class="text-right">1,63% <span class="icone-seance good"></span></td> 
+  dividendes : 383 paiements (82 sans société reconnue)
     SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
     SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
     SOGC   2026-10-30 resultats  SOGB CI : Rapport d'activités - 3e trimestre 2026 | Le résultat net au 30 septembre 2026 est en baisse de 34%
@@ -28,7 +28,7 @@
     BICC   2026-07-14 autre      BICI CI : Communiqué 
     NSBC   2026-10-30 resultats  NSIA BANQUE CI : Rapport d'activités - 3e trimestre 2026 
     NSBC   2026-10-23 resultats  NSIA BANQUE CI : Rapport d'activités - 1er semestre 2026 
-    NSBC   2026-07-14 autre      NSIA BANQUE CI : Communiqué 
+    NSBC   2026-08-03 dividende  Dividende exercice 2025 : 768,16 FCFA net par action 
     FTSC   2026-11-16 dirigeants FILTISAC CI : Changement important dans la Direction 
     FTSC   2026-11-05 resultats  FILTISAC CI : Rapport d'activités - 3e trimestre 2026 - (Annule et rem 
     FTSC   2026-11-02 resultats  FILTISAC CI : Rapport d'activités - 3e trimestre 2026 
@@ -61,7 +61,7 @@
     UNLC   2024-09-04 resultats  UNILEVER CÔTE D'IVOIRE : Etats Financiers - Exercice 2023 
     SGBC   2026-10-30 resultats  SOCIETE GENERALE CI : Rapport d'activités - 3e trimestre 2026 
     SGBC   2026-08-31 resultats  SOCIETE GENERALE CI : Rapport d'activités - 1er semestre 2026 
-    SGBC   2026-06-04 assemblee  SOCIETE GENERALE CI : Avis de convocation - Assemblée Générale Mixte 
+    SGBC   2026-08-21 dividende  Dividende exercice 2025 : 2 606 FCFA net par action 
     ECOC   2026-10-27 resultats  ECOBANK CI : Rapport d'activités - 3e trimestre 2026 
     ECOC   2026-09-09 resultats  ECOBANK CI : Rapport d'activités - 1er semestre 2026 
     ECOC   2026-05-22 dividende  Dividende exercice 2025 : 888 FCFA net par action 
@@ -128,23 +128,23 @@
     TTLS   2026-11-09 resultats  TOTALENERGIES MARKETING SN : Attestation des Commissaires Aux Comptes  
     TTLS   2026-10-30 resultats  TOTALENERGIES MARKETING SN : Rapport d'activités - 3e trimestre 2026 
     TTLS   2026-10-30 resultats  TOTALENERGIES MARKETING SN : Rapport d'activités - 1er semestre 2026 
-    PALC   2026-10-27 resultats  PALM CI : Rapport d'activités - 3e trimestre 2026 
+    PALC   2026-10-27 resultats  PALM CI : Rapport d'activités - 3e trimestre 2026 | Le résultat net s'établit à 15 871 millions de francs CFA à fin septembre 2026, 
     PALC   2026-10-07 resultats  PALM CI : Rapport d'activités - 1er semestre 2026 
     PALC   2026-10-07 resultats  PALM CI : Attestation des Commissaires Aux Comptes sur le rapport d'ac 
     CABC   2026-10-30 resultats  SICABLE CI : Rapport d'activités - 3e trimestre 2026 
     CABC   2026-10-30 resultats  SICABLE CI : Rapport d'activités - 1er semestre 2026 
     CABC   2026-10-30 resultats  SICABLE CI : Attestation des Commissaires Aux Comptes sur le rapport d 
     SMBC   2026-10-30 resultats  SMB CI : Rapport d'activités - 3e trimestre 2026 
-    SMBC   2026-10-30 resultats  SMB CI : Rapport d'activités - 1er semestre 2026 
+    SMBC   2026-10-30 resultats  SMB CI : Rapport d'activités - 1er semestre 2026 | 5 904 millions de FCFA au 30 juin 2025, soit une progression de 66 % : + Un résu
     SMBC   2026-10-30 resultats  SMB CI : Attestation des Commissaires Aux Comptes sur le rapport d'act 
     PRSC   2026-10-29 resultats  TRACTAFRIC MOTORS CI : Rapport d'activités - 1er semestre 2026 
     PRSC   2026-10-29 resultats  TRACTAFRIC MOTORS CI : Etats financiers - 1er semestre 2026 
     PRSC   2026-10-22 dividende  Dividende exercice 2025 : 209 FCFA net par action 
-    NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 3e trimestre 2026 
-    NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 1er semestre 2026 
+    NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 3e trimestre 2026 | Résultat des Activités Ordinaires 11 986 513 11 935 555 18 426 899 0,4% 50 958 R
+    NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 1er semestre 2026 | Confirme la solidité de la performance opérationnelle et contribue à porter le r
     NTLC   2026-09-04 dividende  Dividende exercice 2025 : 420 FCFA net par action 
-    BICB   2026-11-10 resultats  BIIC BN : Rapport d'activités - 3e trimestre 2026 
-    BICB   2026-09-21 resultats  BIIC BN : Rapport d'activités et Etats financiers IFRS - 1er semestre  
+    BICB   2026-11-10 resultats  BIIC BN : Rapport d'activités - 3e trimestre 2026 | IAS 34 NB : informations non certifiées par les Commissaires aux Comptes Résulta
+    BICB   2026-09-21 resultats  BIIC BN : Rapport d'activités et Etats financiers IFRS - 1er semestre  | Le résultat net s’établit à 18,4 milliards FCFA, en progression de 11 %
     BICB   2026-07-30 dividende  Dividende exercice 2025 : 254,6 FCFA net par action 
     CBIBF  2026-10-29 resultats  CORIS BANK INTERNATIONAL BF : Rapport d'activités - 3e trimestre 2026 
     CBIBF  2026-08-31 resultats  CORIS BANK INTERNATIONAL BF : Rapport d'activités - 1er semestre 2026 
@@ -152,5 +152,5 @@
     BBGC   2026-10-28 resultats  BRIDGE BANK GROUP CI : Rapport d'activités - 3e trimestre 2026 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : 1er semestre 2026 
-  Sociétés non reconnues : Franchissement de seuil - BANK OF AFRICA (3); TOTALENERGIES MARKETING SENEGAL (2); AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); TOTALENERGIES MARKETING CÔTE D'IVOIRE (1); Franchissement de seuil - ECOBANK TG - E (1); Franchissement de seuil - MOVIS CI - Exe (1); TOTAL (1); SGCI (1); NSBC (1); ECOBANK TG (1)
-Actualite : 48 societes, 0 nouvelle(s) publication(s), 80 document(s) lu(s)
+  Sociétés non reconnues : MOVIS CI (14); COMMUNIQUE - BANK OF AFRICA BN - Exercic (12); BANK OF AFRICA CI (12); TOTAL (12); BANK OF AFRICA BF (12); BOA CÔTE D'IVOIRE (11); BANK OF AFRICA BN (11); COMMUNIQUE - BANK OF AFRICA NG - Exercic (10); BANK OF AFRICA SN (10); BANK OF AFRICA NG (9); CROWN SIEM CI (8); COMMUNIQUE - BANK OF AFRICA BF - Exercic (7); BANK OF AFRICA ML (7); COMMUNIQUE - BANK OF AFRICA CI - Exercic (5); COMMUNIQUE - BANK OF AFRICA SN - Exercic (5); Changement de dirigeant - BANK OF AFRICA (5); Convocation Assemblée générale mixte Exe (3); Franchissement de seuil - BANK OF AFRICA (3); MOVIS CÔTE D'IVOIRE (2); CRRH-UEMOA (2); COMMUNIQUE - BANK OF AFRICA ML - Exercic (2); COMMUNIQUE - MOVIS CI - Exercice 2013 (P (2); COMMUNIQUE - TPCI 6,50% 2006-2009 - Exer (2); BANK OF AFRICA SENEGAL (2); BANK OF AFRICA BURKINA FASO (2); BANK OF AFRICA CÔTE D'IVOIRE (2); BANK OF AFRICA MALI (2); Convocation Assemblée générale ordinaire (2); Dividende exercice 2018 (2); Dividende exercice 2017 (2); AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); TPBF 6,50% 2018-2025 (1); Ordonnance de prorogation AGO - MOVIS CI (1); Première cotation - TPBF 6.50% 2017-2024 (1); Communique 09.02.18 (1); COMMUNIQUE MOVIS CI (1); COMMUNIQUE - CROWN SIEM CI - Exercice 20 (1); COMMUNIQUE - BAN K OF AFRICA CI - Exerci (1); COMMUNIQUE - MOVIS CI - Exercice 2014 (P (1)
+Actualite : 48 societes, 147 nouvelle(s) publication(s), 28 document(s) lu(s)
