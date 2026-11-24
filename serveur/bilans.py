@@ -389,6 +389,8 @@ def lire_pdf(chemin, diag=False, exercice=None):
 
 # --------------------------------------------------------------------------- site BRVM
 ALIAS = {  # mots du titre de la publication -> symbole
+    "TOTALENERGIES MARKETING SENEGAL": "TTLS", "TOTALENERGIES MARKETING COTE D'IVOIRE": "TTLC", "TOTAL SENEGAL": "TTLS",
+    "TOTAL COTE D'IVOIRE": "TTLC", "SGCI": "SGBC", "NSBC": "NSBC", "ECOBANK TG": "ETIT", "ECOBANK TOGO": "ETIT",
     "SICABLE": "CABC", "FILTISAC": "FTSC", "NEI": "NEIC", "NESTLE": "NTLC", "SEMC": "SEMC", "EVIOSYS": "SEMC",
     "SITAB": "STBC", "SMB": "SMBC", "SOLIBRA": "SLBC", "UNILEVER": "UNLC", "UNIWAX": "UNXC", "SUCRIVOIRE": "SCRC",
     "SICOR": "SICC", "SOGB": "SOGC", "SAPH": "SPHC", "PALM": "PALC", "ABJ": "ABJC", "SERVAIR": "ABJC", "BERNABE": "BNBC",
