@@ -240,6 +240,20 @@ def main():
         if annonce:  # dividende annonce par la societe, plus recent que le bulletin de reference
             div, ddiv, frais = div_annonce, ddiv_annonce, (jour - dt.date.fromisoformat(ddiv_annonce)).days <= 430
         fiche["dividende_source"] = source_div
+        # evolution du dividende d'une annee sur l'autre (tableau officiel), pour information
+        par_exo = {}
+        for x in actu:
+            if x["type"] == "dividende" and x.get("dividende") and x.get("exercice") and x["exercice"] not in par_exo:
+                v = x["dividende"]
+                for op in ops.get(s, []):
+                    if x["date"] < op["date"]:
+                        v = v / op["ratio"]
+                par_exo[x["exercice"]] = v
+        exos = sorted(par_exo, reverse=True)
+        if len(exos) >= 2 and int(exos[0]) - int(exos[1]) == 1 and par_exo[exos[1]] > 0:
+            g = par_exo[exos[0]] / par_exo[exos[1]] - 1
+            if abs(g) >= 0.10:
+                fiche["raisons"].append(("plus" if g > 0 else "moins", f"Dividende {exos[0]} {'en hausse' if g > 0 else 'en baisse'} de {fr(abs(g) * 100, 0)} % par rapport à {exos[1]}"))
         rdt = div / cours if frais else 0.0
         bpa = a.get("bpa")
         for op in ops.get(s, []):
