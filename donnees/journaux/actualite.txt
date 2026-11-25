@@ -1,12 +1,12 @@
-    communiques ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+    communiques ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
   communiques : 30 annonces (2 sans société reconnue)
-    convocations-assemblees-generales ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+    convocations-assemblees-generales ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
   convocations-assemblees-generales : 30 annonces (0 sans société reconnue)
-    changements-de-dirigeants ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+    changements-de-dirigeants ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
   changements-de-dirigeants : 30 annonces (0 sans société reconnue)
-    franchissements-de-seuil ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+    franchissements-de-seuil ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
   franchissements-de-seuil : 30 annonces (1 sans société reconnue)
-    dividendes ligne brute : <td>TTLC</td><td class="text-right">2 985</td><td class="text-right">6,42% <span class="icone-seance good"></span></td> 
+    dividendes ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
   dividendes : 20 paiements (1 sans société reconnue)
     SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
     SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
