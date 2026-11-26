@@ -954,6 +954,14 @@
 ],
 "ETIT": [
 {
+"date": "2026-11-25",
+"titre": "ETI TG : Communiqué de Presse",
+"url": "https://www.brvm.org/sites/default/files/20261125_-_communique_de_presse_-_eti_tg.pdf",
+"type": "autre",
+"vu_le": "2026-11-26",
+"lu": true
+},
+{
 "date": "2026-10-28",
 "titre": "ETI TG : Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261028_-_rapport_dactivites_-_3e_trimestre_2026_-_eti_tg.pdf",
@@ -30034,6 +30042,16 @@
 ],
 "NTLC": [
 {
+"date": "2026-11-25",
+"titre": "NESTLE CI : Attestation des Commissaires Aux Comptes sur le rapport d'activités - 1er semestre 2026",
+"url": "https://www.brvm.org/sites/default/files/20261125_-_attestation_des_commissaires_aux_comptes_sur_le_rapport_dactivites_-_1er_semestre_2026_-_nestle_ci.pdf",
+"type": "resultats",
+"vu_le": "2026-11-26",
+"detail": "Confirme la solidité de la performance opérationnelle et contribue à porter le résultat net à 10,1 milliards de FCFA, en hausse de 7,16 %",
+"sens": 1,
+"lu": true
+},
+{
 "date": "2026-10-22",
 "titre": "NESTLE CI: Rapport d'activités - 3e trimestre 2026",
 "url": "https://www.brvm.org/sites/default/files/20261022_-_rapport_dactivites_-_3e_trimestre_2026_-_nestle_ci.pdf",
@@ -31094,7 +31112,7 @@
 ],
 "_info": {
 "version": 5,
-"maj": "2026-11-25",
-"documents_lus": 0
+"maj": "2026-11-26",
+"documents_lus": 2
 }
 }

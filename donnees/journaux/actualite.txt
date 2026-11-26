@@ -1,19 +1,19 @@
-    communiques ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
+    communiques ligne brute : <td>NSBC</td><td class="text-right">16 125</td><td class="text-right">7,50% <span class="icone-seance good"></span></td> 
   communiques : 30 annonces (2 sans société reconnue)
-    convocations-assemblees-generales ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
+    convocations-assemblees-generales ligne brute : <td>Valeur des transactions</td><td class="text-right">2 053 606 095 FCFA</td><td></td> 
   convocations-assemblees-generales : 30 annonces (0 sans société reconnue)
-    changements-de-dirigeants ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
+    changements-de-dirigeants ligne brute : <td>UNLC</td><td class="text-right">38 850</td><td class="text-right">-7,50% <span class="icone-seance bad"></span></td> 
   changements-de-dirigeants : 30 annonces (0 sans société reconnue)
-    franchissements-de-seuil ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
+    franchissements-de-seuil ligne brute : <td>Valeur des transactions</td><td class="text-right">2 053 606 095 FCFA</td><td></td> 
   franchissements-de-seuil : 30 annonces (1 sans société reconnue)
-    dividendes ligne brute : <td>BOAN</td><td class="text-right">4 350</td><td class="text-right">5,97% <span class="icone-seance good"></span></td> 
+    dividendes ligne brute : <td>NSBC</td><td class="text-right">16 125</td><td class="text-right">7,50% <span class="icone-seance good"></span></td> 
   dividendes : 20 paiements (1 sans société reconnue)
     SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
     SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
     SOGC   2026-10-30 resultats  SOGB CI : Rapport d'activités - 3e trimestre 2026 | Le résultat net au 30 septembre 2026 est en baisse de 34%
+    ETIT   2026-11-25 autre      ETI TG : Communiqué de Presse 
     ETIT   2026-10-28 resultats  ETI TG : Rapport d'activités - 3e trimestre 2026 | : « Nous avons 24,9 % Rendement des capitaux propres corporels enregistré un bén
     ETIT   2026-10-23 assemblee  ETI TG : Communiqué - Annulation de l'Assemblée Générale Ordinaire 
-    ETIT   2026-10-02 assemblee  ETI TG : Avis de convocation - Assemblée Générale Ordinaire 
     SNTS   2026-10-29 resultats  SONATEL SN : Rapport d'activités - 3e trimestre 2026 
     SNTS   2026-10-13 autre      SONATEL SN : Communiqué 
     SNTS   2026-09-18 assemblee  SONATEL SN : Avis de convocation - Assemblée Générale Extraordinaire 
@@ -140,9 +140,9 @@
     PRSC   2026-10-29 resultats  TRACTAFRIC MOTORS CI : Rapport d'activités - 1er semestre 2026 
     PRSC   2026-10-29 resultats  TRACTAFRIC MOTORS CI : Etats financiers - 1er semestre 2026 
     PRSC   2026-10-22 dividende  Dividende exercice 2025 : 209 FCFA par action 
+    NTLC   2026-11-25 resultats  NESTLE CI : Attestation des Commissaires Aux Comptes sur le rapport d' | Confirme la solidité de la performance opérationnelle et contribue à porter le r
     NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 3e trimestre 2026 | Résultat des Activités Ordinaires 11 986 513 11 935 555 18 426 899 0,4% 50 958 R
     NTLC   2026-10-22 resultats  NESTLE CI: Rapport d'activités - 1er semestre 2026 | Confirme la solidité de la performance opérationnelle et contribue à porter le r
-    NTLC   2026-09-04 dividende  Dividende exercice 2025 : 420 FCFA par action 
     BICB   2026-11-10 resultats  BIIC BN : Rapport d'activités - 3e trimestre 2026 | IAS 34 NB : informations non certifiées par les Commissaires aux Comptes Résulta
     BICB   2026-09-21 resultats  BIIC BN : Rapport d'activités et Etats financiers IFRS - 1er semestre  | Le résultat net s’établit à 18,4 milliards FCFA, en progression de 11 %
     BICB   2026-07-30 dividende  Dividende exercice 2025 : 254,6 FCFA par action 
@@ -153,4 +153,4 @@
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : 1er semestre 2026 
   Sociétés non reconnues : AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); Franchissement de seuil - MOVIS CI - Exe (1); TOTAL (1)
-Actualite : 48 societes, 0 nouvelle(s) publication(s), 0 document(s) lu(s)
+Actualite : 48 societes, 2 nouvelle(s) publication(s), 2 document(s) lu(s)
