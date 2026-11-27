@@ -1,12 +1,12 @@
-    communiques ligne brute : <td>NSBC</td><td class="text-right">16 125</td><td class="text-right">7,50% <span class="icone-seance good"></span></td> 
+    communiques ligne brute : <td>Valeur des transactions</td><td class="text-right">1 332 991 572 FCFA</td><td></td> 
   communiques : 30 annonces (2 sans société reconnue)
-    convocations-assemblees-generales ligne brute : <td>Valeur des transactions</td><td class="text-right">2 053 606 095 FCFA</td><td></td> 
+    convocations-assemblees-generales ligne brute : <td>Valeur des transactions</td><td class="text-right">1 332 991 572 FCFA</td><td></td> 
   convocations-assemblees-generales : 30 annonces (0 sans société reconnue)
-    changements-de-dirigeants ligne brute : <td>UNLC</td><td class="text-right">38 850</td><td class="text-right">-7,50% <span class="icone-seance bad"></span></td> 
+    changements-de-dirigeants ligne brute : <td>Valeur des transactions</td><td class="text-right">1 332 991 572 FCFA</td><td></td> 
   changements-de-dirigeants : 30 annonces (0 sans société reconnue)
-    franchissements-de-seuil ligne brute : <td>Valeur des transactions</td><td class="text-right">2 053 606 095 FCFA</td><td></td> 
+    franchissements-de-seuil ligne brute : <td>Valeur des transactions</td><td class="text-right">1 332 991 572 FCFA</td><td></td> 
   franchissements-de-seuil : 30 annonces (1 sans société reconnue)
-    dividendes ligne brute : <td>NSBC</td><td class="text-right">16 125</td><td class="text-right">7,50% <span class="icone-seance good"></span></td> 
+    dividendes ligne brute : <td>BOABF</td><td class="text-right">7 310</td><td class="text-right">7,50% <span class="icone-seance good"></span></td> 
   dividendes : 20 paiements (1 sans société reconnue)
     SOGC   2026-11-16 autre      SOGB CI : Communiqué de Presse 
     SOGC   2026-11-16 dirigeants SOGB CI : Changement important dans la Direction 
@@ -153,4 +153,4 @@
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : Rapport des Commissaires Aux Comptes - 1er seme 
     BBGC   2026-09-24 resultats  BRIDGE BANK GROUP CI : 1er semestre 2026 
   Sociétés non reconnues : AFINHAB (Ex-CRRH-UEMOA) (1); FIDELIS FINANCE (1); Franchissement de seuil - MOVIS CI - Exe (1); TOTAL (1)
-Actualite : 48 societes, 2 nouvelle(s) publication(s), 2 document(s) lu(s)
+Actualite : 48 societes, 0 nouvelle(s) publication(s), 0 document(s) lu(s)
